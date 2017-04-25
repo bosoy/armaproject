@@ -1,0 +1,3 @@
+Dummy textures with lower quality. 
+Real textures are in ACEX_RU for russian faction.
+Dummy texures can be replaced with Takistani faction textures once available.

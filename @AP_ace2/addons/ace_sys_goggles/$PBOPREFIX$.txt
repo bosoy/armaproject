@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_goggles
+Pbo Type is: Arma Addon
+Sha: '95E431C5393D3F97E0C30187CC03A9F33B61ACC1'
+//////</HEADER>//////

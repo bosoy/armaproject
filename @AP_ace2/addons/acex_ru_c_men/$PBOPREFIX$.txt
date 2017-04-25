@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=x\acex_ru\addons\c_men
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: 'DBC93A5F970A2D0B6A7D582F77D4E63D45A5ACD2'
+//////</HEADER>//////

@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex_usnavy\addons\c_vehicle
+Pbo Type is: Arma Addon
+Sha: 'F4610CC9482E1BA3DA03DC0E70317ADFAEB83DF3'
+//////</HEADER>//////

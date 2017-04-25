@@ -1,0 +1,32 @@
+ambient[]={0.952000,0.952000,0.951999,1.000000};
+diffuse[]={0.952000,0.952000,0.951999,1.000000};
+forcedDiffuse[]={0.000000,0.000000,0.000000,0.000000};
+emmisive[]={0.000000,0.000000,0.000000,1.000000};
+specular[]={0.360000,0.360000,0.360000,1.000000};
+specularPower=36.500000;
+PixelShaderID="NormalMapSpecularDIMap";
+VertexShaderID="NormalMap";
+class Stage1
+{
+	texture="x\acex\addons\t_wep_m16\eotech553B_nohq.paa";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1.000000,0.000000,0.000000};
+		up[]={0.000000,1.000000,0.000000};
+		dir[]={0.000000,0.000000,0.000000};
+		pos[]={0.000000,0.000000,0.000000};
+	};
+};
+class Stage2
+{
+	texture="x\acex\addons\t_wep_m16\eotech553B_smdi.paa";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1.000000,0.000000,0.000000};
+		up[]={0.000000,1.000000,0.000000};
+		dir[]={0.000000,0.000000,0.000000};
+		pos[]={0.000000,0.000000,0.000000};
+	};
+};

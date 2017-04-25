@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_sandbag
+Pbo Type is: Arma Addon
+Sha: '6F70805F082B0D5455D2A37BC0D3CCF1416C967F'
+//////</HEADER>//////

@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex_usnavy\addons\m_veh_air_wep
+Pbo Type is: Arma Addon
+Sha: '57C6F3A9B200A9B65AD1D907EF959E86BB727AA0'
+//////</HEADER>//////

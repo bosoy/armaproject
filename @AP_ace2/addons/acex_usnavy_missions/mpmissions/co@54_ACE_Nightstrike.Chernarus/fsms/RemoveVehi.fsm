@@ -1,0 +1,71 @@
+/*%FSM<COMPILE "D:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, RemoveVehi">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Start",0,250,-32.132942,-97.418594,57.867043,-47.418575,0.000000,"Start"};
+item1[] = {"Not_alive_vehicl",4,218,-31.245275,6.772964,58.754704,56.772957,0.000000,"Not alive vehicle"};
+item2[] = {"End",1,4346,-32.280891,111.371361,57.719147,161.371338,0.000000,"End"};
+link0[] = {0,1};
+link1[] = {1,2};
+globals[] = {0.000000,0,0,0,0,640,480,1,4,6316128,1,-302.111694,319.264893,218.814743,-311.019775,600,573,1};
+window[] = {0,-1,-1,-1,-1,743,25,985,25,1,618};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "RemoveVehi";
+  class States
+  {
+    /*%FSM<STATE "Start">*/
+    class Start
+    {
+      name = "Start";
+      init = /*%FSM<STATEINIT""">*/"private [""_aunit"",""_type""];" \n
+       "_aunit = _this;" \n
+       "_type = typeOf _aunit;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Not_alive_vehicl">*/
+        class Not_alive_vehicl
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!alive _aunit"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End">*/
+    class End
+    {
+      name = "End";
+      init = /*%FSM<STATEINIT""">*/"private [""_direction"",""_position"",""_velocity"",""_dv"",""_fuel""];" \n
+       "_direction = direction _aunit;" \n
+       "_position = position _aunit;" \n
+       "_velocity = velocity _aunit;" \n
+       "_fuel = fuel _aunit;" \n
+       "{deleteVehicle _x} forEach ([_aunit] + crew _aunit);" \n
+       "_dv = _type createVehicle _position;" \n
+       "_dv setDir _direction;" \n
+       "_dv setPos _position;" \n
+       "_dv setVelocity _velocity;" \n
+       "_dv setFuel _fuel;" \n
+       "_dv setDamage 1.1;" \n
+       "[_dv] spawn ace_sys_destruction_fnc_killed;" \n
+       "allunits_add set [count allunits_add, _dv];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Start";
+  finalStates[] =
+  {
+    "End",
+  };
+};
+/*%FSM</COMPILE>*/

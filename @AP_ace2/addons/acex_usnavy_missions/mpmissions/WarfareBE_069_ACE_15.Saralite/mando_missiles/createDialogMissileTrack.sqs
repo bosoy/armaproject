@@ -1,0 +1,64 @@
+;mando Missile track dialog handler
+;createDialogMissileTrack.sqs
+;Dec 2006 mandoble
+;
+;A small dialog is created with real-time missile info
+;
+;The missiles need to be launched in debug mode to have the info of this dialog updated.
+;
+
+MISST_DLGMISSILETRACK	= 20900
+MISST_MISST_FRAME	= 20901
+MISST_CLOSEDLG		= 20902
+MISST_MODE		= 20903
+MISST_FOLLOW1		= 20904
+MISST_FOLLOW2		= 20915
+MISST_FOLLOW3		= 20916
+MISST_DISTANCE		= 20907
+MISST_SPEED		= 20908
+MISST_ALTITUDE		= 20909
+MISST_ENGINEON		= 20910
+MISST_ENGINEOFF		= 20911
+MISST_ENDURANCE		= 20912
+MISST_GROUNDNO		= 20913
+MISST_GROUNDYES		= 20914
+
+
+
+_ok = createDialog "DlgMissileTrack"
+?(!_ok): hint "Dialog error"; exit
+
+setMousePosition [0, 0]
+
+~0.5
+#checksel
+?!ctrlVisible MISST_MODE: goto "findlg"
+
+?mando_missile_mode == 0:_mode = "Inertial mode 0"
+?mando_missile_mode == 1:_mode = "Inertial mode 1"
+?mando_missile_mode == 2:_mode = "Active"
+
+_follow1 = "Radar OFF";_follow2 = "";_follow3 = ""
+?(mando_missile_mode == 2)&&mando_missile_follow:_follow1 = "";_follow2 = "Tracking target";_follow3 = ""
+?(mando_missile_mode == 2)&&!mando_missile_follow:_follow1 = "";_follow2 = "";_follow3 = "Track lost"
+ctrlSetText [MISST_MODE, format["Mode: %1", _mode]]
+ctrlSetText [MISST_FOLLOW1, format["%1", _follow1]]
+ctrlSetText [MISST_FOLLOW2, format["%1", _follow2]]
+ctrlSetText [MISST_FOLLOW3, format["%1", _follow3]]
+ctrlSetText [MISST_DISTANCE, format["Distance: %1 m", mando_missile_distance]]
+_velocity = velocity mando_missile
+_speed = sqrt((_velocity select 0)^2 + (_velocity select 1)^2 + (_velocity select 2)^2)
+ctrlSetText [MISST_SPEED, format["Speed: %1 m/s", _speed]]
+ctrlSetText [MISST_ALTITUDE, format["Altitude ASL: %1", getPosASL mando_missile select 2]]
+_engine1 = "Engine ON";_engine2 = ""
+?(damage mando_missile > 0)||(isNull mando_missile):_engine1 = "";_engine2 = "Engine OFF"
+ctrlSetText [MISST_ENGINEON, _engine1]
+ctrlSetText [MISST_ENGINEOFF, _engine2]
+ctrlSetText [MISST_ENDURANCE, format["Time left: %1 secs", mando_missile_endurance]]
+?!mando_missile_emergency:ctrlSetText [MISST_GROUNDYES, ""];ctrlSetText [MISST_GROUNDNO, "Ground avoidance: No"]
+?mando_missile_emergency:ctrlSetText [MISST_GROUNDNO, ""];ctrlSetText [MISST_GROUNDYES, "Ground avoidance: Yes"]
+
+~0.25
+goto "checksel"
+#findlg
+exit

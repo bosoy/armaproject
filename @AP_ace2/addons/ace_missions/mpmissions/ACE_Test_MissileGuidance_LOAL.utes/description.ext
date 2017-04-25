@@ -1,0 +1,30 @@
+#include "script_component.hpp"
+
+respawn = "INSTANT";
+respawndelay = 5;
+//disabledAI = 0;
+//respawn = "BIRD";
+//respawndelay = 0;
+
+class Extended_PreInit_Eventhandlers {
+	class ADDON {
+			init = QUOTE(call compile preProcessFileLineNumbers 'preInit.sqf');
+	};
+};
+
+class Extended_PostInit_Eventhandlers {
+	class ADDON {
+			init = QUOTE(call compile preProcessFileLineNumbers 'postInit.sqf');
+	};
+};
+
+class Extended_Fired_Eventhandlers {
+	class AllVehicles {
+		class GVAR(debug) {
+				clientFired = QUOTE(_this call FUNC(fired));
+		};
+		class GVAR(debug2) {
+				clientFired = QUOTE(_this call FUNC(fired2));
+		};
+	};
+};

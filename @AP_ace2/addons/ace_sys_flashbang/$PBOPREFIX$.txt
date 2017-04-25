@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_flashbang
+Pbo Type is: Arma Addon
+Sha: 'CCF825F2A7DFE78047C32E7759E59CCD3A795B19'
+//////</HEADER>//////

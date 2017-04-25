@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_tankfcs
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: '692B9B560AF99C73AB0AD49C959038042A87DD43'
+//////</HEADER>//////

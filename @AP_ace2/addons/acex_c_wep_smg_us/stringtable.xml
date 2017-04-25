@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACEX">
+<Package name="c_wep_smg_us">
+<Container name="STR_MN">
+<Key ID="STR_MN_ACE_25Rnd_1143x23_B_UMP45">
+<German>UMP 45-Mag.</German>
+<English>UMP 45 Mag.</English>
+<Italian>Caric. UMP 45</Italian>
+<Spanish>Carg. UMP 45</Spanish>
+<French>Charg. UMP 45</French>
+<Czech>UMP 45 Zás.</Czech>
+<Russian>Магазин UМР 45</Russian>
+<Polish>magazynek UMP 45</Polish>
+<Hungarian>UMP 45 tár</Hungarian>
+</Key>
+<Key ID="STR_MN_ACE_30Rnd_1143x23_B_M3">
+<German>M3A1-Mag.</German>
+<English>M3A1 Mag.</English>
+<Italian>Caric. M3A1</Italian>
+<Spanish>Carg. M3A1</Spanish>
+<French>Charg. M3A1</French>
+<Czech>M3A1 Zás.</Czech>
+<Russian>Магазин M3A1</Russian>
+<Polish>magazynek M3A1</Polish>
+<Hungarian>M3A1 tár</Hungarian>
+</Key>
+</Container>
+<Container name="STR_DSS">
+<Key ID="str_dss_ACE_25Rnd_1143x23_B_UMP45">
+<German>Kaliber: .45 ACP &lt;br/&gt;Schuss: 25 &lt;br/&gt;Eingesetzt in: UMP 45, UMP 45 SD</German>
+<English>Caliber: .45 ACP &lt;br/&gt;Rounds: 25 &lt;br/&gt;Used in: UMP 45, UMP 45 SD</English>
+<Italian>Calibro: .45 ACP &lt;br/&gt;Munizioni: 25 &lt;br/&gt;Si usa in: UMP 45, UMP 45 SD</Italian>
+<Spanish>Calibre: .45 ACP &lt;br/&gt;Cargas: 25 &lt;br/&gt;Uso: UMP 45, UMP 45 SD</Spanish>
+<French>Calibre : .45 ACP &lt;br/&gt;Munitions : 25 &lt;br/&gt;Utilisé avec : UMP 45, UMP 45 SD</French>
+<Czech>Ráže: .45 ACP &lt;br/&gt;Nábojů: 25 &lt;br/&gt;Pro: UMP 45, UMP 45 SD</Czech>
+<Russian>Калибр: .45 ACP &lt;br/&gt;Количество: 25 &lt;br/&gt;Используются в: UMP 45, UMP 45 SD</Russian>
+<Polish>Kaliber: .45 ACP &lt;br/&gt;Naboje: 25 &lt;br/&gt;Używane w: UMP 45, UMP 45 SD</Polish>
+<Hungarian>Kaliber: .45 ACP &lt;br/&gt; Töltények: 25 &lt;br/&gt; Hozzá tartozó fegyver: UMP 45, UMP 45 SD</Hungarian>
+</Key>
+<Key ID="str_dss_ACE_UMP45_SD">
+<German>Schallgedämpfte Maschinenpistole &lt;br/&gt;Kaliber: .45 ACP</German>
+<English>Silenced submachine gun  &lt;br/&gt;Caliber: .45 ACP</English>
+<Italian>Fucile mitragliatore con silenziatore &lt;br/&gt;Calibro: .45 ACP</Italian>
+<Spanish>Metralleta con silenciador  &lt;br/&gt;Calibre: .45 ACP</Spanish>
+<French>Pistolet-mitrailleur à silencieux  &lt;br/&gt;Calibre : .45 ACP</French>
+<Czech>Samopal s tlumičem &lt;br/&gt;Ráže: .45 ACP</Czech>
+<Russian>Пистолет-пулемет с глушителем  &lt;br/&gt;Калибр: .45 ACP</Russian>
+<Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: .45 ACP</Polish>
+<Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: .45 ACP</Hungarian>
+</Key>
+<Key ID="str_dss_ACE_30Rnd_1143x23_B_M3">
+<German>Kaliber: .45 ACP &lt;br/&gt;Schuss: 30 &lt;br/&gt;Eingesetzt in: M3A1</German>
+<English>Caliber: .45 ACP &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: M3A1</English>
+<Italian>Calibro: .45 ACP &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: M3A1</Italian>
+<Spanish>Calibre: .45 ACP &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: M3A1</Spanish>
+<French>Calibre : .45 ACP &lt;br/&gt;Munitions : 30 &lt;br/&gt;Utilisé avec : M3A1</French>
+<Czech>Ráže: .45 ACP &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: M3A1</Czech>
+<Russian>Калибр: .45 ACP &lt;br/&gt;Количество: 30 &lt;br/&gt;Используются в: M3A1</Russian>
+<Polish>Kaliber: .45 ACP &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: M3A1</Polish>
+<Hungarian>Kaliber: .45 ACP &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: M3A1</Hungarian>
+</Key>
+<Key ID="str_dss_ACE_UMP45">
+<German>Maschinenpistole &lt;br/&gt;Kaliber: .45 ACP</German>
+<English>Submachine gun  &lt;br/&gt;Caliber: .45 ACP</English>
+<Italian>Fucile mitragliatore &lt;br/&gt;Calibro: .45 ACP</Italian>
+<Spanish>Metralleta  &lt;br/&gt;Calibre: .45 ACP</Spanish>
+<French>Pistolet-mitrailleur &lt;br/&gt;Calibre : .45 ACP</French>
+<Czech>Samopal &lt;br/&gt;Ráže: .45 ACP</Czech>
+<Russian>Пистолет-пулемёт &lt;br/&gt;Калибр: .45 ACP</Russian>
+<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: .45 ACP</Polish>
+<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: .45 ACP</Hungarian>
+</Key>
+<Key ID="str_dss_ACE_KAC_PDW">
+<German>Maschinenpistole &lt;br/&gt;Kaliber: 6x35mm</German>
+<English>Submachine gun  &lt;br/&gt;Caliber: 6x35mm</English>
+<Italian>Fucile mitragliatore &lt;br/&gt;Calibro: 6x35mm</Italian>
+<Spanish>Metralleta  &lt;br/&gt;Calibre: 6x35mm</Spanish>
+<French>Pistolet-mitrailleur &lt;br/&gt;Calibre : 6x35mm</French>
+<Czech>Samopal &lt;br/&gt;Ráže: 6x35mm</Czech>
+<Russian>Пистолет-пулемёт &lt;br/&gt;Калибр: 6x35мм</Russian>
+<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 6x35mm</Polish>
+<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 6x35mm</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_MP7">
+<German>Maschinenpistole &lt;br/&gt;Kaliber: 4,6x30mm</German>
+<English>Submachine gun  &lt;br/&gt;Caliber: 4.6x30mm</English>
+<Italian>Fucile mitragliatore &lt;br/&gt;Calibro: 4,6x30mm</Italian>
+<Spanish>Metralleta  &lt;br/&gt;Calibre: 4,6x30mm</Spanish>
+<French>Pistolet-mitrailleur &lt;br/&gt;Calibre : 4,6x30mm</French>
+<Czech>Samopal &lt;br/&gt;Ráže: 4,6x30mm</Czech>
+<Russian>Пистолет-пулемёт &lt;br/&gt;Калибр: 4,6x30мм</Russian>
+<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 4,6x30mm</Polish>
+<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 4,6x30mm</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

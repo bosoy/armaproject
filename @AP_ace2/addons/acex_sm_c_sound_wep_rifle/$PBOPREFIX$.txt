@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex_sm\addons\c_sound_wep_rifle
+Pbo Type is: Arma Addon
+Sha: 'A49059BB34DA4AA9463C173FC32DD83DE995C8C8'
+//////</HEADER>//////

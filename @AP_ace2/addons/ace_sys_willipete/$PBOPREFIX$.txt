@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_willipete
+Pbo Type is: Arma Addon
+Sha: 'BF0F5D12191D2B0D802FF3C5FA8B55DEC68A1DEF'
+//////</HEADER>//////

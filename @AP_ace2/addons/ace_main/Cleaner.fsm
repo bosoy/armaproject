@@ -1,0 +1,252 @@
+/*%FSM<COMPILE "G:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, Cleaner">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Start",0,4346,-50.000000,-175.000000,50.000000,-125.000000,0.000000,"Start"};
+item1[] = {"Delay",4,218,-50.000000,-100.000000,50.000000,-50.000000,0.000000,"Delay"};
+item2[] = {"Loop",2,250,-50.000000,-25.000000,50.000000,25.000000,0.000000,"Loop"};
+item3[] = {"true",8,218,-50.000000,50.000000,50.000000,100.000000,0.000000,"true"};
+item4[] = {"Add_new",2,250,75.000000,50.000000,175.000000,100.000000,0.000000,"Add new"};
+item5[] = {"count__objs2clean",4,218,75.000000,125.000000,175.000000,175.000000,1.000000,"count" \n "_objs2clean > 0"};
+item6[] = {"Delay",4,218,75.000000,-25.000000,175.000000,25.000000,0.000000,"Delay"};
+item7[] = {"Check_Loop",2,250,225.000000,125.000000,325.000000,175.000000,0.000000,"Check Loop"};
+item8[] = {"_counter____count",4,218,225.000000,50.000000,325.000000,100.000000,1.000000,"_counter ==" \n "count _objs2clean"};
+item9[] = {"Clear_array",2,250,225.000000,-25.000000,325.000000,25.000000,0.000000,"Clear array"};
+item10[] = {"true",8,218,225.000000,200.000000,325.000000,250.000000,0.000000,"true"};
+item11[] = {"Check_one_object",2,250,375.000000,200.000000,475.000000,250.000000,0.000000,"Check one object"};
+item12[] = {"Delay",4,218,375.000000,125.000000,475.000000,175.000000,0.000000,"Delay"};
+link0[] = {0,1};
+link1[] = {1,2};
+link2[] = {2,3};
+link3[] = {3,4};
+link4[] = {4,5};
+link5[] = {4,6};
+link6[] = {5,7};
+link7[] = {6,2};
+link8[] = {7,8};
+link9[] = {7,10};
+link10[] = {8,9};
+link11[] = {9,6};
+link12[] = {10,11};
+link13[] = {11,12};
+link14[] = {12,7};
+globals[] = {25.000000,1,0,0,0,640,480,1,20,6316128,1,-129.723755,513.791199,387.081848,-316.810364,842,921,1};
+window[] = {2,-1,-1,-1,-1,918,200,1160,200,3,860};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "Cleaner";
+  class States
+  {
+    /*%FSM<STATE "Start">*/
+    class Start
+    {
+      name = "Start";
+      init = /*%FSM<STATEINIT""">*/"private [""_objs2clean"",""_timenow""];" \n
+       "_objs2clean = [];" \n
+       "_timenow = time + 50;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Delay">*/
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timenow"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Loop">*/
+    class Loop
+    {
+      name = "Loop";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="Add_new";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Add_new">*/
+    class Add_new
+    {
+      name = "Add_new";
+      init = /*%FSM<STATEINIT""">*/"private [""_counter""];" \n
+       "_counter = 0;" \n
+       "" \n
+       "if (count ace_main_clean_array > 0) then {" \n
+       "	[_objs2clean, ace_main_clean_array] call ace_main_fnc_pushStack;" \n
+       "	ace_main_clean_array = [];" \n
+       "};" \n
+       "_timenow = time + 5;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "count__objs2clean">*/
+        class count__objs2clean
+        {
+          priority = 1.000000;
+          to="Check_Loop";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"count _objs2clean > 0"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Delay">*/
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timenow"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Check_Loop">*/
+    class Check_Loop
+    {
+      name = "Check_Loop";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_counter____count">*/
+        class _counter____count
+        {
+          priority = 1.000000;
+          to="Clear_array";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_counter == count _objs2clean"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="Check_one_object";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Clear_array">*/
+    class Clear_array
+    {
+      name = "Clear_array";
+      init = /*%FSM<STATEINIT""">*/"_objs2clean = _objs2clean - [-1];" \n
+       "_timenow = time;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Delay">*/
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timenow"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Check_one_object">*/
+    class Check_one_object
+    {
+      name = "Check_one_object";
+      init = /*%FSM<STATEINIT""">*/"private [""_element"",""_obj"",""_etime""];" \n
+       "_element = _objs2clean select _counter;" \n
+       "" \n
+       "if (!isNil ""_element"") then {" \n
+       "	_obj = _element select 0;" \n
+       "	_etime = _element select 1;" \n
+       "" \n
+       "	if (!isNil ""_obj"") then {" \n
+       "		if (time >= _etime) then {" \n
+       "			switch (typeName _obj) do {" \n
+       "				case (typeName objNull): {" \n
+       "					if (!isNull _obj) then {" \n
+       "						if (_obj isKindOf ""ACE_Explosive_Object"") then {" \n
+       "							_obj call ACE_fnc_handleFifoExplosives;" \n
+       "						} else {" \n
+       "							deleteVehicle _obj;" \n
+       "						};" \n
+       "					};" \n
+       "					_obj = nil;" \n
+       "					_objs2clean set [_counter, -1];" \n
+       "				};" \n
+       "				case (typeName grpNull): {" \n
+       "					if (!isNull _obj) then {" \n
+       "						if (count (units _obj) == 0) then {" \n
+       "							deleteGroup _obj;" \n
+       "							_obj = nil;" \n
+       "							_objs2clean set [_counter, -1];" \n
+       "						};" \n
+       "					} else {" \n
+       "						_obj = nil;" \n
+       "						_objs2clean set [_counter, -1];" \n
+       "					};" \n
+       "				};" \n
+       "				// TODO: Add more types ?!?" \n
+       "				default {" \n
+       "					_obj = nil;" \n
+       "					_objs2clean set [_counter, -1];" \n
+       "				};" \n
+       "			};" \n
+       "		};" \n
+       "	} else {" \n
+       "		_objs2clean set [_counter, -1];" \n
+       "	};" \n
+       "} else {" \n
+       "	_objs2clean set [_counter, -1];" \n
+       "};" \n
+       "" \n
+       "_counter = _counter + 1;" \n
+       "_timenow = time + 5;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Delay">*/
+        class Delay
+        {
+          priority = 0.000000;
+          to="Check_Loop";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timenow"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Start";
+  finalStates[] =
+  {
+  };
+};
+/*%FSM</COMPILE>*/

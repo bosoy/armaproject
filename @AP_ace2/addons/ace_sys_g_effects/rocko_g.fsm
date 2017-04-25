@@ -1,0 +1,487 @@
+/*%FSM<COMPILE "D:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, rocko_g">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Start",0,250,-50.000000,-175.000000,50.000000,-125.000000,0.000000,"Start"};
+item1[] = {"_",4,218,-50.000000,-100.000000,50.000000,-50.000000,0.000000,""};
+item2[] = {"Dummy",2,250,-50.000000,-25.000000,50.000000,25.000000,0.000000,"Dummy"};
+item3[] = {"plane_not_alive",4,218,75.000000,-25.000000,175.000000,25.000000,2.000000,"plane not alive" \n "or" \n "engine off"};
+item4[] = {"End",1,250,225.000000,-25.000000,325.000000,25.000000,0.000000,"End"};
+item5[] = {"_",8,218,-50.000000,50.000000,50.000000,100.000000,0.000000,""};
+item6[] = {"Check_if_player",2,250,-50.000000,125.000000,50.000000,175.000000,0.000000,"Check if player" \n "is in plane"};
+item7[] = {"_",4,218,75.000000,125.000000,175.000000,175.000000,2.000000,""};
+item8[] = {"",7,210,271.000000,146.000000,278.999969,154.000000,0.000000,""};
+item9[] = {"__1",8,218,-50.000000,200.000000,50.000000,250.000000,0.000000,""};
+item10[] = {"set_plane_variab",2,250,-50.000000,275.000000,50.000000,325.000000,0.000000,"set plane" \n "variables"};
+item11[] = {"_",8,218,-50.000000,350.000000,50.000000,400.000000,0.000000,""};
+item12[] = {"Loop1",2,250,-50.000000,425.000000,50.000000,475.000000,0.000000,"Loop1"};
+item13[] = {"_",4,218,-50.000000,500.000000,50.000000,550.000000,1.000000,""};
+item14[] = {"__1",8,218,75.000000,425.000000,175.000000,475.000000,0.000000,""};
+item15[] = {"Cleanup",2,250,225.000000,425.000000,325.000000,475.000000,0.000000,"Cleanup"};
+item16[] = {"_",8,218,225.000000,275.000000,325.000000,325.000000,0.000000,""};
+item17[] = {"Loop2",2,250,-50.000000,575.000000,50.000000,625.000000,0.000000,"Loop2"};
+item18[] = {"plane_zpos___2",4,218,-50.000000,650.000000,50.000000,700.000000,2.000000,"plane zpos > 2"};
+item19[] = {"_",8,218,-175.000000,550.000000,-75.000000,600.000000,0.000000,""};
+item20[] = {"_",2,250,-300.000000,500.000000,-200.000000,550.000000,0.000000,""};
+item21[] = {"_",4,218,-175.000000,425.000000,-75.000000,475.000000,0.000000,""};
+item22[] = {"__1",2,250,-50.000000,725.000000,50.000000,775.000000,0.000000,""};
+item23[] = {"Player_in_plane",4,218,-50.000000,800.000000,50.000000,850.000000,2.000000,"Player in plane ?"};
+item24[] = {"_",8,218,-175.000000,725.000000,-75.000000,775.000000,0.000000,""};
+item25[] = {"__2",2,250,-300.000000,675.000000,-200.000000,725.000000,0.000000,""};
+item26[] = {"_",4,218,-175.000000,600.000000,-75.000000,650.000000,0.000000,""};
+item27[] = {"__3",2,250,-50.000000,875.000000,50.000000,925.000000,0.000000,""};
+item28[] = {"Action",4,4314,-50.000000,950.000000,50.000000,1000.000000,0.000000,"Action"};
+item29[] = {"__4",2,250,-50.000000,1025.000000,50.000000,1075.000000,0.000000,""};
+item30[] = {"",7,210,121.000000,1046.000000,129.000000,1054.000000,0.000000,""};
+item31[] = {"_",8,218,75.000000,575.000000,175.000000,625.000000,0.000000,""};
+link0[] = {0,1};
+link1[] = {1,2};
+link2[] = {2,3};
+link3[] = {2,5};
+link4[] = {3,4};
+link5[] = {5,6};
+link6[] = {6,7};
+link7[] = {6,9};
+link8[] = {7,8};
+link9[] = {8,4};
+link10[] = {9,10};
+link11[] = {10,11};
+link12[] = {11,12};
+link13[] = {12,13};
+link14[] = {12,14};
+link15[] = {13,17};
+link16[] = {14,15};
+link17[] = {15,16};
+link18[] = {16,8};
+link19[] = {17,18};
+link20[] = {17,19};
+link21[] = {18,22};
+link22[] = {19,20};
+link23[] = {20,21};
+link24[] = {21,12};
+link25[] = {22,23};
+link26[] = {22,24};
+link27[] = {23,27};
+link28[] = {24,25};
+link29[] = {25,26};
+link30[] = {26,17};
+link31[] = {27,28};
+link32[] = {28,29};
+link33[] = {29,30};
+link34[] = {30,31};
+link35[] = {31,17};
+globals[] = {25.000000,1,0,0,0,640,480,1,58,6316128,1,-527.999512,367.391052,1236.827393,309.206848,889,921,1};
+window[] = {2,-1,-1,-1,-1,818,100,1060,100,3,907};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "rocko_g";
+  class States
+  {
+    /*%FSM<STATE "Start">*/
+    class Start
+    {
+      name = "Start";
+      init = /*%FSM<STATEINIT""">*/"private [""_o"", ""_timeend"", ""_ret""];" \n
+       "_o = _this select 0;" \n
+       "" \n
+       "_o setVariable [""ACE_pinplane"", false];" \n
+       "_o setVariable [""ACE_gforce"", 0];" \n
+       "_o setVariable [""ACE_g_s"", 0];" \n
+       "" \n
+       "_ret = false;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Dummy";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(!alive _o) || {(getpos _o) select 2 > 1} || {!(_o getVariable ""ace_sys_g_effects_eon"")}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Dummy">*/
+    class Dummy
+    {
+      name = "Dummy";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "plane_not_alive">*/
+        class plane_not_alive
+        {
+          priority = 2.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(!alive _o) || {!(_o getVariable ""ace_sys_g_effects_eon"")}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Check_if_player";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End">*/
+    class End
+    {
+      name = "End";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Check_if_player">*/
+    class Check_if_player
+    {
+      name = "Check_if_player";
+      init = /*%FSM<STATEINIT""">*/"private[""_v0"",""_v1"",""_t"",""_g"",""_getVar""];" \n
+       "_pip = _o getVariable ""ACE_pinplane"";" \n
+       "if (isNil ""_pip"") then {_pip = false};" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 2.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_pip"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__1">*/
+        class __1
+        {
+          priority = 0.000000;
+          to="set_plane_variab";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "set_plane_variab">*/
+    class set_plane_variab
+    {
+      name = "set_plane_variab";
+      init = /*%FSM<STATEINIT""">*/"_o setVariable [""ACE_pinplane"", false];" \n
+       "_o setVariable [""ACE_gforce"", 0];" \n
+       "_o setVariable [""ACE_g_s"", 0];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Loop1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Loop1">*/
+    class Loop1
+    {
+      name = "Loop1";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 1.000000;
+          to="Loop2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"alive _o && {(_o getVariable ""ace_sys_g_effects_eon"")}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__1">*/
+        class __1
+        {
+          priority = 0.000000;
+          to="Cleanup";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Cleanup">*/
+    class Cleanup
+    {
+      name = "Cleanup";
+      init = /*%FSM<STATEINIT""">*/"_o setVariable [""ACE_gforce"", 0];" \n
+       "_o setVariable [""ACE_g_s"", 0];" \n
+       "" \n
+       "if (alive _o) then {" \n
+       "	_o setVariable [""ace_sys_g_effects_eon"", false];" \n
+       "	_o setVariable [""ACE_pinplane"", false];" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Loop2">*/
+    class Loop2
+    {
+      name = "Loop2";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "plane_zpos___2">*/
+        class plane_zpos___2
+        {
+          priority = 2.000000;
+          to="__1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(alive _o) && {(getpos _o) select 2 > 1}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "_">*/
+    class _
+    {
+      name = "_";
+      init = /*%FSM<STATEINIT""">*/"_o setVariable [""ACE_pinplane"", false];" \n
+       "_o setVariable [""ACE_gforce"", 0];" \n
+       "_o setVariable [""ACE_g_s"", 0];" \n
+       "_timeend = time + 0.1;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Loop1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time >= _timeend"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__1">*/
+    class __1
+    {
+      name = "__1";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Player_in_plane">*/
+        class Player_in_plane
+        {
+          priority = 2.000000;
+          to="__3";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"player in _o"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__2">*/
+    class __2
+    {
+      name = "__2";
+      init = /*%FSM<STATEINIT""">*/"_o setVariable [""ACE_pinplane"", false];" \n
+       "_o setVariable [""ACE_gforce"", 0];" \n
+       "_o setVariable [""ACE_g_s"", 0];" \n
+       "_timeend = time + 0.1;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Loop2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time >= _timeend"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__3">*/
+    class __3
+    {
+      name = "__3";
+      init = /*%FSM<STATEINIT""">*/"if !(_o getVariable ""ACE_pinplane"") then {" \n
+       "	_o setVariable [""ACE_pinplane"", true];" \n
+       "	[_o] execFSM ""\x\ace\addons\sys_g_effects\geblurr.fsm"";" \n
+       "	//[_o] spawn ace_sys_g_effects_fnc_GERedout; // disabled until someone finds a good formula to calculate negative g" \n
+       "	[_o] execFSM ""\x\ace\addons\sys_g_effects\geblackout.fsm"";" \n
+       "	[_o] execFSM ""\x\ace\addons\sys_g_effects\geround.fsm"";" \n
+       "};" \n
+       "" \n
+       "_timeend = -1;" \n
+       "_timeend2 = -1;" \n
+       "_ret = false;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Action">*/
+        class Action
+        {
+          priority = 0.000000;
+          to="__4";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"if (player in _o && {alive _o} && {alive player} && {(getpos _o) select 2 > 1}) then {" \n
+           "	if (_timeend == -1 && {_timeend2 == -1}) then {" \n
+           "		_v0 = velocity _o;" \n
+           "		_timeend = time + 0.1;" \n
+           "	};" \n
+           "" \n
+           "	if (_timeend2 != -1 && {_timeend == -1}) then {" \n
+           "		if (time >= _timeend2) then {" \n
+           "			_timeend2 = -1;" \n
+           "		};" \n
+           "	};" \n
+           "" \n
+           "	if (_timeend2 == -1 && {_timeend != - 1} && {time >= _timeend}) then {" \n
+           "		_v1 = velocity _o;" \n
+           "" \n
+           "		_a_x = (( _v0 select 0 ) - ( _v1 select 0 ))/9.8;" \n
+           "		_a_y = (( _v0 select 1 ) - ( _v1 select 1 ))/9.8;" \n
+           "		_a_z = (( _v0 select 2 ) - ( _v1 select 2 ))/9.8;" \n
+           "		//_g = (sqrt( ((_a_x)*(_a_x)) + ((_a_y)*(_a_y)) + ((_a_z)*(_a_z)))) * 10;" \n
+           "		_g = (sqrt( ((_a_x)*(_a_x)) + ((_a_y)*(_a_y)) + ((_a_z)*(_a_z)))) * 8;" \n
+           "			" \n
+           "		if ((getNumber(configFile >> ""CfgVehicles"" >> (typeOf player) >> ""ACE_CrewProtection"")) == 1) then {" \n
+           "			_g = (_g - (_g*0.5))" \n
+           "		} else {" \n
+           "			if (player != (driver _o)) then {_g = (_g - (_g*0.5))};" \n
+           "		};" \n
+           "		" \n
+           "		_g_s = 0;" \n
+           "		if (_g >= 5) then {" \n
+           "			switch (true) do {" \n
+           "				case (_g < 5): { _g_s = 0; };" \n
+           "				case ( (_g >= 5) && {_g < 6} ): { _g_s = 1; };" \n
+           "				case ( (_g >= 6) && {_g < 7} ): { _g_s = 2; };" \n
+           "				case ( (_g >= 7) && {_g < 8} ): { _g_s = 3; };" \n
+           "				case ( (_g >= 8) && {_g < 9} ): { _g_s = 4; };" \n
+           "				case (_g >= 9): { _g_s = 5; };" \n
+           "			};" \n
+           "		};" \n
+           "		/*if (ace_sys_afterburner_afterburner) then {" \n
+           "			_g = _g / 2;" \n
+           "			_g_s = 0;" \n
+           "		};*/" \n
+           "" \n
+           "		_o setVariable [""ACE_gforce"", _g];" \n
+           "		_o setVariable [""ACE_g_s"", _g_s];" \n
+           "		_timeend = -1;" \n
+           "		_timeend2 = time + 0.5;" \n
+           "	};" \n
+           "} else {" \n
+           "	_ret = true" \n
+           "};" \n
+           "" \n
+           "_ret"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__4">*/
+    class __4
+    {
+      name = "__4";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Loop2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Start";
+  finalStates[] =
+  {
+    "End",
+  };
+};
+/*%FSM</COMPILE>*/

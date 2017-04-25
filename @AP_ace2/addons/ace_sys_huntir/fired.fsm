@@ -1,0 +1,96 @@
+/*%FSM<COMPILE "scriptedFSM.cfg, DeleteUnits">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Start",0,250,-25.000000,-150.000000,75.000000,-100.000000,0.000000,"Start"};
+item1[] = {"sleep_5",4,218,-25.000000,-75.000000,75.000000,-25.000000,0.000000,"sleep 5"};
+item2[] = {"Create_ACE_HuntIR",2,250,-25.000000,0.000000,75.000000,50.000000,0.000000,"Create" \n "ACE_HuntIR_Propell"};
+item3[] = {"Action",4,4314,-25.000000,75.000000,75.000000,125.000000,0.000000,"Action"};
+item4[] = {"End",1,250,-25.000000,150.000000,75.000000,200.000000,0.000000,"End"};
+link0[] = {0,1};
+link1[] = {1,2};
+link2[] = {2,3};
+link3[] = {3,4};
+globals[] = {25.000000,1,0,0,0,640,480,1,10,6316128,1,-174.881744,192.034851,348.631226,-141.983978,439,587,1};
+window[] = {0,-1,-1,-1,-1,938,220,1180,220,1,456};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "DeleteUnits";
+  class States
+  {
+    /*%FSM<STATE "Start">*/
+    class Start
+    {
+      name = "Start";
+      init = /*%FSM<STATEINIT""">*/"private [""_timeend"", ""_shot"", ""_x"", ""_y""];" \n
+       "" \n
+       "_shot = _this select 0;" \n
+       "_x = _this select 1;" \n
+       "_y = _this select 2;" \n
+       "" \n
+       "_timeend = time + 5;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "sleep_5">*/
+        class sleep_5
+        {
+          priority = 0.000000;
+          to="Create_ACE_HuntIR";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time >= _timeend"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Create_ACE_HuntIR">*/
+    class Create_ACE_HuntIR
+    {
+      name = "Create_ACE_HuntIR";
+      init = /*%FSM<STATEINIT""">*/"""ACE_HuntIR_Propell"" createVehicle (getPosATL _shot);" \n
+       "" \n
+       "_timeend = time + 5;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Action">*/
+        class Action
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"if (time >= _timeend) then {" \n
+           "	//_huntir = ""ACE_HuntIR"" createVehicle [_x,_y,500];" \n
+           "	_huntir = createVehicle [""ACE_HuntIR"",  [_x,_y,650], [], 0, ""FLY""];" \n
+           "	_huntir setPos [_x,_y, 650];" \n
+           "	true" \n
+           "} else {" \n
+           "	false" \n
+           "}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End">*/
+    class End
+    {
+      name = "End";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Start";
+  finalStates[] =
+  {
+    "End",
+  };
+};
+/*%FSM</COMPILE>*/

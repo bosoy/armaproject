@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACEX">
+<Package name="c_veh_m113">
+<Container name="STR_VDN">
+<Key ID="STR_ACE_VDN_M113A3 AMBULANCE_SHORT">
+<German>M113 (Sanitätsfzg)</German>
+<English>M113 (MEDEVAC)</English>
+<Italian>M113 (MEDEVAC)</Italian>
+<Spanish>M113 (MEDEVAC)</Spanish>
+<French>M113 (MEDEVAC)</French>
+<Czech>M113 (MEDEVAC)</Czech>
+<Russian>M113 (медицинский)</Russian>
+<Polish>M113 (MEDEVAC)</Polish>
+<Hungarian>M113 (MEDEVAC)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_M113A3 AMBULANCE">
+<German>M113A3 (Sanitätsfzg)</German>
+<English>M113A3 (MEDEVAC)</English>
+<Italian>M113A3 (MEDEVAC)</Italian>
+<Spanish>M113A3 (MEDEVAC)</Spanish>
+<French>M113A3 (MEDEVAC)</French>
+<Czech>M113A3 (MEDEVAC)</Czech>
+<Russian>M113A3 (медицинский)</Russian>
+<Polish>M113A3 (MEDEVAC)</Polish>
+<Hungarian>M113A3 (MEDEVAC)</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

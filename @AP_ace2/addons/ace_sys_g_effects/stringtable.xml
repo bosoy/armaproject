@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2">
+<Package name="ACE2">
+<Container name="sys_g_effects">
+<Key ID="STR_ACE_GEFFECT_DISABLE">
+<English>Disable G-Effects for Pilots</English>
+<German>G Effekte für Piloten ausschalten</German>
+<Spanish>Disable G-Effects for Pilots</Spanish>
+<Czech>Zakázat G-Efekt (přetížení) pro piloty</Czech>
+<Russian>Отключить перегрузку для лётчиков</Russian>
+<Italian>Disable G-Effects for Pilots</Italian>
+<Polish>Wyłącz efekty przeciążeń u pilotów</Polish>
+<French>Disable G-Effects for Pilots</French>
+<Hungarian>Disable G-Effects for Pilots</Hungarian>
+</Key>
+</Container>
+</Package></Project>

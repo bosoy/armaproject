@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_grenadethrow2
+Pbo Type is: Arma Addon
+Sha: 'F3D4476D776AAA847F49D4A79C8B99C919BE7CE0'
+//////</HEADER>//////

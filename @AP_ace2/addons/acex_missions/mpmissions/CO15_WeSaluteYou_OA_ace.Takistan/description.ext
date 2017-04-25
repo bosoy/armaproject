@@ -1,0 +1,18 @@
+#include "common\header\IntroText.hpp"
+#include "common\header\missionparams.hpp"
+
+class Header
+{
+	gameType = Coop;            //DM, Team, Coop, ...
+	minPlayers = 1;             //min # of players the mission supports
+	maxPlayers = 15;            //Max # of players the mission supports
+};
+
+onLoadMission="We Salute You";
+onLoadIntroTime = false;
+onLoadMissionTime = false;
+
+respawn = "BASE";
+respawndelay = 4;
+AIkills = 0;
+disabledAI = 1;

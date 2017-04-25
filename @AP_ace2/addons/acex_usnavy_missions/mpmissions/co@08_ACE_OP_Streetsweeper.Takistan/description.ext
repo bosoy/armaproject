@@ -1,0 +1,94 @@
+class Header
+{
+  gameType = Coop;
+  minPlayers = 1;
+  maxPlayers = 8;
+};
+
+onLoadMission = "[co08] OP Streetsweeper (ACE)";
+OnLoadMissionTime = FALSE;
+
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+
+// description.ext settings for revive
+///////////////////////////////////////////////////////////////////////////////////////////
+respawn = "BASE";
+respawndelay = 6;
+disabledAI = 1;
+
+#include "revive_sqf\dialogs\config.hpp"
+#include "revive_sqf\dialogs\define.hpp"
+#include "revive_sqf\dialogs\rev_cam_dialog.hpp"
+#include "revive_sqf\dialogs\respawn_button_1.hpp"
+#include "revive_sqf\dialogs\respawn_button_2.hpp"
+#include "revive_sqf\dialogs\respawn_button_3.hpp"
+#include "revive_sqf\dialogs\respawn_button_4.hpp"
+#include "revive_sqf\dialogs\respawn_button_1b.hpp"
+#include "revive_sqf\dialogs\respawn_button_1c.hpp"
+#include "revive_sqf\dialogs\respawn_button_2b.hpp"
+#include "revive_sqf\dialogs\respawn_button_3b.hpp"
+#include "revive_sqf\dialogs\respawn_button_4b.hpp"
+#include "revive_sqf\dialogs\respawn_button_1map.hpp"
+#include "revive_sqf\dialogs\respawn_button_2map.hpp"
+#include "revive_sqf\dialogs\respawn_button_3map.hpp"
+#include "revive_sqf\dialogs\respawn_button_4map.hpp"
+#include "revive_sqf\dialogs\OK_map.hpp"
+#include "revive_sqf\dialogs\dead_cam_dialog.hpp"
+#include "revive_sqf\dialogs\rev_cam_dialog_blank.hpp"
+
+///////////////////////////////////////////////////////////////////////////////////////////
+class Params
+{
+        class DayTime
+        {
+		//paramsArray[0]
+                title = "Time Of Day";
+                values[] = {1, -8, -6, 0, 8, 13, 2};
+                texts[] = {"Random", "Early Morning", "Morning", "Noon", "Sundown", "Night with Full Moon", "Dark Night"};
+                default = 1;
+		};
+        class Revive
+        {
+		// paramsArray[1]
+                title = "Number of Revives:";
+                values[] = {2000,1000,20,10,7,5};
+                texts[] = {"No Revive","Infinite - Cadet","20 - Easy ","10 - Normal","7  - Hard","5  - Extreme"};
+                default = 20;
+        };
+		class Weather
+        {
+		// paramsArray[2]
+                title = "Weather:";
+                values[] = {2, 0, 3, 0.5, 0.75, 1};
+                texts[] = {"Random", "Clear", "Partly Cloudy", "Cloudy", "Overcast", "Storm"};
+                default = 3;
+        };
+		class Revivetime
+        {
+		// paramsArray[3]
+                title = "Revivetimelimit:";
+                values[] = {60, 120, 180, 240, 300};
+                texts[] = {"60 seconds", "120 seconds", "180 seconds", "240 seconds", "300 seconds"};
+                default = 300;
+        };
+		class Respawnbuttontimer
+        {
+		// paramsArray[4]
+                title = "Respawnbutton appears after:";
+                values[] = {1, 30, 60, 90, 120, 180, 240};
+                texts[] = {"1 second", "30 seconds", "60 seconds", "90 seconds", "120 seconds", "180 seconds", "240 seconds"};
+                default = 60;
+        };
+		class ACRE
+        {
+		// paramsArray[5]
+                title = "ACRE:";
+                values[] = {0, 1};
+                texts[] = {"Off", "On"};
+                default = 0;
+        };
+};
+
+///////////////////////////////////////////////////////////////////////////////////////////

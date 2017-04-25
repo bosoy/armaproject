@@ -1,0 +1,1058 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"cacharacters_e",
+		"zargabad",
+		"ca_modules_functions",
+		"caweapons_ammoboxes",
+		"warfarebuildings",
+		"camisc_e",
+		"ace_main"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters_e",
+		"ca_modules_functions",
+		"ace_main",
+		"caweapons_ammoboxes",
+		"warfarebuildings",
+		"camisc_e",
+		"zargabad"
+	};
+	randomSeed=5630825;
+	class Intel
+	{
+		briefingName="ad@50 ACE Dynamic Cache Hunt v1.04";
+		briefingDescription="Destroy/Defend randomly placed ammo caches. Keep teams balanced.";
+		resistanceWest=0;
+		startWeather=0;
+		forecastWeather=0;
+		month=7;
+		day=12;
+		hour=2;
+		minute=0;
+	};
+	class Groups
+	{
+		items=4;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=25;
+				class Item0
+				{
+					position[]={5036.3345,86.56797,33.453613};
+					id=0;
+					side="WEST";
+					vehicle="US_Soldier_SL_EP1";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=1;
+					text="SLUS";
+				};
+				class Item1
+				{
+					position[]={5035.0186,86.584328,33.454102};
+					special="NONE";
+					id=13;
+					side="WEST";
+					vehicle="US_Soldier_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="RifleUS";
+				};
+				class Item2
+				{
+					position[]={5037.7275,86.552467,33.421387};
+					special="NONE";
+					id=16;
+					side="WEST";
+					vehicle="US_Soldier_GL_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="GLUS";
+				};
+				class Item3
+				{
+					position[]={5038.9795,86.536507,33.427734};
+					special="NONE";
+					id=19;
+					side="WEST";
+					vehicle="US_Soldier_Marksman_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="MarksmanUS";
+				};
+				class Item4
+				{
+					position[]={5034.0024,86.59758,33.443848};
+					special="NONE";
+					id=17;
+					side="WEST";
+					vehicle="US_Soldier_AR_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="MGUS";
+				};
+				class Item5
+				{
+					position[]={5036.3032,85.286423,32.465332};
+					special="NONE";
+					id=18;
+					side="WEST";
+					vehicle="US_Soldier_TL_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="RifleUS1";
+				};
+				class Item6
+				{
+					position[]={5034.998,85.299873,32.51416};
+					special="NONE";
+					id=20;
+					side="WEST";
+					vehicle="US_Soldier_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="RifleUS2";
+				};
+				class Item7
+				{
+					position[]={5037.7231,85.264954,32.53125};
+					special="NONE";
+					id=21;
+					side="WEST";
+					vehicle="US_Soldier_GL_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="GLUS1";
+				};
+				class Item8
+				{
+					position[]={5038.9795,85.248383,32.547363};
+					special="NONE";
+					id=22;
+					side="WEST";
+					vehicle="US_Soldier_Marksman_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="MarksmanUS1";
+				};
+				class Item9
+				{
+					position[]={5033.9858,85.312485,32.51416};
+					special="NONE";
+					id=23;
+					side="WEST";
+					vehicle="US_Soldier_AR_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="MGUS1";
+				};
+				class Item10
+				{
+					position[]={5036.3452,84.138771,31.781738};
+					special="NONE";
+					id=24;
+					side="WEST";
+					vehicle="US_Soldier_TL_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="RifleUS3";
+				};
+				class Item11
+				{
+					position[]={5034.9111,84.130005,31.766602};
+					special="NONE";
+					id=25;
+					side="WEST";
+					vehicle="US_Soldier_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="RifleUS4";
+				};
+				class Item12
+				{
+					position[]={5037.772,84.124901,31.71582};
+					special="NONE";
+					id=26;
+					side="WEST";
+					vehicle="US_Soldier_GL_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="GLUS2";
+				};
+				class Item13
+				{
+					position[]={5038.9795,84.108871,31.731445};
+					special="NONE";
+					id=27;
+					side="WEST";
+					vehicle="US_Soldier_Marksman_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="MarksmanUS2";
+				};
+				class Item14
+				{
+					position[]={5034.0356,84.124664,31.731445};
+					special="NONE";
+					id=28;
+					side="WEST";
+					vehicle="US_Soldier_AR_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="MGscopeUS";
+					description="Automatic Rifleman (scope)";
+				};
+				class Item15
+				{
+					position[]={5036.3354,84.169724,30.984863};
+					special="NONE";
+					id=48;
+					side="WEST";
+					vehicle="US_Soldier_TL_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="RifleUS5";
+				};
+				class Item16
+				{
+					position[]={5034.9434,84.156647,31.012207};
+					special="NONE";
+					id=49;
+					side="WEST";
+					vehicle="US_Soldier_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="RifleUS6";
+				};
+				class Item17
+				{
+					position[]={5037.8042,84.167885,30.992676};
+					special="NONE";
+					id=50;
+					side="WEST";
+					vehicle="US_Soldier_GL_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="GLUS3";
+				};
+				class Item18
+				{
+					position[]={5039.0117,84.151855,31.008301};
+					special="NONE";
+					id=51;
+					side="WEST";
+					vehicle="US_Soldier_Marksman_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="MarksmanUS3";
+				};
+				class Item19
+				{
+					position[]={5034.0679,84.150215,31.008301};
+					special="NONE";
+					id=52;
+					side="WEST";
+					vehicle="US_Soldier_AR_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="MGscopeUS1";
+					description="Automatic Rifleman (scope)";
+				};
+				class Item20
+				{
+					position[]={5036.3149,84.189186,30.421387};
+					special="NONE";
+					id=53;
+					side="WEST";
+					vehicle="US_Soldier_TL_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="RifleUSA";
+				};
+				class Item21
+				{
+					position[]={5034.9229,84.176208,30.44873};
+					special="NONE";
+					id=54;
+					side="WEST";
+					vehicle="US_Soldier_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="RifleUSB";
+				};
+				class Item22
+				{
+					position[]={5037.7837,84.20195,30.429199};
+					special="NONE";
+					id=55;
+					side="WEST";
+					vehicle="US_Soldier_GL_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="GLUS4";
+				};
+				class Item23
+				{
+					position[]={5038.9912,84.185921,30.444824};
+					special="NONE";
+					id=56;
+					side="WEST";
+					vehicle="US_Soldier_Marksman_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="MarksmanUS4";
+				};
+				class Item24
+				{
+					position[]={5034.0474,84.169785,30.444824};
+					special="NONE";
+					id=57;
+					side="WEST";
+					vehicle="US_Soldier_AR_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="MGUS2";
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4222.458,16.146896,4380.9277};
+					id=1;
+					side="LOGIC";
+					vehicle="LocationLogic";
+					leader=1;
+					skill=1;
+					init="hNil = [] call compile preprocessFile ""paramsinit.sqf""; hNil = [] call compile preprocessFile ""setdate.sqf"";";
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=25;
+				class Item0
+				{
+					position[]={3428.7095,50.177826,8121.4365};
+					azimut=180;
+					id=2;
+					side="EAST";
+					vehicle="TK_Commander_EP1";
+					player="PLAY CDG";
+					leader=1;
+					skill=1;
+					text="SLTK";
+				};
+				class Item1
+				{
+					position[]={3429.8237,50.163166,8121.4268};
+					azimut=180;
+					special="NONE";
+					id=31;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="RifleTK";
+				};
+				class Item2
+				{
+					position[]={3427.3979,50.195072,8121.4482};
+					azimut=180;
+					special="NONE";
+					id=32;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="GLTK";
+				};
+				class Item3
+				{
+					position[]={3426.2917,50.206985,8121.4268};
+					azimut=180;
+					special="NONE";
+					id=33;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="MarksmanTK";
+					description="Marksman";
+				};
+				class Item4
+				{
+					position[]={3431.0686,50.142368,8121.3633};
+					azimut=180;
+					special="NONE";
+					id=34;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="MGTK";
+				};
+				class Item5
+				{
+					position[]={3428.7068,49.245533,8122.522};
+					azimut=180;
+					special="NONE";
+					id=35;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="RifleTK1";
+				};
+				class Item6
+				{
+					position[]={3429.9194,49.232418,8122.5327};
+					azimut=180;
+					special="NONE";
+					id=36;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="RifleTK2";
+				};
+				class Item7
+				{
+					position[]={3427.3557,49.247925,8122.522};
+					azimut=180;
+					special="NONE";
+					id=37;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="GLTK1";
+				};
+				class Item8
+				{
+					position[]={3426.26,49.237885,8122.5327};
+					azimut=180;
+					special="NONE";
+					id=38;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="MarksmanTK1";
+					description="Marksman";
+				};
+				class Item9
+				{
+					position[]={3431.0156,49.221458,8122.5327};
+					azimut=180;
+					special="NONE";
+					id=39;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="MGTK1";
+				};
+				class Item10
+				{
+					position[]={3428.728,49.344818,8123.6812};
+					azimut=180;
+					special="NONE";
+					id=40;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="RifleTK3";
+				};
+				class Item11
+				{
+					position[]={3429.9517,49.336304,8123.7236};
+					azimut=180;
+					special="NONE";
+					id=41;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="RifleTK4";
+				};
+				class Item12
+				{
+					position[]={3427.377,49.348454,8123.7021};
+					azimut=180;
+					special="NONE";
+					id=42;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="GLTK2";
+				};
+				class Item13
+				{
+					position[]={3426.228,49.340576,8123.7446};
+					azimut=180;
+					special="NONE";
+					id=43;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="MarksmanTK2";
+					description="Marksman";
+				};
+				class Item14
+				{
+					position[]={3431.0474,49.326241,8123.7339};
+					azimut=180;
+					special="NONE";
+					id=44;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="MGScopeTK";
+					description="Automatic Rifleman (scope)";
+				};
+				class Item15
+				{
+					position[]={3428.7385,49.414715,8124.4678};
+					azimut=180;
+					special="NONE";
+					id=58;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="RifleTK5";
+				};
+				class Item16
+				{
+					position[]={3429.9622,49.406303,8124.5103};
+					azimut=180;
+					special="NONE";
+					id=59;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="RifleTK6";
+				};
+				class Item17
+				{
+					position[]={3427.3875,49.425198,8124.4888};
+					azimut=180;
+					special="NONE";
+					id=60;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="GLTK3";
+				};
+				class Item18
+				{
+					position[]={3426.2385,49.418167,8124.5313};
+					azimut=180;
+					special="NONE";
+					id=61;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="MarksmanTK3";
+					description="Marksman";
+				};
+				class Item19
+				{
+					position[]={3431.0579,49.396267,8124.5205};
+					azimut=180;
+					special="NONE";
+					id=62;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="MGScopeTK1";
+					description="Automatic Rifleman (scope)";
+				};
+				class Item20
+				{
+					position[]={3428.7068,49.486752,8125.2646};
+					azimut=180;
+					special="NONE";
+					id=63;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="RifleTKA";
+				};
+				class Item21
+				{
+					position[]={3429.9304,49.478336,8125.3071};
+					azimut=180;
+					special="NONE";
+					id=64;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="RifleTKB";
+				};
+				class Item22
+				{
+					position[]={3427.3557,49.498928,8125.2856};
+					azimut=180;
+					special="NONE";
+					id=65;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="GLTK4";
+				};
+				class Item23
+				{
+					position[]={3426.2068,49.501522,8125.3281};
+					azimut=180;
+					special="NONE";
+					id=66;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="MarksmanTK4";
+					description="Marksman";
+				};
+				class Item24
+				{
+					position[]={3431.0261,49.467442,8125.3174};
+					azimut=180;
+					special="NONE";
+					id=67;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					player="PLAY CDG";
+					skill=1;
+					text="MGTK2";
+				};
+			};
+		};
+		class Item3
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4234.8491,16.562006,4349.3867};
+					id=47;
+					side="LOGIC";
+					vehicle="ACE_Required_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=26;
+		class Item0
+		{
+			position[]={3428.5952,48.958019,8119.123};
+			azimut=180;
+			special="NONE";
+			id=3;
+			side="EMPTY";
+			vehicle="RUSpecialWeaponsBox";
+			leader=1;
+			skill=1;
+			init="hNil = [this, EAST] execVM ""populateammocrate.sqf"";";
+		};
+		class Item1
+		{
+			position[]={5036.2095,84.000008,35.63916};
+			id=4;
+			side="EMPTY";
+			vehicle="USSpecialWeaponsBox";
+			skill=1;
+			init="hNnil = [this, WEST] execVM ""populateammocrate.sqf"";";
+		};
+		class Item2
+		{
+			position[]={3436.3279,49.276817,8123.7163};
+			azimut=269.96979;
+			special="NONE";
+			id=5;
+			side="EMPTY";
+			vehicle="Base_WarfareBBarrier10xTall";
+			leader=1;
+			skill=1;
+			init="this allowDamage false;";
+		};
+		class Item3
+		{
+			position[]={3430.4373,48.742043,8116.853};
+			azimut=179.97;
+			special="NONE";
+			id=6;
+			side="EMPTY";
+			vehicle="Base_WarfareBBarrier10xTall";
+			leader=1;
+			skill=1;
+			init="this allowDamage false;";
+		};
+		class Item4
+		{
+			position[]={3422.3542,49.131634,8122.0229};
+			azimut=269.96979;
+			special="NONE";
+			id=7;
+			side="EMPTY";
+			vehicle="Base_WarfareBBarrier10xTall";
+			leader=1;
+			skill=1;
+			init="this allowDamage false;";
+		};
+		class Item5
+		{
+			position[]={3428.5818,49.875641,8129.6333};
+			azimut=179.96985;
+			special="NONE";
+			id=8;
+			side="EMPTY";
+			vehicle="Base_WarfareBBarrier10xTall";
+			leader=1;
+			skill=1;
+			init="this allowDamage false;";
+		};
+		class Item6
+		{
+			position[]={5044.1553,84.091888,33.149414};
+			azimut=269.96979;
+			special="NONE";
+			id=9;
+			side="EMPTY";
+			vehicle="Base_WarfareBBarrier10xTall";
+			leader=1;
+			skill=1;
+			init="this allowDamage false;";
+		};
+		class Item7
+		{
+			position[]={5038.2646,84.358292,26.286133};
+			azimut=179.96985;
+			special="NONE";
+			id=10;
+			side="EMPTY";
+			vehicle="Base_WarfareBBarrier10xTall";
+			leader=1;
+			skill=1;
+			init="this allowDamage false;";
+		};
+		class Item8
+		{
+			position[]={5030.1816,84.068138,31.456055};
+			azimut=269.96979;
+			special="NONE";
+			id=11;
+			side="EMPTY";
+			vehicle="Base_WarfareBBarrier10xTall";
+			leader=1;
+			skill=1;
+			init="this allowDamage false;";
+		};
+		class Item9
+		{
+			position[]={5036.4092,83.808571,39.066406};
+			azimut=179.96985;
+			special="NONE";
+			id=12;
+			side="EMPTY";
+			vehicle="Base_WarfareBBarrier10xTall";
+			leader=1;
+			skill=1;
+			init="this allowDamage false;";
+		};
+		class Item10
+		{
+			position[]={5039.3442,83.961769,35.612305};
+			id=14;
+			side="EMPTY";
+			vehicle="USSpecialWeaponsBox";
+			skill=1;
+			init="hNnil = [this, WEST] execVM ""populateammocrate.sqf"";";
+		};
+		class Item11
+		{
+			position[]={5033.1743,83.981621,35.633789};
+			id=15;
+			side="EMPTY";
+			vehicle="USSpecialWeaponsBox";
+			skill=1;
+			init="hNnil = [this, WEST] execVM ""populateammocrate.sqf"";";
+		};
+		class Item12
+		{
+			position[]={3432.0205,49.946392,8119.1807};
+			azimut=180;
+			special="NONE";
+			id=29;
+			side="EMPTY";
+			vehicle="RUSpecialWeaponsBox";
+			leader=1;
+			skill=1;
+			init="hNil = [this, EAST] execVM ""populateammocrate.sqf"";";
+		};
+		class Item13
+		{
+			position[]={3425.1863,48.942032,8119.0957};
+			azimut=180;
+			special="NONE";
+			id=30;
+			side="EMPTY";
+			vehicle="RUSpecialWeaponsBox";
+			leader=1;
+			skill=1;
+			init="hNil = [this, EAST] execVM ""populateammocrate.sqf"";";
+		};
+		class Item14
+		{
+			position[]={3428.842,49.293816,8123.1099};
+			special="NONE";
+			id=45;
+			side="EMPTY";
+			vehicle="FlagCarrierTakistan_EP1";
+			leader=1;
+			skill=1;
+			init="hNil = [this] execVM ""flagmenu.sqf"";";
+		};
+		class Item15
+		{
+			position[]={5036.5059,85.281464,32.507813};
+			special="NONE";
+			id=46;
+			side="EMPTY";
+			vehicle="FlagCarrierUSA_EP1";
+			leader=1;
+			skill=1;
+			init="hNil = [this] execVM ""flagmenu.sqf"";";
+		};
+		class Item16
+		{
+			position[]={5036.21,84.2649,28.220703};
+			id=68;
+			side="EMPTY";
+			vehicle="USSpecialWeaponsBox";
+			skill=1;
+			init="hNnil = [this, WEST] execVM ""populateammocrate.sqf"";";
+		};
+		class Item17
+		{
+			position[]={5039.3867,84.304436,28.225586};
+			id=69;
+			side="EMPTY";
+			vehicle="USSpecialWeaponsBox";
+			skill=1;
+			init="hNnil = [this, WEST] execVM ""populateammocrate.sqf"";";
+		};
+		class Item18
+		{
+			position[]={5033.3125,84.216255,28.268555};
+			id=70;
+			side="EMPTY";
+			vehicle="USSpecialWeaponsBox";
+			skill=1;
+			init="hNnil = [this, WEST] execVM ""populateammocrate.sqf"";";
+		};
+		class Item19
+		{
+			position[]={5041.0562,84.079063,32.328613};
+			azimut=270;
+			id=71;
+			side="EMPTY";
+			vehicle="USSpecialWeaponsBox";
+			skill=1;
+			init="hNnil = [this, WEST] execVM ""populateammocrate.sqf"";";
+		};
+		class Item20
+		{
+			position[]={5032.3867,85.387016,32.265625};
+			azimut=90;
+			id=72;
+			side="EMPTY";
+			vehicle="USSpecialWeaponsBox";
+			skill=1;
+			init="hNnil = [this, WEST] execVM ""populateammocrate.sqf"";";
+		};
+		class Item21
+		{
+			position[]={3424.6228,49.276794,8123.1772};
+			azimut=90;
+			special="NONE";
+			id=73;
+			side="EMPTY";
+			vehicle="RUSpecialWeaponsBox";
+			leader=1;
+			skill=1;
+			init="hNil = [this, EAST] execVM ""populateammocrate.sqf"";";
+		};
+		class Item22
+		{
+			position[]={3433.1445,49.288757,8123.5176};
+			azimut=270;
+			special="NONE";
+			id=74;
+			side="EMPTY";
+			vehicle="RUSpecialWeaponsBox";
+			leader=1;
+			skill=1;
+			init="hNil = [this, EAST] execVM ""populateammocrate.sqf"";";
+		};
+		class Item23
+		{
+			position[]={3428.8369,49.623745,8126.8013};
+			azimut=180;
+			special="NONE";
+			id=75;
+			side="EMPTY";
+			vehicle="RUSpecialWeaponsBox";
+			leader=1;
+			skill=1;
+			init="hNil = [this, EAST] execVM ""populateammocrate.sqf"";";
+		};
+		class Item24
+		{
+			position[]={3432.262,49.586037,8126.8418};
+			azimut=180;
+			special="NONE";
+			id=76;
+			side="EMPTY";
+			vehicle="RUSpecialWeaponsBox";
+			leader=1;
+			skill=1;
+			init="hNil = [this, EAST] execVM ""populateammocrate.sqf"";";
+		};
+		class Item25
+		{
+			position[]={3425.428,49.642513,8126.7739};
+			azimut=180;
+			special="NONE";
+			id=77;
+			side="EMPTY";
+			vehicle="RUSpecialWeaponsBox";
+			leader=1;
+			skill=1;
+			init="hNil = [this, EAST] execVM ""populateammocrate.sqf"";";
+		};
+	};
+	class Markers
+	{
+		items=4;
+		class Item0
+		{
+			position[]={3761.6494,19.711061,3936.5884};
+			name="mrkSWcorner";
+			type="Empty";
+		};
+		class Item1
+		{
+			position[]={3429.7783,49.244041,8122.6494};
+			name="respawn_east";
+			type="Empty";
+			angle=179.96985;
+		};
+		class Item2
+		{
+			position[]={5037.1289,85.263626,32.683594};
+			name="respawn_west";
+			type="Empty";
+		};
+		class Item3
+		{
+			position[]={4482.4941,17.072079,4338.8545};
+			name="mrkNEcorner";
+			type="Empty";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"zargabad"
+	};
+	addOnsAuto[]=
+	{
+		"zargabad"
+	};
+	randomSeed=7018655;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0;
+		year=2009;
+		day=29;
+		hour=11;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"zargabad"
+	};
+	addOnsAuto[]=
+	{
+		"zargabad"
+	};
+	randomSeed=6354003;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0;
+		year=2009;
+		day=29;
+		hour=11;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"zargabad"
+	};
+	addOnsAuto[]=
+	{
+		"zargabad"
+	};
+	randomSeed=13244167;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0;
+		year=2009;
+		day=29;
+		hour=11;
+	};
+};

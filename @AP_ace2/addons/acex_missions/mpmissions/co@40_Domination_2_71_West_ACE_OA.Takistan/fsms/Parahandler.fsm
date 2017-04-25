@@ -1,0 +1,151 @@
+class FSM
+{
+  fsmName = "Parahandler";
+  class States
+  {
+    class START
+    {
+      name = "START";
+      init = "private [""_timenow"",""_dummy"",""_current_target_pos""];" \n
+       "" \n
+       "_dummy = d_target_names select (X_JIPH getVariable ""d_current_target_index"");" \n
+       "_current_target_pos = _dummy select 0;" \n
+       "" \n
+       "_timenow = time + 33;";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class Loop
+    {
+      name = "Loop";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class mt_radio_down
+        {
+          priority = 1.000000;
+          to="End";
+          precondition = "";
+          condition="(X_JIPH getVariable ""d_mt_radio_down"")";
+          action="";
+        };
+        class not_mt_radio_dow
+        {
+          priority = 0.000000;
+          to="React";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class React
+    {
+      name = "React";
+      init = "_timenow = time + 10;" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class New_Paras
+        {
+          priority = 1.000000;
+          to="Create";
+          precondition = "";
+          condition="d_create_new_paras";
+          action="";
+        };
+        class Delay_10
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class End
+    {
+      name = "End";
+      init = "";
+      precondition = "";
+      class Links
+      {
+      };
+    };
+    class Create
+    {
+      name = "Create";
+      init = "private [""_start_pos"",""_end_pos"",""_num_p"",""_attack_pos"",""_vecs""];" \n
+       "_attack_pos = [_current_target_pos,200] call d_fnc_GetRanPointCircleOld;" \n
+       "if !(""TT"" in d_version) then {" \n
+       "	_start_pos = call d_fnc_GetRanPointOuterAir;" \n
+       "	while {_start_pos distance D_FLAG_BASE < 1000 || _attack_pos distance _start_pos < 1000} do {" \n
+       "		_start_pos = call d_fnc_GetRanPointOuterAir;" \n
+       "	};" \n
+       "	_end_pos = call d_fnc_GetRanPointOuterAir;" \n
+       "	while {_end_pos distance D_FLAG_BASE < 1000 || _attack_pos distance _end_pos < 1000} do {" \n
+       "		_end_pos = call d_fnc_GetRanPointOuterAir;" \n
+       "	};" \n
+       "} else {" \n
+       "	_start_pos = call d_fnc_GetRanPointOuterAir;" \n
+       "	while {_start_pos distance D_WFLAG_BASE < 1000 || _start_pos distance D_EFLAG_BASE < 1000 || _attack_pos distance _start_pos < 1000} do {" \n
+       "		_start_pos = call d_fnc_GetRanPointOuterAir;" \n
+       "	};" \n
+       "	_end_pos = call d_fnc_GetRanPointOuterAir;" \n
+       "	while {_start_pos distance D_WFLAG_BASE < 1000 || _start_pos distance D_EFLAG_BASE < 1000 || _attack_pos distance _end_pos < 1000} do {" \n
+       "		_end_pos = call d_fnc_GetRanPointOuterAir;" \n
+       "	};" \n
+       "};" \n
+       "_vecs = 1;" \n
+       "if !(""ACE"" in d_version) then {" \n
+       "	_num_p = call d_fnc_PlayersNumber;" \n
+       "	if (_num_p < 21) then {" \n
+       "		_vecs = 2;" \n
+       "	} else {" \n
+       "		_vecs = 3;" \n
+       "	};" \n
+       "};" \n
+       "d_create_new_paras = false;" \n
+       "[_start_pos,_attack_pos,_end_pos,_vecs] spawn d_fnc_createpara3x;" \n
+       "_timenow = time + 10;";
+      precondition = "";
+      class Links
+      {
+        class mt_radio_down
+        {
+          priority = 1.000000;
+          to="End";
+          precondition = "";
+          condition="(X_JIPH getVariable ""d_mt_radio_down"")";
+          action="";
+        };
+        class Delay_10
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+  };
+  initState="START";
+  finalStates[] =
+  {
+    "End",
+  };
+};

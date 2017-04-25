@@ -1,0 +1,206 @@
+class FSM
+{
+  fsmName = "LimitWeaponsRanked";
+  class States
+  {
+    class Start
+    {
+      name = "Start";
+      init = "private [""_primw"",""_secw"",""_oldprim"",""_timenow""];" \n
+       "_primw =toUpper( primaryWeapon player);" \n
+       "_secw = secondaryWeapon player;" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class Loop
+    {
+      name = "Loop";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class not_alive_player
+        {
+          priority = 1.000000;
+          to="Dummy";
+          precondition = "";
+          condition="!alive player";
+          action="";
+        };
+        class Secondary
+        {
+          priority = 0.000000;
+          to="Check_1";
+          precondition = "";
+          condition="(_secw != secondaryWeapon player)";
+          action="";
+        };
+        class Primary
+        {
+          priority = 0.000000;
+          to="Check";
+          precondition = "";
+          condition="(_primw != primaryWeapon player)";
+          action="";
+        };
+      };
+    };
+    class Check
+    {
+      name = "Check";
+      init = "_rank = toUpper(rank player);" \n
+       "" \n
+       "_posweaps = d_misc_store getVariable _rank;" \n
+       "" \n
+       "_toupprim = toUpper(primaryWeapon player);" \n
+       "" \n
+       "if (_toupprim in _posweaps) then {" \n
+       "	_primw = _toupprim;" \n
+       "} else {" \n
+       "	if (_toupprim == """" || _toupprim == "" "") then {" \n
+       "		_primw = _toupprim;" \n
+       "	} else {" \n
+       "		if (_toupprim != """" && _toupprim != "" "") then {" \n
+       "			_s = format [localize ""STR_DOM_MISSIONSTRING_1423"", [_toupprim,1 ] call d_fnc_GetDisplayName];" \n
+       "			_s call d_fnc_GlobalChat;" \n
+       "			hint _s;" \n
+       "			(localize ""STR_DOM_MISSIONSTRING_1422"") call d_fnc_GlobalChat;" \n
+       "		};" \n
+       "		_tmpp = primaryWeapon player;" \n
+       "		player removeWeapon _tmpp;" \n
+       "		if (_primw != """" && _primw != "" "") then {" \n
+       "			if !(player hasWeapon _primw) then {" \n
+       "				player addWeapon _primw;" \n
+       "				player selectWeapon _primw;" \n
+       "				_muzzles = getArray(configFile >> ""cfgWeapons"" >> _primw >> ""muzzles"");" \n
+       "				player selectWeapon (_muzzles select 0);" \n
+       "			};" \n
+       "		};" \n
+       "	};" \n
+       "};" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class Check_1
+    {
+      name = "Check_1";
+      init = "_toupprim = toUpper(secondaryWeapon player);" \n
+       "" \n
+       "if (_toupprim isKindOf ""ItemCore"" || _toupprim isKindOf ""Bag_Base_EP1"") exitWith {" \n
+       "	_secw = _toupprim;" \n
+       "};" \n
+       "" \n
+       "if (getNumber (configFile >> ""CfgWeapons"" >> _toupprim >> ""ACE_is_radio"") == 1) exitWith {" \n
+       "	_secw = _toupprim;" \n
+       "};" \n
+       "" \n
+       "if (getNumber (configFile >> ""CfgWeapons"" >> _toupprim >> ""ACE_PackSize"") > 0) exitWith {" \n
+       "	_secw = _toupprim;" \n
+       "};" \n
+       "" \n
+       "if (getNumber (configFile >> ""CfgWeapons"" >> _toupprim >> ""defaultFrequency"") > 0) exitWith {" \n
+       "	_secw = _toupprim;" \n
+       "};" \n
+       "" \n
+       "_rank = toUpper(rank player);" \n
+       "_posweaps = d_misc_store getVariable _rank;" \n
+       "" \n
+       "if (_toupprim in _posweaps) then {" \n
+       "	_secw = _toupprim;" \n
+       "} else {" \n
+       "	if (_toupprim == """" || _toupprim == "" "") then {" \n
+       "		_secw = _toupprim;" \n
+       "	} else {" \n
+       "		if (_toupprim != """" && _toupprim != "" "") then {" \n
+       "			_s = format [localize ""STR_DOM_MISSIONSTRING_1423"", [_toupprim,1 ] call d_fnc_GetDisplayName];" \n
+       "			_s call d_fnc_GlobalChat;" \n
+       "			hint _s;" \n
+       "		};" \n
+       "		_tmpp = secondaryWeapon player;" \n
+       "		player removeWeapon _tmpp;" \n
+       "		if (_secw != """" && _secw != "" "") then {" \n
+       "			if !(player hasWeapon _secw) then {" \n
+       "				player addWeapon _secw;" \n
+       "				//player selectWeapon _secw;" \n
+       "				//_muzzles = getArray(configFile >> ""cfgWeapons"" >> _secw >> ""muzzles"");" \n
+       "				//ülayer selectWeapon (_muzzles select 0);" \n
+       "			};" \n
+       "		};" \n
+       "	};" \n
+       "};" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class Sleep
+    {
+      name = "Sleep";
+      init = "_timenow = time + 2;";
+      precondition = "";
+      class Links
+      {
+        class Delay_2
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="time >= _timenow";
+          action="";
+        };
+      };
+    };
+    class Dummy
+    {
+      name = "Dummy";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class alive_player
+        {
+          priority = 0.000000;
+          to="Sleep";
+          precondition = "";
+          condition="alive player";
+          action="";
+        };
+      };
+    };
+  };
+  initState="Start";
+  finalStates[] =
+  {
+  };
+};

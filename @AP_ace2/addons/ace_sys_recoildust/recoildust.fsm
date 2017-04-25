@@ -1,0 +1,226 @@
+class FSM
+{
+  fsmName = "recoildust";
+  class States
+  {
+    class ace_sys_recoildu
+    {
+      name = "ace_sys_recoildu";
+      init = "// ace_sys_recoildust" \n
+       "private[""_ii"",""_unit"",""_ammo"",""_ammoStrength"",""_data""];" \n
+       "" \n
+       "_unit = _this select 0;" \n
+       "_ammo = _this select 1;" \n
+       "_ammoStrength = _this select 2;" \n
+       "" \n
+       "_ii = 0;";
+      precondition = "";
+      class Links
+      {
+        class shotbullet
+        {
+          priority = 2.000000;
+          to="__1";
+          precondition = "";
+          condition="((getText (configFile >> ""CfgAmmo"" >> _ammo >> ""simulation"")) == ""shotBullet"")";
+          action="";
+        };
+        class shotmissile_shot
+        {
+          priority = 1.000000;
+          to="_";
+          precondition = "";
+          condition="((getText (configFile >> ""CfgAmmo"" >> _ammo >> ""simulation"")) == ""shotMissile"" || {(getText (configFile >> ""CfgAmmo"" >> _ammo >> ""simulation"")) == ""shotRocket""})";
+          action="";
+        };
+        class invalid
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = "";
+          condition="true";
+          action="";
+        };
+      };
+    };
+    class _
+    {
+      name = "_";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class __500
+        {
+          priority = 2.000000;
+          to="__2";
+          precondition = "";
+          condition="_ammoStrength < 500";
+          action="";
+        };
+        class __1000
+        {
+          priority = 1.000000;
+          to="__3";
+          precondition = "";
+          condition="_ammoStrength < 1000";
+          action="";
+        };
+        class else
+        {
+          priority = 0.000000;
+          to="__4";
+          precondition = "";
+          condition="true";
+          action="";
+        };
+      };
+    };
+    class __1
+    {
+      name = "__1";
+      init = "_data = [_unit modelToWorld [0,1.5,0], 1.0, [1,1.5,1], 0.3, [6,4]];" \n
+       "" \n
+       "_i = (12 + floor(random 5));" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="__5";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class __2
+    {
+      name = "__2";
+      init = "_data = [_unit modelToWorld [0,-2,0], 2, [2,4,3], 0.2, [14,8]];" \n
+       "" \n
+       "_i = (25 + floor(random 10));" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="__5";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class __3
+    {
+      name = "__3";
+      init = "_data = [_unit modelToWorld [0,-2,0], 2.2, [2,4,3], 0.25, [14,8]];" \n
+       "" \n
+       "_i = (37 + floor(random 15));" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="__5";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class __4
+    {
+      name = "__4";
+      init = "_data = [_unit modelToWorld [0,-2,0], 2.4, [2,4,3], 0.45, [20,5]];" \n
+       "" \n
+       "_i = (85 + floor(random 25));" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="__5";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class End
+    {
+      name = "End";
+      init = "";
+      precondition = "";
+      class Links
+      {
+      };
+    };
+    class FX
+    {
+      name = "FX";
+      init = "_ii = _ii + 1;" \n
+       "" \n
+       "_posit = _data select 0;" \n
+       "_radius = _data select 1;" \n
+       "_size = _data select 2;" \n
+       "_opacity = _data select 3;" \n
+       "_lifetime = _data select 4;" \n
+       "" \n
+       "_pos = ([(_posit select 0) + (random (_radius * 2)) - _radius, (_posit select 1) + (random (_radius * 2)) - _radius,(_posit select 2) + (random 0.4)]);" \n
+       "drop [""\Ca\Data\cl_basic.p3d"","""",""Billboard"",30,(_lifetime select 0) + (random (_lifetime select 1)),_pos,[0,0,0.2+(random 0.4)],0,2,1.55+(random 0.017),0.01,[(_size select 0),(random (_size select 2))+(_size select 1)],[[0.18,0.2,0.3,0],[0.18,0.2,0.15,_opacity],[0.18,0.2,0.15,_opacity],[0.18,0.2,0.15,_opacity*0.9],[0.18,0.2,0.15,_opacity*0.75],[0.18,0.2,0.15,_opacity*0.5],[0.18,0.2,0.15,0]],[0],0,0,"""","""",""""];" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="__5";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class __5
+    {
+      name = "__5";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 1.000000;
+          to="FX";
+          precondition = "";
+          condition="(_ii < _i)";
+          action="";
+        };
+        class __1
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = "";
+          condition="true";
+          action="";
+        };
+      };
+    };
+  };
+  initState="ace_sys_recoildu";
+  finalStates[] =
+  {
+    "End",
+  };
+};

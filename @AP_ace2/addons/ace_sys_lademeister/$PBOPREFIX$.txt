@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_lademeister
+Pbo Type is: Arma Addon
+Sha: '45E252F64DDF5C62B146DDCBE4E8BE1605A995F3'
+//////</HEADER>//////

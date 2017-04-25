@@ -1,0 +1,154 @@
+class FSM
+{
+  fsmName = "RepStation";
+  class States
+  {
+    class Start
+    {
+      name = "Start";
+      init = "private [""_vec"", ""_nobs"",""_timenow""];" \n
+       "_timenow = time + 11;";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class Loop
+    {
+      name = "Loop";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class vehicle_player_
+        {
+          priority = 0.000000;
+          to="Vehicle_player";
+          precondition = "";
+          condition="vehicle player != player";
+          action="";
+        };
+      };
+    };
+    class Vehicle_player
+    {
+      name = "Vehicle_player";
+      init = "_vec = vehicle player;";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="Check";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class Check
+    {
+      name = "Check";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class vehicle_player_
+        {
+          priority = 1.000000;
+          to="_";
+          precondition = "";
+          condition="vehicle player == player || !alive player || !alive _vec";
+          action="";
+        };
+        class player____driver
+        {
+          priority = 0.000000;
+          to="Check_for_Repair";
+          precondition = "";
+          condition="player == driver _vec";
+          action="";
+        };
+      };
+    };
+    class _
+    {
+      name = "_";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class __alive_player
+        {
+          priority = 1.000000;
+          to="__1";
+          precondition = "";
+          condition="!alive player";
+          action="";
+        };
+        class _
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class Check_for_Repair
+    {
+      name = "Check_for_Repair";
+      init = "_nobs = nearestObjects [position _vec, [""Land_repair_center"", ""Land_Mil_Repair_center_EP1""], 15];" \n
+       "if (count _nobs > 0) then {" \n
+       "	if (damage _vec > 0.01) then {" \n
+       "		_vec setDamage 0;" \n
+       "		_vec vehicleChat ""Your vehicle got repaired at a repair station!!!""" \n
+       "	};" \n
+       "};" \n
+       "_timenow = time + 3;";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="Check";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class __1
+    {
+      name = "__1";
+      init = "_timenow = time + 3;";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+  };
+  initState="Start";
+  finalStates[] =
+  {
+  };
+};

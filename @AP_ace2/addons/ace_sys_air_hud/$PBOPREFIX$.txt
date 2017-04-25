@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_air_hud
+Pbo Type is: Arma Addon
+Sha: 'DCEB0AFCCABFB969BEBCF58B78DC2E20CB5F3686'
+//////</HEADER>//////

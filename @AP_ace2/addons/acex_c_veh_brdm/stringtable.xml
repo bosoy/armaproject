@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ArmA2_ACE2">
+<Package name="c_veh_brdm">
+<Container name="STR_ACE">
+<Key ID="STR_ACE_VDN_ACE_BRDM2_SA9_BASE">
+<English>BRDM-2 (9K31M)</English>
+<German>BRDM-2 (9K31M)</German>
+<Russian>БРДМ-2 (9К31М)</Russian>
+<Polish>BRDM-2 (9K31M)</Polish>
+<Spanish>BRDM-2 (9K31M)</Spanish>
+<French>BRDM-2 (9K31M)</French>
+<Czech>BRDM-2 (9K31M)</Czech>
+<Italian>BRDM-2 (9K31M)</Italian>
+<Hungarian>BRDM-2 (9K31M)</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

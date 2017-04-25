@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_vehicle
+Pbo Type is: Arma Addon
+Sha: 'C9B449FEEC084FFCC2A0C4DD4B5556A6DFAD862A'
+//////</HEADER>//////

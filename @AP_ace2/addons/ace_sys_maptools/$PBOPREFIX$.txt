@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_maptools
+Pbo Type is: Arma Addon
+Sha: 'D4D9A1C07DBAE1927E23BD3AF39145C9018A8EE3'
+//////</HEADER>//////

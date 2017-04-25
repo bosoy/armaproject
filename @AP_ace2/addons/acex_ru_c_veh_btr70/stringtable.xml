@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACEX">
+<Package name="c_veh_btr70">
+<Container name="STR_ACE_GDN">
+<Key ID="STR_ACE_GDN_RU_MECHINFSQUAD_2">
+<German>Schützenpanzer (BTR-90)</German>
+<English>Motor Rifles (BTR-90)</English>
+<Italian>Fucilieri motorizzati (BTR-90)</Italian>
+<Spanish>Rifles motorizados (BTR-90)</Spanish>
+<French>Fusiliers motorisés (BTR-90)</French>
+<Czech>Motorizovaní střelci (BTR-90)</Czech>
+<Russian>Мотострелковое отделение на БТР-90</Russian>
+<Polish>Strzelcy zmotoryzowani (BTR-90)</Polish>
+<Hungarian>Motorizált lövészek (BTR-90)</Hungarian>
+</Key>
+<Key ID="STR_ACE_GDN_ACE_RU_MECHANIZED_SQUAD_BTR70">
+<German>Schützenpanzer (BTR-70)</German>
+<English>Motor Rifles (BTR-70)</English>
+<Italian>Fucilieri motorizzati (BTR-70)</Italian>
+<Spanish>Rifles motorizados (BTR-70)</Spanish>
+<French>Fusiliers motorisés (BTR-70)</French>
+<Czech>Motorizovaní střelci (BTR-70)</Czech>
+<Russian>Мотострелковое отделение на БТР-70</Russian>
+<Polish>Strzelcy zmotoryzowani (BTR-70)</Polish>
+<Hungarian>Motorizált lövészek (BTR-70)</Hungarian>
+</Key>
+<Key ID="STR_ACE_GDN_ACE_CDF_MECHANIZED_SQUAD_BTR70">
+<German>BTR-70 Patrouille</German>
+<English>Mechanized Rifle Squad (BTR-70)</English>
+<Italian>Squadra di fucilieri motorizzata (BTR-70)</Italian>
+<Spanish>Pelotón mecanizado de rifles (BTR-70)</Spanish>
+<French>Groupe fusiliers méca. (BTR-70)</French>
+<Czech>Mechanizovaný střelecký oddíl (BTR-70)</Czech>
+<Russian>Мотострелковое отделение на БТР-70</Russian>
+<Polish>Zmechanizowana drużyna strzelców (BTR-70)</Polish>
+<Hungarian>Gépesített lövész raj (BTR-70)</Hungarian>
+</Key>
+<Key ID="STR_ACE_GDN_ACE_INS_MECHANIZED_SQUAD_BTR70">
+<German>Mechanisierte Gruppe (BTR-70)</German>
+<English>Mechanized Group (BTR-70)</English>
+<Italian>Gruppo meccanizzato (BTR-70)</Italian>
+<Spanish>Grupo mecanizado (BTR-70)</Spanish>
+<French>Groupement mécanisé (BTR-70)</French>
+<Czech>Mechanizovaná skupina (BTR-70)</Czech>
+<Russian>Мотострелковое отделение (БТР-70)</Russian>
+<Polish>Grupa zmechanizowana (BTR-70)</Polish>
+<Hungarian>Gépesített csoport (BTR-70)</Hungarian>
+</Key>
+<Key ID="STR_ACE_GDN_ACE_GUE_MECHANIZED_SQUAD_BTR70">
+<German>Mechanisierte Gruppe (BTR-70)</German>
+<English>Mechanized Group (BTR-70)</English>
+<Italian>Gruppo meccanizzato (BTR-70)</Italian>
+<Spanish>Grupo mecanizado (BTR-70)</Spanish>
+<French>Groupement mécanisé (BTR-70)</French>
+<Czech>Mechanizovaná skupina (BTR-70)</Czech>
+<Russian>Мотострелковое отделение (БТР-70)</Russian>
+<Polish>Grupa zmechanizowana (BTR-70)</Polish>
+<Hungarian>Gépesített csoport (BTR-70)</Hungarian>
+</Key>
+</Container>
+</Package></Project>

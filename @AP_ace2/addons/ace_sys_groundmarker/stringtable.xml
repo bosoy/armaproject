@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="ACE2">
+<Container name="STR_DN">
+<Key ID="STR_DN_ACE_VSPANEL_FAKE">
+<English>  </English>
+<German>  </German>
+<Spanish>  </Spanish>
+<Czech>  </Czech>
+<Russian>  </Russian>
+<Italian> </Italian>
+<Polish>  </Polish>
+<French>  </French>
+<Hungarian>  </Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_VS17PANEL">
+<English>VS-17 marker panel</English>
+<German>VS-17 Marker</German>
+<Spanish>VS-17 marker panel</Spanish>
+<Czech>VS-17 značkovací panel</Czech>
+<Russian>Маркер VS-17</Russian>
+<Italian>VS-17 marker panel</Italian>
+<Polish>Panel VS-17</Polish>
+<French>Panneau VS-17</French>
+<Hungarian>VS-17 marker panel</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_VS21PANEL">
+<English>VS-21 marker panel</English>
+<German>VS-21 Marker</German>
+<Spanish>VS-21 marker panel</Spanish>
+<Czech>VS-21 značkovací panel</Czech>
+<Russian>Маркер VS-21</Russian>
+<Italian>VS-21 marker panel</Italian>
+<Polish>Panel VS-21</Polish>
+<French>Panneau VS-21</French>
+<Hungarian>VS-21 marker panel</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_PLACEPANEL">
+<English>Place %1 %2</English>
+<German>%1 %2 ablegen</German>
+<Spanish>Place %1 %2</Spanish>
+<Czech>Položit %1 %2</Czech>
+<Russian>Положить %1 %2</Russian>
+<Italian>Place %1 %2</Italian>
+<Polish>Place %1 %2</Polish>
+<French>Place %1 %2</French>
+<Hungarian>Place %1 %2</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_PICKUPPANEL">
+<English>Pick up %1</English>
+<German>%1 nehmen</German>
+<Spanish>Pick up %1</Spanish>
+<Czech>Sebrat %1</Czech>
+<Russian>Поднять %1</Russian>
+<Italian>Pick up %1</Italian>
+<Polish>Pick up %1</Polish>
+<French>Pick up %1</French>
+<Hungarian>Pick up %1</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_FLIPPANEL">
+<English>Flip %1</English>
+<German>%1 umdrehen</German>
+<Spanish>Flip %1</Spanish>
+<Czech>Obrátit %1</Czech>
+<Russian>Перевернуть %1</Russian>
+<Italian>Flip %1</Italian>
+<Polish>Flip %1</Polish>
+<French>Flip %1</French>
+<Hungarian>Flip %1</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_DOWNPANEL">
+<English>Down %1</English>
+<German>%1 hinlegen</German>
+<Spanish>Down %1</Spanish>
+<Czech>Snížit %1</Czech>
+<Russian>Опустить %1</Russian>
+<Italian>Down %1</Italian>
+<Polish>Down %1</Polish>
+<French>Down %1</French>
+<Hungarian>Down %1</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_UPPANEL">
+<English>Upright %1</English>
+<German>%1 aufstellen</German>
+<Spanish>Upright %1</Spanish>
+<Czech>Zvýšit %1</Czech>
+<Russian>Поднять %1</Russian>
+<Italian>Upright %1</Italian>
+<Polish>Upright %1</Polish>
+<French>Upright %1</French>
+<Hungarian>Upright %1</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_PANELBACK">
+<English>Change %1's camo</English>
+<German>Tarnmuster wechseln</German>
+<Spanish>Change %1's camo</Spanish>
+<Czech>Změnit %1' maskování</Czech>
+<Russian>Изменить камуфляж %1</Russian>
+<Italian>Change %1's camo</Italian>
+<Polish>Change %1's camo</Polish>
+<French>Change %1's camo</French>
+<Hungarian>Change %1's camo</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_PANELCHEMLIGHT">
+<English>Attach chemlight</English>
+<German>Knicklicht anbringen</German>
+<Spanish>Attach chemlight</Spanish>
+<Czech>Připevnit chem. světlo</Czech>
+<Russian>Прикрепить световую трубку</Russian>
+<Italian>Attach chemlight</Italian>
+<Polish>Attach chemlight</Polish>
+<French>Attach chemlight</French>
+<Hungarian>Attach chemlight</Hungarian>
+</Key>
+</Container>
+</Package></Project>

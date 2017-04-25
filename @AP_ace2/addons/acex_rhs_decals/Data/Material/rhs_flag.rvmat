@@ -1,0 +1,41 @@
+////////////////////////////////////////////////////////////////////
+//Produced from mikero's Dos Tools using dll 3.22
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class rhs_decals : Data\Material\rhs_flag.rvmat{
+ambient[] = {0.4,0.4,0.4,1};
+diffuse[] = {0.4,0.4,0.4,1};
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {0,0,0,1};
+specular[] = {1,1,1,1};
+specularPower = 10.0;
+PixelShaderID = "NormalMapSpecularMap";
+VertexShaderID = "NormalMap";
+class Stage1
+{
+ texture = "RHS_Decals\Data\Material\RHS_Flag_nohq.paa";
+ uvSource = "tex";
+ class uvTransform
+ {
+  aside[] = {1,0,0};
+  up[] = {0,1,0};
+  dir[] = {0,0,0};
+  pos[] = {0,0,0};
+ };
+};
+class Stage2
+{
+ texture = "RHS_Decals\Data\Material\RHS_Flag_sm.paa";
+ uvSource = "tex";
+ class uvTransform
+ {
+  aside[] = {1,0,0};
+  up[] = {0,1,0};
+  dir[] = {0,0,0};
+  pos[] = {0,0,0};
+ };
+};
+//};

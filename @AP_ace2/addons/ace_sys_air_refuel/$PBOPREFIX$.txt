@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_air_refuel
+Pbo Type is: Arma Addon
+Sha: '21F0FD234643A28BFE7C8AD8C135E35698D73D00'
+//////</HEADER>//////

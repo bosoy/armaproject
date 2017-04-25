@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_easa
+Pbo Type is: Arma Addon
+Sha: '9C56F15D419B138374593ED89B8A992CF9C1D3B3'
+//////</HEADER>//////

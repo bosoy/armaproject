@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_sight_adjustment_gl
+Pbo Type is: Arma Addon
+Sha: '64D128C507FE72BD426D9BE2652308E8FF7C7332'
+//////</HEADER>//////

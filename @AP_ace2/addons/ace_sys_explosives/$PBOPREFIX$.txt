@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_explosives
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: '27AF3B39B4BB39D0EFF64D8655251ABC139BFAF3'
+//////</HEADER>//////

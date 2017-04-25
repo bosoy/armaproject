@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="ArmA2_ACE2">
+<Package name="sys_vehicle">
+<Container name="STR_ACE">
+<Key ID="STR_ACE_ODOMETER">
+<English>Odometer</English>
+<Czech>Odometr</Czech>
+<German>Kilometerzähler</German>
+<Polish>Drogomierz</Polish>
+<Russian>Одометр</Russian>
+<French>Odometer</French>
+<Spanish>Odómetro</Spanish>
+<Italian>Odometro</Italian>
+<Hungarian>Úthosszmérő</Hungarian>
+</Key>
+<Key ID="STR_ACE_RUNNING">
+<English>running</English>
+<Czech>Aktivní</Czech>
+<German>läuft</German>
+<Polish>aktywny</Polish>
+<Russian>работает</Russian>
+<French>running</French>
+<Spanish>running</Spanish>
+<Italian>running</Italian>
+<Hungarian>running</Hungarian>
+</Key>
+<Key ID="STR_ACE_STOPPED">
+<English>stopped</English>
+<Czech>Zastaven</Czech>
+<German>gestoppt</German>
+<Polish>zatrzymany</Polish>
+<Russian>остановлен</Russian>
+<French>stopped</French>
+<Spanish>stopped</Spanish>
+<Italian>stopped</Italian>
+<Hungarian>stopped</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

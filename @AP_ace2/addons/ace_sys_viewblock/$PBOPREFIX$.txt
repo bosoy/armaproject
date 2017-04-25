@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_viewblock
+Pbo Type is: Arma Addon
+Sha: '537DC680B67AA901B999836205BDB577406F9CEF'
+//////</HEADER>//////

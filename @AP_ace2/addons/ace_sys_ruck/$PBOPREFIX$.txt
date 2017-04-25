@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_ruck
+Pbo Type is: Arma Addon
+Sha: 'FF6B7987605F2AB3007BB07A6E7AD118257977AE'
+//////</HEADER>//////

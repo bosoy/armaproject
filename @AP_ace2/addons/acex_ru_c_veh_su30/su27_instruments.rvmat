@@ -1,0 +1,19 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 5.24
+//Produced on Mon Aug 11 06:51:17 2014 : Created on Mon Aug 11 06:51:17 2014
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class acex_ru_c_veh_su30 : su27_instruments.rvmat{
+ambient[] = {0.1,0.1,0.1,1.0};
+diffuse[] = {0.0,0.0,0.0,1.0};
+forcedDiffuse[] = {0.1,0.1,0.1,0.0};
+emmisive[] = {0.682353,0.066667,0.0,1.0};
+specular[] = {0.0,0.0,0.0,0.0};
+specularPower = 0.0;
+nextPass = "ca\data\data\flash-pass2.rvmat";
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";
+//};

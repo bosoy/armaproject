@@ -1,0 +1,379 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+    "cba_main",
+    "ace_main",
+    "ace_c_vehicle",
+    "ace_c_weapon",
+		"ace_sys_easa",
+		"cacharacters2",
+		"CAAir2_F35B",
+		"CAAir",
+		"ca_air2_su25",
+		"CAA10",
+		"utes",
+		"CAWheeled2_TowingTractor"
+	};
+	addOnsAuto[]=
+	{
+    "cba_main",
+    "ace_main",
+    "ace_c_vehicle",
+    "ace_c_weapon",
+		"ace_sys_easa",
+		"cacharacters2",
+		"CAAir2_F35B",
+		"CAAir",
+		"ca_air2_su25",
+		"CAA10",
+		"CAWheeled2_TowingTractor",
+		"utes"
+	};
+	randomSeed=14189686;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+	class Groups
+	{
+		items=8;
+		class Item0
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3429.8228,19.08073,3696.0552};
+					id=0;
+					side="LOGIC";
+					vehicle="ACE_EASA";
+					leader=1;
+					skill=0.60000002;
+					text="sides";
+					init="this setVariable[""SIDE"", -1]";
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3750.8938,19.060549,3505.3884};
+					id=1;
+					side="LOGIC";
+					vehicle="ACE_EASA";
+					leader=1;
+					skill=0.60000002;
+					text="nukes";
+					init="this setVariable[""NUKES"", 1]";
+				};
+			};
+		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3540.8208,18.934658,3553.4666};
+					id=2;
+					side="LOGIC";
+					vehicle="ACE_EASA";
+					leader=1;
+					skill=0.60000002;
+					text="farp";
+					init="this setVariable[""FARP"", true]";
+				};
+			};
+		};
+		class Item3
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1379.6082,15.885099,933.57971};
+					id=3;
+					side="LOGIC";
+					vehicle="ACE_EASA";
+					leader=1;
+					skill=0.60000002;
+					text="lhd";
+					init="this setVariable[""LHD"", true, true]";
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3432.9382,19.08073,3675.3843};
+					id=4;
+					side="WEST";
+					vehicle="US_Soldier_Pilot_EP1";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					description="Hangar, All sides enabled";
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3538.9263,18.945469,3565.4526};
+					azimut=180;
+					id=10;
+					side="WEST";
+					vehicle="US_Soldier_Pilot_EP1";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					description="FARP";
+				};
+			};
+		};
+		class Item6
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3760.7178,19.060549,3523.7861};
+					azimut=180;
+					id=11;
+					side="WEST";
+					vehicle="US_Soldier_Pilot_EP1";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					description="Hangar, Nukes";
+				};
+			};
+		};
+		class Item7
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1373.4496,15.885099,921.75781};
+					azimut=100;
+					id=12;
+					side="WEST";
+					vehicle="US_Soldier_Pilot_EP1";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="p4";
+					description="LHD";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=8;
+		class Item0
+		{
+			position[]={1390.1166,15.885052,919.61145};
+			azimut=360.103;
+			id=5;
+			side="EMPTY";
+			vehicle="F35B";
+			skill=0.60000002;
+			init="this setPosASL [getPosASL this select 0, getPosASL this select 1, getPosASL p4 select 2]";
+		};
+		class Item1
+		{
+			position[]={3555.853,18.994921,3553.6392};
+			id=6;
+			side="EMPTY";
+			vehicle="AV8B2";
+			skill=0.60000002;
+		};
+		class Item2
+		{
+			position[]={3526.6357,18.930374,3553.0378};
+			id=7;
+			side="EMPTY";
+			vehicle="Su39";
+			skill=0.60000002;
+		};
+		class Item3
+		{
+			position[]={3435.6938,19.08073,3684.5745};
+			azimut=154.54988;
+			id=8;
+			side="EMPTY";
+			vehicle="A10";
+			skill=0.60000002;
+		};
+		class Item4
+		{
+			position[]={3762.0059,19.060549,3516.1045};
+			azimut=50.662384;
+			id=9;
+			side="EMPTY";
+			vehicle="AV8B";
+			skill=0.60000002;
+		};
+		class Item5
+		{
+			position[]={3454.4109,19,3676.7915};
+			azimut=180;
+			id=13;
+			side="EMPTY";
+			vehicle="TowingTractor";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item6
+		{
+			position[]={3543.4348,18.946699,3565.3296};
+			id=14;
+			side="EMPTY";
+			vehicle="TowingTractor";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item7
+		{
+			position[]={3765.1838,19,3528.2834};
+			id=15;
+			side="EMPTY";
+			vehicle="TowingTractor";
+			leader=1;
+			skill=0.60000002;
+		};
+	};
+	class Markers
+	{
+		items=4;
+		class Item0
+		{
+			position[]={3439.3403,19.08073,3695.9434};
+			name="h1";
+			text="EASA 1: All sides enabled";
+			type="b_service";
+		};
+		class Item1
+		{
+			position[]={3540.3916,18.89999,3542.7056};
+			name="h2";
+			text="EASA 2: No Hangar (also FARP for now)";
+			type="b_service";
+		};
+		class Item2
+		{
+			position[]={3758.8452,19.060549,3504.2104};
+			name="h3";
+			text="EASA 3: Nukes";
+			type="b_service";
+		};
+		class Item3
+		{
+			position[]={1381.0314,15.885099,941.54919};
+			name="h4";
+			text="EASA 4: LHD";
+			type="b_service";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=6824877;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=13212190;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=13188297;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};

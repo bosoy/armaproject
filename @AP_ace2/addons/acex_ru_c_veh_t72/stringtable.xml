@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACEX_RU">
+<Package name="c_veh_t72">
+<Container name="STR_ACE_GDN">
+<Key ID="STR_ACE_GDN_CDF_TANKPLATOON">
+<German>T-72M-Zug</German>
+<English>T-72M Platoon</English>
+<Italian>Plotone T-72M</Italian>
+<Spanish>Pelotón T-72M</Spanish>
+<French>Peloton T-72M</French>
+<Czech>Četa T-72M</Czech>
+<Russian>Взвод Т-72М</Russian>
+<Polish>Pluton T-72M</Polish>
+<Hungarian>T-72M Platoon</Hungarian>
+</Key>
+<Key ID="STR_ACE_GDN_ACE_CDF_TANK_PLATOON_T72B">
+<German>T-72B-Zug</German>
+<English>T-72B Platoon</English>
+<Italian>Plotone T-72B</Italian>
+<Spanish>Pelotón T-72B</Spanish>
+<French>Peloton T-72B</French>
+<Czech>Četa T-72B</Czech>
+<Russian>Взвод Т-72Б</Russian>
+<Polish>Pluton T-72B</Polish>
+<Hungarian>T-72B Platoon</Hungarian>
+</Key>
+<Key ID="STR_ACE_GDN_RU_TANKPLATOON">
+<German>T-90-Zug</German>
+<English>T-90 Platoon</English>
+<Italian>Plotone T-90</Italian>
+<Spanish>Pelotón T-90</Spanish>
+<French>Peloton T-90</French>
+<Czech>Četa T-90</Czech>
+<Russian>Взвод Т-90</Russian>
+<Polish>Pluton T-90</Polish>
+<Hungarian>T-90 Platoon</Hungarian>
+</Key>
+<Key ID="STR_ACE_GDN_ACE_RU_TANK_PLATOON_T90A">
+<German>T-90A-Zug</German>
+<English>T-90A Platoon</English>
+<Italian>Plotone T-90A</Italian>
+<Spanish>Pelotón T-90A</Spanish>
+<French>Peloton T-90A</French>
+<Czech>Četa T-90A</Czech>
+<Russian>Взвод Т-90А</Russian>
+<Polish>Pluton T-90A</Polish>
+<Hungarian>T-90A Platoon</Hungarian>
+</Key>
+<Key ID="STR_ACE_GDN_ACE_RU_TANK_PLATOON_T72BA">
+<German>T-72BA-Zug</German>
+<English>T-72BA Platoon</English>
+<Italian>Plotone T-72BA</Italian>
+<Spanish>Pelotón T-72BA</Spanish>
+<French>Peloton T-72BA</French>
+<Czech>Četa T-72BA</Czech>
+<Russian>Взвод Т-72БА</Russian>
+<Polish>Pluton T-72BA</Polish>
+<Hungarian>T-72BA Platoon</Hungarian>
+</Key>
+<Key ID="STR_ACE_GDN_ACE_RU_TANK_PLATOON_T72B">
+<German>T-72B-Zug</German>
+<English>T-72B Platoon</English>
+<Italian>Plotone T-72B</Italian>
+<Spanish>Pelotón T-72B</Spanish>
+<French>Peloton T-72B</French>
+<Czech>Četa T-72B</Czech>
+<Russian>Взвод Т-72Б</Russian>
+<Polish>Pluton T-72B</Polish>
+<Hungarian>T-72B Platoon</Hungarian>
+</Key>
+</Container>
+
+</Package></Project>

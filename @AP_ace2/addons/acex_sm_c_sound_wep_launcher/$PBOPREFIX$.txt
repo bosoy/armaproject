@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex_sm\addons\c_sound_wep_launcher
+Pbo Type is: Arma Addon
+Sha: '98F13DDC83EE59F9028C59919982AF9B1CB38987'
+//////</HEADER>//////

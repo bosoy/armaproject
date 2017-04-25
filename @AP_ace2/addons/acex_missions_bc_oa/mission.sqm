@@ -1,0 +1,112 @@
+#include "script_component.hpp"
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		DEFAULT_ADDONS,
+		ADDONS
+	};
+	addOnsAuto[]=
+	{
+		DEFAULT_ADDONS,
+		ADDONS
+	};
+	INTEL
+	randomSeed=RANDOMSEED;
+	class Groups
+	{
+		items=__TOTALGROUPS__;
+		#include __FACTIONWEST__
+		__INCLUDE groups.hpp
+		#include __FACTIONEAST__
+		__INCLUDE groups.hpp
+		#include __FACTIONGUER__
+		__INCLUDE groups.hpp
+	};
+	class Vehicles
+	{
+		items=__TOTALVEHICLES__;
+		class Item__VEHICLEITEM__
+		{
+			position[]={DEFAULT_STARTPOS_EAST};
+			id=__UNITID__;
+			side="EMPTY";
+			vehicle="Land_Mil_hangar_EP1";
+			leader=1;
+			init=QUOTE(this setPos DEFAULT_SCRIPTPOS_EAST);
+			text="ace_sys_bc_safezone_east";
+		};
+		class Item__VEHICLEITEM__
+		{
+			position[]={DEFAULT_STARTPOS_WEST};
+			id=__UNITID__;
+			side="EMPTY";
+			vehicle="Land_Mil_hangar_EP1";
+			leader=1;
+			init=QUOTE(this setPos DEFAULT_SCRIPTPOS_WEST);
+			text="ace_sys_bc_safezone_west";
+		};
+		class Item__VEHICLEITEM__
+		{
+			position[]={DEFAULT_STARTPOS_GUER};
+			id=__UNITID__;
+			side="EMPTY";
+			vehicle="Land_Mil_hangar_EP1";
+			leader=1;
+			init=QUOTE(this setPos DEFAULT_SCRIPTPOS_GUER);
+			text="ace_sys_bc_safezone_guer";
+		};
+	};
+	class Markers
+	{
+	};
+	class Sensors
+	{
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		DEFAULT_ADDONS,
+		ADDONS
+	};
+	addOnsAuto[]=
+	{
+		DEFAULT_ADDONS,
+		ADDONS
+	};
+	INTEL
+	randomSeed=RANDOMSEED;
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		DEFAULT_ADDONS,
+		ADDONS
+	};
+	addOnsAuto[]=
+	{
+		DEFAULT_ADDONS,
+		ADDONS
+	};
+	INTEL
+	randomSeed=RANDOMSEED;
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		DEFAULT_ADDONS,
+		ADDONS
+	};
+	addOnsAuto[]=
+	{
+		DEFAULT_ADDONS,
+		ADDONS
+	};
+	INTEL
+	randomSeed=RANDOMSEED;
+};

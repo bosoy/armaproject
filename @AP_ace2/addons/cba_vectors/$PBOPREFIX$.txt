@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\cba\addons\vectors
+Pbo Type is: Arma Addon
+Sha: 'C8DB4418F8DB50D26829FB0AE22A56DE5118ACA7'
+//////</HEADER>//////

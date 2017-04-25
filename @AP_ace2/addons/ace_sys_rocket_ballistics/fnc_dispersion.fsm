@@ -1,0 +1,507 @@
+/*%FSM<COMPILE "D:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, fnc_dispersion">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"fnc_dispersion",0,250,-125.000000,-275.000000,-25.000000,-225.000000,0.000000,"fnc_dispersion"};
+item1[] = {"while",4,218,-125.000000,-175.000000,-25.000000,-125.000000,0.000000,"while"};
+item2[] = {"_",2,250,-125.000000,-100.000000,-25.000000,-50.000000,0.000000,""};
+item3[] = {"_j____ACE_KTAB_select",4,218,-175.000000,-50.000000,-75.000000,0.000000,1.000000,"_j < (ACE_KTAB select _i)"};
+item4[] = {"_",4,218,-75.000000,-50.000000,25.000000,0.000000,0.000000,""};
+item5[] = {"__1",2,250,-75.000000,25.000000,25.000000,75.000000,0.000000,""};
+item6[] = {"___i_127_",4,218,-125.000000,75.000000,-25.000000,125.000000,1.000000,"(_i<127)"};
+item7[] = {"_",4,218,-25.000000,75.000000,75.000000,125.000000,0.000000,""};
+item8[] = {"__2",2,250,-175.000000,300.000000,-75.000000,350.000000,0.000000,""};
+item9[] = {"__3",2,250,-125.000000,150.000000,-25.000000,200.000000,0.000000,""};
+item10[] = {"__4",2,250,-25.000000,150.000000,75.000000,200.000000,0.000000,""};
+item11[] = {"",7,210,-79.000000,221.000000,-71.000000,229.000000,0.000000,""};
+item12[] = {"",7,210,21.000000,221.000000,29.000002,229.000000,0.000000,""};
+item13[] = {"do",4,218,125.000000,175.000000,225.000000,225.000000,0.000000,"do"};
+item14[] = {"_",4,218,125.000000,225.000000,225.000000,275.000000,1.000000,""};
+item15[] = {"__5",2,250,125.000000,-100.000000,225.000000,-50.000000,0.000000,""};
+item16[] = {"_",8,218,0.000000,-100.000000,100.000000,-50.000000,0.000000,""};
+item17[] = {"__6",2,250,125.000000,300.000000,225.000000,350.000000,0.000000,""};
+item18[] = {"_",4,218,75.000000,350.000000,175.000000,400.000000,1.000000,""};
+item19[] = {"__1",4,218,175.000000,350.000000,275.000000,400.000000,0.000000,""};
+item20[] = {"__7",2,250,75.000000,425.000000,175.000000,475.000000,0.000000,""};
+item21[] = {"__8",2,250,175.000000,425.000000,275.000000,475.000000,0.000000,""};
+item22[] = {"_",8,218,-25.000000,300.000000,75.000000,350.000000,0.000000,""};
+item23[] = {"",7,210,121.000000,496.000061,129.000000,503.999969,0.000000,""};
+item24[] = {"",7,210,221.000000,496.000000,229.000000,503.999969,0.000000,""};
+item25[] = {"_",8,218,75.000000,525.000000,175.000000,575.000000,0.000000,""};
+item26[] = {"__9",2,250,75.000000,600.000000,175.000000,650.000000,0.000000,""};
+item27[] = {"CAManBase",4,218,-50.000000,675.000000,50.000000,725.000000,1.000000,"CAManBase"};
+item28[] = {"FFAR",4,218,175.000000,675.000000,275.000000,725.000000,0.000000,"FFAR"};
+item29[] = {"__10",2,4346,-50.000000,775.000000,50.000000,825.000000,0.000000,""};
+item30[] = {"__11",2,250,175.000000,775.000000,275.000000,825.000000,0.000000,""};
+item31[] = {"_",8,218,50.000000,875.000000,150.000000,925.000000,0.000000,""};
+item32[] = {"__12",1,250,50.000000,950.000000,150.000000,1000.000000,0.000000,""};
+link0[] = {0,1};
+link1[] = {1,2};
+link2[] = {2,3};
+link3[] = {2,4};
+link4[] = {3,8};
+link5[] = {4,5};
+link6[] = {5,6};
+link7[] = {5,7};
+link8[] = {6,9};
+link9[] = {7,10};
+link10[] = {8,22};
+link11[] = {9,11};
+link12[] = {10,12};
+link13[] = {11,12};
+link14[] = {12,13};
+link15[] = {12,14};
+link16[] = {13,15};
+link17[] = {14,17};
+link18[] = {15,16};
+link19[] = {16,2};
+link20[] = {17,18};
+link21[] = {17,19};
+link22[] = {18,20};
+link23[] = {19,21};
+link24[] = {20,23};
+link25[] = {21,24};
+link26[] = {22,17};
+link27[] = {23,25};
+link28[] = {24,23};
+link29[] = {25,26};
+link30[] = {26,27};
+link31[] = {26,28};
+link32[] = {27,29};
+link33[] = {28,30};
+link34[] = {29,31};
+link35[] = {30,31};
+link36[] = {31,32};
+globals[] = {25.000000,1,0,0,0,640,480,1,37,6316128,1,-525.976624,525.975586,1229.804443,-325.328827,623,921,1};
+window[] = {2,-1,-1,-1,-1,832,150,1110,150,3,641};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "fnc_dispersion";
+  class States
+  {
+    /*%FSM<STATE "fnc_dispersion">*/
+    class fnc_dispersion
+    {
+      name = "fnc_dispersion";
+      init = /*%FSM<STATEINIT""">*/"//	This function finds the angle of dispersion using tabulated Gauss function (found in init script)." \n
+       "//	Then it applies the dispersion to the rocket." \n
+       "//	As a result rocket dispersion follows Gaussian distribution." \n
+       "//	Based heavily on NWD script published on BI forums." \n
+       "" \n
+       "//  FSM by rocko" \n
+       "" \n
+       "// Debug" \n
+       "_debug = false;" \n
+       "" \n
+       "// Init" \n
+       "private[""_unit"",""_speed"",""_dir"",""_dirx"",""_diry"",""_dirz"", ""_dirang"", ""_dispersion"", ""_sign"", ""_j"", ""_i"", ""_y"", ""_y0"", ""_y1"", ""_radiusdisp"", ""_angledisp"", ""_azimuth"", ""_elevation"", ""_vel"", ""_upx"", ""_upy"", ""_upz"", ""_x1"", ""_z1"", ""_k"", ""_eh"", ""_bullet"", ""_dispmultiplier"", ""_ammo""];" \n
+       "" \n
+       "_eh = _this select 0;" \n
+       "_bullet = _this select 1;" \n
+       "_dispmultiplier = _this select 2;" \n
+       "" \n
+       "_unit = _eh select 0;" \n
+       "_ammo = _eh select 4;" \n
+       "" \n
+       "_dir = vectorDir _bullet;" \n
+       "_dirx = _dir select 0;" \n
+       "_diry = _dir select 1;" \n
+       "_dirz = _dir select 2;" \n
+       "_dirang = [_dirx atan2 _diry, sqrt(_diry*_diry + _dirx*_dirx) atan2 (-_dirz)];" \n
+       "" \n
+       "_dispersion = _dispmultiplier*getNumber (configFile >> ""CfgAmmo"" >> _ammo >> ""ACE_DISP"");" \n
+       "" \n
+       "" \n
+       "// Debug" \n
+       "if (_debug) then" \n
+       "{" \n
+       "	_msg = format[""_this=%1"", _this];" \n
+       "	diag_log _msg;" \n
+       "	_msg = format[""_dir=%1 _dirang=%2 _dispersion=%3"",_dir,_dirang,_dispersion];" \n
+       "	diag_log _msg;" \n
+       "};" \n
+       "" \n
+       "// Gaussian distribution" \n
+       "_x = 0;" \n
+       "_sign = 0;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "while">*/
+        class while
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "_">*/
+    class _
+    {
+      name = "_";
+      init = /*%FSM<STATEINIT""">*/"_j = floor (random 16777216); // 24 bit random integer" \n
+       "_i = floor (random 128);" \n
+       "_sign = floor (random 2);" \n
+       "" \n
+       "_x = _j * (ACE_WTAB select _i);" \n
+       "_y = 0;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_j____ACE_KTAB_select">*/
+        class _j____ACE_KTAB_select
+        {
+          priority = 1.000000;
+          to="__2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_j < (ACE_KTAB select _i))"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__1">*/
+    class __1
+    {
+      name = "__1";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "___i_127_">*/
+        class ___i_127_
+        {
+          priority = 1.000000;
+          to="__3";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_i<127)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__4";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__2">*/
+    class __2
+    {
+      name = "__2";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__6";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__3">*/
+    class __3
+    {
+      name = "__3";
+      init = /*%FSM<STATEINIT""">*/"_y0 = ACE_YTAB select _i;" \n
+       "_y1 = ACE_YTAB select (_i+1);" \n
+       "_y = _y1+(_y0-_y1)*(random 1);"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 1.000000;
+          to="__6";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_y < exp(-0.5*_x*_x))"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "do">*/
+        class do
+        {
+          priority = 0.000000;
+          to="__5";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__4">*/
+    class __4
+    {
+      name = "__4";
+      init = /*%FSM<STATEINIT""">*/"_x = ACE_PARAM_R - ln(1.0-(random 1))/ACE_PARAM_R;" \n
+       "_y = exp(-ACE_PARAM_R*(x-0.5*ACE_PARAM_R))*(random 1);"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 1.000000;
+          to="__6";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_y < exp(-0.5*_x*_x))"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "do">*/
+        class do
+        {
+          priority = 0.000000;
+          to="__5";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__5">*/
+    class __5
+    {
+      name = "__5";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__6">*/
+    class __6
+    {
+      name = "__6";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 1.000000;
+          to="__7";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_sign == 1)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__1">*/
+        class __1
+        {
+          priority = 0.000000;
+          to="__8";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__7">*/
+    class __7
+    {
+      name = "__7";
+      init = /*%FSM<STATEINIT""">*/"_x = -_x"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__9";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__8">*/
+    class __8
+    {
+      name = "__8";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__9";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__9">*/
+    class __9
+    {
+      name = "__9";
+      init = /*%FSM<STATEINIT""">*/"_radiusdisp = _x*_dispersion/2;" \n
+       "_angledisp = random 360;" \n
+       "" \n
+       "_azimuth = (_dirang select 0) + ( _radiusdisp * cos(_angledisp) ) / 1000*180/pi;" \n
+       "_elevation = (_dirang select 1) + ( _radiusdisp * sin(_angledisp) ) / 1000*180/pi;" \n
+       "" \n
+       "_dir = [sin(_elevation) * sin(_azimuth), sin(_elevation) * cos(_azimuth), - cos(_elevation)];" \n
+       "" \n
+       "_speed = 0.278*(speed _bullet);" \n
+       "_vel = [(_dir select 0) * _speed, (_dir select 1) * _speed, (_dir select 2) * _speed];" \n
+       "" \n
+       "//Finding vectorUp coords for the newly found dir vector" \n
+       "" \n
+       "	_x1 = _dir select 0;" \n
+       "	_y1 = _dir select 1;" \n
+       "	_z1 = _dir select 2;" \n
+       "" \n
+       "	_k = -_z1/sqrt(_x1^2 + _y1^2);" \n
+       "" \n
+       "	_upx = _k*_x1;" \n
+       "	_upy = _k*_y1;" \n
+       "	_upz = sqrt (_x1^2 + _y1^2);"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "CAManBase">*/
+        class CAManBase
+        {
+          priority = 1.000000;
+          to="__10";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_unit iskindOf ""CAManBase"")"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "FFAR">*/
+        class FFAR
+        {
+          priority = 0.000000;
+          to="__11";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__10">*/
+    class __10
+    {
+      name = "__10";
+      init = /*%FSM<STATEINIT""">*/"//Broadcasting dispersion data over the network to synchronize the effect. Changes are applied locally on all machines." \n
+       "[""ace_sys_rocket_ballistics_disp"",  [[getPos _bullet, _ammo], _vel, [_dir,[_upx,_upy,_upz]]]] call CBA_fnc_globalEvent;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__12";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__11">*/
+    class __11
+    {
+      name = "__11";
+      init = /*%FSM<STATEINIT""">*/"//Applying dispersion" \n
+       "_bullet setVelocity _vel;" \n
+       "_bullet setVectorDirAndUp [_dir,[_upx,_upy,_upz]];" \n
+       "_bullet setPos getPos _bullet;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__12";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__12">*/
+    class __12
+    {
+      name = "__12";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="fnc_dispersion";
+  finalStates[] =
+  {
+    "__12",
+  };
+};
+/*%FSM</COMPILE>*/

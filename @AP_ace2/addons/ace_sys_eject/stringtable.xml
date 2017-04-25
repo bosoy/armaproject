@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="sys_eject">
+<Container name="STR_DIALOG">
+<Key ID="STR_ACE_ENG_EJECT">
+<English>Engage Eject</English>
+<German>Schleudersitz scharf</German>
+<Spanish>Engage Eject</Spanish>
+<Czech>Engage Eject</Czech>
+<Polish>Engage Eject</Polish>
+<Russian>Engage Eject</Russian>
+<Italian>Engage Eject</Italian>
+<Hungarian>Engage Eject</Hungarian>
+<French>Engage Eject</French>
+</Key>
+<Key ID="STR_ACE_DISENG_EJECT">
+<English>Disengage Eject</English>
+<German>Schleudersitz sicher</German>
+<Spanish>Disengage Eject</Spanish>
+<Czech>Disengage Eject</Czech>
+<Polish>Disengage Eject</Polish>
+<Russian>Disengage Eject</Russian>
+<Italian>Disengage Eject</Italian>
+<Hungarian>Disengage Eject</Hungarian>
+<French>Disengage Eject</French>
+</Key>
+<Key ID="STR_ACE_EJECT0">
+<English>Eject</English>
+<German>Schleudersitz</German>
+<Spanish>Eyectarse</Spanish>
+<Czech>Katapultovat se</Czech>
+<Polish>Katapultuj się</Polish>
+<Russian>Катапультироваться</Russian>
+<Italian>Eiettati</Italian>
+<Hungarian>Katapultálás</Hungarian>
+<French>Ejection</French>
+</Key>
+<Key ID="STR_ACE_EJECT1">
+<English>Jump out</English>
+<German>Abspringen</German>
+<Spanish>Saltar fuera</Spanish>
+<Czech>Vyskočit</Czech>
+<Polish>Wyskocz</Polish>
+<Russian>Выпрыгнуть</Russian>
+<Italian>Salta fuori</Italian>
+<Hungarian>Kiugrás</Hungarian>
+<French>Sauter</French>
+</Key>
+<Key ID="STR_ACE_EJECT1L">
+<English>Jump out left</English>
+<German>Abspringen (links)</German>
+<Spanish>Saltar fuera L</Spanish>
+<Czech>Vyskočit vlevo</Czech>
+<Polish>Wyskocz na lewo</Polish>
+<Russian>Выпрыгнуть налево</Russian>
+<Italian>Salta fuori L</Italian>
+<Hungarian>Kiugrás L</Hungarian>
+<French>Sauter (gauche)</French>
+</Key>
+<Key ID="STR_ACE_EJECT1R">
+<English>Jump out right</English>
+<German>Abspringen (rechts)</German>
+<Spanish>Saltar fuera R</Spanish>
+<Czech>Vyskočit vpravo</Czech>
+<Polish>Wyskocz na prawo</Polish>
+<Russian>Выпрыгнуть направо</Russian>
+<Italian>Salta fuori R</Italian>
+<Hungarian>Kiugrás R</Hungarian>
+<French>Sauter (droite)</French>
+</Key>
+<Key ID="STR_ACE_EJECT2">
+<English>Pull rip cord</English>
+<German>Reissleine ziehen</German>
+<Spanish>Abrir paracaidas</Spanish>
+<Czech>Zatáhnout za odjišťovací lanko</Czech>
+<Polish>Pociągnij za linkę</Polish>
+<Russian>Раскрыть парашют</Russian>
+<Italian>Apri paracadute</Italian>
+<Hungarian>Ernyő kinyitása</Hungarian>
+<French>Ouvrir le parachute</French>
+</Key>
+<Key ID="STR_ACE_ADN_REPACK_PARACHUTE">
+<English>Repack parachute</English>
+<German>Fallschirm einpacken</German>
+<Spanish>Repack Parachute</Spanish>
+<Czech>Složit Padák</Czech>
+<Polish>Złóż spadochron</Polish>
+<Russian>Переупаковать парашют</Russian>
+<Italian>Chiudi Paracadute</Italian>
+<Hungarian>Ernyő újracsomagolása</Hungarian>
+<French>Replier le parachute</French>
+</Key>
+<Key ID="STR_ACE_CUTCHUTE">
+<English>Cut chute</English>
+<German>Fallschirm trennen</German>
+<Spanish>Cut chute</Spanish>
+<Czech>Odříznout padák</Czech>
+<Polish>Odetnij spadochron</Polish>
+<Russian>Перерезать стропы</Russian>
+<Italian>Cut chute</Italian>
+<Hungarian>Cut chute</Hungarian>
+<French>Couper les suspentes</French>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_EJECTIONSEAT">
+<English>Ejection seat</English>
+<German>Schleudersitz</German>
+<Spanish>Ejection seat</Spanish>
+<Czech>Katapultovací sedadlo</Czech>
+<Polish>Fotel katapultowy</Polish>
+<Russian>Катапультироваться</Russian>
+<Italian>Ejection seat</Italian>
+<Hungarian>Katapult ülés</Hungarian>
+<French>Siège ejectable</French>
+</Key>
+<Key ID="STR_ACE_EJECT_VEHLOCKED">
+<English>Vehicle is locked!</English>
+<German>Fahrzeug ist abgeschlossen</German>
+<Spanish>Vehicle is locked!</Spanish>
+<Czech>Vozidlo je zamčené!</Czech>
+<Polish>Pojazd jest zamknięty!</Polish>
+<Russian>Транспорт заперт!</Russian>
+<Italian>Vehicle is locked!</Italian>
+<Hungarian>Zárva!</Hungarian>
+<French>Vehicule bloqué!</French>
+</Key>
+<Key ID="STR_ACE_EJECT_HALO_ALTITUDE">
+<English>Altitude (A.T.L.): </English>
+<German>Höhe (über Grund): </German>
+<Spanish>Altitude (A.T.L.): </Spanish>
+<Czech>Výška vůci zemi (A.T.L.): </Czech>
+<Polish>Wysokość względna: </Polish>
+<Russian>Высота (A.T.L.): </Russian>
+<Italian>Altitude (A.T.L.): </Italian>
+<Hungarian>Magasság: </Hungarian>
+<French>Altitude (A.T.L.): </French>
+</Key>
+<Key ID="STR_ACE_EJECT_HALO_HEADING">
+<English>Heading: </English>
+<German>Richtung: </German>
+<Spanish>Heading: </Spanish>
+<Czech>Kurz: </Czech>
+<Polish>Kurs: </Polish>
+<Russian>Направление: </Russian>
+<Italian>Heading: </Italian>
+<Hungarian>Irány: </Hungarian>
+<French>Cap: </French>
+</Key>
+<Key ID="STR_ACE_EJECT_HALO_DEGREES">
+<English>Degrees</English>
+<German>Grad</German>
+<Spanish>Degrees</Spanish>
+<Czech>Stupňů</Czech>
+<Polish>°</Polish>
+<Russian>Градусов</Russian>
+<Italian>Degrees</Italian>
+<Hungarian>Fok</Hungarian>
+<French>Degrés</French>
+</Key>
+<Key ID="STR_ACE_EJECT_HALO_ORIENTATION">
+<English>Orientation: </English>
+<German>Lage: </German>
+<Spanish>Orientation: </Spanish>
+<Czech>Orientace: </Czech>
+<Polish>Kierunek: </Polish>
+<Russian>Ориентация: </Russian>
+<Italian>Orientation: </Italian>
+<Hungarian>Helyzet: </Hungarian>
+<French>Orientation: </French>
+</Key>
+<Key ID="STR_ACE_EJECT_HALO_DESRATE">
+<English>Descent Rate: </English>
+<German>Geschwindigkeit: </German>
+<Spanish>Descent Rate: </Spanish>
+<Czech>Rychlost klesání: </Czech>
+<Polish>Szybkość opadania: </Polish>
+<Russian>Скорость спуска: </Russian>
+<Italian>Descent Rate: </Italian>
+<Hungarian>Ereszkedési ráta: </Hungarian>
+<French>Taux de descente: </French>
+</Key>
+<Key ID="STR_ACE_EJECT_HALO_GROUNDSPEED">
+<English>Ground Speed: </English>
+<German>Landegeschwindigkeit: </German>
+<Spanish>Ground Speed: </Spanish>
+<Czech>Rychlost vůči zemi: </Czech>
+<Polish>Prędkość względem Ziemi: </Polish>
+<Russian>Горизонтальная скорость: </Russian>
+<Italian>Ground Speed: </Italian>
+<Hungarian>Talajérési sebesség: </Hungarian>
+<French>Vitesse sol: </French>
+</Key>
+<Key ID="STR_ACE_EJECT_HALO_BRAKES">
+<English>Brakes amount: </English>
+<German>Abremsung: </German>
+<Spanish>Brakes amount: </Spanish>
+<Czech>Míra brždění: </Czech>
+<Polish>Opór powietrza: </Polish>
+<Russian>Торможение: </Russian>
+<Italian>Brakes amount: </Italian>
+<Hungarian>Fék: </Hungarian>
+<French>Freinage: </French>
+</Key>
+<Key ID="STR_ACE_EJECT_HALO_CHUOPEN">
+<English>Chute opens</English>
+<German>Fallschirm öffnet sich</German>
+<Spanish>Chute opens</Spanish>
+<Czech>Otevírání padáku</Czech>
+<Polish>Otwieranie spadochronu</Polish>
+<Russian>Парашют раскрывается</Russian>
+<Italian>Chute opens</Italian>
+<Hungarian>Chute opens</Hungarian>
+<French>Parachute ouvert</French>
+</Key>
+<Key ID="STR_ACE_EJECT_STORGEAR">
+<English>Storing personal gear</English>
+<German>Verstaue Ausrüstung</German>
+<Spanish>Storing personal gear</Spanish>
+<Czech>Ukládám osobní vybavení</Czech>
+<Polish>Odkładanie wyposażenia osobistego</Polish>
+<Russian>Укладывание личного снаряжения</Russian>
+<Italian>Storing personal gear</Italian>
+<Hungarian>Storing personal gear</Hungarian>
+<French>Storing personal gear</French>
+</Key>
+</Container>
+<Container name="STR_DN">
+<Key ID="STR_DN_ACE_PARACHUTEPACK">
+<English>MC-5 Parachute Pack</English>
+<German>MC-5 Fallschirm</German>
+<Spanish>MC-5 Parachute Pack</Spanish>
+<Czech>Padák MC-5</Czech>
+<Polish>Spadochron MC-5</Polish>
+<Russian>MC-5 Управляемый парашют</Russian>
+<Italian>MC-5 Parachute Pack</Italian>
+<Hungarian>MC-5 Parachute Pack</Hungarian>
+<French>MC-5 Parachute Pack</French>
+</Key>
+<Key ID="STR_DN_ACE_PARACHUTEROUNDPACK">
+<English>T-10 Parachute Pack</English>
+<German>T-10 Fallschirm</German>
+<Spanish>T-10 Parachute Pack</Spanish>
+<Czech>Padák T-10</Czech>
+<Polish>Spadochron T-10</Polish>
+<Russian>T-10 Парашют</Russian>
+<Italian>T-10 Parachute Pack</Italian>
+<Hungarian>T-10 Parachute Pack</Hungarian>
+<French>T-10 Parachute Pack</French>
+</Key>
+</Container>
+</Package></Project>

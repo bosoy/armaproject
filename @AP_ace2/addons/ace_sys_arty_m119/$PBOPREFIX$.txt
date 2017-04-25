@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\Addons\sys_arty_m119
+Pbo Type is: Arma Addon
+Sha: '5C848FE6D3E3A096CFEA728C72E7668FEA163234'
+//////</HEADER>//////

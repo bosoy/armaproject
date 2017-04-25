@@ -1,0 +1,235 @@
+/*%FSM<COMPILE "scriptedFSM.cfg, ace_irstrobe_on">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"irstrobe_on",0,250,-150.000000,-100.000000,-50.000000,-50.000000,0.000000,"irstrobe_on"};
+item1[] = {"not_player",4,218,-275.000000,-100.000000,-175.000000,-50.000000,1.000000,"not player"};
+item2[] = {"true",8,218,-25.000000,-100.000000,75.000000,-50.000000,0.000000,"true"};
+item3[] = {"End",1,250,-275.000000,50.000000,-175.000000,100.000000,0.000000,"End"};
+item4[] = {"ison",2,250,-25.000000,50.000000,75.000000,100.000000,0.000000,"ison"};
+item5[] = {"is_on",4,218,100.000000,150.000000,200.000000,200.000000,1.000000,"is on"};
+item6[] = {"true",8,218,-25.000000,125.000000,75.000000,175.000000,0.000000,"true"};
+item7[] = {"loop",2,250,-25.000000,200.000000,75.000000,250.000000,0.000000,"loop"};
+item8[] = {"true",8,218,-25.000000,350.000000,75.000000,400.000000,0.000000,"true"};
+item9[] = {"Endanother_",1,250,-25.000000,500.000000,75.000000,550.000000,0.000000,"Endanother" \n ""};
+item10[] = {"time2Wait",2,250,225.000000,200.000000,325.000000,250.000000,0.000000,"time2Wait"};
+item11[] = {"timeOut",4,218,100.000000,250.000000,200.000000,300.000000,0.000000,"timeOut"};
+item12[] = {"death_loss_of_IR",4,4314,225.000000,600.000000,325.000000,650.000000,1.000000,"death" \n "loss of IR"};
+item13[] = {"isoff",2,250,-200.000000,600.000000,-100.000000,650.000000,0.000000,"isoff"};
+item14[] = {"true",8,218,-200.000000,200.000000,-100.000000,250.000000,0.000000,"true"};
+link0[] = {0,1};
+link1[] = {0,2};
+link2[] = {1,3};
+link3[] = {2,4};
+link4[] = {4,6};
+link5[] = {5,10};
+link6[] = {6,7};
+link7[] = {7,5};
+link8[] = {7,8};
+link9[] = {8,9};
+link10[] = {10,11};
+link11[] = {10,12};
+link12[] = {11,7};
+link13[] = {12,13};
+link14[] = {13,14};
+link15[] = {14,7};
+globals[] = {25.000000,1,0,0,0,640,480,1,20,6316128,1,-615.505737,594.973083,869.143799,-324.594208,940,929,1};
+window[] = {2,-1,-1,-1,-1,858,176,1136,176,3,957};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "ace_irstrobe_on";
+  class States
+  {
+    /*%FSM<STATE "irstrobe_on">*/
+    class irstrobe_on
+    {
+      name = "irstrobe_on";
+      init = /*%FSM<STATEINIT""">*/"// ace_sys_irstrobe (.pbo) | (c) 2008, 2009, 2010 by rocko */" \n
+       "private[""_unit"", ""_strobe_type""];" \n
+       "_unit = _this select 0;" \n
+       "_strobe_type = _this select 1;" \n
+       "" \n
+       "_unit setVariable [""ace_sys_irstrobe_active_strobes"", [_strobe_type], false];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "not_player">*/
+        class not_player
+        {
+          priority = 1.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_unit != player)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="ison";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End">*/
+    class End
+    {
+      name = "End";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "ison">*/
+    class ison
+    {
+      name = "ison";
+      init = /*%FSM<STATEINIT""">*/"ace_sys_irstrobe_ison_throw = false;" \n
+       "ace_sys_irstrobe_ison = true;" \n
+       "ace_sys_irstrobe_ison_throw = true;" \n
+       "playSound ""Counter"";" \n
+       "[""ace_sys_irstrobe_aradd"", [_unit]] call CBA_fnc_globalEvent;" \n
+       "" \n
+       "// remove strobes if there are more than one, otherwise we get in trouble with useractions" \n
+       "/*" \n
+       "private [""_irc""];" \n
+       "_irc = 0;" \n
+       "{if (_x == _strobe_type) then {_irc = _irc + 1}} forEach (magazines _unit);" \n
+       "if (_irc > 1) then {" \n
+       "	_irc = _irc - 1;" \n
+       "	for ""_e"" from 1 to _irc do {" \n
+       "		_unit removeMagazine _strobe_type;" \n
+       "	};" \n
+       "};" \n
+       "*/" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="loop";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "loop">*/
+    class loop
+    {
+      name = "loop";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "is_on">*/
+        class is_on
+        {
+          priority = 1.000000;
+          to="time2Wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(ace_sys_irstrobe_ison)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="Endanother_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Endanother_">*/
+    class Endanother_
+    {
+      name = "Endanother_";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "time2Wait">*/
+    class time2Wait
+    {
+      name = "time2Wait";
+      init = /*%FSM<STATEINIT""">*/"ace_sys_irstrobe_nostrobeon = false;" \n
+       "_time2Wait = time + 0.5;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "death_loss_of_IR">*/
+        class death_loss_of_IR
+        {
+          priority = 1.000000;
+          to="isoff";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(!(_strobe_type in magazines _unit) || !alive _unit)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "timeOut">*/
+        class timeOut
+        {
+          priority = 0.000000;
+          to="loop";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _time2Wait"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "isoff">*/
+    class isoff
+    {
+      name = "isoff";
+      init = /*%FSM<STATEINIT""">*/"ace_sys_irstrobe_ison = false;" \n
+       "ace_sys_irstrobe_nostrobeon = true;" \n
+       "_unit setVariable [""ace_sys_irstrobe_active_strobes"", [], false];" \n
+       "[""ace_sys_irstrobe_arrm"", [_unit]] call CBA_fnc_globalEvent;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="loop";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="irstrobe_on";
+  finalStates[] =
+  {
+    "End",
+    "Endanother_",
+  };
+};
+/*%FSM</COMPILE>*/

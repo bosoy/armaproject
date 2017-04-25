@@ -1,0 +1,221 @@
+/*%FSM<COMPILE "G:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, fnc_refuel">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"fnc_refuel",0,250,-75.000000,375.000000,25.000000,425.000000,0.000000,"fnc_refuel"};
+item1[] = {"_",8,218,-75.000000,450.000000,25.000000,500.000000,0.000000,""};
+item2[] = {"_",2,250,-75.000000,525.000000,25.000000,575.000000,0.000000,""};
+item3[] = {"_",8,218,-75.000000,625.000000,25.000000,675.000000,0.000000,""};
+item4[] = {"__1",2,250,-75.000000,700.000000,25.000000,750.000000,0.000000,""};
+item5[] = {"__1",4,4314,-175.000000,800.000000,-75.000000,850.000000,0.000000,""};
+item6[] = {"_",4,218,0.000000,800.000000,100.000000,850.000000,1.000000,""};
+item7[] = {"__2",1,250,-175.000000,875.000000,-75.000000,925.000000,0.000000,""};
+item8[] = {"__3",2,250,0.000000,900.000000,100.000000,950.000000,0.000000,""};
+item9[] = {"_",8,218,150.000000,900.000000,250.000000,950.000000,0.000000,""};
+item10[] = {"",7,210,196.000000,721.000000,204.000000,729.000000,0.000000,""};
+link0[] = {0,1};
+link1[] = {1,2};
+link2[] = {2,3};
+link3[] = {3,4};
+link4[] = {4,5};
+link5[] = {4,6};
+link6[] = {5,7};
+link7[] = {6,8};
+link8[] = {8,9};
+link9[] = {9,10};
+link10[] = {10,4};
+globals[] = {25.000000,1,0,0,0,640,480,1,12,6316128,1,-510.988556,362.626526,1397.738037,22.354313,585,921,1};
+window[] = {2,-1,-1,-1,-1,732,50,1010,50,3,603};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "fnc_refuel";
+  class States
+  {
+    /*%FSM<STATE "fnc_refuel">*/
+    class fnc_refuel
+    {
+      name = "fnc_refuel";
+      init = /*%FSM<STATEINIT""">*/"// ace_sys_air_refuel | (c) 2008, 2009 by rocko */" \n
+       "" \n
+       "// THIS FSM RUNS IS LOCAL TO TANKER PLANE" \n
+       "" \n
+       "private[""_refueler"",""_fh_1"",""_fh_2"",""_trigger"",""_dock"",""_docked_var""];" \n
+       "" \n
+       "_refueler = _this select 0;" \n
+       "_fh_1 = _this select 1;" \n
+       "_fh_2 = _this select 2;" \n
+       "" \n
+       "ace_sys_air_refuel_refueler = _refueler;" \n
+       "" \n
+       "_fh_1 setVariable [""ace_sys_air_refuel_in_use"", false, true]; " \n
+       "_fh_2 setVariable [""ace_sys_air_refuel_in_use"", false, true]; " \n
+       "" \n
+       "_trigger = createTrigger [""EmptyDetector"", [0,0]];" \n
+       "_trigger setTriggerArea [20, 30, (getDir _refueler), true];" \n
+       "_trigger setTriggerActivation [""ANY"", ""PRESENT"", true];" \n
+       "_trigger attachTo [_refueler,[0,-52,0],""""];" \n
+       "" \n
+       "_refueler setVariable [""ace_refuel_trigger"", _trigger, false];" \n
+       "_refueler setVariable [""ace_sys_air_refuel_hose_damaged"", false, true];" \n
+       "" \n
+       "_timeNow = time + 0.5;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timeNow"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "_">*/
+    class _
+    {
+      name = "_";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(isNull _trigger)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__1">*/
+    class __1
+    {
+      name = "__1";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 1.000000;
+          to="__3";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(alive _refueler) && {(_refueler getVariable ""ace_sys_air_refuel_hose_released"")}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__1">*/
+        class __1
+        {
+          priority = 0.000000;
+          to="__2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__2">*/
+    class __2
+    {
+      name = "__2";
+      init = /*%FSM<STATEINIT""">*/"_trigger = _refueler getVariable ""ace_refuel_trigger"";" \n
+       "if (isNil ""_trigger"") then { _trigger = _trigger; };" \n
+       "detach _trigger;" \n
+       "deleteVehicle _trigger;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__3">*/
+    class __3
+    {
+      name = "__3";
+      init = /*%FSM<STATEINIT""">*/"_trigger setDir (getDir _refueler);" \n
+       "" \n
+       "{" \n
+       "	_docked_var = _x getVariable [""ace_sys_air_refuel_docked"", false];" \n
+       "	if ( " \n
+       "		(_x isKindOf ""Plane"") &&" \n
+       "		{!(_docked_var)}" \n
+       "	   )then {" \n
+       "		_dock = objNull;" \n
+       "		if ((_x distance _fh_1) < (_x distance _fh_2)) then {" \n
+       "			_dock = _fh_1;" \n
+       "		} else {" \n
+       "			_dock = _fh_2;" \n
+       "		};" \n
+       "" \n
+       "		if ( " \n
+       "			!(isNil ""_dock"") && " \n
+       "			{((_x distance _dock) < 65)} && " \n
+       "			{!(_docked_var)} && " \n
+       "			{!(_dock getVariable ""ace_sys_air_refuel_in_use"")} &&" \n
+       "			{(getNumber(configFile >> ""CfgVehicles"" >> (typeOf _x) >> ""ACE_isTanker"") != 1)}" \n
+       "		   ) then { " \n
+       "				_x setVariable [""ace_sys_air_refuel__x_dock"", _dock, true];" \n
+       "				[""ace_sys_air_refuel_fuel"", [_x,_dock,_refueler]] call ACE_fnc_receiverOnlyEvent;" \n
+       "		};	" \n
+       "	};" \n
+       "} foreach (list _trigger);" \n
+       "//TODO: Animate fuelhoses depending on airsped, g force etc." \n
+       "" \n
+       "// Check height, landing with fuel probes released will damage them" \n
+       "_h1 = (getposATL _fh_1) select 2;" \n
+       "_h2 = (getposATL _fh_2) select 2;" \n
+       "" \n
+       "" \n
+       "if (_h1 < 1.5 && {(speed _refueler > 20)}) then {" \n
+       "	detach _fh_1;" \n
+       "	_fh_1 setDamage 1;" \n
+       "	deleteVehicle _fh_1;" \n
+       "};" \n
+       "if ((_h2 < 1.5) && {(speed _refueler > 20)}) then {" \n
+       "	detach _fh_2;" \n
+       "	_fh_2 setDamage 1;" \n
+       "	deleteVehicle _fh_2;" \n
+       "};" \n
+       "if (isNull _fh_1 && {isNull _fh_1}) then {" \n
+       "	_refueler setVariable [""ace_sys_air_refuel_hose_released"", false, true];" \n
+       "	_refueler setVariable [""ace_sys_air_refuel_hose_damaged"", true, true];" \n
+       "	_refueler setDamage 0.45;" \n
+       "};" \n
+       "_timeNow = time;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(time - _timeNow) >= 0.01"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="fnc_refuel";
+  finalStates[] =
+  {
+    "__2",
+  };
+};
+/*%FSM</COMPILE>*/

@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=CA\Data\ParticleEffects\SCRIPTS
+Pbo Type is: Arma Addon
+Sha: 'E6EC6D0C03A83B3C0F86637FA86D132401C02DDA'
+//////</HEADER>//////

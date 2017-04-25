@@ -1,0 +1,30 @@
+OnLoadMission="Airbase 0.21 ACE";
+onLoadIntroTime = false;
+OnLoadMissionTime = False;
+
+class Header
+{
+  	gameType = Coop;
+ 	minPlayers = 1;
+ 	maxPlayers = 50;
+};
+
+
+//Kartenoptionen
+ShowGPS=1;
+ShowCompass=1;
+ShowMap=1;
+ShowNotePad=1;
+ShowWatch=1;
+ShowDebriefing=1;
+
+//Respawn Settings
+respawn = BASE;
+respawndelay = 30;
+disabledAI=1;
+
+#include "x_dlg\dummy.hpp"
+#include "x_dlg\SettingsDialog.hpp"
+#include "x_dlg\ViewDistanceDialog.hpp"
+#include "x_dlg\GrasLayerDialog.hpp"
+#include "x_dlg\SFtitel.hpp"

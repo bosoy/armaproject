@@ -1,0 +1,505 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+    "cba_main",
+    "ace_main",
+    "ace_c_vehicle",
+    "ace_c_weapon",
+		"CATracked",
+		"CATracked2_T90",
+		"utes",
+		"caair",
+		"CAAir2",
+		"cacharacters2",
+		"CATracked2_BMP3"
+	};
+	addOnsAuto[]=
+	{
+    "cba_main",
+    "ace_main",
+    "ace_c_vehicle",
+    "ace_c_weapon",
+		"CATracked2_T90",
+		"caair",
+		"CAAir2",
+		"cacharacters2",
+		"CATracked",
+		"CATracked2_BMP3",
+		"utes"
+	};
+	randomSeed=11098344;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+	class Groups
+	{
+		items=6;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={3884.3711,19,3551.842};
+					id=3;
+					side="EAST";
+					vehicle="T90";
+					leader=1;
+					skill=0.60000002;
+					ammo=0;
+				};
+				class Item1
+				{
+					position[]={3909.7705,18.901648,3520.1658};
+					id=4;
+					side="EAST";
+					vehicle="T90";
+					skill=0.60000002;
+					ammo=0;
+				};
+				class Item2
+				{
+					position[]={3853.676,19,3525.3171};
+					id=5;
+					side="EAST";
+					vehicle="T90";
+					skill=0.60000002;
+					ammo=0;
+				};
+			};
+			class Waypoints
+			{
+				items=2;
+				class Item0
+				{
+					position[]={3887.6929,31.594616,3752.3958};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={3885.573,18.923443,3522.345};
+					type="CYCLE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item1
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={4031.636,24.726149,3423.7842};
+					special="FLY";
+					id=6;
+					side="EAST";
+					vehicle="Mi17_rockets_RU";
+					leader=1;
+					skill=0.60000002;
+					ammo=0;
+				};
+				class Item1
+				{
+					position[]={4089.9438,22.102921,3410.0024};
+					special="FLY";
+					id=7;
+					side="EAST";
+					vehicle="Mi24_P";
+					skill=0.60000002;
+					ammo=0;
+				};
+			};
+			class Waypoints
+			{
+				items=2;
+				class Item0
+				{
+					position[]={4028.4558,29.737968,3842.5403};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={4039.0571,28.256788,3385.6189};
+					type="CYCLE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={3307.4968,19,3610.4949};
+					azimut=92.958977;
+					id=8;
+					side="WEST";
+					vehicle="US_Soldier_Crew_EP1";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={3305.2195,19,3612.9314};
+					azimut=92.958977;
+					id=9;
+					side="WEST";
+					vehicle="US_Soldier_Crew_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={3305.3176,19,3608.4282};
+					azimut=92.958977;
+					id=10;
+					side="WEST";
+					vehicle="US_Soldier_Crew_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+				};
+				class Item3
+				{
+					position[]={3304.8359,19,3610.6362};
+					azimut=92.958977;
+					id=11;
+					side="WEST";
+					vehicle="US_Soldier_Crew_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item3
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={3977.2446,19,3493.4053};
+					id=17;
+					side="EAST";
+					vehicle="T90";
+					leader=1;
+					skill=0.60000002;
+					ammo=0;
+				};
+				class Item1
+				{
+					position[]={4002.644,22.877876,3461.729};
+					id=18;
+					side="EAST";
+					vehicle="T90";
+					skill=0.60000002;
+					ammo=0;
+				};
+				class Item2
+				{
+					position[]={3946.5496,20.299118,3466.8804};
+					id=19;
+					side="EAST";
+					vehicle="T90";
+					skill=0.60000002;
+					ammo=0;
+				};
+			};
+			class Waypoints
+			{
+				items=2;
+				class Item0
+				{
+					position[]={3980.5664,34.38821,3808.7463};
+					speed="FULL";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={3978.4465,22.44351,3463.9082};
+					type="CYCLE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item4
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={4119.2588,19.277296,3421.4941};
+					special="FLY";
+					id=20;
+					side="EAST";
+					vehicle="Mi17_rockets_RU";
+					leader=1;
+					skill=0.60000002;
+					ammo=0;
+				};
+				class Item1
+				{
+					position[]={4177.5664,20.626139,3407.7124};
+					special="FLY";
+					id=21;
+					side="EAST";
+					vehicle="Mi24_P";
+					skill=0.60000002;
+					ammo=0;
+				};
+			};
+			class Waypoints
+			{
+				items=2;
+				class Item0
+				{
+					position[]={4116.0781,25.872162,3840.2502};
+					speed="LIMITED";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={4126.6797,28.634541,3383.3289};
+					type="CYCLE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item5
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={4013.7546,24.340248,3715.3777};
+					azimut=-109.82637;
+					id=22;
+					side="EAST";
+					vehicle="T90";
+					leader=1;
+					skill=0.60000002;
+					ammo=0;
+				};
+				class Item1
+				{
+					position[]={4034.9387,26.302753,3750.0151};
+					azimut=-109.82637;
+					id=23;
+					side="EAST";
+					vehicle="T90";
+					skill=0.60000002;
+					ammo=0;
+				};
+			};
+			class Waypoints
+			{
+				items=2;
+				class Item0
+				{
+					position[]={3715.9783,19,3611.5471};
+					speed="FULL";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={4041.0972,25.409998,3726.5122};
+					type="CYCLE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=8;
+		class Item0
+		{
+			position[]={4099.2446,19.062378,3656.2383};
+			id=0;
+			side="EMPTY";
+			vehicle="T72_TK_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item1
+		{
+			position[]={4099.2446,19,3618.0735};
+			id=1;
+			side="EMPTY";
+			vehicle="T72_TK_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item2
+		{
+			position[]={4100.3052,19,3582.0286};
+			id=2;
+			side="EMPTY";
+			vehicle="T90";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item3
+		{
+			position[]={3324.7163,19,3625.6882};
+			azimut=90;
+			id=12;
+			side="EMPTY";
+			vehicle="M1A1";
+			skill=0.60000002;
+		};
+		class Item4
+		{
+			position[]={3323.9668,19,3609.4436};
+			azimut=90;
+			id=13;
+			side="EMPTY";
+			vehicle="BMP3";
+			skill=0.60000002;
+		};
+		class Item5
+		{
+			position[]={3324.9097,19,3600.5098};
+			azimut=90;
+			id=14;
+			side="EMPTY";
+			vehicle="T90";
+			skill=0.60000002;
+		};
+		class Item6
+		{
+			position[]={3323.2317,19,3616.8804};
+			azimut=90;
+			id=15;
+			side="EMPTY";
+			vehicle="M2A2_EP1";
+			skill=0.60000002;
+		};
+		class Item7
+		{
+			position[]={3324.9302,19,3593.6248};
+			azimut=90;
+			id=16;
+			side="EMPTY";
+			vehicle="T72_TK_EP1";
+			skill=0.60000002;
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=4905302;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=12150358;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=4550613;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};

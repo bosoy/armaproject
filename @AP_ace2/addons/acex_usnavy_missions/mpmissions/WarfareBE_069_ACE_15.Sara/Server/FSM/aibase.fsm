@@ -1,0 +1,677 @@
+/*%FSM<COMPILE "D:\ArmA2\FSM Editor Personal Edition\scriptedFSM.cfg, aibase">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"AI_BASE_Init",0,250,-15.348785,-34.504990,74.651321,15.495049,0.000000,"AI BASE" \n "Init"};
+item1[] = {"AI_BASE_End",1,250,121.421707,50.708939,211.421722,100.708939,0.000000,"AI BASE" \n "End"};
+item2[] = {"AI_Base_Running",4,218,122.273567,-35.331635,212.273392,14.668474,0.000000,"AI Base" \n "Running"};
+item3[] = {"AI_Base_Not_Runn",4,218,-15.582159,46.154228,74.417801,96.154228,0.000000,"AI Base" \n "Not Running"};
+item4[] = {"Advanced__Init",2,4346,-16.452499,124.902863,73.547501,174.902863,0.000000,"Advanced " \n "Init"};
+item5[] = {"Loop",8,218,-16.586647,206.297379,73.413300,256.297363,0.000000,"Loop"};
+item6[] = {"Global_Checks",2,250,-16.758400,279.866577,73.241608,329.866577,0.000000,"Global Checks"};
+item7[] = {"Player_Commander",4,218,121.742462,280.140930,211.742416,330.140930,10.000000,"Player" \n "Commander?"};
+item8[] = {"Teams_Type",4,218,-164.034988,280.176239,-74.035011,330.176270,1.000000,"Teams Type"};
+item9[] = {"Update_Teams",2,250,-163.247650,207.771179,-73.247955,257.771149,0.000000,"Update Teams"};
+item10[] = {"Upgrades",4,218,-215.547272,312.433167,-125.547333,362.433167,0.000000,"Upgrades"};
+item11[] = {"Upgrades",2,250,-267.724365,207.955505,-177.724365,257.955505,0.000000,"Upgrades"};
+item12[] = {"",7,210,-169.994583,128.282928,-161.994583,136.282974,0.000000,""};
+link0[] = {0,2};
+link1[] = {0,3};
+link2[] = {2,1};
+link3[] = {3,4};
+link4[] = {4,5};
+link5[] = {5,6};
+link6[] = {6,5};
+link7[] = {6,7};
+link8[] = {6,8};
+link9[] = {6,10};
+link10[] = {7,1};
+link11[] = {8,9};
+link12[] = {9,12};
+link13[] = {10,11};
+link14[] = {11,12};
+link15[] = {12,5};
+globals[] = {0.000000,0,0,0,0,640,480,1,21,6316128,1,-428.130035,157.950897,480.503235,-35.746780,705,621,1};
+window[] = {0,-1,-1,-1,-1,866,125,1470,125,1,723};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "aibase";
+  class States
+  {
+    /*%FSM<STATE "AI_BASE_Init">*/
+    class AI_BASE_Init
+    {
+      name = "AI_BASE_Init";
+      init = /*%FSM<STATEINIT""">*/"_side = _this select 0;" \n
+       "_sideText = Str _side;" \n
+       "" \n
+       "_aibase = Format [""WFBE_%1_AIBase"",_sideText] Call GetNamespace;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "AI_Base_Not_Runn">*/
+        class AI_Base_Not_Runn
+        {
+          priority = 0.000000;
+          to="Advanced__Init";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!_aibase"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "AI_Base_Running">*/
+        class AI_Base_Running
+        {
+          priority = 0.000000;
+          to="AI_BASE_End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_aibase"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "AI_BASE_End">*/
+    class AI_BASE_End
+    {
+      name = "AI_BASE_End";
+      init = /*%FSM<STATEINIT""">*/"[Format[""WFBE_%1_AIBase"",_sideText],false,true] Call SetNamespace;" \n
+       "" \n
+       "if (!isNull _driver && alive _driver) then {" \n
+       "	_group = group _driver;" \n
+       "	deleteVehicle _vehicle;" \n
+       "	deleteVehicle _driver;" \n
+       "	deleteGroup _group;" \n
+       "};" \n
+       "if (!isNull _HQDriver && alive _HQDriver) then {" \n
+       "	_group = group _HQDriver;" \n
+       "	unassignVehicle _HQDriver;" \n
+       "	_HQDriver action [""EJECT"",_hq];" \n
+       "	deleteVehicle _HQDriver;" \n
+       "	deleteGroup _group;" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Advanced__Init">*/
+    class Advanced__Init
+    {
+      name = "Advanced__Init";
+      init = /*%FSM<STATEINIT""">*/"[Format[""WFBE_%1_AIBase"",_sideText],true,true] Call SetNamespace;" \n
+       "" \n
+       "_hq = (_sideText) Call GetSideHQ;" \n
+       "_isDeployed = (_sideText) Call GetSideHQDeployed;" \n
+       "" \n
+       "_types = Format[""WFBE_%1STRUCTURES"",_sideText] Call GetNamespace;" \n
+       "_names = Format[""WFBE_%1STRUCTURENAMES"",_sideText] Call GetNamespace;" \n
+       "_costs = Format[""WFBE_%1STRUCTURECOSTS"",_sideText] Call GetNamespace;" \n
+       "_scripts = Format[""WFBE_%1STRUCTURESCRIPTS"",_sideText] Call GetNamespace;" \n
+       "" \n
+       "_structureState = [false,false,false,false,false,false];" \n
+       "_structureTimer = 0;" \n
+       "_structureTotal = count _structureState;" \n
+       "_structureTypes = [""BARRACKS"",""LIGHT"",""COMMANDCENTER"",""HEAVY"",""AIRCRAFT"",""SERVICEPOINT""];" \n
+       "_structureRelPos = [[75,75],[-75,75],[75,0],[75,-75],[-75,-75],[-75,0]];" \n
+       "_structurePos = [[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]];" \n
+       "" \n
+       "_repairTruck = Format['WFBE_%1REPAIRTRUCK',_sideText] Call GetNamespace;" \n
+       "_crew = Format [""WFBE_%1SOLDIER"",_sideText] Call GetNamespace;" \n
+       "_HQMoving = false;" \n
+       "_repairAlive = false;" \n
+       "_deployed = false;" \n
+       "_vehicle = objNull;" \n
+       "_HQDriver = objNull;" \n
+       "_driver = objNull;" \n
+       "_destination = objNull;" \n
+       "_lastMove = time;" \n
+       "_buildingLocations = [eastStartingLocation,westStartingLocation];" \n
+       "_lastTeamAssignements = -3000;" \n
+       "_lastUpgradeCheck = -120;" \n
+       "_type = 0;" \n
+       "_teams = (Format[""WFBE_%1TEAMS"",_sideText] Call GetNamespace);" \n
+       "_sideMHQRepair = Format [""%1MHQRepair"",_sideText];" \n
+       "_sideSupply = Format [""%1Supplies"",_sideText];" \n
+       "_repairPrice = 'WFBE_MHQREPAIRPRICE' Call GetNamespace;" \n
+       "_vc = 'WFBE_VICTORYCONDITION' Call GetNamespace;" \n
+       "_ul = 'WFBE_UPGRADELABELS' Call GetNamespace;" \n
+       "_upgrlev = 'WFBE_UPGRADELEVELS' Call GetNamespace;" \n
+       "_upgrcond = 'WFBE_UPGRADECONDITION' Call GetNamespace;" \n
+       "_upgrord = 'WFBE_UPGRADEAIORDER' Call GetNamespace;" \n
+       "_hqt = Format[""WFBE_%1HEADQUARTERSTYPE"",_sideText] Call GetNamespace;" \n
+       "" \n
+       "_totalSupply = 0;" \n
+       "{_totalSupply = _totalSupply + (_x getVariable 'maxSupplyValue')} forEach towns;" \n
+       "" \n
+       "_buildings = (_sideText) Call GetSideStructures;" \n
+       "" \n
+       "{" \n
+       "	if (_x distance _hq < 500) then {" \n
+       "		_type = typeOf _x;" \n
+       "		if (_type in [WESTBAR,EASTBAR]) then {_structureState set [0,true]};//--- Barracks." \n
+       "		if (_type in [WESTLVF,EASTLVF]) then {_structureState set [1,true]};//--- Light." \n
+       "		if (_type in [WESTCC,EASTCC]) then {_structureState set [2,true]};//--- Command Center." \n
+       "		if (_type in [WESTHEAVY,EASTHEAVY]) then {_structureState set [3,true]};//--- Heavy." \n
+       "		if (_type in [WESTAIR,EASTAIR]) then {_structureState set [4,true]};//--- Aircraft." \n
+       "		if (_type in [WESTSP,EASTSP]) then {_structureState set [5,true]};//--- Service Point." \n
+       "	};" \n
+       "} forEach _buildings;" \n
+       "" \n
+       "_HQIsAlive = if (alive _hq) then {true} else {false};" \n
+       "_canBeDeploy = true;" \n
+       "if (isMultiplayer && _HQIsAlive) then {" \n
+       "	_tbpr = 'WFBE_TOWNBUILDPROTECTIONRANGE' Call GetNamespace;" \n
+       "	_isPlayerOnSide = false;" \n
+       "	" \n
+       "	{" \n
+       "		if (!isNull _x) then {" \n
+       "			if (side _x == _side && isPlayer _x) then {_isPlayerOnSide = true};" \n
+       "		};" \n
+       "	} forEach playableUnits;" \n
+       "	" \n
+       "	if (_isPlayerOnSide) then {" \n
+       "		{" \n
+       "			if (_x distance _hq < _tbpr) then {_canBeDeploy = false};" \n
+       "		} forEach towns;" \n
+       "	};" \n
+       "};" \n
+       "" \n
+       "if (!_isDeployed && _HQIsAlive && _canBeDeploy) then {" \n
+       "	_pos = getPos _hq;" \n
+       "	_pos set [2,0];" \n
+       "	_pos = [_pos,(('WFBE_AREAHQUNDEPLOYED' Call GetNamespace) select 0)+20] Call GetSafePlace;" \n
+       "	if (count _pos < 1) then {_pos = [_pos,(('WFBE_AREAHQUNDEPLOYED' Call GetNamespace) select 0)+50] Call GetSafePlace};" \n
+       "	if (count _pos < 1) then {_pos = Call Compile Format [""%1StartingLocation"",_sideText]};" \n
+       "	_dir = getDir _hq;" \n
+       "	_HQType = _names select _hqt;" \n
+       "	_supply = WF_Logic getVariable Format [""%1Supplies"",_sideText];" \n
+       "	if (_supply >= (_costs select _hqt)) then {" \n
+       "		[_HQType,_side,_pos,_dir] ExecVM 'Server\Construction\Construction_HQSite.sqf';" \n
+       "		_supply = _supply - (_costs select _hqt);" \n
+       "		WF_Logic setVariable [Format [""%1Supplies"",_sideText],_supply,true];" \n
+       "	};" \n
+       "};" \n
+       "" \n
+       "_CommanderUpgrade = {" \n
+       "	Private [""_index"",""_index2"",""_name"",""_side"",""_sideText"",""_time""];" \n
+       "	_time = _this select 0;" \n
+       "	_index = _this select 1;" \n
+       "	_index2 = _this select 2;" \n
+       "	_name = _this select 3;" \n
+       "	_side = _this select 4;" \n
+       "	_sideText = Str _side;" \n
+       "	" \n
+       "	sleep _time;" \n
+       "	" \n
+       "	_upgrades = (_sideText) Call GetSideUpgrades;" \n
+       "	_upgrades Set [_index2,_index + 1];" \n
+       "	Call Compile Format [""%1Upgrades = _upgrades; publicVariable '%1Upgrades';"",_sideText];" \n
+       "	" \n
+       "	WFBE_LocalizeMessage = [_side,'CLTFNCLOCALIZEMESSAGE',['UpgradeComplete',_index2,(_index + 1)]];" \n
+       "	publicVariable 'WFBE_LocalizeMessage';" \n
+       "	if (!isMultiplayer || (isServer && local player)) then {[_side,'CLTFNCLOCALIZEMESSAGE',['UpgradeComplete',_index2,(_index + 1)]] Spawn HandlePVF};" \n
+       "	[Format[""WFBE_%1_Upgrading"",_sideText],false,true] Call SetNamespace;" \n
+       "" \n
+       "	[""NewIntelAvailable"","""",_side,""""] Spawn SideMessage" \n
+       "};" \n
+       "" \n
+       "_lastCheck = 0;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Loop">*/
+        class Loop
+        {
+          priority = 0.000000;
+          to="Global_Checks";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _lastCheck > 10"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Global_Checks">*/
+    class Global_Checks
+    {
+      name = "Global_Checks";
+      init = /*%FSM<STATEINIT""">*/"//--- EXPERIMENTAL ENHANCED AI COMMANDER HANDLING --- Benny - 08/09/2009." \n
+       "_commander = (_side) Call GetCommanderTeam;" \n
+       "" \n
+       "_lastCheck = time;" \n
+       "_hq = (_sideText) Call GetSideHQ;" \n
+       "" \n
+       "_HQIsAlive = if !(alive _hq) then {false} else {true};" \n
+       "if (_structureTimer > 20) then {" \n
+       "	_structureTimer = 0;" \n
+       "	//--- Base Buildings handling." \n
+       "	for [{_count = 0},{_count < _structureTotal},{_count = _count + 1}] do {" \n
+       "		_currentBuilding = _structureTypes select _count;" \n
+       "		if !(_structureState select _count) then {" \n
+       "			_supply = WF_Logic getVariable _sideSupply;" \n
+       "			_index = Format[""WFBE_%1%2TYPE"",_sideText,_currentBuilding] Call GetNamespace;" \n
+       "			if ((_supply > (_costs select  _index)) && _HQIsAlive) then {" \n
+       "				_limit = (Format['WFBE_BUILDINGMAX%1',_currentBuilding]) Call GetNamespace;" \n
+       "				_structureType = _names select _index;" \n
+       "				_buildings = (_sideText) Call GetSideStructures;" \n
+       "				_pursue = true;" \n
+       "				" \n
+       "				//--- Limit control." \n
+       "				_current = {(typeOf _x) == _structureType} count _buildings;" \n
+       "				if (_current >= _limit) then {_pursue = false};" \n
+       "		" \n
+       "				//--- AI Can build." \n
+       "				if (_pursue) then {" \n
+       "					_x = getPos _hq select 0;" \n
+       "					_y = getPos _hq select 1;" \n
+       "					_pos = [];" \n
+       "					_pos set [0,((_structureRelPos select _count) select 0) + _x];" \n
+       "					_pos set [1,((_structureRelPos select _count) select 1) + _y];" \n
+       "					_newPos = [0,0,0];" \n
+       "					_roads = [];" \n
+       "					/* Retrieve the AI Spawn area */" \n
+       "					_distance = (Format[""WFBE_%1STRUCTUREDISTANCES"",_sideText] Call GetNamespace) select _index;" \n
+       "					_direction = (Format[""WFBE_%1STRUCTUREDIRECTIONS"",_sideText] Call GetNamespace) select _index;" \n
+       "					" \n
+       "					_continue = true;" \n
+       "					_attempts = 0;" \n
+       "					_max = 100;" \n
+       "					while {_continue} do {" \n
+       "						_newPos = [_pos,30,_max,10,0,50,0] Call BIS_fnc_findSafePos;" \n
+       "						_aiSpawnPos = [_newPos,_distance,_direction] Call GetPositionFrom;" \n
+       "						_aiSpawnPos set [2,0];" \n
+       "						_roads = _newPos nearRoads 30;" \n
+       "						_roads2 = _aiSpawnPos nearRoads 30;" \n
+       "						" \n
+       "						_isFlat = _aiSpawnPos isFlatEmpty [" \n
+       "							5,	//--- Minimal distance from another object" \n
+       "							0,				//--- If 0, just check position. If >0, select new one" \n
+       "							0.6,				//--- Max gradient" \n
+       "							5,	//--- Gradient area" \n
+       "							0,				//--- 0 for restricted water, 2 for required water," \n
+       "							false,				//--- True if some water can be in 25m radius" \n
+       "							objNull			//--- Ignored object" \n
+       "						];" \n
+       "						" \n
+       "						_isTooClose = false;" \n
+       "						{if (_x distance _newPos < 70) then {_isTooClose = true}} forEach _structurePos;" \n
+       "						if (count _roads == 0 && count _roads2 == 0 && !_isTooClose && count _isFlat != 0) then {_continue = false};" \n
+       "						_attempts = _attempts + 1;" \n
+       "						if (_attempts > 100 && _max == 100) then {_max = _max + 150};" \n
+       "					};" \n
+       "					_structurePos set [_count, _newPos];" \n
+       "					_dir = 0;" \n
+       "					_script = _scripts select _index;" \n
+       "					[_structureType,_side,_newPos,_dir,_index] ExecVM (Format[""Server\Construction\Construction_%1.sqf"",_script]);" \n
+       "					_supply = _supply - (_costs select _index);" \n
+       "					WF_Logic setVariable [_sideSupply,_supply,true];" \n
+       "					_structureState set [_count,true];" \n
+       "				};" \n
+       "			};" \n
+       "		};" \n
+       "	};" \n
+       "	" \n
+       "	//--- Base is completed. Proceed to next one." \n
+       "	_completed = true;" \n
+       "	{if (!_x) then {_completed = false}} forEach _structureState;" \n
+       "	if (_completed && !_HQMoving && time - _lastMove > ('WFBE_AICOMMANDERMOVEINTERVAL' Call GetNamespace)) then {_HQMoving = true};" \n
+       "	" \n
+       "	//--- HQ Moving part (it has to be alive)." \n
+       "	if (_HQMoving && _HQIsAlive || _deployed) then {" \n
+       "		_isDeployed = (_sideText) Call GetSideHQDeployed;" \n
+       "		if (_isDeployed) then {" \n
+       "			_pos = getPos _hq;" \n
+       "			_dir = getDir _hq;" \n
+       "			_HQType = _names select _hqt;" \n
+       "			_supply = WF_Logic getVariable _sideSupply;" \n
+       "			if (_supply >= (_costs select _hqt)) then {" \n
+       "				[_HQType,_side,_pos,_dir] ExecVM ""Server\Construction\Construction_HQSite.sqf"";" \n
+       "				_supply = _supply - (_costs select _hqt);" \n
+       "				WF_Logic setVariable [_sideSupply,_supply,true];" \n
+       "				_deployed = true;" \n
+       "			};" \n
+       "		};" \n
+       "		" \n
+       "		if (_deployed) then {" \n
+       "			_deployed = false;" \n
+       "			if (typeOf _hq != (Format [""WFBE_%1MHQNAME"",_sideText] Call GetNamespace)) then {_deployed = true};" \n
+       "			if (!_deployed) then {" \n
+       "				_hq = (_sideText) Call GetSideHQ;" \n
+       "				_destination = objNull;" \n
+       "				_destinations = startingLocations - _buildingLocations;" \n
+       "				_sorted = [_hq,_destinations] Call SortByDistance;" \n
+       "				_destination = _sorted select 0;" \n
+       "				if (!isNull (driver _hq)) then {(driver _hq) setDammage 1};" \n
+       "				_group = createGroup _side;" \n
+       "				_HQDriver = [_crew,_group,getPos _hq,_side] Call CreateMan;" \n
+       "				[_HQDriver] AllowGetIn true;" \n
+       "				_HQDriver MoveInDriver _hq;" \n
+       "				_HQDriver AssignAsDriver _hq;" \n
+       "				[_HQDriver] OrderGetIn true;" \n
+       "				_HQDriver doMove ([GetPos _destination,10,20] Call GetRandomPosition);" \n
+       "				_lastMove = time;" \n
+       "			};" \n
+       "		};" \n
+       "		" \n
+       "		if (_hq distance _destination < 30 && !isNull _destination) then {" \n
+       "			_HQMoving = false;" \n
+       "			_buildingLocations = _buildingLocations + [_destination];" \n
+       "			_destination = objNull;" \n
+       "			if (!isNull _HQDriver && alive _HQDriver) then {" \n
+       "				_group = group _HQDriver;" \n
+       "				unassignVehicle _HQDriver;" \n
+       "				_HQDriver action [""EJECT"",_hq];" \n
+       "				deleteVehicle _HQDriver;" \n
+       "				deleteGroup _group;" \n
+       "			};" \n
+       "			_isDeployed = (_sideText) Call GetSideHQDeployed;" \n
+       "			if (!_isDeployed) then {" \n
+       "				_pos = getPos _hq;" \n
+       "				_dir = getDir _hq;" \n
+       "				_HQType = _names select _hqt;" \n
+       "				_supply = WF_Logic getVariable _sideSupply;" \n
+       "				if (_supply >= (_costs select _hqt)) then {" \n
+       "					[_HQType,_side,_pos,_dir] ExecVM ""Server\Construction\Construction_HQSite.sqf"";" \n
+       "					_supply = _supply - (_costs select _hqt);" \n
+       "					WF_Logic setVariable [_sideSupply,_supply,true];" \n
+       "				};" \n
+       "				_buildings = (_sideText) Call GetSideStructures;" \n
+       "				_structureState = [false,false,false,false,false,false];" \n
+       "				{" \n
+       "					_type = typeOf _x;" \n
+       "					if (_type in [WESTBAR,EASTBAR] && (_x distance _hq < 500)) then {_structureState set [0,true]} else {_structureState set [0,false]};//--- Barracks." \n
+       "					if (_type in [WESTLVF,EASTLVF] && (_x distance _hq < 500)) then {_structureState set [1,true]} else {_structureState set [1,false]};//--- Light." \n
+       "					if (_type in [WESTCC,EASTCC] && (_x distance _hq < 500)) then {_structureState set [2,true]} else {_structureState set [2,false]};//--- Command Center." \n
+       "					if (_type in [WESTHEAVY,EASTHEAVY] && (_x distance _hq < 500)) then {_structureState set [3,true]} else {_structureState set [3,false]};//--- Heavy." \n
+       "					if (_type in [WESTAIR,EASTAIR] && (_x distance _hq < 500)) then {_structureState set [4,true]} else {_structureState set [4,false]};//--- Aircraft." \n
+       "					if (_type in [WESTSP,EASTSP] && (_x distance _hq < 500)) then {_structureState set [5,true]} else {_structureState set [5,false]};//--- Service Point." \n
+       "				} forEach _buildings;" \n
+       "			};" \n
+       "		};" \n
+       "	};" \n
+       "	" \n
+       "	//--- HQ Repair Part." \n
+       "	if (!_HQIsAlive && _vc != 1) then {" \n
+       "		//--- Closest Light." \n
+       "		_buildings = (_sideText) Call GetSideStructures;" \n
+       "		_checks = [_side,Format [""WFBE_%1LIGHTTYPE"",_sideText] Call GetNamespace,_buildings] Call GetFactories;" \n
+       "		_light = objNull;" \n
+       "		if (count _checks > 0) then {" \n
+       "			_sorted = [_hq,_checks] Call SortByDistance;" \n
+       "			_light = _sorted select 0;" \n
+       "		};" \n
+       "" \n
+       "		//--- Repair truck died." \n
+       "		if (!(alive _vehicle) || isNull _vehicle || !alive _driver || isNull _driver) then {_repairAlive = false};" \n
+       "		" \n
+       "		//--- Light is Alive, we can build a repair truck." \n
+       "		if (!_repairAlive && !isNull _light) then {" \n
+       "			_type = TypeOf _light;" \n
+       "			_index = _names find _type;" \n
+       "			_distance = (Format[""WFBE_%1STRUCTUREDISTANCES"",str _side] Call GetNamespace) select _index;" \n
+       "			_direction = (Format[""WFBE_%1STRUCTUREDIRECTIONS"",str _side] Call GetNamespace) select _index;" \n
+       "			_position = [GetPos _light,_distance,GetDir _light + _direction] Call GetPositionFrom;" \n
+       "			" \n
+       "			_vehicle = [_repairTruck,_position,_side,true] Call CreateVehi;" \n
+       "			_group = createGroup _side;" \n
+       "			_driver = [_crew,_group,_position,_side] Call CreateMan;" \n
+       "			[_driver] AllowGetIn true;" \n
+       "			_driver MoveInDriver _vehicle;" \n
+       "			_repairAlive = true;" \n
+       "" \n
+       "			[_sideText,'VehiclesCreated',1] Call UpdateStatistics;" \n
+       "			[_sideText,'UnitsCreated',1] Call UpdateStatistics;" \n
+       "			_driver doMove ([GetPos _hq,10,20] Call GetRandomPosition);" \n
+       "		};" \n
+       "		" \n
+       "		//--- Repair truck is in repair range." \n
+       "		if (_driver distance _hq < 50 && _repairAlive) then {" \n
+       "			if (isEngineOn _vehicle) then {_vehicle engineOn false};" \n
+       "			_supply = WF_Logic getVariable _sideSupply;" \n
+       "			if (_supply >= _repairPrice) then {" \n
+       "				_isBeingFixed = WF_Logic getVariable _sideMHQRepair;" \n
+       "				if (!_isBeingFixed) then {" \n
+       "					_supply = _supply - _repairPrice;" \n
+       "					WF_Logic setVariable [_sideSupply,_supply,true];" \n
+       "					WF_Logic setVariable [_sideMHQRepair,true,true];" \n
+       "					[_side] Spawn MHQRepair;" \n
+       "					_HQMoving = true;" \n
+       "					_deployed = true;" \n
+       "				};" \n
+       "				if (!isNull _driver && alive _driver) then {" \n
+       "					_group = group _driver;" \n
+       "					unassignVehicle _driver;" \n
+       "					_driver action [""EJECT"",_hq];" \n
+       "					deleteVehicle _vehicle;" \n
+       "					deleteVehicle _driver;" \n
+       "					deleteGroup _group;" \n
+       "				};" \n
+       "			};" \n
+       "		};" \n
+       "	};" \n
+       "};" \n
+       "_structureTimer = _structureTimer + 10;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Player_Commander">*/
+        class Player_Commander
+        {
+          priority = 10.000000;
+          to="AI_BASE_End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!isNull _commander"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Teams_Type">*/
+        class Teams_Type
+        {
+          priority = 1.000000;
+          to="Update_Teams";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _lastTeamAssignements > 300 && isNull _commander"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Upgrades">*/
+        class Upgrades
+        {
+          priority = 0.000000;
+          to="Upgrades";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _lastUpgradeCheck > 120 && isNull _commander"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Loop">*/
+        class Loop
+        {
+          priority = 0.000000;
+          to="Global_Checks";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _lastCheck > 10"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Update_Teams">*/
+    class Update_Teams
+    {
+      name = "Update_Teams";
+      init = /*%FSM<STATEINIT""">*/"_lastTeamAssignements = time;" \n
+       "_templates = Format [""WFBE_%1AITEAMTEMPLATES"",_sideText] Call GetNamespace;" \n
+       "_teamTypes = Format [""WFBE_%1AITEAMTYPES"",_sideText] Call GetNamespace;" \n
+       "_currentConfig = [];" \n
+       "_totalFunds = 0;" \n
+       "" \n
+       "{" \n
+       "	if !(isNil '_x') then {" \n
+       "		_teamIndex = (_x) Call GetTeamType;" \n
+       "		_totalFunds = _totalFunds + ((_x) Call GetTeamFunds);" \n
+       "		if (_teamIndex == -1) then {_teamIndex = 0};" \n
+       "		_currentConfig = _currentConfig + [_teamTypes select _teamIndex];" \n
+       "	};" \n
+       "} forEach _teams;" \n
+       "" \n
+       "_avgIncome = _totalFunds / maxPlayers;" \n
+       "_infantryTypes = {_x == 0} count _currentConfig;" \n
+       "_lightTypes = {_x == 1} count _currentConfig;" \n
+       "_heavyTypes = {_x == 2} count _currentConfig;" \n
+       "_airTypes = {_x == 3} count _currentConfig;" \n
+       "" \n
+       "_income = _side Call GetTotalSupplyValue;" \n
+       "" \n
+       "_infPercent = 0;" \n
+       "_lightPercent = 0;" \n
+       "_heavyPercent = 0;" \n
+       "_airPercent = 0;" \n
+       "if (_income < (_totalSupply - (_totalSupply/1.2)) || _avgIncome < 2000) then {_infPercent = 70; _lightPercent = 30};" \n
+       "if ((_income >= (_totalSupply - (_totalSupply/1.2)) && _income < (_totalSupply - (_totalSupply/1.6))) || _avgIncome > 2000) then {_infPercent = 60; _lightPercent = 30; _heavyPercent = 10};" \n
+       "if ((_income >= (_totalSupply - (_totalSupply/1.6)) && _income < (_totalSupply - (_totalSupply/2))) || _avgIncome > 4000) then {_infPercent = 50; _lightPercent = 30; _heavyPercent = 20};" \n
+       "if ((_income >= (_totalSupply - (_totalSupply/2)) && _income < (_totalSupply - (_totalSupply/3))) || _avgIncome > 12000) then {_infPercent = 40; _lightPercent = 30; _heavyPercent = 30};" \n
+       "if ((_income >= (_totalSupply - (_totalSupply/3)) && _income < (_totalSupply - (_totalSupply/4))) || _avgIncome > 18000) then {_infPercent = 30; _lightPercent = 20; _heavyPercent = 40; _airPercent = 10};" \n
+       "if (_income >= (_totalSupply - (_totalSupply/4)) || _avgIncome > 24000) then {_infPercent = 20; _lightPercent = 20; _heavyPercent = 50; _airPercent = 10};" \n
+       "" \n
+       "_infAssign = round(maxPlayers * (_infPercent / 100));" \n
+       "_lightAssign = round(maxPlayers * (_lightPercent / 100));" \n
+       "_heavyAssign = round(maxPlayers * (_heavyPercent / 100));" \n
+       "_airAssign = round(maxPlayers * (_airPercent / 100));" \n
+       "" \n
+       "_infTemplates = [];" \n
+       "_lightTemplates = [];" \n
+       "_heavyTemplates = [];" \n
+       "_airTemplates = [];" \n
+       "" \n
+       "_i = 0;" \n
+       "{" \n
+       "	switch (_x) do {" \n
+       "		case 0: {_infTemplates = _infTemplates + [_i]};" \n
+       "		case 1: {_lightTemplates = _lightTemplates + [_i]};" \n
+       "		case 2: {_heavyTemplates = _heavyTemplates + [_i]};" \n
+       "		case 3: {_airTemplates = _airTemplates + [_i]};" \n
+       "	};" \n
+       "	_i = _i + 1;" \n
+       "} forEach _teamTypes;" \n
+       "" \n
+       "{" \n
+       "	if !(isNil '_x') then {" \n
+       "		_skip = false;" \n
+       "		if (_infAssign > 0) then {" \n
+       "			_type = _infTemplates select (round(random((count _infTemplates)-1)));" \n
+       "			_infAssign = _infAssign - 1;" \n
+       "			_skip = true;" \n
+       "		};" \n
+       "		if (_lightAssign > 0 && !_skip) then {" \n
+       "			_type = _lightTemplates select (round(random((count _lightTemplates)-1)));" \n
+       "			_lightAssign = _lightAssign - 1;" \n
+       "			_skip = true;" \n
+       "		};" \n
+       "		if (_heavyAssign > 0 && !_skip) then {" \n
+       "			_type = _heavyTemplates select (round(random((count _heavyTemplates)-1)));" \n
+       "			_heavyAssign = _heavyAssign - 1;" \n
+       "			_skip = true;" \n
+       "		};" \n
+       "		if (_airAssign > 0 && !_skip) then {" \n
+       "			_type = _airTemplates select (round(random((count _airTemplates)-1)));" \n
+       "			_airAssign = _airAssign - 1;" \n
+       "			_skip = true;" \n
+       "		};" \n
+       "		[_x,_type] Call SetTeamType;" \n
+       "	};" \n
+       "} forEach _teams;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Loop">*/
+        class Loop
+        {
+          priority = 0.000000;
+          to="Global_Checks";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _lastCheck > 10"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Upgrades">*/
+    class Upgrades
+    {
+      name = "Upgrades";
+      init = /*%FSM<STATEINIT""">*/"_lastUpgradeCheck = time;" \n
+       "" \n
+       "//--- Command center is needed for upgrades. AI won't upgrade if he's moving around. Don't bother with money atm, only supply." \n
+       "_isDeployed = (_sideText) Call GetSideHQDeployed;" \n
+       "_buildings = (_sideText) Call GetSideStructures;" \n
+       "_checks = [_side,Format [""WFBE_%1COMMANDCENTERTYPE"",_sideText] Call GetNamespace,_buildings] Call GetFactories;" \n
+       "if (_isDeployed && (count _checks > 0) && !(Format[""WFBE_%1_Upgrading"",_sideText] Call GetNamespace)) then {" \n
+       "	_upgrades = (_sideText) Call GetSideUpgrades;" \n
+       "	_supply = WF_Logic getVariable _sideSupply;" \n
+       "	_break = false;" \n
+       "" \n
+       "	_upgrade = -1;" \n
+       "	_index = -1;" \n
+       "	_supplyLevel = -1;" \n
+       "	" \n
+       "	for [{_x = 0},{_x < (count _upgrord) && !_break},{_x = _x + 1}] do {" \n
+       "		_index = _upgrord select _x;" \n
+       "		_canUpgrade = _upgrcond select _index;" \n
+       "		//--- Can we use that upgrade?." \n
+       "		if (_canUpgrade) then {" \n
+       "			_upgradeLevels = _upgrlev select _index;" \n
+       "			_currentLevel = _upgrades select _index;" \n
+       "			//--- Have we reached the max?." \n
+       "			if (_currentLevel < _upgradeLevels) then {" \n
+       "				_supplyLevel = ((Format [""WFBE_UPGRADEPRICESLEVEL%1"",(_currentLevel + 1)] Call GetNamespace) select _index) select 0;" \n
+       "				//--- Do we have enough ksupply to upgrade?. Otherwise, just skip the upgrade until AI has enough supply." \n
+       "				if (_supply > _supplyLevel) then {" \n
+       "					_upgrade = _currentLevel;" \n
+       "					_break = true;" \n
+       "				} else {" \n
+       "					_break = true;" \n
+       "				};" \n
+       "			};" \n
+       "		};" \n
+       "	};" \n
+       "	" \n
+       "	if (_upgrade != -1) then {" \n
+       "		[Format[""WFBE_%1_Upgrading"",_sideText],true,true] Call SetNamespace;" \n
+       "		_supply = _supply - _supplyLevel;" \n
+       "		WF_Logic setVariable [_sideSupply,_supply,true];" \n
+       "		_time = (Format [""WFBE_UPGRADETIMESLEVEL%1"",_upgrade+1] Call GetNamespace) select _index;" \n
+       "		_name = _ul select _index;" \n
+       "		[_time,_upgrade,_index,_name,_side] Spawn _CommanderUpgrade;" \n
+       "	};" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Loop">*/
+        class Loop
+        {
+          priority = 0.000000;
+          to="Global_Checks";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _lastCheck > 10"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="AI_BASE_Init";
+  finalStates[] =
+  {
+    "AI_BASE_End"
+  };
+};
+/*%FSM</COMPILE>*/

@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_craters
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: 'B2B8C18A241C5A1BB511E6CFD53A5A1CAEFA46ED'
+//////</HEADER>//////

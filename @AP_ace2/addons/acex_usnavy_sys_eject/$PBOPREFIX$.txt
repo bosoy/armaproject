@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex_usnavy\addons\sys_eject
+Pbo Type is: Arma Addon
+Sha: '4190157F947EF652C08BAD4F525094AA61183D15'
+//////</HEADER>//////

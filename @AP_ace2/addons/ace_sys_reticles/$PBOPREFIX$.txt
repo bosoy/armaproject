@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_reticles
+Pbo Type is: Arma Addon
+Sha: '593F372EE57E5AD2A77399C5A2F4B4ED3BAAA527'
+//////</HEADER>//////

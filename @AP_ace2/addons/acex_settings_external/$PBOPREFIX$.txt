@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=x\acex\addons\settings_external
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: 'B6F4C2DB6248A31D7E01FC527E13D5704838C8F7'
+//////</HEADER>//////

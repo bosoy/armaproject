@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_stamina
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: '746630625F9BFC43FB8591A7C14767032A68A5DE'
+//////</HEADER>//////

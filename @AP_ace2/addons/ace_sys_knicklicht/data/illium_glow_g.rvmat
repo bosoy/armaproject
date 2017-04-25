@@ -1,0 +1,19 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 5.24
+//Produced on Sat Apr 06 11:45:44 2013 : Created on Sat Apr 06 11:45:44 2013
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class ace_sys_knicklicht : data\illium_glow_g.rvmat{
+ambient[] = {0.0,1.0,0.0,1.0};
+diffuse[] = {0.0,1.0,0.0,1.0};
+forcedDiffuse[] = {0.0,1.0,0.0,1.0};
+emmisive[] = {0.0,1.0,0.0,1.0};
+specular[] = {0.0,1.0,0.0,1.0};
+specularPower = 1;
+renderFlags[] = {"NoZWrite","AddBlend","NoAlphaWrite"};
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";
+//};

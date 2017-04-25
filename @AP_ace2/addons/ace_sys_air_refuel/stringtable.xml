@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2">
+<Package name="ace2">
+<Container name="sys_air_refuel">
+<Key ID="STR_ACE_AIR_REFUEL">
+<German>(Æ) Support: Luftbetankung</German>
+<English>(Æ) Air Refueling</English>
+<Spanish>(Æ) Air Refueling</Spanish>
+<Czech>(Æ) Tankování za letu</Czech>
+<French>(Æ) Ravitaillement en vol</French>
+<Polish>(Æ) Tankowanie w powietrzu</Polish>
+<Italian>(Æ) Rifornimento Aereo</Italian>
+<Russian>(Æ) Дозаправка в воздухе</Russian>
+<Hungarian>(Æ) Légi utántöltés</Hungarian>
+</Key>
+<Key ID="STR_ACE_AIR_REFUEL_UA_REL">
+<German>Tankstutzen ablassen</German>
+<English>Release Hose</English>
+<Spanish>Release Hose</Spanish>
+<Czech>Uvolnit Hadici</Czech>
+<French>Descendre le panier</French>
+<Polish>Wysuń przewód</Polish>
+<Italian>Sgancia Manicotto</Italian>
+<Russian>Выпустить топливный шланг</Russian>
+<Hungarian>Tömlő kiengedése</Hungarian>
+</Key>
+<Key ID="STR_ACE_AIR_REFUEL_UA_PUL">
+<German>Tankstutzen einholen</German>
+<English>Pull Hose</English>
+<Spanish>Pull Hose</Spanish>
+<Czech>Zatáhnout Hadici</Czech>
+<French>Remonter le panier</French>
+<Polish>Wciągnij przewód</Polish>
+<Italian>Ritira Manicotto</Italian>
+<Russian>Убрать топливный шланг</Russian>
+<Hungarian>Tömlő behúzása</Hungarian>
+</Key>
+<Key ID="STR_ACE_AIR_REFUEL_DEPLOYED">
+<German>Tankanlage bereit</German>
+<English>Refueling device ready</English>
+<Spanish>Refueling device ready</Spanish>
+<Czech>Tankovací zařízení připraveno</Czech>
+<French>Sonde de ravitaillement prête</French>
+<Polish>Sonda gotowa</Polish>
+<Italian>Meccanismo di rifornimento pronto</Italian>
+<Russian>Заправочное устройство готово</Russian>
+<Hungarian>Tömlő kész</Hungarian>
+</Key>
+<Key ID="STR_ACE_AIR_REFUEL_DAMAGED">
+<German>Tankanlage beschädigt</German>
+<English>Refueling device dammaged</English>
+<Spanish>Refueling device dammaged</Spanish>
+<Czech>Tankovací zařízení poškozeno</Czech>
+<French>Sonde de ravitaillement endommagée</French>
+<Polish>Sonda uszkodzona</Polish>
+<Italian>Meccanismo di rifornimento danneggiato</Italian>
+<Russian>Заправочное устройство повреждено</Russian>
+<Hungarian>A tömlő megsérült</Hungarian>
+</Key>
+<Key ID="STR_ACE_AIR_REFUEL_UNDEPLOYED">
+<German>Tankanlage eingefahren und bereit</German>
+<English>Refueling device retracted</English>
+<Spanish>Refueling device retracted</Spanish>
+<Czech>Tankovací zařízení zataženo</Czech>
+<French>Sonde de ravitaillement rétractée</French>
+<Polish>Sonda schowana</Polish>
+<Italian>Meccanismo di rifornimento ritirato</Italian>
+<Russian>Заправочное устройство убрано</Russian>
+<Hungarian>Tömlő behúzva</Hungarian>
+</Key>
+<Key ID="STR_ACE_AIR_REFUEL_DOCKED">
+<German>Bereit zur Treibstoffaufnahme</German>
+<English>Ready to take fuel</English>
+<Spanish>Ready to take fuel</Spanish>
+<Czech>Připraven tankovat</Czech>
+<French>Paré à ravitailler</French>
+<Polish>Gotowy do tankowania</Polish>
+<Italian>Pronto per il rifornimento</Italian>
+<Russian>Готов принять топливо</Russian>
+<Hungarian>Utántöltéshez készenáll</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

@@ -1,0 +1,27 @@
+
+2009-06-30: dumpConfig.sqf 0.95
+- added workaround for diag_log's strange handling of strings containing percent signs (reported by Squelch)
+- minor corrections and changes
+
+2009-06-20: dumpConfig.sqf 0.94
+- renamed dumpConfigTree.sqf to dumpConfig.sqf
+- code clean-up
+- added simple wrapper mission
+
+2009-05-30: dumpConfigTree.sqf 0.93 (unreleased)
+- removed ArmAlib requirement
+- broke compatibility with ArmA by using ARMA2's new "diag_log" statement
+- changed default behaviour to intend the dump with tabs instead of spaces
+
+2009-04-03: dumpConfigTree.sqf 0.92
+- added missing instruction to the REAME (noticed by kju)
+
+2009-03-09: dumpConfigTree.sqf 0.92
+- fixed the wrong brackets for subarrays (reported by kju)
+
+2009-03-05: dumpConfigTree.sqf 0.91
+- fixed the wrong/missing brackets for arrays (reported by kju)
+
+2009-03-04: dumpConfigTree.sqf 0.9
+- initial release
+

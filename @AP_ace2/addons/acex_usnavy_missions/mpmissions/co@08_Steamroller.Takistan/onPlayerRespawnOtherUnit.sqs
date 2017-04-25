@@ -1,0 +1,2 @@
+execVM "briefing.sqf"
+playMusic ""

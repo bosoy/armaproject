@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_g_effects
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: '9EBFE617093DFF2A8A9060AEBCDE0D032670546F'
+//////</HEADER>//////

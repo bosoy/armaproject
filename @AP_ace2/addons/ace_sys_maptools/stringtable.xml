@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="sys_maptools">
+<Container name="STR_DN">
+<Key ID="STR_ACE_MAPTOOLS_NAME">
+<English>Map Tools</English>
+<German>Kartenwerkzeug</German>
+<Russian>Инструменты для карты</Russian>
+<Polish>Piórnik z narzędziami do mapy</Polish>
+<Spanish>Map Tools</Spanish>
+<French>Map Tools</French>
+<Czech>Pomůcky k mapě</Czech>
+<Italian>Map Tools</Italian>
+<Hungarian>Térkép eszközök</Hungarian>
+</Key>
+<Key ID="STR_ACE_MAPTOOLS_DESC">
+<English>Contains a transparent map compass and pens for drawing on the map.</English>
+<German>Enthält transparenten Kartenkompass und Stifte um auf der Karte zu zeichen.</German>
+<Russian>В состав входят компас и ручки для рисования на карте.</Russian>
+<Polish>Zawiera przezroczysty kompas i ołówki do rysowania na mapie.</Polish>
+<Spanish>Contains a transparent map compass and pens for drawing on the map.</Spanish>
+<French>Contient une boussole et un crayon adaptés pour tracer sur une carte.</French>
+<Czech>Obsahuje průhledný kompas a tužky pro kreslení do mapy.</Czech>
+<Italian>Contains a transparent map compass and pens for drawing on the map.</Italian>
+<Hungarian>Tartalmaz egy átlátszló iránytűt, és tollakat a térképen való rajzoláshoz.</Hungarian>
+</Key>
+<Key ID="STR_ACE_MAPTOOLS_COPYUA">
+<English>Copy Map</English>
+<German>Kopiere Karte</German>
+<Russian>Скопировать карту</Russian>
+<Polish>Kopiuj oznaczenia mapy</Polish>
+<Spanish>Copy Map</Spanish>
+<French>Copier la carte</French>
+<Czech>Zkopírovat mapu</Czech>
+<Italian>Copy Map</Italian>
+<Hungarian>Térkép másolása</Hungarian>
+</Key>
+<Key ID="STR_ACE_MAPTOOLS_PLACERULER">
+<English>Place ruler</English>
+<German>Lineal</German>
+<Russian>Приложить линейку</Russian>
+<Polish>Postaw linijkę</Polish>
+<Spanish>Place ruler</Spanish>
+<French>Place ruler</French>
+<Czech>Přiložit pravítko</Czech>
+<Italian>Place ruler</Italian>
+<Hungarian>Place ruler</Hungarian>
+</Key>
+<Key ID="STR_ACE_MAPTOOLS_ALIGNRULER">
+<English>Align ruler</English>
+<German>Lineal ausrichten</German>
+<Russian>Выровнять линейку</Russian>
+<Polish>Przyłóż linijkę</Polish>
+<Spanish>Align ruler</Spanish>
+<French>Align ruler</French>
+<Czech>Nasměrovat pravítko</Czech>
+<Italian>Align ruler</Italian>
+<Hungarian>Align ruler</Hungarian>
+</Key>
+<Key ID="STR_ACE_MAPTOOLS_STARTDRAWING">
+<English>Start drawing</English>
+<German>Freihandzeichnen</German>
+<Russian>Начать рисовать</Russian>
+<Polish>Rozpocznij rysowanie</Polish>
+<Spanish>Start drawing</Spanish>
+<French>Start drawing</French>
+<Czech>Začít kreslit</Czech>
+<Italian>Start drawing</Italian>
+<Hungarian>Start drawing</Hungarian>
+</Key>
+<Key ID="STR_ACE_MAPTOOLS_ENDSTRAIGHTLINE">
+<English>End straight line</English>
+<German>Zeichne Linie</German>
+<Russian>Закончить прямую линию</Russian>
+<Polish>Narysuj linię</Polish>
+<Spanish>End straight line</Spanish>
+<French>End straight line</French>
+<Czech>Zakončit rovnou čáru</Czech>
+<Italian>End straight line</Italian>
+<Hungarian>End straight line</Hungarian>
+</Key>
+<Key ID="STR_ACE_MAPTOOLS_DELETELINE">
+<English>Delete line</English>
+<German>Löschen</German>
+<Russian>Удалить линию</Russian>
+<Polish>Skasuj linię</Polish>
+<Spanish>Delete line</Spanish>
+<French>Delete line</French>
+<Czech>Smazat čáru</Czech>
+<Italian>Delete line</Italian>
+<Hungarian>Delete line</Hungarian>
+</Key>
+<Key ID="STR_ACE_MAPTOOLS_COPYSTAT">
+<English>Copied %1 of %2 lines.</English>
+<German>%1 von %2 Zeilen kopiert.</German>
+<Russian>Скопировано %1 из %2 линий.</Russian>
+<Polish>Skopiowano %1 z %2 linii.</Polish>
+<Spanish>Copied %1 of %2 lines.</Spanish>
+<French>Copie de %1 ligne(s) sur %2.</French>
+<Czech>Okopírováno %1 z %2 čar.</Czech>
+<Italian>Copied %1 of %2 lines.</Italian>
+<Hungarian>%1 / %2 vonalak másolva.</Hungarian>
+</Key>
+<Key ID="STR_ACE_MAPTOOLS_COPYSUC">
+<English>Map Copied!</English>
+<German>Karte kopiert!</German>
+<Russian>Карта скопирована!</Russian>
+<Polish>Oznaczenia skopiowane!</Polish>
+<Spanish>Map Copied!</Spanish>
+<French>Carte copiée!</French>
+<Czech>Mapa obkreslena!</Czech>
+<Italian>Map Copied!</Italian>
+<Hungarian>Térkép lemásolva</Hungarian>
+</Key>
+<Key ID="STR_ACE_MAPTOOLS_COPYFAIL">
+<English>You moved too far from the map!</English>
+<German>Zu weit weg von der Karte!</German>
+<Russian>Вы отошли слишком далеко от карты!</Russian>
+<Polish>Odszedłeś zbyt daleko od mapy!</Polish>
+<Spanish>You moved too far from the map!</Spanish>
+<French>Vous vous êtes trop éloigné(e) de la carte!</French>
+<Czech>Jsi příliš daleko od mapy!</Czech>
+<Italian>You moved too far from the map!</Italian>
+<Hungarian>Túl messze mentél!</Hungarian>
+</Key>
+</Container></Package></Project>

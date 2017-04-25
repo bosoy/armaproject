@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_barometric_altimeter
+Pbo Type is: Arma Addon
+Sha: 'BD52E4CD2C992D58D0F3297DE9BD666B1771260F'
+//////</HEADER>//////

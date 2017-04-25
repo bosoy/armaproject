@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="sys_explosives">
+<Container name="INTERACTION">
+<Key ID="STR_INT_ACE_SYS_EXPLOSIVES_MENUNAME">
+<German>Sprengmittel ></German>
+<English>Explosives ></English>
+<Italian>Explosives ></Italian>
+<Spanish>Explosives ></Spanish>
+<French>Explosives ></French>
+<Czech>Výbušniny ></Czech>
+<Russian>Взрывчатка ></Russian>
+<Polish>Ładunki wybuchowe ></Polish>
+<Hungarian>Explosives ></Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_EXPLOSIVES_CUT_TRIPWIRE">
+<English>Cut tripwire</English>
+<German>Stolperdraht zerschneiden</German>
+<Spanish>Cut tripwire</Spanish>
+<Czech>Přestříhnout nástražný drát</Czech>
+<Russian>Срезать растяжку</Russian>
+<Italian>Cut tripwire</Italian>
+<Polish>Przetnij linkę wyzwalacza</Polish>
+<French>Cut tripwire</French>
+<Hungarian>Cut tripwire</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_EXPLOSIVES_HIDE_STAKE">
+<English>Hide stake</English>
+<German>Stolperdraht verbergen</German>
+<Spanish>Hide stake</Spanish>
+<Czech>Schovat tyčku</Czech>
+<Russian>Спрятать разтяжку</Russian>
+<Italian>Hide stake</Italian>
+<Polish>Schowaj słupek</Polish>
+<French>Hide stake</French>
+<Hungarian>Hide stake</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_EXPLOSIVES_DEFUSE">
+<English>Disarm %1</English>
+<German>%1 entschärfen</German>
+<Spanish>Disarm %1</Spanish>
+<Czech>Odjistit %1</Czech>
+<Russian>Обезвредить %1</Russian>
+<Italian>Disarm %1</Italian>
+<Polish>Rozbrój %1</Polish>
+<French>Disarm %1</French>
+<Hungarian>Disarm %1</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_EXPLOSIVES_ACTIVATE">
+<English>Activate %1</English>
+<German>%1 aktivieren</German>
+<Spanish>Activate %1</Spanish>
+<Czech>Aktivovat %1</Czech>
+<Russian>Активировать %1</Russian>
+<Italian>Activate %1</Italian>
+<Polish>Włącz %1</Polish>
+<French>Activate %1</French>
+<Hungarian>Activate %1</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_EXPLOSIVES_DEACTIVATE">
+<English>Deactivate %1</English>
+<German>%1 deaktivieren</German>
+<Spanish>Deactivate %1</Spanish>
+<Czech>Deaktivovat %1</Czech>
+<Russian>Деактивировать %1</Russian>
+<Italian>Deactivate %1</Italian>
+<Polish>Wyłącz %1</Polish>
+<French>Deactivate %1</French>
+<Hungarian>Deactivate %1</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_EXPLOSIVES_SUBMERGE">
+<English>Bury %1</English>
+<German>%1 eingraben</German>
+<Spanish>Bury %1</Spanish>
+<Czech>Zakopat %1</Czech>
+<Russian>Зарыть %1</Russian>
+<Italian>Bury %1</Italian>
+<Polish>Zakop %1</Polish>
+<Hungarian>Bury %1</Hungarian>
+<French>Bury %1</French>
+</Key>
+<Key ID="STR_ACE_SYS_EXPLOSIVES_ANTISUBMERGE">
+<English>Excavate %1</English>
+<German>%1 ausgraben</German>
+<Spanish>Excavate %1</Spanish>
+<Czech>Vykopat %1</Czech>
+<Russian>Разрыть %1</Russian>
+<Italian>Excavate %1</Italian>
+<Polish>Wykop %1</Polish>
+<Hungarian>Excavate %1</Hungarian>
+<French>Excavate %1</French>
+</Key>
+<Key ID="STR_ACE_SYS_EXPLOSIVES_ATTACH">
+<English>Attach %1</English>
+<German>%1 anbringen</German>
+<Spanish>Attach %1</Spanish>
+<Czech>Upevnit %1</Czech>
+<Russian>Прикрепить %1</Russian>
+<Italian>Attach %1</Italian>
+<Polish>Przyczep %1</Polish>
+<Hungarian>Attach %1</Hungarian>
+<French>Attach %1</French>
+</Key>
+<Key ID="STR_ACE_SYS_EXPLOSIVES_SIGHT_IN">
+<English>Sight in %1</English>
+<German>%1 justieren</German>
+<Spanish>Apuntar %1</Spanish>
+<Czech>Nasměrovat %1</Czech>
+<Russian>Направить %1</Russian>
+<Italian>%1 in vista</Italian>
+<Polish>Wyceluj %1</Polish>
+<French>Orientation %1</French>
+<Hungarian>Sight in %1</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_EXPLOSIVES_ATTACH_CLACKER">
+<English>Attach clacker</English>
+<German>Fernzünder anbringen</German>
+<Spanish>Attach clacker</Spanish>
+<Czech>Připojit detonátor</Czech>
+<Russian>Подкл. дист. взрыв.</Russian>
+<Italian>Attach clacker</Italian>
+<Polish>Przyczep zapalnik</Polish>
+<French>Attach clacker</French>
+<Hungarian>Attach clacker</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_EXPLOSIVES_PICKUP_CLACKER">
+<English>Take clacker</English>
+<German>Fernzünder nehmen</German>
+<Spanish>Take clacker</Spanish>
+<Czech>Vzít detonátor</Czech>
+<Russian>Взять дист. взрыватель</Russian>
+<Italian>Take clacker</Italian>
+<Polish>Zabierz zapalnik</Polish>
+<French>Take clacker</French>
+<Hungarian>Take clacker</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_EXPLOSIVES_ATTACH_TRIPWIRE">
+<English>Tripwire mine</English>
+<German>Stolperdraht anbringen</German>
+<Spanish>Colocar alambre de disparo</Spanish>
+<Czech>Upevnit nástražný drát</Czech>
+<Russian>Установить растяжку</Russian>
+<Italian>Estensione filo d'inciampo</Italian>
+<Polish>Poprowadź linkę wyzwalacza</Polish>
+<French>Placer le fil déclencheur</French>
+<Hungarian>Botlódrót haszn</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_EXPLOSIVES_ATTACH_PARM_TRIPWIRE">
+<English>Attach optical cable</English>
+<German>Lichtwellenkabel anbringen</German>
+<Spanish>Attach optical cable</Spanish>
+<Czech>Upevnit optický kabel</Czech>
+<Russian>Присоединить оптический кабель</Russian>
+<Italian>Attach optical cable</Italian>
+<Polish>Przyczep światłowód</Polish>
+<French>Attach optical cable</French>
+<Hungarian>Attach optical cable</Hungarian>
+</Key>
+<!-- Dont change this or we have to edit all scripts --> 
+<Key ID="STR_ACE_EXPL_CTRIPE">
+<English>End tripwire</English>
+<German>Stolperdraht befestigen</German>
+<Spanish>Terminar alambre de disparo</Spanish>
+<Czech>Ukončit nástražný drát</Czech>
+<Russian>Закончить установку растяжки</Russian>
+<Italian>Fine estensione filo</Italian>
+<Polish>Przymocuj koniec linki</Polish>
+<French>Arrêter le fil</French>
+<Hungarian>Botlódrót vége</Hungarian>
+</Key>
+<Key ID="STR_ACE_EXPL_CTRIPEOPTICAL">
+<English>End optical cable</English>
+<German>Lichtwellenkabel befestigen</German>
+<Spanish>End optical cable</Spanish>
+<Czech>Ukončit optický kabel</Czech>
+<Russian>Завершить уст. оптического кабеля</Russian>
+<Italian>End optical cable</Italian>
+<Polish>Zakończenie światłowodu</Polish>
+<French>End optical cable</French>
+<Hungarian>End optical cable</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_EXPLOSIVES_SET_TIMER">
+<English>Set safety fuse</English>
+<German>Anzündschnur anbringen</German>
+<Spanish>Set fuse</Spanish>
+<Czech>Set fuse</Czech>
+<Russian>Set fuse</Russian>
+<Italian>Set fuse</Italian>
+<Polish>Set fuse</Polish>
+<French>Set fuse</French>
+<Hungarian>Set fuse</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_EXPLOSIVES_SETUP">
+<English>Setup %1</English>
+<German>%1 einstellen</German>
+<Spanish>Setup %1</Spanish>
+<Czech>Nastavit %1</Czech>
+<Russian>Подготовить %1</Russian>
+<Italian>Setup %1</Italian>
+<Polish>Przygotuj %1</Polish>
+<French>Mettre en place %1</French>
+<Hungarian>Setup %1</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_EXPLOSIVES_DISARM">
+<English>Take %1</English>
+<German>%1 nehmen</German>
+<Spanish>Take %1</Spanish>
+<Czech>Vzít %1</Czech>
+<Russian>Взять %1</Russian>
+<Italian>Take %1</Italian>
+<Polish>Zabierz %1</Polish>
+<French>Take %1</French>
+<Hungarian>Take %1</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_EXPLOSIVES_PLACE">
+<English>Place %1</English>
+<German>%1 ablegen</German>
+<Spanish>Place %1</Spanish>
+<Czech>Umístit %1</Czech>
+<Russian>Установить %1</Russian>
+<Italian>Piazza %1</Italian>
+<Polish>Ustaw %1</Polish>
+<French>Placer %1</French>
+<Hungarian>%1 elhelyezése</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_EXPLOSIVES_ARM">
+<English>Arm %1</English>
+<German>%1 scharf machen</German>
+<Spanish>Arm %1</Spanish>
+<Czech>Aktivovat %1</Czech>
+<Russian>Боевой взвод %1</Russian>
+<Italian>Arm %1</Italian>
+<Polish>Uzbrój %1</Polish>
+<French>Armer %1</French>
+<Hungarian>Arm %1</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_EXPLOSIVES_TOUCHOFF">
+<English>Detonate %1 (#%2)</English>
+<German>%1 zünden (#%2)</German>
+<Spanish>Detonate %1 (#%2)</Spanish>
+<Czech>Odpal %1 (#%2)</Czech>
+<Russian>Подрыв %1 (#%2)</Russian>
+<Italian>Detonate %1 (#%2)</Italian>
+<Polish>Odpal %1 (#%2)</Polish>
+<French>Detonate %1 (#%2)</French>
+<Hungarian>Detonate %1 (#%2)</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_EXPLOSIVES_SAFETYOFF">
+<English>Safety off (%1 #%2)</English>
+<German>%1 entsichern (#%2)</German>
+<Spanish>Safety off (%1 #%2)</Spanish>
+<Czech>Odjistit (%1 #%2)</Czech>
+<Russian>Снять с предохранителя (%1 #%2)</Russian>
+<Italian>Safety off (%1 #%2)</Italian>
+<Polish>Odbezpiecz (%1 #%2)</Polish>
+<French>Armer %1 (#%1)</French>
+<Hungarian>Safety off (%1 #%2)</Hungarian>
+</Key>
+</Container>
+<Container name="STR_HINT">
+<Key ID="STR_HINT_ACE_SYS_EXPLOSIVES_DEFUSING">
+<English>Defusing...</English>
+<German>Entschärfe</German>
+<Spanish>Defusing...</Spanish>
+<Czech>Zneškodňuji...</Czech>
+<Russian>Обезвреживание...</Russian>
+<Italian>Defusing...</Italian>
+<Polish>Rozbrajanie...</Polish>
+<French>Defusing...</French>
+<Hungarian>Defusing...</Hungarian>
+</Key>
+<Key ID="STR_HINT_ACE_SYS_EXPLOSIVES_ARMED5SEC">
+<English>Mine is armed in 5 seconds</English>
+<German>Mine ist in 5 Sekunden scharf</German>
+<Spanish>Mine is armed in 5 seconds</Spanish>
+<Czech>Mina bude odjištěna za 5 sekund</Czech>
+<Russian>Мина будет на боевом через 5 сек.</Russian>
+<Italian>Mina armata in 5 secondi</Italian>
+<Polish>Rozbrajanie miny potrwa 5 sekund</Polish>
+<French>Mine armée dans 5 secondes</French>
+<Hungarian>Akna 5mp-n belül élesítve</Hungarian>
+</Key>
+<Key ID="STR_HINT_ACE_SYS_EXPLOSIVES_TOOFAR">
+<English>Too far away</English>
+<German>Zu weit weg</German>
+<Spanish>Too far away</Spanish>
+<Czech>Příliš daleko</Czech>
+<Russian>Слишком далеко</Russian>
+<Italian>Troppo Lontano</Italian>
+<Polish>Za daleko</Polish>
+<French>Trop loin</French>
+<Hungarian>Túl messze van</Hungarian>
+</Key>
+<Key ID="STR_HINT_ACE_SYS_EXPLOSIVES_CLACKER_RESET">
+<English>%1 clacker #%2 set safe</English>
+<German>Zünder %1 (#%2) entschärft</German>
+<Spanish>%1 clacker #%2 set safe</Spanish>
+<Czech>%1 detonátor #%2 byl zajištěn</Czech>
+<Russian>Взрыватель %1 (#%2) на предохр.</Russian>
+<Italian>%1 clacker #%2 set safe</Italian>
+<Polish>%1 zapalnik #%2 zabezpieczony</Polish>
+<French>%1 clacker #%2 set safe</French>
+<Hungarian>%1 clacker #%2 set safe</Hungarian>
+</Key>
+</Container>
+<Container name="STR_DSS">
+<Key ID="STR_DSS_ACE_CLAYMORE_M">
+<German>Bezeichnung: M18A1 Claymore Mine&lt;br/&gt;Typ: Splitterrichtmine&lt;br/&gt;Auslösung: Fernzünder, Zugzünder</German>
+<English>Designation: M18A1 claymore mine&lt;br/&gt;Type: Direction fragmentation anti-personnel mine&lt;br/&gt;Fuzing: Remote, Tripwire</English>
+<Italian>Designazione: M18A1 claymore mine&lt;br/&gt;Tipo: Carica a Frammentazione Anti Fanteria mine&lt;br/&gt;Funzione: Remoto, Tripwire</Italian>
+<Spanish>Designation: M18A1 claymore mine&lt;br/&gt;Type: Direction fragmentation anti-personnel mine&lt;br/&gt;Fuzing: Remote, Tripwire</Spanish>
+<French>Designation: M18A1 Mine claymore&lt;br/&gt;Type: Mine directionnelle à fragmentation anti-personnel&lt;br/&gt;Déclenchement: A distance, Contact</French>
+<Czech>Označení: M18A1 Claymore Mina&lt;br/&gt;Typ: Směrová protipěchodtní mina&lt;br/&gt;Detonace: Dálkově, Nástražným drátem</Czech>
+<Russian>Наименование: M18A1 Claymore мина&lt;br/&gt;Тип: ПП осколочная мина направленного действия&lt;br/&gt;Взрыватель: управляемый, натяжной</Russian>
+<Polish>Oznaczenie: mina kierunkowa M18A1 Claymore M18A1&lt;br/&gt;Typ: kierunkowa fragmentacyjna mina przeciwpiechotna&lt;br/&gt;Detonatory: zdalny, linkowy</Polish>
+<Hungarian>Megjelölés: M18A1 Claymore akna&lt;br/&gt;Típus: Gyalogság elleni repeszaknagránát&lt;br/&gt;Detonáció: Távvezérelt, botlódrót</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_MON50_M">
+<German>Bezeichnung: MON-50 Mine&lt;br/&gt;Typ: Splitterrichtmine&lt;br/&gt;Auslösung: Fernzünder, Zugzünder</German>
+<English>Designation: MON-50 mine&lt;br/&gt;Type: Direction fragmentation anti-personnel mine&lt;br/&gt;Fuzing: Remote, Tripwire</English>
+<Italian>Designazione: MON-50 mine&lt;br/&gt;Tipo: Carica a Frammentazione Anti Fanteria mine&lt;br/&gt;Funzione: Remoto, Tripwire</Italian>
+<Spanish>Designation: MON-50 mine&lt;br/&gt;Type: Direction fragmentation anti-personnel mine&lt;br/&gt;Fuzing: Remote, Tripwire</Spanish>
+<French>Designation: MON-50&lt;br/&gt;Type: Mine directionnelle à fragmentation anti-personnel&lt;br/&gt;Déclenchement: A distance, Contact</French>
+<Czech>Označení: MON-50 Mina&lt;br/&gt;Typ: Směrová protipěchodtní mina&lt;br/&gt;Detonace: Dálkově, Nástražným drátem</Czech>
+<Russian>Наименование: MOН-50&lt;br/&gt;Тип: ПП осколочная мина направленного действия&lt;br/&gt;Взрыватель: управляемый, натяжной</Russian>
+<Polish>Oznaczenie: mina kierunkowa MON-50&lt;br/&gt;Typ: kierunkowa fragmentacyjna mina przeciwpiechotna&lt;br/&gt;Detonatory: zdalny, linkowy</Polish>
+<Hungarian>Megjelölés: MON-50 akna&lt;br/&gt;Típus: Gyalogság elleni repeszaknagránát&lt;br/&gt;Detonáció: Távvezérelt, botlódrót</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_POMZ_M">
+<German>Bezeichnung: POMZ-2 Mine&lt;br/&gt;Typ: Splittermine&lt;br/&gt;Auslösung: Zugzünder</German>
+<English>Designation: POMZ-2 mine&lt;br/&gt;Type: Stake mounted anti-personnel fragmentation mine&lt;br/&gt;Fuzing: Tripwire</English>
+<Italian>Designazione: POMZ-2 mine&lt;br/&gt;Tipo: Carica a Frammentazione Anti Fanteria mine&lt;br/&gt;Funzione: Tripwire</Italian>
+<Spanish>Designation: POMZ-2 mine&lt;br/&gt;Type: Stake mounted anti-personnel fragmentation mine&lt;br/&gt;Fuzing: Tripwire</Spanish>
+<French>Designation: Mine POMZ-2&lt;br/&gt;Type: Mine perchée anti-personnel à fragmentation&lt;br/&gt;Déclenchement: Contact</French>
+<Czech>Označení: POMZ-2 Střepinová Mina &lt;br/&gt;Typ: Nastražná mina&lt;br/&gt;Detonace: Nástražným drátem</Czech>
+<Russian>Наименование: ПОМЗ-2 мина&lt;br/&gt;Тип: ПП осколочная мина натяжного действия&lt;br/&gt;Взрыватель: Натяжной</Russian>
+<Polish>Oznaczenie: mina POMZ-2&lt;br/&gt;Typ: fragmentacyjna mina przeciwpiechotna&lt;br/&gt;Detonator: linkowy</Polish>
+<Hungarian>Megjelölés: POMZ-2 akna&lt;br/&gt;Típus: Rúdra erősített gyalogság elleni akna&lt;br/&gt;Detonáció: Botlódrót</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_TRIPFLARE_M">
+<German>Bezeichnung: M49A1 Signalmine&lt;br/&gt;Typ: Signalmine&lt;br/&gt;Auslösung: Zugzünder</German>
+<English>Designation: M49A1 trip-flare&lt;br/&gt;Type: Surface trip-flare&lt;br/&gt;Fuzing: Tripwire</English>
+<Italian>Designazione: M49A1 Granata Illuminante&lt;br/&gt;Tipo: Granata Illuminante &lt;br/&gt;Fuzing: Tripwire</Italian>
+<Spanish>Designation: M49A1 trip-flare&lt;br/&gt;Type: Surface trip-flare&lt;br/&gt;Fuzing: Tripwire</Spanish>
+<French>Designation: Piège à fusée éclairante M49A1&lt;br/&gt;Type: Piège éclairant découvert&lt;br/&gt;Déclenchement: Contact</French>
+<Czech>Označení: M49A1 Světelná Nástraha&lt;br/&gt;Typ: Nástražná světlice&lt;br/&gt;Detonace: Nástražným drátem</Czech>
+<Russian>Наименование: M49A1 сигнальная мина&lt;br/&gt;Тип: Наземная сигнальная мина&lt;br/&gt;Взрыватель: Натяжной</Russian>
+<Polish>Oznaczenie: mina sygnałowa M49A1&lt;br/&gt;Typ: mina ostrzegawczo-sygnałowa&lt;br/&gt;Detonator: linkowy</Polish>
+<Hungarian>Megjelölés: M49A1 jelző&lt;br/&gt;Típus: Fényjelzős akna&lt;br/&gt;Detonáció: Botlódrót</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_DM16_M">
+<German>Bezeichnung: DM16 Leuchtkörper, Boden&lt;br/&gt;Typ: Signalmine&lt;br/&gt;Auslösung: Zugzünder</German>
+<English>Designation: DM16 trip-flare&lt;br/&gt;Type: Surface trip-flare&lt;br/&gt;Fuzing: Tripwire</English>
+<Italian>Designazione: DM16 Granata Illuminante&lt;br/&gt;Tipo: Granata Illuminante &lt;br/&gt;Fuzing: Tripwire</Italian>
+<Spanish>Designation: DM16 trip-flare&lt;br/&gt;Type: Surface trip-flare&lt;br/&gt;Fuzing: Tripwire</Spanish>
+<French>Designation: Piège à fusée éclairante DM16&lt;br/&gt;Type: Piège éclairant découvert&lt;br/&gt;Déclenchement: Contact</French>
+<Czech>Označení: DM16 Světelná Nástraha&lt;br/&gt;Typ: Nástražná světlice&lt;br/&gt;Detonace: Nástražným drátem</Czech>
+<Russian>Наименование: DM16 сигнальная мина&lt;br/&gt;Тип: Наземная сигнальная мина&lt;br/&gt;Взрыватель: Натяжной</Russian>
+<Polish>Oznaczenie: mina sygnałowa DM16&lt;br/&gt;Typ: mina ostrzegawczo-sygnałowa&lt;br/&gt;Detonator: linkowy</Polish>
+<Hungarian>Megjelölés: DM16 jelző&lt;br/&gt;Típus: Fényjelzős akna&lt;br/&gt;Detonáció: Botlódrót</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_BBETTY_M">
+<German>Bezeichnung: M16A1 Springmine&lt;br/&gt;Typ: Springmine&lt;br/&gt;Auslösung: Zugzünder, Druckzünder</German>
+<English>Designation: M16A1 bounding mine&lt;br/&gt;Type: Bounding mine&lt;br/&gt;Fuzing: Pressure, Tripwire</English>
+<Italian>Designazione: M16A1 Mina a Salto&lt;br/&gt;Tipo: Mina a Salto&lt;br/&gt;Funzione:A Pressione, Filo d'inciampo</Italian>
+<Spanish>Designation: M16A1 bounding mine&lt;br/&gt;Type: Bounding mine&lt;br/&gt;Fuzing: Pressure, Tripwire</Spanish>
+<French>Designation: M16A1 mine bondissante&lt;br/&gt;Type: Mine bondissante&lt;br/&gt;Déclenchement: Pression, Contact</French>
+<Czech>Označení: M16A1 Skočná Mina&lt;br/&gt;Typ: Skákající Mina&lt;br/&gt;Detonace: Tlakem, Nástražným drátem</Czech>
+<Russian>Наименование: M16A1 выпрыгивающая мина&lt;br/&gt;Тип: ПП выпрыгивающая осколочная мина&lt;br/&gt;Взрыватель: Давление, Натяжной</Russian>
+<Polish>Oznaczenie: mina wyskakująca M16A1&lt;br/&gt;Typ: mina wyskakująca&lt;br/&gt;Detonatory: naciskowy, linkowy</Polish>
+<Hungarian>Megjelölés: M16A1 ugróakna&lt;br/&gt;Típus: Ugró akna&lt;br/&gt;Detonáció: Rátaposás, botlódrót</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_OSM4_M">
+<German>Bezeichnung: OSM-4 Springmine&lt;br/&gt;Typ: Springmine&lt;br/&gt;Auslösung: Zugzünder</German>
+<English>Designation: OSM-4 bounding mine&lt;br/&gt;Type: Bounding mine&lt;br/&gt;Fuzing: Tripwire</English>
+<Italian>Designazione: OSM-4 Mina a Salto&lt;br/&gt;Tipo: Mina a Salto&lt;br/&gt;Funzione:Filo d'inciampo</Italian>
+<Spanish>Designation: OSM-4 bounding mine&lt;br/&gt;Type: Bounding mine&lt;br/&gt;Fuzing: Tripwire</Spanish>
+<French>Designation: OSM-4 mine bondissante&lt;br/&gt;Type: Mine bondissante&lt;br/&gt;Déclenchement: Contact</French>
+<Czech>Označení: OSM-4 Skočná Mina&lt;br/&gt;Typ: Skákající Mina&lt;br/&gt;Detonace: Nástražným drátem</Czech>
+<Russian>Наименование: O3M-4 выпрыгивающая мина&lt;br/&gt;Тип: ПП выпрыгивающая осколочная мина&lt;br/&gt;Взрыватель: Натяжной</Russian>
+<Polish>Oznaczenie: mina wyskakująca OSM-4&lt;br/&gt;Typ: mina wyskakująca&lt;br/&gt;Detonatory: linkowy</Polish>
+<Hungarian>Megjelölés: OSM-4 ugróakna&lt;br/&gt;Típus: Ugró akna&lt;br/&gt;Detonáció: botlódrót</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_DM12PARM1_M">
+<German>Bezeichnung: DM12 Panzerabwehrrichtmine&lt;br/&gt;Typ: Hohlladung&lt;br/&gt;Auslösung: Sensordraht</German>
+<English>Designation: DM12 PARM&lt;br/&gt;Type: HEAT&lt;br/&gt;Fuzing: Accoustic/Optical cable</English>
+<Italian>Designation: DM12 PARM&lt;br/&gt;Type: HEAT&lt;br/&gt;Fuzing: Accoustic/Optical cable</Italian>
+<Spanish>Designation: DM12 PARM&lt;br/&gt;Type: HEAT&lt;br/&gt;Fuzing: Accoustic/Optical cable</Spanish>
+<French>Designation: DM12 PARM&lt;br/&gt;Type: HEAT&lt;br/&gt;Fuzing: Accoustic/Optical cable</French>
+<Czech>Designation: DM12 PARM&lt;br/&gt;Type: HEAT&lt;br/&gt;Fuzing: Accoustic/Optical cable</Czech>
+<Russian>Наименование: DM12 PARM&lt;br/&gt;Тип: ПТ мина&lt;br/&gt;Взрыватель: Акустический/Оптический кабель</Russian>
+<Polish>Designation: DM12 PARM&lt;br/&gt;Type: HEAT&lt;br/&gt;Fuzing: Accoustic/Optical cable</Polish>
+<Hungarian>Designation: DM12 PARM&lt;br/&gt;Type: HEAT&lt;br/&gt;Fuzing: Accoustic/Optical cable</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_DM31_M">
+<German>Bezeichnung: SchtzAbwVMi DM 31 &lt;br/&gt;Typ: Springmine&lt;br/&gt;Auslösung: Zugzünder</German>
+<English>Designation: SchtzAbwVMi DM 31&lt;br/&gt;Type: Bounding mine&lt;br/&gt;Fuzing: Tripwire</English>
+<Italian>Designazione: SchtzAbwVMi DM 31&lt;br/&gt;Tipo: Mina a Salto&lt;br/&gt;Funzione:A Filo d'inciampo</Italian>
+<Spanish>Designation: SchtzAbwVMi DM 31&lt;br/&gt;Type: Bounding mine&lt;br/&gt;Fuzing: Tripwire</Spanish>
+<French>Designation: SchtzAbwVMi DM 31&lt;br/&gt;Type: Mine bondissante&lt;br/&gt;Déclenchement: Contact</French>
+<Czech>Označení: SchtzAbwVMi DM 31&lt;br/&gt;Typ: Skákající Mina&lt;br/&gt;Detonace: Nástražným drátem</Czech>
+<Russian>Наименование: SchtzAbwVMi DM 31&lt;br/&gt;Тип: ПП выпрыгивающая осколочная мина&lt;br/&gt;Взрыватель: Натяжной</Russian>
+<Polish>Oznaczenie: SchtzAbwVMi DM 31&lt;br/&gt;Typ: mina wyskakująca&lt;br/&gt;Detonatory: linkowy</Polish>
+<Hungarian>Megjelölés: SchtzAbwVMi DM 31&lt;br/&gt;Típus: Ugró akna&lt;br/&gt;Detonáció: botlódrót</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_M2SLAM_M">
+<German>Bezeichnung: M2 SLAM&lt;br/&gt;Typ: Projektilbildende Mine&lt;br/&gt;Auslösung: Magnetzünder, IR-Sensor, Zeitzünder, Fernzünder</German>
+<English>Designation: M2 SLAM&lt;br/&gt;Type: Explosively Formed Penetrator&lt;br/&gt;Fuzing: Magnetic, IR, Timed, Remote</English>
+<Italian>Designazione: M2 SLAM&lt;br/&gt;Type: Esplosivo ad Alta Penetrazione&lt;br/&gt;Funzione: Magnetico, IR, A Tempo, Remoto</Italian>
+<Spanish>Designation: M2 SLAM&lt;br/&gt;Type: Explosively Formed Penetrator&lt;br/&gt;Fuzing: Magnetic, IR, Timed, Remote</Spanish>
+<French>Designation: M2 SLAM&lt;br/&gt;Type: Explosif pénétrant&lt;br/&gt;Déclenchement: Magnétique, IR, Retardement, A distance</French>
+<Czech>Označení: M2 SLAM&lt;br/&gt;Typ: Penetrační Výbušnina&lt;br/&gt;Detonace: Magneticky, IR, Časově, Dálkově</Czech>
+<Russian>Наименование: M2 SLAM&lt;br/&gt;Тип: Многоцелевая мина с СФЗ&lt;br/&gt;Взрыватель: Магнитный, ИК, Временной, Управляемый</Russian>
+<Polish>Oznaczenie: M2 SLAM&lt;br/&gt;Typ: pocisk formowany wybuchowo&lt;br/&gt;Detonatory: magnetyczny, IR, czasowy, zdalny</Polish>
+<Hungarian>Megjelölés: M2 SLAM&lt;br/&gt;Típus: Explosively Formed Penetrator (pct)&lt;br/&gt;Detonáció: Mágneses, IR, időzített, távvezérelt</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_M4SLAM_M">
+<German>Bezeichnung: M4 SLAM&lt;br/&gt;Typ: Projektilbildende Mine&lt;br/&gt;Auslösung: Magnetzünder, IR-Sensor, Zeitzünder, Fernzünder</German>
+<English>Designation: M4 SLAM&lt;br/&gt;Type: Explosively Formed Penetrator&lt;br/&gt;Fuzing: Magnetic, IR, Timed, Remote</English>
+<Italian>Designazione: M4 SLAM&lt;br/&gt;Type: Esplosivo ad Alta Penetrazione&lt;br/&gt;Funzione: Magnetico, IR, A Tempo, Remoto</Italian>
+<Spanish>Designation: M4 SLAM&lt;br/&gt;Type: Explosively Formed Penetrator&lt;br/&gt;Fuzing: Magnetic, IR, Timed, Remote</Spanish>
+<French>Designation: M4 SLAM&lt;br/&gt;Type: Explosif pénétrant&lt;br/&gt;Déclenchement: Magnétique, IR, Retardement, A distance</French>
+<Czech>Označení: M4 SLAM&lt;br/&gt;Typ: Penetrační Výbušnina&lt;br/&gt;Detonace: Magneticky, IR, Časově, Dálkově</Czech>
+<Russian>Наименование: M4 SLAM&lt;br/&gt;Тип: Многоцелевая мина с СФЗ&lt;br/&gt;Взрыватель: Магнитный, ИК, Временной, Управляемый</Russian>
+<Polish>Oznaczenie: M4 SLAM&lt;br/&gt;Typ: pocisk formowany wybuchowo&lt;br/&gt;Detonatory: magnetyczny, IR, czasowy, zdalny</Polish>
+<Hungarian>Megjelölés: M4 SLAM&lt;br/&gt;Type: Explosively Formed Penetrator (pct)&lt;br/&gt;Detonáció: Mágneses, IR, időzített, távvezérelt</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_M86PDM">
+<German>Bezeichnung: M86 Verfolgungsabwehrmine&lt;br/&gt;Typ: Wurfmine&lt;br/&gt;Auslösung: Zugzünder, Selbstzerstörung</German>
+<English>Designation: M86 Pursuit Deterrent Munition&lt;br/&gt;Type: Area Denial Artillery Munition&lt;br/&gt;Fuzing: Tripwire, self-destruction</English>
+<Italian>Designazione: M86 Pursuit Deterrent Munition&lt;br/&gt;Tipo: Area, Munizioni d'artiglieria&lt;br/&gt;Funzione: Filo d'inciampo, Auto Distruzione</Italian>
+<Spanish>Designation: M86 Pursuit Deterrent Munition&lt;br/&gt;Type: Area Denial Artillery Munition&lt;br/&gt;Fuzing: Tripwire, self-destruction</Spanish>
+<French>Designation: M86 Munition dissuasive anti-poursuivants&lt;br/&gt;Type: Munition d'artillerie à interdiction de zone&lt;br/&gt;Déclenchement: Contact, auto-destruction</French>
+<Czech>Označení: M86 Pursuit Deterrent Munition&lt;br/&gt;Typ: Area Denial Artillery Munition&lt;br/&gt;Detonace: Nástražným drátem, Sebezničující</Czech>
+<Russian>Наименование: M86 PDM&lt;br/&gt;Тип: ПП выпрыгивающая осколочная мина&lt;br/&gt;Взрыватель: Натяжной, Самоуничтожение</Russian>
+<Polish>Oznaczenie: mina obronna M86&lt;br/&gt;Typ: środek bojowy o okrężnym działaniu&lt;br/&gt;Detonatory: linkowy, samozniszczenie</Polish>
+<Hungarian>Megjelölés: M86 Pursuit Deterrent Munition&lt;br/&gt;Típus: Area Denial Artillery Munition&lt;br/&gt;Detonáció: Botlódrót, önmegsemmisítő</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_C4_M">
+<German>Bezeichnung: M112 Sprengladung (C4)&lt;br/&gt;Typ: Plastischer Sprengstoff&lt;br/&gt;Auslösung: Fernzünder</German>
+<English>Designation: M112 Composition C4 Block Demolition Charge&lt;br/&gt;Type: Plastic explosive&lt;br/&gt;Fuzing: Remote</English>
+<Italian>Designazione: Plastico 4&lt;br/&gt;Tipo: Esplosivo Al Plastico&lt;br/&gt;Funzione: Remoto</Italian>
+<Spanish>Designation: M112 Composition C4 Block Demolition Charge&lt;br/&gt;Type: Plastic explosive&lt;br/&gt;Fuzing: Remote</Spanish>
+<French>Designation: Composé explosif 4&lt;br/&gt;Type: Explosif plastique&lt;br/&gt;Déclenchement: A distance</French>
+<Czech>Označení: M112 Composition C4 Block Demolition Charge&lt;br/&gt;Typ: Plastická trhavina&lt;br/&gt;Detonace: Dálkově</Czech>
+<Russian>Наименование: M112 С4&lt;br/&gt;Тип: Пластичное взрывчатое вещество&lt;br/&gt;Взрыватель: управляемый</Russian>
+<Polish>Oznaczenie: ładunek C4&lt;br/&gt;Typ: plastyczny materiał wybuchowy&lt;br/&gt;Detonator: zdalny</Polish>
+<Hungarian>Megjelölés: Összetett keverék 4&lt;br/&gt;Típus: Plasztikbomba&lt;br/&gt;Detonáció: Távvezérelt</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_DM12B1_M">
+<German>Bezeichnung: Sprengkörper DM12B1 (PETN)&lt;br/&gt;Typ: Formbarer Sprengstoff&lt;br/&gt;Auslösung: Anzündschnuranzünder, Elektrischer Anzünder</German>
+<English>Designation: Sprengkörper DM12B1 (PETN)&lt;br/&gt;Type: Plastic explosive&lt;br/&gt;Fuzing: Remote</English>
+<Italian>Designazione: Sprengkörper DM12B1 (PETN)&lt;br/&gt;Tipo: Esplosivo Al Plastico&lt;br/&gt;Funzione: Remoto</Italian>
+<Spanish>Designation: Sprengkörper DM12B1 (PETN)&lt;br/&gt;Type: Plastic explosive&lt;br/&gt;Fuzing: Remote</Spanish>
+<French>Designation: Sprengkörper DM12B1 (PETN)&lt;br/&gt;Type: Explosif plastique&lt;br/&gt;Déclenchement: A distance</French>
+<Czech>Označení: Sprengkörper DM12B1 (PETN)&lt;br/&gt;Typ: Plastická trhavina&lt;br/&gt;Detonace: Dálkově</Czech>
+<Russian>Наименование: Sprengkörper DM12B1 (PETN)&lt;br/&gt;Тип: Пластичное взрывчатое вещество&lt;br/&gt;Взрыватель: управляемый</Russian>
+<Polish>Oznaczenie: Sprengkörper DM12B1 (PETN)&lt;br/&gt;Typ: plastyczny materiał wybuchowy&lt;br/&gt;Detonator: zdalny</Polish>
+<Hungarian>Megjelölés: Sprengkörper DM12B1 (PETN)&lt;br/&gt;Típus: Plasztikbomba&lt;br/&gt;Detonáció: Távvezérelt</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_PMN1_M">
+<German>Bezeichnung: PMN-1&lt;br/&gt;Typ: Sprengmine&lt;br/&gt;Auslösung: Druckzünder</German>
+<English>Designation: PMN-1&lt;br/&gt;Type: blast mine&lt;br/&gt;Fuzing: Pressure</English>
+<Italian>Designazione: PMN-1&lt;br/&gt;Tipo: blast mine&lt;br/&gt;Funzione:A Pressione</Italian>
+<Spanish>Designation: PMN-1&lt;br/&gt;Type: blast mine&lt;br/&gt;Fuzing: Pressure</Spanish>
+<French>Designation: PMN-1&lt;br/&gt;Type: blast mine&lt;br/&gt;Déclenchement: Pression</French>
+<Czech>Označení: PMN-1&lt;br/&gt;Typ: blast mine&lt;br/&gt;Detonace: Tlakem</Czech>
+<Russian>Наименование: ПMH-1&lt;br/&gt;Тип: ПП фугасная мина&lt;br/&gt;Взрыватель: Натяжной</Russian>
+<Polish>Oznaczenie: PMN-1&lt;br/&gt;Typ: blast mine&lt;br/&gt;Detonatory: naciskowy</Polish>
+<Hungarian>Megjelölés: PMN-1&lt;br/&gt;Típus: blast mine&lt;br/&gt;Detonáció: Rátaposás</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_PMN2_M">
+<German>Bezeichnung: PMN-2&lt;br/&gt;Typ: Sprengmine&lt;br/&gt;Auslösung: Druckzünder</German>
+<English>Designation: PMN-2&lt;br/&gt;Type: blast mine&lt;br/&gt;Fuzing: Pressure</English>
+<Italian>Designazione: PMN-2&lt;br/&gt;Tipo: blast mine&lt;br/&gt;Funzione: Remoto</Italian>
+<Spanish>Designation: PMN-2&lt;br/&gt;Type: blast mine&lt;br/&gt;Fuzing: Pressure</Spanish>
+<French>Designation: PMN-2&lt;br/&gt;Type: blast mine&lt;br/&gt;Déclenchement: Pression</French>
+<Czech>Označení: PMN-2&lt;br/&gt;Typ: blast mine&lt;br/&gt;Detonace: Tlakem</Czech>
+<Russian>Наименование: ПMH-2&lt;br/&gt;Тип: ПП фугасная мина&lt;br/&gt;Взрыватель: Давление</Russian>
+<Polish>Oznaczenie: PMN-2&lt;br/&gt;Typ: blast mine&lt;br/&gt;Detonatory: naciskowy</Polish>
+<Hungarian>Megjelölés: PMN-2&lt;br/&gt;Típus: blast mine&lt;br/&gt;Detonáció: Rátaposás</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_PMN3_M">
+<German>Bezeichnung: PMN-3&lt;br/&gt;Typ: Sprengmine&lt;br/&gt;Auslösung: Druckzünder</German>
+<English>Designation: PMN-3&lt;br/&gt;Type: blast mine&lt;br/&gt;Fuzing: Pressure</English>
+<Italian>Designazione: PMN-3&lt;br/&gt;Tipo: blast mine&lt;br/&gt;Funzione: Remoto</Italian>
+<Spanish>Designation: PMN-3&lt;br/&gt;Type: blast mine&lt;br/&gt;Fuzing: Pressure</Spanish>
+<French>Designation: PMN-3&lt;br/&gt;Type: blast mine&lt;br/&gt;Déclenchement: Pression</French>
+<Czech>Označení: PMN-3&lt;br/&gt;Typ: blast mine&lt;br/&gt;Detonace: Tlakem</Czech>
+<Russian>Наименование: ПMH-3&lt;br/&gt;Тип: ПП фугасная мина&lt;br/&gt;Взрыватель: Давление</Russian>
+<Polish>Oznaczenie: PMN-3&lt;br/&gt;Typ: blast mine&lt;br/&gt;Detonatory: naciskowy</Polish>
+<Hungarian>Megjelölés: PMN-3&lt;br/&gt;Típus: blast mine&lt;br/&gt;Detonáció: Rátaposás</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_PPM2_M">
+<German>Bezeichnung: PPM-2&lt;br/&gt;Typ: Sprengmine&lt;br/&gt;Auslösung: Druckzünder</German>
+<English>Designation: PPM-2&lt;br/&gt;Type: blast mine&lt;br/&gt;Fuzing: Pressure</English>
+<Italian>Designazione: PPM-2&lt;br/&gt;Tipo: blast mine&lt;br/&gt;Funzione: Remoto</Italian>
+<Spanish>Designation: PPM-2&lt;br/&gt;Type: blast mine&lt;br/&gt;Fuzing: Pressure</Spanish>
+<French>Designation: PPM-2&lt;br/&gt;Type: blast mine&lt;br/&gt;Déclenchement: Pression</French>
+<Czech>Označení: PPM-2&lt;br/&gt;Typ: blast mine&lt;br/&gt;Detonace: Tlakem</Czech>
+<Russian>Наименование: PPM-2&lt;br/&gt;Тип: ПП фугасная мина&lt;br/&gt;Взрыватель: Давление</Russian>
+<Polish>Oznaczenie: PPM-2&lt;br/&gt;Typ: blast mine&lt;br/&gt;Detonatory: naciskowy</Polish>
+<Hungarian>Megjelölés: PPM-2&lt;br/&gt;Típus: blast mine&lt;br/&gt;Detonáció: Rátaposás</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_M93HORNET_M">
+<German>Bezeichnung: M93 Hornet&lt;br/&gt;Typ: Projektilbildende Mine&lt;br/&gt;Auslösung: Seismisch, Akustisch</German>
+<English>Designation: M93 Hornet&lt;br/&gt;Type: Explosively Formed Penetrator&lt;br/&gt;Fuzing: Seismic, acustic</English>
+<Italian>Designazione: M93 Hornet&lt;br/&gt;Type: Esplosivo ad Alta Penetrazione&lt;br/&gt;Funzione: Magnetico, IR, A Tempo, Remoto</Italian>
+<Spanish>Designation: M93 Hornet&lt;br/&gt;Type: Explosively Formed Penetrator&lt;br/&gt;Fuzing: Magnetic, IR, Timed, Remote</Spanish>
+<French>Designation: M93 Hornet&lt;br/&gt;Type: Explosif pénétrant&lt;br/&gt;Déclenchement: Magnétique, IR, Retardement, A distance</French>
+<Czech>Označení: M93 Hornet&lt;br/&gt;Typ: Penetrační Výbušnina&lt;br/&gt;Detonace: Magneticky, IR, Časově, Dálkově</Czech>
+<Russian>Наименование: M93 Hornet&lt;br/&gt;Тип: Многоцелевая мина с СФЗ&lt;br/&gt;Взрыватель: Магнитный, ИК, Временной, Управляемый</Russian>
+<Polish>Oznaczenie: M93 Hornet&lt;br/&gt;Typ: pocisk formowany wybuchowo&lt;br/&gt;Detonatory: magnetyczny, IR, czasowy, zdalny</Polish>
+<Hungarian>Megjelölés: M93 Hornet&lt;br/&gt;Type: Explosively Formed Penetrator (pct)&lt;br/&gt;Detonáció: Mágneses, IR, időzített, távvezérelt</Hungarian>
+</Key>
+</Container>
+<Container name="STR_MDN">
+<Key ID="STR_MDN_ACE_CLAYMORE_M">
+<English>M18A1</English>
+<German>M18A1</German>
+<Spanish>M18A1</Spanish>
+<Czech>M18A1</Czech>
+<Russian>M18A1</Russian>
+<Italian>M18A1</Italian>
+<Polish>M18A1</Polish>
+<French>M18A1</French>
+<Hungarian>M18A1</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_MON50_M">
+<English>MON-50</English>
+<German>MON-50</German>
+<Spanish>MON-50</Spanish>
+<Czech>MON-50</Czech>
+<Russian>MOН-50</Russian>
+<Italian>MON-50</Italian>
+<Polish>MON-50</Polish>
+<French>MON-50</French>
+<Hungarian>MON-50</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_POMZ_M">
+<English>POMZ-2</English>
+<German>POMZ-2</German>
+<Spanish>POMZ-2</Spanish>
+<Czech>POMZ-2</Czech>
+<Russian>ПОМЗ-2</Russian>
+<Italian>POMZ-2</Italian>
+<Polish>POMZ-2</Polish>
+<French>POMZ-2</French>
+<Hungarian>POMZ-2</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_TRIPFLARE_M">
+<English>M49A1</English>
+<German>M49A1</German>
+<Spanish>M49A1</Spanish>
+<Czech>M49A1</Czech>
+<Russian>M49A1</Russian>
+<Italian>M49A1</Italian>
+<Polish>M49A1</Polish>
+<French>M49A1</French>
+<Hungarian>M49A1</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_BBETTY_M">
+<English>M16A1</English>
+<German>M16A1</German>
+<Spanish>M16A1</Spanish>
+<Czech>M16A1</Czech>
+<Russian>M16A1</Russian>
+<Italian>M16A1</Italian>
+<Polish>M16A1</Polish>
+<French>M16A1</French>
+<Hungarian>M16A1</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_DM31_M">
+<English>DM31</English>
+<German>DM31</German>
+<Spanish>DM31</Spanish>
+<Czech>DM31</Czech>
+<Russian>DM31</Russian>
+<Italian>DM31</Italian>
+<Polish>DM31</Polish>
+<French>DM31</French>
+<Hungarian>DM31</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_DM16_M">
+<English>DM16</English>
+<German>DM16</German>
+<Spanish>DM16</Spanish>
+<Czech>DM16</Czech>
+<Russian>DM16</Russian>
+<Italian>DM16</Italian>
+<Polish>DM16</Polish>
+<French>DM16</French>
+<Hungarian>DM16</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_OSM4_M">
+<English>OSM-4</English>
+<German>OSM-4</German>
+<Spanish>OSM-4</Spanish>
+<Czech>OSM-4</Czech>
+<Russian>O3M-4</Russian>
+<Italian>OSM-4</Italian>
+<Polish>OSM-4</Polish>
+<French>OSM-4</French>
+<Hungarian>OSM-4</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_M2SLAM_M">
+<English>M2 SLAM</English>
+<German>M2 SLAM</German>
+<Spanish>M2 SLAM</Spanish>
+<Czech>M2 SLAM</Czech>
+<Russian>M2 SLAM</Russian>
+<Italian>M2 SLAM</Italian>
+<Polish>M2 SLAM</Polish>
+<French>M2 SLAM</French>
+<Hungarian>M2 SLAM</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_M4SLAM_M">
+<English>M4 SLAM</English>
+<German>M4 SLAM</German>
+<Spanish>M4 SLAM</Spanish>
+<Czech>M4 SLAM</Czech>
+<Russian>M4 SLAM</Russian>
+<Italian>M4 SLAM</Italian>
+<Polish>M4 SLAM</Polish>
+<French>M4 SLAM</French>
+<Hungarian>M4 SLAM</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_C4_M">
+<English>M112 Demolition Charge</English>
+<German>M112 Sprengladung</German>
+<Spanish>M112 Demolition Charge</Spanish>
+<Czech>M112 Demoliční nálož</Czech>
+<Russian>M112 подрывной заряд</Russian>
+<Italian>M112 Demolition Charge</Italian>
+<Polish>Ładunek burzący M112</Polish>
+<French>M112 Demolition Charge</French>
+<Hungarian>M112 Demolition Charge</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_DM12B1_M">
+<English>DM12B1 Demolition Charge</English>
+<German>Sprengkörper DM12B1</German>
+<Spanish>DM12B1 Demolition Charge</Spanish>
+<Czech>DM12B1 Demoliční nálož</Czech>
+<Russian>DM12B1 подрывной заряд</Russian>
+<Italian>DM12B1 Demolition Charge</Italian>
+<Polish>Ładunek burzący DM12B1</Polish>
+<French>DM12B1 Demolition Charge</French>
+<Hungarian>DM12B1 Demolition Charge</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_TIMEBOMB_M">
+<English>Satchel</English>
+<German>Sprengladung</German>
+<Italian>Esplosivo</Italian>
+<Spanish>Carga</Spanish>
+<French>Sacoche</French>
+<Czech>Výbušnina</Czech>
+<Russian>Взрывчатка</Russian>
+<Polish>Ładunek wybuchowy</Polish>
+<Hungarian>Rádiós Bomba</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_MINE_M">
+<English>M15</English>
+<German>M15</German>
+<Spanish>M15</Spanish>
+<Czech>M15</Czech>
+<Russian>M15</Russian>
+<Italian>M15</Italian>
+<Polish>M15</Polish>
+<French>M15</French>
+<Hungarian>M15</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_MINEE_M">
+<English>TM-46</English>
+<German>TM-46</German>
+<Spanish>TM-46</Spanish>
+<Czech>TM-46</Czech>
+<Russian>TM-46</Russian>
+<Italian>TM-46</Italian>
+<Polish>TM-46</Polish>
+<French>TM-46</French>
+<Hungarian>TM-46</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_IED_M">
+<English>IED</English>
+<German>IED</German>
+<Spanish>IED</Spanish>
+<Czech>IED</Czech>
+<Russian>СВУ</Russian>
+<Italian>IED</Italian>
+<Polish>Ładunek improwizowany</Polish>
+<French>IED</French>
+<Hungarian>IED</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_M93HORNET_M">
+<English>M93 Hornet</English>
+<German>M93 Hornet</German>
+<Spanish>M93 Hornet</Spanish>
+<Czech>M93 Hornet</Czech>
+<Russian>M93 Hornet</Russian>
+<Italian>M93 Hornet</Italian>
+<Polish>M93 Hornet</Polish>
+<French>M93 Hornet</French>
+<Hungarian>M93 Hornet</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_DM12PARM1_M">
+<English>DM12</English>
+<German>DM12</German>
+<Spanish>DM12</Spanish>
+<Czech>DM12</Czech>
+<Russian>DM12</Russian>
+<Italian>DM12</Italian>
+<Polish>DM12</Polish>
+<French>DM12</French>
+<Hungarian>DM12</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_PMN1_M">
+<English>PMN-1</English>
+<German>PMN-1</German>
+<Spanish>PMN-1</Spanish>
+<Czech>PMN-1</Czech>
+<Russian>ПMH-1</Russian>
+<Italian>PMN-1</Italian>
+<Polish>PMN-1</Polish>
+<French>PMN-1</French>
+<Hungarian>PMN-1</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_PMN2_M">
+<English>PMN-2</English>
+<German>PMN-2</German>
+<Spanish>PMN-2</Spanish>
+<Czech>PMN-2</Czech>
+<Russian>ПMH-2</Russian>
+<Italian>PMN-2</Italian>
+<Polish>PMN-2</Polish>
+<French>PMN-2</French>
+<Hungarian>PMN-2</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_PMN3_M">
+<English>PMN-3</English>
+<German>PMN-3</German>
+<Spanish>PMN-3</Spanish>
+<Czech>PMN-3</Czech>
+<Russian>ПMH-3</Russian>
+<Italian>PMN-3</Italian>
+<Polish>PMN-3</Polish>
+<French>PMN-3</French>
+<Hungarian>PMN-3</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_PPM2_M">
+<English>PPM-2</English>
+<German>PPM-2</German>
+<Spanish>PPM-2</Spanish>
+<Czech>PPM-2</Czech>
+<Russian>PPM-2</Russian>
+<Italian>PPM-2</Italian>
+<Polish>PPM-2</Polish>
+<French>PPM-2</French>
+<Hungarian>PPM-2</Hungarian>
+</Key>
+<Key ID="STR_WDN_ACE_CELLPHONE">
+<English>Cellphone</English>
+<German>Handy</German>
+<Spanish>Cellphone</Spanish>
+<Czech>Mobil</Czech>
+<Russian>Сотовый телефон</Russian>
+<Italian>Cellphone</Italian>
+<Polish>Telefon komórkowy</Polish>
+<French>Cellphone</French>
+<Hungarian>Cellphone</Hungarian>
+</Key>
+</Container>
+</Package></Project>

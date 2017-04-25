@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_cartridges
+Pbo Type is: Arma Addon
+Sha: 'D51FBF331185C7C517A311E12292BDE998C0CDDE'
+//////</HEADER>//////

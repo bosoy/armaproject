@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2">
+<Package name="ACE2">
+<Container name="sys_map">
+<Key ID="STR_DN_ACE_MAP_LOGIC">
+<English>(Æ) Enable Map System</English>
+<Czech>(Æ) Zapnout systém mapy</Czech>
+<German>(Æ) Map: Kartensystem verwenden</German>
+<Polish>(Æ) Włącz system mapy</Polish>
+<Russian>(Æ) Отключить карту</Russian>
+<French>(Æ) Activer carte</French>
+<Spanish>(Æ) Enable Map System</Spanish>
+<Italian>(Æ) Enable Map System</Italian>
+<Hungarian>(Æ) Térkép engedélyezése</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_MAP_LIMITZOOM_LOGIC">
+<English>(Æ) Limited Map Zoom</English>
+<Czech>(Æ) Limitovat přiblížení mapy</Czech>
+<German>(Æ) Map: Zoom Limit verwenden</German>
+<Polish>(Æ) Ograniczenie skali mapy</Polish>
+<Russian>(Æ) Ограниченный масштаб карты</Russian>
+<French>(Æ) Limited Map Zoom</French>
+<Spanish>(Æ) Limited Map Zoom</Spanish>
+<Italian>(Æ) Limited Map Zoom</Italian>
+<Hungarian>(Æ) Limited Map Zoom</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_SYS_MAP_READ_X_MAP">
+<English>Read %1`s map</English>
+<Czech>Přečíst mapu od %1</Czech>
+<German>%1`s Karte ansehen</German>
+<Polish>Zobacz mapę %1</Polish>
+<Russian>Прочитать карту у %1</Russian>
+<French>Lire %1 de la carte</French>
+<Spanish>Read %1`s map</Spanish>
+<Italian>Read %1`s map</Italian>
+<Hungarian>%1`térképének megnézése</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_SYS_MAP_READ_MAP">
+<English>View map</English>
+<Czech>Shlédnout mapu</Czech>
+<German>Karte ansehen</German>
+<Polish>Otwórz mapę</Polish>
+<Russian>Читать карту</Russian>
+<French>Regarder la carte</French>
+<Spanish>View map</Spanish>
+<Italian>View map</Italian>
+<Hungarian>Térkép megtekintése</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_SYS_MAP_ITEM">
+<English>Map</English>
+<Czech>Mapa</Czech>
+<German>Karte</German>
+<Polish>Mapa</Polish>
+<Russian>Карта</Russian>
+<French>Carte</French>
+<Spanish>Mapa</Spanish>
+<Italian>Mappa</Italian>
+<Hungarian>Térkép</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_SYS_MAP_TOO_FAR">
+<English>You're too far from a unit with a map or running to fast, and you cannot view the map anymore.</English>
+<Czech>Jsi příliš daleko od jednotky s mapou, nebo běžíš příliš rychle, již nevidíš na mapu.</Czech>
+<German>Du bist zu weit weg von einer Einheit mit Karte, Du kannst die Karte nicht mehr einsehen.</German>
+<Polish>Jesteś zbyt daleko od mapy.</Polish>
+<Russian>Вы слишком далеко от юнита с картой или бежите слишком быстро, поэтому вы больше не можете читать карту.</Russian>
+<French>Vous êtes trop loin d'une unité avec carte ou vous courez trop vite, vous ne pouvez plus observer la carte.</French>
+<Spanish>You're too far from a unit with a map or running to fast, and you cannot view the map anymore.</Spanish>
+<Italian>You're too far from a unit with a map or running to fast, and you cannot view the map anymore.</Italian>
+<Hungarian>Túl messze vagy egy térképpel rendelkező egységtől, vagy éppen futsz.</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_SYS_MAP_CONFUSED">
+<English>%1 didn't even have a map! You shouldn't have had that action!</English>
+<Czech>%1 ani neměl mapu! Tuto akci jsi neměl mít!</Czech>
+<German>%1 hat keine Karte.</German>
+<Polish>%1 nie ma mapy.</Polish>
+<Russian>У %1 даже нет карты! Вам не следовало бы выполнять это действие!</Russian>
+<French>%1 n'a jamais eu de carte! Vous ne devriez pas pouvoir faire ça!</French>
+<Spanish>%1 didn't even have a map! You shouldn't have had that action!</Spanish>
+<Italian>%1 didn't even have a map! You shouldn't have had that action!</Italian>
+<Hungarian>%1 -nak/nek nincs is térképe! Nem kellett volna ennek az opciónak előjönnie!</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_SYS_MAP_LOOKING_X">
+<English>You're looking at %1's map! You can see the map for yourself, as long as you're %3 meters from %1! Currently you are %2m away from %1</English>
+<Czech>Díváš se na mapu %1! Můžeš se do ní dívat, dokud jsi %3 metrů od %1! Nyní jsi %2 metrů daleko od %1</Czech>
+<German>Du siehst in %1's Karte! Du kannst die Karte sehen, solange Du %3m von %1 entfernt bist! Du bist %2m weg von %1</German>
+<Polish>%1 pokazuje Ci mapę. Możesz ją oglądać z odległości do %3m. Obecnie jesteś oddalony o %2m</Polish>
+<Russian>Вы читаете карту у %1! Вы можете читать карту, находясь в %3 метрах от %1! Сейчас вы в %2 м от %1</Russian>
+<French>Vous regardez la carte de %1! Vous pouvez observer cette carte si vous vous trouvez à %3 mètres de %1! Vous êtes actuellement à %2m de %1</French>
+<Spanish>You're looking at %1's map! You can see the map for yourself, as long as you're %3 meters from %1! Currently you are %2m away from %1</Spanish>
+<Italian>You're looking at %1's map! You can see the map for yourself, as long as you're %3 meters from %1! Currently you are %2m away from %1</Italian>
+<Hungarian>%1 térképét nézed! Addig láthatod, amíg max. %3 méterre vagy %1-től! Most %2méterre vagy %1-től.</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_SYS_MAP_LOOKING">
+<English>You're looking at the map of an unknown person! You can see the map for yourself, as long as you're %2 meters from the dead person! Currently you are %1m away</English>
+<Czech>Díváš se na mapu neznámé osoby! Můžeš se do ní dívat, dokud jsi %2 metrů od mrtvoly! Nyní jsi %1 metrů daleko</Czech>
+<German>Du siehst in die Karte! Du kannst die Karte sehen, solange Du %2m entfernt bist! Du bist %1m weg</German>
+<Polish>Oglądasz czyjąś mapę. Możesz to robić z odległości do %2m. Obecnie jesteś oddalony o %1m</Polish>
+<Russian>Вы читаете карту неизвестного! Вы можете читать карту, находясь в %2 метрах от тела! Сейчас вы в %1 м</Russian>
+<French>Vous regardez la carte d'un inconnu! Vous pouvez observer cette carte si vous vous trouvez à %2 mètres de ce mort! Vous en êtes actuellement à %1m</French>
+<Spanish>You're looking at the map of an unknown person! You can see the map for yourself, as long as you're %2 meters from the dead person! Currently you are %1m away</Spanish>
+<Italian>You're looking at the map of an unknown person! You can see the map for yourself, as long as you're %2 meters from the dead person! Currently you are %1m away</Italian>
+<Hungarian>Egy ismeretlen személy térképét nézed! Addig láthatod, amíg max. %2 méterre vagy a testtől! Jelenleg %1méterre vagy.</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

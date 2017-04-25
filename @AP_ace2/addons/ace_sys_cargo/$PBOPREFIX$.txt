@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_cargo
+Pbo Type is: Arma Addon
+Sha: '80845A5AC29E380B25069521F2A63D2B4B95DD8C'
+//////</HEADER>//////

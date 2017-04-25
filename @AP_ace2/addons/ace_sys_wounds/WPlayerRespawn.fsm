@@ -1,0 +1,187 @@
+/*%FSM<COMPILE "G:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, WPlayerRespawn">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Start",0,4346,-25.000000,-175.000000,75.000000,-125.000000,0.000000,"Start"};
+item1[] = {"wait",4,218,-25.000000,-75.000000,75.000000,-25.000000,0.000000,"wait"};
+item2[] = {"_",2,250,-25.000000,25.000000,75.000000,75.000000,0.000000,""};
+item3[] = {"disabled",4,218,-150.000000,25.000000,-50.000000,75.000000,2.000000,"disabled"};
+item4[] = {"End",1,250,-275.000000,25.000000,-175.000000,75.000000,0.000000,"End"};
+item5[] = {"alive_player",4,218,-25.000000,125.000000,75.000000,175.000000,0.000000,"alive player"};
+item6[] = {"__1",2,250,-25.000000,250.000000,75.000000,300.000000,0.000000,""};
+item7[] = {"__alive_player",4,218,-25.000000,375.000000,75.000000,425.000000,0.000000,"!alive player"};
+item8[] = {"alive",2,250,-150.000000,425.000000,-50.000000,475.000000,0.000000,"alive"};
+item9[] = {"dead",2,250,-150.000000,325.000000,-50.000000,375.000000,0.000000,"dead"};
+item10[] = {"alive_player",4,218,-275.000000,375.000000,-175.000000,425.000000,0.000000,"alive player"};
+link0[] = {0,1};
+link1[] = {1,2};
+link2[] = {2,3};
+link3[] = {2,5};
+link4[] = {3,4};
+link5[] = {5,6};
+link6[] = {6,7};
+link7[] = {7,9};
+link8[] = {8,7};
+link9[] = {9,10};
+link10[] = {10,8};
+globals[] = {25.000000,1,0,0,0,640,480,1,18,6316128,1,-426.753204,259.857422,618.887329,-340.700592,659,921,1};
+window[] = {2,-1,-1,-1,-1,818,100,1060,100,3,677};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "WPlayerRespawn";
+  class States
+  {
+    /*%FSM<STATE "Start">*/
+    class Start
+    {
+      name = "Start";
+      init = /*%FSM<STATEINIT""">*/"private [""_time2wait"",""_oldplayer""];" \n
+       "_time2wait = time + 5;" \n
+       "_oldplayer = objNull;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "wait">*/
+        class wait
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _time2wait"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "_">*/
+    class _
+    {
+      name = "_";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "disabled">*/
+        class disabled
+        {
+          priority = 2.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"isNil ""ace_sys_wounds_enabled"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "alive_player">*/
+        class alive_player
+        {
+          priority = 0.000000;
+          to="__1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"alive player"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End">*/
+    class End
+    {
+      name = "End";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__1">*/
+    class __1
+    {
+      name = "__1";
+      init = /*%FSM<STATEINIT""">*/"_oldplayer = player;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "__alive_player">*/
+        class __alive_player
+        {
+          priority = 0.000000;
+          to="dead";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!alive player || {_oldplayer != player}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "alive">*/
+    class alive
+    {
+      name = "alive";
+      init = /*%FSM<STATEINIT""">*/"player setCaptive false;" \n
+       "//player call ace_sys_wounds_fnc_unitinit;" \n
+       "enableRadio true;" \n
+       "if (_nalive) then {" \n
+       "	player setVariable [""BIS_IS_inAgony"",false];" \n
+       "	//player setUnconscious false;" \n
+       "	if (isNil ""ace_w_no_handledamage"") then {" \n
+       "		player setVariable [""ace_sys_wounds_hdeh"", player addEventHandler [""handleDamage"", {_this call ace_sys_wounds_fnc_hd}]];" \n
+       "	};" \n
+       "	if (!ace_sys_wounds_teamswitch) then {" \n
+       "		[""ace_sys_wounds_aswmnon"", player] call CBA_fnc_globalEvent;" \n
+       "	};" \n
+       "	ace_sys_wounds_playerrespawned = true;" \n
+       "};" \n
+       "onTeamSwitch """";" \n
+       "_oldplayer = player;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "__alive_player">*/
+        class __alive_player
+        {
+          priority = 0.000000;
+          to="dead";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!alive player || {_oldplayer != player}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "dead">*/
+    class dead
+    {
+      name = "dead";
+      init = /*%FSM<STATEINIT""">*/"ace_sys_wounds_teamswitch = false;" \n
+       "onTeamSwitch ""ace_sys_wounds_teamswitch = true"";" \n
+       "private ""_nalive"";" \n
+       "_nalive = !alive player;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "alive_player">*/
+        class alive_player
+        {
+          priority = 0.000000;
+          to="alive";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"alive player"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Start";
+  finalStates[] =
+  {
+    "End",
+  };
+};
+/*%FSM</COMPILE>*/

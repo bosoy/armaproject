@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_rotoreffects
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: '23C6B39CE426CD590BDD5C5C28A838907AE0178F'
+//////</HEADER>//////

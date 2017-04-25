@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACE2">
+<Package name="sys_shotgun">
+<Container name="STR_DN">
+<Key ID="STR_DNS_ACE_SLUG">
+<German>Geschoss</German>
+<English>Slug</English>
+<Italian>Colpi</Italian>
+<Spanish>Metralla</Spanish>
+<French>Balle</French>
+<Czech>Slug</Czech>
+<Russian>Пуля</Russian>
+<Polish>Breneka</Polish>
+<Hungarian>gyöngygolyó</Hungarian>
+</Key>
+<Key ID="STR_DNS_ACE_PELLETS">
+<German>Schrot</German>
+<English>Buckshot</English>
+<Italian>Buckshot</Italian>
+<Spanish>Buckshot</Spanish>
+<French>Chevrotine</French>
+<Czech>Buckshot</Czech>
+<Russian>Дробь</Russian>
+<Polish>Śrut</Polish>
+<Hungarian>Sörét</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_8RND_12GA_SLUG">
+<German>Geschoss (8 Sch.)</German>
+<English>8Rnd. Slug</English>
+<Italian>Cartucce da 8 colpi</Italian>
+<Spanish>Metralla, 8 crg.</Spanish>
+<French>Balle Cal. 12 8 c.</French>
+<Czech>8náb. Slug</Czech>
+<Russian>12кал. пуля, 8 патр.</Russian>
+<Polish>Breneki 12G</Polish>
+<Hungarian>8lszr. gyöngygolyó</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_9RND_12GA_SLUG">
+<German>Geschoss (9 Sch.)</German>
+<English>9Rnd. Slug</English>
+<Italian>Cartucce da 9 colpi</Italian>
+<Spanish>Metralla, 9 crg.</Spanish>
+<French>Balle Cal. 12 9 c.</French>
+<Czech>9náb. Slug</Czech>
+<Russian>12кал. пуля, 9 патр.</Russian>
+<Polish>Breneki 12G</Polish>
+<Hungarian>9lszr. gyöngygolyó</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_6RND_12GA_SLUG">
+<German>Geschoss (6 Sch.)</German>
+<English>6Rnd. Slug</English>
+<Italian>Cartucce da 6 colpi</Italian>
+<Spanish>Metralla, 6 crg.</Spanish>
+<French>Balle Cal. 12 6 c.</French>
+<Czech>6náb. Slug</Czech>
+<Russian>12кал. пуля, 6 патр.</Russian>
+<Polish>Breneki 12G</Polish>
+<Hungarian>6lszr. gyöngygolyó</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_8RND_12GA_BUCK00">
+<German>Schrot (8 Sch.)</German>
+<English>8Rnd. Buck00</English>
+<Italian>Cartucce Buck00 8 colpi</Italian>
+<Spanish>Buck00, 8 crg.</Spanish>
+<French>Chevrotine Cal. 12 8 c.</French>
+<Czech>8náb. Buck00</Czech>
+<Russian>12кал. дробь, 8 патр.</Russian>
+<Polish>Śrutowe 12G</Polish>
+<Hungarian>8lszr. sörét</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_9RND_12GA_BUCK00">
+<German>Schrot (9 Sch.)</German>
+<English>9Rnd. Buck00</English>
+<Italian>Cartucce Buck00 9 colpi</Italian>
+<Spanish>Buck00, 9 crg.</Spanish>
+<French>Chevrotine Cal. 12 9 c.</French>
+<Czech>9náb. Buck00</Czech>
+<Russian>12кал. дробь, 9 патр.</Russian>
+<Polish>Śrutowe 12G</Polish>
+<Hungarian>9lszr. sörét</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_6RND_12GA_BUCK00">
+<German>Schrot (6 Sch.)</German>
+<English>6Rnd. Buck00</English>
+<Italian>Cartucce Buck00 6 colpi</Italian>
+<Spanish>Buck00, 6 crg.</Spanish>
+<French>Chevrotine Cal. 12 6 c.</French>
+<Czech>6náb. Buck00</Czech>
+<Russian>12кал. дробь, 6 патр.</Russian>
+<Polish>Śrutowe 12G</Polish>
+<Hungarian>6lszr. sörét</Hungarian>
+</Key>
+</Container>
+<Container name="STR_DSS">
+<Key ID="STR_DSS_ACE_SHITGUN_8RND">
+<German>Kaliber: 12 Gauge &lt;br/&gt;Schuss: 8 &lt;br/&gt;Eingesetzt in: Schrotflinte</German>
+<English>Caliber: 12 gauge &lt;br/&gt;Rounds: 8 &lt;br/&gt;Used in: Shotgun</English>
+<Italian>Calibro: 12 &lt;br/&gt;Munizioni: 8 &lt;br/&gt;Si usa in: Fucile a pompa</Italian>
+<Spanish>Calibre: calibre 12 &lt;br/&gt;Cargas: 8 &lt;br/&gt;Uso: Escopeta</Spanish>
+<French>Calibre : 12 &lt;br/&gt;Munitions : 8 &lt;br/&gt;Utilisé avec : Fusil à pompe</French>
+<Czech>Ráže: 12 &lt;br/&gt;Nábojů: 8 &lt;br/&gt; Pro: Brokovnice</Czech>
+<Russian>Калибр: 12 &lt;br/&gt;Количество: 8 &lt;br/&gt;Используются в: Дробовик</Russian>
+<Polish>Kaliber: 12 &lt;br/&gt;Naboje: 8 &lt;br/&gt;Używane w: strzelba</Polish>
+<Hungarian>Kaliber: 12es sörét &lt;br/&gt; Töltények: 8 &lt;br/&gt; Hozzá tartozó fegyver: Sörétes puska</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_SHITGUN_9RND">
+<German>Kaliber: 12 Gauge &lt;br/&gt;Schuss: 9 &lt;br/&gt;Eingesetzt in: Schrotflinte</German>
+<English>Caliber: 12 gauge &lt;br/&gt;Rounds: 9 &lt;br/&gt;Used in: Shotgun</English>
+<Italian>Calibro: 12 &lt;br/&gt;Munizioni: 9 &lt;br/&gt;Si usa in: Fucile a pompa</Italian>
+<Spanish>Calibre: calibre 12 &lt;br/&gt;Cargas: 9 &lt;br/&gt;Uso: Escopeta</Spanish>
+<French>Calibre : 12 &lt;br/&gt;Munitions : 9 &lt;br/&gt;Utilisé avec : Fusil à pompe</French>
+<Czech>Ráže: 12 &lt;br/&gt;Nábojů: 9 &lt;br/&gt; Pro: Brokovnice</Czech>
+<Russian>Калибр: 12 &lt;br/&gt;Количество: 9 &lt;br/&gt;Используются в: Дробовик</Russian>
+<Polish>Kaliber: 12 &lt;br/&gt;Naboje: 9 &lt;br/&gt;Używane w: strzelba</Polish>
+<Hungarian>Kaliber: 12es sörét &lt;br/&gt; Töltények: 9 &lt;br/&gt; Hozzá tartozó fegyver: Sörétes puska</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_SHITGUN_6RND">
+<German>Kaliber: 12 Gauge &lt;br/&gt;Schuss: 6 &lt;br/&gt;Eingesetzt in: Schrotflinte</German>
+<English>Caliber: 12 gauge &lt;br/&gt;Rounds: 6 &lt;br/&gt;Used in: Shotgun</English>
+<Italian>Calibro: 12 &lt;br/&gt;Munizioni: 6 &lt;br/&gt;Si usa in: Fucile a pompa</Italian>
+<Spanish>Calibre: calibre 12 &lt;br/&gt;Cargas: 6 &lt;br/&gt;Uso: Escopeta</Spanish>
+<French>Calibre : 12 &lt;br/&gt;Munitions : 6 &lt;br/&gt;Utilisé avec : Fusil à pompe</French>
+<Czech>Ráže: 12 &lt;br/&gt;Nábojů: 6 &lt;br/&gt; Pro: Brokovnice</Czech>
+<Russian>Калибр: 12 &lt;br/&gt;Количество: 6 &lt;br/&gt;Используются в: Дробовик</Russian>
+<Polish>Kaliber: 12 &lt;br/&gt;Naboje: 6 &lt;br/&gt;Używane w: strzelba</Polish>
+<Hungarian>Kaliber: 12es sörét &lt;br/&gt; Töltények: 6 &lt;br/&gt; Hozzá tartozó fegyver: Sörétes puska</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_40mm_Buck_M79">
+<German>Kaliber: 40mm &lt;br/&gt;Schuss: 1 &lt;br/&gt;Eingesetzt in: M79</German>
+<English>Caliber: 40mm &lt;br/&gt;Rounds: 1 &lt;br/&gt;Used in: M79</English>
+<Italian>Calibro: 40mm &lt;br/&gt;Munizioni: 1 &lt;br/&gt;Si usa in: M79</Italian>
+<Spanish>Calibre: 40mm &lt;br/&gt;Cargas: 1 &lt;br/&gt;Uso: M79</Spanish>
+<French>Calibre : 40mm &lt;br/&gt;Munitions : 1 &lt;br/&gt;Utilisé avec: M79</French>
+<Czech>Ráže: 40mm &lt;br/&gt;Nábojů: 1 &lt;br/&gt;Pro: M79</Czech>
+<Russian>Калибр: 40мм &lt;br/&gt;Количество: 1 &lt;br/&gt;Используются в: M79</Russian>
+<Polish>Kaliber: 40mm &lt;br/&gt;Naboje: 1 &lt;br/&gt;Używane w: M79</Polish>
+<Hungarian>Kaliber: 40mm &lt;br/&gt; Töltények: 1 &lt;br/&gt; Hozzá tartozó fegyver: M79</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

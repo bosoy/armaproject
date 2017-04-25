@@ -1,0 +1,748 @@
+/*%FSM<COMPILE "scriptedFSM.cfg, deploySB">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"deploySB",0,250,-75.000000,-275.000000,25.000000,-225.000000,0.000000,"deploySB"};
+item1[] = {"_",4,218,-150.000000,-225.000000,-50.000000,-175.000000,1.000000,""};
+item2[] = {"__1",4,218,0.000000,-225.000000,100.000000,-175.000000,0.000000,""};
+item3[] = {"_",1,250,-275.000000,-225.000000,-175.000000,-175.000000,0.000000,""};
+item4[] = {"__1",2,250,0.000000,-150.000000,100.000000,-100.000000,0.000000,""};
+item5[] = {"_",4,218,-75.000000,-100.000000,25.000000,-50.000000,1.000000,""};
+item6[] = {"__1",4,218,75.000000,-100.000000,175.000000,-50.000000,0.000000,""};
+item7[] = {"__2",1,250,-200.000000,-100.000000,-100.000000,-50.000000,0.000000,""};
+item8[] = {"__3",2,250,75.000000,-25.000000,175.000000,25.000000,0.000000,""};
+item9[] = {"_",8,218,75.000000,50.000000,175.000000,100.000000,0.000000,""};
+item10[] = {"__4",2,250,75.000000,125.000000,175.000000,175.000000,0.000000,""};
+item11[] = {"while",4,218,-100.000000,200.000000,0.000000,250.000000,1.000000,"while"};
+item12[] = {"_",4,218,150.000000,200.000000,250.000000,250.000000,0.000000,""};
+item13[] = {"__5",2,250,150.000000,275.000000,250.000000,325.000000,0.000000,""};
+item14[] = {"_",4,218,75.000000,350.000000,175.000000,400.000000,1.000000,""};
+item15[] = {"__1",4,218,200.000000,350.000000,300.000000,400.000000,0.000000,""};
+item16[] = {"__6",2,250,200.000000,425.000000,300.000000,475.000000,0.000000,""};
+item17[] = {"__7",2,250,-100.000000,275.000000,0.000000,325.000000,0.000000,""};
+item18[] = {"_",4,218,-175.000000,350.000000,-75.000000,400.000000,1.000000,""};
+item19[] = {"__1",4,218,-50.000000,350.000000,50.000000,400.000000,0.000000,""};
+item20[] = {"__8",2,250,-175.000000,425.000000,-75.000000,475.000000,0.000000,""};
+item21[] = {"__9",2,250,-50.000000,500.000000,50.000000,550.000000,0.000000,""};
+item22[] = {"_",8,218,-175.000000,500.000000,-75.000000,550.000000,0.000000,""};
+item23[] = {"_",4,218,-50.000000,575.000000,50.000000,625.000000,0.000000,""};
+item24[] = {"",7,210,-204.000000,596.000000,-196.000000,604.000000,0.000000,""};
+item25[] = {"",7,210,-203.999985,146.000000,-196.000000,154.000000,0.000000,""};
+item26[] = {"__10",1,250,75.000000,425.000000,175.000000,475.000000,0.000000,""};
+item27[] = {"_",8,218,200.000000,500.000000,300.000000,550.000000,0.000000,""};
+item28[] = {"__11",2,250,200.000000,575.000000,300.000000,625.000000,0.000000,""};
+item29[] = {"__1",4,218,125.000000,650.000000,225.000000,700.000000,0.000000,""};
+item30[] = {"_",4,218,250.000000,650.000000,350.000000,700.000000,1.000000,""};
+item31[] = {"__12",2,250,125.000000,725.000000,225.000000,775.000000,0.000000,""};
+item32[] = {"__13",2,250,250.000000,725.000000,350.000000,775.000000,0.000000,""};
+item33[] = {"__1",8,218,375.000000,725.000000,475.000000,775.000000,0.000000,""};
+item34[] = {"__14",2,250,375.000000,800.000000,475.000000,850.000000,0.000000,""};
+item35[] = {"__1",4,218,475.000000,775.000000,575.000000,825.000000,0.000000,""};
+item36[] = {"_",4,218,475.000000,825.000000,575.000000,875.000000,1.000000,""};
+item37[] = {"__15",2,250,575.000000,625.000000,675.000000,675.000000,0.000000,""};
+item38[] = {"__1",4,218,675.000000,650.000000,775.000000,700.000000,1.000000,""};
+item39[] = {"__2",4,218,675.000000,600.000000,775.000000,650.000000,0.000000,""};
+item40[] = {"__16",2,250,775.000000,600.000000,875.000000,650.000000,0.000000,""};
+item41[] = {"__17",2,250,775.000000,650.000000,875.000000,700.000000,0.000000,""};
+item42[] = {"_",4,218,250.000000,875.000000,350.000000,925.000000,0.000000,""};
+item43[] = {"__18",1,250,175.000000,950.000000,275.000000,1000.000000,0.000000,""};
+item44[] = {"_",4,218,125.000000,875.000000,225.000000,925.000000,0.000000,""};
+item45[] = {"",7,210,521.000000,971.000000,529.000061,979.000000,0.000000,""};
+item46[] = {"",7,210,921.000000,971.000000,929.000000,979.000000,0.000000,""};
+item47[] = {"_",4,218,875.000000,625.000000,975.000000,675.000000,0.000000,""};
+item48[] = {"__19",2,250,-250.000000,275.000000,-150.000000,325.000000,0.000000,""};
+item49[] = {"_",8,218,-250.000000,175.000000,-150.000000,225.000000,0.000000,""};
+item50[] = {"bad_surface",4,4314,-150.000000,-325.000000,-50.000000,-275.000000,2.000000,"bad surface"};
+item51[] = {"__20",1,250,-275.000000,-325.000000,-175.000000,-275.000000,0.000000,""};
+item52[] = {"_",4,218,675.000000,725.000000,775.000000,775.000000,2.000000,""};
+link0[] = {0,1};
+link1[] = {0,2};
+link2[] = {0,50};
+link3[] = {1,3};
+link4[] = {2,4};
+link5[] = {4,5};
+link6[] = {4,6};
+link7[] = {5,7};
+link8[] = {6,8};
+link9[] = {8,9};
+link10[] = {9,10};
+link11[] = {10,11};
+link12[] = {10,12};
+link13[] = {11,17};
+link14[] = {12,13};
+link15[] = {13,14};
+link16[] = {13,15};
+link17[] = {14,26};
+link18[] = {15,16};
+link19[] = {16,27};
+link20[] = {17,18};
+link21[] = {17,19};
+link22[] = {18,20};
+link23[] = {19,21};
+link24[] = {20,22};
+link25[] = {21,23};
+link26[] = {22,21};
+link27[] = {23,24};
+link28[] = {24,48};
+link29[] = {25,10};
+link30[] = {27,28};
+link31[] = {28,29};
+link32[] = {28,30};
+link33[] = {29,31};
+link34[] = {30,32};
+link35[] = {31,44};
+link36[] = {32,33};
+link37[] = {32,42};
+link38[] = {33,34};
+link39[] = {34,35};
+link40[] = {34,36};
+link41[] = {35,37};
+link42[] = {36,45};
+link43[] = {37,38};
+link44[] = {37,39};
+link45[] = {37,52};
+link46[] = {38,41};
+link47[] = {39,40};
+link48[] = {40,47};
+link49[] = {41,47};
+link50[] = {42,43};
+link51[] = {44,43};
+link52[] = {45,43};
+link53[] = {46,45};
+link54[] = {47,46};
+link55[] = {48,49};
+link56[] = {49,25};
+link57[] = {50,51};
+link58[] = {52,45};
+globals[] = {25.000000,1,0,0,0,640,480,1,61,6316128,1,-387.500244,1353.249390,750.312561,-361.899567,959,929,1};
+window[] = {2,-1,-1,-32000,-32000,827,220,1180,145,3,976};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "deploySB";
+  class States
+  {
+    /*%FSM<STATE "deploySB">*/
+    class deploySB
+    {
+      name = "deploySB";
+      init = /*%FSM<STATEINIT""">*/"// ace_sys_sandbag (.pbo) | (c) 2009 by rocko */" \n
+       "" \n
+       "//ace_sys_sandbag_progress_done = false;" \n
+       "" \n
+       "#define __text ""Hi""" \n
+       "#define __fConfirmed _unit getVariable ""ace_sys_sandbag_confirmed""" \n
+       "#define __fCancelled _unit getVariable ""ace_sys_sandbag_cancelled""" \n
+       "#define ACE_TEXT_RED(Text) (""<t color='#FF0000'>"" + ##Text + ""</t>"")" \n
+       "#define ACE_TEXT_SILVER(Text) (""<t color='#C0C0C0'>"" + ##Text + ""</t>"")" \n
+       "" \n
+       "private[""_unit"",""_confirmSB"",""_place_pos""];" \n
+       "" \n
+       "_unit = _this;" \n
+       "_prebusy = _unit getVariable [""ace_sys_sandbag_prebusy"", false];" \n
+       "_busy = _unit getVariable [""ace_sys_sandbag_busy"", false];" \n
+       "" \n
+       "_surface =  ([(surfaceType getpos player), ""#""] call CBA_fnc_split)  select 1;" \n
+       "_surface_type = gettext (configfile >> ""CfgSurfaces"" >>_surface >> ""soundenviron"");" \n
+       "" \n
+       "" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "bad_surface">*/
+        class bad_surface
+        {
+          priority = 2.000000;
+          to="__20";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_surface in [" \n
+           """concrete_ext""," \n
+           """road""," \n
+           """rock""," \n
+           """water""," \n
+           """Concrete_int""," \n
+           """hallway""," \n
+           """carpet""," \n
+           """wave_plate""," \n
+           """metal""," \n
+           """steel""," \n
+           """wood_int""," \n
+           """wood""," \n
+           """parkety""] ) || ([_unit,0.3] call ACE_fnc_inBuilding)" \n
+           ""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 1.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_prebusy)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__1">*/
+        class __1
+        {
+          priority = 0.000000;
+          to="__1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "_">*/
+    class _
+    {
+      name = "_";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__1">*/
+    class __1
+    {
+      name = "__1";
+      init = /*%FSM<STATEINIT""">*/"_bag = ""ACE_SandBag_Magazine"";" \n
+       "if ( (_bag in (magazines _unit)) && {(_bag != """") }) then {[_unit,_bag] call CBA_fnc_removeMagazine;};" \n
+       "" \n
+       "" \n
+       "_confirmSB = ""ACE_Sandbag_NoGeo"" createVehicleLocal [0, 0, 0];" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 1.000000;
+          to="__2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_busy"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__1">*/
+        class __1
+        {
+          priority = 0.000000;
+          to="__3";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__2">*/
+    class __2
+    {
+      name = "__2";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__3">*/
+    class __3
+    {
+      name = "__3";
+      init = /*%FSM<STATEINIT""">*/"ace_sys_sandbag_OffsetZ = (getPos player) select 2; // Always on player height - to be changed" \n
+       "ace_sys_sandbag_DiffZ = (getPos player) select 2; // not to be changed and used as reference" \n
+       "ace_sys_sandbag_dir = 0;" \n
+       "" \n
+       "_unit setVariable [""ace_sys_sandbag_busy"", true];" \n
+       "_unit setVariable [""ace_sys_sandbag_prebusy"", true];" \n
+       "_unit setVariable [""ace_sys_sandbag_confirmed"", false];" \n
+       "_unit setVariable [""ace_sys_sandbag_cancelled"", false];" \n
+       "" \n
+       "_ACE_confirmDeploySB = _unit addAction [""<t color='#C0C0C0'>""+(localize ""STR_ACE_AC_CONF"")+""</t>"", ""\x\ace\addons\sys_sandbag\confirmSBdeploy.sqf"", [_confirmSB], -8];" \n
+       "_ACE_cancelDeploySB = _unit addAction [""<t color='#FF0000'>""+(localize ""STR_ACE_AC_CANCEL"")+""</t>"", ""\x\ace\addons\sys_sandbag\cancelSBdeploy.sqf"", [], -9];" \n
+       "" \n
+       "call ace_sys_sandbag_key_add;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__4";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__4">*/
+    class __4
+    {
+      name = "__4";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "while">*/
+        class while
+        {
+          priority = 1.000000;
+          to="__7";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(_unit getVariable ""ace_sys_sandbag_confirmed"") && !(_unit getVariable ""ace_sys_sandbag_cancelled"") && (alive _unit)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__5";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__5">*/
+    class __5
+    {
+      name = "__5";
+      init = /*%FSM<STATEINIT""">*/"call ace_sys_sandbag_key_rem;" \n
+       "" \n
+       "deleteVehicle _confirmSB;" \n
+       "_unit removeAction _ACE_confirmDeploySB;" \n
+       "_unit removeAction _ACE_cancelDeploySB;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 1.000000;
+          to="__10";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_unit getVariable ""ace_sys_sandbag_cancelled"" || !(alive _unit))"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__1">*/
+        class __1
+        {
+          priority = 0.000000;
+          to="__6";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__6">*/
+    class __6
+    {
+      name = "__6";
+      init = /*%FSM<STATEINIT""">*/"_unit setVariable [""ace_sys_sandbag_confirmed"", nil];" \n
+       "_unit setVariable [""ace_sys_sandbag_cancelled"", nil];" \n
+       "_dir = getDir _unit;" \n
+       "" \n
+       "[2,[],true,true] spawn ace_progressbar;" \n
+       "" \n
+       "//_pb = [2,true,true] execVM ""\x\ace\addons\sys_sandbag\rocko_progressbar.sqf"";"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__11";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"//ace_sys_sandbag_progress_done" \n
+           "(player getVariable ""ACE_PB_Result"" != 0)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__7">*/
+    class __7
+    {
+      name = "__7";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 1.000000;
+          to="__8";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(alive _confirmSB) && (_unit getVariable ""ace_sys_sandbag_exploit"")"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__1">*/
+        class __1
+        {
+          priority = 0.000000;
+          to="__9";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__8">*/
+    class __8
+    {
+      name = "__8";
+      init = /*%FSM<STATEINIT""">*/"_confirmSB = ""ACE_Sandbag_NoGeo"" createVehicleLocal [0, 0, 0];" \n
+       "_unit removeAction _ACE_confirmDeploySB; " \n
+       "_ACE_confirmDeploySB = _unit addAction [""<t color='#C0C0C0'>""+(localize ""STR_ACE_AC_CONF"")+""</t>"", ""\x\ace\addons\sys_sandbag\confirmSBdeploy.sqf"", [_confirmSB], -8];" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__9";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__9">*/
+    class __9
+    {
+      name = "__9";
+      init = /*%FSM<STATEINIT""">*/"_worldPos = _unit modelToWorld ([0, 2.5 + (_unit weaponDirection primaryWeapon _unit select 2) * 2,ace_sys_sandbag_OffsetZ]);" \n
+       "_confirmSB setPos [_worldPos select 0,_worldPos select 1,(_worldpos select 2)];" \n
+       "_confirmSB setDir ace_sys_sandbag_dir;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__19";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__10">*/
+    class __10
+    {
+      name = "__10";
+      init = /*%FSM<STATEINIT""">*/"_unit setVariable [""ace_sys_sandbag_confirmed"", nil];" \n
+       "_unit setVariable [""ace_sys_sandbag_cancelled"", nil];" \n
+       "_unit setVariable [""ace_sys_sandbag_busy"", false];" \n
+       "_unit setVariable [""ace_sys_sandbag_prebusy"", false];" \n
+       "if (_bag != """") then { _unit addMagazine _bag; };"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__11">*/
+    class __11
+    {
+      name = "__11";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 1.000000;
+          to="__13";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"//(_unit getVariable ""ROCKO_PB_success"")" \n
+           "(player getVariable ""ACE_PB_Result"" == 1)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__1">*/
+        class __1
+        {
+          priority = 0.000000;
+          to="__12";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__12">*/
+    class __12
+    {
+      name = "__12";
+      init = /*%FSM<STATEINIT""">*/"_unit setVariable [""ace_sys_sandbag_confirmed"", nil];" \n
+       "_unit setVariable [""ace_sys_sandbag_cancelled"", nil];" \n
+       "_unit setVariable [""ace_sys_sandbag_busy"", false];" \n
+       "_unit setVariable [""ace_sys_sandbag_prebusy"", false];" \n
+       "if (_bag != """") then { _unit addMagazine _bag; };" \n
+       "ace_sys_sandbag_OffsetZ = 0;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__18";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__13">*/
+    class __13
+    {
+      name = "__13";
+      init = /*%FSM<STATEINIT""">*/"_SB = ""ACE_Sandbag_Build"" createVehicle [0, 0, 0];" \n
+       "_SB setDir ace_sys_sandbag_dir;" \n
+       "" \n
+       "_place_pos = player getVariable ""ace_sys_sandbag_place_pos"";" \n
+       "" \n
+       "_worldPos = [(_place_pos select 0), (_place_pos select 1), ace_sys_sandbag_OffsetZ];" \n
+       "//_worldPos = _unit modelToWorld ([0, 2.5 + (_unit weaponDirection primaryWeapon _unit select 2) * 2,ace_sys_sandbag_OffsetZ]);" \n
+       "_SB setPos [(_worldPos select 0),(_worldPos select 1),(_worldPos select 2)];" \n
+       "_unit reveal _SB;" \n
+       "_unit setVariable [""ace_sys_sandbag_busy"", false];" \n
+       "_unit setVariable [""ace_sys_sandbag_prebusy"", false];" \n
+       "ace_sys_sandbag_OffsetZ = 0;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__18";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__1">*/
+        class __1
+        {
+          priority = 0.000000;
+          to="__14";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__14">*/
+    class __14
+    {
+      name = "__14";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 1.000000;
+          to="__18";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"((getPos _SB) select 2 < 0.5)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__1">*/
+        class __1
+        {
+          priority = 0.000000;
+          to="__15";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__15">*/
+    class __15
+    {
+      name = "__15";
+      init = /*%FSM<STATEINIT""">*/"_car = nearestObject [_SB, ""LandVehicle""];" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 2.000000;
+          to="__18";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(isNull _car)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__1">*/
+        class __1
+        {
+          priority = 1.000000;
+          to="__17";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_SB distance _car) > 7"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__2">*/
+        class __2
+        {
+          priority = 0.000000;
+          to="__16";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__16">*/
+    class __16
+    {
+      name = "__16";
+      init = /*%FSM<STATEINIT""">*/"_SB attachTo [_car,[(_car worldToModel (getPos _SB)) select 0,(_car worldToModel (getPos _SB)) select 1,((_car worldToModel (getPos _SB)) select 2) + 0.05],""""];" \n
+       "_SB setDir ace_sys_sandbag_dir;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__18";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__17">*/
+    class __17
+    {
+      name = "__17";
+      init = /*%FSM<STATEINIT""">*/"_SB setpos (getPos player);"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__18";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__18">*/
+    class __18
+    {
+      name = "__18";
+      init = /*%FSM<STATEINIT""">*/"//_unit setVariable [""ROCKO_PB_success"", nil];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__19">*/
+    class __19
+    {
+      name = "__19";
+      init = /*%FSM<STATEINIT""">*/"_timeNow = time;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__4";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(time - _timeNow) >= 0.1"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__20">*/
+    class __20
+    {
+      name = "__20";
+      init = /*%FSM<STATEINIT""">*/"(localize ""STR_ACE_NOSAND"") spawn ACE_fnc_visual;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="deploySB";
+  finalStates[] =
+  {
+    "_",
+    "__2",
+    "__10",
+    "__18",
+    "__20",
+  };
+};
+/*%FSM</COMPILE>*/

@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex_sm\addons\c_sound_veh_helicopters
+Pbo Type is: Arma Addon
+Sha: 'EEA52247A9CA8C76479AD9F2862C0326450063A0'
+//////</HEADER>//////

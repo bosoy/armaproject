@@ -1,0 +1,63 @@
+class FSM
+{
+  fsmName = "WeatherServer";
+  class States
+  {
+    class Start
+    {
+      name = "Start";
+      init = "private [""_timenow"",""_overCast"", ""_wchange""];" \n
+       "_timenow = time + 60;" \n
+       "_wchange = time + 900;" \n
+       "_oldww = X_JIPH getVariable ""d_winterw"";" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="Change_Weather";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class Change_Weather
+    {
+      name = "Change_Weather";
+      init = "if (time > _wchange) then {" \n
+       "	_overCast = random 1;" \n
+       "	if (isDedicated) then {400 setOvercast _overCast};" \n
+       "	X_JIPH setVariable [""d_overcast"", _overCast, true];" \n
+       "	_wchange = time + 900;" \n
+       "};" \n
+       "if (d_WithWinterWeather == 0) then {" \n
+       "	private ""_ww"";" \n
+       "	_ww = if (overcast > 0.5) then {if (rain <= 0.3) then {1} else {2}} else {0};" \n
+       "	if (_ww != _oldww) then {" \n
+       "		[""d_winterw"", _ww] call d_fnc_NetSetJIP;" \n
+       "		_oldww = _ww;" \n
+       "	};" \n
+       "};" \n
+       "_timenow = time + 60;";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="Change_Weather";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+  };
+  initState="Start";
+  finalStates[] =
+  {
+  };
+};

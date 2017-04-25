@@ -1,0 +1,15 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 5.24
+//Produced on Mon Jul 15 17:10:10 2013 : Created on Mon Jul 15 17:10:10 2013
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class ace_sys_blood : data\empty_nzw.rvmat{
+renderFlags[] = {"NoZWrite"};
+class StageTI
+{
+	texture = "x\ace\addons\sys_blood\data\splat_ti_ca.paa";
+};
+//};

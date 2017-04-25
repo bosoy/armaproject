@@ -1,0 +1,371 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+    "cba_main",
+    "ace_main",
+    "ace_c_vehicle",
+    "ace_c_weapon",
+		"cacharacters2",
+		"utes",
+		"CAAir",
+		"CAWheeled2_LAV25",
+		"CAMisc",
+		"camisc3",
+		"CAWheeled",
+		"acex_veh_t72",
+		"CAWheeled2_BTR90",
+		"CA_AH64D",
+		"CATracked2_2S6M_Tunguska"
+	};
+	addOnsAuto[]=
+	{
+    "cba_main",
+    "ace_main",
+    "ace_c_vehicle",
+    "ace_c_weapon",
+		"cacharacters2",
+		"acex_veh_t72",
+		"CATracked2_2S6M_Tunguska",
+		"CAAir",
+		"CAWheeled",
+		"utes"
+	};
+	randomSeed=6740587;
+	class Intel
+	{
+		briefingDescription="Test long distance hellfire, ex-designator";
+		startWeather=0.39999998;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+	class Groups
+	{
+		items=6;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3934.0354,19,3556.197};
+					id=2;
+					side="EAST";
+					vehicle="brdm2_tk_ep1";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3987.0024,19,3591.0239};
+					combatMode="BLUE";
+					speed="LIMITED";
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3406.5771,18.929451,3567.0542};
+					azimut=92.478203;
+					id=3;
+					side="WEST";
+					vehicle="US_Soldier_SL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.86531693;
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1703.3054,0.13409805,4235.1602};
+					azimut=105.837;
+					special="FLY";
+					id=4;
+					side="WEST";
+					vehicle="AH64D";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2004.313,0.32540607,4115.4497};
+					combatMode="BLUE";
+					speed="LIMITED";
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item3
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3969.8989,19,3635.3137};
+					id=5;
+					side="EAST";
+					vehicle="ACE_T72B_RU";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3985.2925,19,3656.3167};
+					combatMode="BLUE";
+					speed="LIMITED";
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item4
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3856.116,18.861155,3495.9661};
+					id=6;
+					side="EAST";
+					vehicle="ACE_T72B_RU";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+			class Waypoints
+			{
+				items=2;
+				class Item0
+				{
+					position[]={3852.698,18.852428,3677.9414};
+					combatMode="BLUE";
+					speed="LIMITED";
+					combat="SAFE";
+					class Effects
+					{
+					};
+					timeoutMin=5;
+					timeoutMid=5;
+					timeoutMax=5;
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={3856.4006,18.864,3494.4192};
+					type="CYCLE";
+					class Effects
+					{
+					};
+					timeoutMin=5;
+					timeoutMid=5;
+					timeoutMax=5;
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item5
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3982.7231,19,3557.9358};
+					id=7;
+					side="EAST";
+					vehicle="2S6M_Tunguska";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+			class Waypoints
+			{
+				items=3;
+				class Item0
+				{
+					position[]={3924.1433,23.222301,3707.3191};
+					combatMode="BLUE";
+					speed="LIMITED";
+					combat="SAFE";
+					class Effects
+					{
+					};
+					timeoutMin=4;
+					timeoutMid=4;
+					timeoutMax=4;
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={3959.2952,19,3529.5449};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={3984.0679,19,3558.6089};
+					type="CYCLE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=2;
+		class Item0
+		{
+			position[]={3408.8018,19,3588.3054};
+			id=0;
+			side="EMPTY";
+			vehicle="MH60S";
+			skill=0.60000002;
+			text="chopper1";
+			init="this addEventHandler [""KILLED"", {(_this select 1) AddRating 7000}];";
+		};
+		class Item1
+		{
+			position[]={3407.8677,19,3610.7019};
+			azimut=92.213402;
+			id=1;
+			side="EMPTY";
+			vehicle="HMMWV";
+			leader=1;
+			skill=0.60000002;
+		};
+	};
+	class Markers
+	{
+		items=1;
+		class Item0
+		{
+			position[]={2005.1606,0.38713956,4187.4448};
+			name="h";
+			text="helka";
+			type="mil_marker";
+			colorName="ColorBlue";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=9051728;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=15597508;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=4554205;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};

@@ -1,0 +1,62 @@
+/////////////////////////////////////////////////////////////////////////////////
+#                                                                               #
+#                       ADVANCED COMBAT ENVIRONMENT 2 FILE                      #
+#                                                                               #
+/////////////////////////////////////////////////////////////////////////////////
+
+
+#===========#
+| Component |
+#===========#
+
+sys_planefx
+
+#================#
+| Main author(s) |
+#================#
+
+rocko
+
+#===============#
+| Local credits |
+#===============#
+
+lethal
+ArmA 2 port by Xeno
+Maddmatt
+
+#=============================#
+| Rough component description |
+#=============================#
+
+This resource will add some effects to the SU-34, AV8B, A10, SU25, SU27 and F35.
+
+- Wingtip trails at high speeds
+- Sonic boom
+- Fuselage vapor effect 
+
+#=================#
+| Contact details |
+#=================#
+
+Mail:	rocko@dev-heaven.net
+Page:	http://dev-heaven.net/projects/show/ace-mod2
+
+
+
+/////////////////////////////////////////////////////////////////////////////////
+#                                                                               #
+#                       ADVANCED COMBAT ENVIRONMENT 2 FILE                      #
+#                                                                               #
+/////////////////////////////////////////////////////////////////////////////////
+//                                                                             //
+#               Copyright 2009 A.C.E MOD, ALL RIGHTS RESERVED                   #
+//                                                                             //
+//  This product is licensed for personal use only.  Commercial distribution   //
+//  prohibited.  Military use prohibited.  Use prohibited if any component     //
+//  of this distribution removed or modified without express written consent   //
+//  of the developer. For further licensing details please refer to the        //
+//  End User License Agreement provided within this PBO file.                  //
+//  Any questions or comments, please contact contact@acemod.net               //
+//                                                                             //
+/////////////////////////////////////////////////////////////////////////////////

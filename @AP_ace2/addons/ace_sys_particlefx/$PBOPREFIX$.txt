@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_particlefx
+Pbo Type is: Arma Addon
+Sha: '28EFE9CEE34E2A8D77EA03D1C82401F890AF5EF5'
+//////</HEADER>//////

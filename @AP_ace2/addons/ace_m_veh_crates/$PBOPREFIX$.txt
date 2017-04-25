@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\m_veh_crates
+Pbo Type is: Arma Addon
+Sha: '4E4492CC67A75C9CB5BA791EDB152FE8C068E312'
+//////</HEADER>//////

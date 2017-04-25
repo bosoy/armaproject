@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="ACE2">
+<Container name="STR_WDN">
+<Key ID="STR_WDN_ACE_TEARGAS">
+<English>CN grenade</English>
+<German>CN Granate</German>
+<Spanish>CN grenade</Spanish>
+<Czech>Plynový granát (CN)</Czech>
+<Russian>Газовая граната (СN)</Russian>
+<Italian>Granata Lacrimogena (CN)</Italian>
+<Polish>Granat gazowy</Polish>
+<French>Grenade lacrymogène</French>
+<Hungarian>Könnygáz (CN)</Hungarian>
+</Key>
+</Container>
+<Container name="STR_DN">
+<Key ID="STR_DN_ACE_M7A3">
+<English>M7A3</English>
+<German>M7A3</German>
+<Spanish>M7A3</Spanish>
+<Czech>M7A3</Czech>
+<Russian>M7A3</Russian>
+<Italian>M7A3</Italian>
+<Polish>M7A3</Polish>
+<French>M7A3</French>
+<Hungarian>M7A3</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_RG60A">
+<English>RG-60A</English>
+<German>RG-60A</German>
+<Spanish>RG-60A</Spanish>
+<Czech>RG-60A</Czech>
+<Russian>РГ-60А</Russian>
+<Italian>RG-60A</Italian>
+<Polish>RG-60A</Polish>
+<French>RG-60A</French>
+<Hungarian>RG-60A</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_1RND_CS_M203">
+<English>M651 CN</English>
+<German>M651 CN</German>
+<Spanish>M651 CN</Spanish>
+<Czech>M651 CN</Czech>
+<Russian>M651 (слезот. газ)</Russian>
+<Italian>M651 CN</Italian>
+<Polish>M651 (gaz łzawiący)</Polish>
+<French>M651 CN</French>
+<Hungarian>M651 CN</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_1RND_CS_GP25">
+<German>Gvozd</German>
+<English>Gvozd</English>
+<Italian>Gvozd</Italian>
+<Spanish>Gvozd</Spanish>
+<French>Gvozd</French>
+<Czech>Gvozd</Czech>
+<Russian>Гвоздь</Russian>
+<Polish>Gwozd</Polish>
+<Hungarian>Gvozd</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_6RND_CS_M32">
+<German>M651 (6 Sch.)</German>
+<English>6Rnd. M651</English>
+<Italian>Caric. 6 mun. M651</Italian>
+<Spanish>M651 carga 6</Spanish>
+<French>M651 6 c.</French>
+<Czech>6náb. M651</Czech>
+<Russian>M651 6 п.</Russian>
+<Polish>Magazynek M32 (M651)</Polish>
+<Hungarian>6lszr. M651</Hungarian>
+</Key>
+</Container>
+<Container name="STR_DSS">
+<Key ID="STR_DSS_ACE_1RND_CS_M203">
+<German>Typ: CN Gas &lt;br/&gt;Schuss: 1 &lt;br/&gt;Eingesetzt in: M203 Granatwerfer</German>
+<English>Type: CN gas &lt;br/&gt;Rounds: 1 &lt;br/&gt;Used in: M203 grenade launcher</English>
+<Italian>Tipo: Gas Lacrimogeno (CN) &lt;br/&gt;Munizioni: 1 &lt;br/&gt;Si usa in: lanciagranate M203</Italian>
+<Spanish>Tipo: CN gas &lt;br/&gt;Cargas: 1 &lt;br/&gt;Uso: lanzagranadas M203</Spanish>
+<French>Type: Gaz lacrymogène &lt;br/&gt;Munitions : 1 &lt;br/&gt;Utilisé avec: lance-grenades M203</French>
+<Czech>Typ: CN plyn &lt;br/&gt;Nábojů: 1 &lt;br/&gt;Pro: granátomet M203</Czech>
+<Russian>Тип: Слезоточ. газ &lt;br/&gt;Количество: 1 &lt;br/&gt;Используются в: гранатомет M203 </Russian>
+<Polish>Typ: gaz łzawiący &lt;br/&gt;Naboje: 1 &lt;br/&gt;Używane w: granatnik M203</Polish>
+<Hungarian>Típus: Könnygáz &lt;br/&gt; Lőszer: 1 &lt;br/&gt; Hozzá tartozó fegyver: M203 gránátvető</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_1RND_CS_GP25">
+<German>Typ: CN Gas &lt;br/&gt;Schuss: 1 &lt;br/&gt;Eingesetzt in: GP-25 Granatwerfer</German>
+<English>Type: CN gas &lt;br/&gt;Rounds: 1 &lt;br/&gt;Used in: GP-25 grenade launcher</English>
+<Italian>Tipo: Gas Lacrimogeno (CN) &lt;br/&gt;Munizioni: 1 &lt;br/&gt;Si usa in: lanciagranate GP-25</Italian>
+<Spanish>Tipo: CN gas &lt;br/&gt;Cargas: 1 &lt;br/&gt;Uso: lanzagranadas GP-25</Spanish>
+<French>Type: Gaz lacrymogène &lt;br/&gt;Munitions : 1 &lt;br/&gt;Utilisé avec: lance-grenades GP-25</French>
+<Czech>Typ: CN plyn &lt;br/&gt;Nábojů: 1 &lt;br/&gt;Pro: granátomet GP-25</Czech>
+<Russian>Тип: Слезоточ. газ &lt;br/&gt;Количество: 1 &lt;br/&gt;Используются в: гранатомет ГП-25</Russian>
+<Polish>Typ: gaz łzawiący &lt;br/&gt;Naboje: 1 &lt;br/&gt;Używane w: granatnik GP-25</Polish>
+<Hungarian>Típus: Könnygáz &lt;br/&gt; Lőszer: 1 &lt;br/&gt; Hozzá tartozó fegyver: GP-25 gránátvető</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_6RND_CS_M32">
+<German>Typ: CN Gas &lt;br/&gt;Schuss: 1 &lt;br/&gt;Eingesetzt in: M32</German>
+<English>Type: CN gas &lt;br/&gt;Rounds: 1 &lt;br/&gt;Used in: M32</English>
+<Italian>Tipo: Gas Lacrimogeno (CN) &lt;br/&gt;Munizioni: 1 &lt;br/&gt;Si usa in: M32</Italian>
+<Spanish>Tipo: CN gas &lt;br/&gt;Cargas: 1 &lt;br/&gt;Uso: M32</Spanish>
+<French>Type: Gaz lacrymogène &lt;br/&gt;Munitions : 1 &lt;br/&gt;Utilisé avec: M32</French>
+<Czech>Typ: CN plyn &lt;br/&gt;Nábojů: 1 &lt;br/&gt;Pro: M32</Czech>
+<Russian>Тип: Слезоточ. газ &lt;br/&gt;Количество: 1 &lt;br/&gt;Используются в: M32</Russian>
+<Polish>Typ: gaz łzawiący &lt;br/&gt;Naboje: 1 &lt;br/&gt;Używane w: granatnik M32</Polish>
+<Hungarian>Típus: Könnygáz &lt;br/&gt; Lőszer: 1 &lt;br/&gt; Hozzá tartozó fegyver: M32</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_M7A3">
+<English>CN gas grenade</English>
+<German>CN Gas Granate</German>
+<Spanish>CN gas grenade</Spanish>
+<Czech>CN plynový granát</Czech>
+<Russian>Граната со слезоточ. газом</Russian>
+<Italian>Granata Lacrimogena (CN)</Italian>
+<Polish>Granat gazowy</Polish>
+<French>Grenade à gaz lacrymogène</French>
+<Hungarian>Könnygáz (CN)</Hungarian>
+</Key>
+</Container></Package></Project>

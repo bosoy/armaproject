@@ -1,0 +1,10 @@
+?!isServer: exit
+
+_posx = _this select 0
+_posy = _this select 1
+_posz = _this select 2
+
+_array = [_posx,_posy,_posz] nearObjects ["All", 200]
+{_x setdammage ((getdammage _x) + 0.01)} forEach _array
+
+exit

@@ -1,0 +1,337 @@
+/*%FSM<COMPILE "G:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, fnc_blinkhuntir">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"ace_sys_irstrobe",0,250,-75.000000,-350.000000,25.000000,-300.000000,0.000000,"ace_sys_irstrobe" \n "huntir"};
+item1[] = {"_",8,218,50.000000,-175.000000,150.000000,-125.000000,0.000000,""};
+item2[] = {"restart",4,218,-200.000000,-175.000000,-100.000000,-125.000000,1.000000,"restart"};
+item3[] = {"End",1,250,-325.000000,-175.000000,-225.000000,-125.000000,0.000000,"End"};
+item4[] = {"process",2,250,175.000000,-175.000000,275.000000,-125.000000,0.000000,"process"};
+item5[] = {"wait",4,218,-75.000000,-250.000000,25.000000,-200.000000,0.000000,"wait"};
+item6[] = {"while",2,250,-75.000000,-175.000000,25.000000,-125.000000,0.000000,"while"};
+item7[] = {"__render",4,218,175.000000,-100.000000,275.000000,-50.000000,1.000000,"!render"};
+item8[] = {"_",8,218,550.000000,-175.000000,650.000000,-125.000000,0.000000,""};
+item9[] = {"kill",2,250,-75.000000,50.000000,25.000000,100.000000,0.000000,"kill"};
+item10[] = {"_",8,218,550.000000,-25.000000,650.000000,25.000000,0.000000,""};
+item11[] = {"dead",4,218,-200.000000,50.000000,-100.000000,100.000000,1.000000,"dead"};
+item12[] = {"_",8,218,-75.000000,-50.000000,25.000000,0.000000,0.000000,""};
+item13[] = {"time2wait",2,250,175.000000,-25.000000,275.000000,25.000000,0.000000,"time2wait"};
+item14[] = {"_",4,218,175.000000,50.000000,275.000000,100.000000,0.000000,""};
+item15[] = {"blink_for_ai_or",2,250,675.000000,-100.000000,775.000000,-50.000000,0.000000,"blink for ai" \n "or other player"};
+item16[] = {"wait",4,218,800.000000,-100.000000,900.000000,-50.000000,0.000000,"wait"};
+item17[] = {"delete_blink2",2,250,1000.000000,-100.000000,1100.000000,-50.000000,0.000000,"delete blink2"};
+item18[] = {"_",8,4314,1125.000000,-100.000000,1225.000000,-50.000000,0.000000,""};
+item19[] = {"done",2,250,1000.000000,-25.000000,1100.000000,25.000000,0.000000,"done"};
+item20[] = {"_",2,250,-325.000000,50.000000,-225.000000,100.000000,0.000000,""};
+item21[] = {"_",8,218,-325.000000,-50.000000,-225.000000,0.000000,0.000000,""};
+link0[] = {0,5};
+link1[] = {1,4};
+link2[] = {2,3};
+link3[] = {4,7};
+link4[] = {4,8};
+link5[] = {5,6};
+link6[] = {6,1};
+link7[] = {6,2};
+link8[] = {7,13};
+link9[] = {8,15};
+link10[] = {9,11};
+link11[] = {9,12};
+link12[] = {10,13};
+link13[] = {11,20};
+link14[] = {12,6};
+link15[] = {13,14};
+link16[] = {14,9};
+link17[] = {15,16};
+link18[] = {16,17};
+link19[] = {17,18};
+link20[] = {18,19};
+link21[] = {19,10};
+link22[] = {20,21};
+link23[] = {21,3};
+globals[] = {25.000000,1,0,0,0,640,480,1,37,6316128,1,-101.259750,1462.776367,424.159698,-708.334167,1282,921,1};
+window[] = {2,-1,-1,-1,-1,732,50,1026,50,3,1300};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "fnc_blinkhuntir";
+  class States
+  {
+    /*%FSM<STATE "ace_sys_irstrobe">*/
+    class ace_sys_irstrobe
+    {
+      name = "ace_sys_irstrobe";
+      init = /*%FSM<STATEINIT""">*/"// ace_sys_irstrobe (.pbo) | (c) 2008, 2009 by rocko" \n
+       "" \n
+       "private[""_irA"", ""_irlevel"", ""_distance"", ""_offset"", ""_factor"", ""_unit"", ""_time2wait"", ""_exit""];" \n
+       "_exit = false;" \n
+       "_offset = [0, 0, 1.4];" \n
+       "_unit = _this select 0;" \n
+       "_unit_ir = _this select 0;" \n
+       "" \n
+       "_time2wait = time + random 2;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "wait">*/
+        class wait
+        {
+          priority = 0.000000;
+          to="while";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _time2wait"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End">*/
+    class End
+    {
+      name = "End";
+      init = /*%FSM<STATEINIT""">*/"if (!isNil ""_irA"") then {deleteVehicle _irA;};" \n
+       "_irA = nil;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "process">*/
+    class process
+    {
+      name = "process";
+      init = /*%FSM<STATEINIT""">*/"if ( vehicle _unit != _unit) then { _unit = vehicle _unit; };" \n
+       "" \n
+       "if !(_unit_ir in (crew _unit)) then { _unit = _unit_ir; }; " \n
+       "" \n
+       "//_distance = ((positionCameraToWorld [0,0,0]) distance _unit);" \n
+       "" \n
+       "_render = true;" \n
+       "" \n
+       "// test if ir is visible beyond viewdistance" \n
+       "//if (_distance > (viewDistance - 150)) then {_render = false};" \n
+       "" \n
+       "if ((vehicle _unit) isKindOf ""TANK"") then { _render = false; };" \n
+       "" \n
+       "_irlevel = 0.0003;" \n
+       "" \n
+       "//_factor = (_distance / 400);" \n
+       "//if (_factor > 12.5) then { _factor = 12.5; };	" \n
+       "//_irlevel = ((_distance + 0.001) / 100000) * 1.5;" \n
+       "//if (_irlevel < 0.0005) then { _irlevel = 0.0005; };" \n
+       "//if (_irlevel > 0.01) then { _irlevel = 0.0095; };"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "__render">*/
+        class __render
+        {
+          priority = 1.000000;
+          to="time2wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!_render"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="blink_for_ai_or";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "while">*/
+    class while
+    {
+      name = "while";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "restart">*/
+        class restart
+        {
+          priority = 1.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_exit || {ace_sys_huntir_NV == 0}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="process";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "kill">*/
+    class kill
+    {
+      name = "kill";
+      init = /*%FSM<STATEINIT""">*/"if (!isNil ""_irA"") then {deleteVehicle _irA;};" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "dead">*/
+        class dead
+        {
+          priority = 1.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(alive _unit) || {!(_unit in  ace_sys_irstrobe_local_array)} || {ace_sys_huntir_NV == 0}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="while";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "time2wait">*/
+    class time2wait
+    {
+      name = "time2wait";
+      init = /*%FSM<STATEINIT""">*/"_time2wait = time + 0.5;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="kill";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _time2wait"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "blink_for_ai_or">*/
+    class blink_for_ai_or
+    {
+      name = "blink_for_ai_or";
+      init = /*%FSM<STATEINIT""">*/"if (_unit isKindOf ""CAManBase"" && {isPlayer _unit}) then { _offset = _unit selectionPosition ""leftshoulder""; };" \n
+       "_irA = ""#lightpoint"" createVehicleLocal getpos _unit;" \n
+       "_irA lightAttachObject [_unit, _offset];" \n
+       "_irA setLightBrightness _irlevel;" \n
+       "_irA setLightAmbient [0, 0, 0];" \n
+       "_irA setLightColor [255, 255, 255];" \n
+       "" \n
+       "_time2wait = time + 0.3;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "wait">*/
+        class wait
+        {
+          priority = 0.000000;
+          to="delete_blink2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _time2wait"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "delete_blink2">*/
+    class delete_blink2
+    {
+      name = "delete_blink2";
+      init = /*%FSM<STATEINIT""">*/"if (!isNil ""_irA"") then { deleteVehicle _irA; };" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="done";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "done">*/
+    class done
+    {
+      name = "done";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="time2wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "_">*/
+    class _
+    {
+      name = "_";
+      init = /*%FSM<STATEINIT""">*/"if !(alive _unit) then {" \n
+       "	if (_unit in ace_sys_irstrobe_local_array) then {" \n
+       "		[_unit] call ace_sys_irstrobe_fnc_array_remove;" \n
+       "	};" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="ace_sys_irstrobe";
+  finalStates[] =
+  {
+    "End",
+  };
+};
+/*%FSM</COMPILE>*/

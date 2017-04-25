@@ -1,0 +1,9 @@
+ambient[] = {0.1, 0.1, 0.1, 1.0};
+diffuse[] = {0.0, 0.0, 0.0, 1.0};
+forcedDiffuse[] = {0.1, 0.1, 0.1, 0.0};
+emmisive[] = {0.677, 0.682, 0.0, 1.0};
+specular[] = {0.0, 0.0, 0.0, 0.0};
+specularPower = 0.0;
+nextPass = "ca\data\data\flash-pass2.rvmat";
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";

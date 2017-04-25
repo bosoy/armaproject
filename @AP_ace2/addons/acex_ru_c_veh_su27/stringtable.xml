@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ArmA2_ACE2">
+<Package name="c_veh_su27">
+<Container name="STR_ACE">
+<Key ID="STR_LANGLIB_Su27">
+<English>Leave her alone!!!</English>
+<German>Leave her alone!!!</German>
+<Italian>Leave her alone!!!</Italian>
+<Spanish>Leave her alone!!!</Spanish>
+<Czech>Nechte ji napokoji!!!</Czech>
+<Russian>Оставь её в покое!!!</Russian>
+<Polish>Zostaw go w spokoju, jeden już spadł w Polsce!!!</Polish>
+<Hungarian>Hagyd békén!!!</Hungarian>
+<French>Leave her alone!!!</French>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_SU27">
+<English>Su-27S Flanker-B</English>
+<German>Su-27S Flanker-B</German>
+<Italian>Su-27S Flanker-B</Italian>
+<Spanish>Su-27S Flanker-B</Spanish>
+<Czech>Su-27S Flanker-B</Czech>
+<Russian>Су-27С</Russian>
+<Polish>Su-27S Flanker-B</Polish>
+<Hungarian>Su-27Sz Flanker-B</Hungarian>
+<French>Su-27S Flanker-B</French>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_SU27_CAP">
+<English>Su-27S (CAP)</English>
+<German>Su-27S (CAP)</German>
+<Italian>Su-27S (CAP)</Italian>
+<Spanish>Su-27S (CAP)</Spanish>
+<Czech>Su-27S (CAP)</Czech>
+<Russian>Су-27С (В-В)</Russian>
+<Polish>Su-27S (PWP)</Polish>
+<Hungarian>Szu-27Sz (CAP)</Hungarian>
+<French>Su-27S (CAP)</French>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_SU27_CASP">
+<English>Su-27S (CAS/CAP)</English>
+<German>Su-27S (CAS/CAP)</German>
+<Italian>Su-27S (CAS/CAP)</Italian>
+<Spanish>Su-27S (CAS/CAP)</Spanish>
+<Czech>Su-27S (CAS/CAP)</Czech>
+<Russian>Су-27С (В-З/В-В)</Russian>
+<Polish>Su-27S (BWP/PWP)</Polish>
+<Hungarian>Szu-27Sz (CAS/CAP)</Hungarian>
+<French>Su-27S (CAS/CAP)</French>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_SU27_CAS">
+<English>Su-27S (CAS)</English>
+<German>Su-27S (CAS)</German>
+<Italian>Su-27S (CAS)</Italian>
+<Spanish>Su-27S (CAS)</Spanish>
+<Czech>Su-27S (CAS)</Czech>
+<Russian>Су-27С (В-З)</Russian>
+<Polish>Su-27S (BWP)</Polish>
+<Hungarian>Szu-27Sz (CAS)</Hungarian>
+<French>Su-27S (CAS)</French>
+</Key>
+</Container>
+</Package>
+</Project>

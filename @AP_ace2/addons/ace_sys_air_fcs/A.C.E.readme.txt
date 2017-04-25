@@ -1,0 +1,61 @@
+/////////////////////////////////////////////////////////////////////////////////
+#                                                                               #
+#                       ADVANCED COMBAT ENVIRONMENT 2 FILE                      #
+#                                                                               #
+/////////////////////////////////////////////////////////////////////////////////
+
+
+#===========#
+| Component |
+#===========#
+
+ace_sys_air_fcs
+
+#================#
+| Main author(s) |
+#================#
+
+Headspace
+rocko
+
+#===============#
+| Local credits |
+#===============#
+
+q1184
+zGuba
+
+#=============================#
+| Rough component description |
+#=============================#
+
+// 2008-02-10 - Added UI constants, event handlers, and RscTitles (just AH1Z for now). - Headspace
+// 2008-02-22 - Added Laser Target Init - Headspace
+// 2008-09-10 - Outsourced by rocko
+// 2010-02-02 - Splitted to MFD and missile guidance - zGuba
+// 2010-03-05 - Added q1184's FCS scripts - zGuba
+
+#=================#
+| Contact details |
+#=================#
+
+Page:	http://dev-heaven.net/projects/show/ace-mod2
+
+
+
+/////////////////////////////////////////////////////////////////////////////////
+#                                                                               #
+#                       ADVANCED COMBAT ENVIRONMENT 2 FILE                      #
+#                                                                               #
+/////////////////////////////////////////////////////////////////////////////////
+//                                                                             //
+#               Copyright 2009 A.C.E MOD, ALL RIGHTS RESERVED                   #
+//                                                                             //
+//  This product is licensed for personal use only.  Commercial distribution   //
+//  prohibited.  Military use prohibited.  Use prohibited if any component     //
+//  of this distribution removed or modified without express written consent   //
+//  of the developer. For further licensing details please refer to the        //
+//  End User License Agreement provided within this PBO file.                  //
+//  Any questions or comments, please contact contact@acemod.net               //
+//                                                                             //
+/////////////////////////////////////////////////////////////////////////////////

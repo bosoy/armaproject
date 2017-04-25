@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ArmA2_ACE2">
+<Package name="c_vehicle">
+<Container name="STR_ACE">
+<Key ID="STR_ACE_FAC_BLUFOR_USMC_DES">
+<German>Æ USMC (Wüste)</German>
+<English>Æ USMC (Desert)</English>
+<Spanish>Æ USMC (Desert)</Spanish>
+<Czech>Æ USMC (Pouštní)</Czech>
+<French>Æ USMC (Désert)</French>
+<Polish>Æ USMC (pustynia)</Polish>
+<Italian>Æ USMC (Desert)</Italian>
+<Russian>Æ USMC (Пустынный)</Russian>
+<Hungarian>Æ USMC (Sivatagi)</Hungarian>
+</Key>
+<Key ID="STR_ACE_FAC_BLUFOR_USARMY_DES">
+<German>Æ US Army (Wüste)</German>
+<English>Æ US Army (Desert)</English>
+<Spanish>Æ US Army (Desert)</Spanish>
+<Czech>Æ US Army (Pouštní)</Czech>
+<French>Æ US Army (Désert)</French>
+<Polish>Æ US Army (pustynia)</Polish>
+<Italian>Æ US Army (Desert)</Italian>
+<Russian>Æ US Армия (Пустынный)</Russian>
+<Hungarian>Æ US Army (Sivatagi)</Hungarian>
+</Key>
+<Key ID="STR_ACE_FAC_BLUFOR_160SOAR">
+<German>Æ US Army SOAR</German>
+<English>Æ US Army SOAR</English>
+<Spanish>Æ US Army SOAR</Spanish>
+<Czech>Æ Letouny (SOAR)</Czech>
+<French>Æ US Army SOAR</French>
+<Polish>Æ US Army SOAR</Polish>
+<Italian>Æ US Army SOAR</Italian>
+<Russian>Æ US Армия SOAR</Russian>
+<Hungarian>Æ US Army SOAR</Hungarian>
+</Key>
+<Key ID="STR_ACE_VC_BLUFOR_160SOAR">
+<German>Æ Luft (SOAR)</German>
+<English>Æ Air (SOAR)</English>
+<Spanish>Æ Aire (SOAR)</Spanish>
+<Czech>Æ Letouny (SOAR)</Czech>
+<French>Æ Air (SOAR)</French>
+<Polish>Æ Lotnictwo (SOAR)</Polish>
+<Italian>Æ Aerea (SOAR)</Italian>
+<Russian>Æ Авиация (SOAR)</Russian>
+<Hungarian>Æ Légi (SOAR)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VC_BLUFOR_USNAVY_WOOD">
+<German>Æ Männer (Woodland)</German>
+<English>Æ Men (Woodland)</English>
+<Spanish>Æ Men (Woodland)</Spanish>
+<Czech>Æ Muži (Lesní)</Czech>>
+<French>Æ Troupe (Woodland)</French>
+<Polish>Æ Piechota (las)</Polish>
+<Italian>Æ Men (Woodland)</Italian>
+<Russian>Æ Люди (Вудланд)</Russian>
+<Hungarian>Æ Emberek (Woodland)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VC_BLUFOR_USNAVY_AOR1">
+<German>Æ Männer (AOR1)</German>
+<English>Æ Men (AOR1)</English>
+<Spanish>Æ Men (AOR1)</Spanish>
+<Czech>Æ Muži (AOR1)</Czech>
+<French>Æ Troupe (AOR1)</French>
+<Polish>Æ Piechota (AOR1)</Polish>
+<Italian>Æ Men (AOR1)</Italian>
+<Russian>Æ Люди (AOR1)</Russian>
+<Hungarian>Æ Emberek (AOR1)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VC_BLUFOR_USNAVY_AOR2">
+<German>Æ Männer (AOR2)</German>
+<English>Æ Men (AOR2)</English>
+<Spanish>Æ Men (AOR2)</Spanish>
+<Czech>Æ Muži (AOR2)</Czech>
+<French>Æ Troupe (AOR2)</French>
+<Polish>Æ Piechota (AOR2)</Polish>
+<Italian>Æ Men (AOR2)</Italian>
+<Russian>Æ Люди (AOR2)</Russian>
+<Hungarian>Æ Emberek (AOR2)</Hungarian>
+</Key>
+<Key ID="STR_ACE_FAC_OPFOR_VDV">
+<German>Æ VDV</German>
+<English>Æ Russian Airborne Troops</English>
+<Spanish>Æ Tropas Aerotransportadas de Rusia</Spanish>
+<Czech>Æ Ruské výsadkové jednotky</Czech>
+<French>Æ Troupes aéroportées de la fédération de Russie</French>
+<Polish>Æ WDW FR</Polish>
+<Italian>Æ Truppe aerotrasportate Russo</Italian>
+<Russian>Æ ВДВ РФ</Russian>
+<Hungarian>Æ Orosz Légidesszant</Hungarian>
+</Key>
+<Key ID="STR_ACE_FAC_OPFOR_GRU">
+<German>Æ Spetsnatz GRU</German>
+<English>Æ Spetsnatz GRU</English>
+<Spanish>Æ Spetsnatz GRU</Spanish>
+<Czech>Æ Spetsnatz GRU</Czech>
+<French>Æ Spetsnatz GRU</French>
+<Polish>Æ Specnaz GRU FR</Polish>
+<Italian>Æ Spetsnatz GRU</Italian>
+<Russian>Æ Спецназ ГРУ</Russian>
+<Hungarian>Æ Szpecnaz GRU</Hungarian>
+</Key>
+<Key ID="STR_ACE_FAC_OPFOR_MVD">
+<German>Æ Vityaz MVD</German>
+<English>Æ Vityaz MVD</English>
+<Spanish>Æ Vityaz MVD</Spanish>
+<Czech>Æ Vityaz MVD</Czech>
+<French>Æ Vityaz MVD</French>
+<Polish>Æ Witjaz MWD FR</Polish>
+<Italian>Æ Vityaz MVD</Italian>
+<Russian>Æ Витязь МВД РФ</Russian>
+<Hungarian>Æ Vityaz MVD</Hungarian>
+</Key>
+<Key ID="STR_ACE_FAC_OPFOR_D">
+<German>Æ Russland (Wüste)</German>
+<English>Æ Russia (Desert)</English>
+<Spanish>Æ Russia (Desert)</Spanish>
+<Czech>Æ Rusko (Pouštní)</Czech>
+<French>Æ Russia (Desert)</French>
+<Polish>Æ Rosja (pustynia)</Polish>
+<Italian>Æ Russia (Desert)</Italian>
+<Russian>Æ Россия (Пустыннй)</Russian>
+<Hungarian>Æ Russia (Desert)</Hungarian>
+</Key>
+<Key ID="STR_ACE_EASTEREGGS">
+<German>Æ Easter eggs</German>
+<English>Æ Surprise</English>
+<Spanish>Æ Easter eggs</Spanish>
+<Czech>Æ Easter eggy</Czech>
+<French>Æ Easter eggs</French>
+<Polish>Æ Jaja wielkanocne</Polish>
+<Italian>Æ Easter eggs</Italian>
+<Russian>Æ Пасхальные яйца</Russian>
+<Hungarian>Æ Húsvéti tojások</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

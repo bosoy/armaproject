@@ -1,0 +1,19 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 3.52
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class Ca : Data\Penetration\pottery.bisurf{
+Density = 900;
+rough = 0.1;
+dust = 0;
+bulletPenetrability = 700;
+soundEnviron = "Empty";
+isWater = "false";
+friction = 0.5;
+restitution = 0.1;
+impact = "default_Mat";
+soundHit = "concrete";
+//};

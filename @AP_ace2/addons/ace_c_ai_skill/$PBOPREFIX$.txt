@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\c_ai_skill
+Pbo Type is: Arma Addon
+Sha: '9EF3979371BCDEBBD52327967B41DF7175440ADF'
+//////</HEADER>//////

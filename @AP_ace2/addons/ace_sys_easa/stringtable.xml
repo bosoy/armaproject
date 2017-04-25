@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2">
+<Package name="ace2">
+<Container name="module_easa">
+<Key ID="STR_ACE_EASA_NAME">
+<English>(Æ) Exchangeable Armament System</English>
+<German>(Æ) Weapons: Bewaffnung für Luftfahrzeuge</German>
+<Spanish>(Æ) Exchangeable Armament System</Spanish>
+<Czech>(Æ) Výměnný Systém Výzbroje</Czech>
+<Russian>(Æ) Система смены вооружения (EASA)</Russian>
+<Italian>(Æ) Sistema di Cambio Armamento</Italian>
+<Polish>(Æ) System Wymienialnego Uzbrojenia Lotniczego</Polish>
+<French>(Æ) Système d'armement modulaire</French>
+<Hungarian>(Æ) Cserélhető Fegyverzet Rendszer</Hungarian>
+</Key>
+<Key ID="STR_ACE_EASA_ACTION">
+<English>Change loadout</English>
+<German>Bewaffnung ändern</German>
+<Spanish>Change loadout</Spanish>
+<Czech>Změnit výzbroj</Czech>
+<Russian>Изменить загрузку</Russian>
+<Italian>Cambio Attrezzatura</Italian>
+<Polish>Zmień uzbrojenie</Polish>
+<French>Changer armement</French>
+<Hungarian>Fegyv. változtatása</Hungarian>
+</Key>
+<Key ID="STR_ACE_EASA_HANGARINUSE">
+<English>This hangar is already in use.</English>
+<German>Dieser Hangar ist bereits in Benutzung.</German>
+<Spanish>This hangar is already in use.</Spanish>
+<Czech>Tento hangár je již používán.</Czech>
+<Russian>Этот ангар уже используется.</Russian>
+<Italian>Questo Hangar è Già un Uso.</Italian>
+<Polish>Hangar jest właśnie używany.</Polish>
+<French>Hangar déjà utilisé.</French>
+<Hungarian>Ez a hangár foglalt.</Hungarian>
+</Key>
+<Key ID="STR_ACE_EASA_NOAIRCRAFT">
+<English>There is no aircraft to be loaded.</English>
+<German>Es ist kein Luftfahrzeug zur Beladung vorhanden.</German>
+<Spanish>There is no aircraft to be loaded.</Spanish>
+<Czech>Není dostupné letadlo pro vyzbrojení.</Czech>
+<Russian>Отсутствует летательный аппарат для загрузки.</Russian>
+<Italian>Non ci sono Aerei da Caricare.</Italian>
+<Polish>Tu możesz uzbroić samolot.</Polish>
+<French>Il n'y a pas d'avion à approvisionner.</French>
+<Hungarian>Nincs feltölthető repülő.</Hungarian>
+</Key>
+<Key ID="STR_ACE_EASA_DIA_SELECTED">
+<English>Load selected</English>
+<German>Auswahl laden</German>
+<Spanish>Load selected</Spanish>
+<Czech>Výzbroj zvolena</Czech>
+<Russian>Загрузить вооружение</Russian>
+<Italian>Caricamento Selezionato</Italian>
+<Polish>Załaduj wybrane</Polish>
+<French>Chargement sélectionné</French>
+<Hungarian>Kiválasztott(ak) betölt..</Hungarian>
+</Key>
+<Key ID="STR_ACE_EASA_DIA_DEFAULT">
+<English>Load default</English>
+<German>Standard laden</German>
+<Spanish>Load default</Spanish>
+<Czech>Standardní výzbroj</Czech>
+<Russian>Загрузка по умолчанию</Russian>
+<Italian>Carica default</Italian>
+<Polish>Załaduj standardowe</Polish>
+<French>Chargement par défaut</French>
+<Hungarian>Alapfegyv. betöltése.</Hungarian>
+</Key>
+<Key ID="STR_ACE_EASA_DIA_CANCEL">
+<English>Cancel</English>
+<German>Abbrechen</German>
+<Spanish>Cancel</Spanish>
+<Czech>Zrušit</Czech>
+<Russian>Отмена</Russian>
+<Italian>Cancella</Italian>
+<Polish>Anuluj</Polish>
+<French>Annuler</French>
+<Hungarian>Mégse</Hungarian>
+</Key>
+<Key ID="STR_ACE_EASA_DIA_PYLONS">
+<English>Available Slots</English>
+<German>Waffenaufhängungen</German>
+<Spanish>Available Slots</Spanish>
+<Czech>Dostupné podvěsy</Czech>
+<Russian>Доступные пилоны</Russian>
+<Italian>Slot Disponibile</Italian>
+<Polish>Dostępne pylony</Polish>
+<French>Emplacement disponible</French>
+<Hungarian>Szabad férőhelyek</Hungarian>
+</Key>
+<Key ID="STR_ACE_EASA_ERR_T">
+<English>EASA Error</English>
+<German>EASA Fehler</German>
+<Spanish>EASA Error</Spanish>
+<Czech>Chyba VSV</Czech>
+<Russian>Ошибка EASA</Russian>
+<Italian>Errore EASA</Italian>
+<Polish>Błąd SWUL</Polish>
+<French>Erreur EASA</French>
+<Hungarian>CsFR Hiba</Hungarian>
+</Key>
+<Key ID="STR_ACE_EASA_ERR_1">
+<English>One or more EASA module(s) could not find a hangar building nearby!</English>
+<German>Ein oder mehrere EASA Modul(e) konnte kein Hangar Gebäude finden!</German>
+<Spanish>One or more EASA module(s) could not find a hangar building nearby!</Spanish>
+<Czech>Jeden nebo více VSV modulů nemohl(i) poblíž najít budovu hangáru!</Czech>
+<Russian>Один или более модуль(ей) ССВ (EASA) не обнаружил ангара!</Russian>
+<Italian>Uno o Più Moduli EASA(s) Non si trovano Hangar vicini!</Italian>
+<Polish>Co najmniej jeden moduł SWUL nie znalazł w pobliżu hangaru!</Polish>
+<French>Un module (ou plus) EASA ne trouve pas de hangar à proximité!</French>
+<Hungarian>Egy, vagy több CsFR Modul nem észlelt hangárt a közelben!</Hungarian>
+</Key>
+<Key ID="STR_ACE_EASA_ERR_2">
+<English>EASA Initializing... failure! The EASA module has to be placed near a hangar building.</English>
+<German>EASA Initialisierung... fehlerhaft! Das EASA Modul muß bei einem Hangar Gebäude platziert werden.</German>
+<Spanish>EASA Initializing... failure! The EASA module has to be placed near a hangar building.</Spanish>
+<Czech>VSV Se Spouští... chyba! EASA modul musí být umístěn v blízkosti hangáru.</Czech>
+<Russian>EASA. Инициализация... Ошибка! Модуль EASA должен помещаться рядом с ангаром.</Russian>
+<Italian>EASA Inizializzato... Fallito! Il Modulo EASA deve essere vicino ad un Hangar.</Italian>
+<Polish>Błąd inicjalizacji SWUL! Moduł powinien być ustawiony w pobliżu hangaru.</Polish>
+<French>Initialisation EASA... Erreur! Le module EASA doit être placé à proximité d'un hangar!</French>
+<Hungarian>CsFR indítás... hiba! A modulnak egy hangár közelében kell lennie.</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

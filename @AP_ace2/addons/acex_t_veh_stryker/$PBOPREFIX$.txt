@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex\addons\t_veh_stryker
+Pbo Type is: Arma Addon
+Sha: '2240871CE88C3D3754991548073B71028035EAE8'
+//////</HEADER>//////

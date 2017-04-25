@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACEX">
+<Package name="c_wep_rifle">
+<Container name="STR_DS">
+<Key ID="STR_DS_ACE_FN_FAL_Para">
+<German>The FN FAL is a gas operated, selective fire or semi-automatic only, magazine fed rifle. It uses short piston stroke gas system with gas piston located above the barrel and having its own return spring. After the shot is fired, the gas piston makes a quick tap to the bolt carrier and then returns back, and the rest of the reloading cycle is commenced by the inertia of bolt group. The gas system is fitted with gas regulator so it could be easily adjusted for various environment conditions, or cut off completely so rifle grenades could be safely launched from the barrel.</German>
+<English>The FN FAL is a gas operated, selective fire or semi-automatic only, magazine fed rifle. It uses short piston stroke gas system with gas piston located above the barrel and having its own return spring. After the shot is fired, the gas piston makes a quick tap to the bolt carrier and then returns back, and the rest of the reloading cycle is commenced by the inertia of bolt group. The gas system is fitted with gas regulator so it could be easily adjusted for various environment conditions, or cut off completely so rifle grenades could be safely launched from the barrel.</English>
+<Italian>The FN FAL is a gas operated, selective fire or semi-automatic only, magazine fed rifle. It uses short piston stroke gas system with gas piston located above the barrel and having its own return spring. After the shot is fired, the gas piston makes a quick tap to the bolt carrier and then returns back, and the rest of the reloading cycle is commenced by the inertia of bolt group. The gas system is fitted with gas regulator so it could be easily adjusted for various environment conditions, or cut off completely so rifle grenades could be safely launched from the barrel.</Italian>
+<Spanish>The FN FAL is a gas operated, selective fire or semi-automatic only, magazine fed rifle. It uses short piston stroke gas system with gas piston located above the barrel and having its own return spring. After the shot is fired, the gas piston makes a quick tap to the bolt carrier and then returns back, and the rest of the reloading cycle is commenced by the inertia of bolt group. The gas system is fitted with gas regulator so it could be easily adjusted for various environment conditions, or cut off completely so rifle grenades could be safely launched from the barrel.</Spanish>
+<French>Le FN FAL est un fusil à mécanisme mû par gaz, tirant au coup par coup ou en semi-automatique seulement et alimenté par chargeur. Il utilise un système de piston à faible course, pourvu de son propre ressort qui se situe au dessus du canon. Juste après le tir, le piston exerce une poussée rapide sur l'ensemble mobile puis revient en position, le reste du cycle de chargement s'effectue grâce à l'inertie de l'ensemble mobile. Le système pneumatique possède un régulateur de pression réglable afin de s'adapter à toutes conditions atmosphériques ou bien même être arrêté pour permettre un tir sécurisé de grenades par le canon.</French>
+<Czech>FN FAL je útočná puška, používá munici 7,62x51mm NATO</Czech>
+<Russian>FN FAL - винтовка с газоотводной автоматикой, с одиночным и автоматическим режимами огня, имеет магазинное питание. Она использует короткий ход поршня газовой системы, причем газовый поршень расположен над стволом и имеет свою собственную возвратную пружину. После выстрела, газовый поршень делает легкий удар по затворной раме, а затем возвращается обратно, а остальная часть цикла перезарядки соверщается по инерции ударно-спусковым механизмом. Газовая система оснащена газовым регулятором, поэтому она может быть легко настроена для различных погодных условий, или совсем выключена, чтобы гранаты могли быть безопасно запущены из ствола.</Russian>
+<Polish>FAL to karabinek samoczynno-samopowtarzalny. Automatyka broni działa na zasadzie odprowadzania gazów prochowych, tłok gazowy o krótkim skoku, zamek ryglowany przez przekoszenie. Tłok posiada regulator, dzięki któremu karabinek może być stosowany w różnych warunkach i bezpiecznie strzelać granatami nasadkowymi.</Polish>
+<Hungarian>Hadipuska. 7.62x51-es lőszert használ.</Hungarian>
+</Key>
+<Key ID="STR_DS_ACE_HK_G3">
+<German>Das G3 ist ein Rückstoßlader mit feststehendem Lauf und beweglich abgestütztem Rollenverschluss. Es verwendet die Patrone 7,62 x 51 mm NATO.</German>
+<English>The G3A3 (A4) is a selective-fire automatic weapon that employs a roller-delayed blowback operating system, 7.62x51mm NATO chambering.</English>
+<Italian>The G3A3 (A4) is a selective-fire automatic weapon that employs a roller-delayed blowback operating system, 7.62x51mm NATO chambering.</Italian>
+<Spanish>The G3A3 (A4) is a selective-fire automatic weapon that employs a roller-delayed blowback operating system, 7.62x51mm NATO chambering.</Spanish>
+<French>The G3A3 (A4) is a selective-fire automatic weapon that employs a roller-delayed blowback operating system, 7.62x51mm NATO chambering.</French>
+<Czech>G3A3 (A4) je útočná puška, používá munici 7,62x51mm NATO.</Czech>
+<Russian>G3A3 (A4) - автоматическое оружие, построенное на основе автоматики с полусвободным затором. Замедление открытия затвора осуществляется при взаимодействии пары роликов с хвостовиком ствола и затвором, 7.62x51мм NATO.</Russian>
+<Polish>G3 to karabinek samoczynno-samopowtarzalny. Automatyka broni działa na zasadzie odrzutu zamka ryglowanego rolkami (wg polskiego przedwojennego pomysłu). Komora 7.62x51mm NATO.</Polish>
+<Hungarian>Hadipuska. 7.62x51-es lőszert használ.</Hungarian>
+</Key>
+</Container>
+<Container name="STR_DSS">
+<Key ID="STR_DSS_ACE_FAL_PARA">
+<German>Sturmgewehr &lt;br/&gt;Kaliber: 7,62x51mm NATO</German>
+<English>Assault rifle &lt;br/&gt;Caliber: 7.62x51mm NATO</English>
+<Italian>Fucile d'assalto &lt;br/&gt;Calibro: 7,62x51 mm NATO</Italian>
+<Spanish>Fusil de asalto &lt;br/&gt;Calibre: 7,62x51 mm OTAN</Spanish>
+<French>Fusil d'assaut &lt;br/&gt;Calibre : 7.62x51 mm OTAN</French>
+<Czech>Útočná puška &lt;br/&gt;Ráže: 7,62x51mm NATO</Czech>
+<Russian>Штурмовая винтовка &lt;br/&gt;Калибр: 7,62x51мм НАТО</Russian>
+<Polish>Karabin szturmowy &lt;br/&gt;Kaliber: 7,62x51mm NATO</Polish>
+<Hungarian>Gépkarabély &lt;br/&gt; Kaliber: 7.62x51mm NATO</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_SKS">
+<German>Sturmgewehr &lt;br/&gt;Kaliber: 7,62x39mm WP</German>
+<English>Assault rifle &lt;br/&gt;Caliber: 7.62x39mm WP</English>
+<Italian>Fucile d'assalto &lt;br/&gt;Calibro: 7,62x39 mm WP</Italian>
+<Spanish>Fusil de asalto &lt;br/&gt;Calibre: 7,62x39 mm WP</Spanish>
+<French>Fusil d'assaut &lt;br/&gt;Calibre : 7.62x39 mm WP</French>
+<Czech>Útočná puška &lt;br/&gt;Ráže: 7,62x39mm WP</Czech>
+<Russian>Штурмовая винтовка &lt;br/&gt;Калибр: 7,62x39мм ОВД</Russian>
+<Polish>Karabin szturmowy &lt;br/&gt;Kaliber: 7,62x39mm UW</Polish>
+<Hungarian>Gépkarabély &lt;br/&gt; Kaliber: 7.62x39mm WP</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_G3">
+<German>Sturmgewehr &lt;br/&gt;Kaliber: 7,62x51mm NATO</German>
+<English>Assault rifle &lt;br/&gt;Caliber: 7.62x51mm NATO</English>
+<Italian>Fucile d'assalto &lt;br/&gt;Calibro: 7,62x51 mm NATO</Italian>
+<Spanish>Fusil de asalto &lt;br/&gt;Calibre: 7,62x51 mm OTAN</Spanish>
+<French>Fusil d'assaut &lt;br/&gt;Calibre : 7.62x51 mm OTAN</French>
+<Czech>Útočná puška &lt;br/&gt;Ráže: 7,62x51mm NATO</Czech>
+<Russian>Штурмовая винтовка &lt;br/&gt;Калибр: 7,62x51мм НАТО</Russian>
+<Polish>Karabin szturmowy &lt;br/&gt;Kaliber: 7,62x51mm NATO</Polish>
+<Hungarian>Gépkarabély &lt;br/&gt; Kaliber: 7.62x51mm NATO</Hungarian>
+</Key>
+</Container>
+<Container name="STR_WN">
+<Key ID="STR_WN_ACE_FN_FAL_Para">
+<German>FN FAL Para</German>
+<English>FN FAL Para</English>
+<Italian>FN FAL Para</Italian>
+<Spanish>FN FAL Para</Spanish>
+<French>FN FAL Para</French>
+<Czech>FN FAL Para</Czech>
+<Russian>FN FAL Para</Russian>
+<Polish>FAL Para</Polish>
+<Hungarian>FN FAL Para</Hungarian>
+</Key>
+<Key ID="STR_WN_ACE_SA58">
+<German>SA58</German>
+<English>SA58</English>
+<Italian>SA58</Italian>
+<Spanish>SA58</Spanish>
+<French>SA58</French>
+<Czech>SA58</Czech>
+<Russian>SA58</Russian>
+<Polish>SA58</Polish>
+<Hungarian>SA58</Hungarian>
+</Key>
+<Key ID="STR_WN_ACE_SKS">
+<German>SKS</German>
+<English>SKS</English>
+<Italian>SKS</Italian>
+<Spanish>SKS</Spanish>
+<French>SKS</French>
+<Czech>SKS</Czech>
+<Russian>СКС</Russian>
+<Polish>SKS</Polish>
+<Hungarian>SzKSz</Hungarian>
+</Key>
+<Key ID="STR_WN_ACE_HK_G3A3">
+<German>HK G3A3</German>
+<English>HK G3A3</English>
+<Italian>HK G3A3</Italian>
+<Spanish>HK G3A3</Spanish>
+<French>HK G3A3</French>
+<Czech>HK G3A3</Czech>
+<Russian>HK G3A3</Russian>
+<Polish>G3A3</Polish>
+<Hungarian>HK G3A3</Hungarian>
+</Key>
+<Key ID="STR_WN_ACE_HK_G3SG1">
+<German>HK G3SG/1</German>
+<English>HK G3SG/1</English>
+<Italian>HK G3SG/1</Italian>
+<Spanish>HK G3SG/1</Spanish>
+<French>HK G3SG/1</French>
+<Czech>HK G3SG/1</Czech>
+<Russian>HK G3SG/1</Russian>
+<Polish>G3SG/1</Polish>
+<Hungarian>HK G3SG/1</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_M14_ACOG">
+<German>M14 RCO</German>
+<English>M14 RCO</English>
+<Italian>M14 RCO</Italian>
+<Spanish>M14 RCO</Spanish>
+<French>M14 RCO</French>
+<Czech>M14 RCO</Czech>
+<Russian>M14 RCO</Russian>
+<Polish>M14 RCO</Polish>
+<Hungarian>M14 RCO</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

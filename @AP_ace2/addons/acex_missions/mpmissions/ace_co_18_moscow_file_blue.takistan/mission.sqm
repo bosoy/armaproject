@@ -1,0 +1,3361 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"takistan",
+		"cacharacters_e",
+		"ca_modules_functions",
+		"ca_missions_alternativeinjurysimulation",
+		"ca_missions_battlefieldclearance",
+		"ace_sys_aitalk"
+	};
+	addOnsAuto[]=
+	{
+		"ca_modules_functions",
+		"ca_missions_alternativeinjurysimulation",
+		"ca_missions_battlefieldclearance",
+		"cacharacters_e",
+		"ace_sys_aitalk",
+		"takistan"
+	};
+	randomSeed=8129178;
+	class Intel
+	{
+		briefingName="co@18 ACE Moscow File (Blue) V1.03";
+		briefingDescription="Steal documents from Aziz.";
+		resistanceWest=0;
+		startWeather=0;
+		forecastWeather=0;
+		month=8;
+		day=30;
+		hour=12;
+		minute=0;
+	};
+	class Groups
+	{
+		items=125;
+		class Item0
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6271.3838,333.12183,5709.4956};
+					special="NONE";
+					id=0;
+					side="LOGIC";
+					vehicle="LocationLogic";
+					leader=1;
+					skill=1;
+					init="[] call compile preprocessFile ""preinit.sqf"";";
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6901.6807,260.10944,7870.8193};
+					id=1;
+					side="LOGIC";
+					vehicle="AlternativeInjurySimulation";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					synchronizations[]={4,3,5,6,7,8,9,10,11,12,176,177,178,179,180,181,182,183};
+				};
+			};
+		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6900.1333,256.98376,7860.8789};
+					id=2;
+					side="LOGIC";
+					vehicle="BattleFieldClearance";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					synchronizations[]={4,3,5,6,7,8,9,10,11,12,176,177,178,179,180,181,182,183};
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={6865.5688,255.60608,7875.1963};
+					id=3;
+					side="WEST";
+					vehicle="US_Soldier_SL_EP1";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="CAPTAIN";
+					skill=1;
+					init="groupCMD = group this; hNil = [this, ""FTL""] call compile preprocessFile ""assigngear.sqf"";";
+					description="Commander";
+					synchronizations[]={1,2};
+				};
+				class Item1
+				{
+					position[]={6865.5186,254.44534,7870.5898};
+					id=4;
+					side="WEST";
+					vehicle="US_Soldier_Medic_EP1";
+					player="PLAY CDG";
+					skill=1;
+					init="groupCMD = group this; hNil = [this, ""medic""] call compile preprocessFile ""assigngear.sqf"";";
+					synchronizations[]={1,2};
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={6874.5796,255.62611,7870.2173};
+					id=5;
+					side="WEST";
+					vehicle="US_Soldier_SL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=1;
+					init="groupA = group this; hNil = [this, ""FTL""] call compile preprocessFile ""assigngear.sqf"";";
+					description="A leader";
+					synchronizations[]={1,2};
+				};
+				class Item1
+				{
+					position[]={6874.5796,254.57417,7866.1494};
+					id=6;
+					side="WEST";
+					vehicle="US_Soldier_GL_EP1";
+					player="PLAY CDG";
+					skill=1;
+					init="groupA = group this; hNil = [this, ""M203""] call compile preprocessFile ""assigngear.sqf"";";
+					synchronizations[]={1,2};
+				};
+				class Item2
+				{
+					position[]={6874.3931,253.71892,7863.1655};
+					id=7;
+					side="WEST";
+					vehicle="US_Soldier_Marksman_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=1;
+					init="groupA = group this; hNil = [this, ""Mark""] call compile preprocessFile ""assigngear.sqf"";";
+					synchronizations[]={1,2};
+				};
+				class Item3
+				{
+					position[]={6874.2988,252.7914,7859.9019};
+					id=8;
+					side="WEST";
+					vehicle="US_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=1;
+					init="groupA = group this; hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+					synchronizations[]={1,2};
+				};
+				class Item4
+				{
+					position[]={6870.8921,255.07945,7870.2168};
+					id=176;
+					side="WEST";
+					vehicle="US_Soldier_TL_EP1";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=1;
+					init="groupA = group this; hNil = [this, ""FTL""] call compile preprocessFile ""assigngear.sqf"";";
+					description="A2 leader";
+					synchronizations[]={1,2};
+				};
+				class Item5
+				{
+					position[]={6870.8921,254.01407,7866.1489};
+					id=177;
+					side="WEST";
+					vehicle="US_Soldier_GL_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=1;
+					init="groupA = group this; hNil = [this, ""M203""] call compile preprocessFile ""assigngear.sqf"";";
+					synchronizations[]={1,2};
+				};
+				class Item6
+				{
+					position[]={6870.7056,253.28575,7863.165};
+					id=178;
+					side="WEST";
+					vehicle="US_Soldier_Marksman_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=1;
+					init="groupA = group this; hNil = [this, ""Mark""] call compile preprocessFile ""assigngear.sqf"";";
+					synchronizations[]={1,2};
+				};
+				class Item7
+				{
+					position[]={6870.6113,252.40195,7859.9014};
+					id=179;
+					side="WEST";
+					vehicle="US_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=1;
+					init="groupA = group this; hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+					synchronizations[]={1,2};
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={6859.394,253.79358,7870.563};
+					id=9;
+					side="WEST";
+					vehicle="US_Soldier_SL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=1;
+					init="groupB = group this; hNil = [this, ""FTL""] call compile preprocessFile ""assigngear.sqf"";";
+					description="B leader";
+					synchronizations[]={1,2,9};
+				};
+				class Item1
+				{
+					position[]={6859.394,252.82504,7866.4951};
+					id=10;
+					side="WEST";
+					vehicle="US_Soldier_GL_EP1";
+					player="PLAY CDG";
+					skill=1;
+					init="groupB = group this; hNil = [this, ""M203""] call compile preprocessFile ""assigngear.sqf"";";
+					synchronizations[]={1,2};
+				};
+				class Item2
+				{
+					position[]={6859.2075,252.13098,7863.5112};
+					id=11;
+					side="WEST";
+					vehicle="US_Soldier_Marksman_EP1";
+					player="PLAY CDG";
+					skill=1;
+					init="groupB = group this; hNil = [this, ""Mark""] call compile preprocessFile ""assigngear.sqf"";";
+					synchronizations[]={1,2};
+				};
+				class Item3
+				{
+					position[]={6859.1133,251.4117,7860.2476};
+					id=12;
+					side="WEST";
+					vehicle="US_Soldier_AR_EP1";
+					player="PLAY CDG";
+					skill=1;
+					init="groupB = group this; hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+					synchronizations[]={1,2};
+				};
+				class Item4
+				{
+					position[]={6855.9111,253.58943,7870.7173};
+					id=180;
+					side="WEST";
+					vehicle="US_Soldier_TL_EP1";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=1;
+					init="groupB = group this; hNil = [this, ""FTL""] call compile preprocessFile ""assigngear.sqf"";";
+					description="B2 leader";
+					synchronizations[]={1,2};
+				};
+				class Item5
+				{
+					position[]={6855.9111,252.61124,7866.6494};
+					id=181;
+					side="WEST";
+					vehicle="US_Soldier_GL_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=1;
+					init="groupB = group this; hNil = [this, ""M203""] call compile preprocessFile ""assigngear.sqf"";";
+					synchronizations[]={1,2};
+				};
+				class Item6
+				{
+					position[]={6855.7246,251.94618,7863.6655};
+					id=182;
+					side="WEST";
+					vehicle="US_Soldier_Marksman_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=1;
+					init="groupB = group this; hNil = [this, ""Mark""] call compile preprocessFile ""assigngear.sqf"";";
+					synchronizations[]={1,2};
+				};
+				class Item7
+				{
+					position[]={6855.6304,251.21768,7860.4019};
+					id=183;
+					side="WEST";
+					vehicle="US_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=1;
+					init="groupB = group this; hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+					synchronizations[]={1,2};
+				};
+			};
+		};
+		class Item6
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6389.5728,356.11548,5773.7324};
+					id=13;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					leader=1;
+					skill=1;
+					init="ge0 = group this; hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6386.3799,356.12643,5769.6807};
+					id=15;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					skill=1;
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6392.8794,357.00006,5769.6045};
+					id=16;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					skill=1;
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6389.7866,356.58633,5769.7183};
+					id=17;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					skill=1;
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item7
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6368.2407,354.10101,5764.3042};
+					id=14;
+					side="EAST";
+					vehicle="TK_Aziz_EP1";
+					leader=1;
+					skill=1;
+					text="e0";
+					init="hNil = [this, ""FAL""] call compile preprocessFile ""assigngear.sqf""; this addWeapon ""Moscow_Bombing_File"";";
+				};
+			};
+		};
+		class Item8
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6389.6919,356.99612,5765.5542};
+					id=18;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					leader=1;
+					skill=1;
+					init="ge1 = group this; hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6386.499,356.96475,5761.5024};
+					id=19;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					skill=1;
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6392.9985,357.65231,5761.4263};
+					id=20;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					skill=1;
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6389.9058,357.33484,5761.54};
+					id=21;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					skill=1;
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item9
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6389.9302,357.16095,5756.4287};
+					id=22;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					leader=1;
+					skill=1;
+					init="ge2 = group this; hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6386.7373,356.59293,5752.377};
+					id=23;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					skill=1;
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6393.2368,357.24814,5752.3008};
+					id=24;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					skill=1;
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6390.144,356.94711,5752.4146};
+					id=25;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					skill=1;
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item10
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6390.4048,356.28052,5747.4209};
+					id=26;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					leader=1;
+					skill=1;
+					init="ge3 = group this; hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6387.2119,355.26187,5743.3691};
+					id=27;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					skill=1;
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6393.7114,355.72284,5743.293};
+					id=28;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					skill=1;
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6390.6187,355.51865,5743.4067};
+					id=29;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					skill=1;
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item11
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6390.5234,354.54776,5738.5327};
+					id=30;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					leader=1;
+					skill=1;
+					init="ge4 = group this; hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6387.3306,353.65656,5734.481};
+					id=31;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					skill=1;
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6393.8301,353.97714,5734.4048};
+					id=32;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					skill=1;
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6390.7373,353.83179,5734.5186};
+					id=33;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					skill=1;
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item12
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6390.2861,352.9603,5729.7617};
+					id=34;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					leader=1;
+					skill=1;
+					init="ge5 = group this; hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6387.0933,352.03992,5725.71};
+					id=35;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					skill=1;
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6393.5928,352.33307,5725.6338};
+					id=36;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					skill=1;
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6390.2095,352.18353,5725.6772};
+					id=37;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					skill=1;
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item13
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6390.2861,351.64444,5723.0059};
+					id=38;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					leader=1;
+					skill=1;
+					init="ge6 = group this; hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6387.0933,350.60324,5718.9541};
+					id=39;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					skill=1;
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6393.5928,350.93906,5718.8779};
+					id=40;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					skill=1;
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6390.5,350.79535,5718.9917};
+					id=41;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					skill=1;
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item14
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6390.6904,350.07779,5715.6216};
+					id=42;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					leader=1;
+					skill=1;
+					init="ge7 = group this; hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6387.4976,349.03891,5711.5698};
+					id=43;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					skill=1;
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6393.9971,349.34653,5711.4937};
+					id=44;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					skill=1;
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6390.9043,349.21835,5711.6074};
+					id=45;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					skill=1;
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item15
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6390.6904,348.38229,5707.8911};
+					id=46;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					leader=1;
+					skill=1;
+					init="ge8 = group this; hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6387.4976,347.33057,5703.8394};
+					id=47;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					skill=1;
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6393.9971,347.56512,5703.7632};
+					id=48;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					skill=1;
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6390.9043,347.46371,5703.877};
+					id=49;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					skill=1;
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item16
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6391.3213,346.51791,5699.7979};
+					id=50;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					leader=1;
+					skill=1;
+					init="ge9 = group this; hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6388.1284,345.43408,5695.7461};
+					id=51;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					skill=1;
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6394.6279,345.61557,5695.6699};
+					id=52;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					skill=1;
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6391.5352,345.5249,5695.7837};
+					id=53;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					skill=1;
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item17
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6391.0049,344.1232,5690.231};
+					id=54;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					leader=1;
+					skill=1;
+					init="ge10 = group this; hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6387.812,343.0029,5686.1792};
+					id=55;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					skill=1;
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6394.3115,343.16693,5686.103};
+					id=56;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					skill=1;
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6391.2188,343.10281,5686.2168};
+					id=57;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					skill=1;
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item18
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6391.0049,341.95953,5681.7163};
+					id=58;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					leader=1;
+					skill=1;
+					init="ge11 = group this; hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6387.812,340.79868,5677.6646};
+					id=59;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					skill=1;
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6394.3115,340.99872,5677.5884};
+					id=60;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					skill=1;
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6391.2188,340.92743,5677.7021};
+					id=61;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					skill=1;
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item19
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6390.8999,339.54282,5672.7813};
+					id=62;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					leader=1;
+					skill=1;
+					init="ge12 = group this; hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6387.707,338.10388,5668.7295};
+					id=63;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					skill=1;
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6394.2065,338.43823,5668.6533};
+					id=64;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					skill=1;
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6391.1138,338.30768,5668.7671};
+					id=65;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					skill=1;
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item20
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6390.0586,336.8334,5665.1079};
+					id=66;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					leader=1;
+					skill=1;
+					init="ge13 = group this; hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6386.8657,334.67264,5661.0562};
+					id=67;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					skill=1;
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6393.3652,335.40378,5660.98};
+					id=68;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					skill=1;
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6390.2725,335.13269,5661.0938};
+					id=69;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					skill=1;
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item21
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6390.1641,333.00574,5656.6982};
+					id=70;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					leader=1;
+					skill=1;
+					init="ge14 = group this; hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6386.9712,330.50232,5652.6465};
+					id=71;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					skill=1;
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6393.1553,331.6235,5652.6758};
+					id=72;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					skill=1;
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6390.3779,331.17203,5652.6841};
+					id=73;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					skill=1;
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item22
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6390.269,329.44846,5649.0244};
+					id=74;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					leader=1;
+					skill=1;
+					init="ge15 = group this; hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6387.0762,327.27051,5644.9727};
+					id=75;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					skill=1;
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6393.2603,328.41553,5645.002};
+					id=76;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					skill=1;
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6390.4829,327.91238,5645.0103};
+					id=77;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					skill=1;
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item23
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6390.585,326.49622,5640.2998};
+					id=78;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					leader=1;
+					skill=1;
+					init="ge16 = group this; hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6387.3921,325.05069,5636.248};
+					id=79;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					skill=1;
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6393.5762,326.08612,5636.2773};
+					id=80;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					skill=1;
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6390.7988,325.61176,5636.2856};
+					id=81;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					skill=1;
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item24
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6390.916,325.17313,5632.8574};
+					id=82;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					leader=1;
+					skill=1;
+					init="ge17 = group this; hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6387.7231,324.38696,5628.8057};
+					id=83;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					skill=1;
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6393.9072,325.24808,5628.835};
+					id=84;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					skill=1;
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6391.1299,324.84485,5628.8433};
+					id=85;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					skill=1;
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item25
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6391.2476,324.6438,5625.0024};
+					id=86;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					leader=1;
+					skill=1;
+					init="ge18 = group this; hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6388.0547,324.16824,5620.9507};
+					id=87;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					skill=1;
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6394.2388,324.89426,5620.98};
+					id=88;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					skill=1;
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6391.4614,324.55582,5620.9883};
+					id=89;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					skill=1;
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item26
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6390.751,324.41547,5617.395};
+					id=90;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					leader=1;
+					skill=1;
+					init="ge19 = group this; hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6387.5581,324.03278,5613.3433};
+					id=91;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					skill=1;
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6393.7422,324.68445,5613.3726};
+					id=92;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					skill=1;
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6390.9648,324.38739,5613.3809};
+					id=93;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					skill=1;
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item27
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6368.1958,354.27533,5759.6709};
+					id=94;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e1";
+					init="hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item28
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6367.959,354.16187,5755.2861};
+					id=95;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e2";
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item29
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6368.0781,354.01309,5750.7832};
+					id=96;
+					side="EAST";
+					vehicle="TK_Soldier_AT_EP1";
+					leader=1;
+					skill=1;
+					text="e3";
+					init="hNil = [this, ""RPG7""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item30
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6368.0781,353.53928,5746.3975};
+					id=97;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					leader=1;
+					skill=1;
+					text="e4";
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item31
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6367.9595,353.0126,5742.2495};
+					id=98;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e5";
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item32
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6367.9585,352.44064,5737.3887};
+					id=99;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e6";
+					init="hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item33
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6367.7212,351.99207,5733.4785};
+					id=100;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e7";
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item34
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6367.7217,351.47278,5728.856};
+					id=101;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e8";
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item35
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6367.6035,350.9754,5724.8252};
+					id=102;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					leader=1;
+					skill=1;
+					text="e9";
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item36
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6367.7217,350.1239,5719.1353};
+					id=103;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e10";
+					init="hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item37
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6367.4849,349.40622,5714.7505};
+					id=104;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e11";
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item38
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6367.604,348.65891,5710.2476};
+					id=105;
+					side="EAST";
+					vehicle="TK_Soldier_AT_EP1";
+					leader=1;
+					skill=1;
+					text="e12";
+					init="hNil = [this, ""RPG7""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item39
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6367.604,347.87863,5705.8618};
+					id=106;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					leader=1;
+					skill=1;
+					text="e13";
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item40
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6367.4854,346.88327,5701.7139};
+					id=107;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e14";
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item41
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6367.4844,345.65225,5696.853};
+					id=108;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e15";
+					init="hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item42
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6367.2471,344.63965,5692.9429};
+					id=109;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e16";
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item43
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6367.2476,343.45322,5688.3203};
+					id=110;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e17";
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item44
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6367.1294,342.42078,5684.2896};
+					id=111;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					leader=1;
+					skill=1;
+					text="e18";
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item45
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6367.1255,341.00589,5678.8726};
+					id=112;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e19";
+					init="hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item46
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6366.8887,339.75296,5674.4878};
+					id=113;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e20";
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item47
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6367.0078,338.0946,5669.9849};
+					id=114;
+					side="EAST";
+					vehicle="TK_Soldier_AT_EP1";
+					leader=1;
+					skill=1;
+					text="e21";
+					init="hNil = [this, ""RPG7""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item48
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6367.0078,335.57953,5665.5991};
+					id=115;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					leader=1;
+					skill=1;
+					text="e22";
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item49
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6366.8892,333.04913,5661.4512};
+					id=116;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e23";
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item50
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6366.8882,329.99576,5656.5903};
+					id=117;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e24";
+					init="hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item51
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6366.6509,327.99033,5652.6802};
+					id=118;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e25";
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item52
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6366.6514,325.8176,5648.0576};
+					id=119;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e26";
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item53
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6366.5332,324.19513,5644.0269};
+					id=120;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					leader=1;
+					skill=1;
+					text="e27";
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item54
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6357.6499,352.41992,5759.522};
+					id=121;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e28";
+					init="hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item55
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6357.4131,352.49417,5755.1372};
+					id=122;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e29";
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item56
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6357.5322,352.56882,5750.6343};
+					id=123;
+					side="EAST";
+					vehicle="TK_Soldier_AT_EP1";
+					leader=1;
+					skill=1;
+					text="e30";
+					init="hNil = [this, ""RPG7""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item57
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6357.5322,352.19391,5746.2485};
+					id=124;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					leader=1;
+					skill=1;
+					text="e31";
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item58
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6357.4136,351.785,5742.1006};
+					id=125;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e32";
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item59
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6357.4126,351.41074,5737.2397};
+					id=126;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e33";
+					init="hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item60
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6357.1753,351.16864,5733.3296};
+					id=127;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e34";
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item61
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6357.1758,350.84726,5728.707};
+					id=128;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e35";
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item62
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6357.0576,350.52267,5724.6763};
+					id=129;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					leader=1;
+					skill=1;
+					text="e36";
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item63
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6356.7725,349.89447,5718.481};
+					id=130;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e37";
+					init="hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item64
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6356.5356,349.33719,5714.0962};
+					id=131;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e38";
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item65
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6356.6548,348.70859,5709.5933};
+					id=132;
+					side="EAST";
+					vehicle="TK_Soldier_AT_EP1";
+					leader=1;
+					skill=1;
+					text="e39";
+					init="hNil = [this, ""RPG7""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item66
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6356.6548,347.98203,5705.2075};
+					id=133;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					leader=1;
+					skill=1;
+					text="e40";
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item67
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6356.5361,346.99881,5701.0596};
+					id=134;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e41";
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item68
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6356.5352,345.7554,5696.1987};
+					id=135;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e42";
+					init="hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item69
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6356.2979,344.7471,5692.2886};
+					id=136;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e43";
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item70
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6356.2983,343.5415,5687.666};
+					id=137;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e44";
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item71
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6356.1802,342.3537,5683.6353};
+					id=138;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					leader=1;
+					skill=1;
+					text="e45";
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item72
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6356.564,340.90689,5678.8765};
+					id=139;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e46";
+					init="hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item73
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6356.3271,339.47943,5674.4917};
+					id=140;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e47";
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item74
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6356.4463,337.68265,5669.9888};
+					id=141;
+					side="EAST";
+					vehicle="TK_Soldier_AT_EP1";
+					leader=1;
+					skill=1;
+					text="e48";
+					init="hNil = [this, ""RPG7""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item75
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6356.4463,335.56522,5665.603};
+					id=142;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					leader=1;
+					skill=1;
+					text="e49";
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item76
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6356.3276,333.39078,5661.4551};
+					id=143;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e50";
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item77
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6356.3267,330.67661,5656.5942};
+					id=144;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e51";
+					init="hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item78
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6356.1831,328.09464,5651.8442};
+					id=145;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e52";
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item79
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6356.0898,326.19839,5648.0615};
+					id=146;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e53";
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item80
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6355.9717,324.33411,5644.0308};
+					id=147;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					leader=1;
+					skill=1;
+					text="e54";
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item81
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6350.2681,351.12299,5759.23};
+					id=148;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e55";
+					init="hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item82
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6350.0313,351.16495,5754.8452};
+					id=149;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e56";
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item83
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6350.1504,351.21643,5750.3423};
+					id=150;
+					side="EAST";
+					vehicle="TK_Soldier_AT_EP1";
+					leader=1;
+					skill=1;
+					text="e57";
+					init="hNil = [this, ""RPG7""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item84
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6350.1504,350.96173,5745.9565};
+					id=151;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					leader=1;
+					skill=1;
+					text="e58";
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item85
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6350.0317,350.71094,5741.8086};
+					id=152;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e59";
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item86
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6350.0308,350.49158,5736.9478};
+					id=153;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e60";
+					init="hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item87
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6349.7935,350.37509,5733.0376};
+					id=154;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e61";
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item88
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6349.7939,350.2117,5728.415};
+					id=155;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e62";
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item89
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6349.6758,350.0054,5724.3843};
+					id=156;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					leader=1;
+					skill=1;
+					text="e63";
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item90
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6349.1226,349.5809,5718.6411};
+					id=157;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e64";
+					init="hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item91
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6348.8857,349.03696,5714.2563};
+					id=158;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e65";
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item92
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6349.0049,348.42731,5709.7534};
+					id=159;
+					side="EAST";
+					vehicle="TK_Soldier_AT_EP1";
+					leader=1;
+					skill=1;
+					text="e66";
+					init="hNil = [this, ""RPG7""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item93
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6349.0049,347.68454,5705.3677};
+					id=160;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					leader=1;
+					skill=1;
+					text="e67";
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item94
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6348.8862,346.68314,5701.2197};
+					id=161;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e68";
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item95
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6348.8853,345.45477,5696.3589};
+					id=162;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e69";
+					init="hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item96
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6348.6479,344.42542,5692.4487};
+					id=163;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e70";
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item97
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6348.6484,343.2348,5687.8262};
+					id=164;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e71";
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item98
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6348.5303,342.0589,5683.7954};
+					id=165;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					leader=1;
+					skill=1;
+					text="e72";
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item99
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6347.6421,340.52844,5679.0498};
+					id=166;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e73";
+					init="hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item100
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6347.4053,339.0936,5674.665};
+					id=167;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e74";
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item101
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6347.5244,337.35428,5670.1621};
+					id=168;
+					side="EAST";
+					vehicle="TK_Soldier_AT_EP1";
+					leader=1;
+					skill=1;
+					text="e75";
+					init="hNil = [this, ""RPG7""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item102
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6347.5244,335.37216,5665.7764};
+					id=169;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					leader=1;
+					skill=1;
+					text="e76";
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item103
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6347.4058,333.32834,5661.6284};
+					id=170;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e77";
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item104
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6347.4048,330.81262,5656.7676};
+					id=171;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e78";
+					init="hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item105
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6347.1675,328.7905,5652.8574};
+					id=172;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e79";
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item106
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6347.168,326.52817,5648.2349};
+					id=173;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e80";
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item107
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6347.0498,324.66141,5644.2041};
+					id=174;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					leader=1;
+					skill=1;
+					text="e81";
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item108
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6265.6035,330.90866,5742.8037};
+					id=175;
+					side="LOGIC";
+					vehicle="ACE_AITalk_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item109
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6390.4351,324.29767,5610.0366};
+					id=184;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					leader=1;
+					skill=1;
+					init="ge20 = group this; hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6387.2422,323.96313,5605.9849};
+					id=185;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					skill=1;
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6393.4263,324.56613,5606.0142};
+					id=186;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					skill=1;
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6390.6489,324.2951,5606.0225};
+					id=187;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					skill=1;
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item110
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6390.2251,324.22217,5602.5723};
+					id=188;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					leader=1;
+					skill=1;
+					init="ge21 = group this; hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6387.0322,323.88074,5598.5205};
+					id=189;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					skill=1;
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6393.2163,324.47717,5598.5498};
+					id=190;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					skill=1;
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6390.439,324.2106,5598.5581};
+					id=191;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					skill=1;
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item111
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6390.2241,324.15781,5595.3203};
+					id=192;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					leader=1;
+					skill=1;
+					init="ge22 = group this; hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+					synchronizations[]={192};
+				};
+				class Item1
+				{
+					position[]={6387.0313,323.79944,5591.2686};
+					id=193;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					skill=1;
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6393.2153,324.42126,5591.2979};
+					id=194;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					skill=1;
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6390.438,324.14578,5591.3062};
+					id=195;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					skill=1;
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item112
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6389.8813,324.0462,5587.0479};
+					id=196;
+					side="EAST";
+					vehicle="TK_Soldier_SL_EP1";
+					leader=1;
+					skill=1;
+					init="ge23 = group this; hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6386.6885,323.65002,5582.9961};
+					id=197;
+					side="EAST";
+					vehicle="TK_Soldier_GL_EP1";
+					skill=1;
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6392.8726,324.34439,5583.0254};
+					id=198;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					skill=1;
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6390.0952,324.03165,5583.0337};
+					id=199;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					skill=1;
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item113
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6340.874,349.16571,5758.6553};
+					id=200;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e82";
+					init="hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item114
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6340.6372,349.20462,5754.2705};
+					id=201;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e83";
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item115
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6340.7563,349.27356,5749.7676};
+					id=202;
+					side="EAST";
+					vehicle="TK_Soldier_AT_EP1";
+					leader=1;
+					skill=1;
+					text="e84";
+					init="hNil = [this, ""RPG7""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item116
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6340.7563,349.10516,5745.3818};
+					id=203;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					leader=1;
+					skill=1;
+					text="e85";
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item117
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6340.6377,348.96127,5741.2339};
+					id=204;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e86";
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item118
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6340.6367,348.88281,5736.373};
+					id=205;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e87";
+					init="hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item119
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6340.3994,348.85184,5732.4629};
+					id=206;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e88";
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item120
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6340.3999,348.79236,5727.8403};
+					id=207;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e89";
+					init="hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item121
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6340.2817,348.66541,5723.8096};
+					id=208;
+					side="EAST";
+					vehicle="TK_Soldier_AR_EP1";
+					leader=1;
+					skill=1;
+					text="e90";
+					init="hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item122
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6339.7285,348.25961,5718.0664};
+					id=209;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e91";
+					init="hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item123
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6339.4917,347.70282,5713.6816};
+					id=210;
+					side="EAST";
+					vehicle="TK_Soldier_EP1";
+					leader=1;
+					skill=1;
+					text="e92";
+					init="hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item124
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6339.6108,347.07211,5709.1787};
+					id=211;
+					side="EAST";
+					vehicle="TK_Soldier_AT_EP1";
+					leader=1;
+					skill=1;
+					text="e93";
+					init="hNil = [this, ""RPG7""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=6;
+		class Item0
+		{
+			position[]={6173.5415,308.0455,5599.3823};
+			name="mrk1";
+			markerType="RECTANGLE";
+			type="mil_objective";
+			a=80;
+			b=80;
+		};
+		class Item1
+		{
+			position[]={6161.6211,310.58698,5421.2905};
+			name="mrkObj";
+			type="mil_objective";
+			colorName="ColorRed";
+		};
+		class Item2
+		{
+			position[]={5441.9399,193.8793,6074.1392};
+			name="blackZone1";
+			markerType="ELLIPSE";
+			type="Empty";
+			a=200;
+			b=200;
+		};
+		class Item3
+		{
+			position[]={4319.9316,335.83661,742.06732};
+			name="blackZone2";
+			markerType="ELLIPSE";
+			type="Empty";
+			a=120;
+			b=120;
+		};
+		class Item4
+		{
+			position[]={6794.3252,370.11215,5615.3955};
+			name="mrkStart";
+			type="hd_start";
+			colorName="ColorGreen";
+		};
+		class Item5
+		{
+			position[]={2002.7766,277.05389,7636.5273};
+			name="blackZone3";
+			markerType="ELLIPSE";
+			type="Empty";
+			a=200;
+			b=200;
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={6354.9067,342.88477,6073.9536};
+			a=270;
+			b=270;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="trgEx";
+			expActiv="bExtracted=false;";
+			expDesactiv="bExtracted=true;";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"takistan"
+	};
+	addOnsAuto[]=
+	{
+		"takistan"
+	};
+	randomSeed=8810292;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.40000001;
+		year=2009;
+		day=28;
+		hour=16;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"takistan"
+	};
+	addOnsAuto[]=
+	{
+		"takistan"
+	};
+	randomSeed=62357;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.40000001;
+		year=2009;
+		day=28;
+		hour=16;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"takistan"
+	};
+	addOnsAuto[]=
+	{
+		"takistan"
+	};
+	randomSeed=7195815;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.40000001;
+		year=2009;
+		day=28;
+		hour=16;
+		minute=20;
+	};
+};

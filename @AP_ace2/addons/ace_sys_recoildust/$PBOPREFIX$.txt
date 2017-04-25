@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_recoildust
+Pbo Type is: Arma Addon
+Sha: '5BA03DD29A53A9A00BF3FC5990C2C4466D33FE61'
+//////</HEADER>//////

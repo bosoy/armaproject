@@ -1,0 +1,3597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ArmA2_ACE2">
+<Package name="c_vehicle">
+<Container name="STR_VC">
+<Key ID="STR_ACE_VC_OBJECTS">
+<German>Æ Objects</German>
+<English>Æ Objects</English>
+<Italian>Æ Objects</Italian>
+<Spanish>Æ Objects</Spanish>
+<French>Æ Objects</French>
+<Czech>Æ Objects</Czech>
+<Russian>Æ Объекты</Russian>
+<Polish>Æ Obiekty</Polish>
+<Hungarian>Æ Objects</Hungarian>
+</Key>
+<Key ID="STR_ACE_VC_MINES">
+<German>Æ Minen</German>
+<English>Æ Mines</English>
+<Italian>Æ Mines</Italian>
+<Spanish>Æ Mines</Spanish>
+<French>Æ Mines</French>
+<Czech>Æ Mines</Czech>
+<Russian>Æ Мины</Russian>
+<Polish>Æ Miny</Polish>
+<Hungarian>Æ Mines</Hungarian>
+</Key>
+<Key ID="STR_ACE_VC_AIR_DESERT">
+<German>Luft (Wüste)</German>
+<English>Air (desert)</English>
+<Italian>D’aria (desert)</Italian>
+<Spanish>Aire (desert)</Spanish>
+<French>Aérien (désert)</French>
+<Czech>Letectvo (pouštní)</Czech>
+<Russian>Авиация (пустыня)</Russian>
+<Polish>Lotnictwo (pustynia)</Polish>
+<Hungarian>Légi (desert)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VC_MEN_WOOD">
+<Original>Men (Woodland)</Original>
+<English>Men (Woodland)</English>
+<Czech>Vojáci (Lesní)</Czech>
+<German>Männer (Waldland)</German>
+<Russian>Люди (лес)</Russian>
+<Polish>Piechota (las)</Polish>
+<Hungarian>Men (Woodland)</Hungarian>
+<Italian>Uomini (Woodland)</Italian>
+<Spanish>Hombres (Woodland)</Spanish>
+<French>Hommes (Forêt)</French>
+</Key>
+<Key ID="STR_ACE_VC_MEN_DESERT">
+<Original>Men (Desert)</Original>
+<English>Men (Desert)</English>
+<Czech>Vojáci (Pouštní)</Czech>
+<German>Männer (Wüste)</German>
+<Russian>Люди (пустыня)</Russian>
+<Polish>Piechota (pustynia)</Polish>
+<Hungarian>Men (Desert)</Hungarian>
+<Italian>Uomini (Desert)</Italian>
+<Spanish>Hombres (Desert)</Spanish>
+<French>Hommes (Désert)</French>
+</Key>
+<Key ID="STR_ACE_VC_SFMEN_WOOD">
+<Original>Men (Special Forces, Woodland)</Original>
+<English>Men (Special Forces, Woodland)</English>
+<Czech>Vojáci (speciální jednotky, lesní)</Czech>
+<German>Männer (Special Forces, Waldland)</German>
+<Russian>Люди (Спецназ, лес)</Russian>
+<Polish>Piechota (siły specjalne, las)</Polish>
+<Hungarian>Men (Special Forces, Woodland)</Hungarian>
+<Italian>Uomini (forze speciali, woodland)</Italian>
+<Spanish>Hombres (fuerzas especiales, woodland)</Spanish>
+<French>Hommes (forces spéciales, forêt)</French>
+</Key>
+<Key ID="STR_ACE_VC_SFMEN_DESERT">
+<Original>Men (Special Forces, Desert)</Original>
+<English>Men (Special Forces, Desert)</English>
+<Czech>Vojáci (speciální jednotky, pouštní)</Czech>
+<German>Männer (Special Forces, Wüste)</German>
+<Russian>Люди (Спецназ, пустыня)</Russian>
+<Polish>Piechota (siły specjalne, pustynia)</Polish>
+<Hungarian>Men (Special Forces, Desert)</Hungarian>
+<Italian>Uomini (forze speciali, desert)</Italian>
+<Spanish>Hombres (fuerzas especiales, desert)</Spanish>
+<French>Hommes (forces spéciales, désert)</French>
+</Key>
+<Key ID="STR_ACE_VC_CARS_WOOD">
+<Original>Cars (Woodland)</Original>
+<English>Cars (Woodland)</English>
+<Czech>Auta (Lesní)</Czech>
+<German>Autos (Waldland)</German>
+<Russian>Машины (лес)</Russian>
+<Polish>Samochody (las)</Polish>
+<Hungarian>Cars (Woodland)</Hungarian>
+<Italian>Cars (Woodland)</Italian>
+<Spanish>Cars (Woodland)</Spanish>
+<French>Voitures (Forêt)</French>
+</Key>
+<Key ID="STR_ACE_VC_CARS_DESERT">
+<Original>Cars (Desert)</Original>
+<English>Cars (Desert)</English>
+<Czech>Auta (Pouštní)</Czech>
+<German>Autos (Wüste)</German>
+<Russian>Машины (пустыня)</Russian>
+<Polish>Samochody (pustynia)</Polish>
+<Hungarian>Cars (Desert)</Hungarian>
+<Italian>Cars (Desert)</Italian>
+<Spanish>Cars (Desert)</Spanish>
+<French>Voitures (Désert)</French>
+</Key>
+<Key ID="STR_ACE_VC_ARMOR_WOOD">
+<Original>Armored (Woodland)</Original>
+<English>Armored (Woodland)</English>
+<Czech>Obrněnci (Lesní)</Czech>
+<German>Gepanzert (Waldland)</German>
+<Russian>Бронетехника (лес)</Russian>
+<Polish>Opancerzone (las)</Polish>
+<Hungarian>Armored (Woodland)</Hungarian>
+<Italian>Armored (Woodland)</Italian>
+<Spanish>Armored (Woodland)</Spanish>
+<French>Blindés (Forêt)</French>
+</Key>
+<Key ID="STR_ACE_VC_ARMOR_DESERT">
+<Original>Armored (Desert)</Original>
+<English>Armored (Desert)</English>
+<Czech>Obrněnci (Pouštní)</Czech>
+<German>Gepanzert (Wüste)</German>
+<Russian>Бронетехника (пустыня)</Russian>
+<Polish>Opancerzone (pustynia)</Polish>
+<Hungarian>Armored (Desert)</Hungarian>
+<Italian>Armored (Desert)</Italian>
+<Spanish>Armored (Desert)</Spanish>
+<French>Blindés (Désert)</French>
+</Key>
+</Container>
+<Container name = "STR_ACE_FAC">
+<Key ID="STR_ACE_FAC_BLUFOR_USARMY">
+<German>US Army</German>
+<English>US Army</English>
+<Spanish>US Army</Spanish>
+<Czech>US Army</Czech>
+<French>US Army</French>
+<Polish>US Army</Polish>
+<Italian>US Army</Italian>
+<Russian>Армия США</Russian>
+<Hungarian>US Army</Hungarian>
+</Key>
+<Key ID="STR_ACE_FAC_BLUFOR_USNAVY">
+<German>Æ US Navy</German>
+<English>Æ US Navy</English>
+<Spanish>Æ US Navy</Spanish>
+<Czech>Æ US Navy</Czech>
+<French>Æ US Navy</French>
+<Polish>Æ US Navy</Polish>
+<Italian>Æ US Navy</Italian>
+<Russian>Æ ВМС США</Russian>
+<Hungarian>Æ Haditengerészet</Hungarian>
+</Key>
+<Key ID="STR_ACE_FAC_BLUFOR_USAF">
+<German>Æ US Air Force</German>
+<English>Æ US Air Force</English>
+<Spanish>Æ US Air Force</Spanish>
+<Czech>Æ US Air Force</Czech>
+<French>Æ US Air Force</French>
+<Polish>Æ US Air Force</Polish>
+<Italian>Æ US Air Force</Italian>
+<Russian>Æ US ВВС</Russian>
+<Hungarian>Æ Amerikai Légierő</Hungarian>
+</Key>
+<Key ID="STR_ACE_FAC_OPFOR_NAVY">
+<German>Æ Russische Marine</German>
+<English>Æ Russian Navy</English>
+<Spanish>Æ NRussian Navy</Spanish>
+<Czech>Æ Russian Navy</Czech>
+<French>Æ Russian Navy</French>
+<Polish>Æ Marynarka Wojenna FR</Polish>
+<Italian>Æ Russian Navy</Italian>
+<Russian>Æ ВМФ РФ</Russian>
+<Hungarian>Æ Russian Navy</Hungarian>
+</Key>
+</Container>
+
+<!-- User actions -->
+<Container name="STR_ACE_UA">
+<Key ID="STR_ACE_UA_C130OPENRAMP">
+<English>Open ramp</English>
+<Czech>Open ramp</Czech>
+<German>Rampe öffnen</German>
+<Polish>Opuść rampę</Polish>
+<Russian>Опустить аппарель</Russian>
+<French>Open ramp</French>
+<Spanish>Open ramp</Spanish>
+<Italian>Open ramp</Italian>
+<Hungarian>Raktér kinyitása</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_C130CLOSERAMP">
+<English>Close ramp</English>
+<Czech>Close ramp</Czech>
+<German>Rampe schließen</German>
+<Polish>Podnieś rampę</Polish>
+<Russian>Поднять аппарель</Russian>
+<French>Close ramp</French>
+<Spanish>Close ramp</Spanish>
+<Italian>Close ramp</Italian>
+<Hungarian>Raktér bezárása</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_C130OPENDOOR">
+<English>Open door</English>
+<Czech>Open door</Czech>
+<German>Türen öffnen</German>
+<Polish>Otwórz drzwi</Polish>
+<Russian>Открыть люк</Russian>
+<French>Open door</French>
+<Spanish>Open door</Spanish>
+<Italian>Open door</Italian>
+<Hungarian>Ajtó kinyitása</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_C130CLOSEDOOR">
+<English>Close door</English>
+<Czech>Close door</Czech>
+<German>Türen schließen</German>
+<Polish>Zamknij drzwi</Polish>
+<Russian>Закрыть люк</Russian>
+<French>Close door</French>
+<Spanish>Close door</Spanish>
+<Italian>Close door</Italian>
+<Hungarian>Ajtó bezárása</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_FLIPATV">
+<English>Flip ATV</English>
+<Czech>Flip ATV</Czech>
+<German>Flip ATV</German>
+<Polish>Odwróć ATV</Polish>
+<Russian>Перевернуть ATV</Russian>
+<French>Flip ATV</French>
+<Spanish>Flip ATV</Spanish>
+<Italian>Flip ATV</Italian>
+<Hungarian>Flip ATV</Hungarian>
+</Key>
+</Container>
+
+<!-- Vehicles -->
+<Container name="STR_ACE_VDN_US">
+<Key ID="STR_ACE_VDN_HMMWV_BASE">
+<English>M1025 HMMWV (armed)</English>
+<Czech>M1025 HMMWV (ozbrojený)</Czech>
+<German>M1025 HMMWV (bewaffnet)</German>
+<Polish>M1025 HMMWV (uzbrojony)</Polish>
+<Russian>M1025 HMMWV (с вооружением)</Russian>
+<French>M1025 HMMWV (armed)</French>
+<Spanish>M1025 HMMWV (armado)</Spanish>
+<Italian>M1025 HMMWV (armato)</Italian>
+<Hungarian>M1025 HMMWV (felfegyverzett)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_HMMWV_UTIL">
+<German>M1123 HMMWV Transport</German>
+<English>M1123 HMMWV Utility</English>
+<Italian>M1123 Humvee multiuso</Italian>
+<Spanish>M1123 HMMWV Utility</Spanish>
+<French>M1123 HMMWV Utility</French>
+<Czech>M1123 HMMWV užitkové</Czech>
+<Russian>M1123 HMMWV (общего назн.)</Russian>
+<Polish>M1123 HMMWV (użytkowy)</Polish>
+<Hungarian>M1123 HMMWV Utility</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_HMMWV_AMBULANCE">
+<English>M997 HMMWV (MEDEVAC)</English>
+<Czech>M997 HMMWV (MEDEVAC)</Czech>
+<German>M997 HMMWV (Sanitätsfzg)</German>
+<Polish>M997 HMMWV (MEDEVAC)</Polish>
+<Russian>M997 HMMWV (санитарно-эвакуационный)</Russian>
+<French>M997 HMMWV (MEDEVAC)</French>
+<Spanish>M997 HMMWV (MEDEVAC)</Spanish>
+<Italian>M997 HMMWV (MEDEVAC)</Italian>
+<Hungarian>M997 HMMWV (MEDEVAC)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_MTVRREAMMO">
+<English>MTVR (ammo)</English>
+<Czech>MTVR (nákladní)</Czech>
+<German>MTVR (Munition)</German>
+<Polish>MTVR (amunicja)</Polish>
+<Russian>MTVR (боеприпасы)</Russian>
+<French>MTVR (munitions)</French>
+<Spanish>Munición MTVR</Spanish>
+<Italian>MTVR (portamunizioni)</Italian>
+<Hungarian>MTVR (Lőszeres)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_MTVRREFUEL">
+<English>MTVR (fuel)</English>
+<Czech>MTVR (cisterna)</Czech>
+<German>MTVR (Treibstoff)</German>
+<Polish>MTVR (cysterna)</Polish>
+<Russian>MTVR (заправщик)</Russian>
+<French>MTVR (carburant)</French>
+<Spanish>MTVR (combustible)</Spanish>
+<Italian>MTVR (rifornimento)</Italian>
+<Hungarian>MTVR (Tanker)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_MTVRREPAIR">
+<English>MTVR (repair)</English>
+<Czech>MTVR (opravářský)</Czech>
+<German>MTVR (Reparatur)</German>
+<Polish>MTVR (techniczny)</Polish>
+<Russian>MTVR (ремонтный)</Russian>
+<French>MTVR (dépannage)</French>
+<Spanish>MTVR (reparar)</Spanish>
+<Italian>MTVR (carro attrezzi)</Italian>
+<Hungarian>MTVR (Szervíz)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_LAV25_HQ">
+<English>LAV-25A2 (HQ)</English>
+<Czech>LAV-25A2 (velitelství)</Czech>
+<German>LAV-25A2 (HQ)</German>
+<Polish>LAV-25A2 (sztab)</Polish>
+<Russian>LAV-25A2 (КШМ)</Russian>
+<French>LAV-25A2 (PC)</French>
+<Spanish>LAV-25A2 (CG)</Spanish>
+<Italian>LAV-25A2 (QG)</Italian>
+<Hungarian>LAV-25A2 (központ)</Hungarian>
+</Key>
+<Key ID="STR_ACE_DN_M252">
+<German>M252 81mm Mörser</German>
+<English>M252 81mm Mortar</English>
+<Italian>Mortaio M252 81mm</Italian>
+<Spanish>Mortero M252 81 mm</Spanish>
+<French>Mortier 81 mm M252</French>
+<Czech>Minomet M252 81mm</Czech>
+<Russian>M252 81мм миномет</Russian>
+<Polish>Moździerz M252 81 mm</Polish>
+<Hungarian>M252 81mm Mortar</Hungarian>
+</Key>
+</Container>
+<Container name="STR_ACE_VDN_RU">
+<Key ID="STR_ACE_VDN_UAZ_BASE">
+<English>UAZ-469 (armed)</English>
+<Czech>UAZ-469 (ozbrojený)</Czech>
+<German>UAZ-469 (bewaffnet)</German>
+<Polish>UAZ-469 (uzbrojony)</Polish>
+<Russian>УАЗ-3151 (с вооружением)</Russian>
+<French>UAZ-469 (armed)</French>
+<Spanish>UAZ-469 (armado)</Spanish>
+<Italian>UAZ-469 (armato)</Italian>
+<Hungarian>UAZ-469 (felfegyverzett)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_UAZ_UNARMED_BASE">
+<English>UAZ-469</English>
+<Czech>UAZ-469</Czech>
+<German>UAZ-469</German>
+<Polish>UAZ-469</Polish>
+<Russian>УАЗ-3151</Russian>
+<French>UAZ-469</French>
+<Spanish>UAZ-469</Spanish>
+<Italian>UAZ-469</Italian>
+<Hungarian>UAZ-469</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_UAZ_MG_BASE">
+<English>UAZ (DShKM)</English>
+<Czech>UAZ (DŠKM)</Czech>
+<German>UAZ (DShKM)</German>
+<Polish>UAZ (DSzKM)</Polish>
+<Russian>УАЗ (ДШКМ)</Russian>
+<French>UAZ (DShKM)</French>
+<Spanish>UAZ (DShKM)</Spanish>
+<Italian>UAZ (DShKM)</Italian>
+<Hungarian>UAZ (DSKM)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_UAZ_AGS30_BASE">
+<English>UAZ (AGS-30)</English>
+<Czech>UAZ (AGS-30)</Czech>
+<German>UAZ (AGS-30)</German>
+<Polish>UAZ (AGS-30)</Polish>
+<Russian>УАЗ (АГС-30)</Russian>
+<French>UAZ (AGS-30)</French>
+<Spanish>UAZ (AGS-30)</Spanish>
+<Italian>UAZ (AGS-30)</Italian>
+<Hungarian>UAZ (AGSz-30)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_UAZ_SPG9_BASE">
+<English>UAZ (SPG-9)</English>
+<Czech>UAZ (SPG-9)</Czech>
+<German>UAZ (SPG-9)</German>
+<Polish>UAZ (SPG-9)</Polish>
+<Russian>УАЗ (СПГ-9)</Russian>
+<French>UAZ (SPG-9)</French>
+<Spanish>UAZ (SPG-9)</Spanish>
+<Italian>UAZ (SPG-9)</Italian>
+<Hungarian>UAZ (SzPG-9)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_URAL_BASE_WITHTURRET">
+<English>Ural-375 (armed)</English>
+<Czech>Ural-375 (ozbrojený)</Czech>
+<German>Ural-375 (bewaffnet)</German>
+<Polish>Ural-375 (uzbrojony)</Polish>
+<Russian>Урал-4320 (с вооружением)</Russian>
+<French>Ural-375 (armed)</French>
+<Spanish>Ural-375 (armado)</Spanish>
+<Italian>Ural-375 (armato)</Italian>
+<Hungarian>Ural-375 (felfegyverzett)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_URAL_BASE">
+<English>Ural-375</English>
+<Czech>Ural-375</Czech>
+<German>Ural-375</German>
+<Polish>Ural-375</Polish>
+<Russian>Урал-4320</Russian>
+<French>Ural-375</French>
+<Spanish>Ural-375</Spanish>
+<Italian>Ural-375</Italian>
+<Hungarian>Ural-375</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_URALOPEN_BASE">
+<English>Ural-375 (open)</English>
+<Czech>Ural-375 (otevřený)</Czech>
+<German>Ural-375 (offen)</German>
+<Polish>Ural-375 (otwarty)</Polish>
+<Russian>Урал-4320 (без тента)</Russian>
+<French>Ural-375 (découvert)</French>
+<Spanish>Ural-375 (abierto)</Spanish>
+<Italian>Ural-375 (aperto)</Italian>
+<Hungarian>Ural-375 (nyitott)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_URALREAMMO_BASE">
+<English>Ural (ammo)</English>
+<Czech>Ural (nákladní)</Czech>
+<German>Ural (Munition)</German>
+<Polish>Ural (amunicja)</Polish>
+<Russian>Урал (боеприпасы)</Russian>
+<French>Ural (munitions)</French>
+<Spanish>Munición Ural</Spanish>
+<Italian>Ural (portamunizioni)</Italian>
+<Hungarian>Ural (Lőszeres)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_URALREFUEL_BASE">
+<English>Ural (fuel)</English>
+<Czech>Ural (cisterna)</Czech>
+<German>Ural (Treibstoff)</German>
+<Polish>Ural (cysterna)</Polish>
+<Russian>Урал (заправщик)</Russian>
+<French>Ural (carburant)</French>
+<Spanish>Ural (combustible)</Spanish>
+<Italian>Ural (rifornimento)</Italian>
+<Hungarian>Ural (Tanker)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_URALREPAIR_BASE">
+<English>Ural (repair)</English>
+<Czech>Ural (opravářský)</Czech>
+<German>Ural (Reparatur)</German>
+<Polish>Ural (techniczny)</Polish>
+<Russian>Урал (ремонтный)</Russian>
+<French>Ural (dépannage)</French>
+<Spanish>Ural (reparar)</Spanish>
+<Italian>Ural (carro attrezzi)</Italian>
+<Hungarian>Ural (Szervíz)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_URAL_ZU23_BASE">
+<English>Ural (ZU-23-2)</English>
+<Czech>Ural (ZU-23-2)</Czech>
+<German>Ural (ZU-23-2)</German>
+<Polish>Ural (ZU-23-2)</Polish>
+<Russian>Урал (ЗУ-23-2)</Russian>
+<French>Ural (ZU-23-2)</French>
+<Spanish>Ural (ZU-23-2)</Spanish>
+<Italian>Ural (ZU-23-2)</Italian>
+<Hungarian>Ural (ZU-23-2)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_KAMAZ_BASE">
+<English>KAMAZ-5350</English>
+<Czech>KAMAZ-5350</Czech>
+<German>KAMAZ-5350</German>
+<Polish>KAMAZ-5350</Polish>
+<Russian>КамАЗ-5350</Russian>
+<French>KAMAZ-5350</French>
+<Spanish>KAMAZ-5350</Spanish>
+<Italian>KAMAZ-5350</Italian>
+<Hungarian>KAMAZ-5350</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_KAMAZOPEN">
+<English>KAMAZ-5350 (open)</English>
+<Czech>KAMAZ-5350 (otevřený)</Czech>
+<German>KAMAZ-5350 (offen)</German>
+<Polish>KAMAZ-5350 (otwarty)</Polish>
+<Russian>КамАЗ-5350 (без тента)</Russian>
+<French>KAMAZ-5350 (découvert)</French>
+<Spanish>KAMAZ-5350 (abierto)</Spanish>
+<Italian>KAMAZ-5350 (aperto)</Italian>
+<Hungarian>KAMAZ-5350 (nyitott)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_KAMAZREAMMO">
+<English>KAMAZ (ammo)</English>
+<Czech>KAMAZ (nákladní)</Czech>
+<German>KAMAZ (Munition)</German>
+<Polish>KAMAZ (amunicja)</Polish>
+<Russian>КамАЗ (боеприпасы)</Russian>
+<French>KAMAZ (munitions)</French>
+<Spanish>Munición KAMAZ</Spanish>
+<Italian>KAMAZ (portamunizioni)</Italian>
+<Hungarian>KAMAZ (Lőszeres)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_KAMAZREFUEL">
+<English>KAMAZ (fuel)</English>
+<Czech>KAMAZ (cisterna)</Czech>
+<German>KAMAZ (Treibstoff)</German>
+<Polish>KAMAZ (cysterna)</Polish>
+<Russian>КамАЗ (заправщик)</Russian>
+<French>KAMAZ (carburant)</French>
+<Spanish>KAMAZ (combustible)</Spanish>
+<Italian>KAMAZ (rifornimento)</Italian>
+<Hungarian>KAMAZ (Tanker)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_KAMAZREPAIR">
+<English>KAMAZ (repair)</English>
+<Czech>KAMAZ (opravářský)</Czech>
+<German>KAMAZ (Reparatur)</German>
+<Polish>KAMAZ (techniczny)</Polish>
+<Russian>КамАЗ (ремонтный)</Russian>
+<French>KAMAZ (dépannage)</French>
+<Spanish>KAMAZ (reparar)</Spanish>
+<Italian>KAMAZ (carro attrezzi)</Italian>
+<Hungarian>KAMAZ (szervíz)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_BRDM2_BASE">
+<English>BRDM-2</English>
+<Czech>BRDM-2</Czech>
+<German>BRDM-2</German>
+<Polish>BRDM-2</Polish>
+<Russian>БРДМ-2</Russian>
+<French>BRDM-2</French>
+<Spanish>BRDM-2</Spanish>
+<Italian>BRDM-2</Italian>
+<Hungarian>BRDM-2</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_BRDM2_ATGM_BASE">
+<English>BRDM-2 (9P148)</English>
+<Czech>BRDM-2 (9P148)</Czech>
+<German>BRDM-2 (9P148)</German>
+<Polish>BRDM-2 (9P148)</Polish>
+<Russian>ПТРК Конкурс</Russian>
+<French>BRDM-2 (9P148)</French>
+<Spanish>BRDM-2 (9P148)</Spanish>
+<Italian>BRDM-2 (9P148)</Italian>
+<Hungarian>BRDM-2 (9P148)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_BRDM2_HQ_BASE">
+<English>BRDM-2 (HQ)</English>
+<Czech>BRDM-2 (velitelství)</Czech>
+<German>BRDM-2 (HQ)</German>
+<Polish>BRDM-2 (sztab)</Polish>
+<Russian>БРДМ-2У (КШМ)</Russian>
+<French>BRDM-2 (PC)</French>
+<Spanish>BRDM-2 (CG)</Spanish>
+<Italian>BRDM-2 (QG)</Italian>
+<Hungarian>BRDM-2 (központ)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_GAZ_VODNIK_HMG">
+<English>GAZ-39371 Vodnik</English>
+<Czech>GAZ-39371 Vodnik</Czech>
+<German>GAZ-39371 Vodnik</German>
+<Polish>GAZ-39371 Wodnik</Polish>
+<Russian>ГАЗ-39371 Водник (2А42)</Russian>
+<French>GAZ-39371 Vodnik</French>
+<Spanish>GAZ-39371 Vodnik</Spanish>
+<Italian>GAZ-39371 Vodnik</Italian>
+<Hungarian>GAZ-39371 Vodnik</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_GAZ_VODNIK">
+<English>GAZ Vodnik (PKMT)</English>
+<Czech>GAZ Vodnik (PKMT)</Czech>
+<German>GAZ Vodnik (PKMT)</German>
+<Polish>GAZ Wodnik (PKMT)</Polish>
+<Russian>ГАЗ-39371 Водник (ПКМТ)</Russian>
+<French>GAZ Vodnik (PKMT)</French>
+<Spanish>GAZ Vodnik (PKMT)</Spanish>
+<Italian>GAZ Vodnik (PKMT)</Italian>
+<Hungarian>GAZ Vodnik (PKMT)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_GAZ_VODNIK_MEDEVAC">
+<English>GAZ Vodnik (MEDEVAC)</English>
+<Czech>GAZ Vodnik (MEDEVAC)</Czech>
+<German>GAZ Vodnik (Sanitätsfzg)</German>
+<Polish>GAZ Wodnik (MEDEVAC)</Polish>
+<Russian>ГАЗ-39371 Водник (санитарно-эвакуационный)</Russian>
+<French>GAZ Vodnik (MEDEVAC)</French>
+<Spanish>GAZ Vodnik (MEDEVAC)</Spanish>
+<Italian>GAZ Vodnik (MEDEVAC)</Italian>
+<Hungarian>GAZ Vodnik (MEDEVAC)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_BTR40">
+<English>BTR-40</English>
+<Czech>BTR-40</Czech>
+<German>BTR-40</German>
+<Polish>BTR-40</Polish>
+<Russian>БТР-40</Russian>
+<French>BTR-40</French>
+<Spanish>BTR-40</Spanish>
+<Italian>BTR-40</Italian>
+<Hungarian>BTR-40</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_BTR40_DSHKM">
+<English>BTR-40 (DShKM)</English>
+<Czech>BTR-40 (DŠKM)</Czech>
+<German>BTR-40 (DShKM)</German>
+<Polish>BTR-40 (DSzKM)</Polish>
+<Russian>БТР-40 (ДШКМ)</Russian>
+<French>BTR-40 (DShKM)</French>
+<Spanish>BTR-40 (DShKM)</Spanish>
+<Italian>BTR-40 (DShKM)</Italian>
+<Hungarian>BTR-40 (DSKM)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_BTR40_ARMED">
+<English>BTR-40 (armed)</English>
+<Czech>BTR-40 (ozbrojený)</Czech>
+<German>BTR-40 (bewaffnet)</German>
+<Polish>BTR-40 (uzbrojony)</Polish>
+<Russian>БТР-40 (с вооружением)</Russian>
+<French>BTR-40 (armed)</French>
+<Spanish>BTR-40 (armado)</Spanish>
+<Italian>BTR-40 (armato)</Italian>
+<Hungarian>BTR-40 (felfegyverzett)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_BTR90">
+<English>BTR-90</English>
+<Czech>BTR-90</Czech>
+<German>BTR-90</German>
+<Polish>BTR-90</Polish>
+<Russian>БТР-90</Russian>
+<French>BTR-90</French>
+<Spanish>BTR-90</Spanish>
+<Italian>BTR-90</Italian>
+<Hungarian>BTR-90</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_BTR90_HQ">
+<English>BTR-90 (HQ)</English>
+<Czech>BTR-90 (velitelství)</Czech>
+<German>BTR-90 (HQ)</German>
+<Polish>BTR-90 (sztab)</Polish>
+<Russian>БТР-90 (КШМ)</Russian>
+<French>BTR-90 (PC)</French>
+<Spanish>BTR-90 (CG)</Spanish>
+<Italian>BTR-90 (QG)</Italian>
+<Hungarian>BTR-90 (központ)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_BMP2_BASE">
+<English>BMP-2</English>
+<Czech>BMP-2</Czech>
+<German>BMP-2</German>
+<Polish>BMP-2</Polish>
+<Russian>БМП-2</Russian>
+<French>BMP-2</French>
+<Spanish>BMP-2</Spanish>
+<Italian>BMP-2</Italian>
+<Hungarian>BMP-2</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_BMP2_CDF">
+<English>BVP-2</English>
+<Czech>BVP-2</Czech>
+<German>BVP-2</German>
+<Polish>BWP-2</Polish>
+<Russian>БВП-2</Russian>
+<French>BVP-2</French>
+<Spanish>BVP-2</Spanish>
+<Italian>BVP-2</Italian>
+<Hungarian>BVP-2</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_BMP2_HQ_BASE">
+<English>BMP-2 (HQ)</English>
+<Czech>BMP-2 (velitelství)</Czech>
+<German>BMP-2 (HQ)</German>
+<Polish>BMP-2 (sztab)</Polish>
+<Russian>БМП-2 (КШМ)</Russian>
+<French>BMP-2 (PC)</French>
+<Spanish>BMP-2 (CG)</Spanish>
+<Italian>BMP-2 (QG)</Italian>
+<Hungarian>BMP-2 (központ)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_BMP2_HQ_CDF">
+<English>BVP-2 (HQ)</English>
+<Czech>BVP-2 (velitelství)</Czech>
+<German>BVP-2 (HQ)</German>
+<Polish>BWP-2 (sztab)</Polish>
+<Russian>БВП-2 (КШМ)</Russian>
+<French>BVP-2 (PC)</French>
+<Spanish>BVP-2 (CG)</Spanish>
+<Italian>BVP-2 (QG)</Italian>
+<Hungarian>BVP-2 (központ)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_BMP2_AMBUL_BASE">
+<English>BMP-2 (MEDEVAC)</English>
+<Czech>BMP-2 (MEDEVAC)</Czech>
+<German>BMP-2 (Sanitätsfzg)</German>
+<Polish>BMP-2 (MEDEVAC)</Polish>
+<Russian>БМП-2 (санитарно-эвакуационная)</Russian>
+<French>BMP-2 (MEDEVAC)</French>
+<Spanish>BMP-2 (MEDEVAC)</Spanish>
+<Italian>BMP-2 (MEDEVAC)</Italian>
+<Hungarian>BMP-2 (MEDEVAC)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_BMP2_AMBUL_CDF">
+<English>BVP-2 (MEDEVAC)</English>
+<Czech>BVP-2 (MEDEVAC)</Czech>
+<German>BVP-2 (Sanitätsfzg)</German>
+<Polish>BWP-2 (MEDEVAC)</Polish>
+<Russian>БВП-2 (санитарно-эвакуационная)</Russian>
+<French>BVP-2 (MEDEVAC)</French>
+<Spanish>BVP-2 (MEDEVAC)</Spanish>
+<Italian>BVP-2 (MEDEVAC)</Italian>
+<Hungarian>BVP-2 (MEDEVAC)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_BMP3">
+<English>BMP-3</English>
+<Czech>BMP-3</Czech>
+<German>BMP-3</German>
+<Polish>BMP-3</Polish>
+<Russian>БМП-3</Russian>
+<French>BMP-3</French>
+<Spanish>BMP-3</Spanish>
+<Italian>BMP-3</Italian>
+<Hungarian>BMP-3</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_ZSU_BASE">
+<English>ZSU-23-4 Shilka</English>
+<Czech>ZSU-23-4 Šilka</Czech>
+<German>ZSU-23-4 Shilka</German>
+<Polish>ZSU-23-4 Szyłka</Polish>
+<Russian>ЗСУ-23-4 Шилка</Russian>
+<French>ZSU-23-4 Shilka</French>
+<Spanish>ZSU-23-4 Shilka</Spanish>
+<Italian>ZSU-23-4 Shilka</Italian>
+<Hungarian>ZSzU-23-4 Silka</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_ZSU_M">
+<English>ZSU-23-4M Shilka</English>
+<Czech>ZSU-23-4M Šilka</Czech>
+<German>ZSU-23-4M Shilka</German>
+<Polish>ZSU-23-4M Szyłka</Polish>
+<Russian>ЗСУ-23-4MЗ Шилка</Russian>
+<French>ZSU-23-4M Shilka</French>
+<Spanish>ZSU-23-4M Shilka</Spanish>
+<Italian>ZSU-23-4M Shilka</Italian>
+<Hungarian>ZSzU-23-4M Silka</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_2S6M_TUNGUSKA">
+<English>2S6M1 Tunguska</English>
+<Czech>2S6M1 Tunguska</Czech>
+<German>2S6M1 Tunguska</German>
+<Polish>2S6M1 Tunguska</Polish>
+<Russian>2К22М1 Тунгуска-М1</Russian>
+<French>2S6M1 Tunguska</French>
+<Spanish>2S6M1 Tunguska</Spanish>
+<Italian>2S6M1 Tunguska</Italian>
+<Hungarian>2Sz6M1 Tunguszka</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_T34">
+<English>T-34/85</English>
+<Czech>T-34/85</Czech>
+<German>T-34/85</German>
+<Polish>T-34/85</Polish>
+<Russian>Т-34-85</Russian>
+<French>T-34/85</French>
+<Spanish>T-34/85</Spanish>
+<Italian>T-34/85</Italian>
+<Hungarian>T-34/85</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_T72_BASE">
+<English>T-72</English>
+<Czech>T-72</Czech>
+<German>T-72</German>
+<Polish>T-72</Polish>
+<Russian>Т-72</Russian>
+<French>T-72</French>
+<Spanish>T-72</Spanish>
+<Italian>T-72</Italian>
+<Hungarian>T-72</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_T72_A">
+<English>T-72A</English>
+<Czech>T-72A</Czech>
+<German>T-72A</German>
+<Polish>T-72A</Polish>
+<Russian>Т-72А</Russian>
+<French>T-72A</French>
+<Spanish>T-72A</Spanish>
+<Italian>T-72A</Italian>
+<Hungarian>T-72A</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_T72_M">
+<English>T-72M</English>
+<Czech>T-72M</Czech>
+<German>T-72M</German>
+<Polish>T-72M</Polish>
+<Russian>Т-72М</Russian>
+<French>T-72M</French>
+<Spanish>T-72M</Spanish>
+<Italian>T-72M</Italian>
+<Hungarian>T-72M</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_T90">
+<English>T-90</English>
+<Czech>T-90</Czech>
+<German>T-90</German>
+<Polish>T-90</Polish>
+<Russian>Т-90</Russian>
+<French>T-90</French>
+<Spanish>T-90</Spanish>
+<Italian>T-90</Italian>
+<Hungarian>T-90</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_DSHKM_BASE">
+<English>DShKM</English>
+<Czech>DŠKM</Czech>
+<German>DShKM</German>
+<Polish>DSzKM</Polish>
+<Russian>ДШКМ</Russian>
+<French>DShKM</French>
+<Spanish>DShKM</Spanish>
+<Italian>DShKM</Italian>
+<Hungarian>DSKM</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_KORD_BASE">
+<English>Kord tripod</English>
+<Czech>Kord na trojnožku</Czech>
+<German>Kord Dreibein</German>
+<Polish>Kord na trójnogu</Polish>
+<Russian>Корд (станок 6Т7)</Russian>
+<French>Kord trépied</French>
+<Spanish>Trípode Kord</Spanish>
+<Italian>Treppiede Kord</Italian>
+<Hungarian>Kord miniállvány</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_KORD_HIGH">
+<English>Kord</English>
+<Czech>Kord</Czech>
+<German>Kord</German>
+<Polish>Kord</Polish>
+<Russian>Корд (уст. 6У16 на СП)</Russian>
+<French>Kord</French>
+<Spanish>Kord</Spanish>
+<Italian>Kord</Italian>
+<Hungarian>Kord</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_AGS_BASE">
+<English>AGS-30</English>
+<Czech>AGS-30</Czech>
+<German>AGS-30</German>
+<Polish>AGS-30</Polish>
+<Russian>АГС-30</Russian>
+<French>AGS-30</French>
+<Spanish>AGS-30</Spanish>
+<Italian>AGS-30</Italian>
+<Hungarian>AGSz-30</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_SPG9_BASE">
+<English>SPG-9</English>
+<Czech>SPG-9</Czech>
+<German>SPG-9</German>
+<Polish>SPG-9</Polish>
+<Russian>СПГ-9</Russian>
+<French>SPG-9</French>
+<Spanish>SPG-9</Spanish>
+<Italian>SPG-9</Italian>
+<Hungarian>SzPG-9</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_METIS">
+<English>9P151M Metis-M1</English>
+<Czech>9P151M Metis-M1</Czech>
+<German>9P151M Metis-M1</German>
+<Polish>9P151M Metys-M1</Polish>
+<Russian>ПТРК Метис-М1</Russian>
+<French>9P151M Metis-M1</French>
+<Spanish>9P151M Metis-M1</Spanish>
+<Italian>9P151M Metis-M1</Italian>
+<Hungarian>9P151M Metis-M1</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_ZU23_BASE">
+<English>ZU-23-2</English>
+<Czech>ZU-23-2</Czech>
+<German>ZU-23-2</German>
+<Polish>ZU-23-2</Polish>
+<Russian>ЗУ-23-2</Russian>
+<French>ZU-23-2</French>
+<Spanish>ZU-23-2</Spanish>
+<Italian>ZU-23-2</Italian>
+<Hungarian>ZU-23-2</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_IGLA_AA_POD_EAST">
+<English>9K38 Igla</English>
+<Czech>9K38 Igla</Czech>
+<German>9K38 Igla</German>
+<Polish>9K38 Igła</Polish>
+<Russian>ОПУ Джигит</Russian>
+<French>9K38 Igla</French>
+<Spanish>9K38 Igla</Spanish>
+<Italian>9K38 Igla</Italian>
+<Hungarian>9K38 Igla</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_MI17_BASE">
+<English>Mi-8 Hip</English>
+<Czech>Mi-8 Hip</Czech>
+<German>Mi-8 Hip</German>
+<Polish>Mi-8 Hip</Polish>
+<Russian>Ми-8Т</Russian>
+<French>Mi-8 Hip</French>
+<Spanish>Mi-8 Hip</Spanish>
+<Italian>Mi-8 Hip</Italian>
+<Hungarian>Mi-8 Hip</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_MI17_INS">
+<English>Mi-8MT Hip-H</English>
+<Czech>Mi-8MT Hip-H</Czech>
+<German>Mi-8MT Hip-H</German>
+<Polish>Mi-8MT Hip-H</Polish>
+<Russian>Ми-8МT</Russian>
+<French>Mi-8MT Hip-H</French>
+<Spanish>Mi-8MT Hip-H</Spanish>
+<Italian>Mi-8MT Hip-H</Italian>
+<Hungarian>Mi-8MT Hip-H</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_MI17_TK">
+<English>Mi-8MT Hip-H</English>
+<Czech>Mi-8MT Hip-H</Czech>
+<German>Mi-8MT Hip-H</German>
+<Polish>Mi-8MT Hip-H</Polish>
+<Russian>Ми-8МT</Russian>
+<French>Mi-8MT Hip-H</French>
+<Spanish>Mi-8MT Hip-H</Spanish>
+<Italian>Mi-8MT Hip-H</Italian>
+<Hungarian>Mi-8MT Hip-H</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_MI17_CDF">
+<English>Mi-17M Hip-H</English>
+<Czech>Mi-17M Hip-H</Czech>
+<German>Mi-17M Hip-H</German>
+<Polish>Mi-17M Hip-H</Polish>
+<Russian>Ми-17М</Russian>
+<French>Mi-17M Hip-H</French>
+<Spanish>Mi-17M Hip-H</Spanish>
+<Italian>Mi-17M Hip-H</Italian>
+<Hungarian>Mi-17M Hip-H</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_MI171SH_CZ">
+<English>Mi-171Sh Hip-H</English>
+<Czech>Mi-171Š Hip-H</Czech>
+<German>Mi-171Sh Hip-H</German>
+<Polish>Mi-171Sz Hip-H</Polish>
+<Russian>Ми-171Ш</Russian>
+<French>Mi-171Sh Hip-H</French>
+<Spanish>Mi-171Sh Hip-H</Spanish>
+<Italian>Mi-171Sh Hip-H</Italian>
+<Hungarian>Mi-171S Hip-H</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_MI17_ROCKETS_RU">
+<English>Mi-8MTV-3 Hip-H</English>
+<Czech>Mi-8MTV-3 Hip-H</Czech>
+<German>Mi-8MTV-3 Hip-H</German>
+<Polish>Mi-8MTW-3 Hip-H</Polish>
+<Russian>Ми-8МTВ-3</Russian>
+<French>Mi-8MTV-3 Hip-H</French>
+<Spanish>Mi-8MTV-3 Hip-H</Spanish>
+<Italian>Mi-8MTV-3 Hip-H</Italian>
+<Hungarian>Mi-8MTV-3 Hip-H</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_MI17_MEDEVAC_BASE">
+<English>Mi-8AMT (MEDEVAC)</English>
+<Czech>Mi-8AMT (MEDEVAC)</Czech>
+<German>Mi-8AMT (MEDEVAC)</German>
+<Polish>Mi-8AMT (MEDEVAC)</Polish>
+<Russian>Ми-8МTВМ (медицинский)</Russian>
+<French>Mi-8AMT (MEDEVAC)</French>
+<Spanish>Mi-8AMT (MEDEVAC)</Spanish>
+<Italian>Mi-8AMT (MEDEVAC)</Italian>
+<Hungarian>Mi-8AMT (MEDEVAC)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_MI17_MEDEVAC_INS">
+<English>Mi-8MT (MEDEVAC)</English>
+<Czech>Mi-8MT (MEDEVAC)</Czech>
+<German>Mi-8MT (MEDEVAC)</German>
+<Polish>Mi-8MT (MEDEVAC)</Polish>
+<Russian>Ми-8МТВМ (медицинский)</Russian>
+<French>Mi-8MT (MEDEVAC)</French>
+<Spanish>Mi-8MT (MEDEVAC)</Spanish>
+<Italian>Mi-8MT (MEDEVAC)</Italian>
+<Hungarian>Mi-8MT (MEDEVAC)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_MI17_MEDEVAC_CDF">
+<English>Mi-17-1VA (MEDEVAC)</English>
+<Czech>Mi-17-1VA (MEDEVAC)</Czech>
+<German>Mi-17-1VA (MEDEVAC)</German>
+<Polish>Mi-17-1VA (MEDEVAC)</Polish>
+<Russian>Ми-17-1ВА (медицинский)</Russian>
+<French>Mi-17-1VA (MEDEVAC)</French>
+<Spanish>Mi-17-1VA (MEDEVAC)</Spanish>
+<Italian>Mi-17-1VA (MEDEVAC)</Italian>
+<Hungarian>Mi-17-1VA (MEDEVAC)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_MI17_MEDEVAC_RU">
+<English>Mi-8MT (MEDEVAC)</English>
+<Czech>Mi-8MT (MEDEVAC)</Czech>
+<German>Mi-8MT (MEDEVAC)</German>
+<Polish>Mi-8MT (MEDEVAC)</Polish>
+<Russian>Ми-8МTВМ (медицинский)</Russian>
+<French>Mi-8MT (MEDEVAC)</French>
+<Spanish>Mi-8MT (MEDEVAC)</Spanish>
+<Italian>Mi-8MT (MEDEVAC)</Italian>
+<Hungarian>Mi-8MT (MEDEVAC)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_MI17_CIVILIAN">
+<English>Mi-8MTV-1 Hip-H</English>
+<Czech>Mi-8MTV-1 Hip-H</Czech>
+<German>Mi-8MTV-1 Hip-H</German>
+<Polish>Mi-8MTW-1 Hip-H</Polish>
+<Russian>Ми-8МTВ-1</Russian>
+<French>Mi-8MTV-1 Hip-H</French>
+<Spanish>Mi-8MTV-1 Hip-H</Spanish>
+<Italian>Mi-8MTV-1 Hip-H</Italian>
+<Hungarian>Mi-8MTV-1 Hip-H</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_MI24_BASE">
+<English>Mi-24 Hind</English>
+<Czech>Mi-24 Hind</Czech>
+<German>Mi-24 Hind</German>
+<Polish>Mi-24 Hind</Polish>
+<Russian>Ми-24</Russian>
+<French>Mi-24 Hind</French>
+<Spanish>Mi-24 Hind</Spanish>
+<Italian>Mi-24 Hind</Italian>
+<Hungarian>Mi-24 Hind</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_MI24_D">
+<English>Mi-24D Hind-D</English>
+<Czech>Mi-24D Hind-D</Czech>
+<German>Mi-24D Hind-D</German>
+<Polish>Mi-24D Hind-D</Polish>
+<Russian>Ми-24Д</Russian>
+<French>Mi-24D Hind-D</French>
+<Spanish>Mi-24D Hind-D</Spanish>
+<Italian>Mi-24D Hind-D</Italian>
+<Hungarian>Mi-24D Hind-D</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_MI24_V">
+<English>Mi-24V Hind-E</English>
+<Czech>Mi-24V Hind-E</Czech>
+<German>Mi-24W Hind-E</German>
+<Polish>Mi-24W Hind-E</Polish>
+<Russian>Ми-24В</Russian>
+<French>Mi-24V Hind-E</French>
+<Spanish>Mi-24V Hind-E</Spanish>
+<Italian>Mi-24V Hind-E</Italian>
+<Hungarian>Mi-24V Hind-E</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_MI24_P">
+<English>Mi-24P Hind-F</English>
+<Czech>Mi-24P Hind-F</Czech>
+<German>Mi-24P Hind-F</German>
+<Polish>Mi-24P Hind-F</Polish>
+<Russian>Ми-24П</Russian>
+<French>Mi-24P Hind-F</French>
+<Spanish>Mi-24P Hind-F</Spanish>
+<Italian>Mi-24P Hind-F</Italian>
+<Hungarian>Mi-24P Hind-F</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_MI24_V_FAB250">
+<English>Mi-24V (FAB-250)</English>
+<Czech>Mi-24V (FAB-250)</Czech>
+<German>Mi-24W (FAB-250)</German>
+<Polish>Mi-24W (FAB-250)</Polish>
+<Russian>Ми-24В (ФАБ-250)</Russian>
+<French>Mi-24V (FAB-250)</French>
+<Spanish>Mi-24V (FAB-250)</Spanish>
+<Italian>Mi-24V (FAB-250)</Italian>
+<Hungarian>Mi-24V (FAB-250)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_MI24_V_UPK23">
+<English>Mi-24V (UPK-23)</English>
+<Czech>Mi-24V (UPK-23)</Czech>
+<German>Mi-24W (UPK-23)</German>
+<Polish>Mi-24W (UPK-23)</Polish>
+<Russian>Ми-24В (УПК-23)</Russian>
+<French>Mi-24V (UPK-23)</French>
+<Spanish>Mi-24V (UPK-23)</Spanish>
+<Italian>Mi-24V (UPK-23)</Italian>
+<Hungarian>Mi-24V (UPK-23)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_KA50_BASE">
+<English>Ka-50 Hokum</English>
+<Czech>Ka-50 Hokum</Czech>
+<German>Ka-50 Hokum</German>
+<Polish>Ka-50 Hokum</Polish>
+<Russian>Ка-50 Чёрная акула</Russian>
+<French>Ka-50 Hokum</French>
+<Spanish>Ka-50 Hokum</Spanish>
+<Italian>Ka-50 Hokum</Italian>
+<Hungarian>Ka-50 Hokum</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_KA50">
+<English>Ka-50 Hokum-A</English>
+<Czech>Ka-50 Hokum-A</Czech>
+<German>Ka-50 Hokum-A</German>
+<Polish>Ka-50 Hokum-A</Polish>
+<Russian>Ка-50 Чёрная Акула</Russian>
+<French>Ka-50 Hokum-A</French>
+<Spanish>Ka-50 Hokum-A</Spanish>
+<Italian>Ka-50 Hokum-A</Italian>
+<Hungarian>Ka-50 Hokum-A</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_KA50N">
+<English>Ka-50N Hokum-A</English>
+<Czech>Ka-50N Hokum-A</Czech>
+<German>Ka-50N Hokum-A</German>
+<Polish>Ka-50N Hokum-A</Polish>
+<Russian>Ка-50Н Ночная Акула</Russian>
+<French>Ka-50N Hokum-A</French>
+<Spanish>Ka-50N Hokum-A</Spanish>
+<Italian>Ka-50N Hokum-A</Italian>
+<Hungarian>Ka-50N Hokum-A</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_KA52">
+<English>Ka-52 Hokum-B</English>
+<Czech>Ka-52 Hokum-B</Czech>
+<German>Ka-52 Hokum-B</German>
+<Polish>Ka-52 Hokum-B</Polish>
+<Russian>Ка-52 Аллигатор</Russian>
+<French>Ka-52 Hokum-B</French>
+<Spanish>Ka-52 Hokum-B</Spanish>
+<Italian>Ka-52 Hokum-B</Italian>
+<Hungarian>Ka-52 Hokum-B</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_SU25_BASE">
+<English>Su-25 Frogfoot</English>
+<Czech>Su-25 Frogfoot</Czech>
+<German>Su-25 Frogfoot</German>
+<Polish>Su-25 Frogfoot</Polish>
+<Russian>Су-25 Грач</Russian>
+<French>Su-25 Frogfoot</French>
+<Spanish>Su-25 Frogfoot</Spanish>
+<Italian>Su-25 Frogfoot</Italian>
+<Hungarian>Szu-25 Frogfoot</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_SU25_FAB250">
+<English>Su-25 (FAB-250)</English>
+<Czech>Su-25 (FAB-250)</Czech>
+<German>Su-25 (FAB-250)</German>
+<Polish>Su-25 (FAB-250)</Polish>
+<Russian>Су-25 (ФАБ-250)</Russian>
+<French>Su-25 (FAB-250)</French>
+<Spanish>Su-25 (FAB-250)</Spanish>
+<Italian>Su-25 (FAB-250)</Italian>
+<Hungarian>Szu-25 (FAB-250)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_SU25_KH29">
+<English>Su-25 (Kh-29)</English>
+<Czech>Su-25 (Ch-29)</Czech>
+<German>Su-25 (Kh-29)</German>
+<Polish>Su-25 (Ch-29)</Polish>
+<Russian>Су-25 (Х-29)</Russian>
+<French>Su-25 (Kh-29)</French>
+<Spanish>Su-25 (Kh-29)</Spanish>
+<Italian>Su-25 (Kh-29)</Italian>
+<Hungarian>Szu-25 (Kh-29)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_SU25_K">
+<English>Su-25K Frogfoot</English>
+<Czech>Su-25K Frogfoot</Czech>
+<German>Su-25K Frogfoot</German>
+<Polish>Su-25K Frogfoot</Polish>
+<Russian>Су-25K Грач</Russian>
+<French>Su-25K Frogfoot</French>
+<Spanish>Su-25K Frogfoot</Spanish>
+<Italian>Su-25K Frogfoot</Italian>
+<Hungarian>Szu-25K Frogfoot</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_SU34">
+<English>Su-34 Fullback</English>
+<Czech>Su-34 Fullback</Czech>
+<German>Su-34 Fullback</German>
+<Polish>Su-34 Fullback</Polish>
+<Russian>Су-34</Russian>
+<French>Su-34 Fullback</French>
+<Spanish>Su-34 Fullback</Spanish>
+<Italian>Su-34 Fullback</Italian>
+<Hungarian>Szu-34 Fullback</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_AN2_BASE">
+<English>An-2 Colt</English>
+<Czech>An-2 Colt</Czech>
+<German>An-2 Colt</German>
+<Polish>An-2 Kukuruźnik</Polish>
+<Russian>Ан-2 Кукурузник</Russian>
+<French>An-2 Colt</French>
+<Spanish>An-2 Colt</Spanish>
+<Italian>An-2 Colt</Italian>
+<Hungarian>An-2 Colt</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_AN2_T">
+<English>An-2T Colt</English>
+<Czech>An-2T Colt</Czech>
+<German>An-2T Colt</German>
+<Polish>An-2T Kukuruźnik</Polish>
+<Russian>Ан-2Т Кукурузник</Russian>
+<French>An-2T Colt</French>
+<Spanish>An-2T Colt</Spanish>
+<Italian>An-2T Colt</Italian>
+<Hungarian>An-2T Colt</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_AN2_P">
+<English>An-2P Colt</English>
+<Czech>An-2P Colt</Czech>
+<German>An-2P Colt</German>
+<Polish>An-2P Kukuruźnik</Polish>
+<Russian>Ан-2П Кукурузник</Russian>
+<French>An-2P Colt</French>
+<Spanish>An-2P Colt</Spanish>
+<Italian>An-2P Colt</Italian>
+<Hungarian>An-2P Colt</Hungarian>
+</Key>
+</Container>
+<Container name="STR_ACE_VDN_CV">
+<Key ID="STR_ACE_VDN_SKODABASE">
+<English>Škoda Estelle</English>
+<Czech>Škoda Estelle</Czech>
+<German>Škoda Estelle</German>
+<Polish>Škoda Estelle</Polish>
+<Russian>Škoda Estelle</Russian>
+<French>Škoda Estelle</French>
+<Spanish>Škoda Estelle</Spanish>
+<Italian>Škoda Estelle</Italian>
+<Hungarian>Škoda Estelle</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_SKODAWHITE">
+<English>Škoda (white)</English>
+<Czech>Škodovka (bílá)</Czech>
+<German>Škoda (weiß)</German>
+<Polish>Škoda (biała)</Polish>
+<Russian>Škoda (белая)</Russian>
+<French>Škoda (blanche)</French>
+<Spanish>Škoda (blanco)</Spanish>
+<Italian>Škoda (bianca)</Italian>
+<Hungarian>Škoda (fehér)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_SKODABLUE">
+<English>Škoda (blue)</English>
+<Czech>Škodovka (modrá)</Czech>
+<German>Škoda (blau)</German>
+<Polish>Škoda (niebieska)</Polish>
+<Russian>Škoda (синяя)</Russian>
+<French>Škoda (bleue)</French>
+<Spanish>Škoda (azul)</Spanish>
+<Italian>Škoda (blu)</Italian>
+<Hungarian>Škoda (kék)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_SKODARED">
+<English>Škoda (red)</English>
+<Czech>Škodovka (červená)</Czech>
+<German>Škoda (rot)</German>
+<Polish>Škoda (czerwona)</Polish>
+<Russian>Škoda (красная)</Russian>
+<French>Škoda (rouge)</French>
+<Spanish>Škoda (rojo)</Spanish>
+<Italian>Škoda (rossa)</Italian>
+<Hungarian>Škoda (piros)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_SKODAGREEN">
+<English>Škoda (green)</English>
+<Czech>Škodovka (zelená)</Czech>
+<German>Škoda (grün)</German>
+<Polish>Škoda (zielona)</Polish>
+<Russian>Škoda (зелёная)</Russian>
+<French>Škoda (verte)</French>
+<Spanish>Škoda (verde)</Spanish>
+<Italian>Škoda (verde)</Italian>
+<Hungarian>Škoda (zöld)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_LADA_BASE">
+<English>VAZ-2103</English>
+<Czech>VAZ-2103</Czech>
+<German>VAZ-2103</German>
+<Polish>VAZ-2103</Polish>
+<Russian>ВАЗ-2103</Russian>
+<French>VAZ-2103</French>
+<Spanish>VAZ-2103</Spanish>
+<Italian>VAZ-2103</Italian>
+<Hungarian>VAZ-2103</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_LADA1">
+<English>Lada (white)</English>
+<Czech>Lada (bílá)</Czech>
+<German>Lada (weiß)</German>
+<Polish>Łada (biała)</Polish>
+<Russian>ВАЗ-2103 Лада (белая)</Russian>
+<French>Lada (blanche)</French>
+<Spanish>Lada (blanco)</Spanish>
+<Italian>Lada (bianca)</Italian>
+<Hungarian>Lada (fehér)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_LADA2">
+<English>Lada (red)</English>
+<Czech>Lada (červená)</Czech>
+<German>Lada (rot)</German>
+<Polish>Łada (czerwona)</Polish>
+<Russian>ВАЗ-2103 Лада (красная)</Russian>
+<French>Lada (rouge)</French>
+<Spanish>Lada (rojo)</Spanish>
+<Italian>Lada (rossa)</Italian>
+<Hungarian>Lada (piros)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_LADALM">
+<English>Lada (Militia)</English>
+<Czech>Lada (Milice)</Czech>
+<German>Lada (Miliz)</German>
+<Polish>Łada (Milicja)</Polish>
+<Russian>ВАЗ-2103 Лада (милиция)</Russian>
+<French>Lada (Milice)</French>
+<Spanish>Lada (Milicia)</Spanish>
+<Italian>Lada (Milice)</Italian>
+<Hungarian>Lada (Milícia)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_S1203">
+<English>Škoda 1203</English>
+<Czech>Škoda 1203</Czech>
+<German>Škoda 1203</German>
+<Polish>Škoda 1203</Polish>
+<Russian>Škoda 1203</Russian>
+<French>Škoda 1203</French>
+<Spanish>Škoda 1203</Spanish>
+<Italian>Škoda 1203</Italian>
+<Hungarian>Škoda 1203</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_S1203_AMBULANCE">
+<English>Škoda (ambulance)</English>
+<Czech>Škoda (sanitka)</Czech>
+<German>Škoda (Rettungswagen)</German>
+<Polish>Škoda (ambulans)</Polish>
+<Russian>Škoda (скорая помощь)</Russian>
+<French>Škoda (ambulance)</French>
+<Spanish>Škoda (ambulancia)</Spanish>
+<Italian>Škoda (ambulanza)</Italian>
+<Hungarian>Škoda (mentőszolgálat)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_VOLGA_BASE">
+<English>Volga GAZ-24</English>
+<Czech>Volha GAZ-24</Czech>
+<German>Volga GAZ-24</German>
+<Polish>Wołga GAZ-24</Polish>
+<Russian>Волга ГАЗ-24</Russian>
+<French>Volga GAZ-24</French>
+<Spanish>Volga GAZ-24</Spanish>
+<Italian>Volga GAZ-24</Italian>
+<Hungarian>Volga GAZ-24</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_VOLGA_BLUE">
+<English>Volga (blue)</English>
+<Czech>Volha (modrá)</Czech>
+<German>Volga (blau)</German>
+<Polish>Wołga (niebieska)</Polish>
+<Russian>Волга ГАЗ-24 (синяя)</Russian>
+<French>Volga (bleue)</French>
+<Spanish>Volga (azul)</Spanish>
+<Italian>Volga (blu)</Italian>
+<Hungarian>Volga (kék)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_VOLGA_GRAY">
+<English>Volga (gray)</English>
+<Czech>Volha (šedá)</Czech>
+<German>Volga (graue)</German>
+<Polish>Wołga (szara)</Polish>
+<Russian>Волга ГАЗ-24 (серая)</Russian>
+<French>Volga (grid)</French>
+<Spanish>Volga (gris)</Spanish>
+<Italian>Volga (grigio)</Italian>
+<Hungarian>Volga (szürke)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_BLACK_VOLGA">
+<English>Black Volga</English>
+<Czech>Černá Volha</Czech>
+<German>Schwarzer Volga</German>
+<Polish>Czarna Wołga</Polish>
+<Russian>Волга ГАЗ-24 (черная)</Russian>
+<French>Volga Noire</French>
+<Spanish>Volga Negro</Spanish>
+<Italian>Volga Nera</Italian>
+<Hungarian>Fekete Volga</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_PICKUP_PK_BASE">
+<English>Datsun (technical)</English>
+<Czech>Datsun (technický)</Czech>
+<German>Datsun (technisch)</German>
+<Polish>Datsun (techniczny)</Polish>
+<Russian>Datsun (с вооружением)</Russian>
+<French>Datsun (technique)</French>
+<Spanish>Datsun (técnico)</Spanish>
+<Italian>Datsun (carro attrezzi)</Italian>
+<Hungarian>Datsun (technikai)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_PICKUP_PK">
+<English>Datsun (PKMT)</English>
+<Czech>Datsun (PKMT)</Czech>
+<German>Datsun (PKMT)</German>
+<Polish>Datsun (PKMT)</Polish>
+<Russian>Datsun (ПКМС)</Russian>
+<French>Datsun (PKMT)</French>
+<Spanish>Datsun (PKMT)</Spanish>
+<Italian>Datsun (PKMT)</Italian>
+<Hungarian>Datsun (PKMT)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_OFFROAD_DSHKM_BASE">
+<English>Hilux (technical)</English>
+<Czech>Hilux (technický)</Czech>
+<German>Hilux (technisch)</German>
+<Polish>Hilux (techniczny)</Polish>
+<Russian>Hilux (с вооружением)</Russian>
+<French>Hilux (technique)</French>
+<Spanish>Hilux (técnico)</Spanish>
+<Italian>Hilux (carro attrezzi)</Italian>
+<Hungarian>Hilux (technikai)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_OFFROAD_DSHKM">
+<English>Hilux (DShKM)</English>
+<Czech>Hilux (DŠKM)</Czech>
+<German>Hilux (DShKM)</German>
+<Polish>Hilux (DSzKM)</Polish>
+<Russian>Hilux (ДШКМ)</Russian>
+<French>Hilux (DShKM)</French>
+<Spanish>Hilux (DShKM)</Spanish>
+<Italian>Hilux (DShKM)</Italian>
+<Hungarian>Hilux (DSKM)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_OFFROAD_SPG9">
+<English>Hilux (SPG-9)</English>
+<Czech>Hilux (SPG-9)</Czech>
+<German>Hilux (SPG-9)</German>
+<Polish>Hilux (SPG-9)</Polish>
+<Russian>Hilux (СПГ-9)</Russian>
+<French>Hilux (SPG-9)</French>
+<Spanish>Hilux (SPG-9)</Spanish>
+<Italian>Hilux (SPG-9)</Italian>
+<Hungarian>Hilux (SzPG-9)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_V3S_OPEN">
+<English>Praga (open)</English>
+<Czech>Praga (otevřený)</Czech>
+<German>Praga (offen)</German>
+<Polish>Praga (otwarta)</Polish>
+<Russian>Praga (без тента)</Russian>
+<French>Praga (découvert)</French>
+<Spanish>Praga (abierto)</Spanish>
+<Italian>Praga (aperto)</Italian>
+<Hungarian>Praga (nyitott)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_V3S_REAMMO">
+<English>Praga (ammo)</English>
+<Czech>Praga (nákladní)</Czech>
+<German>Praga (Munition)</German>
+<Polish>Praga (amunicja)</Polish>
+<Russian>Praga (боеприпасы)</Russian>
+<French>Praga (munitions)</French>
+<Spanish>Munición Praga</Spanish>
+<Italian>Praga (portamunizioni)</Italian>
+<Hungarian>Praga (Lőszeres)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_V3S_REFUEL">
+<English>Praga (fuel)</English>
+<Czech>Praga (cisterna)</Czech>
+<German>Praga (Treibstoff)</German>
+<Polish>Praga (cysterna)</Polish>
+<Russian>Praga (заправщик)</Russian>
+<French>Praga (carburant)</French>
+<Spanish>Praga (combustible)</Spanish>
+<Italian>Praga (rifornimento)</Italian>
+<Hungarian>Praga (Tanker)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_V3S_REPAIR">
+<English>Praga (repair)</English>
+<Czech>Praga (opravářský)</Czech>
+<German>Praga (Reparatur)</German>
+<Polish>Praga (techniczny)</Polish>
+<Russian>Praga (ремонтный)</Russian>
+<French>Praga (dépannage)</French>
+<Spanish>Praga (reparar)</Spanish>
+<Italian>Praga (carro attrezzi)</Italian>
+<Hungarian>Praga (Szervíz)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_LANDROVER_ARMED">
+<English>Land Rover (armed)</English>
+<Czech>Land Rover (ozbrojený)</Czech>
+<German>Land Rover (bewaffnet)</German>
+<Polish>Land Rover (uzbrojony)</Polish>
+<Russian>Land Rover (с вооружением)</Russian>
+<French>Land Rover (armed)</French>
+<Spanish>Land Rover (armado)</Spanish>
+<Italian>Land Rover (armato)</Italian>
+<Hungarian>Land Rover (felfegyverzett)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_LANDROVER_SPG9">
+<English>Land Rover (SPG-9)</English>
+<Czech>Land Rover (SPG-9)</Czech>
+<German>Land Rover (SPG-9)</German>
+<Polish>Land Rover (SPG-9)</Polish>
+<Russian>Land Rover (СПГ-9)</Russian>
+<French>Land Rover (SPG-9)</French>
+<Spanish>Land Rover (SPG-9)</Spanish>
+<Italian>Land Rover (SPG-9)</Italian>
+<Hungarian>Land Rover (SzPG-9)</Hungarian>
+</Key>
+</Container>
+<Container name="STR_ACE_VDN_WRECK">
+<Key ID="STR_ACE_VDN_WRECKTURRET">
+<German>Geschützturm</German>
+<English>Turret</English>
+<Italian>Torretta</Italian>
+<Spanish>Torreta</Spanish>
+<French>Tourelle</French>
+<Czech>Vrak věže</Czech>
+<Russian>Башня</Russian>
+<Polish>Wieża</Polish>
+<Hungarian>Torony</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_T72WRECKTURRET">
+<German>T-72 Geschützturm</German>
+<English>T-72 turret</English>
+<Italian>Torretta di T-72</Italian>
+<Spanish>T-72 torreta</Spanish>
+<French>T-72 tourelle</French>
+<Czech>Vrak věže T-72</Czech>
+<Russian>Башня T-72</Russian>
+<Polish>Wieża T-72</Polish>
+<Hungarian>T-72 torony</Hungarian>
+</Key>
+</Container>
+
+<!-- Vehicles (short) -->
+<Container name="STR_ACE_VDNS_US">
+<Key ID="STR_ACE_VDNS_HMMWV_BASE">
+<English>HMMWV (armed)</English>
+<Czech>HMMWV (ozbrojený)</Czech>
+<German>HMMWV (bewaffnet)</German>
+<Polish>HMMWV (uzbrojony)</Polish>
+<Russian>HMMWV (с вооружением)</Russian>
+<French>HMMWV (armed)</French>
+<Spanish>HMMWV (armado)</Spanish>
+<Italian>HMMWV (armato)</Italian>
+<Hungarian>HMMWV (felfegyverzett)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_HMMWV_UTIL">
+<German>HMMWV Transport</German>
+<English>HMMWV Utility</English>
+<Italian>Humvee multiuso</Italian>
+<Spanish>HMMWV Utility</Spanish>
+<French>HMMWV Utility</French>
+<Czech>HMMWV užitkové</Czech>
+<Russian>HMMWV (общего назн.)</Russian>
+<Polish>HMMWV użytkowy</Polish>
+<Hungarian>HMMWV Utility</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_HMMWV_AMBULANCE">
+<English>HMMWV (MEDEVAC)</English>
+<Czech>HMMWV (MEDEVAC)</Czech>
+<German>HMMWV (Sanitätsfzg)</German>
+<Polish>HMMWV (MEDEVAC)</Polish>
+<Russian>HMMWV (медицинский)</Russian>
+<French>HMMWV (MEDEVAC)</French>
+<Spanish>HMMWV (MEDEVAC)</Spanish>
+<Italian>HMMWV (MEDEVAC)</Italian>
+<Hungarian>HMMWV (MEDEVAC)</Hungarian>
+</Key>
+</Container>
+<Container name="STR_ACE_VDNS_RU">
+<Key ID="STR_ACE_VDNS_UAZ_BASE">
+<English>UAZ (armed)</English>
+<Czech>UAZ (ozbrojený)</Czech>
+<German>UAZ (bewaffnet)</German>
+<Polish>UAZ (uzbrojony)</Polish>
+<Russian>УАЗ (с вооружением)</Russian>
+<French>UAZ (armed)</French>
+<Spanish>UAZ (armado)</Spanish>
+<Italian>UAZ (armato)</Italian>
+<Hungarian>UAZ (felfegyverzett)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_UAZ_UNARMED_BASE">
+<English>UAZ</English>
+<Czech>UAZ</Czech>
+<German>UAZ</German>
+<Polish>UAZ</Polish>
+<Russian>УАЗ</Russian>
+<French>UAZ</French>
+<Spanish>UAZ</Spanish>
+<Italian>UAZ</Italian>
+<Hungarian>UAZ</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_URAL_BASE_WITHTURRET">
+<English>Ural (armed)</English>
+<Czech>Ural (ozbrojený)</Czech>
+<German>Ural (bewaffnet)</German>
+<Polish>Ural (uzbrojony)</Polish>
+<Russian>Урал (с вооружением)</Russian>
+<French>Ural (armed)</French>
+<Spanish>Ural (armado)</Spanish>
+<Italian>Ural (armato)</Italian>
+<Hungarian>Ural (felfegyverzett)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_URAL_BASE">
+<English>Ural</English>
+<Czech>Ural</Czech>
+<German>Ural</German>
+<Polish>Ural</Polish>
+<Russian>Урал</Russian>
+<French>Ural</French>
+<Spanish>Ural</Spanish>
+<Italian>Ural</Italian>
+<Hungarian>Ural</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_URALOPEN_BASE">
+<English>Ural (open)</English>
+<Czech>Ural (otevřený)</Czech>
+<German>Ural (offen)</German>
+<Polish>Ural (otwarty)</Polish>
+<Russian>Урал (открытый)</Russian>
+<French>Ural (découvert)</French>
+<Spanish>Ural (abierto)</Spanish>
+<Italian>Ural (aperto)</Italian>
+<Hungarian>Ural (nyitott)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_KAMAZ_BASE">
+<English>KAMAZ</English>
+<Czech>KAMAZ</Czech>
+<German>KAMAZ</German>
+<Polish>KAMAZ</Polish>
+<Russian>КамАЗ</Russian>
+<French>KAMAZ</French>
+<Spanish>KAMAZ</Spanish>
+<Italian>KAMAZ</Italian>
+<Hungarian>KAMAZ</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_KAMAZOPEN">
+<English>KAMAZ (open)</English>
+<Czech>KAMAZ (otevřený)</Czech>
+<German>KAMAZ (offen)</German>
+<Polish>KAMAZ (otwarty)</Polish>
+<Russian>КамАЗ (открытый)</Russian>
+<French>KAMAZ (découvert)</French>
+<Spanish>KAMAZ (abierto)</Spanish>
+<Italian>KAMAZ (aperto)</Italian>
+<Hungarian>KAMAZ (nyitott)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_GAZ_VODNIK_HMG">
+<English>GAZ Vodnik</English>
+<Czech>GAZ Vodnik</Czech>
+<German>GAZ Vodnik</German>
+<Polish>GAZ Wodnik</Polish>
+<Russian>ГАЗ-39371 Водник</Russian>
+<French>GAZ Vodnik</French>
+<Spanish>GAZ Vodnik</Spanish>
+<Italian>GAZ Vodnik</Italian>
+<Hungarian>GAZ Vodnik</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_ZSU_BASE">
+<English>ZSU-23-4</English>
+<Czech>ZSU-23-4</Czech>
+<German>ZSU-23-4</German>
+<Polish>ZSU-23-4</Polish>
+<Russian>ЗСУ-23-4</Russian>
+<French>ZSU-23-4</French>
+<Spanish>ZSU-23-4</Spanish>
+<Italian>ZSU-23-4</Italian>
+<Hungarian>ZSzU-23-4</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_ZSU_M">
+<English>ZSU-23-4M</English>
+<Czech>ZSU-23-4M</Czech>
+<German>ZSU-23-4M</German>
+<Polish>ZSU-23-4M</Polish>
+<Russian>ЗСУ-23-4M</Russian>
+<French>ZSU-23-4M</French>
+<Spanish>ZSU-23-4M</Spanish>
+<Italian>ZSU-23-4M</Italian>
+<Hungarian>ZSzU-23-4M</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_2S6M_TUNGUSKA">
+<English>2S6M1</English>
+<Czech>2S6M1</Czech>
+<German>2S6M1</German>
+<Polish>2S6M1</Polish>
+<Russian>2С6M1</Russian>
+<French>2S6M1</French>
+<Spanish>2S6M1</Spanish>
+<Italian>2S6M1</Italian>
+<Hungarian>2Sz6M1</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_MI17_BASE">
+<English>Mi-8</English>
+<Czech>Mi-8</Czech>
+<German>Mi-8</German>
+<Polish>Mi-8</Polish>
+<Russian>Ми-8</Russian>
+<French>Mi-8</French>
+<Spanish>Mi-8</Spanish>
+<Italian>Mi-8</Italian>
+<Hungarian>Mi-8</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_MI17_INS">
+<English>Mi-8MT</English>
+<Czech>Mi-8MT</Czech>
+<German>Mi-8MT</German>
+<Polish>Mi-8MT</Polish>
+<Russian>Ми-8МT</Russian>
+<French>Mi-8MT</French>
+<Spanish>Mi-8MT</Spanish>
+<Italian>Mi-8MT</Italian>
+<Hungarian>Mi-8MT</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_MI17_TK">
+<English>Mi-8MT</English>
+<Czech>Mi-8MT</Czech>
+<German>Mi-8MT</German>
+<Polish>Mi-8MT</Polish>
+<Russian>Ми-8МT</Russian>
+<French>Mi-8MT</French>
+<Spanish>Mi-8MT</Spanish>
+<Italian>Mi-8MT</Italian>
+<Hungarian>Mi-8MT</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_MI17_CDF">
+<English>Mi-17M</English>
+<Czech>Mi-17M</Czech>
+<German>Mi-17M</German>
+<Polish>Mi-17M</Polish>
+<Russian>Ми-17М</Russian>
+<French>Mi-17M</French>
+<Spanish>Mi-17M</Spanish>
+<Italian>Mi-17M</Italian>
+<Hungarian>Mi-17M</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_MI171SH_CZ">
+<English>Mi-171Sh</English>
+<Czech>Mi-171Š</Czech>
+<German>Mi-171Sh</German>
+<Polish>Mi-171Sz</Polish>
+<Russian>Ми-171Ш</Russian>
+<French>Mi-171Sh</French>
+<Spanish>Mi-171Sh</Spanish>
+<Italian>Mi-171Sh</Italian>
+<Hungarian>Mi-171S</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_MI17_ROCKETS_RU">
+<English>Mi-8MTV-3</English>
+<Czech>Mi-8MTV-3</Czech>
+<German>Mi-8MTV-3</German>
+<Polish>Mi-8MTW-3</Polish>
+<Russian>Ми-8МTВ-3</Russian>
+<French>Mi-8MTV-3</French>
+<Spanish>Mi-8MTV-3</Spanish>
+<Italian>Mi-8MTV-3</Italian>
+<Hungarian>Mi-8MTV-3</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_MI17_CIVILIAN">
+<English>Mi-8MTV-1</English>
+<Czech>Mi-8MTV-1</Czech>
+<German>Mi-8MTV-1</German>
+<Polish>Mi-8MTW-1</Polish>
+<Russian>Ми-8МTВ-1</Russian>
+<French>Mi-8MTV-1</French>
+<Spanish>Mi-8MTV-1</Spanish>
+<Italian>Mi-8MTV-1</Italian>
+<Hungarian>Mi-8MTV-1</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_MI24_BASE">
+<English>Mi-24</English>
+<Czech>Mi-24</Czech>
+<German>Mi-24</German>
+<Polish>Mi-24</Polish>
+<Russian>Ми-24</Russian>
+<French>Mi-24</French>
+<Spanish>Mi-24</Spanish>
+<Italian>Mi-24</Italian>
+<Hungarian>Mi-24</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_MI24_D">
+<English>Mi-24D</English>
+<Czech>Mi-24D</Czech>
+<German>Mi-24D</German>
+<Polish>Mi-24D</Polish>
+<Russian>Ми-24Д</Russian>
+<French>Mi-24D</French>
+<Spanish>Mi-24D</Spanish>
+<Italian>Mi-24D</Italian>
+<Hungarian>Mi-24D</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_MI24_V">
+<English>Mi-24V</English>
+<Czech>Mi-24V</Czech>
+<German>Mi-24W</German>
+<Polish>Mi-24W</Polish>
+<Russian>Ми-24В</Russian>
+<French>Mi-24V</French>
+<Spanish>Mi-24V</Spanish>
+<Italian>Mi-24V</Italian>
+<Hungarian>Mi-24V</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_MI24_P">
+<English>Mi-24P</English>
+<Czech>Mi-24P</Czech>
+<German>Mi-24P</German>
+<Polish>Mi-24P</Polish>
+<Russian>Ми-24П</Russian>
+<French>Mi-24P</French>
+<Spanish>Mi-24P</Spanish>
+<Italian>Mi-24P</Italian>
+<Hungarian>Mi-24P</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_KA52">
+<English>Ka-52</English>
+<Czech>Ka-52</Czech>
+<German>Ka-52</German>
+<Polish>Ka-52</Polish>
+<Russian>Ка-52</Russian>
+<French>Ka-52</French>
+<Spanish>Ka-52</Spanish>
+<Italian>Ka-52</Italian>
+<Hungarian>Ka-52</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_SU25_BASE">
+<English>Su-25</English>
+<Czech>Su-25</Czech>
+<German>Su-25</German>
+<Polish>Su-25</Polish>
+<Russian>Су-25</Russian>
+<French>Su-25</French>
+<Spanish>Su-25</Spanish>
+<Italian>Su-25</Italian>
+<Hungarian>Szu-25</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_SU25_K">
+<English>Su-25K</English>
+<Czech>Su-25K</Czech>
+<German>Su-25K</German>
+<Polish>Su-25K</Polish>
+<Russian>Су-25K</Russian>
+<French>Su-25K</French>
+<Spanish>Su-25K</Spanish>
+<Italian>Su-25K</Italian>
+<Hungarian>Szu-25K</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_SU34">
+<English>Su-34</English>
+<Czech>Su-34</Czech>
+<German>Su-34</German>
+<Polish>Su-34</Polish>
+<Russian>Су-34</Russian>
+<French>Su-34</French>
+<Spanish>Su-34</Spanish>
+<Italian>Su-34</Italian>
+<Hungarian>Szu-34</Hungarian>
+</Key>
+</Container>
+<Container name="STR_ACE_VDNS_CV">
+<Key ID="STR_ACE_VDNS_SKODABASE">
+<English>Škoda</English>
+<Czech>Škodovka</Czech>
+<German>Škoda</German>
+<Polish>Škoda</Polish>
+<Russian>Škoda</Russian>
+<French>Škoda</French>
+<Spanish>Škoda</Spanish>
+<Italian>Škoda</Italian>
+<Hungarian>Škoda</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDNS_LADA_BASE">
+<English>Lada</English>
+<Czech>Lada</Czech>
+<German>Lada</German>
+<Polish>Łada</Polish>
+<Russian>ВАЗ-2103 Лада</Russian>
+<French>Lada</French>
+<Spanish>Lada</Spanish>
+<Italian>Lada</Italian>
+<Hungarian>Lada</Hungarian>
+</Key>
+</Container>
+
+<!-- Magazines -->
+<Container name="STR_ACE_MDN_US">
+<Key ID="STR_ACE_MDN_762X51_BALL">
+<English>7.62x51mm Ball</English>
+<Czech>7.62x51mm Ball</Czech>
+<German>7.62x51mm Ball</German>
+<Polish>taśma 7,62x51mm</Polish>
+<Russian>7,62x51мм Балл</Russian>
+<French>7.62x51mm Ball</French>
+<Spanish>7.62x51mm Ball</Spanish>
+<Italian>7.62x51mm Ball</Italian>
+<Hungarian>7.62x51mm Ball</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_127X99_BALL">
+<English>.50cal Ball</English>
+<Czech>12.7x99mm Ball</Czech>
+<German>12.7x99mm Ball</German>
+<Polish>taśma 12,7x99mm</Polish>
+<Russian>12,7x99мм Балл</Russian>
+<French>12.7x99mm Ball</French>
+<Spanish>12.7x99mm Ball</Spanish>
+<Italian>12.7x99mm Ball</Italian>
+<Hungarian>12.7x99mm Ball</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_127X99_SLAP_T">
+<English>12.7x99mm SLAP-T</English>
+<Czech>12.7x99mm SLAP-T</Czech>
+<German>12.7x99mm SLAP-T</German>
+<Polish>taśma 12,7x99mm SLAP-T</Polish>
+<Russian>12,7x99мм SLAP-T</Russian>
+<French>12.7x99mm SLAP-T</French>
+<Spanish>12.7x99mm SLAP-T</Spanish>
+<Italian>12.7x99mm SLAP-T</Italian>
+<Hungarian>12.7x99mm SLAP-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_25MM_M792_HEI_T">
+<English>25x137mm M792 HEI-T</English>
+<Czech>25x137mm M792 HEI-T</Czech>
+<German>25x137mm M792 HEI-T</German>
+<Polish>taśma 25x137mm M792 HEI-T</Polish>
+<Russian>25x137мм M792 HEI-T</Russian>
+<French>25x137mm M792 HEI-T</French>
+<Spanish>25x137mm M792 HEI-T</Spanish>
+<Italian>25x137mm M792 HEI-T</Italian>
+<Hungarian>25x137mm M792 HEI-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_25MM_M791_APDS_T">
+<English>25x137mm M791 APDS-T</English>
+<Czech>25x137mm M791 APDS-T</Czech>
+<German>25x137mm M791 APDS-T</German>
+<Polish>taśma 25x137mm M791 APDS-T</Polish>
+<Russian>25x137мм M791 APDS-T</Russian>
+<French>25x137mm M791 APDS-T</French>
+<Spanish>25x137mm M791 APDS-T</Spanish>
+<Italian>25x137mm M791 APDS-T</Italian>
+<Hungarian>25x137mm M791 APDS-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_25MM_M919_APFSDS_T">
+<English>25x137mm M919 APFSDS-T</English>
+<Czech>25x137mm M919 APFSDS-T</Czech>
+<German>25x137mm M919 APFSDS-T</German>
+<Polish>taśma 25x137mm M919 APFSDS-T</Polish>
+<Russian>25x137мм M919 APFSDS-T</Russian>
+<French>25x137mm M919 APFSDS-T</French>
+<Spanish>25x137mm M919 APFSDS-T</Spanish>
+<Italian>25x137mm M919 APFSDS-T</Italian>
+<Hungarian>25x137mm M919 APFSDS-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_20MM_PGU28B_SAPHEI_T">
+<English>20x102mm PGU-28/B SAPHEI-T</English>
+<Czech>20x102mm PGU-28/B SAPHEI-T</Czech>
+<German>20x102mm PGU-28/B SAPHEI-T</German>
+<Polish>taśma 20x102mm PGU-28/B SAPHEI-T</Polish>
+<Russian>20x102мм PGU-28/B SAPHEI-T</Russian>
+<French>20x102mm PGU-28/B SAPHEI-T</French>
+<Spanish>20x102mm PGU-28/B SAPHEI-T</Spanish>
+<Italian>20x102mm PGU-28/B SAPHEI-T</Italian>
+<Hungarian>20x102mm PGU-28/B SAPHEI-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_30MM_PGU14AB_API_T">
+<English>30x173mm PGU-14A/B API-T</English>
+<Czech>30x173mm PGU-14A/B API-T</Czech>
+<German>30x173mm PGU-14A/B API-T</German>
+<Polish>taśma 30x173mm PGU-14A/B API-T</Polish>
+<Russian>30x173мм PGU-14A/B API-T</Russian>
+<French>30x173mm PGU-14A/B API-T</French>
+<Spanish>30x173mm PGU-14A/B API-T</Spanish>
+<Italian>30x173mm PGU-14A/B API-T</Italian>
+<Hungarian>30x173mm PGU-14A/B API-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_30MM_M789_HEDP_T">
+<English>30x113mm M789 HEDP-T</English>
+<Czech>30x113mm M789 HEDP-T</Czech>
+<German>30x113mm M789 HEDP-T</German>
+<Polish>taśma 30x113mm M789 HEDP-T</Polish>
+<Russian>30x113мм M789 HEDP-T</Russian>
+<French>30x113mm M789 HEDP-T</French>
+<Spanish>30x113mm M789 HEDP-T</Spanish>
+<Italian>30x113mm M789 HEDP-T</Italian>
+<Hungarian>30x113mm M789 HEDP-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_105MM_M900_APFSDS_T">
+<English>M900 APFSDS-T</English>
+<Czech>M900 APFSDS-T</Czech>
+<German>M900 Wuchtgeschoss</German>
+<Polish>pocisk M900 (podkalibrowy)</Polish>
+<Russian>M900 APFSDS-T</Russian>
+<French>M900 APFSDS-T</French>
+<Spanish>M900 APFSDS-T</Spanish>
+<Italian>M900 APFSDS-T</Italian>
+<Hungarian>M900 APFSDS-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_105MM_M456A2_HEAT_T">
+<English>M456A2 HEAT-T</English>
+<Czech>M456A2 kumulativní</Czech>
+<German>M456A2 Hohlladung</German>
+<Polish>pocisk M456A2 (kumulacyjny)</Polish>
+<Russian>M456A2 HEAT-T</Russian>
+<French>M456A2 HEAT-T</French>
+<Spanish>M456A2 HEAT-T</Spanish>
+<Italian>M456A2 HEAT-T</Italian>
+<Hungarian>M456A2 HEAT-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_120MM_M829A3_APFSDS_T">
+<English>M829A3 APFSDS-T</English>
+<Czech>M829A3 APFSDS-T</Czech>
+<German>M829A3 Wuchtgeschoss</German>
+<Polish>pocisk M829A3 (podkalibrowy)</Polish>
+<Russian>M829A3 APFSDS-T</Russian>
+<French>M829A3 APFSDS-T</French>
+<Spanish>M829A3 APFSDS-T</Spanish>
+<Italian>M829A3 APFSDS-T</Italian>
+<Hungarian>M829A3 APFSDS-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_120MM_M830A1_HEAT_MP_T">
+<English>M830A1 HEAT-MP-T</English>
+<Czech>M830A1 kumulativní</Czech>
+<German>M830A1 Hohlladung</German>
+<Polish>pocisk M830A1 (kumulacyjny)</Polish>
+<Russian>M830A1 HEAT-MP-T</Russian>
+<French>M830A1 HEAT-MP-T</French>
+<Spanish>M830A1 HEAT-MP-T</Spanish>
+<Italian>M830A1 HEAT-MP-T</Italian>
+<Hungarian>M830A1 HEAT-MP-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_120MM_M1018_CANISTER">
+<English>M1028 Canister</English>
+<Czech>M1028 kartáč</Czech>
+<German>M1028 Kartätsche</German>
+<Polish>pocisk M1028 (kartacz)</Polish>
+<Russian>M1028 шрапнельный</Russian>
+<French>M1028 mitraille</French>
+<Spanish>M1028 metralla</Spanish>
+<Italian>M1028 Canister</Italian>
+<Hungarian>M1028 Canister</Hungarian>
+</Key>
+</Container>
+<Container name="STR_ACE_MDN_RU">
+<Key ID="STR_ACE_MDN_762X54_BALL">
+<English>7.62x54mm Ball</English>
+<Czech>7.62x54mm Ball</Czech>
+<German>7.62x54mm Ball</German>
+<Polish>taśma 7,62x54mm</Polish>
+<Russian>7,62x54мм Балл</Russian>
+<French>7.62x54mm Ball</French>
+<Spanish>7.62x54mm Ball</Spanish>
+<Italian>7.62x54mm Ball</Italian>
+<Hungarian>7.62x54mm Ball</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_127X108_B32">
+<English>12.7x108mm B-32</English>
+<Czech>12.7x108mm B-32</Czech>
+<German>12.7x108mm B-32</German>
+<Polish>taśma 12,7x108mm B-32</Polish>
+<Russian>12,7x108мм Б-32</Russian>
+<French>12.7x108mm B-32</French>
+<Spanish>12.7x108mm B-32</Spanish>
+<Italian>12.7x108mm B-32</Italian>
+<Hungarian>12.7x108mm B-32</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_127X108_1SL">
+<English>12.7x108mm 1SL</English>
+<Czech>12.7x108mm 1SL</Czech>
+<German>12.7x108mm 1SL</German>
+<Polish>12,7x108mm 1SL</Polish>
+<Russian>taśma 12,7x108мм 1СЛ</Russian>
+<French>12.7x108mm 1SL</French>
+<Spanish>12.7x108mm1SL</Spanish>
+<Italian>12.7x108mm 1SL</Italian>
+<Hungarian>12.7x108mm 1SL</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_145X115_BZT">
+<English>14.5x115mm BZT</English>
+<Czech>14.5x115mm BZT</Czech>
+<German>14.5x115mm BZT</German>
+<Polish>taśma 14,5x115mm BZT</Polish>
+<Russian>14,5x115мм БЗТ</Russian>
+<French>14.5x115mm BZT</French>
+<Spanish>14.5x115mm BZT</Spanish>
+<Italian>14.5x115mm BZT</Italian>
+<Hungarian>14.5x115mm BZT</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_23X115_AM23">
+<English>23x115mm AM-23</English>
+<Czech>23x115mm AM-23</Czech>
+<German>23x115mm AM-23</German>
+<Polish>23x115mm AM-23</Polish>
+<Russian>23x115мм АМ-23</Russian>
+<French>23x115mm AM-23</French>
+<Spanish>23x115mm AM-23</Spanish>
+<Italian>23x115mm AM-23</Italian>
+<Hungarian>23x115mm AM-23</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_23X152_OFZT">
+<English>23x152mm OFZT</English>
+<Czech>23x152mm OFZT</Czech>
+<German>23x152mm OFZT</German>
+<Polish>taśma 23x152mm OFZT</Polish>
+<Russian>23x152мм ОФЗТ</Russian>
+<French>23x152mm OFZT</French>
+<Spanish>23x152mm OFZT</Spanish>
+<Italian>23x152mm OFZT</Italian>
+<Hungarian>23x152mm OFZT</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_23X152_BZT">
+<English>23x152mm BZT</English>
+<Czech>23x152mm BZT</Czech>
+<German>23x152mm BZT</German>
+<Polish>taśma 23x152mm BZT</Polish>
+<Russian>23x152мм БЗТ</Russian>
+<French>23x152mm BZT</French>
+<Spanish>23x152mm BZT</Spanish>
+<Italian>23x152mm BZT</Italian>
+<Hungarian>23x152mm BZT</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_30x165_3UOF8_OFZT">
+<English>30x165mm 3UOF8 OFZT</English>
+<Czech>30x165mm 3UOF8 OFZT</Czech>
+<German>30x165mm 3UOF8 OFZT</German>
+<Polish>taśma 30x165mm 3UOF8 OFZT</Polish>
+<Russian>30x165мм ОФЗС 3УОФ8</Russian>
+<French>30x165mm 3UOF8 OFZT</French>
+<Spanish>30x165mm 3UOF8 OFZT</Spanish>
+<Italian>30x165mm 3UOF8 OFZT</Italian>
+<Hungarian>30x165mm 3UOF8 OFZT</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_30x165_3UBR8_BT">
+<English>30x165mm 3UOF8 BT</English>
+<Czech>30x165mm 3UOF8 BT</Czech>
+<German>30x165mm 3UOF8 BT</German>
+<Polish>taśma 30x165mm 3UOF8 BT</Polish>
+<Russian>30x165мм БПС 3УБР8</Russian>
+<French>30x165mm 3UOF8 BT</French>
+<Spanish>30x165mm 3UOF8 BT</Spanish>
+<Italian>30x165mm 3UOF8 BT</Italian>
+<Hungarian>30x165mm 3UOF8 BT</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_PG9">
+<English>PG-9 HEAT-FS</English>
+<Czech>PG-9 kumulativní</Czech>
+<German>PG-9 Hohlladung</German>
+<Polish>pocisk PG-9 (kumulacyjny)</Polish>
+<Russian>ПГ-9В</Russian>
+<French>PG-9 HEAT-FS</French>
+<Spanish>PG-9 HEAT-FS</Spanish>
+<Italian>PG-9 HEAT-FS</Italian>
+<Hungarian>PG-9 HEAT-FS</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_OG9">
+<English>OG-9 HE-Frag</English>
+<Czech>OG-9 výbušnina</Czech>
+<German>OG-9 Splitterspreng</German>
+<Polish>pocisk OG-9 (odłamkowo-burzący)</Polish>
+<Russian>ОГ-9В</Russian>
+<French>OG-9 HE-Frag</French>
+<Spanish>OG-9 HE-Frag</Spanish>
+<Italian>OG-9 HE-Frag</Italian>
+<Hungarian>OG-9 HE-Frag</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_73MM_PG15V">
+<English>PG-15V HEAT-T</English>
+<Czech>PG-15V kumulativní</Czech>
+<German>PG-15V Hohlladung</German>
+<Polish>pocisk PG-15W (podkalibrowy)</Polish>
+<Russian>ПГ-15В</Russian>
+<French>PG-15V HEAT-T</French>
+<Spanish>PG-15V HEAT-T</Spanish>
+<Italian>PG-15V HEAT-T</Italian>
+<Hungarian>PG-15V HEAT-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_73MM_OG15V">
+<English>OG-15V HE-Frag-T</English>
+<Czech>OG-15V výbušnina</Czech>
+<German>OG-15V Splitterspreng</German>
+<Polish>pocisk OG-15W (odłamkowo-burzący)</Polish>
+<Russian>ОГ-15В</Russian>
+<French>OG-15V HE-Frag-T</French>
+<Spanish>OG-15V HE-Frag-T</Spanish>
+<Italian>OG-15V HE-Frag-T</Italian>
+<Hungarian>OG-15V HE-Frag-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_85MM_O365K_HE_FRAG_T">
+<English>O-365K HE-Frag-T</English>
+<Czech>O-365K výbušnina</Czech>
+<German>O-365K Splitterspreng</German>
+<Polish>pocisk O-365K (odłamkowo-burzący)</Polish>
+<Russian>ОС О-365К</Russian>
+<French>O-365K HE-FRAG-T</French>
+<Spanish>O-365K HE-FRAG-T</Spanish>
+<Italian>O-365K HE-FRAG-T</Italian>
+<Hungarian>O-365K HE-FRAG-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_85MM_BR365_AP_T">
+<English>BR-365 AP-T</English>
+<Czech>BR-365 AP-T</Czech>
+<German>BR-365 AP-T</German>
+<Polish>pocisk BR-365 (przeciwpancerny)</Polish>
+<Russian>БКС БР-365</Russian>
+<French>BR-365 AP-T</French>
+<Spanish>BR-365 AP-T</Spanish>
+<Italian>BR-365 AP-T</Italian>
+<Hungarian>BR-365 AP-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_85MM_BR365P_APDS_T">
+<English>BR-365P APDS-T</English>
+<Czech>BR-365P APDS-T</Czech>
+<German>BR-365P Wuchtgeschoss</German>
+<Polish>pocisk BR-365P (podkalibrowy)</Polish>
+<Russian>БПС БР-365П</Russian>
+<French>BR-365P APDS-T</French>
+<Spanish>BR-365P APDS-T</Spanish>
+<Italian>BR-365P APDS-T</Italian>
+<Hungarian>BR-365P APDS-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_100MM_3OF32_HE_F_FS_T">
+<English>3OF32 HE-Frag-FS-T</English>
+<Czech>3OF32 výbušnina</Czech>
+<German>3OF32 Splitterspreng</German>
+<Polish>pocisk 3OF32 (odłamkowo-burzący)</Polish>
+<Russian>ОФС 3ОФ32</Russian>
+<French>3OF32 HE-Frag-FS-T</French>
+<Spanish>3OF32 HE-Frag-FS-T</Spanish>
+<Italian>3OF32 HE-Frag-FS-T</Italian>
+<Hungarian>3OF32 HE-Frag-FS-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_125MM_3BM42_APFSDS_T">
+<English>3BM42 APFSDS-T</English>
+<Czech>3BM42 APFSDS-T</Czech>
+<German>3BM42 Wuchtgeschoss</German>
+<Polish>pocisk 3BM42 (podkalibrowy)</Polish>
+<Russian>ОБПС 3БМ42</Russian>
+<French>3BM42 APFSDS-T</French>
+<Spanish>3BM42 APFSDS-T</Spanish>
+<Italian>3BM42 APFSDS-T</Italian>
+<Hungarian>3BM42 APFSDS-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_125MM_3BM42M_APFSDS_T">
+<English>3BM42M APFSDS-T</English>
+<Czech>3BM42M APFSDS-T</Czech>
+<German>3BM42M Wuchtgeschoss</German>
+<Polish>pocisk 3BM42M (podkalibrowy)</Polish>
+<Russian>ОБПС 3БМ42М</Russian>
+<French>3BM42M APFSDS-T</French>
+<Spanish>3BM42M APFSDS-T</Spanish>
+<Italian>3BM42M APFSDS-T</Italian>
+<Hungarian>3BM42M APFSDS-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_125MM_3BM17_APFSDS_T">
+<English>3BM17 APFSDS-T</English>
+<Czech>3BM17 APFSDS-T</Czech>
+<German>3BM17 Wuchtgeschoss</German>
+<Polish>pocisk 3BM17 (podkalibrowy)</Polish>
+<Russian>БПС 3БМ17</Russian>
+<French>3BM17 APFSDS-T</French>
+<Spanish>3BM17 APFSDS-T</Spanish>
+<Italian>3BM17 APFSDS-T</Italian>
+<Hungarian>3BM17 APFSDS-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_125MM_3BK29_HEAT_FS_T">
+<English>3BK29 HEAT-FS-T</English>
+<Czech>3BK29 kumulativní</Czech>
+<German>3BK29 Hohlladung</German>
+<Polish>pocisk 3BK29 (kumulacyjny)</Polish>
+<Russian>БКС 3БК29</Russian>
+<French>3BK29 HEAT-FS-T</French>
+<Spanish>3BK29 HEAT-FS-T</Spanish>
+<Italian>3BK29 HEAT-FS-T</Italian>
+<Hungarian>3BK29 HEAT-FS-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_125MM_3BK18_HEAT_FS_T">
+<English>3BK18 HEAT-FS-T</English>
+<Czech>3BK18 kumulativní</Czech>
+<German>3BK18 Hohlladung</German>
+<Polish>pocisk 3BK18 (kumulacyjny)</Polish>
+<Russian>БКС 3БК18</Russian>
+<French>3BK18 HEAT-FS-T</French>
+<Spanish>3BK18 HEAT-FS-T</Spanish>
+<Italian>3BK18 HEAT-FS-T</Italian>
+<Hungarian>3BK18 HEAT-FS-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_125MM_3BK29M_HEAT_FS_T">
+<English>3BK29M HEAT-FS-T</English>
+<Czech>3BK29M kumulativní</Czech>
+<German>3BK29M Hohlladung</German>
+<Polish>pocisk 3BK29M (kumulacyjny)</Polish>
+<Russian>БКС 3БК29М</Russian>
+<French>3BK29M HEAT-FS-T</French>
+<Spanish>3BK29M HEAT-FS-T</Spanish>
+<Italian>3BK29M HEAT-FS-T</Italian>
+<Hungarian>3BK29M HEAT-FS-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_125MM_3OF26_HE_F_FS_T">
+<English>3OF26 HE-Frag-FS-T</English>
+<Czech>3OF26 výbušnina</Czech>
+<German>3OF26 Splitterspreng</German>
+<Polish>pocisk 3OF26 (odłamkowo-burzący)</Polish>
+<Russian>ОФС 3ОФ26</Russian>
+<French>3OF26 HE-Frag-FS-T</French>
+<Spanish>3OF26 HE-Frag-FS-T</Spanish>
+<Italian>3OF26 HE-Frag-FS-T</Italian>
+<Hungarian>3OF26 HE-Frag-FS-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_AT2">
+<English>9M17MP Skorpion-MP</English>
+<Czech>9M17MP Skorpion-MP</Czech>
+<German>9M17MP Skorpion-MP</German>
+<Polish>pocisk 9M17MP Skorpion-MP</Polish>
+<Russian>ПТУР 9М17МП</Russian>
+<French>9M17MP Skorpion-MP</French>
+<Spanish>9M17MP Skorpion-MP</Spanish>
+<Italian>9M17MP Skorpion-MP</Italian>
+<Hungarian>9M17MP Skorpion-MP</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_AT3C">
+<English>9M14P Malyutka-P</English>
+<Czech>9M14P Malyutka-P</Czech>
+<German>9M14P Malyutka-P</German>
+<Polish>pocisk 9M14P Malutka-P</Polish>
+<Russian>ПТУР 9М14П</Russian>
+<French>9M14P Malyutka-P</French>
+<Spanish>9M14P Malyutka-P</Spanish>
+<Italian>9M14P Malyutka-P</Italian>
+<Hungarian>9M14P Malyutka-P</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_AT3P">
+<English>9M14P1 Malyutka-P1</English>
+<Czech>9M14P1 Malyutka-P1</Czech>
+<German>9M14P1 Malyutka-P1</German>
+<Polish>pocisk 9M14P1 Malutka-P1</Polish>
+<Russian>ПТУР 9М14П1</Russian>
+<French>9M14P1 Malyutka-P1</French>
+<Spanish>9M14P1 Malyutka-P1</Spanish>
+<Italian>9M14P1 Malyutka-P1</Italian>
+<Hungarian>9M14P1 Malyutka-P1</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_AT5">
+<English>9M113 Konkurs</English>
+<Czech>9M113 Konkurs</Czech>
+<German>9M113 Konkurs</German>
+<Polish>pocisk 9M113 Konkurs</Polish>
+<Russian>ПТУР 9М113</Russian>
+<French>9M113 Konkurs</French>
+<Spanish>9M113 Konkurs</Spanish>
+<Italian>9M113 Konkurs</Italian>
+<Hungarian>9M113 Konkursz</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_AT5B">
+<English>9M113M Konkurs-M</English>
+<Czech>9M113M Konkurs-M</Czech>
+<German>9M113M Konkurs-M</German>
+<Polish>pocisk 9M113M Konkurs-M</Polish>
+<Russian>ПТУР 9М113М</Russian>
+<French>9M113M Konkurs-M</French>
+<Spanish>9M113M Konkurs-M</Spanish>
+<Italian>9M113M Konkurs-M</Italian>
+<Hungarian>9M113M Konkursz-M</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_AT6">
+<English>9M114M2 Kokon-M2</English>
+<Czech>9M114M2 Kokon-M2</Czech>
+<German>9M114M2 Kokon-M2</German>
+<Polish>pocisk 9M114M2 Kokon-M2</Polish>
+<Russian>ПТУР 9М114М2</Russian>
+<French>9M114M2 Kokon-M2</French>
+<Spanish>9M114M2 Kokon-M2</Spanish>
+<Italian>9M114M2 Kokon-M2</Italian>
+<Hungarian>9M114M2 Kokon-M2</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_AT9">
+<English>9M120M Ataka-V</English>
+<Czech>9M120M Ataka-V</Czech>
+<German>9M120M Ataka-V</German>
+<Polish>pocisk 9M120M Ataka-W</Polish>
+<Russian>ПТУР 9М120М</Russian>
+<French>9M120M Ataka-V</French>
+<Spanish>9M120M Ataka-V</Spanish>
+<Italian>9M120M Ataka-V</Italian>
+<Hungarian>9M120M Ataka-V</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_AT10">
+<English>9M117M1 Arkan</English>
+<Czech>9M117M1 Arkan</Czech>
+<German>9M117M1 Arkan</German>
+<Polish>pocisk 9M117M1 Arkan</Polish>
+<Russian>ПТУР 9М117М1 Аркан</Russian>
+<French>9M117M1 Arkan</French>
+<Spanish>9M117M1 Arkan</Spanish>
+<Italian>9M117M1 Arkan</Italian>
+<Hungarian>9M117M1 Arkan</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_AT11_T72">
+<English>9M119 Refleks</English>
+<Czech>9M119 Refleks</Czech>
+<German>9M119 Refleks</German>
+<Polish>pocisk 9M119 Refleks</Polish>
+<Russian>ПТУР 9М119М Инвар</Russian>
+<French>9M119 Refleks</French>
+<Spanish>9M119 Refleks</Spanish>
+<Italian>9M119 Refleks</Italian>
+<Hungarian>9M119 Refleksz</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_AT11_T90">
+<English>9M119M1 Invar-M</English>
+<Czech>9M119M1 Invar-M</Czech>
+<German>9M119M1 Invar-M</German>
+<Polish>pocisk 9M119M1 Inwar-M</Polish>
+<Russian>ПТУР 9М119М1 Инвар-М</Russian>
+<French>9M119M1 Invar-M</French>
+<Spanish>9M119M1 Invar-M</Spanish>
+<Italian>9M119M1 Invar-M</Italian>
+<Hungarian>9M119M1 Invar-M</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_AT13_STATIC">
+<English>9M131M</English>
+<Czech>9M131M</Czech>
+<German>9M131M</German>
+<Polish>pocisk 9M131M</Polish>
+<Russian>ПТУР 9М131М</Russian>
+<French>9M131M</French>
+<Spanish>9M131M</Spanish>
+<Italian>9M131M</Italian>
+<Hungarian>9M131M</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_VIKHR">
+<English>9M127M Vikhr</English>
+<Czech>9M127M Vichr</Czech>
+<German>9M127M Vikhr</German>
+<Polish>pocisk 9M127M Wichr</Polish>
+<Russian>ПТУР 9А4172</Russian>
+<French>9M127M Vikhr</French>
+<Spanish>9M127M Vikhr</Spanish>
+<Italian>9M127M Vikhr</Italian>
+<Hungarian>9M127M Vikhr</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_CH29">
+<English>Kh-29L</English>
+<Czech>Ch-29L</Czech>
+<German>Kh-29L</German>
+<Polish>pocisk Ch-29L</Polish>
+<Russian>УР Х-29Л</Russian>
+<French>Kh-29L</French>
+<Spanish>Kh-29L</Spanish>
+<Italian>Kh-29L</Italian>
+<Hungarian>Kh-29L</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_9M31">
+<English>9M31M Strela-1M</English>
+<Czech>9M31M Strela-1M</Czech>
+<German>9M31M Strela-1M</German>
+<Polish>pocisk 9M31M Strzała-1M</Polish>
+<Russian>ЗУР 9М31М</Russian>
+<French>9M31M Strela-1M</French>
+<Spanish>9M31M Strela-1M</Spanish>
+<Italian>9M31M Strela-1M</Italian>
+<Hungarian>9M31M Sztrela-1M</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_9M311">
+<English>9M311-M1</English>
+<Czech>9M311-M1</Czech>
+<German>9M311-M1</German>
+<Polish>pocisk 9M311-M1</Polish>
+<Russian>ЗУР 9М311М</Russian>
+<French>9M311-M1</French>
+<Spanish>9M311-M1</Spanish>
+<Italian>9M311-M1</Italian>
+<Hungarian>9M311-M1</Hungarian>
+</Key>
+</Container>
+
+<!-- Magazines (short) - must remain short and tell what type of ammo is loaded!!! -->
+<Container name="STR_ACE_MDNS_RU">
+<Key ID="STR_ACE_MDNS_127X108_B32">
+<English>API</English>
+<Czech>API</Czech>
+<German>API</German>
+<Polish>API</Polish>
+<Russian>API</Russian>
+<French>API</French>
+<Spanish>API</Spanish>
+<Italian>API</Italian>
+<Hungarian>API</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_127X108_1SL">
+<English>Duplex</English>
+<Czech>Duplex</Czech>
+<German>Duplex</German>
+<Polish>Duplex</Polish>
+<Russian>Duplex</Russian>
+<French>Duplex</French>
+<Spanish>Duplex</Spanish>
+<Italian>Duplex</Italian>
+<Hungarian>Duplex</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_145X115_BZT">
+<English>API-T</English>
+<Czech>API-T</Czech>
+<German>API-T</German>
+<Polish>API-T</Polish>
+<Russian>API-T</Russian>
+<French>API-T</French>
+<Spanish>API-T</Spanish>
+<Italian>API-T</Italian>
+<Hungarian>API-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_23X115_AM23">
+<English>AM-23</English>
+<Czech>AM-23</Czech>
+<German>AM-23</German>
+<Polish>AM-23</Polish>
+<Russian>АМ-23</Russian>
+<French>AM-23</French>
+<Spanish>AM-23</Spanish>
+<Italian>AM-23</Italian>
+<Hungarian>AM-23</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_23X152_OFZT">
+<English>HEI-T</English>
+<Czech>HEI-T</Czech>
+<German>HEI-T</German>
+<Polish>HEI-T</Polish>
+<Russian>HEI-T</Russian>
+<French>HEI-T</French>
+<Spanish>HEI-T</Spanish>
+<Italian>HEI-T</Italian>
+<Hungarian>HEI-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_23X152_BZT">
+<English>API-T</English>
+<Czech>API-T</Czech>
+<German>API-T</German>
+<Polish>API-T</Polish>
+<Russian>API-T</Russian>
+<French>API-T</French>
+<Spanish>API-T</Spanish>
+<Italian>API-T</Italian>
+<Hungarian>API-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_30x165_3UOF8_OFZT">
+<English>HEI-T</English>
+<Czech>HEI-T</Czech>
+<German>HEI-T</German>
+<Polish>HEI-T</Polish>
+<Russian>HEI-T</Russian>
+<French>HEI-T</French>
+<Spanish>HEI-T</Spanish>
+<Italian>HEI-T</Italian>
+<Hungarian>HEI-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_30x165_3UBR8_BT">
+<English>APDS-T</English>
+<Czech>APDS-T</Czech>
+<German>APDS-T</German>
+<Polish>APDS-T</Polish>
+<Russian>APDS-T</Russian>
+<French>APDS-T</French>
+<Spanish>APDS-T</Spanish>
+<Italian>APDS-T</Italian>
+<Hungarian>APDS-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_PG9">
+<English>HEAT</English>
+<Czech>HEAT</Czech>
+<German>HEAT</German>
+<Polish>HEAT</Polish>
+<Russian>HEAT</Russian>
+<French>HEAT</French>
+<Spanish>HEAT</Spanish>
+<Italian>HEAT</Italian>
+<Hungarian>HEAT</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_OG9">
+<English>HE</English>
+<Czech>HE</Czech>
+<German>HE</German>
+<Polish>HE</Polish>
+<Russian>HE</Russian>
+<French>HE</French>
+<Spanish>HE</Spanish>
+<Italian>HE</Italian>
+<Hungarian>HE</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_73MM_PG15V">
+<English>HEAT</English>
+<Czech>HEAT</Czech>
+<German>HEAT</German>
+<Polish>HEAT</Polish>
+<Russian>HEAT</Russian>
+<French>HEAT</French>
+<Spanish>HEAT</Spanish>
+<Italian>HEAT</Italian>
+<Hungarian>HEAT</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_73MM_OG15V">
+<English>HE</English>
+<Czech>HE</Czech>
+<German>HE</German>
+<Polish>HE</Polish>
+<Russian>HE</Russian>
+<French>HE</French>
+<Spanish>HE</Spanish>
+<Italian>HE</Italian>
+<Hungarian>HE</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_85MM_O365K_HE_FRAG_T">
+<English>HE-FRAG-T</English>
+<Czech>HE-FRAG-T</Czech>
+<German>HE-FRAG-T</German>
+<Polish>HE-FRAG-T</Polish>
+<Russian>HE-FRAG-T</Russian>
+<French>HE-FRAG-T</French>
+<Spanish>HE-FRAG-T</Spanish>
+<Italian>HE-FRAG-T</Italian>
+<Hungarian>HE-FRAG-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_85MM_BR365_AP_T">
+<English>AP-T</English>
+<Czech>AP-T</Czech>
+<German>AP-T</German>
+<Polish>AP-T</Polish>
+<Russian>AP-T</Russian>
+<French>AP-T</French>
+<Spanish>AP-T</Spanish>
+<Italian>AP-T</Italian>
+<Hungarian>AP-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_85MM_BR365P_APDS_T">
+<English>APDS-T</English>
+<Czech>APDS-T</Czech>
+<German>APDS-T</German>
+<Polish>APDS-T</Polish>
+<Russian>APDS-T</Russian>
+<French>APDS-T</French>
+<Spanish>APDS-T</Spanish>
+<Italian>APDS-T</Italian>
+<Hungarian>APDS-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_100MM_3OF32_HE_F_FS_T">
+<English>HE-FRAG-T</English>
+<Czech>HE-FRAG-T</Czech>
+<German>HE-FRAG-T</German>
+<Polish>HE-FRAG-T</Polish>
+<Russian>HE-FRAG-T</Russian>
+<French>HE-FRAG-T</French>
+<Spanish>HE-FRAG-T</Spanish>
+<Italian>HE-FRAG-T</Italian>
+<Hungarian>HE-FRAG-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_125MM_3BM42_APFSDS_T">
+<English>APFSDS-T</English>
+<Czech>APFSDS-T</Czech>
+<German>APFSDS-T</German>
+<Polish>APFSDS-T</Polish>
+<Russian>APFSDS-T</Russian>
+<French>APFSDS-T</French>
+<Spanish>APFSDS-T</Spanish>
+<Italian>APFSDS-T</Italian>
+<Hungarian>APFSDS-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_125MM_3BM42M_APFSDS_T">
+<English>APFSDS-T</English>
+<Czech>APFSDS-T</Czech>
+<German>APFSDS-T</German>
+<Polish>APFSDS-T</Polish>
+<Russian>APFSDS-T</Russian>
+<French>APFSDS-T</French>
+<Spanish>APFSDS-T</Spanish>
+<Italian>APFSDS-T</Italian>
+<Hungarian>APFSDS-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_125MM_3BM17_APFSDS_T">
+<English>APFSDS-T</English>
+<Czech>APFSDS-T</Czech>
+<German>APFSDS-T</German>
+<Polish>APFSDS-T</Polish>
+<Russian>APFSDS-T</Russian>
+<French>APFSDS-T</French>
+<Spanish>APFSDS-T</Spanish>
+<Italian>APFSDS-T</Italian>
+<Hungarian>APFSDS-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_125MM_3BK29_HEAT_FS_T">
+<English>HEAT-FS-T</English>
+<Czech>HEAT-FS-T</Czech>
+<German>HEAT-FS-T</German>
+<Polish>HEAT-FS-T</Polish>
+<Russian>HEAT-FS-T</Russian>
+<French>HEAT-FS-T</French>
+<Spanish>HEAT-FS-T</Spanish>
+<Italian>HEAT-FS-T</Italian>
+<Hungarian>HEAT-FS-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_125MM_3BK18_HEAT_FS_T">
+<English>HEAT-FS-T</English>
+<Czech>HEAT-FS-T</Czech>
+<German>HEAT-FS-T</German>
+<Polish>HEAT-FS-T</Polish>
+<Russian>HEAT-FS-T</Russian>
+<French>HEAT-FS-T</French>
+<Spanish>HEAT-FS-T</Spanish>
+<Italian>HEAT-FS-T</Italian>
+<Hungarian>HEAT-FS-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_125MM_3BK29M_HEAT_FS_T">
+<English>HEAT-FS-T</English>
+<Czech>HEAT-FS-T</Czech>
+<German>HEAT-FS-T</German>
+<Polish>HEAT-FS-T</Polish>
+<Russian>HEAT-FS-T</Russian>
+<French>HEAT-FS-T</French>
+<Spanish>HEAT-FS-T</Spanish>
+<Italian>HEAT-FS-T</Italian>
+<Hungarian>HEAT-FS-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_125MM_3OF26_HE_F_FS_T">
+<English>HE-FRAG-T</English>
+<Czech>HE-FRAG-T</Czech>
+<German>HE-FRAG-T</German>
+<Polish>HE-FRAG-T</Polish>
+<Russian>HE-FRAG-T</Russian>
+<French>HE-FRAG-T</French>
+<Spanish>HE-FRAG-T</Spanish>
+<Italian>HE-FRAG-T</Italian>
+<Hungarian>HE-FRAG-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_AT2">
+<English>9M17MP</English>
+<Czech>9M17MP</Czech>
+<German>9M17MP</German>
+<Polish>9M17MP</Polish>
+<Russian>9М17МП</Russian>
+<French>9M17MP</French>
+<Spanish>9M17MP</Spanish>
+<Italian>9M17MP</Italian>
+<Hungarian>9M17MP</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_AT3C">
+<English>9M14P</English>
+<Czech>9M14P</Czech>
+<German>9M14P</German>
+<Polish>9M14P</Polish>
+<Russian>9М14П</Russian>
+<French>9M14P</French>
+<Spanish>9M14P</Spanish>
+<Italian>9M14P</Italian>
+<Hungarian>9M14P</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_AT3P">
+<English>9M14P1</English>
+<Czech>9M14P1</Czech>
+<German>9M14P1</German>
+<Polish>9M14P1</Polish>
+<Russian>9М14П1</Russian>
+<French>9M14P1</French>
+<Spanish>9M14P1</Spanish>
+<Italian>9M14P1</Italian>
+<Hungarian>9M14P1</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_AT5">
+<English>9M113</English>
+<Czech>9M113</Czech>
+<German>9M113</German>
+<Polish>9M113</Polish>
+<Russian>9М113</Russian>
+<French>9M113</French>
+<Spanish>9M113</Spanish>
+<Italian>9M113</Italian>
+<Hungarian>9M113</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_AT5B">
+<English>9M113M</English>
+<Czech>9M113M</Czech>
+<German>9M113M</German>
+<Polish>9M113M</Polish>
+<Russian>9М113М</Russian>
+<French>9M113M</French>
+<Spanish>9M113M</Spanish>
+<Italian>9M113M</Italian>
+<Hungarian>9M113M</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_AT6">
+<English>9M114M2</English>
+<Czech>9M114M2</Czech>
+<German>9M114M2</German>
+<Polish>9M114M2</Polish>
+<Russian>9М114М2</Russian>
+<French>9M114M2</French>
+<Spanish>9M114M2</Spanish>
+<Italian>9M114M2</Italian>
+<Hungarian>9M114M2</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_AT9">
+<English>9M120M</English>
+<Czech>9M120M</Czech>
+<German>9M120M</German>
+<Polish>9M120M</Polish>
+<Russian>9М120М</Russian>
+<French>9M120M</French>
+<Spanish>9M120M</Spanish>
+<Italian>9M120M</Italian>
+<Hungarian>9M120M</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_AT10">
+<English>9M117M1</English>
+<Czech>9M117M1</Czech>
+<German>9M117M1</German>
+<Polish>9M117M1</Polish>
+<Russian>9М117М1</Russian>
+<French>9M117M1</French>
+<Spanish>9M117M1</Spanish>
+<Italian>9M117M1</Italian>
+<Hungarian>9M117M1</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_AT11_T72">
+<English>9M119</English>
+<Czech>9M119</Czech>
+<German>9M119</German>
+<Polish>9M119</Polish>
+<Russian>9М119</Russian>
+<French>9M119</French>
+<Spanish>9M119</Spanish>
+<Italian>9M119</Italian>
+<Hungarian>9M119</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_AT11_T90">
+<English>9M119M1</English>
+<Czech>9M119M1</Czech>
+<German>9M119M1</German>
+<Polish>9M119M1</Polish>
+<Russian>9М119М1</Russian>
+<French>9M119M1</French>
+<Spanish>9M119M1</Spanish>
+<Italian>9M119M1</Italian>
+<Hungarian>9M119M1</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_AT13_STATIC">
+<English>9M131M</English>
+<Czech>9M131M</Czech>
+<German>9M131M</German>
+<Polish>9M131M</Polish>
+<Russian>9М131М</Russian>
+<French>9M131M</French>
+<Spanish>9M131M</Spanish>
+<Italian>9M131M</Italian>
+<Hungarian>9M131M</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_VIKHR">
+<English>9M127M</English>
+<Czech>9M127M</Czech>
+<German>9M127M</German>
+<Polish>9M127M</Polish>
+<Russian>9М127М</Russian>
+<French>9M127M</French>
+<Spanish>9M127M</Spanish>
+<Italian>9M127M</Italian>
+<Hungarian>9M127M</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_9M31">
+<English>9M31M</English>
+<Czech>9M31M</Czech>
+<German>9M31M</German>
+<Polish>9M31M</Polish>
+<Russian>9М31М</Russian>
+<French>9M31M</French>
+<Spanish>9M31M</Spanish>
+<Italian>9M31M</Italian>
+<Hungarian>9M31M</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_9M311">
+<English>9M311-M1</English>
+<Czech>9M311-M1</Czech>
+<German>9M311-M1</German>
+<Polish>9M311-M1</Polish>
+<Russian>9М311-М1</Russian>
+<French>9M311-M1</French>
+<Spanish>9M311-M1</Spanish>
+<Italian>9M311-M1</Italian>
+<Hungarian>9M311-M1</Hungarian>
+</Key>
+</Container>
+
+<!-- Weapons -->
+<Container name="STR_ACE_WDN_US">
+<Key ID="STR_ACE_WDN_M240">
+<English>7.62mm M240</English>
+<Czech>7.62mm M240</Czech>
+<German>7.62mm M240</German>
+<Polish>7,62mm M240</Polish>
+<Russian>7.62мм M240</Russian>
+<French>7.62mm M240</French>
+<Spanish>7.62mm M240</Spanish>
+<Italian>7.62mm M240</Italian>
+<Hungarian>7.62mm M240</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_M240C">
+<English>7.62mm M240C</English>
+<Czech>7.62mm M240C</Czech>
+<German>7.62mm M240C</German>
+<Polish>7,62mm M240C</Polish>
+<Russian>7.62мм M240C</Russian>
+<French>7.62mm M240C</French>
+<Spanish>7.62mm M240C</Spanish>
+<Italian>7.62mm M240C</Italian>
+<Hungarian>7.62mm M240C</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_M240H">
+<English>7.62mm M240H</English>
+<Czech>7.62mm M240H</Czech>
+<German>7.62mm M240H</German>
+<Polish>7,62mm M240H</Polish>
+<Russian>7.62мм M240H</Russian>
+<French>7.62mm M240H</French>
+<Spanish>7.62mm M240H</Spanish>
+<Italian>7.62mm M240H</Italian>
+<Hungarian>7.62mm M240H</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_M134">
+<English>7.62mm M134</English>
+<Czech>7.62mm M134</Czech>
+<German>7.62mm M134</German>
+<Polish>7,62mm M134</Polish>
+<Russian>7.62мм M134</Russian>
+<French>7.62mm M134</French>
+<Spanish>7.62mm M134</Spanish>
+<Italian>7.62mm M134</Italian>
+<Hungarian>7.62mm M134</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_M134_LO">
+<English>7.62mm M134 (LO)</English>
+<Czech>7.62mm M134 (LO)</Czech>
+<German>7.62mm M134 (LO)</German>
+<Polish>7,62mm M134 (LO)</Polish>
+<Russian>7.62мм M134 (LO)</Russian>
+<French>7.62mm M134 (LO)</French>
+<Spanish>7.62mm M134 (LO)</Spanish>
+<Italian>7.62mm M134 (LO)</Italian>
+<Hungarian>7.62mm M134 (LO)</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_M134_HI">
+<English>7.62mm M134 (HI)</English>
+<Czech>7.62mm M134 (HI)</Czech>
+<German>7.62mm M134 (HI)</German>
+<Polish>7,62mm M134 (HI)</Polish>
+<Russian>7.62мм M134 (HI)</Russian>
+<French>7.62mm M134 (HI)</French>
+<Spanish>7.62mm M134 (HI)</Spanish>
+<Italian>7.62mm M134 (HI)</Italian>
+<Hungarian>7.62mm M134 (HI)</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_M2">
+<English>.50cal M2 HB</English>
+<Czech>12.7mm M2 HB</Czech>
+<German>12.7mm M2 HB</German>
+<Polish>12,7mm M2 HB</Polish>
+<Russian>12.7мм M2 HB</Russian>
+<French>12.7mm M2 HB</French>
+<Spanish>12.7mm M2 HB</Spanish>
+<Italian>12.7mm M2 HB</Italian>
+<Hungarian>12.7mm M2 HB</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_M3P">
+<English>.50 M3P</English>
+<Czech>12.7mm M3P</Czech>
+<German>12.7mm M3P</German>
+<Polish>12,7mm M3P</Polish>
+<Russian>12.7мм M3P</Russian>
+<French>12.7mm M3P</French>
+<Spanish>12.7mm M3P</Spanish>
+<Italian>12.7mm M3P</Italian>
+<Hungarian>12.7mm M3P</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_GAU19">
+<English>.50cal GAU-19</English>
+<Czech>12.7mm GAU-19</Czech>
+<German>12.7mm GAU-19</German>
+<Polish>12,7mm GAU-19</Polish>
+<Russian>12.7мм GAU-19</Russian>
+<French>12.7mm GAU-19</French>
+<Spanish>12.7mm GAU-19</Spanish>
+<Italian>12.7mm GAU-19</Italian>
+<Hungarian>12.7mm GAU-19</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_M168">
+<English>20mm M168</English>
+<Czech>20mm M168</Czech>
+<German>20mm M168</German>
+<Polish>20mm M168</Polish>
+<Russian>20мм M168</Russian>
+<French>20mm M168</French>
+<Spanish>20mm M168</Spanish>
+<Italian>20mm M168</Italian>
+<Hungarian>20mm M168</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_M197">
+<English>20mm M197</English>
+<Czech>20mm M197</Czech>
+<German>20mm M197</German>
+<Polish>20mm M197</Polish>
+<Russian>20мм M197</Russian>
+<French>20mm M197</French>
+<Spanish>20mm M197</Spanish>
+<Italian>20mm M197</Italian>
+<Hungarian>20mm M197</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_M242">
+<English>25mm M242</English>
+<Czech>25mm M242</Czech>
+<German>25mm M242</German>
+<Polish>25mm M242</Polish>
+<Russian>25мм M242</Russian>
+<French>25mm M242</French>
+<Spanish>25mm M242</Spanish>
+<Italian>25mm M242</Italian>
+<Hungarian>25mm M242</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_M242_LO">
+<English>25mm M242 (LO)</English>
+<Czech>25mm M242 (LO)</Czech>
+<German>25mm M242 (LO)</German>
+<Polish>25mm M242 (LO)</Polish>
+<Russian>25мм M242 (LO)</Russian>
+<French>25mm M242 (LO)</French>
+<Spanish>25mm M242 (LO)</Spanish>
+<Italian>25mm M242 (LO)</Italian>
+<Hungarian>25mm M242 (LO)</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_M242_HI">
+<English>25mm M242 (HI)</English>
+<Czech>25mm M242 (HI)</Czech>
+<German>25mm M242 (HI)</German>
+<Polish>25mm M242 (HI)</Polish>
+<Russian>25мм M242 (HI)</Russian>
+<French>25mm M242 (HI)</French>
+<Spanish>25mm M242 (HI)</Spanish>
+<Italian>25mm M242 (HI)</Italian>
+<Hungarian>25mm M242 (HI)</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_GAU12">
+<English>25mm GAU-12</English>
+<Czech>25mm GAU-12</Czech>
+<German>25mm GAU-12</German>
+<Polish>25mm GAU-12</Polish>
+<Russian>25мм GAU-12</Russian>
+<French>25mm GAU-12</French>
+<Spanish>25mm GAU-12</Spanish>
+<Italian>25mm GAU-12</Italian>
+<Hungarian>25mm GAU-12</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_M230">
+<English>30mm M230</English>
+<Czech>30mm M230</Czech>
+<German>30mm M230</German>
+<Polish>30mm M230</Polish>
+<Russian>30мм M230</Russian>
+<French>30mm M230</French>
+<Spanish>30mm M230</Spanish>
+<Italian>30mm M230</Italian>
+<Hungarian>30mm M230</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_GAU8">
+<English>30mm GAU-8/A</English>
+<Czech>30mm GAU-8/A</Czech>
+<German>30mm GAU-8/A</German>
+<Polish>30mm GAU-8/A</Polish>
+<Russian>30мм GAU-8/A</Russian>
+<French>30mm GAU-8/A</French>
+<Spanish>30mm GAU-8/A</Spanish>
+<Italian>30mm GAU-8/A</Italian>
+<Hungarian>30mm GAU-8/A</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_MK19">
+<English>40mm Mk19 Mod 3</English>
+<Czech>40mm Mk19 Mod 3</Czech>
+<German>40mm Mk19 Mod 3</German>
+<Polish>40mm Mk19 Mod 3</Polish>
+<Russian>40мм Mk19 Mod 3</Russian>
+<French>40mm Mk19 Mod 3</French>
+<Spanish>40mm Mk19 Mod 3</Spanish>
+<Italian>40mm Mk19 Mod 3</Italian>
+<Hungarian>40mm Mk19 Mod 3</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_FFARLAUNCHER">
+<English>2.75cal LAU-61</English>
+<Czech>70mm LAU-61</Czech>
+<German>70mm LAU-61</German>
+<Polish>70mm LAU-61</Polish>
+<Russian>70мм LAU-61</Russian>
+<French>70mm LAU-61</French>
+<Spanish>70mm LAU-61</Spanish>
+<Italian>70mm LAU-61</Italian>
+<Hungarian>70mm LAU-61</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_FFARLAUNCHER_14">
+<English>2.75cal LAU-68</English>
+<Czech>70mm LAU-68</Czech>
+<German>70mm LAU-68</German>
+<Polish>70mm LAU-68</Polish>
+<Russian>70мм LAU-68</Russian>
+<French>70mm LAU-68</French>
+<Spanish>70mm LAU-68</Spanish>
+<Italian>70mm LAU-68</Italian>
+<Hungarian>70mm LAU-68</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_M256">
+<English>120mm M256A1</English>
+<Czech>120mm M256A1</Czech>
+<German>120mm M256A1</German>
+<Polish>120mm M256A1</Polish>
+<Russian>120мм M256A1</Russian>
+<French>120mm M256A1</French>
+<Spanish>120mm M256A1</Spanish>
+<Italian>120mm M256A1</Italian>
+<Hungarian>120mm M256A1</Hungarian>
+</Key>
+</Container>
+<Container name="STR_ACE_WDN_RU">
+<Key ID="STR_ACE_WDN_PKT">
+<English>7.62mm PKMT</English>
+<Czech>7.62mm PKMT</Czech>
+<German>7.62mm PKMT</German>
+<Polish>7,62mm PKMT</Polish>
+<Russian>7.62мм ПКМT</Russian>
+<French>7.62mm PKMT</French>
+<Spanish>7.62mm PKMT</Spanish>
+<Italian>7.62mm PKMT</Italian>
+<Hungarian>7.62mm PKMT</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_DT">
+<English>7.62mm DTM</English>
+<Czech>7.62mm DTM</Czech>
+<German>7.62mm DTM</German>
+<Polish>7,62mm DTM</Polish>
+<Russian>7.62мм ДTМ</Russian>
+<French>7.62mm DTM</French>
+<Spanish>7.62mm DTM</Spanish>
+<Italian>7.62mm DTM</Italian>
+<Hungarian>7.62mm DTM</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_DSHKM">
+<English>12.7mm DShKM</English>
+<Czech>12.7mm DŠKM</Czech>
+<German>12.7mm DShKM</German>
+<Polish>12,7mm DSzKM</Polish>
+<Russian>12.7мм ДШКМ</Russian>
+<French>12.7mm DShKM</French>
+<Spanish>12.7mm DShKM</Spanish>
+<Italian>12.7mm DShKM</Italian>
+<Hungarian>12.7mm DSKM</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_KORD">
+<English>12.7mm Kord</English>
+<Czech>12.7mm Kord</Czech>
+<German>12.7mm Kord</German>
+<Polish>12,7mm Kord</Polish>
+<Russian>12.7мм Корд</Russian>
+<French>12.7mm Kord</French>
+<Spanish>12.7mm Kord</Spanish>
+<Italian>12.7mm Kord</Italian>
+<Hungarian>12.7mm Kord</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_NSVT">
+<English>12.7mm NSVT</English>
+<Czech>12.7mm NSVT</Czech>
+<German>12.7mm NSVT</German>
+<Polish>12,7mm NSWT</Polish>
+<Russian>12.7мм НСВT</Russian>
+<French>12.7mm NSVT</French>
+<Spanish>12.7mm NSVT</Spanish>
+<Italian>12.7mm NSVT</Italian>
+<Hungarian>12.7mm NSVT</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_YAKB">
+<English>12.7mm YakBYu</English>
+<Czech>12.7mm JakBJu</Czech>
+<German>12.7mm YakBYu</German>
+<Polish>12,7mm JakBJu</Polish>
+<Russian>12.7мм ЯкБЮ-12.7</Russian>
+<French>12.7mm YakBYu</French>
+<Spanish>12.7mm YakBYu</Spanish>
+<Italian>12.7mm YakBYu</Italian>
+<Hungarian>12.7mm JakBJu</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_KPVT">
+<English>14.5mm KPVT</English>
+<Czech>14.5mm KPVT</Czech>
+<German>14.5mm KPVT</German>
+<Polish>14,5mm KPWT</Polish>
+<Russian>14.5мм КПВT</Russian>
+<French>14.5mm KPVT</French>
+<Spanish>14.5mm KPVT</Spanish>
+<Italian>14.5mm KPVT</Italian>
+<Hungarian>14.5mm KPVT</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_GSH23L">
+<English>23mm GSh-23L</English>
+<Czech>23mm GŠ-23L</Czech>
+<German>23mm GSch-23L</German>
+<Polish>23mm GSz-23Ł</Polish>
+<Russian>23мм ГШ-23Л</Russian>
+<French>23mm GSh-23L</French>
+<Spanish>23mm GSh-23L</Spanish>
+<Italian>23mm GSh-23L</Italian>
+<Hungarian>23mm GS-23L</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_UPK23">
+<English>23mm UPK-23-250</English>
+<Czech>23mm UPK-23-250</Czech>
+<German>23mm  UPK-23-250</German>
+<Polish>23mm UPK-23-250</Polish>
+<Russian>23мм УПК-23-250</Russian>
+<French>23mm UPK-23-250</French>
+<Spanish>23mm UPK-23-250</Spanish>
+<Italian>23mm UPK-23-250</Italian>
+<Hungarian>23mm UPK-23-250</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_AZP85">
+<English>23mm 2A7M</English>
+<Czech>23mm 2A7M</Czech>
+<German>23mm 2A7M</German>
+<Polish>23mm 2A7M</Polish>
+<Russian>23мм 2А7М</Russian>
+<French>23mm 2A7M</French>
+<Spanish>23mm 2A7M</Spanish>
+<Italian>23mm 2A7M</Italian>
+<Hungarian>23mm 2A7M</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_2A14">
+<English>23mm 2A14</English>
+<Czech>23mm 2A14</Czech>
+<German>23mm 2A14</German>
+<Polish>23mm 2A14</Polish>
+<Russian>23мм 2А14</Russian>
+<French>23mm 2A14</French>
+<Spanish>23mm 2A14</Spanish>
+<Italian>23mm 2A14</Italian>
+<Hungarian>23mm 2A14</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_GSH301">
+<English>30mm GSh-30-1</English>
+<Czech>30mm GŠ-30-1</Czech>
+<German>30mm GSch-30-1</German>
+<Polish>30mm GSz-30-1</Polish>
+<Russian>30мм ГШ-30-1</Russian>
+<French>30mm GSh-30-1</French>
+<Spanish>30mm GSh-30-1</Spanish>
+<Italian>30mm GSh-30-1</Italian>
+<Hungarian>30mm GS-30-1</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_GSH302">
+<English>30mm GSh-30-2</English>
+<Czech>30mm GŠ-30-2</Czech>
+<German>30mm GSch-30-2</German>
+<Polish>30mm GSz-30-2</Polish>
+<Russian>30мм ГШ-30К</Russian>
+<French>30mm GSh-30-2</French>
+<Spanish>30mm GSh-30-2</Spanish>
+<Italian>30mm GSh-30-2</Italian>
+<Hungarian>30mm GS-30-2</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_GSH302K">
+<English>30mm GSh-30-2K</English>
+<Czech>30mm GŠ-30-2K</Czech>
+<German>30mm GSch-30-2K</German>
+<Polish>30mm GSz-30-2K</Polish>
+<Russian>30мм ГШ-30К</Russian>
+<French>30mm GSh-30-2K</French>
+<Spanish>30mm GSh-30-2K</Spanish>
+<Italian>30mm GSh-30-2K</Italian>
+<Hungarian>30mm GS-30-2K</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_2A42">
+<English>30mm 2A42</English>
+<Czech>30mm 2A42</Czech>
+<German>30mm 2A42</German>
+<Polish>30mm 2A42</Polish>
+<Russian>30мм 2А42</Russian>
+<French>30mm 2A42</French>
+<Spanish>30mm 2A42</Spanish>
+<Italian>30mm 2A42</Italian>
+<Hungarian>30mm 2A42</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_2A42_LO">
+<English>30mm 2A42 (LO)</English>
+<Czech>30mm 2A42 (LO)</Czech>
+<German>30mm 2A42 (LO)</German>
+<Polish>30mm 2A42 (LO)</Polish>
+<Russian>30мм 2А42 (LO)</Russian>
+<French>30mm 2A42 (LO)</French>
+<Spanish>30mm 2A42 (LO)</Spanish>
+<Italian>30mm 2A42 (LO)</Italian>
+<Hungarian>30mm 2A42 (LO)</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_2A42_HI">
+<English>30mm 2A42 (HI)</English>
+<Czech>30mm 2A42 (HI)</Czech>
+<German>30mm 2A42 (HI)</German>
+<Polish>30mm 2A42 (HI)</Polish>
+<Russian>30мм 2А42 (HI)</Russian>
+<French>30mm 2A42 (HI)</French>
+<Spanish>30mm 2A42 (HI)</Spanish>
+<Italian>30mm 2A42 (HI)</Italian>
+<Hungarian>30mm 2A42 (HI)</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_2A72">
+<English>30mm 2A72</English>
+<Czech>30mm 2A72</Czech>
+<German>30mm 2A72</German>
+<Polish>30mm 2A72</Polish>
+<Russian>30мм 2А72</Russian>
+<French>30mm 2A72</French>
+<Spanish>30mm 2A72</Spanish>
+<Italian>30mm 2A72</Italian>
+<Hungarian>30mm 2A72</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_2A38M">
+<English>30mm 2A38M</English>
+<Czech>30mm 2A38M</Czech>
+<German>30mm 2A38M</German>
+<Polish>30mm 2A38M</Polish>
+<Russian>30мм 2А38М</Russian>
+<French>30mm 2A38M</French>
+<Spanish>30mm 2A38M</Spanish>
+<Italian>30mm 2A38M</Italian>
+<Hungarian>30mm 2A38M</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_AGS30">
+<English>30mm AGS-30</English>
+<Czech>30mm AGS-30</Czech>
+<German>30mm AGS-30</German>
+<Polish>30mm AGS-30</Polish>
+<Russian>30мм АГС-30</Russian>
+<French>30mm AGS-30</French>
+<Spanish>30mm AGS-30</Spanish>
+<Italian>30mm AGS-30</Italian>
+<Hungarian>30mm AGSz-30</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_SPG9">
+<English>73mm SPG-9</English>
+<Czech>73mm SPG-9</Czech>
+<German>73mm SPG-9</German>
+<Polish>73mm SPG-9</Polish>
+<Russian>73мм СПГ-9 Копье</Russian>
+<French>73mm SPG-9</French>
+<Spanish>73mm SPG-9</Spanish>
+<Italian>73mm SPG-9</Italian>
+<Hungarian>73mm SzPG-9</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_ZIS_S_53">
+<English>85mm ZiS-S-53</English>
+<Czech>85mm ZiS-S-53</Czech>
+<German>85mm ZiS-S-53</German>
+<Polish>85mm ZiS-S-53</Polish>
+<Russian>85мм ЗиС-С-53</Russian>
+<French>85mm ZiS-S-53</French>
+<Spanish>85mm ZiS-S-53</Spanish>
+<Italian>85mm ZiS-S-53</Italian>
+<Hungarian>85mm ZiSz-Sz-53</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_2A70">
+<English>100mm 2A70</English>
+<Czech>100mm 2A70</Czech>
+<German>100mm 2A70</German>
+<Polish>100mm 2A70</Polish>
+<Russian>100мм 2А70</Russian>
+<French>100mm 2A70</French>
+<Spanish>100mm 2A70</Spanish>
+<Italian>100mm 2A70</Italian>
+<Hungarian>100mm 2A70</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_2A28">
+<English>73mm 2A28 Grom</English>
+<Czech>73mm 2A28 Grom</Czech>
+<German>73mm 2A28 Grom</German>
+<Polish>73mm 2A28 Grom</Polish>
+<Russian>73мм 2А28 Гром</Russian>
+<French>73mm 2A28 Grom</French>
+<Spanish>73mm 2A28 Grom</Spanish>
+<Italian>73mm 2A28 Grom</Italian>
+<Hungarian>73mm 2A28 Grom</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_2A46_1">
+<English>125mm 2A46-1</English>
+<Czech>125mm 2A46-1</Czech>
+<German>125mm 2A46-1</German>
+<Polish>125mm 2A46-1</Polish>
+<Russian>125мм 2А46-1</Russian>
+<French>125mm 2A46-1</French>
+<Spanish>125mm 2A46-1</Spanish>
+<Italian>125mm 2A46-1</Italian>
+<Hungarian>125mm 2A46-1</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_2A46M_1">
+<English>125mm 2A46M-1</English>
+<Czech>125mm 2A46M-1</Czech>
+<German>125mm 2A46M-1</German>
+<Polish>125mm 2A46M-1</Polish>
+<Russian>125мм 2А46М-1</Russian>
+<French>125mm 2A46M-1</French>
+<Spanish>125mm 2A46M-1</Spanish>
+<Italian>125mm 2A46M-1</Italian>
+<Hungarian>125mm 2A46M-1</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_2A46M_2">
+<English>125mm 2A46M-2</English>
+<Czech>125mm 2A46M-2</Czech>
+<German>125mm 2A46M-2</German>
+<Polish>125mm 2A46M-2</Polish>
+<Russian>125мм 2А46М-2</Russian>
+<French>125mm 2A46M-2</French>
+<Spanish>125mm 2A46M-2</Spanish>
+<Italian>125mm 2A46M-2</Italian>
+<Hungarian>125mm 2A46M-2</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_57MMLAUNCHER">
+<English>57mm UB-32</English>
+<Czech>57mm UB-32</Czech>
+<German>57mm UB-32</German>
+<Polish>57mm UB-32</Polish>
+<Russian>57мм УБ-32</Russian>
+<French>57mm UB-32</French>
+<Spanish>57mm UB-32</Spanish>
+<Italian>57mm UB-32</Italian>
+<Hungarian>57mm UB-32</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_UB16_PODS">
+<English>57mm UB-16</English>
+<Czech>57mm UB-16</Czech>
+<German>57mm UB-16</German>
+<Polish>57mm UB-16</Polish>
+<Russian>57мм УБ-16</Russian>
+<French>57mm UB-16</French>
+<Spanish>57mm UB-16</Spanish>
+<Italian>57mm UB-16</Italian>
+<Hungarian>57mm UB-16</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_80MMLAUNCHER">
+<English>80mm B-8V20</English>
+<Czech>80mm B-8V20</Czech>
+<German>80mm B-8W20</German>
+<Polish>80mm B-8W20</Polish>
+<Russian>80мм Б-8В20</Russian>
+<French>80mm B-8V20</French>
+<Spanish>80mm B-8V20</Spanish>
+<Italian>80mm B-8V20</Italian>
+<Hungarian>80mm B-8V20</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_AT2LAUNCHER">
+<English>9K8 Falanga-PV</English>
+<Czech>9K8 Falanga-PV</Czech>
+<German>9K8 Falanga-PV</German>
+<Polish>9K8 Falanga-PW</Polish>
+<Russian>9К8 Фаланга-ПВ</Russian>
+<French>9K8 Falanga-PV</French>
+<Spanish>9K8 Falanga-PV</Spanish>
+<Italian>9K8 Falanga-PV</Italian>
+<Hungarian>9K8 Falanga-PV</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_AT3_LAUNCHER">
+<English>9K14P Malyutka-P</English>
+<Czech>9K14P Malyutka-P</Czech>
+<German>9K14P Malyutka-P</German>
+<Polish>9K14P Malutka-P</Polish>
+<Russian>9К14П Малютка-П</Russian>
+<French>9K14P Malyutka-P</French>
+<Spanish>9K14P Malyutka-P</Spanish>
+<Italian>9K14P Malyutka-P</Italian>
+<Hungarian>9K14P Malyutka-P</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_AT5LAUNCHER">
+<English>9K111-1 Konkurs</English>
+<Czech>9K111-1 Konkurs</Czech>
+<German>9K111-1 Konkurs</German>
+<Polish>9K111-1 Konkurs</Polish>
+<Russian>9К113 Конкурс</Russian>
+<French>9K111-1 Konkurs</French>
+<Spanish>9K111-1 Konkurs</Spanish>
+<Italian>9K111-1 Konkurs</Italian>
+<Hungarian>9K111-1 Konkursz</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_AT5B_LAUNCHER">
+<English>9K111-1M Konkurs-M</English>
+<Czech>9K111-1M Konkurs-M</Czech>
+<German>9K111-1M Konkurs-M</German>
+<Polish>9K111-1M Konkurs-M</Polish>
+<Russian>9К113М Конкурс-М</Russian>
+<French>9K111-1M Konkurs-M</French>
+<Spanish>9K111-1M Konkurs-M</Spanish>
+<Italian>9K111-1M Konkurs-M</Italian>
+<Hungarian>9K111-1M Konkursz-M</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_AT6LAUNCHER">
+<English>9K113 Shturm-V</English>
+<Czech>9K113 Šturm-V</Czech>
+<German>9K113 Schturm-V</German>
+<Polish>9K113 Szturm-W</Polish>
+<Russian>9К114 Штурм-В</Russian>
+<French>9K113 Shturm-V</French>
+<Spanish>9K113 Shturm-V</Spanish>
+<Italian>9K113 Shturm-V</Italian>
+<Hungarian>9K113 Sturm-V</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_AT9LAUNCHER">
+<English>9K113M Ataka-V</English>
+<Czech>9K113M Ataka-V</Czech>
+<German>9K113M Ataka-V</German>
+<Polish>9K113M Ataka-W</Polish>
+<Russian>9А2313 Атака-В</Russian>
+<French>9K113M Ataka-V</French>
+<Spanish>9K113M Ataka-V</Spanish>
+<Italian>9K113M Ataka-V</Italian>
+<Hungarian>9K113M Ataka-V</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_AT13LAUNCHERSINGLE">
+<English>9P151M Metis-M1</English>
+<Czech>9P151M Metis-M1</Czech>
+<German>9P151M Metis-M1</German>
+<Polish>9P151M Metys-M1</Polish>
+<Russian>9К115-2 Метис-М1</Russian>
+<French>9P151M Metis-M1</French>
+<Spanish>9P151M Metis-M1</Spanish>
+<Italian>9P151M Metis-M1</Italian>
+<Hungarian>9P151M Metis-M1</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_VIKHRLAUNCHER">
+<English>9K121M Vikhr-M</English>
+<Czech>9K121M Vichr-M</Czech>
+<German>9K121M Vikhr-M</German>
+<Polish>9K121M Wichr-M</Polish>
+<Russian>9К121М Вихрь-М</Russian>
+<French>9K121M Vikhr-M</French>
+<Spanish>9K121M Vikhr-M</Spanish>
+<Italian>9K121M Vikhr-M</Italian>
+<Hungarian>9K121M Vikhr-M</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_CH29">
+<English>Kh-29L</English>
+<Czech>Ch-29L</Czech>
+<German>Kh-29L</German>
+<Polish>Ch-29L</Polish>
+<Russian>Х-29Л</Russian>
+<French>Kh-29L</French>
+<Spanish>Kh-29L</Spanish>
+<Italian>Kh-29L</Italian>
+<Hungarian>Kh-29L</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_HELIBOMBLAUNCHER">
+<English>FAB-250 M-54</English>
+<Czech>FAB-250 M-54</Czech>
+<German>FAB-250 M-54</German>
+<Polish>FAB-250 M-54</Polish>
+<Russian>ФАБ-250 М-54</Russian>
+<French>FAB-250 M-54</French>
+<Spanish>FAB-250 M-54</Spanish>
+<Italian>FAB-250 M-54</Italian>
+<Hungarian>FAB-250 M-54</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_ACE_9K31LAUNCHER">
+<English>9K31M Strela-1M</English>
+<Czech>9K31M Strela-1M</Czech>
+<German>9K31M Strela-1M</German>
+<Polish>9K31M Strzała-1M</Polish>
+<Russian>9К31M Стрела-1М</Russian>
+<French>9K31M Strela-1M</French>
+<Spanish>9K31M Strela-1M</Spanish>
+<Italian>9K31M Strela-1M</Italian>
+<Hungarian>9K31M Strela-1M</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_9K38_IGLA">
+<English>9K38 Igla</English>
+<Czech>9K38 Igla</Czech>
+<German>9K38 Igla</German>
+<Polish>9K38 Igła</Polish>
+<Russian>9К38 Игла</Russian>
+<French>9K38 Igla</French>
+<Spanish>9K38 Igla</Spanish>
+<Italian>9K38 Igla</Italian>
+<Hungarian>9K38 Igla</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_9M311LAUCHER">
+<English>2K22M1 Tunguska-M1</English>
+<Czech>2K22M1 Tunguska-M1</Czech>
+<German>2K22M1 Tunguska-M1</German>
+<Polish>2K22M1 Tunguska-M1</Polish>
+<Russian>2К22М1 Тунгуска-М1</Russian>
+<French>2K22M1 Tunguska-M1</French>
+<Spanish>2K22M1 Tunguska-M1</Spanish>
+<Italian>2K22M1 Tunguska-M1</Italian>
+<Hungarian>2K22M1 Tunguszka-M1</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_R27LAUNCHER">
+<English>R-27</English>
+<Czech>R-27</Czech>
+<German>R-27</German>
+<Polish>R-27</Polish>
+<Russian>Р-27</Russian>
+<French>R-27</French>
+<Spanish>R-27</Spanish>
+<Italian>R-27</Italian>
+<Hungarian>R-27</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

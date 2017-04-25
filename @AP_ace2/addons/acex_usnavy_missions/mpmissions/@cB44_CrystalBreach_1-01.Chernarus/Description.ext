@@ -1,0 +1,64 @@
+///////////////////////////////////////////////////////////
+// Armed Assault Description File
+// Created with ArmA Edit - Version 1.3.3000
+///////////////////////////////////////////////////////////
+
+respawn = "BASE";
+respawnDelay = 5;
+respawnVehicle = "BASE";
+respawnVehicleDelay = 600;
+
+disabledAI=0;
+debriefing=1;
+
+onLoadMission="Mission by Wolffy.au/Williepete/Delta at creoBellum.org";
+
+class Header
+{
+ gameType = COOP;            //DM, Team, Coop, CTI
+ minPlayers = 1;             //min # of players the mission supports
+ maxPlayers = 44;            //Max # of players the mission supports
+ playerCountMultipleOf = 1;  //Auto-balance, 1 for COOP, 2 for PVP
+};
+
+// ============================================================================================
+
+// F2 - Mission Conditions Selector
+// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
+
+titleParam1 = $STR_f_ConditionsSelector_Title; 
+//valuesParam1[] = {90,21,22,23,24,25,26,27,28,29,30,1,2,3,4,5,31,32,33,34,35,36,37,38,39,40,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,99};
+valuesParam1[] = {90,21,22,23,26,27,28,1,2,3,31,32,33,36,37,38,6,7,8,11,12,13,16,17,18,99};
+defValueParam1 = 90;
+//textsParam1[] = {$STR_f_ConditionsSelector_Option90,$STR_f_ConditionsSelector_Option21,$STR_f_ConditionsSelector_Option22,$STR_f_ConditionsSelector_Option23,$STR_f_ConditionsSelector_Option24,$STR_f_ConditionsSelector_Option25,$STR_f_ConditionsSelector_Option26,$STR_f_ConditionsSelector_Option27,$STR_f_ConditionsSelector_Option28,$STR_f_ConditionsSelector_Option29,$STR_f_ConditionsSelector_Option30,$STR_f_ConditionsSelector_Option01,$STR_f_ConditionsSelector_Option02,$STR_f_ConditionsSelector_Option03,$STR_f_ConditionsSelector_Option04,$STR_f_ConditionsSelector_Option05,$STR_f_ConditionsSelector_Option31,$STR_f_ConditionsSelector_Option32,$STR_f_ConditionsSelector_Option33,$STR_f_ConditionsSelector_Option34,$STR_f_ConditionsSelector_Option35,$STR_f_ConditionsSelector_Option36,$STR_f_ConditionsSelector_Option37,$STR_f_ConditionsSelector_Option38,$STR_f_ConditionsSelector_Option39,$STR_f_ConditionsSelector_Option40,$STR_f_ConditionsSelector_Option06,$STR_f_ConditionsSelector_Option07,$STR_f_ConditionsSelector_Option08,$STR_f_ConditionsSelector_Option09,$STR_f_ConditionsSelector_Option10,$STR_f_ConditionsSelector_Option11,$STR_f_ConditionsSelector_Option12,$STR_f_ConditionsSelector_Option13,$STR_f_ConditionsSelector_Option14,$STR_f_ConditionsSelector_Option15,$STR_f_ConditionsSelector_Option16,$STR_f_ConditionsSelector_Option17,$STR_f_ConditionsSelector_Option18,$STR_f_ConditionsSelector_Option19,$STR_f_ConditionsSelector_Option20,$STR_f_ConditionsSelector_Option99};
+textsParam1[] = {$STR_f_ConditionsSelector_Option90,$STR_f_ConditionsSelector_Option21,$STR_f_ConditionsSelector_Option22,$STR_f_ConditionsSelector_Option23,$STR_f_ConditionsSelector_Option26,$STR_f_ConditionsSelector_Option27,$STR_f_ConditionsSelector_Option28,$STR_f_ConditionsSelector_Option01,$STR_f_ConditionsSelector_Option02,$STR_f_ConditionsSelector_Option03,$STR_f_ConditionsSelector_Option31,$STR_f_ConditionsSelector_Option32,$STR_f_ConditionsSelector_Option33,$STR_f_ConditionsSelector_Option36,$STR_f_ConditionsSelector_Option37,$STR_f_ConditionsSelector_Option38,$STR_f_ConditionsSelector_Option06,$STR_f_ConditionsSelector_Option07,$STR_f_ConditionsSelector_Option08,$STR_f_ConditionsSelector_Option11,$STR_f_ConditionsSelector_Option12,$STR_f_ConditionsSelector_Option13,$STR_f_ConditionsSelector_Option16,$STR_f_ConditionsSelector_Option17,$STR_f_ConditionsSelector_Option18,$STR_f_ConditionsSelector_Option99};
+
+titleParam2 = "Custom Loadout"; 
+valuesParam2[] = {1,2,3,4};
+defValueParam2 = 4;
+textsParam2[] = {"M4 Silenced","M16 Ironsights","M16 ACOG Weapons","All ACE Weapons"};
+
+#include "Scripts\TeamStatusDialog\TeamStatusDialog.hpp"
+
+#include "dialog\otfgfx_dlg.hpp"
+
+#include "revive_sqf\dialogs\config.hpp"
+#include "revive_sqf\dialogs\define.hpp"
+#include "revive_sqf\dialogs\rev_cam_dialog.hpp"
+#include "revive_sqf\dialogs\respawn_button_1.hpp"
+#include "revive_sqf\dialogs\respawn_button_2.hpp"
+#include "revive_sqf\dialogs\respawn_button_3.hpp"
+#include "revive_sqf\dialogs\respawn_button_4.hpp"
+#include "revive_sqf\dialogs\respawn_button_1b.hpp"
+#include "revive_sqf\dialogs\respawn_button_1c.hpp"
+#include "revive_sqf\dialogs\respawn_button_2b.hpp"
+#include "revive_sqf\dialogs\respawn_button_3b.hpp"
+#include "revive_sqf\dialogs\respawn_button_4b.hpp"
+#include "revive_sqf\dialogs\respawn_button_1map.hpp"
+#include "revive_sqf\dialogs\respawn_button_2map.hpp"
+#include "revive_sqf\dialogs\respawn_button_3map.hpp"
+#include "revive_sqf\dialogs\respawn_button_4map.hpp"
+#include "revive_sqf\dialogs\OK_map.hpp"
+#include "revive_sqf\dialogs\dead_cam_dialog.hpp"
+
+#include "scripts\sakudriver2.cpp"

@@ -1,0 +1,131 @@
+class FSM
+{
+  fsmName = "GroupClean";
+  class States
+  {
+    class Start
+    {
+      name = "Start";
+      init = "private [""_grp"",""_timenow"",""_timenow2"",""_counter"",""_onegrp""];" \n
+       "_timenow = diag_tickTime + 120;" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="diag_tickTime > _timenow";
+          action="";
+        };
+      };
+    };
+    class Loop
+    {
+      name = "Loop";
+      init = "_timenow2 = diag_tickTime + 5.33;";
+      precondition = "";
+      class Links
+      {
+        class __count__allGroups
+        {
+          priority = 1.000000;
+          to="Check";
+          precondition = "";
+          condition="(count  allGroups > 0)";
+          action="";
+        };
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="diag_tickTime > _timenow2";
+          action="";
+        };
+      };
+    };
+    class Check
+    {
+      name = "Check";
+      init = "private ""_allgroups"";" \n
+       "_allgroups =+ allGroups;" \n
+       "_counter = 0;";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="Loop2";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class Loop2
+    {
+      name = "Loop2";
+      init = "_onegrp = _allgroups select _counter;" \n
+       "if (!isNull _onegrp) then {" \n
+       "	_gstate = _onegrp getVariable ""d_gstate"";" \n
+       "	if (isNil ""_gstate"") then {_gstate = 0};" \n
+       "	if (_gstate > 0) then {" \n
+       "		if (count (units _onegrp) == 0) then {" \n
+       "			if (_onegrp in d_reduce_groups) then {" \n
+       "				d_reduce_groups = d_reduce_groups - [_onegrp];" \n
+       "			};" \n
+       "			deleteGroup _onegrp;" \n
+       "		};" \n
+       "	};" \n
+       "};" \n
+       "_counter = _counter + 1;" \n
+       "_timenow = diag_tickTime + 2.57;";
+      precondition = "";
+      class Links
+      {
+        class ___counter____count
+        {
+          priority = 1.000000;
+          to="_";
+          precondition = "";
+          condition="(_counter == count _allgroups)";
+          action="";
+        };
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop2";
+          precondition = "";
+          condition="diag_tickTime > _timenow";
+          action="";
+        };
+      };
+    };
+    class _
+    {
+      name = "_";
+      init = "_allgroups = nil;" \n
+       "_timenow = diag_tickTime + 20;";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="diag_tickTime > _timenow";
+          action="";
+        };
+      };
+    };
+  };
+  initState="Start";
+  finalStates[] =
+  {
+  };
+};

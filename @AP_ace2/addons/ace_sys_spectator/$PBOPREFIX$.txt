@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_spectator
+Pbo Type is: Arma Addon
+Sha: '900EE959FDA726498668F5AC6B4D84833234FDE4'
+//////</HEADER>//////

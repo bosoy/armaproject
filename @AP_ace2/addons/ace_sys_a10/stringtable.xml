@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ArmA2_ACE2">
+<Package name="c_vehicle">
+<Container name="STR_ACE_UA">
+<Key ID="STR_ACE_WDN_GAU8_13">
+<English>30mm GAU-8/A |||</English>
+<Czech>30mm GAU-8/A |||</Czech>
+<German>30mm GAU-8/A |||</German>
+<Polish>30mm GAU-8/A |||</Polish>
+<Russian>30мм GAU-8/A |||</Russian>
+<French>30mm GAU-8/A |||</French>
+<Spanish>30mm GAU-8/A |||</Spanish>
+<Italian>30mm GAU-8/A |||</Italian>
+<Hungarian>30mm GAU-8/A |||</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_GAU8_26">
+<English>30mm GAU-8/A ||||||</English>
+<Czech>30mm GAU-8/A ||||||</Czech>
+<German>30mm GAU-8/A ||||||</German>
+<Polish>30mm GAU-8/A ||||||</Polish>
+<Russian>30мм GAU-8/A ||||||</Russian>
+<French>30mm GAU-8/A ||||||</French>
+<Spanish>30mm GAU-8/A ||||||</Spanish>
+<Italian>30mm GAU-8/A ||||||</Italian>
+<Hungarian>30mm GAU-8/A ||||||</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

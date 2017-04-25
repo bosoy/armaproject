@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_flares
+Pbo Type is: Arma Addon
+Sha: '333EEC54D0091CB72DC74D84EC2FBDC838781E41'
+//////</HEADER>//////

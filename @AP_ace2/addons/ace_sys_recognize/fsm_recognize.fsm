@@ -1,0 +1,340 @@
+/*%FSM<COMPILE "scriptedFSM.cfg, fsm_recognize">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Start",0,4346,-300.000000,125.000000,-200.000000,175.000000,0.000000,"Start"};
+item1[] = {"true",8,218,-300.000000,200.000000,-200.000000,250.000000,0.000000,"true"};
+item2[] = {"distance_check",2,250,-175.000000,275.000000,-75.000000,325.000000,0.000000,"distance check"};
+item3[] = {"building_",4,218,-300.000000,425.000000,-200.000000,475.000000,9.000000,"building" \n ""};
+item4[] = {"true",8,218,-175.000000,425.000000,-75.000000,475.000000,0.000000,"true"};
+item5[] = {"recognise_side",2,250,-175.000000,650.000000,-75.000000,700.000000,0.000000,"recognise side"};
+item6[] = {"true",8,218,-300.000000,650.000000,-200.000000,700.000000,0.000000,"true"};
+item7[] = {"vd_",4,218,-300.000000,375.000000,-200.000000,425.000000,10.000000,"vd" \n ""};
+item8[] = {"exit_",2,250,-475.000000,350.000000,-375.000000,400.000000,0.000000,"exit" \n ""};
+item9[] = {"dead_",4,218,-300.000000,475.000000,-200.000000,525.000000,8.000000,"dead" \n ""};
+item10[] = {"null_",4,218,-300.000000,525.000000,-200.000000,575.000000,7.000000,"null" \n ""};
+item11[] = {"friendly",4,218,-175.000000,725.000000,-75.000000,775.000000,1.000000,"friendly"};
+item12[] = {"recognise_type",2,250,-175.000000,800.000000,-75.000000,850.000000,0.000000,"recognise type"};
+item13[] = {"exit",4,218,-300.000000,800.000000,-200.000000,850.000000,1.000000,"exit"};
+item14[] = {"true",8,218,50.000000,800.000000,150.000000,850.000000,0.000000,"true"};
+item15[] = {"recognise_name",2,250,50.000000,650.000000,150.000000,700.000000,0.000000,"recognise name"};
+item16[] = {"not_shown",4,218,50.000000,275.000000,150.000000,325.000000,0.000000,"not shown"};
+item17[] = {"self",4,218,-300.000000,575.000000,-200.000000,625.000000,0.000000,"self"};
+item18[] = {"__alive_OR__play",4,218,-475.000000,275.000000,-375.000000,325.000000,1.000000,"!alive OR !player"};
+item19[] = {"End",1,250,-475.000000,200.000000,-375.000000,250.000000,0.000000,"End"};
+item20[] = {"spect",4,218,-300.000000,325.000000,-200.000000,375.000000,11.000000,"spect"};
+item21[] = {"_",4,218,-450.000000,125.000000,-350.000000,175.000000,1.000000,""};
+item22[] = {"___ace_sys_recognize",4,218,-100.000000,200.000000,0.000000,250.000000,100.000000,"! ace_sys_recognize_constant"};
+item23[] = {"",7,210,-54.000000,33.500004,-46.000000,41.500000,0.000000,""};
+item24[] = {"",7,210,-528.999939,33.500000,-521.000000,41.500000,0.000000,""};
+item25[] = {"",7,210,-529.000000,221.000000,-521.000000,229.000000,0.000000,""};
+link0[] = {0,1};
+link1[] = {0,21};
+link2[] = {1,2};
+link3[] = {2,3};
+link4[] = {2,4};
+link5[] = {2,7};
+link6[] = {2,9};
+link7[] = {2,10};
+link8[] = {2,17};
+link9[] = {2,20};
+link10[] = {2,22};
+link11[] = {3,8};
+link12[] = {4,5};
+link13[] = {5,6};
+link14[] = {5,11};
+link15[] = {6,8};
+link16[] = {7,8};
+link17[] = {8,1};
+link18[] = {8,18};
+link19[] = {9,8};
+link20[] = {10,8};
+link21[] = {11,12};
+link22[] = {12,13};
+link23[] = {12,14};
+link24[] = {13,8};
+link25[] = {14,15};
+link26[] = {15,16};
+link27[] = {16,2};
+link28[] = {17,8};
+link29[] = {18,19};
+link30[] = {20,8};
+link31[] = {21,19};
+link32[] = {22,23};
+link33[] = {23,24};
+link34[] = {24,25};
+link35[] = {25,19};
+globals[] = {25.000000,1,0,0,0,640,480,1,42,6316128,1,-761.965881,114.719940,779.412476,-21.117157,990,904,1};
+window[] = {2,-1,-1,-1,-1,786,75,1035,75,3,1008};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "fsm_recognize";
+  class States
+  {
+    /*%FSM<STATE "Start">*/
+    class Start
+    {
+      name = "Start";
+      init = /*%FSM<STATEINIT""">*/"private[""_old_player""];" \n
+       "_old_player = player;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 1.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"ACE_NO_RECOGNIZE"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="distance_check";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "distance_check">*/
+    class distance_check
+    {
+      name = "distance_check";
+      init = /*%FSM<STATEINIT""">*/"private[""_target"",""_viewdistance"",""_distance"",""_side""];" \n
+       "_target = cursorTarget;" \n
+       "_viewDistance = ((viewDistance/(viewDistance / 1200)) * (1 - fog));" \n
+       "_distance = player distance _target;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "___ace_sys_recognize">*/
+        class ___ace_sys_recognize
+        {
+          priority = 100.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"! ace_sys_recognize_constant"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "spect">*/
+        class spect
+        {
+          priority = 11.000000;
+          to="exit_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"ace_sys_spectator_SPECTATINGON"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "vd_">*/
+        class vd_
+        {
+          priority = 10.000000;
+          to="exit_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_viewDistance < _distance)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "building_">*/
+        class building_
+        {
+          priority = 9.000000;
+          to="exit_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_target isKindOf ""Building"" && {!(_target isKindOf ""Reammobox"")}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "dead_">*/
+        class dead_
+        {
+          priority = 8.000000;
+          to="exit_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(alive _target)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "null_">*/
+        class null_
+        {
+          priority = 7.000000;
+          to="exit_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(isNull _target)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "self">*/
+        class self
+        {
+          priority = 0.000000;
+          to="exit_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_target == player)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="recognise_side";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "recognise_side">*/
+    class recognise_side
+    {
+      name = "recognise_side";
+      init = /*%FSM<STATEINIT""">*/"_side = _target call ace_sys_recognize_fnc_recognize_side;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "friendly">*/
+        class friendly
+        {
+          priority = 1.000000;
+          to="recognise_type";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_side == ""FRIENDLY"")"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="exit_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "exit_">*/
+    class exit_
+    {
+      name = "exit_";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "__alive_OR__play">*/
+        class __alive_OR__play
+        {
+          priority = 1.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(alive player) || {player != _old_player}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="distance_check";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "recognise_type">*/
+    class recognise_type
+    {
+      name = "recognise_type";
+      init = /*%FSM<STATEINIT""">*/"private[""_type""];" \n
+       "_type = _target call ace_sys_recognize_fnc_recognize_type;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "exit">*/
+        class exit
+        {
+          priority = 1.000000;
+          to="exit_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_type == ""EXIT"")"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="recognise_name";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "recognise_name">*/
+    class recognise_name
+    {
+      name = "recognise_name";
+      init = /*%FSM<STATEINIT""">*/"private[""_name""];" \n
+       "_name = [_target,_type] call ace_sys_recognize_fnc_recognize_name;" \n
+       "" \n
+       "// Max recognise distance is 30m" \n
+       "(_name + [_target, 30]) spawn ace_sys_recognize_fnc_recognize_display;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "not_shown">*/
+        class not_shown
+        {
+          priority = 0.000000;
+          to="distance_check";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!ace_sys_recognize_shown"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End">*/
+    class End
+    {
+      name = "End";
+      init = /*%FSM<STATEINIT""">*/"if (ACE_NO_RECOGNIZE) then { diag_log ""ACE_NO_RECOGNIZE""; };"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Start";
+  finalStates[] =
+  {
+    "End",
+  };
+};
+/*%FSM</COMPILE>*/

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="sys_fastroping">
+<Container name="STR_DN">
+<Key ID="STR_ACE_DEPLOYFASTROPE">
+<English>Deploy Ropes</English>
+<German>Seile ablassen</German>
+<Spanish>Deploy Ropes</Spanish>
+<Czech>Rozvinout Lana</Czech>
+<Russian>Бросить канаты</Russian>
+<Italian>Getta la Fune</Italian>
+<Polish>Rozwiń liny</Polish>
+<French>Lancer les cordes</French>
+<Hungarian>Kötelek kiengedése</Hungarian>
+</Key>
+<Key ID="STR_ACE_RELEASE_ROPE">
+<English>Release Ropes</English>
+<German>Seile abwerfen</German>
+<Spanish>Release Ropes</Spanish>
+<Czech>Uvolnit Lana</Czech>
+<Russian>Отсоединить канаты</Russian>
+<Italian>Lascia La Fune</Italian>
+<Polish>Wypuść liny</Polish>
+<French>Détacher les cordes</French>
+<Hungarian>Kötél eldobása</Hungarian>
+</Key>
+<Key ID="STR_ACE_USE_ROPE">
+<English>Fastrope</English>
+<German>Abseilen</German>
+<Spanish>Fastrope</Spanish>
+<Czech>Slanit se</Czech>
+<Russian>Высадка по канату</Russian>
+<Italian>Fastrope</Italian>
+<Polish>Zjedź po linie</Polish>
+<French>Rappel</French>
+<Hungarian>Lecsúszás</Hungarian>
+</Key>
+<Key ID="STR_ACE_FASTROPE">
+<English>(Æ) Disable Fastroping</English>
+<German>(Æ) Support: Abseilen ausschalten</German>
+<Spanish>(Æ) Disable Fastroping</Spanish>
+<Czech>(Æ) Zakázat Slaňování</Czech>
+<Russian>(Æ) Отключить высадку по канатам</Russian>
+<Italian>(Æ) Disable Fastroping</Italian>
+<Polish>(Æ) Wyłącz fastroping</Polish>
+<French>(Æ) Annuler Rappel</French>
+<Hungarian>(Æ) Köteles ereszkedés kikapcs</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_ROPE_M">
+<English>Rope</English>
+<German>Seil</German>
+<Spanish>Rope</Spanish>
+<Czech>Lano</Czech>
+<Russian>Канат</Russian>
+<Italian>Rope</Italian>
+<Polish>Lina</Polish>
+<French>Corde</French>
+<Hungarian>Kötél</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_ROPE_M50">
+<English>Rope 15m</English>
+<German>Seil 15m</German>
+<Spanish>Rope 15m</Spanish>
+<Czech>Lano (15m)</Czech>
+<Russian>Канат 15м</Russian>
+<Italian>Rope 15m</Italian>
+<Polish>Lina 15m</Polish>
+<French>Corde 15m</French>
+<Hungarian>Kötél 15m</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_ROPE_M60">
+<English>Rope 18m</English>
+<German>Seil 18m</German>
+<Spanish>Rope 18m</Spanish>
+<Czech>Lano (18m)</Czech>
+<Russian>Канат 18м</Russian>
+<Italian>Rope 18m</Italian>
+<Polish>Lina 18m</Polish>
+<French>Corde 18m</French>
+<Hungarian>Kötél 18m</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_ROPE_M90">
+<English>Rope 27m</English>
+<German>Seil 27m</German>
+<Spanish>Rope 27m</Spanish>
+<Czech>Lano (27m)</Czech>
+<Russian>Канат 27м</Russian>
+<Italian>Rope 27m</Italian>
+<Polish>Lina 27m</Polish>
+<French>Corde 27m</French>
+<Hungarian>Kötél 27m</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_ROPE_M120">
+<English>Rope 36m</English>
+<German>Seil 36m</German>
+<Spanish>Rope 36m</Spanish>
+<Czech>Lano (36m)</Czech>
+<Russian>Канат 36м</Russian>
+<Italian>Rope 36m</Italian>
+<Polish>Lina 36m</Polish>
+<French>Corde 36m</French>
+<Hungarian>Kötél 36m</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_ROPE_M">
+<English>Length: 33m</English>
+<German>Länge: 33m</German>
+<Spanish>Length: 33m</Spanish>
+<Czech>Délka: 33m</Czech>
+<Russian>Длина: 33м</Russian>
+<Italian>Length: 33m</Italian>
+<Polish>Długość: 33m</Polish>
+<French>Longueur: 33m</French>
+<Hungarian>Hossz: 33m</Hungarian>
+</Key>
+<Key ID="STR_VC_ACE_AMMO_ROPE">
+<English>Æ Ammunition (Ropes)</English>
+<German>Æ Munition (Seile)</German>
+<Spanish>Æ Ammunition (Ropes)</Spanish>
+<Czech>Æ Munice (Lana)</Czech>
+<Russian>Æ Снаряжение (Канаты)</Russian>
+<Italian>Æ Ammunition (Ropes)</Italian>
+<Polish>Æ Amunicja (liny)</Polish>
+<French>Æ Munitions (Cordes)</French>
+<Hungarian>Æ Lőszer (Kötelek)</Hungarian>
+</Key>
+<Key ID="STR_VDN_ACE_ROPE_BOX">
+<English>Rope Box</English>
+<German>Seile Kiste</German>
+<Spanish>Rope Box</Spanish>
+<Czech>Bedna s Lany</Czech>
+<Russian>Ящик с канатами</Russian>
+<Italian>Rope Box</Italian>
+<Polish>Skrzynia z linami</Polish>
+<French>Caisse de cordes</French>
+<Hungarian>Köteles láda</Hungarian>
+</Key>
+</Container></Package></Project>

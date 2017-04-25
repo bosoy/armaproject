@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex_sm\addons\c_sound_wep_shotgun
+Pbo Type is: Arma Addon
+Sha: '79E1FB4A77B4F4B037C420D450CBD91EE4E4A7AD'
+//////</HEADER>//////

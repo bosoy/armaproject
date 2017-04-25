@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\m_veh_optics
+Pbo Type is: Arma Addon
+Sha: 'F9D48745C1DBA68C62BCDC1EDFB8F49B730D4571'
+//////</HEADER>//////

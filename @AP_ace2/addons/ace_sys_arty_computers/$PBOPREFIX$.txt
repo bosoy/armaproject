@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=x\ace\Addons\sys_arty_computers
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: 'A70C300796B12B8F3045AD841280DE1B2EFFC06E'
+//////</HEADER>//////

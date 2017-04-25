@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_sight_adjustment
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: 'CF2570A3A01084BE3DFF9629D0188C7A8DF969F8'
+//////</HEADER>//////

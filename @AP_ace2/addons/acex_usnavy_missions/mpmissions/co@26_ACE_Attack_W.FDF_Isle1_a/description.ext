@@ -1,0 +1,46 @@
+__EXEC(diag_log format ["############################# Start %1 #############################", missionName];)
+onLoadMission="Attack ACE";
+onLoadIntroTime = false;
+onLoadMissionTime = false;
+respawn="3";
+respawndelay = 4;
+disabledAI = 1;
+showGPS=1;
+
+class Header {
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 26;
+	playerCountMultipleOf = 1;
+};
+
+class RscPicture {
+	type=0;
+	idc=-1;
+	style=48;
+	colorBackground[]={0,0,0,0};
+	colorText[]={1,1,1,1};
+	font = "Zeppelin32";
+	size=0;
+};
+
+class RscTitles {
+	class xx_misc_Xlabel {
+		idd=-1;
+		movingEnable=0;
+		fadein = 2;
+		fadeout = 2;
+		duration=14;
+		name="xx_misc_Xlabel";
+		sizeEx = 256;
+		class controls {
+			class Picture : RscPicture {
+				x = "SafeZoneX + SafeZoneW - 0.15";
+				y = "SafeZoneY + SafeZoneH - 0.15";
+				w = 0.16; h = 0.16;
+				text="pics\Xlabel.paa";
+				sizeEx = 256;
+			};
+		};
+	};
+};

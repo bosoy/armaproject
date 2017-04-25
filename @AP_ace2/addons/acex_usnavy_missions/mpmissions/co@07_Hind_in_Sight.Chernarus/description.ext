@@ -1,0 +1,139 @@
+OnLoadMission="Hind in Sight (v1.2) by AnimalMother92";
+
+OnLoadIntroTime=FALSE;
+OnLoadMissionTime=TRUE;
+loadScreen = "pic2.paa";
+
+disabledAI=FALSE;
+aiKills=1;
+ShowGPS=1;
+showCompass=1;
+showWatch=1;
+showMap=1;
+showNotePad=1;
+briefing=1;
+debriefing=1;
+
+class Weapons 
+ {
+  class ACE_M4SPR_SD {count = 1;};
+  class ACE_M4A1_GL {count = 1;};
+  class M4A1_Aim {count = 1;};
+  class ACE_M4A1_GL_SD {count = 1;};
+  class ACE_M4A1_Aim_SD {count = 1;};
+  class ACE_M4A1_AIM_GL_SD {count = 1;};
+  class ACE_M4A1_ACOG_SD {count = 1;};
+  class M249_EP1 {count = 1;};
+  class DMR {count = 1;};
+  class M40A3 {count = 1;};
+  class M32_EP1 {count = 1;};
+  class Colt1911 {count = 4;};
+  class ACE_M72A2 {count = 2;};
+ };
+
+class Magazines 
+ {
+  class PipeBomb {count = 5;};
+  class ACE_30Rnd_556x45_SB_Stanag {count = 50;};
+  class 30Rnd_556x45_StanagSD {count = 50;};
+  class 20Rnd_762x51_DMR {count = 20;};
+  class 5Rnd_762x51_M24 {count = 20;};
+  class 1Rnd_HE_M203 {count = 20;};
+  class 6Rnd_HE_M203 {count = 20;};
+  class 7Rnd_45ACP_1911 {count = 20;};
+  class HandGrenade_West {count = 20;};
+  class SmokeShell {count = 20;};
+ };
+
+class CfgSounds
+{
+ sounds[]={};
+	class trophy
+	{
+		name = "trophy";
+		sound[] = {"\sound\trophy.ogg", 2, 1};
+		titles[]={};
+	};
+};
+
+class CfgMusic
+{
+ tracks[]={};
+	class AM92Intro
+	{
+		name = "AM92Intro";
+		sound[] = {"\music\AM92Intro.ogg", db+0, 1.0};
+	};
+};
+
+class Header
+{
+gameType=COOP;
+minPlayers=1;
+maxPlayers=7;
+};
+
+respawn=4;
+respawnDelay=10;
+respawnDialog=0;
+
+
+
+// Other code
+doneKeys[]={"Hind in Sight"};
+
+#define FontM "Zeppelin32"
+#define FontHTML "Zeppelin32"
+
+class RscTitles
+{	
+	class Credit1
+   	{
+      idd=-1;
+      movingEnable=true;
+      duration=10;
+      name="Credit1";
+      controls[]={"text1"};
+
+      class text1
+      {
+         idc = -1;
+         type = 0;
+         style = 2;
+         x = 0.2;
+         y = 0;
+         w = 1;
+         h = 0.04;
+	 font = "Zeppelin32";
+       sizeEx = 0.05;
+       colorBackground[] = {0, 0, 0, 0};
+   	 colorText[] = {1, 1, 1, 0.8};
+  	 text = "AnimalMother92 Presents...";
+      };
+   	};
+   
+   	class Credit2
+   	{
+      idd=-1;
+      movingEnable=true;
+      duration=10;
+      name="Credit2";
+      controls[]={"text1"};
+
+      class text1
+      {
+         idc = -1;
+         type = 0;
+         style = 2;
+         x = 0.2;
+         y = 0.2;
+         w = 1;
+         h = 0.05;
+	 font = "Zeppelin32";
+       sizeEx = 0.05;
+       colorBackground[] = {0, 0, 0, 0};
+   	 colorText[] = {1, 1, 1, 0.8};
+  	 text = "Hind in Sight";
+      };
+    };
+};

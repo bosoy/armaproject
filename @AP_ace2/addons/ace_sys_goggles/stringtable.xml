@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2">
+<Package name="ACE2">
+<Container name="sys_goggles">
+<Key ID="STR_ACE_GOG_TAKEOFF">
+<English>Take off goggle</English>
+<German>Brille absetzen</German>
+<Spanish>Take off goggle</Spanish>
+<Czech>Sundat brýle</Czech>
+<Russian>Снять очки</Russian>
+<Italian>Levati gli Occhiali</Italian>
+<Polish>Zdejmij okulary</Polish>
+<French>Enlever les lunettes</French>
+<Hungarian>Szemüveg levétele</Hungarian>
+</Key>
+<Key ID="STR_ACE_MSK_TAKEOFF">
+<English>Take off mask</English>
+<German>Maske absetzen</German>
+<Spanish>Take off mask</Spanish>
+<Czech>Sundat masku</Czech>
+<Russian>Снять маску</Russian>
+<Italian>Levati la Maschera</Italian>
+<Polish>Zdejmij maskę</Polish>
+<French>Enlever le masque</French>
+<Hungarian>Álarc levétele</Hungarian>
+</Key>
+<Key ID="STR_ACE_MSK_TAKEOFFGASMASK">
+<English>Take off gasmask</English>
+<German>Gasmaske absetzen</German>
+<Spanish>Take off gasmask</Spanish>
+<Czech>Sundat plynovou masku</Czech>
+<Russian>Снять противогаз</Russian>
+<Italian>Take off gasmask</Italian>
+<Polish>Zdejmij maskę gazową</Polish>
+<French>Take off gasmask</French>
+<Hungarian>Take off gasmask</Hungarian>
+</Key>
+<Key ID="STR_ACE_EARPLUG_TAKEOFF">
+<English>Take out earplug</English>
+<German>Ohrenstöpsel rausnehmen</German>
+<Spanish>Take out earplug</Spanish>
+<Czech>Vyndat špunty z uší</Czech>
+<Russian>Вынуть беруши</Russian>
+<Italian>Take out earplug</Italian>
+<Polish>Wyjmij stoppery</Polish>
+<French>Enlever bouchons auditifs</French>
+<Hungarian>Füldugó kivétele</Hungarian>
+</Key>
+<Key ID="STR_ACE_VISOR_DOWN">
+<English>Visor down</English>
+<German>Visier runterklappen</German>
+<Spanish>Visor down</Spanish>
+<Czech>Hledí nahoru</Czech>
+<Russian>Опустить визор</Russian>
+<Italian>Visor down</Italian>
+<Polish>Opuść wizjer</Polish>
+<French>Visor down</French>
+<Hungarian>Visor down</Hungarian>
+</Key>
+<Key ID="STR_ACE_VISOR_UP">
+<English>Visor up</English>
+<German>Visier hochklappen</German>
+<Spanish>Visor up</Spanish>
+<Czech>Hledí dolu</Czech>
+<Russian>Поднять визор</Russian>
+<Italian>Visor up</Italian>
+<Polish>Podnieś wizjer</Polish>
+<French>Visor up</French>
+<Hungarian>Visor up</Hungarian>
+</Key>
+<Key ID="STR_CFG_GLASSES_LHD">
+<English>Safety goggles</English>
+<German>Schutzbrille</German>
+<Spanish>Safety goggles</Spanish>
+<Czech>Ochranné brýle</Czech>
+<Russian>Защитные очки</Russian>
+<Italian>Occhiali di Sicurezza</Italian>
+<Polish>Gogle ochronne</Polish>
+<French>Lunettes tactiques</French>
+<Hungarian>Védőszemüveg</Hungarian>
+</Key>
+<Key ID="STR_CFG_GLASSES_DELTA">
+<English>Delta goggles</English>
+<German>Delta Brille</German>
+<Spanish>Delta goggles</Spanish>
+<Czech>Brýle Delta</Czech>
+<Russian>Очки Delta</Russian>
+<Italian>Delta goggles</Italian>
+<Polish>Gogle Delta</Polish>
+<French>Lunettes Delta</French>
+<Hungarian>Delta goggles</Hungarian>
+</Key>
+<Key ID="STR_ACE_GASMASK">
+<English>Gas Mask</English>
+<German>Gasmaske</German>
+<Spanish>Gasmask</Spanish>
+<Czech>Plynová maska</Czech>
+<Russian>Противогаз</Russian>
+<Italian>Maschera Anti-Gas</Italian>
+<Polish>Maska gazowa</Polish>
+<French>Masque à gaz</French>
+<Hungarian>Gázálarc</Hungarian>
+</Key>
+<Key ID="STR_ACE_BALAKLAVA">
+<English>Balaclava</English>
+<German>Sturmhaube</German>
+<Spanish>Balaclava</Spanish>
+<Czech>Kukla</Czech>
+<Russian>Балаклава</Russian>
+<Italian>Balaclava</Italian>
+<Polish>Kominiarka</Polish>
+<French>Cagoule</French>
+<Hungarian>Símaszk</Hungarian>
+</Key>
+<Key ID="STR_ACE_BALAKLAVAGRAY">
+<English>Balaclava (gray)</English>
+<German>Sturmhaube (grau)</German>
+<Spanish>Balaclava (gray)</Spanish>
+<Czech>Kukla (šedá)</Czech>
+<Russian>Балаклава (серая)</Russian>
+<Italian>Balaclava (gray)</Italian>
+<Polish>Kominiarka (szara)</Polish>
+<French>Cagoule (gray)</French>
+<Hungarian>Símaszk (gray)</Hungarian>
+</Key>
+<Key ID="STR_ACE_BALAKLAVAOLIVE">
+<English>Balaclava (olive)</English>
+<German>Sturmhaube (oliv)</German>
+<Spanish>Balaclava (olive)</Spanish>
+<Czech>Kukla (olivová)</Czech>
+<Russian>Балаклава (зелёная)</Russian>
+<Italian>Balaclava (olive)</Italian>
+<Polish>Kominiarka (oliwkowa)</Polish>
+<French>Cagoule (olive)</French>
+<Hungarian>Símaszk (olive)</Hungarian>
+</Key>
+<Key ID="STR_ACE_EARPLUGS">
+<English>Earplugs</English>
+<German>Ohrenstöpsel</German>
+<Spanish>Earplugs</Spanish>
+<Czech>Špunty do uší</Czech>
+<Russian>Беруши</Russian>
+<Italian>Tappi Auricolari</Italian>
+<Polish>Stoppery</Polish>
+<French>Bouchons auditifs</French>
+<Hungarian>Füldugó</Hungarian>
+</Key>
+</Container>
+<Container name="INTERACTION">
+<Key ID="STR_DN_ACE_GOGGLE_MENU">
+<German>Brillen / Masken ></German>
+<English>Goggles / Masks ></English>
+<Italian>Goggles / Masks ></Italian>
+<Spanish>Goggles / Masks ></Spanish>
+<French>Lunettes / Masques ></French>
+<Czech>Brýle / Masky ></Czech>
+<Russian>Очки / Маски ></Russian>
+<Polish>Gogle / Maski ></Polish>
+<Hungarian>Goggles / Masks ></Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

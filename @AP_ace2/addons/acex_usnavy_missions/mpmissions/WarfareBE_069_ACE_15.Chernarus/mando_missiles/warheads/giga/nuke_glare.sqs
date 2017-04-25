@@ -1,0 +1,35 @@
+_posx = _this select 0
+_posy = _this select 1
+
+
+drop ["\Ca\Data\kouleSvetlo.p3d","","Billboard",1,15.0,[_posx,_posy,0],[0,0,0],1,1.3,1.0,0.0,[800],[[1.0,0.7,0.4,1.0],[1.0,0.6,0.3,0.0]],[0],0.0,0.0,"","",""]
+
+~0.01
+
+#flashstart
+_cnt = 0
+_size = 800
+_agl = random 360
+_aglz = random 90
+_wait = 0.01
+_trs = 1.0
+#flashloop
+?(_cnt == 50) : goto "flashend"
+
+_dist = 1 + random(100)
+_upposx = _posx + _dist * (sin _agl) * cos(_aglz)
+_upposy = _posy + _dist * (cos _agl) * cos(_aglz)
+_upposz = abs((sin _aglz) * _dist)
+
+drop ["\Ca\Data\kouleSvetlo.p3d","","Billboard",1,15.0,[_upposx,_upposy,_upposz],[0,0,0],1,1.3,1.0,0.0,[_size],[[1.0,0.7,0.4,1.0 * _trs],[1.0,0.6,0.3,0.0]],[0],0.0,0.0,"","",""]
+
+_agl = random 360
+_aglz = random 90
+_cnt = _cnt + 1
+_wait = _wait * 1.1
+_trs = _trs * 0.95
+~_wait
+goto "flashloop"
+#flashend
+
+exit

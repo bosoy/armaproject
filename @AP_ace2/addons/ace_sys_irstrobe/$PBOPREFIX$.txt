@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_irstrobe
+Pbo Type is: Arma Addon
+Sha: '06A9723A049E40E9497835FAB5E1294774EFB3D0'
+//////</HEADER>//////

@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_grenades
+Pbo Type is: Arma Addon
+Sha: '3B2CCF1E685DB317E9EB68CAD38B4FF01E78CC77'
+//////</HEADER>//////

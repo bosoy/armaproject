@@ -1,0 +1,81 @@
+class FSM
+{
+  fsmName = "XFacRebuild";
+  class States
+  {
+    class Start
+    {
+      name = "Start";
+      init = "private [""_findex"", ""_wairfac"", ""_pos"", ""_dir"", ""_fac"",""_timeend""];" \n
+       "_findex = _this select 0;" \n
+       "		" \n
+       "switch (_findex) do {" \n
+       "	case 0: {X_JIPH setVariable [""d_jet_s_reb"",true,true];};" \n
+       "	case 1: {X_JIPH setVariable [""d_chopper_s_reb"",true,true];};" \n
+       "	case 2: {X_JIPH setVariable [""d_wreck_s_reb"",true,true];};" \n
+       "};" \n
+       "" \n
+       "_timeend = time + 300 + random 300;";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = "";
+          condition="time > _timeend";
+          action="";
+        };
+      };
+    };
+    class End
+    {
+      name = "End";
+      init = "_wairfac = switch (d_own_side) do {" \n
+       "	case ""WEST"": {d_WarfareAircraftFactory_West};" \n
+       "	case ""GUER"": {d_WarfareAircraftFactory_Guer};" \n
+       "	case ""EAST"": {d_WarfareAircraftFactory_East};" \n
+       "};" \n
+       "_pos = (d_aircraft_facs select _findex) select 0;" \n
+       "_dir = (d_aircraft_facs select _findex) select 1;" \n
+       "		" \n
+       "_fac = createVehicle [_wairfac, _pos, [], 0, ""NONE""];" \n
+       "_fac setDir _dir;" \n
+       "_fac setPos _pos;" \n
+       "		" \n
+       "switch (_findex) do {" \n
+       "	case 0: {_fac addEventHandler [""killed"", {[_this select 0, 0] call d_fnc_x_fackilled}]};" \n
+       "	case 1: {_fac addEventHandler [""killed"", {[_this select 0, 1] call d_fnc_x_fackilled}]};" \n
+       "	case 2: {_fac addEventHandler [""killed"", {[_this select 0, 2] call d_fnc_x_fackilled}]};" \n
+       "};" \n
+       "" \n
+       "switch (_findex) do {" \n
+       "	case 0: {" \n
+       "		X_JIPH setVariable [""d_jet_serviceH"",false,true];" \n
+       "		X_JIPH setVariable [""d_jet_s_reb"",false,true];" \n
+       "		d_kb_logic1 kbTell [d_kb_logic2,d_kb_topic_side,""JetServiceRebuilded"",true];" \n
+       "	};" \n
+       "	case 1: {" \n
+       "		X_JIPH setVariable [""d_chopper_serviceH"",false,true];" \n
+       "		X_JIPH setVariable [""d_chopper_s_reb"",false,true];" \n
+       "		d_kb_logic1 kbTell [d_kb_logic2,d_kb_topic_side,""ChopperServiceRebuilded"",true];" \n
+       "	};" \n
+       "	case 2: {" \n
+       "		X_JIPH setVariable [""d_wreck_repairH"",false,true];" \n
+       "		X_JIPH setVariable [""d_wreck_s_reb"",false,true];" \n
+       "		d_kb_logic1 kbTell [d_kb_logic2,d_kb_topic_side,""WreckServiceRebuilded"",true];" \n
+       "	};" \n
+       "};";
+      precondition = "";
+      class Links
+      {
+      };
+    };
+  };
+  initState="Start";
+  finalStates[] =
+  {
+    "End",
+  };
+};

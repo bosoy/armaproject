@@ -1,0 +1,229 @@
+class FSM
+{
+  fsmName = "AutoKick";
+  class States
+  {
+    class Start
+    {
+      name = "Start";
+      init = "private [""_nomercyendtime"", ""_vec"", ""_type"", ""_type_name"", ""_wtime"", ""_minutes"",""_was_engineon"",""_timeend""];" \n
+       "_timeend = time + 120;";
+      precondition = "";
+      class Links
+      {
+        class __nil_player_autokick
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = "";
+          condition="(!isNil ""d_player_autokick_time"") || (time > _timeend)";
+          action="";
+        };
+      };
+    };
+    class _
+    {
+      name = "_";
+      init = "if (isNil ""d_player_autokick_time"") then {" \n
+       "	d_player_autokick_time = d_AutoKickTime;" \n
+       "};" \n
+       "_nomercyendtime = time + d_player_autokick_time;";
+      precondition = "";
+      class Links
+      {
+        class Time_reached
+        {
+          priority = 1.000000;
+          to="End";
+          precondition = "";
+          condition="d_player_autokick_time <= 0";
+          action="";
+        };
+        class _
+        {
+          priority = 0.000000;
+          to="__1";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class End
+    {
+      name = "End";
+      init = "[localize ""STR_DOM_MISSIONSTRING_1415"", ""HQ""] call d_fnc_HintChatMsg;" \n
+       "d_player_autokick_time = nil;";
+      precondition = "";
+      class Links
+      {
+      };
+    };
+    class __1
+    {
+      name = "__1";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class Time_reached
+        {
+          priority = 2.000000;
+          to="End";
+          precondition = "";
+          condition="time >= _nomercyendtime";
+          action="";
+        };
+        class vehicle_player_
+        {
+          priority = 0.000000;
+          to="__2";
+          precondition = "";
+          condition="vehicle player != player";
+          action="";
+        };
+      };
+    };
+    class __2
+    {
+      name = "__2";
+      init = "_vec = vehicle player;" \n
+       "_was_engineon = isEngineOn _vec;" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class Time_reached
+        {
+          priority = 2.000000;
+          to="End";
+          precondition = "";
+          condition="time >= _nomercyendtime";
+          action="";
+        };
+        class _vec_isKindOf__Air
+        {
+          priority = 1.000000;
+          to="is_Air";
+          precondition = "";
+          condition="_vec isKindOf ""Air""";
+          action="";
+        };
+        class vehicle_player_
+        {
+          priority = 0.000000;
+          to="__1";
+          precondition = "";
+          condition="vehicle player == player";
+          action="";
+        };
+      };
+    };
+    class is_Air
+    {
+      name = "is_Air";
+      init = "_type = typeOf _vec;";
+      precondition = "";
+      class Links
+      {
+        class Time_reached
+        {
+          priority = 2.000000;
+          to="End";
+          precondition = "";
+          condition="time >= _nomercyendtime";
+          action="";
+        };
+        class _type_in_mt_bonus
+        {
+          priority = 1.000000;
+          to="__3";
+          precondition = "";
+          condition="toUpper(_type) in d_mt_bonus_vehicle_array || toUpper(_type)  in d_sm_bonus_vehicle_array";
+          action="";
+        };
+        class vehicle_player_
+        {
+          priority = 0.000000;
+          to="__1";
+          precondition = "";
+          condition="vehicle player == player";
+          action="";
+        };
+      };
+    };
+    class __3
+    {
+      name = "__3";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class Time_reached
+        {
+          priority = 2.000000;
+          to="End";
+          precondition = "";
+          condition="time >= _nomercyendtime";
+          action="";
+        };
+        class player____driver
+        {
+          priority = 1.000000;
+          to="__4";
+          precondition = "";
+          condition="player == driver _vec || player == gunner _vec || player == commander _vec";
+          action="";
+        };
+        class vehicle_player_
+        {
+          priority = 0.000000;
+          to="__1";
+          precondition = "";
+          condition="vehicle player == player";
+          action="";
+        };
+      };
+    };
+    class __4
+    {
+      name = "__4";
+      init = "player action [""Eject"",_vec];" \n
+       "if (!_was_engineon && isEngineOn _vec) then {" \n
+       "	_vec engineOn false;" \n
+       "	player action [""engineOff"", _vec];" \n
+       "};" \n
+       "_type_name = [_type,0] call d_fnc_GetDisplayName;" \n
+       "_wtime = _nomercyendtime - time;" \n
+       "_minutes = round (_wtime / 60);" \n
+       "if (_minutes < 1) then {_minutes = 1};" \n
+       "[format [localize ""STR_DOM_MISSIONSTRING_1416"", _type_name, _minutes], ""HQ""] call d_fnc_HintChatMsg;" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class Time_reached
+        {
+          priority = 2.000000;
+          to="End";
+          precondition = "";
+          condition="time >= _nomercyendtime";
+          action="";
+        };
+        class vehicle_player_
+        {
+          priority = 0.000000;
+          to="__1";
+          precondition = "";
+          condition="vehicle player == player";
+          action="";
+        };
+      };
+    };
+  };
+  initState="Start";
+  finalStates[] =
+  {
+    "End",
+  };
+};

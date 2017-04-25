@@ -1,0 +1,44 @@
+class FSM
+{
+  fsmName = "XCheckSMHardTarget";
+  class States
+  {
+    class Start
+    {
+      name = "Start";
+      init = "private [""_vehicle"", ""_hdeh""];" \n
+       "_vehicle = _this select 0;" \n
+       "_vehicle addEventHandler [""killed"", {d_side_mission_winner = 2;d_side_mission_resolved = true;}];" \n
+       "" \n
+       "_hdeh = _vehicle addEventHandler [""handleDamage"", d_fnc_CheckSMShotHD];" \n
+       "d_extra_mission_vehicle_remover_array set [count d_extra_mission_vehicle_remover_array, _vehicle];" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class End
+    {
+      name = "End";
+      init = "";
+      precondition = "";
+      class Links
+      {
+      };
+    };
+  };
+  initState="Start";
+  finalStates[] =
+  {
+    "End",
+  };
+};

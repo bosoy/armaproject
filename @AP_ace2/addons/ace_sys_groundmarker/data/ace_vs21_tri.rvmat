@@ -1,0 +1,14 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 5.24
+//Produced on Sat Apr 06 11:45:27 2013 : Created on Sat Apr 06 11:45:27 2013
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class ace_sys_groundmarker : data\ace_vs21_tri.rvmat{
+class StageTI
+{
+	texture = "x\ace\addons\sys_groundmarker\data\ace_vs21_tri_ti_ca.paa";
+};
+//};

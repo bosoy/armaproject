@@ -1,0 +1,149 @@
+/*%FSM<COMPILE "D:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, aivec">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Start",0,250,-25.000000,-175.000000,75.000000,-125.000000,0.000000,"Start"};
+item1[] = {"Delay",4,218,-25.000000,-75.000000,75.000000,-25.000000,0.000000,"Delay"};
+item2[] = {"_",2,250,-25.000000,25.000000,75.000000,75.000000,0.000000,""};
+item3[] = {"__isNil__ace_sys",4,218,-175.000000,25.000000,-75.000000,75.000000,2.000000,"!isNil" \n """ace_sys_wounds_enabled"""};
+item4[] = {"End",1,250,-325.000000,25.000000,-225.000000,75.000000,0.000000,"End"};
+item5[] = {"_",8,218,-25.000000,125.000000,75.000000,175.000000,0.000000,""};
+item6[] = {"__1",2,250,-25.000000,250.000000,75.000000,300.000000,0.000000,""};
+item7[] = {"Delay",4,4314,-25.000000,375.000000,75.000000,425.000000,0.000000,"Delay"};
+item8[] = {"__alive__vec",4,218,-200.000000,250.000000,-100.000000,300.000000,2.000000,"!alive _vec"};
+link0[] = {0,1};
+link1[] = {1,2};
+link2[] = {2,3};
+link3[] = {2,5};
+link4[] = {3,4};
+link5[] = {5,6};
+link6[] = {6,7};
+link7[] = {6,8};
+link8[] = {7,6};
+link9[] = {8,4};
+globals[] = {25.000000,1,0,0,0,640,480,1,20,6316128,1,-392.310699,434.741425,758.499329,-397.365631,659,921,1};
+window[] = {2,-1,-1,-1,-1,943,225,1185,225,3,677};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "aivec";
+  class States
+  {
+    /*%FSM<STATE "Start">*/
+    class Start
+    {
+      name = "Start";
+      init = /*%FSM<STATEINIT""">*/"private [""_timeend""];" \n
+       "_timeend = time + (5 + random 5);" \n
+       "_vec = _this select 0;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Delay">*/
+        class Delay
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timeend"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "_">*/
+    class _
+    {
+      name = "_";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "__isNil__ace_sys">*/
+        class __isNil__ace_sys
+        {
+          priority = 2.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!isNil ""ace_sys_wounds_enabled"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End">*/
+    class End
+    {
+      name = "End";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__1">*/
+    class __1
+    {
+      name = "__1";
+      init = /*%FSM<STATEINIT""">*/"private [""_no""];" \n
+       "if (!isNull _vec && {alive _vec}) then {" \n
+       "	_no = (position _vec) nearEntities [""CAManBase"", 10]; // use CAManBase because Man picks up agents too while CAManBase doesn't" \n
+       "	if (count _no > 0) then {" \n
+       "		{" \n
+       "			if (!isPlayer _x) then {" \n
+       "				if (damage _x > 0 && {vehicle _x == _x}) then {" \n
+       "					_x setDir (direction _vec);" \n
+       "					[""ace_sys_wounds_aim"", _x] call ACE_fnc_receiverOnlyEvent;" \n
+       "					_x setDamage 0;" \n
+       "				};" \n
+       "			};" \n
+       "		} forEach _no;" \n
+       "	};" \n
+       "};" \n
+       "_timeend = time + (5 + random 5);"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "__alive__vec">*/
+        class __alive__vec
+        {
+          priority = 2.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!alive _vec || {isNull _vec}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Delay">*/
+        class Delay
+        {
+          priority = 0.000000;
+          to="__1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timeend"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Start";
+  finalStates[] =
+  {
+    "End",
+  };
+};
+/*%FSM</COMPILE>*/

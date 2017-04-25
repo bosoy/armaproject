@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex_usnavy\addons\sys_smaw_spottingrifle
+Pbo Type is: Arma Addon
+Sha: '361760315EACD9EB6A2C3DE0C7B14E34878CEE48'
+//////</HEADER>//////

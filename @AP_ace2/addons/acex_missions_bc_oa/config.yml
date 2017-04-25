@@ -1,0 +1,93 @@
+--- 
+:mission: 6th-Battle_Center
+:islands:
+  - :name: utes
+    :startpos: "4186.2227,27.403984,2776.2505"
+    :addons:
+      - utes
+  - :name: Chernarus
+    :startpos: "12062.36,159,12734.539"
+    :addons:
+      - Chernarus
+  - :name: Takistan
+    :startpos: "5930,83,11434"
+    :addons:
+      - Takistan
+  - :name: Zargabad
+    :startpos: "3554,22,4073"
+    :addons:
+      - Zargabad
+  - :name: queshkibrul
+    :startpos: "3728.7974,13.939228,3150.1328"
+    :addons:
+      - queshkibrul
+  - :name: Japahto
+    :startpos: "3778.4868,15.926301,1260.156"
+    :addons:
+      - Japahto
+  - :name: Thirsk
+    :startpos: "1417.6016,46.396198,3088.4143"
+    :addons:
+      - thirsk
+  - :name: ThirskW
+    :startpos: "1417.6016,46.396198,3088.4143"
+    :addons:
+      - thirskw
+  - :name: FDF_Isle1_a
+    :startpos: "10036.479,34.064289,9118.7119"
+    :addons:
+      - FDF_Isle1_a
+  - :name: eden
+    :startpos: "5871.2788,76.891907,5637.6357"
+    :addons:
+      - sap_everon
+  - :name: Kulima
+    :startpos: "761.62268,4.1775074,1119.2271"
+    :addons:
+      - kulima
+  - :name: isladuala
+    :startpos: "4160.3228,12.291095,2239.729"
+    :addons:
+      - ibr_isladuala
+  - :name: VTE_IaDrang
+    :startpos: "11636,50,7918"
+    :addons:
+      - VTE_IaDrang
+  - :name: Celle
+    :startpos: "5147.1904,11.360375,371.25793"
+    :addons:
+      - mbg_celle 
+  - :name: fallujah
+    :startpos: "5636.1548,7,9852.6924"
+    :addons:
+      - fallujah_v1_0
+  - :name: lingor
+    :startpos: "4167,23.6913,1590"
+    :addons:
+      - ibr_lingor
+  - :name: torabora
+    :startpos: "2711.62,703.358,3717.22"
+    :addons:
+      - torabora
+  - :name: IsolaDiCapraia
+    :startpos: "6487,128,7419"
+    :addons:
+      - IsolaDiCapraia
+	 
+:variants:
+  :oa: 
+    :east: \x\acex\addons\missions_bc_oa\bc\units_TK.hpp
+    :west: \x\acex\addons\missions_bc_oa\bc\units_USARMY.hpp
+    :guer: \x\acex\addons\missions_bc_oa\bc\units_UN.hpp
+  :vanilla:
+    :east: \x\acex\addons\missions_bc_oa\bc\units_RU.hpp
+    :west: \x\acex\addons\missions_bc_oa\bc\units_USMC.hpp
+    :guer: \x\acex\addons\missions_bc_oa\bc\units_GUE.hpp
+  :dlc:
+    :east: \x\acex\addons\missions_bc_oa\bc\units_TK.hpp
+    :west: \x\acex\addons\missions_bc_oa\bc\units_BAF.hpp
+    :guer: \x\acex\addons\missions_bc_oa\bc\units_PMC.hpp
+  :desert:
+    :east: \x\acex\addons\missions_bc_oa\bc\units_RU_D.hpp
+    :west: \x\acex\addons\missions_bc_oa\bc\units_USMC_D.hpp
+    :guer: \x\acex\addons\missions_bc_oa\bc\units_TK_GUE.hpp

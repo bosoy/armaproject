@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_handsignals
+Pbo Type is: Arma Addon
+Sha: '2674B7BF2EF59E0C3938BDB7A8F3BBA3BADC5154'
+//////</HEADER>//////

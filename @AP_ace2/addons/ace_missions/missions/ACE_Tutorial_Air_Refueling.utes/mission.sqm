@@ -1,0 +1,240 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+    "cba_main",
+    "ace_main",
+    "ace_c_vehicle",
+    "ace_c_weapon",
+		"CAAir",
+		"ace_sys_air_refuel",
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+    "cba_main",
+    "ace_main",
+    "ace_c_vehicle",
+    "ace_c_weapon",
+		"CAAir",
+		"ace_sys_air_refuel",
+		"utes"
+	};
+	randomSeed=13433624;
+	class Intel
+	{
+		briefingName="@STR_ACE_TUTORIAL_AIR_REFUELING_TITLE";
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+	class Groups
+	{
+		items=2;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5012.8179,0.24550584,223.4184};
+					azimut=-91.809563;
+					special="FLY";
+					id=0;
+					side="WEST";
+					vehicle="AV8B2";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+			class Waypoints
+			{
+				items=3;
+				class Item0
+				{
+					position[]={2426.9114,-99,252.60406};
+					description="Treffpunkt mit Tanker";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={1866.6681,0.30022812,597.39258};
+					description="Treffpunkt mit Tanker";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={1832.7144,0.54288888,1332.1864};
+					description="Treffpunkt mit Tanker";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1307.8116,0.064852804,4908.7964};
+					azimut=-179.84976;
+					id=1;
+					side="LOGIC";
+					vehicle="ACE_AirRefuel_Logic";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=6;
+		class Item0
+		{
+			position[]={1370.967,15.885103,1039.772};
+			name="path";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorBlue";
+			a=20;
+			b=500;
+		};
+		class Item1
+		{
+			position[]={1370.9674,0.29183871,2170.2246};
+			name="path_1";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorBlue";
+			a=20;
+			b=500;
+		};
+		class Item2
+		{
+			position[]={1370.967,0.056591138,3295.0256};
+			name="path_2";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorBlue";
+			a=20;
+			b=500;
+		};
+		class Item3
+		{
+			position[]={1370.9669,0.053087428,4385.9121};
+			name="path_3";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorBlue";
+			a=20;
+			b=500;
+		};
+		class Item4
+		{
+			position[]={1377.5219,0.24897033,414.72711};
+			name="tanker";
+			text="Tanker Flugpfad";
+			type="mil_arrow2";
+			colorName="ColorBlue";
+			a=0.5;
+			b=0.5;
+		};
+		class Item5
+		{
+			position[]={1368.4503,0.42839402,5005.2905};
+			name="tanker_1";
+			text="Tanker Flugpfad";
+			type="mil_arrow2";
+			colorName="ColorBlue";
+			a=0.5;
+			b=0.5;
+			angle=180;
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=129961;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=13391147;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=12296607;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};

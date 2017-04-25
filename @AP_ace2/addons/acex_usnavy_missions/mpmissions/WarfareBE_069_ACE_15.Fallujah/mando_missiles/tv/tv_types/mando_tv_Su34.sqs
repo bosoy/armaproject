@@ -1,0 +1,91 @@
+;mando Missile TV activation for AG Hellfire system
+;mando_tv_hellfire.sqs
+;Aug 2009 mandoble
+;
+; Missile TV system is activated
+; This script is executed by action added to indicated vehicles by mando_mccallow_by_name.sqf or
+; mando_mccallow_by_type.sqf
+;
+; missile's parameters are customized inside this script before executing mando_missile_tv.sqf
+
+
+_params = (_this select 3)
+_targettypes = _params select 0
+_launchpos   = _params select 1
+_camerapos   = _params select 2
+_fixeddir    = _params select 3
+_missileidx  = _params select 4
+_backcolor   = _params select 5
+_scanstoload = _params select 6
+
+
+;Launcher parameters
+
+
+;Missile parameters
+_launcher         = vehicle player
+_missilebody      = "M_Ch29_AT"
+_dir              = 0
+_vangle           = _params select 7
+_speedini         = 10
+_speedmax         = 278
+_acceleration     = 120
+_target           = objNull
+_boomrange        = 0
+_activerange      = 800
+_modeinit         = 1
+_cruisealt        = 300
+_boomscript       = mando_missile_path+"warheads\mando_missilehead1a.sqf"
+_smokescript      = mando_missile_path+"exhausts\mando_missilesmoke1a.sqf"
+_soundrsc         = "mando_missile1"
+_sounddur         = 29
+_endurance        = 15
+_terrainavoidance = false
+_updatefreq       = 2
+_delayinit        = 1
+_controltime      = 1
+_detectable       = false
+_debug            = true
+_launchscript     = ""
+_hagility         = 50
+_vagility         = 50
+_accuracy         = 1
+_intercept        = true
+_scanarch         = 90
+_scanarcv         = 90
+_offsety          = 0.5
+
+mando_tv_missileparams = [_launcher, _missilebody, _launchpos, _dir, _vangle, _speedini, _speedmax, _acceleration, _target, _boomrange, _activerange, _modeinit, _cruisealt, _boomscript, _smokescript, _soundrsc, _sounddur, _endurance, _terrainavoidance, _updatefreq, _delayinit, _controltime, _detectable, _debug, _launchscript, _hagility, _vagility, _accuracy, _intercept, _scanarch, _scanarcv,_offsety]
+
+
+mando_tv_info       = "Kh.29 AG Missile"
+mando_tv_cam_pos    = [_camerapos select 0,_camerapos select 1,_camerapos select 2]
+mando_tv_missileidx = _missileidx
+mando_tv_backcolor  = _backcolor
+mando_tv_target_types = [];
+mando_tv_target_types = mando_tv_target_types + _targettypes;
+mando_tv_ang_to_lock = 1
+mando_tv_plane = vehicle player;
+mando_tv_no_manauto = true
+mando_tv_no_remloc = true
+mando_tv_remote = false
+mando_tv_man = false
+mando_tv_faf = true
+mando_tv_init_ang = _camerapos select 3;
+mando_tv_max_ang = _camerapos select 4;
+mando_tv_wtype = "MISSILE"
+mando_tv_sensor_rng_w = 1000;
+mando_tv_sensor_rng_l = 3000;
+mando_tv_sensor_rects = true
+mando_tv_firing_pos = [_launchpos select 0, _launchpos select 1,_launchpos select 2]
+mando_tv_weapon_length = 0;
+? ((count _launchpos) > 3): mando_tv_weapon_length = _launchpos select 3
+mando_tv_init_dir = _fixeddir
+mando_tv_ammo_base = "MissileCore"
+mando_tv_firing_delay = _scanstoload
+mando_tv_weaponname = "Ch29Launcher_Su34"
+mando_tv_keepgeo = false
+mando_tv_camppe = 2
+[]execVM (mando_missile_path + "tv\mando_missile_tv.sqf")
+
+exit

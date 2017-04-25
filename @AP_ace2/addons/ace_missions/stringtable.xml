@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2">
+<Package name="sys_eject">
+<Container name="STR_ACE_TUTORIAL">
+<Key ID="STR_ACE_TUTORIAL_AIR_REFUELING_TANKER_PATH">
+<English>Tanker Flightpath</English>
+<German>Tanker Flugpfad</German>
+<Spanish>Tanker Flightpath</Spanish>
+<Czech>Letová dráha cisterny</Czech>
+<Polish>Marszruta cysterny</Polish>
+<Russian>Маршрут танкера</Russian>
+<Italian>Tanker Flightpath</Italian>
+<Hungarian>Tanker rep. útvonala</Hungarian>
+<French>Tanker Flightpath</French>
+</Key>
+<Key ID="STR_ACE_TUTORIAL_AIR_REFUELING_MEET_TANKER">
+<English>Meet tanker</English>
+<German>Treffpunkt mit Tanker</German>
+<Spanish>Meet tanker</Spanish>
+<Czech>Doleť k tankeru</Czech>
+<Polish>Dołącz do cysterny</Polish>
+<Russian>Встретьтесь с танкером</Russian>
+<Italian>Meet tanker</Italian>
+<Hungarian>Érd el a tankert</Hungarian>
+<French>Meet tanker</French>
+</Key>
+<Key ID="STR_ACE_TUTORIAL_AIR_REFUELING_APPROACH">
+<English>Slowly approach the tanker and dock to one of the fuel probes.\nThe tanker flies in %1m height with aprox. %2 km/h.</English>
+<German>Nähern Sie sich langsam dem Tanker und docken Sie an eine der Treibstoffleitungen an.\n Flughöhe des Tankers: %1m \n Geschwindigkeit: %2 km/h</German>
+<Spanish>Slowly approach the tanker and dock to one of the fuel probes.\nThe tanker flies in %1m height with aprox. %2 km/h.</Spanish>
+<Czech>Pomalu se přibliž k cisterně a připoj se k jednomu tankovacímu nástavci.\nCisterna letí ve výšce %1m s rychlostí asi %2 km/h.</Czech>
+<Polish>Ostrożnie zbliż się do cysterny i podłącz się do jednej z sond.\nCysterna leci na wysokości %1 m z prędkością około %2 km/h.</Polish>
+<Russian>Медленно приблизьтесь к танкеру и пристыкуйтесь к одному из заправочных конусов.\nТанкер идет на высоте %1м со скоростью %2 км/ч.</Russian>
+<Italian>Slowly approach the tanker and dock to one of the fuel probes.\nThe tanker flies in %1m height with aprox. %2 km/h.</Italian>
+<Hungarian>Lassan közelítsd meg a tankert, és kapcsolódj az eggyik tömlőre.\nThe tanker %1m magasan, kb. %2 km/h. sebességgel repül.</Hungarian>
+<French>Slowly approach the tanker and dock to one of the fuel probes.\nThe tanker flies in %1m height with aprox. %2 km/h.</French>
+</Key>
+<Key ID="STR_ACE_TUTORIAL_AIR_REFUELING_ENABLE_GPS">
+<English>Enable your GPS system to see the tankers flight path.</English>
+<German>Schalten Sie Ihr GPS System ein um den Flugpfad des Tankers zu sehen.</German>
+<Spanish>Enable your GPS system to see the tankers flight path.</Spanish>
+<Czech>Zapni GPS aby si viděl letovou dráhu cisterny.</Czech>
+<Polish>Włącz GPS by śledzić tor lotu cysterny.</Polish>
+<Russian>Включите систему GPS, чтобы увидеть маршрут танкера.</Russian>
+<Italian>Enable your GPS system to see the tankers flight path.</Italian>
+<Hungarian>Kapcsold be a GPS-t, hogy lásd a tanker repülési útvonalát.</Hungarian>
+<French>Enable your GPS system to see the tankers flight path.</French>
+</Key>
+<Key ID="STR_ACE_TUTORIAL_AIR_REFUELING_TITLE">
+<English>ACE2 Tutorial: Air Refueling</English>
+<German>ACE2 Tutorial: Luftbetankung</German>
+<Spanish>ACE2 Tutorial: Air Refueling</Spanish>
+<Czech>ACE2 Výcvik: Tankovaní za letu</Czech>
+<Polish>Samouczek ACE2: Tankowanie w powietrzu</Polish>
+<Russian>Обучение ACE2: Дозаправка в воздухе</Russian>
+<Italian>ACE2 Tutorial: Air Refueling</Italian>
+<Hungarian>ACE2 Tanuló küldi: Légi tankolás</Hungarian>
+<French>ACE2 Tutorial: Air Refueling</French>
+</Key>
+<Key ID="STR_ACE_TUTORIAL_AIR_REFUELING_NOTE">
+<English>Hint</English>
+<German>Hinweise</German>
+<Spanish>Hint</Spanish>
+<Czech>Nápověda</Czech>
+<Polish>Wskazówka</Polish>
+<Russian>Совет</Russian>
+<Italian>Hint</Italian>
+<Hungarian>Tipp</Hungarian>
+<French>Hint</French>
+</Key>
+<Key ID="STR_ACE_TUTORIAL_AIR_REFUELING_G_NOTE">
+<English>Be advised to dock only to the fuel probes AFTER the tanker has turned.\nThe tanker will turn around on each end of the flightpath.\nIf you have docked and the tanker performs the turning maneuver it may happen that the fuelprobes will rip off due to high G forces.</English>
+<German>Achten Sie darauf nur an die Treibstoffleitungen anzudocken NACHDEM der Tanker sein Wendemanöver beendet hat.\nDer Tanker wird an jedem Ende des Flugpfades wenden.\nWenn Sie während des Wendemanövers angedockt sind, kann es aufgrund der hohen G-Kräfte zu einem Abriss der Treibstoffleitungen kommen.</German>
+<Spanish>Be advised to dock only to the fuel probes AFTER the tanker has turned.\nThe tanker will turn around on each end of the flightpath.\nIf you have docked and the tanker performs the turning maneuver it may happen that the fuelprobes will rip off due to high G forces.</Spanish>
+<Czech>Dejte si pozor, abyste se připojili na tankovací nástavec POTOM, co cisterna zatočí.\nCisterna se otočí na každém konci letové trasy.\Jestli jste připojeni a cisterna provede otáčecí manévr, bude možné, že tankovací nástavec utrne kvůli vysokému přetížení.</Czech>
+<Polish>Do sondy można przyłączać się tylko po wykonaniu przez cysternę manewrów związanych z marszrutą.\nCysterna będzie zawracać na każdym końcu marszruty.\nJeśli wykona ten manewr podczas tankowania, sondy mogą zostać uszkodzone z powodu przeciążeń.</Polish>
+<Russian>Настоятельно рекомендуется осуществлять стыковку только после выполнения танкером разворота.\nТанкер будет выполнять разворот каждый раз, когда он подходит к концу маршрута.\nЕсли вы останетесь пристыкованным во время разворота танкера, заправочный конус может быть сорван из-за высокой центробежной силы.</Russian>
+<Italian>Be advised to dock only to the fuel probes AFTER the tanker has turned.\nThe tanker will turn around on each end of the flightpath.\nIf you have docked and the tanker performs the turning maneuver it may happen that the fuelprobes will rip off due to high G forces..</Italian>
+<Hungarian>Csak azután kapcsolódj a tömlőre, miután a tanker megfordult\nThe A tanker megfordul minden repülési útvonal végén.\nA tömlők leszakadhatnak forduláskor, a hatalmas G erőknek köszönhetően.</Hungarian>
+<French>Be advised to dock only to the fuel probes AFTER the tanker has turned.\nThe tanker will turn around on each end of the flightpath.\nIf you have docked and the tanker performs the turning maneuver it may happen that the fuelprobes will rip off due to high G forces.</French>
+</Key>
+<Key ID="STR_ACE_TUTORIAL_AIR_REFUELING_DIFFICULT">
+<English>It may appear difficult to apply the docking maneuver, especially with AI performing tanker flight.\nIf this is the case for you, please have a friend fly the tanker for you in a multiplayer game.</English>
+<German>Es könnte schwierig werden das Andockmanöver durchzuführen, besonders wenn die KI den Tanker steuert.\nFalls das der Fall für Sie sein sollte, fragen Sie einen Freund den Tanker für Sie in einem Mehrspieler Spiel zu fliegen.</German>
+<Spanish>It may appear difficult to apply the docking maneuver, especially with AI performing tanker flight.\nIf this is the case for you, please have a friend fly the tanker for you in a multiplayer game.</Spanish>
+<Czech>Pokud s tankerem letí UI, může se stát, že bude obtížné se připojit. \nPokud je to váš případ, poproste jiného hráče, aby ve hře více hráčů tanker pilotoval.</Czech>
+<Polish>Przyłączanie się do sondy może być trudnym manewrem, zwłaszcza jeśli cysternę pilotuje SI.\nJeśli masz z tego powodu problemy, poproś znajomego o pilotowanie cysterny w grze wieloosobowej.</Polish>
+<Russian>Выполнение стыковочного маневра может показаться тяжелой задачей, особенно если танкер пилотирует ИИ.\nЕсли это так, обратитесь к товарищу с просьбой управлять танкером в сетевой игре.</Russian>
+<Italian>It may appear difficult to apply the docking maneuver, especially with AI performing tanker flight.\nIf this is the case for you, please have a friend fly the tanker for you in a multiplayer game.</Italian>
+<Hungarian>A tömlőre kapcsolódás nehéz lehet, ha a tankert MI vezeti.\n Lehetőleg valami embertársaddal gyakorold Multiban :).</Hungarian>
+<French>It may appear difficult to apply the docking maneuver, especially with AI performing tanker flight.\nIf this is the case for you, please have a friend fly the tanker for you in a multiplayer game.</French>
+</Key>
+</Container>
+</Package>
+</Project>

@@ -1,0 +1,63 @@
+
+// Sabot FX //
+
+B_30mm_AP
+B_20mm_AP
+B_25mm_APDS
+ACE_B_25mm_APFSDS
+B_30mmA10_AP
+Sh_125_SABOT
+Sh_120_SABOT
+Sh_85_AP
+ACE_BR365PRound
+ACE_3BM42MRound
+
+// Heat FX //
+
+Sh_120_HE 
+ACE_3BK29Round (Tandem)
+M_TOW_AT
+M_TOW2_AT (Tandem)
+M_Hellfire_AT (Tandem)
+M_AT5_AT
+ACE_9M113M (Tandem)
+M_AT13_AT (Tandem)
+M_AT10_AT (Tandem)
+M_AT11_AT (Tandem)
+ACE_9M119
+M_AT2_AT
+M_AT6_AT
+M_AT9_AT (Tandem)
+M_Vikhr_AT (Tandem)
+R_S8T_AT
+R_PG9_AT
+R_M136_AT
+ACE_R_M136_CSHP
+R_SMAW_HEAA
+R_PG7V_AT
+R_PG7VL_AT
+R_PG7VR_AT (Tandem)
+M_Javelin_AT (Tandem)
+R_RPG18_AT
+
+// HE FX // 
+
+B_23mm_AA
+B_23mm_APHE
+B_30mm_HE
+B_30mm_AA
+B_20mm_AA
+B_25mm_HE
+B_30x113mm_M789_HEDP
+Sh_125_HE
+Sh_85_HE
+Sh_100_HE
+M_Maverick_AT
+M_Ch29_AT
+R_Hydra_HE
+R_57mm_HE
+R_80mm_HE
+R_OG9_HE
+R_SMAW_HEDP
+
+Bombs, Mines etc = HE

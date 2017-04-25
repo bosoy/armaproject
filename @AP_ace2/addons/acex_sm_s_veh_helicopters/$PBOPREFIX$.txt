@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex_sm\addons\s_veh_helicopters
+Pbo Type is: Arma Addon
+Sha: '58E9EA09FB086B2984D1E000D936A337DC126998'
+//////</HEADER>//////

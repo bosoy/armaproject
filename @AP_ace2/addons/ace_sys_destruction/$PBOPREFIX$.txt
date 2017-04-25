@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_destruction
+Pbo Type is: Arma Addon
+Sha: 'CA06A87234D50B925D845E7369F7641955413B58'
+//////</HEADER>//////

@@ -1,0 +1,293 @@
+class FSM
+{
+  fsmName = "IsAdmin";
+  class States
+  {
+    class Start
+    {
+      name = "Start";
+      init = "private [""_no"",""_timenow"",""_vec""];" \n
+       "d_admin_idd = -9999;" \n
+       "d_adm_currentvec = objNull;" \n
+       "d_adm_currentvec_lockstate = false;" \n
+       "_vec = objNull;" \n
+       "_timenow = time + 7;" \n
+       "player setVariable [""d_p_isadmin"", false];";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class Loop
+    {
+      name = "Loop";
+      init = "if (isNil ""d_allunits_new"") exitWith {endMission ""LOSER""};";
+      precondition = "";
+      class Links
+      {
+        class alive_player
+        {
+          priority = 0.000000;
+          to="Dummy";
+          precondition = "";
+          condition="alive player";
+          action="";
+        };
+      };
+    };
+    class Dummy
+    {
+      name = "Dummy";
+      init = "_timenow = time + 0.812;";
+      precondition = "";
+      class Links
+      {
+        class Fix_for_those_children
+        {
+          priority = 1.000000;
+          to="Kick_those__kindergarden";
+          precondition = "";
+          condition="!(serverCommandAvailable ""#shutdown"") && (player getVariable ""d_p_isadmin"") && isMultiplayer";
+          action="";
+        };
+        class Wait_until_login
+        {
+          priority = 1.000000;
+          to="Spectating";
+          precondition = "";
+          condition="(serverCommandAvailable ""#shutdown"") || !isMultiplayer";
+          action="";
+        };
+        class _
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class Check_for_nearEn
+    {
+      name = "Check_for_nearEn";
+      init = "_no = (position player) nearEntities [[""Air"",""Car"",""Motorcycle"",""Tank""], 9];" \n
+       "_vec = if (count _no > 0) then {_no select 0} else {objNull};" \n
+       "disableUserInput false;" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class Logged_out_or__a
+        {
+          priority = 2.000000;
+          to="Reset";
+          precondition = "";
+          condition="(isMultiplayer && !(serverCommandAvailable ""#shutdown"")) || !alive player";
+          action="";
+        };
+        class isNull__vec
+        {
+          priority = 1.000000;
+          to="Check_1";
+          precondition = "";
+          condition="isNull _vec";
+          action="";
+        };
+        class __isNull__vec
+        {
+          priority = 1.000000;
+          to="Check";
+          precondition = "";
+          condition="!isNull _vec";
+          action="";
+        };
+      };
+    };
+    class Reset
+    {
+      name = "Reset";
+      init = "if (d_admin_idd != -9999) then {" \n
+       "	if (!isNull d_adm_currentvec) then {" \n
+       "		d_adm_currentvec removeAction d_admin_idd;" \n
+       "	};" \n
+       "	d_admin_idd =  -9999;" \n
+       "};" \n
+       "d_adm_currentvec = objNull;" \n
+       "d_adm_currentvec_lockstate = false;" \n
+       "player setVariable [""d_p_isadmin"", false];" \n
+       "disableUserInput false;" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class alive_player
+        {
+          priority = 0.000000;
+          to="Dummy";
+          precondition = "";
+          condition="alive player";
+          action="";
+        };
+      };
+    };
+    class Check
+    {
+      name = "Check";
+      init = "if (alive _vec) then {" \n
+       "	if (_vec != d_adm_currentvec) then {" \n
+       "		if (d_admin_idd != -9999) then {" \n
+       "			if (!isNull d_adm_currentvec) then {" \n
+       "				d_adm_currentvec removeAction d_admin_idd;" \n
+       "			};" \n
+       "			d_admin_idd = -9999;" \n
+       "		};" \n
+       "		if (_vec call d_fnc_isVecLocked) then {" \n
+       "			d_admin_idd = _vec addAction [(localize ""STR_DOM_MISSIONSTRING_1418"") call d_fnc_BlueText,""x_client\x_lockc.sqf"",1,-1,false];" \n
+       "			d_adm_currentvec_lockstate = true;" \n
+       "		} else {" \n
+       "			d_admin_idd = _vec addAction [(localize ""STR_DOM_MISSIONSTRING_1419"") call d_fnc_BlueText,""x_client\x_lockc.sqf"",0,-1,false];" \n
+       "			d_adm_currentvec_lockstate = false;" \n
+       "		};" \n
+       "		d_adm_currentvec = _vec;" \n
+       "	} else {" \n
+       "		if (d_adm_currentvec_lockstate && !(_vec call d_fnc_isVecLocked)) then {" \n
+       "			d_adm_currentvec removeAction d_admin_idd;" \n
+       "			d_admin_idd = _vec addAction [(localize ""STR_DOM_MISSIONSTRING_1419"") call d_fnc_BlueText,""x_client\x_lockc.sqf"",0,-1,false];" \n
+       "			d_adm_currentvec_lockstate = false;" \n
+       "		} else {" \n
+       "			if (!d_adm_currentvec_lockstate && (_vec call d_fnc_isVecLocked)) then {" \n
+       "				d_adm_currentvec removeAction d_admin_idd;" \n
+       "				d_admin_idd = _vec addAction [(localize ""STR_DOM_MISSIONSTRING_1418"") call d_fnc_BlueText,""x_client\x_lockc.sqf"",1,-1,false];" \n
+       "				d_adm_currentvec_lockstate = true;" \n
+       "			};" \n
+       "		};" \n
+       "	};" \n
+       "} else {" \n
+       "	if (d_admin_idd != -9999) then {" \n
+       "		if (!isNull d_adm_currentvec) then {" \n
+       "			d_adm_currentvec removeAction d_admin_idd;" \n
+       "		};" \n
+       "		d_admin_idd = -9999;" \n
+       "	};" \n
+       "	d_adm_currentvec = objNull;" \n
+       "	d_adm_currentvec_lockstate = false;" \n
+       "};" \n
+       "_timenow = time + 2;" \n
+       "			";
+      precondition = "";
+      class Links
+      {
+        class Delay_2s
+        {
+          priority = 0.000000;
+          to="Check_for_nearEn";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class Check_1
+    {
+      name = "Check_1";
+      init = "if (d_admin_idd != -9999) then {" \n
+       "	if (!isNull d_adm_currentvec) then {" \n
+       "		d_adm_currentvec removeAction d_admin_idd;" \n
+       "		d_admin_idd = -9999;" \n
+       "	};" \n
+       "};" \n
+       "d_adm_currentvec = objNull;" \n
+       "d_adm_currentvec_lockstate = false;" \n
+       "_timenow = time + 2;";
+      precondition = "";
+      class Links
+      {
+        class Delay_2s
+        {
+          priority = 0.000000;
+          to="Check_for_nearEn";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class Spectating
+    {
+      name = "Spectating";
+      init = "player setVariable [""d_p_isadmin"", true];";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="Check_for_nearEn";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class Kick_those__kindergarden
+    {
+      name = "Kick_those__kindergarden";
+      init = "[""d_p_f_b_k"", [player, d_name_pl,3]] call d_fnc_NetCallEventCTS;";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="Dummy";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class _
+    {
+      name = "_";
+      init = "switch (floor (random 2)) do {" \n
+       "	case 0: {" \n
+       "		godmode = [];" \n
+       "		god_mode = [];" \n
+       "		scode = [];" \n
+       "	};" \n
+       "	case 1: {" \n
+       "		godmode = random 100;" \n
+       "		god_mode = random 100;" \n
+       "		scode = random 100;" \n
+       "	};" \n
+       "};" \n
+       "disableUserInput false;" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="Dummy";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+  };
+  initState="Start";
+  finalStates[] =
+  {
+  };
+};

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2">
+<Package name="sys_sniper_tools">
+<Container name="STR_DN">
+<Key ID="STR_DN_ACE_SPOTTINGSCOPE">
+<English>Spotting Scope</English>
+<German>Teleskop</German>
+<Russian>Зрительная труба</Russian>
+<Polish>Teleskop</Polish>
+<Spanish>Spotting Scope</Spanish>
+<French>Téléscope de visée</French>
+<Czech>Zaměřovací Dalekohled</Czech>
+<Italian>Spotting Scope</Italian>
+<Hungarian>Megfigyelő távcső</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_SNIPERTRIPOD">
+<English>SSWT Kit</English>
+<German>Scharfschützenzweibein</German>
+<Russian>Снайперский штатив</Russian>
+<Polish>Trójnóg snajperski</Polish>
+<Spanish>SSWT Kit</Spanish>
+<French>SSWT Kit</French>
+<Czech>SSWT sada</Czech>
+<Italian>SSWT Kit</Italian>
+<Hungarian>SSWT Kit</Hungarian>
+</Key>
+<Key ID="STR_ACE_PICKUPSPOTTINGSCOPE">
+<English>Pick up Spotting Scope</English>
+<German>Teleskop aufnehmen</German>
+<Russian>Поднять зрительная трубу</Russian>
+<Polish>Zabierz teleskop</Polish>
+<Spanish>Pick up Spotting Scope</Spanish>
+<French>Prendre téléscope de visée</French>
+<Czech>Zvednout Zaměřovací dalekohled</Czech>
+<Italian>Raccogli spottingscope</Italian>
+<Hungarian>Mefgigy. távcső felvétele</Hungarian>
+</Key>
+<Key ID="STR_ACE_PLACESPOTTINGSCOPE">
+<English>Place Spotting Scope</English>
+<German>Teleskop aufstellen</German>
+<Russian>Установить зрительная трубу</Russian>
+<Polish>Ustaw teleskop</Polish>
+<Spanish>Place Spotting Scope</Spanish>
+<French>Placer téléscope de visée</French>
+<Czech>Položit Zaměřovací dalekohled</Czech>
+<Italian>Posiziona spottingscope</Italian>
+<Hungarian>Megfigy. távcső elhelyezése</Hungarian>
+</Key>
+<Key ID="STR_ACE_PLACESNIPERTRIPOD">
+<English>Place SSWT Kit</English>
+<German>Scharfschützenzweibein aufstellen</German>
+<Russian>Установить снайперский штатив</Russian>
+<Polish>Postaw trójnóg snajperski</Polish>
+<Spanish>Place SSWT Kit</Spanish>
+<French>Place SSWT Kit</French>
+<Czech>Rozlož sadu SSWT</Czech>
+<Italian>Place SSWT Kit</Italian>
+<Hungarian>Place SSWT Kit</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

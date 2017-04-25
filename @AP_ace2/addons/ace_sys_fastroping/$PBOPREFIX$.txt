@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_fastroping
+Pbo Type is: Arma Addon
+Sha: '1CCA6825DB8611855231688BD39E9847A9E3FE6C'
+//////</HEADER>//////

@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_overheating
+Pbo Type is: Arma Addon
+Sha: '513CEBEE8F12144BDCD22A2B8EEDBFC1F39EA4A4'
+//////</HEADER>//////

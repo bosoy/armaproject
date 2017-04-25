@@ -1,0 +1,101 @@
+/*%FSM<COMPILE "F:\ArmA2\FSM Editor Personal Edition\scriptedFSM.cfg, fasttime">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Init",0,4346,-81.542984,-257.577942,8.457038,-207.578140,0.000000,"Init"};
+item1[] = {"End",1,250,-216.387955,-52.508366,-126.387947,-2.508394,0.000000,"End"};
+item2[] = {"Update_Time",2,250,-82.090652,-139.314026,7.909359,-89.314034,0.000000,"Update Time"};
+item3[] = {"Loop",4,218,53.846153,-139.681244,143.846161,-89.681236,0.000000,"Loop"};
+item4[] = {"Gameover",4,218,-216.387955,-139.464890,-126.387947,-89.464890,0.000000,"Gameover"};
+item5[] = {"_",8,218,-51.736092,-184.192123,-21.083296,-163.272247,0.000000,""};
+link0[] = {0,5};
+link1[] = {2,3};
+link2[] = {2,4};
+link3[] = {3,2};
+link4[] = {4,1};
+link5[] = {5,2};
+globals[] = {0.000000,0,0,0,0,640,480,1,8,6316128,1,-348.696411,348.696136,79.849762,-328.514618,1011,622,1};
+window[] = {0,-1,-1,-1,-1,795,22,1435,58,1,1029};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "fasttime";
+  class States
+  {
+    /*%FSM<STATE "Init">*/
+    class Init
+    {
+      name = "Init";
+      init = /*%FSM<STATEINIT""">*/"_currentTime = DayTime;" \n
+       "_lastUpdate = time;" \n
+       "_ftr = ('WFBE_FASTTIMERATES' Call GetNamespace) select ('WFBE_FASTTIMERATE' Call GetNamespace);" \n
+       "WF_Logic setVariable [""currentTime"",_currentTime,true];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Update_Time";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End">*/
+    class End
+    {
+      name = "End";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Update_Time">*/
+    class Update_Time
+    {
+      name = "Update_Time";
+      init = /*%FSM<STATEINIT""">*/"skipTime _ftr;" \n
+       "_currentTime = dayTime;" \n
+       "WF_Logic setVariable [""currentTime"",_currentTime,true];" \n
+       "" \n
+       "_lastUpdate = time;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Gameover">*/
+        class Gameover
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"gameOver"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Loop">*/
+        class Loop
+        {
+          priority = 0.000000;
+          to="Update_Time";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!gameOver && time - _lastUpdate > 1"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Init";
+  finalStates[] =
+  {
+    "End"
+  };
+};
+/*%FSM</COMPILE>*/

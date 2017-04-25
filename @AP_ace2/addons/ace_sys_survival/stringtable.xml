@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2">
+<Package name="ACE2">
+<Container name="STR_DN">
+<Key ID="STR_DN_ACE_LIFEBOAT">
+<English>Lifeboat</English>
+<German>Rettungsfloß</German>
+<Spanish>Lifeboat</Spanish>
+<Czech>Záchranný člun</Czech>
+<Russian>Cпасательная шлюпка</Russian>
+<Italian>Lifeboat</Italian>
+<Polish>Ponton ratowniczy</Polish>
+<French>Canot de secours</French>
+<Hungarian>Mentőcsónak</Hungarian>
+</Key>
+<Key ID="STR_UA_ACE_DEFLATE_LIFEBOAT">
+<German>Rettungsfloß zerstören</German>
+<English>Deflate lifeboat</English>
+<Italian>Deflate lifeboat</Italian>
+<Spanish>Deflate lifeboat</Spanish>
+<French>Dégonfler le canot</French>
+<Czech>Vyfouknout záchranný člun</Czech>
+<Russian>Затопить шлюпку</Russian>
+<Polish>Przebij ponton</Polish>
+<Hungarian>Csónak leeresztése</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

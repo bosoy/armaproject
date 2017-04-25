@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_muzzleblast
+Pbo Type is: Arma Addon
+Sha: 'E24D0D2F5FEE7F665CE24530A62CBAA50AC87C32'
+//////</HEADER>//////

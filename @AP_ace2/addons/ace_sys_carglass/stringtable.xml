@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="sys_carglass">
+<Container name="STR_DN">
+<Key ID="STR_ACE_BREAKCARGLASS">
+<German>Frontscheibe einschlagen</German>
+<English>Smash windshield</English>
+<Italian>Smash windshield</Italian>
+<Spanish>Smash windshield</Spanish>
+<French>Dégager le pare-brise</French>
+<Czech>Vyrazit čelní sklo</Czech>
+<Russian>Выбить лобовое стекло</Russian>
+<Polish>Wyłam szybę</Polish>
+<Hungarian>Szélvédő széttörése</Hungarian>
+</Key>
+</Container></Package></Project>

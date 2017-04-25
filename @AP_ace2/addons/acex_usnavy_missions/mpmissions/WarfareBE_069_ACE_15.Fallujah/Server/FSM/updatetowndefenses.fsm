@@ -1,0 +1,631 @@
+/*%FSM<COMPILE "D:\ArmA2\FSM Editor Personal Edition\scriptedFSM.cfg, updatetowndefenses">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Init",0,250,-63.339870,-329.544403,26.660130,-279.544769,0.000000,"Init"};
+item1[] = {"End",1,250,-182.368073,-113.480629,-92.368042,-63.480659,0.000000,"End"};
+item2[] = {"Gameover",4,218,-182.650177,-187.482422,-92.650192,-137.482452,0.000000,"Gameover"};
+item3[] = {"_",8,218,-35.668163,-247.514877,-3.862146,-224.939621,0.000000,""};
+item4[] = {"Defense_Core",2,250,-63.405182,-187.376434,26.594841,-137.376434,0.000000,"Defense Core"};
+item5[] = {"Resistance",4,218,-63.096802,-113.322952,26.903198,-63.322945,0.000000,"Resistance"};
+item6[] = {"Skip",4,218,51.723022,-187.995987,141.723053,-137.995987,0.000000,"Skip"};
+item7[] = {"_",8,218,392.190338,-190.067062,423.996338,-167.491791,0.000000,""};
+item8[] = {"Advanced_Defense",2,250,-63.899727,-37.846992,26.100292,12.153011,0.000000,"Advanced" \n "Defense"};
+item9[] = {"Skip",4,218,52.047401,-37.929413,142.047272,12.070588,0.000000,"Skip"};
+item10[] = {"Enemies",4,218,-63.950096,42.576328,26.049911,92.576347,0.000000,"Enemies"};
+item11[] = {"Active",4,218,49.450504,118.698433,139.450470,168.698425,0.000000,"Active"};
+item12[] = {"Update",2,250,-63.949944,119.619461,26.049990,169.619431,0.000000,"Update"};
+item13[] = {"_",2,250,357.586823,-300.604431,447.586670,-250.604416,0.000000,""};
+item14[] = {"Inactive",4,218,-63.968323,202.808212,26.031679,252.808212,0.000000,"Inactive"};
+item15[] = {"Spawn_Res",2,4346,505.445801,202.593475,595.445435,252.593460,0.000000,"Spawn Res"};
+item16[] = {"__1",2,250,173.981140,117.028183,263.981445,167.028183,0.000000,""};
+item17[] = {"Reinf_",4,218,321.587677,117.539032,411.587677,167.539017,0.000000,"Reinf?"};
+item18[] = {"no_Reinf",4,218,173.933121,40.630589,263.933228,90.630539,1.000000,"no Reinf"};
+item19[] = {"Reinforce",2,250,321.791260,38.423203,411.791290,88.423172,0.000000,"Reinforce"};
+item20[] = {"Passive",4,218,212.037048,-299.501312,302.036926,-249.501312,0.000000,"Passive"};
+item21[] = {"Active",4,218,358.437775,-380.021667,448.437714,-330.021667,0.000000,"Active"};
+item22[] = {"__2",2,250,96.136414,-339.761383,186.136520,-289.761505,0.000000,""};
+item23[] = {"__3",2,250,358.437653,-452.002045,448.437714,-402.002045,0.000000,""};
+item24[] = {"Time___1",4,218,215.696960,-494.702240,305.696960,-444.702209,0.000000,"Time >"};
+item25[] = {"Time__",4,218,210.816925,-367.821625,300.816895,-317.821625,0.000000,"Time <"};
+item26[] = {"Delete",2,250,90.036407,-493.482239,180.036377,-443.482239,0.000000,"Delete"};
+item27[] = {"Civilians",4,218,438.384674,124.400330,528.384521,174.400330,0.000000,"Civilians"};
+item28[] = {"No_Civilians",4,218,569.764099,125.541168,659.764099,175.541046,0.000000,"No Civilians"};
+item29[] = {"Spawn_Civilians",2,250,438.011932,38.918774,528.011597,88.918900,0.000000,"Spawn Civilians"};
+link0[] = {0,3};
+link1[] = {2,1};
+link2[] = {3,4};
+link3[] = {4,2};
+link4[] = {4,5};
+link5[] = {4,6};
+link6[] = {5,8};
+link7[] = {6,13};
+link8[] = {7,13};
+link9[] = {8,9};
+link10[] = {8,10};
+link11[] = {9,13};
+link12[] = {10,12};
+link13[] = {11,16};
+link14[] = {12,11};
+link15[] = {12,14};
+link16[] = {13,20};
+link17[] = {13,21};
+link18[] = {14,15};
+link19[] = {15,27};
+link20[] = {15,28};
+link21[] = {16,17};
+link22[] = {16,18};
+link23[] = {17,19};
+link24[] = {18,13};
+link25[] = {19,7};
+link26[] = {20,22};
+link27[] = {21,23};
+link28[] = {22,3};
+link29[] = {23,24};
+link30[] = {23,25};
+link31[] = {24,26};
+link32[] = {25,22};
+link33[] = {26,3};
+link34[] = {27,29};
+link35[] = {28,13};
+link36[] = {29,7};
+globals[] = {0.000000,0,0,0,0,640,480,1,84,6316128,1,-95.598221,725.231018,310.641174,-552.086548,862,906,1};
+window[] = {2,-1,-1,-1,-1,912,148,1473,71,3,880};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "updatetowndefenses";
+  class States
+  {
+    /*%FSM<STATE "Init">*/
+    class Init
+    {
+      name = "Init";
+      init = /*%FSM<STATEINIT""">*/"_lastUpdate = time;" \n
+       "" \n
+       "_location = _this select 0;" \n
+       "_resistanceTeamTypes = _this select 1;" \n
+       "_probability = _this select 2;" \n
+       "_detectionRange = _this select 3;" \n
+       "_maxSV = _this select 4;" \n
+       "_name = str _location;" \n
+       "" \n
+       "_camps = _location getVariable 'camps';" \n
+       "_totalCamps = count _camps;" \n
+       "" \n
+       "_patrolRange = _detectionRange * ('WFBE_DETECTIONTOPATROLRANGERATIO' Call GetNamespace);" \n
+       "_resistanceActive = false;" \n
+       "_emptyDefenses = [];" \n
+       "_teams = [];" \n
+       "_vehicles = [];" \n
+       "_position = [];" \n
+       "_timeInactive = 0;" \n
+       "_lastReinf = -500;" \n
+       "_rit = 'WFBE_RESISTANCEINACTIVETIME' Call GetNamespace;" \n
+       "_tupd = 'WFBE_TOWNUNITSPATROLDISTANCE' Call GetNamespace;" \n
+       "_tusr = 'WFBE_TOWNUNITSPAWNRANGE' Call GetNamespace;" \n
+       "_useCivilians = if (('WFBE_CIVILIANFACTION' Call GetNamespace) > 0) then {true} else {false};" \n
+       "" \n
+       "_maxReinforcementTeams = if ((_location getVariable ""supplyValue"")< 60) then {1 + ('WFBE_TOWNRESISTANCEDIFFICULTY' Call GetNamespace)} else {2 + ('WFBE_TOWNRESISTANCEDIFFICULTY' Call GetNamespace)};" \n
+       "_location setVariable [""reinforcements"",0];" \n
+       "" \n
+       "_civTeams = """";" \n
+       "_cTeams = [];" \n
+       "_coef = 1;" \n
+       "if (_useCivilians) then {" \n
+       "	if (_maxSV <= 50) then {_civTeams = ""Villagers""};" \n
+       "	if (_maxSV > 50 && _maxSV < 120) then {_civTeams = ""Citizen"";_coef = 2};" \n
+       "	if (_maxSV >= 120) then {_civTeams = ""LargeCitizen"";_coef = 3};" \n
+       "};" \n
+       "" \n
+       "_defenses = _location nearEntities['WFBE_RESISTANCEDEFENSENAMES' Call GetNamespace,_detectionRange];" \n
+       "{_x addEventHandler [""Killed"",{[_this select 0,_this select 1,resistance] Spawn UnitKilled}]} forEach _defenses;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Defense_Core";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End">*/
+    class End
+    {
+      name = "End";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Defense_Core">*/
+    class Defense_Core
+    {
+      name = "Defense_Core";
+      init = /*%FSM<STATEINIT""">*/"_lastUpdate = time + random(0.2);" \n
+       "" \n
+       "_sideID = _location getVariable ""sideID"";"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Resistance">*/
+        class Resistance
+        {
+          priority = 0.000000;
+          to="Advanced_Defense";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!gameOver && time - _lastUpdate > 10 && _sideID == RESISTANCEID"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Skip">*/
+        class Skip
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!gameOver && time - _lastUpdate > 10 && _sideID != RESISTANCEID"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Gameover">*/
+        class Gameover
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"gameOver"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Advanced_Defense">*/
+    class Advanced_Defense
+    {
+      name = "Advanced_Defense";
+      init = /*%FSM<STATEINIT""">*/"_objects = _location nearEntities[[eastSoldierBaseClass,westSoldierBaseClass,""Car"",""Motorcycle"",""Tank"",""Air""],_detectionRange];" \n
+       "_objects = [_objects Call GetLiveUnits,200] Call GetUnitsBelowHeight;" \n
+       "_enemies = (West countSide _objects) + (East countSide _objects);"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Enemies">*/
+        class Enemies
+        {
+          priority = 0.000000;
+          to="Update";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_enemies > 0"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Skip">*/
+        class Skip
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_enemies <= 0"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Update">*/
+    class Update
+    {
+      name = "Update";
+      init = /*%FSM<STATEINIT""">*/"_timeInactive = time;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Inactive">*/
+        class Inactive
+        {
+          priority = 0.000000;
+          to="Spawn_Res";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!_resistanceActive"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Active">*/
+        class Active
+        {
+          priority = 0.000000;
+          to="__1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_resistanceActive"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "_">*/
+    class _
+    {
+      name = "_";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Active">*/
+        class Active
+        {
+          priority = 0.000000;
+          to="__3";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_resistanceActive"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Passive">*/
+        class Passive
+        {
+          priority = 0.000000;
+          to="__2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!_resistanceActive"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Spawn_Res">*/
+    class Spawn_Res
+    {
+      name = "Spawn_Res";
+      init = /*%FSM<STATEINIT""">*/"_teamCount = 0;" \n
+       "_totalTeams = count _resistanceTeamTypes;" \n
+       "_emptyDefenses = [];" \n
+       "" \n
+       "{if ((_x EmptyPositions ""gunner"" > 0)&&(alive _x)) then {_emptyDefenses = _emptyDefenses + [_x]}} forEach _defenses;" \n
+       "{" \n
+       "	if (isNull WF_ResistanceDefenseTeam) then {WF_ResistanceDefenseTeam = createGroup resistance};" \n
+       "	_unit = ['WFBE_GUERSOLDIER' Call GetNamespace,WF_ResistanceDefenseTeam,(getPos _x),resistance] Call CreateMan;" \n
+       "	[_unit] allowGetIn true;" \n
+       "	_unit assignAsGunner _x;" \n
+       "	[_unit] orderGetIn true;" \n
+       "	_unit moveInGunner _x;" \n
+       "	[WF_ResistanceDefenseTeam, 350, _unit] Call RevealArea;" \n
+       "} forEach _emptyDefenses;" \n
+       "" \n
+       "_ci = 0;" \n
+       "while {_teamCount < _totalTeams} do {" \n
+       "	_resistanceActive = true;" \n
+       "	_unitTypes = Format[""WFBE_RES%1UNITS"",_resistanceTeamTypes select _teamCount] Call GetNamespace;" \n
+       "	_leaderName = _unitTypes select 0;" \n
+       "	_camp = objNull;" \n
+       "	if (_ci < _totalCamps) then {" \n
+       "		_position = ([getPos (_camps select _ci),8,40] Call GetRandomPosition);" \n
+       "		_camp = _camps select _ci;" \n
+       "	} else {" \n
+       "	_position = ([getPos _location,_tusr,_patrolRange] Call GetRandomPosition);" \n
+       "	};" \n
+       "	_team = createGroup Resistance;" \n
+       "	_leader = [_leaderName,_team,_position,resistance] Call CreateMan;" \n
+       "	[_leader,_position,50] Call PlaceSafe;" \n
+       "	_position = getPos _leader;" \n
+       "	_teams = _teams + [_team];" \n
+       "	_count = 1;" \n
+       "	_total = count _unitTypes;" \n
+       "	while {_count < _total} do {" \n
+       "		_unitName = _unitTypes select _count;" \n
+       "		if (random(100) < _probability) then {" \n
+       "			if (_unitName isKindOf ""Man"") then {" \n
+       "				_unit = [_unitName,_team,_position,resistance] Call CreateMan;" \n
+       "			} else {" \n
+       "				_vehicle = [_unitName,_position,resistance,paramResVehLock] Call CreateVehi;" \n
+       "				_vehicles = _vehicles + [_vehicle];" \n
+       "				emptyQueu = emptyQueu + [_vehicle];" \n
+       "				_vehicle Spawn HandleEmptyVehicle;" \n
+       "				_continue = true;" \n
+       "				if (vehicle _leader == _leader) then {_leader moveInDriver _vehicle;_continue = false};" \n
+       "				_type = if (_vehicle isKindOf 'Man') then {'WFBE_GUERSOLDIER' Call GetNamespace} else {if (_vehicle isKindOf 'Air') then {'WFBE_GUERPILOT' Call GetNamespace} else {'WFBE_GUERCREW' Call GetNamespace}};" \n
+       "				if (_continue) then {_driver = [_type,_team,_position,resistance] Call CreateMan;_driver moveInDriver _vehicle};" \n
+       "				if (_vehicle emptyPositions ""gunner"" > 0) then {_gunner = [_type,_team,_position,resistance] Call CreateMan;_gunner moveInGunner _vehicle};" \n
+       "				if (_vehicle emptyPositions ""commander"" > 0) then {_commander = [_type,_team,_position,resistance] Call CreateMan;_commander moveInCommander _vehicle};" \n
+       "			};" \n
+       "		};" \n
+       "		_count = _count + 1;" \n
+       "	};" \n
+       "	[_team, 350, _position] Call RevealArea;" \n
+       "	[_location,_team,RESISTANCEID,_camp,false] ExecFSM ""Server\FSM\townpatrol.fsm"";" \n
+       "	if (paramUPSMON) then {[(leader _team),Format ['UPSMON_TOWN_%1',str _location],""move"",""nofollow"",""fortify"",""reinforcement""] Spawn UPSMON};" \n
+       "	_teamCount = _teamCount + 1;" \n
+       "	_ci = _ci + 1;" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "No_Civilians">*/
+        class No_Civilians
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!_useCivilians"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Civilians">*/
+        class Civilians
+        {
+          priority = 0.000000;
+          to="Spawn_Civilians";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_useCivilians"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+      };
+        /*%FSM</LINK>*/
+    };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__1">*/
+    class __1
+    {
+      name = "__1";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "no_Reinf">*/
+        class no_Reinf
+        {
+          priority = 1.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!paramResReinf || (_location getVariable ""reinforcements"") >= _maxReinforcementTeams || time - _lastReinf <= 300"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Reinf_">*/
+        class Reinf_
+        {
+          priority = 0.000000;
+          to="Reinforce";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"paramResReinf && (_location getVariable ""reinforcements"") < _maxReinforcementTeams && time - _lastReinf > 300"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Reinforce">*/
+    class Reinforce
+    {
+      name = "Reinforce";
+      init = /*%FSM<STATEINIT""">*/"_lastReinf = time;" \n
+       "_unitTypes = Format[""WFBE_RES%1UNITS"",_resistanceTeamTypes select round (random ((count _resistanceTeamTypes)-1))] Call GetNamespace;" \n
+       "_leaderName = _unitTypes select 0;" \n
+       "_position = ([getPos _location,_tusr + 150,_patrolRange] Call GetRandomPosition);" \n
+       "_near = _position nearEntities 75;" \n
+       "_ctx = (east countSide _near) + (west countSide _near);" \n
+       "_i = 0;" \n
+       "while {_ctx > 0 && _i < 400} do {" \n
+       "	_position = ([getPos _location,_tusr + 150,_patrolRange] Call GetRandomPosition);" \n
+       "	_near = _position nearEntities 75;" \n
+       "	_ctx = (east countSide _near) + (west countSide _near);" \n
+       "	_i = _i + 1;" \n
+       "};" \n
+       "_team = createGroup Resistance;" \n
+       "_leader = [_leaderName,_team,_position,resistance] Call CreateMan;" \n
+       "[_leader,_position,50] Call PlaceSafe;" \n
+       "_position = getPos _leader;" \n
+       "_teams = _teams + [_team];" \n
+       "_count = 1;" \n
+       "_total = count _unitTypes;" \n
+       "while {_count < _total} do {" \n
+       "	_unitName = _unitTypes select _count;" \n
+       "	if (random(100) < _probability) then {" \n
+       "		if (_unitName isKindOf ""Man"") then {" \n
+       "			_unit = [_unitName,_team,_position,resistance] Call CreateMan;" \n
+       "		} else {" \n
+       "			_vehicle = [_unitName,_position,resistance,paramResVehLock] Call CreateVehi;" \n
+       "			_vehicles = _vehicles + [_vehicle];" \n
+       "			_continue = true;" \n
+       "			emptyQueu = emptyQueu + [_vehicle];" \n
+       "			_vehicle Spawn HandleEmptyVehicle;" \n
+       "			if (vehicle _leader == _leader) then {_leader moveInDriver _vehicle;_continue = false};" \n
+       "			_type = if (_vehicle isKindOf 'Man') then {'WFBE_GUERSOLDIER' Call GetNamespace} else {if (_vehicle isKindOf 'Air') then {'WFBE_GUERPILOT' Call GetNamespace} else {'WFBE_GUERCREW' Call GetNamespace}};" \n
+       "			if (_continue) then {_driver = [_type,_team,_position,resistance] Call CreateMan;_driver moveInDriver _vehicle};" \n
+       "			if (_vehicle emptyPositions ""gunner"" > 0) then {_gunner = [_type,_team,_position,resistance] Call CreateMan;_gunner moveInGunner _vehicle};" \n
+       "			if (_vehicle emptyPositions ""commander"" > 0) then {_commander = [_type,_team,_position,resistance] Call CreateMan;_commander moveInCommander _vehicle};" \n
+       "		};" \n
+       "	};" \n
+       "	_count = _count + 1;" \n
+       "};" \n
+       "" \n
+       "if (paramUPSMON) then {[(leader _team),Format ['UPSMON_TOWN_%1',str _location],""move"",""nofollow"",""fortify"",""reinforcement""] Spawn UPSMON};" \n
+       "" \n
+       "[_location,_team,RESISTANCEID,objNull,true] ExecFSM ""Server\FSM\townpatrol.fsm"";" \n
+       "" \n
+       "_existing = _location getVariable ""reinforcements"";" \n
+       "_location setVariable [""reinforcements"",_existing + 1];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__2">*/
+    class __2
+    {
+      name = "__2";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Defense_Core";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__3">*/
+    class __3
+    {
+      name = "__3";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Time__">*/
+        class Time__
+        {
+          priority = 0.000000;
+          to="__2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _timeInactive <= _rit"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Time___1">*/
+        class Time___1
+        {
+          priority = 0.000000;
+          to="Delete";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _timeInactive > _rit"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Delete">*/
+    class Delete
+    {
+      name = "Delete";
+      init = /*%FSM<STATEINIT""">*/"_resistanceActive = false;" \n
+       "_count = 0;" \n
+       "_total = Count _teams;" \n
+       "" \n
+       "while {_count < _total} do {" \n
+       "	_team = _teams Select _count;" \n
+       "	if !(isNil '_team') then {" \n
+       "		if !(isNull _team) then {" \n
+       "	{deleteVehicle _x} forEach units _team;" \n
+       "	deleteGroup _team;" \n
+       "		};" \n
+       "	};" \n
+       "	_count = _count + 1;" \n
+       "};" \n
+       "" \n
+       "{if (side _x != west && side _x != east) then {deleteVehicle _x}} forEach _vehicles;" \n
+       "{if (!isNull(Gunner _x) && !isPlayer(Gunner _x)) then {_unit = (gunner _x);_unit setPos (getpos _x);deleteVehicle _unit}} forEach _defenses;" \n
+       "_vehicles = [];" \n
+       "_teams = [];" \n
+       "" \n
+       "if (paramResReinf) then {_location setVariable [""reinforcements_alive"",0]};" \n
+       "" \n
+       "if (_useCivilians) then {" \n
+       "	_count = 0;" \n
+       "	_total = count _cTeams;" \n
+       "	while {_count < _total} do {" \n
+       "		_team = _cTeams select _count;" \n
+       "		{deleteVehicle _x} forEach units _team;" \n
+       "		deleteGroup _team;" \n
+       "		_count = _count + 1;" \n
+       "	};" \n
+       "	_cTeams = [];" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Defense_Core";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Spawn_Civilians">*/
+    class Spawn_Civilians
+    {
+      name = "Spawn_Civilians";
+      init = /*%FSM<STATEINIT""">*/"_teamCount = 0;" \n
+       "while {_teamCount < _coef} do {" \n
+       "	_unitTypes = Format[""WFBE_CIV%1%2UNITS"",_civTeams,(1+round(random 3))] Call GetNamespace;" \n
+       "	_leaderName = _unitTypes select 0;" \n
+       "	_position = ([getPos _location,_tusr,_patrolRange] Call GetRandomPosition);" \n
+       "	_team = createGroup Civilian;" \n
+       "	_leader = _team createUnit [_leaderName,_position,[],0.4,""FORM""];" \n
+       "	_leader addEventHandler ['Killed',{[_this select 0,_this select 1] Spawn CivilianKilled}];" \n
+       "	[_leader,_position,50] Call PlaceSafe;" \n
+       "	_position = getPos _leader;" \n
+       "	_cTeams = _cTeams + [_team];" \n
+       "	_count = 1;" \n
+       "	_total = count _unitTypes;" \n
+       "" \n
+       "	while {_count < _total} do {" \n
+       "		_unitName = _unitTypes select _count;" \n
+       "		_unit = _team createUnit [_unitName,_position,[],0.4,""FORM""];" \n
+       "		_unit addEventHandler ['Killed',{[_this select 0,_this select 1] Spawn CivilianKilled}];" \n
+       "		_count = _count + 1;" \n
+       "	};" \n
+       "" \n
+       "	_teamCount = _teamCount + 1;" \n
+       "	[_team,_location,(_tupd/2)] Spawn AITownPatrol;" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+  };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Init";
+  finalStates[] =
+  {
+    "End"
+  };
+};
+/*%FSM</COMPILE>*/

@@ -1,0 +1,21 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_wounds
+!=          .-.
+!=          |U|
+!=          | |
+!=          | |
+!=         _| |_
+!=        | | | |-.
+!=       /|     ` |
+!=      | |       |
+!=      |         |
+!=      \         /
+!=       |       |
+!=       |       |
+message=OOPS! Stealing isn't good, bitch!
+pbo=packAndRap
+version=0.6
+author=Blender
+Pbo Type is: Arma Addon
+Sha: '7F61A0E38E569A88FE062C3106FE3D9D624F8C80'
+//////</HEADER>//////

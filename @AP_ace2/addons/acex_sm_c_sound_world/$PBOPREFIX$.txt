@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex_sm\addons\c_sound_world
+Pbo Type is: Arma Addon
+Sha: 'E2D32D2B83DF9372BA808DAF782BB3834B5B5795'
+//////</HEADER>//////

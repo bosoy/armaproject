@@ -1,0 +1,120 @@
+/*%FSM<COMPILE "scriptedFSM.cfg, remove_glasses">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"remove_glasses",0,4346,-75.000000,-100.000000,25.000000,-50.000000,0.000000,"remove_glasses"};
+item1[] = {"time2wait",4,218,-75.000000,-25.000000,25.000000,25.000000,0.000000,"time2wait"};
+item2[] = {"fadesound",2,250,-75.000000,50.000000,25.000000,100.000000,0.000000,"fadesound"};
+item3[] = {"true",8,218,-75.000000,125.000000,25.000000,175.000000,0.000000,"true"};
+item4[] = {"end",1,250,-75.000000,200.000000,25.000000,250.000000,0.000000,"end"};
+link0[] = {0,1};
+link1[] = {1,2};
+link2[] = {2,3};
+link3[] = {3,4};
+globals[] = {25.000000,1,0,0,0,640,480,1,6,6316128,1,-567.060791,567.059204,774.488159,-476.815308,841,904,1};
+window[] = {2,-1,-1,-1,-18,807,125,1085,125,3,859};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "remove_glasses";
+  class States
+  {
+    /*%FSM<STATE "remove_glasses">*/
+    class remove_glasses
+    {
+      name = "remove_glasses";
+      init = /*%FSM<STATEINIT""">*/"/* ace_sys_goggles (.pbo) | (c) 2009 by rocko */" \n
+       "" \n
+       "private [""_unit"", ""_old_identity"", ""_timeNow""];" \n
+       "" \n
+       "_unit = _this select 0;" \n
+       "_old_identity = _unit getVariable ""ace_sys_goggles_identity"";" \n
+       "" \n
+       "if (_old_identity in [""ACE_GlassesGasMask_US"",""ACE_GlassesGasMask_RU"", ""ACE_GlassesGasMask2_US""]) then {" \n
+       "	2.45 fadeSound 0;" \n
+       "	ace_sys_stamina_breath_fx = false;	" \n
+       "} else {" \n
+       "	if (_old_identity in [""ACE_GlassesBalaklava_Skull"",""ACE_GlassesBalaklava_Pink"",""ACE_GlassesBalaklava_Pink2""]) then {" \n
+       "		_old_identity = ""ACE_GlassesBalaklava"";" \n
+       "	};" \n
+       "	if (_old_identity == ""ACE_GlassesMFS_R"") then {" \n
+       "		_old_identity = ""ACE_GlassesMFS"";" \n
+       "	};" \n
+       "};" \n
+       "" \n
+       "// Customized Identities available?" \n
+       "//if (ACE_CustomIdentities) then {" \n
+       "//	[""ace_sys_goggles_setidentcustom"", _unit] call CBA_fnc_globalEvent;" \n
+       "//} else {" \n
+       "	[""ace_sys_goggles_setident"", _unit] call CBA_fnc_globalEvent;" \n
+       "//};" \n
+       "" \n
+       "_unit setVariable [""ace_sys_goggles_identity"",""ACE_Original_Identity"",false];	// Setting old identity" \n
+       "_unit setVariable [""ace_sys_goggles_protection"", -1, false];" \n
+       "// BWC" \n
+       "_unit setVariable [""ACE_Identity"",""ACE_Original_Identity""];" \n
+       "" \n
+       "135214 cutRsc[""Default"",""PLAIN""];" \n
+       "_unit addWeapon _old_identity;" \n
+       "" \n
+       "private ""_time2wait"";" \n
+       "_time2wait = time + 2.46;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "time2wait">*/
+        class time2wait
+        {
+          priority = 0.000000;
+          to="fadesound";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _time2wait"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "fadesound">*/
+    class fadesound
+    {
+      name = "fadesound";
+      init = /*%FSM<STATEINIT""">*/"2.45 fadeSound 1;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="end";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "end">*/
+    class end
+    {
+      name = "end";
+      init = /*%FSM<STATEINIT""">*/"if (ace_sys_goggles_mask_deh) then {" \n
+       "	(findDisplay 46) displayRemoveEventHandler [""KeyDown"", ACE_GasmaskDisplayHandler_Weapon];" \n
+       "	(findDisplay 46) displayRemoveEventHandler [""MouseZChanged"", ACE_GasmaskDisplayHandler_Mouse];" \n
+       "	ace_sys_goggles_mask_deh = false;" \n
+       "};	"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="remove_glasses";
+  finalStates[] =
+  {
+    "end",
+  };
+};
+/*%FSM</COMPILE>*/

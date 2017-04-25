@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="settings">
+<Container name="STR_UCFG">
+<Key ID="STR_UCFG_OUTDATED">
+<English>OUTDATED</English>
+<German>Veraltet</German>
+<Spanish>OUTDATED</Spanish>
+<Czech>ZASTARALÝ</Czech>
+<Russian>УСТАРЕЛ</Russian>
+<Italian>OUTDATED</Italian>
+<Polish>WYMAGA AKTUALIZACJI</Polish>
+<French>OBSOLETE</French>
+<Hungarian>LEJÁRT</Hungarian>
+</Key>
+<Key ID="STR_UCFG_SAVED">
+<English>ACE Settings saved... Please save them from clipboard into \userconfig\ACE\settings.ace, or use the ACE Clippy Tool.</English>
+<German>ACE Optionen gespeichert... Von der Zwischenablage in \userconfig\ACE\settings.ace speichern oder ACE Clippi benutzen.</German>
+<Spanish>ACE Settings saved... Please save them from clipboard into \userconfig\ACE\settings.ace, or use the ACE Clippy Tool.</Spanish>
+<Czech>ACE nastevení bylo uloženo... Prosím uložte ho ze schránky do \userconfig\ACE\settings.ace, nebo použijte ACE Clippy Tool.</Czech>
+<Russian>Настройки ACE сохранены... Пожалуйста сохраните их из буфера обмена в \userconfig\ACE\settings.ace, или используйте программу ACE Clippy.</Russian>
+<Italian>ACE Settings saved... Please save them from clipboard into \userconfig\ACE\settings.ace, or use the ACE Clippy Tool.</Italian>
+<Polish>Ustawienia ACE zapisane... jeśli nie uruchomiłeś wcześniej ACE Clippi, zastąp zawartość pliku \userconfig\ACE\settings.ace zawartością Schowka Windows.</Polish>
+<French>ACE Settings saved... Please save them from clipboard into \userconfig\ACE\settings.ace, or use the ACE Clippy Tool.</French>
+<Hungarian>ACE Settings saved... Please save them from clipboard into \userconfig\ACE\settings.ace, or use the ACE Clippy Tool.</Hungarian>
+</Key>
+<Key ID="STR_UCFG_SAVED2">
+<English>ACE Settings saved to user profile...</English>
+<German>ACE Optionen in User Profil gespeichert...</German>
+<Spanish>ACE Settings saved to user profile...</Spanish>
+<Czech>ACE nastavení uloženo do uživatelského profilu...</Czech>
+<Russian>Настройки ACE сохранены...</Russian>
+<Italian>ACE Settings saved to user profile...</Italian>
+<Polish>Ustawienia ACE zapisane...</Polish>
+<French>ACE Settings saved to user profile...</French>
+<Hungarian>ACE Settings saved to user profile...</Hungarian>
+</Key>
+<Key ID="STR_UCFG_CLIPPI">
+<English>. Please run ACE Clippi (@ACE\clippi\ace_clippi.exe) while the game is closed.</English>
+<German>. Bitte das Spiel beenden und ACE Clippi starten (@ACE\clippi\ace_clippi.exe).</German>
+<Spanish>. Please run ACE Clippi (@ACE\clippi\ace_clippi.exe) while the game is closed.</Spanish>
+<Czech>. Prosím, zapněte ACE Clippi, (@ACE\clippi\ace_clippi.exe) zatímco bude hra vypnutá.</Czech>
+<Russian>. Пожалуйста запустите ACE Clippi (@ACE\clippi\ace_clippi.exe) когда игра закрыта.</Russian>
+<Italian>. Please run ACE Clippi (@ACE\clippi\ace_clippi.exe) while the game is closed.</Italian>
+<Polish>. Uruchom ACE Clippi (@ACE\clippi\ace_clippi.exe) po uprzednim zamknięciu gry.</Polish>
+<French>. Please run ACE Clippi (@ACE\clippi\ace_clippi.exe) while the game is closed.</French>
+<Hungarian>. Please run ACE Clippi (@ACE\clippi\ace_clippi.exe) while the game is closed.</Hungarian>
+</Key>
+</Container>
+<Container name="STR_SETTINGS">
+<Key ID="STR_SETTINGS_ACEOPTIONS">
+<English>ACE SETTINGS</English>
+<German>ACE Einstellungen</German>
+<Spanish>ACE SETTINGS</Spanish>
+<Czech>ACE NASTAVENÍ</Czech>
+<Russian>Настройки ACE</Russian>
+<Italian>ACE SETTINGS</Italian>
+<Polish>USTAWIENIA ACE</Polish>
+<French>ACE SETTINGS</French>
+<Hungarian>ACE SETTINGS</Hungarian>
+</Key>
+<Key ID="STR_SETTINGS_ACEOPTIONSCLIENT">
+<English>Clientside settings</English>
+<German>Einstellungen</German>
+<Spanish>Clientside settings</Spanish>
+<Czech>Nastavení klienta</Czech>
+<Russian>Настройки клиента</Russian>
+<Italian>Clientside settings</Italian>
+<Polish>Ustawienia klienta</Polish>
+<French>Clientside settings</French>
+<Hungarian>Clientside settings</Hungarian>
+</Key>
+<Key ID="STR_SETTINGS_ACEOPTIONS_SP">
+<English>SP settings</English>
+<German>SP Einstellungen</German>
+<Spanish>SP settings</Spanish>
+<Czech>SP nastavení</Czech>
+<Russian>Настройки SP</Russian>
+<Italian>SP settings</Italian>
+<Polish>Ustawienia SP</Polish>
+<French>SP settings</French>
+<Hungarian>SP settings</Hungarian>
+</Key>
+<Key ID="STR_SETTINGS_VERSIONS">
+<English>Versions</English>
+<German>Versionen</German>
+<Spanish>Versions</Spanish>
+<Czech>Verze</Czech>
+<Russian>Версии</Russian>
+<Italian>Versions</Italian>
+<Polish>Wersje</Polish>
+<French>Versions</French>
+<Hungarian>Versions</Hungarian>
+</Key>
+<Key ID="STR_SETTINGS_KEYS">
+<English>Keys</English>
+<German>Tastenbelegung</German>
+<Spanish>Keys</Spanish>
+<Czech>Klávesy</Czech>
+<Russian>Клавиши</Russian>
+<Italian>Keys</Italian>
+<Polish>Klawisze</Polish>
+<French>Keys</French>
+<Hungarian>Keys</Hungarian>
+</Key>
+<Key ID="STR_SETTINGS_KEYSHELP">
+<English>Click on a key to change it</English>
+<German>Klicke auf eine Taste um sie zu ändern</German>
+<Spanish>Click on a key to change it</Spanish>
+<Czech>Zmáčkni klávesu, pro její změnu</Czech>
+<Russian>Нажмите на клавишу чтобы сменить</Russian>
+<Italian>Click on a key to change it</Italian>
+<Polish>Kliknij klawisz, aby zmienić</Polish>
+<French>Click on a key to change it</French>
+<Hungarian>Click on a key to change it</Hungarian>
+</Key>
+<Key ID="STR_SETTINGS_KEYSHELP2">
+<English>Now press a key...</English>
+<German>Taste drücken ...</German>
+<Spanish>Now press a key...</Spanish>
+<Czech>Teď zmáčkni klávesu...</Czech>
+<Russian>Нажмите на клавишу...</Russian>
+<Italian>Now press a key...</Italian>
+<Polish>Teraz wciśnij klawisz...</Polish>
+<French>Now press a key...</French>
+<Hungarian>Now press a key...</Hungarian>
+</Key>
+<Key ID="STR_SETTINGS_KEYSHELP3">
+<English>Click on Shift/Ctrl/Alt to change it</English>
+<German>Klicke auf SHIFT/CTRL/ALT zum ändern</German>
+<Spanish>Click on Shift/Ctrl/Alt to change it</Spanish>
+<Czech>Zmáčkni Shift/Ctrl/Alt pro změnu</Czech>
+<Russian>Shift/Ctrl/Alt включ. кликом по их иконкам</Russian>									
+<Italian>Click on Shift/Ctrl/Alt to change it</Italian>
+<Polish>Kliknij Shift/Ctrl/Alt aby włączyć/wyłączyć</Polish>
+<French>Click on Shift/Ctrl/Alt to change it</French>
+<Hungarian>Click on Shift/Ctrl/Alt to change it</Hungarian>
+</Key>
+<Key ID="STR_SETTINGS_KEYS_C">
+<English>C = Ctrl</English>
+<German>C = STRG</German>
+<Spanish>C = Ctrl</Spanish>
+<Czech>C = Ctrl</Czech>
+<Russian>C = Ctrl</Russian>
+<Italian>C = Ctrl</Italian>
+<Polish>C = Ctrl</Polish>
+<French>C = Ctrl</French>
+<Hungarian>C = Ctrl</Hungarian>
+</Key>
+<Key ID="STR_SETTINGS_KEYS_WC">
+<English>With Ctrl</English>
+<German>mit STRG</German>
+<Spanish>With Ctrl</Spanish>
+<Czech>S Ctrl</Czech>
+<Russian>с Ctrl</Russian>
+<Italian>With Ctrl</Italian>
+<Polish>+ Ctrl</Polish>
+<French>With Ctrl</French>
+<Hungarian>With Ctrl</Hungarian>
+</Key>
+
+<Key ID="STR_SETTINGS_KEYS_S">
+<English>S = Shift</English>
+<German>S = SHIFT</German>
+<Spanish>S = Shift</Spanish>
+<Czech>S = Shift</Czech>
+<Russian>S = Shift</Russian>
+<Italian>S = Shift</Italian>
+<Polish>S = Shift</Polish>
+<French>S = Shift</French>
+<Hungarian>S = Shift</Hungarian>
+</Key>
+<Key ID="STR_SETTINGS_KEYS_WS">
+<English>With Shift</English>
+<German>mit SHIFT</German>
+<Spanish>With Shift</Spanish>
+<Czech>S Shift</Czech>
+<Russian>с Shift</Russian>
+<Italian>With Shift</Italian>
+<Polish>+ Shift</Polish>
+<French>With Shift</French>
+<Hungarian>With Shift</Hungarian>
+</Key>
+<Key ID="STR_SETTINGS_KEYS_A">
+<English>A = Alt</English>
+<German>A = ALT</German>
+<Spanish>A = Alt</Spanish>
+<Czech>A = Alt</Czech>
+<Russian>A = Alt</Russian>
+<Italian>A = Alt</Italian>
+<Polish>A = Alt</Polish>
+<French>A = Alt</French>
+<Hungarian>A = Alt</Hungarian>
+</Key>
+<Key ID="STR_SETTINGS_KEYS_WA">
+<English>With Alt</English>
+<German>mit ALT</German>
+<Spanish>With Alt</Spanish>
+<Czech>S Alt</Czech>
+<Russian>с Alt</Russian>
+<Italian>With Alt</Italian>
+<Polish>+ Alt</Polish>
+<French>With Alt</French>
+<Hungarian>With Alt</Hungarian>
+</Key>
+</Container>
+
+<!-- Words -->
+<Container name="STR_WORDS">
+<Key ID="STR_WORDS_CHANGE">
+<English>Change </English>
+<German>Ändere </German>
+<Spanish>Change </Spanish>
+<Czech>Změnit </Czech>
+<Russian>Изменение </Russian>
+<Italian>Change </Italian>
+<Polish>Change </Polish>
+<French>Change </French>
+<Hungarian>Change </Hungarian>
+</Key>
+<Key ID="STR_WORDS_NA">
+<English>n/a</English>
+<German>k.A.</German>
+<Spanish>n/a</Spanish>
+<Czech>chybí</Czech>
+<Russian>н/д</Russian>
+<Italian>n/a</Italian>
+<Polish>brak</Polish>
+<French>n/a</French>
+<Hungarian>n/a</Hungarian>
+</Key>
+<Key ID="STR_WORDS_FOR">
+<English>for</English>
+<German>für</German>
+<Spanish>for</Spanish>
+<Czech>pro</Czech>
+<Russian>для</Russian>
+<Italian>for</Italian>
+<Polish>dla</Polish>
+<French>for</French>
+<Hungarian>for</Hungarian>
+</Key>
+<Key ID="STR_WORDS_NO">
+<English>No</English>
+<German>Nein</German>
+<Spanish>No</Spanish>
+<Czech>Ne</Czech>
+<Russian>Нет</Russian>
+<Italian>No</Italian>
+<Polish>Nie</Polish>
+<French>No</French>
+<Hungarian>No</Hungarian>
+</Key>
+<Key ID="STR_WORDS_YES">
+<English>Yes</English>
+<German>Ja</German>
+<Spanish>Yes</Spanish>
+<Czech>Ano</Czech>
+<Russian>Да</Russian>
+<Italian>Yes</Italian>
+<Polish>Tak</Polish>
+<French>Yes</French>
+<Hungarian>Yes</Hungarian>
+</Key>
+<Key ID="STR_WORDS_ON">
+<English>On</English>
+<German>Ein</German>
+<Spanish>On</Spanish>
+<Czech>Zap.</Czech>
+<Russian>Вкл</Russian>
+<Italian>On</Italian>
+<Polish>Wł.</Polish>
+<French>On</French>
+<Hungarian>On</Hungarian>
+</Key>
+<Key ID="STR_WORDS_OFF">
+<English>Off</English>
+<German>Aus</German>
+<Spanish>Off</Spanish>
+<Czech>Vyp.</Czech>
+<Russian>Выкл</Russian>
+<Italian>Off</Italian>
+<Polish>Wył.</Polish>
+<French>Off</French>
+<Hungarian>Off</Hungarian>
+</Key>
+<Key ID="STR_WORDS_ALL">
+<English>All</English>
+<German>Alle</German>
+<Spanish>All</Spanish>
+<Czech>Vše</Czech>
+<Russian>Все</Russian>
+<Italian>All</Italian>
+<Polish>Wszystkie</Polish>
+<French>All</French>
+<Hungarian>All</Hungarian>
+</Key>
+<Key ID="STR_WORDS_NONE">
+<English>None</English>
+<German>Keine</German>
+<Spanish>None</Spanish>
+<Czech>Žádný</Czech>
+<Russian>Нет</Russian>
+<Italian>None</Italian>
+<Polish>Żadne</Polish>
+<French>None</French>
+<Hungarian>None</Hungarian>
+</Key>
+<Key ID="STR_WORDS_NONE1">
+<English>None</English>
+<German>aus</German>
+<Spanish>None</Spanish>
+<Czech>Žádný</Czech>
+<Russian>Нет</Russian>
+<Italian>None</Italian>
+<Polish>Brak</Polish>
+<French>None</French>
+<Hungarian>None</Hungarian>
+</Key>
+<Key ID="STR_WORDS_CUR">
+<English>Selected</English>
+<German>Ausgewählte</German>
+<Spanish>Selected</Spanish>
+<Czech>Vybraný</Czech>
+<Russian>Выбранные</Russian>
+<Italian>Selected</Italian>
+<Polish>Zaznaczone</Polish>
+<French>Selected</French>
+<Hungarian>Selected</Hungarian>
+</Key>
+<Key ID="STR_WORDS_ICON">
+<English>Icon</English>
+<German>Symbol</German>
+<Spanish>Icon</Spanish>
+<Czech>Ikona</Czech>
+<Russian>Иконка</Russian>
+<Italian>Icon</Italian>
+<Polish>Ikona</Polish>
+<French>Icon</French>
+<Hungarian>Icon</Hungarian>
+</Key>
+<Key ID="STR_WORDS_TEXT">
+<English>Text</English>
+<German>Text</German>
+<Spanish>Text</Spanish>
+<Czech>Text</Czech>
+<Russian>Текст</Russian>
+<Italian>Text</Italian>
+<Polish>Tekst</Polish>
+<French>Text</French>
+<Hungarian>Text</Hungarian>
+</Key>
+<Key ID="STR_WORDS_CURSOR">
+<English>Cursor</English>
+<German>Mauszeiger</German>
+<Spanish>Cursor</Spanish>
+<Czech>Kurzor</Czech>
+<Russian>Курсор</Russian>
+<Italian>Cursor</Italian>
+<Polish>Kursor</Polish>
+<French>Cursor</French>
+<Hungarian>Cursor</Hungarian>
+</Key>
+<Key ID="STR_WORDS_CONSTANT">
+<English>Constant</English>
+<German>permanent</German>
+<Spanish>Constant</Spanish>
+<Czech>Stálý</Czech>
+<Russian>Постоянное</Russian>
+<Italian>Constant</Italian>
+<Polish>Ciągły</Polish>
+<French>Constant</French>
+<Hungarian>Constant</Hungarian>
+</Key>
+<Key ID="STR_WORDS_GESTURE">
+<English>Gesture</English>
+<German>Geste</German>
+<Spanish>Gesture</Spanish>
+<Czech>Gesto</Czech>
+<Russian>Жесты</Russian>
+<Italian>Gesture</Italian>
+<Polish>Gest</Polish>
+<French>Gesture</French>
+<Hungarian>Gesture</Hungarian>
+</Key>
+<Key ID="STR_WORDS_ACTIONEMENU">
+<English>Actionmenu</English>
+<German>Aktionsmenü</German>
+<Spanish>Actionmenu</Spanish>
+<Czech>Menu akcí</Czech>
+<Russian>Меню действий</Russian>
+<Italian>Actionmenu</Italian>
+<Polish>Menu akcji</Polish>
+<French>Actionmenu</French>
+<Hungarian>Actionmenu</Hungarian>
+</Key>
+<Key ID="STR_WORDS_HOLDKEY">
+<English>Hold key</English>
+<German>Taste halten</German>
+<Spanish>Hold key</Spanish>
+<Czech>Podrž klávesu</Czech>
+<Russian>Удерживании клавиши</Russian>
+<Italian>Hold key</Italian>
+<Polish>Przytrzymanie klawisza</Polish>
+<French>Hold key</French>
+<Hungarian>Hold key</Hungarian>
+</Key>
+<Key ID="STR_WORDS_PRESSKEY">
+<English>Single key press</English>
+<German>Taste loslassen</German>
+<Spanish>Single key press</Spanish>
+<Czech>Jedno zmáčknutí klávesy</Czech>
+<Russian>Однократном нажатии</Russian>
+<Italian>Single key press</Italian>
+<Polish>Wciśnięcie klawisza</Polish>
+<French>Single key press</French>
+<Hungarian>Single key press</Hungarian>
+</Key>
+<Key ID="STR_WORDS_MEDIUM">
+<English>Medium</English>
+<German>mittel</German>
+<Spanish>Medium</Spanish>
+<Czech>Střední</Czech>
+<Russian>Среднее</Russian>
+<Italian>Medium</Italian>
+<Polish>Średni</Polish>
+<French>Medium</French>
+<Hungarian>Medium</Hungarian>
+</Key>
+<Key ID="STR_WORDS_FULL">
+<English>Full</English>
+<German>voll</German>
+<Spanish>Full</Spanish>
+<Czech>Plný</Czech>
+<Russian>Полное</Russian>
+<Italian>Full</Italian>
+<Polish>Pełny</Polish>
+<French>Full</French>
+<Hungarian>Full</Hungarian>
+</Key>
+<Key ID="STR_WORDS_BR">
+<English>Bottom Right</English>
+<German>unten rechts</German>
+<Spanish>Bottom Right</Spanish>
+<Czech>Vpravo dole</Czech>
+<Russian>Снизу справа</Russian>
+<Italian>Bottom Right</Italian>
+<Polish>Prawy dolny róg</Polish>
+<French>Bottom Right</French>
+<Hungarian>Bottom Right</Hungarian>
+</Key>
+<Key ID="STR_WORDS_BL">
+<English>Bottom Left</English>
+<German>unten links</German>
+<Spanish>Bottom Left</Spanish>
+<Czech>Vpravo dole </Czech>
+<Russian>Снизу слева</Russian>
+<Italian>Bottom Left</Italian>
+<Polish>Lewy górny róg</Polish>
+<French>Bottom Left</French>
+<Hungarian>Bottom Left</Hungarian>
+</Key>
+<Key ID="STR_WORDS_TR">
+<English>Top Right</English>
+<German>oben rechts</German>
+<Spanish>Top Right</Spanish>
+<Czech>Vpravo nahoře</Czech>
+<Russian>Сверху справа</Russian>
+<Italian>Top Right</Italian>
+<Polish>Prawy górny róg</Polish>
+<French>Top Right</French>
+<Hungarian>Top Right</Hungarian>
+</Key>
+<Key ID="STR_WORDS_TL">
+<English>Top Left</English>
+<German>oben links</German>
+<Spanish>Top Left</Spanish>
+<Czech>Vlevo nahoře</Czech>
+<Russian>Сверху слева</Russian>
+<Italian>Top Left</Italian>
+<Polish>Lewy górny róg</Polish>
+<French>Top Left</French>
+<Hungarian>Top Left</Hungarian>
+</Key>
+</Container>
+
+<!-- Buttons -->
+<Container name="STR_BUTTONS">
+<Key ID="STR_BUTTONS_EXECUTE">
+<English>Execute</English>
+<German>Ausführen</German>
+<Spanish>Execute</Spanish>
+<Czech>Provést</Czech>
+<Russian>Выполнить</Russian>
+<Italian>Execute</Italian>
+<Polish>Uruchom</Polish>
+<French>Execute</French>
+<Hungarian>Execute</Hungarian>
+</Key>
+<Key ID="STR_BUTTONS_DISABLED">
+<English>Disabled</English>
+<German>Deaktiviert</German>
+<Spanish>Disabled</Spanish>
+<Czech>Zakázaný</Czech>
+<Russian>Отключено</Russian>
+<Italian>Disabled</Italian>
+<Polish>Wyłączono</Polish>
+<French>Disabled</French>
+<Hungarian>Disabled</Hungarian>
+</Key>
+<Key ID="STR_BUTTONS_SAVE">
+<English>Save</English>
+<German>Speichern</German>
+<Spanish>Save</Spanish>
+<Czech>Uložit</Czech>
+<Russian>Сохранить</Russian>
+<Italian>Save</Italian>
+<Polish>Zapisz</Polish>
+<French>Save</French>
+<Hungarian>Save</Hungarian>
+</Key>
+<Key ID="STR_BUTTONS_CANCEL">
+<English>Cancel</English>
+<German>Abbrechen</German>
+<Spanish>Cancel</Spanish>
+<Czech>Zrušit</Czech>
+<Russian>Отмена</Russian>
+<Italian>Cancel</Italian>
+<Polish>Anuluj</Polish>
+<French>Cancel</French>
+<Hungarian>Cancel</Hungarian>
+</Key>
+</Container>
+
+<!-- Titles MAIN-->
+<Container name="STR_TITLESMAIN">
+<Key ID="STR_TITLESMAIN_WEP">
+<English>Weapon control</English>
+<German>Waffenhandhabung</German>
+<Spanish>Weapon control</Spanish>
+<Czech>Weapon control</Czech>
+<Russian>Управление оружием</Russian>
+<Italian>Weapon control</Italian>
+<Polish>Kontrola uzbrojenia</Polish>
+<French>Weapon control</French>
+<Hungarian>Weapon control</Hungarian>
+</Key>
+<Key ID="STR_TITLESMAIN_ITEM">
+<English>Item control</English>
+<German>Gegenstände</German>
+<Spanish>Item control</Spanish>
+<Czech>Ovládání vybavení</Czech>
+<Russian>Управление предметами</Russian>
+<Italian>Item control</Italian>
+<Polish>Kontrola przedmiotów</Polish>
+<French>Item control</French>
+<Hungarian>Item control</Hungarian>
+</Key>
+<Key ID="STR_TITLESMAIN_VEH">
+<English>Vehicle control</English>
+<German>Fahrzeughandhabung</German>
+<Spanish>Vehicle control</Spanish>
+<Czech>Ovládání vozidel</Czech>
+<Russian>Управление техникой</Russian>
+<Italian>Vehicle control</Italian>
+<Polish>Kontrola pojazdu</Polish>
+<French>Vehicle control</French>
+<Hungarian>Vehicle control</Hungarian>
+</Key>
+<Key ID="STR_TITLESMAIN_OTHER">
+<English>Miscellanous</English>
+<German>Verschiedenes</German>
+<Spanish>Miscellanous</Spanish>
+<Czech>Ostatní</Czech>
+<Russian>Разное</Russian>
+<Italian>Miscellanous</Italian>
+<Polish>Podstawowe</Polish>
+<French>Miscellanous</French>
+<Hungarian>Miscellanous</Hungarian>
+</Key>
+<Key ID="STR_TITLESMAIN_INTERACTION">
+<English>Interaction</English>
+<German>Interaktion</German>
+<Spanish>Interaction</Spanish>
+<Czech>Interakce</Czech>
+<Russian>Взаимодействие</Russian>
+<Italian>Interaction</Italian>
+<Polish>Interakcja</Polish>
+<French>Interaction</French>
+<Hungarian>Interaction</Hungarian>
+</Key>
+</Container>
+<!-- Titles SUB-->
+<Container name="STR_TITLES">
+<Key ID="STR_TITLES_FIXHEADBUG">
+<English>Fix Headbug:</English>
+<German>'Headbug' beheben:</German>
+<Spanish>Fix Headbug:</Spanish>
+<Czech>Opravit Headbug:</Czech>
+<Russian>Исправить Headbug:</Russian>
+<Italian>Fix Headbug:</Italian>
+<Polish>Napraw headbug:</Polish>
+<French>Fix Headbug:</French>
+<Hungarian>Fix Headbug:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_CHANGEVD">
+<English>Change viewdistance:</English>
+<German>Sichtweite ändern:</German>
+<Spanish>Change viewdistance:</Spanish>
+<Czech>Změnit dohlednost:</Czech>
+<Russian>Изменить видимость:</Russian>
+<Italian>Change viewdistance:</Italian>
+<Polish>Zmiana widoczności:</Polish>
+<French>Change viewdistance:</French>
+<Hungarian>Change viewdistance:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_CHANGETG">
+<English>Change terraingrid:</English>
+<German>Grasdichte ändern:</German>
+<Spanish>Change terraingrid:</Spanish>
+<Czech>Změnit kvalitu terénu:</Czech>
+<Russian>Изменить кач. ландш.:</Russian>
+<Italian>Change terraingrid:</Italian>
+<Polish>Zmiana jakości terenu:</Polish>
+<French>Change terraingrid:</French>
+<Hungarian>Change terraingrid:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_FORCEACESYSTEMS">
+<English>Force ACE Systems:</English>
+<German>Erzwinge ACE:</German>
+<Spanish>Force ACE Systems:</Spanish>
+<Czech>Необходимость ACE:</Czech>
+<Russian>Force ACE Systems:</Russian>
+<Italian>Force ACE Systems:</Italian>
+<Polish>Force ACE Systems:</Polish>
+<French>Force ACE Systems:</French>
+<Hungarian>Force ACE Systems:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_ENABLERANGEADJUSTMENT">
+<English>Enable range adjustment:</English>
+<German>Visiereinstellung:</German>
+<Spanish>Enable range adjustment:</Spanish>
+<Czech>Povolit nastavení vzdálenosti:</Czech>
+<Russian>Вкл. поправки на дальн.:</Russian>
+<Italian>Enable range adjustment:</Italian>
+<Polish>Nastawy celowników:</Polish>
+<French>Enable range adjustment:</French>
+<Hungarian>Enable range adjustment:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_ENABLEWINDDEFLECTION">
+<English>Enable wind deflection:</English>
+<German>Windeinfluss:</German>
+<Spanish>Enable wind deflection:</Spanish>
+<Czech>Povolit úpravu větru:</Czech>
+<Russian>Вкл. отклон. из-за ветра(SP):</Russian>
+<Italian>Enable wind deflection:</Italian>
+<Polish>Wpływ wiatru na pociski:</Polish>
+<French>Enable wind deflection:</French>
+<Hungarian>Enable wind deflection:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_SCANNINGMETHOD">
+<English>Scanning method:</English>
+<German>Tags anzeigen mit:</German>
+<Spanish>Scanning method:</Spanish>
+<Czech>Metoda skenování:</Czech>
+<Russian>Распознование целей:</Russian>
+<Italian>Scanning method:</Italian>
+<Polish>Metoda skanowania:</Polish>
+<French>Scanning method:</French>
+<Hungarian>Scanning method:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_COMPLEXUNITTAGS">
+<English>Complex unit info:</English>
+<German>Erweiterte Tags:</German>
+<Spanish>Complex unit info:</Spanish>
+<Czech>Komplex informace od jednotce:</Czech>
+<Russian>Полная информ. о распоз. цели:</Russian>
+<Italian>Complex unit info:</Italian>
+<Polish>Precyzyjne informacje o typach jednostek:</Polish>
+<French>Complex unit info:</French>
+<Hungarian>Complex unit info:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_UNITINFOFORPLAYERS">
+<English>Unit info for players:</English>
+<German>Erweiterte Tags (Spieler):</German>
+<Spanish>Unit info for players:</Spanish>
+<Czech>Informace o jednotkách pro hráče:</Czech>
+<Russian>Распознование целей-игроков:</Russian>
+<Italian>Unit info for players:</Italian>
+<Polish>Informacje o typie jednostki graczy:</Polish>
+<French>Unit info for players:</French>
+<Hungarian>Unit info for players:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_WEAPONSELECTFIREMODE">
+<English>Weapon select firemode:</English>
+<German>Feuermodi wechseln für:</German>
+<Spanish>Weapon select firemode:</Spanish>
+<Czech>Výběr střelby zbraně:</Czech>
+<Russian>Перекл. реж. стрельбы:</Russian>
+<Italian>Weapon select firemode:</Italian>
+<Polish>Zmiana trybu ognia:</Polish>
+<French>Weapon select firemode:</French>
+<Hungarian>Weapon select firemode:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_STANCEINDICATOR">
+<English>Stance indicator:</English>
+<German>Körperhaltung anzeigen:</German>
+<Spanish>Stance indicator:</Spanish>
+<Czech>Indikátor postoje:</Czech>
+<Russian>Индикатор стойки:</Russian>
+<Italian>Stance indicator:</Italian>
+<Polish>Wskaźnik postawy:</Polish>
+<French>Stance indicator:</French>
+<Hungarian>Stance indicator:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_ROUNDCOUNT">
+<English>Roundcount as:</English>
+<German>Magazincheck als:</German>
+<Spanish>Roundcount as:</Spanish>
+<Czech>Počet nábojů jako:</Czech>
+<Russian>Отобр. кол-во патр. как:</Russian>
+<Italian>Roundcount as:</Italian>
+<Polish>Licznik amunicji:</Polish>
+<French>Roundcount as:</French>
+<Hungarian>Roundcount as:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_IMMSERSIVEDISMOUNT">
+<English>Enable immersive dismount:</English>
+<German>Kopfbewegung beim Aussteigen:</German>
+<Spanish>Enable immersive dismount:</Spanish>
+<Czech>Povolit vylepšný efekt výstupu z vozidel:</Czech>
+<Russian>Aним. при залез./вылез. из техн.(SP):</Russian>
+<Italian>Enable immersive dismount:</Italian>
+<Polish>Ulepszony efekt wysiadania z pojazdów:</Polish>
+<French>Enable immersive dismount:</French>
+<Hungarian>Enable immersive dismount:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_STAYINGBRASS">
+<English>Enable staying brass:</English>
+<German>Patronenhülsen anzeigen:</German>
+<Spanish>Enable staying brass:</Spanish>
+<Czech>Povolit zůstavající nábojnice:</Czech>
+<Russian>Вкл. отображение гильз:</Russian>
+<Italian>Enable staying brass:</Italian>
+<Polish>Łuski pozostające na dłużej:</Polish>
+<French>Enable staying brass:</French>
+<Hungarian>Enable staying brass:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_ENABLESPPLAYERMEDIC">
+<English>Enable SP Player Medic:</English>
+<German>(SP) Spieler als Sanitäter:</German>
+<Spanish>Enable SP Player Medic:</Spanish>
+<Czech>Hráč medikem ve hře jednoho hráče:</Czech>
+<Russian>Вкл. игрока-медика(SP):</Russian>
+<Italian>Enable SP Player Medic:</Italian>
+<Polish>Gracz medykiem w trybach gry jednoosobowej:</Polish>
+<French>Enable SP Player Medic:</French>
+<Hungarian>Enable SP Player Medic:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_ENABLEHANDSIGNALBACKGROUND">
+<English>Enable Handsignal Background:</English>
+<German>Handzeichen Hintergrund:</German>
+<Spanish>Enable Handsignal Background:</Spanish>
+<Czech>Povolit pozadí u posunků:</Czech>
+<Russian>Вкл. фон.карт.для сигн.рукой:</Russian>
+<Italian>Enable Handsignal Background:</Italian>
+<Polish>Pomocnicze tło sygnałów ręcznych:</Polish>
+<French>Enable Handsignal Background:</French>
+<Hungarian>Enable Handsignal Background:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_HANDSIGNALMETHOD">
+<English>Handsignal Method:</English>
+<German>Handzeichen mit:</German>
+<Spanish>Handsignal Method:</Spanish>
+<Czech>Metoda posunků:</Czech>
+<Russian>Метод подачи сигналов рукой:</Russian>
+<Italian>Handsignal Method:</Italian>
+<Polish>Metoda korzystania z sygnałów ręcznych:</Polish>
+<French>Handsignal Method:</French>
+<Hungarian>Handsignal Method:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_GCURTYPE">
+<English>G: Grenade cursor type:</English>
+<German>G: Wurfcursor:</German>
+<Spanish>G: Grenade cursor type:</Spanish>
+<Czech>G: Typ kurzoru u hodu granátem:</Czech>
+<Russian>Г: Вид указат. для гранат:</Russian>
+<Italian>G: Grenade cursor type:</Italian>
+<Polish>G: kursor celowania rzutu granatem:</Polish>
+<French>G: Grenade cursor type:</French>
+<Hungarian>G: Grenade cursor type:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_GSWITCHTOWPN">
+<English>G: Switch to weapon after throw:</English>
+<German>G: Wechsle zu Waffe nach Wurf:</German>
+<Spanish>G: Switch to weapon after throw:</Spanish>
+<Czech>G: Přepnout na zbraň po hodu:</Czech>
+<Russian>Г: Перекл. на оруж.после броска:</Russian>
+<Italian>G: Switch to weapon after throw:</Italian>
+<Polish>G: wybierz karabin/pistolet po rzucie:</Polish>
+<French>G: Switch to weapon after throw:</French>
+<Hungarian>G: Switch to weapon after throw:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_GRESETMODE">
+<English>G: Reset throw mode after throw:</English>
+<German>G: Wurfmodus zurücksetzen:</German>
+<Spanish>G: Reset throw mode after throw:</Spanish>
+<Czech>G: Obnovit způsob hodu po odhození granátu:</Czech>
+<Russian>Г: Сбр. реж.броска после броска:</Russian>
+<Italian>G: Reset throw mode after throw:</Italian>
+<Polish>G: zresetuj tryb rzutu po rzucie:</Polish>
+<French>G: Reset throw mode after throw:</French>
+<Hungarian>G: Reset throw mode after throw:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_GSWAPMB">
+<English>G: Swap left-right mouse button:</English>
+<German>G: Tausche Maustasten für Wurf:</German>
+<Spanish>G: Swap left-right mouse button:</Spanish>
+<Czech>G: Prohodit tlačítka myši:</Czech>
+<Russian>Г: Поменять кнопку мыши(ЛКМ-ПКМ):</Russian>
+<Italian>G: Swap left-right mouse button:</Italian>
+<Polish>G: zamiana roli przycisków myszy:</Polish>
+<French>G: Swap left-right mouse button:</French>
+<Hungarian>G: Swap left-right mouse button:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_GFASTTHROWAMP">
+<English>G: 1-click throw amplitude:</English>
+<German>G: 1-Klick Wurfamplitude:</German>
+<Spanish>G: 1-click throw amplitude:</Spanish>
+<Czech>G: Amplituda hodu jedním kliknutím:</Czech>
+<Russian>Г: Амплитуда при клике мыши:</Russian>
+<Italian>G: 1-click throw amplitude:</Italian>
+<Polish>G: amplituda rzutu z pojedynczego kliknięcia:</Polish>
+<French>G: 1-click throw amplitude:</French>
+<Hungarian>G: 1-click throw amplitude:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_GAMPGAIN">
+<English>G: Throw amplitude gain:</English>
+<German>G: Wurfamplitudenzuwachs:</German>
+<Spanish>G: Throw amplitude gain:</Spanish>
+<Czech>G: Nárust amplitudy hodu:</Czech>
+<Russian>Г: Прирост амплитуды за 1с:</Russian>
+<Italian>G: Throw amplitude gain:</Italian>
+<Polish>G: przyrost amplitudy rzutu:</Polish>
+<French>G: Throw amplitude gain:</French>
+<Hungarian>G: Throw amplitude gain:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_INTERACTTOGGLE">
+<English>Interaction Menu opens on:</English>
+<German>Interaktionsmenu mit:</German>
+<Spanish>Interaction Menu opens on:</Spanish>
+<Czech>Otevření Menu Interakcí:</Czech>
+<Russian>Меню Взаимод. откр. при:</Russian>
+<Italian>Interaction Menu opens on:</Italian>
+<Polish>Otwieranie Menu Interakcji:</Polish>
+<French>Interaction Menu opens on:</French>
+<Hungarian>Interaction Menu opens on:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_RWRPOSITION">
+<English>RWR position:</English>
+<German>RWR Position:</German>
+<Spanish>RWR position:</Spanish>
+<Czech>Pozice RWR:</Czech>
+<Russian>Положен. приемн. СПО:</Russian>
+<Italian>RWR position:</Italian>
+<Polish>Pozycja RWR:</Polish>
+<French>RWR position:</French>
+<Hungarian>RWR position:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_MARKERSIZE">
+<English>Markers size:</English>
+<German>Markergröße:</German>
+<Spanish>Markers size:</Spanish>
+<Czech>Velikost značek:</Czech>
+<Russian>Размер маркеров:</Russian>
+<Italian>Markers size:</Italian>
+<Polish>Rozmiar znaczników grup:</Polish>
+<French>Markers size:</French>
+<Hungarian>Markers size:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_ENABLEGROUPMARKERS">
+<English>Enable group markers:</English>
+<German>Gruppenmarkierungen:</German>
+<Spanish>Enable group markers:</Spanish>
+<Czech>Povolit značky družstev:</Czech>
+<Russian>Вкл. маркеры групп:</Russian>
+<Italian>Enable group markers:</Italian>
+<Polish>Znaczniki grup:</Polish>
+<French>Enable group markers:</French>
+<Hungarian>Enable group markers:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_COLOREAST">
+<English>Color East:</English>
+<German>Farbe (OPFOR):</German>
+<Spanish>Color East:</Spanish>
+<Czech>Barva (OPFOR):</Czech>
+<Russian>Цвет Красных:</Russian>
+<Italian>Color East:</Italian>
+<Polish>Kolor (OPFOR):</Polish>
+<French>Color East:</French>
+<Hungarian>Color East:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_COLORWEST">
+<English>Color West:</English>
+<German>Farbe (BLUFOR):</German>
+<Spanish>Color West:</Spanish>
+<Czech>Barva (BLUFOR):</Czech>
+<Russian>Цвет Синих:</Russian>
+<Italian>Color West:</Italian>
+<Polish>Kolor (BLUFOR):</Polish>
+<French>Color West:</French>
+<Hungarian>Color West:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_COLORGUER">
+<English>Color GUER:</English>
+<German>Farbe (Widerstand):</German>
+<Spanish>Color GUER:</Spanish>
+<Czech>Barva (partyzáni):</Czech>
+<Russian>Цвет Партизан:</Russian>
+<Italian>Color GUER:</Italian>
+<Polish>Kolor (niezależni):</Polish>
+<French>Color GUER:</French>
+<Hungarian>Color GUER:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_COLORCIV">
+<English>Color CIV:</English>
+<German>Farbe (Zivilisten):</German>
+<Spanish>Color CIV:</Spanish>
+<Czech>Barva (civilisté):</Czech>
+<Russian>Цвет Гражданских:</Russian>
+<Italian>Color CIV:</Italian>
+<Polish>Kolor (cywile):</Polish>
+<French>Color CIV:</French>
+<Hungarian>Color CIV:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_COLORENEMY">
+<English>Color Enemy:</English>
+<German>Farbe (Feinde):</German>
+<Spanish>Color Enemy:</Spanish>
+<Czech>Barva (nepřátelé):</Czech>
+<Russian>Цвет Врагов:</Russian>
+<Italian>Color Enemy:</Italian>
+<Polish>Kolor (renegaci):</Polish>
+<French>Color Enemy:</French>
+<Hungarian>Color Enemy:</Hungarian>
+</Key>
+<Key ID="STR_TITLES_ENABLEGRENADETHROW2">
+<English>G: Enable Enhanced Throw:</English>
+<German>G: Ermöglichen Sie Erhöhten Wurf:</German>
+<Spanish>G: Habilitar Throw mejorada:</Spanish>
+<Czech>G: Povolit vylepšené házení:</Czech>
+<Russian>Г: Вкл. улучш. бросок:</Russian>
+<Italian>G: Abilita Tiro avanzata:</Italian>
+<Polish>G: Włącz ulepszenia rzutu:</Polish>
+<French>G: Activer Throw améliorée:</French>
+<Hungarian>G: Enable Enhanced Throw:</Hungarian>
+</Key>
+</Container>
+</Package></Project>

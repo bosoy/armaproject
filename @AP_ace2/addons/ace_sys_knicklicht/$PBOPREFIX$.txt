@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_knicklicht
+Pbo Type is: Arma Addon
+Sha: 'E25856B159FED39F5FBCFE70D1B0F78D23A3C947'
+//////</HEADER>//////

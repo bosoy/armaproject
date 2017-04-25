@@ -1,0 +1,92 @@
+;mando Missile Control Center activation for AA system
+;mando_missilecontrolon_aa.sqs
+;Jan 2007 mandoble
+;
+; Missile control center is activated
+; This script is executed by action added to indicated vehicles by mando_mccallow_by_name.sqf or
+; mando_mccallow_by_type.sqf
+;
+; missile's parameters are customized inside this script before executing mando_missilecenter.sqs 
+; to activate the MCC
+
+_params = (_this select 3)
+_targettypes = _params select 0
+_launchpos   = _params select 1
+_camerapos   = _params select 2
+_fixeddir    = _params select 3
+_missileidx  = _params select 4
+_backcolor   = _params select 5
+_scanstoload = _params select 6
+
+
+;Launcher parameters
+;Launcher radar scan range
+_radarrange       = 15000
+;Launcher radar scan frequency
+_scanfreq         = 1
+;Able to detect incomming missiles?
+_antimissile      = false
+
+
+
+;Missile parameters
+_launcher         = vehicle player
+_missilebody      = "Bo_GBU12_LGB"
+_dir              = 0
+_vangle           = 89
+?(_params select 7) != -100: _vangle = _params select 7
+
+_speedini         = 10
+_speedmax         = 400
+_acceleration     = 50
+_target           = objNull
+_boomrange        = 5
+_activerange      = 2000
+_modeinit         = 0
+_cruisealt        = 400
+_boomscript       = mando_missile_path+"warheads\mando_scudconv.sqf"
+_smokescript      = mando_missile_path+"exhausts\mando_missilesmoke1a.sqf"
+_soundrsc         = "mando_missile1"
+_sounddur         = 29
+_endurance        = 90
+_terrainavoidance = true
+_updatefreq       = 999
+_delayinit        = 0
+_controltime      = 3
+_detectable       = true
+_debug            = true
+_launchscript     = mando_missile_path+"launch\mando_scudlaunch.sqf"
+_hagility         = 35
+_vagility         = 40
+_accuracy         = 1
+_intercept        = true
+_scanarch         = 180
+_scanarcv         = 180
+
+
+_missileparams = [_launcher, _missilebody, _launchpos, _dir, _vangle, _speedini, _speedmax, _acceleration, _target, _boomrange, _activerange, _modeinit, _cruisealt, _boomscript, _smokescript, _soundrsc, _sounddur, _endurance, _terrainavoidance, _updatefreq, _delayinit, _controltime, _detectable, _debug, _launchscript, _hagility, _vagility, _accuracy, _intercept, _scanarch, _scanarcv]
+
+
+;MCC Sounds
+;Sound for MCC activation
+_radaronsound   = "mando_radaron"
+
+;Sound for MCC deactivation
+_radaroffsound  = "mando_radaroff"
+
+;Sound for locking on a target
+_gettargetsound = "mando_target1"
+
+;Sound for radar scans
+_scansound      = ""
+
+;Sound 1 to indicate no missiles left
+_noammosound1   = "mando_noammo1" 
+
+;Sound 2 to indicate no missiles left
+_noammosound2   = "mando_noammo2"
+
+_sounds = [_radaronsound,_radaroffsound,_gettargetsound,_scansound,_noammosound1,_noammosound2]
+
+[_launcher, _camerapos, _targettypes, _radarrange, _scanfreq, _antimissile, _missileparams, _sounds, _fixeddir, _missileidx, _backcolor, _scanstoload]exec mando_missile_path+"mcc\mando_missilecenter.sqs"
+exit

@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex\addons\c_wep_hk
+Pbo Type is: Arma Addon
+Sha: '7C6A9BC3A711B6AD4A8F3D7B464F3B1D64B86481'
+//////</HEADER>//////

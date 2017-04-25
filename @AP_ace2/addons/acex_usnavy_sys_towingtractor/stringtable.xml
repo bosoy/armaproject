@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2">
+<Package name="ACE2">
+<Container name="STR_DN">
+<Key ID="STR_ACE_TT_ATTACH">
+<English>Attach</English>
+<German>Anhängen</German>
+<Spanish>Attach</Spanish>
+<Czech>Připojit</Czech>
+<Russian>Собрать</Russian>
+<Italian>Allegare</Italian>
+<Polish>Holuj</Polish>
+<French>Attacher</French>
+<Hungarian>Hozzákapcsol</Hungarian>
+</Key>
+<Key ID="STR_ACE_TT_DETACH">
+<English>Detach</English>
+<German>Abhängen</German>
+<Spanish>Detach</Spanish>
+<Czech>Odpojit</Czech>
+<Russian>Разобрать</Russian>
+<Italian>Distaccare</Italian>
+<Polish>Odłącz</Polish>
+<French>Detacher</French>
+<Hungarian>Leakaszt</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

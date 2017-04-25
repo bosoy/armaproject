@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex_usnavy\addons\sys_repair
+Pbo Type is: Arma Addon
+Sha: 'B143C793FA4ECEB75861A0ACB1F50B8DB37509BF'
+//////</HEADER>//////

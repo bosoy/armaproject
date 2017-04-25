@@ -1,0 +1,199 @@
+class FSM
+{
+  fsmName = "HandleCamps";
+  class States
+  {
+    class Start
+    {
+      name = "Start";
+      init = "private [""_wf"", ""_flag"", ""_delay"", ""_objects"", ""_units"", ""_enemy"", ""_friendly"", ""_captime"", ""_curcaptime"", ""_curside"", ""_mar"", ""_texture"", ""_mcolor"",""_timeend""];" \n
+       "_wf = _this select 0;" \n
+       "_flag = _this select 1;" \n
+       "_delay = 3;";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class Loop
+    {
+      name = "Loop";
+      init = "_objects = _wf nearEntities [[""CAManBase"", ""Tank"", ""Car""], 12];" \n
+       "_units = [];" \n
+       "{if (alive _x) then {_units set [count _units, _x]}} forEach _objects;" \n
+       "_enemy = d_side_enemy countSide _units;" \n
+       "_friendly = d_side_player countSide _units;";
+      precondition = "";
+      class Links
+      {
+        class target_clear
+        {
+          priority = 10.000000;
+          to="End";
+          precondition = "";
+          condition="(X_JIPH getVariable ""target_clear"") || d_counterattack";
+          action="";
+        };
+        class _____enemy____0
+        {
+          priority = 1.000000;
+          to="Check";
+          precondition = "";
+          condition="(!(_enemy == 0 && _friendly == 0)) && (!(_enemy == _friendly))";
+          action="";
+        };
+        class _
+        {
+          priority = 0.000000;
+          to="Reset_cap_time";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class End
+    {
+      name = "End";
+      init = "";
+      precondition = "";
+      class Links
+      {
+      };
+    };
+    class Reset_cap_time
+    {
+      name = "Reset_cap_time";
+      init = "_timeend = time + _delay;";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="time >= _timeend";
+          action="";
+        };
+      };
+    };
+    class Check
+    {
+      name = "Check";
+      init = "_captime = _wf getVariable ""D_CAPTIME"";" \n
+       "_curcaptime = _wf getVariable ""D_CURCAPTIME"";" \n
+       "_curside = _wf getVariable ""D_SIDE"";" \n
+       "_curcapturer = _wf getVariable ""D_CURCAPTURER"";" \n
+       "" \n
+       "if (_curside == d_enemy_side && _friendly > 0 && _enemy == 0) then {" \n
+       "	if (_curcapturer == d_enemy_side) then {" \n
+       "		_wf setVariable [""D_CURCAPTIME"", 0, true];" \n
+       "		_wf setVariable [""D_CAPTIME"", 40 + (floor random 10),true];" \n
+       "		_curcaptime = 0;" \n
+       "		_wf setVariable [""D_CURCAPTURER"",d_own_side_trigger];" \n
+       "	};" \n
+       "	_curcaptime = _curcaptime + (if (_friendly < 3) then {3} else {_friendly});" \n
+       "	_wf setVariable [""D_CURCAPTIME"", _curcaptime, true];" \n
+       "} else {" \n
+       "	if (_curside == d_own_side_trigger && _enemy > 0 && _friendly == 0) then {" \n
+       "		if (_curcapturer == d_own_side_trigger) then {" \n
+       "			_wf setVariable [""D_CAPTIME"", 10, true];" \n
+       "			_wf setVariable [""D_CURCAPTIME"", 0, true];" \n
+       "			_curcaptime = 0;" \n
+       "			_wf setVariable [""D_CURCAPTURER"",d_enemy_side];" \n
+       "		};" \n
+       "		_curcaptime = _curcaptime + (if (_enemy < 3) then {3} else {_enemy});" \n
+       "		_wf setVariable [""D_CURCAPTIME"", _curcaptime, true];" \n
+       "	};" \n
+       "};" \n
+       "_timeend = time + _delay;";
+      precondition = "";
+      class Links
+      {
+        class _curcaptime____
+        {
+          priority = 1.000000;
+          to="Captured";
+          precondition = "";
+          condition="_curcaptime >= _captime";
+          action="";
+        };
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="time >= _timeend";
+          action="";
+        };
+      };
+    };
+    class Captured
+    {
+      name = "Captured";
+      init = "_mar = format [""d_camp%1"",_wf getVariable ""D_INDEX""];" \n
+       "_texture = """";" \n
+       "switch (_curside) do {" \n
+       "	case d_enemy_side: {" \n
+       "		_wf setVariable [""D_SIDE"", d_own_side_trigger, true];" \n
+       "		if (d_enemy_side == ""WEST"") then {" \n
+       "			_texture = if (""OA"" in d_version) then {""ca\Ca_E\data\flag_tka_co.paa""} else {""\ca\data\flag_rus_co.paa""};" \n
+       "		} else {" \n
+       "			_texture = ""\ca\data\flag_usa_co.paa""" \n
+       "		};" \n
+       "		_mcolor = ""ColorBlue"";" \n
+       "		X_JIPH setVariable [""d_campscaptured"", (X_JIPH getVariable ""d_campscaptured"") + 1,true];" \n
+       "		[_wf, d_enemy_side] execFSM ""fsms\RetakeCamp.fsm"";" \n
+       "	};" \n
+       "	case d_own_side_trigger: {" \n
+       "		_wf setVariable [""D_SIDE"", d_enemy_side, true];" \n
+       "		if (d_enemy_side == ""EAST"") then {" \n
+       "			_texture = if (""OA"" in d_version) then {""ca\Ca_E\data\flag_tka_co.paa""} else {""\ca\data\flag_rus_co.paa""};" \n
+       "		} else {" \n
+       "			_texture = ""\ca\data\flag_usa_co.paa""" \n
+       "		};" \n
+       "		_mcolor = ""ColorBlack"";" \n
+       "		X_JIPH setVariable [""d_campscaptured"", (X_JIPH getVariable ""d_campscaptured"") - 1,true];" \n
+       "	};" \n
+       "};" \n
+       "_flag setFlagTexture _texture;" \n
+       "_mar setMarkerColor _mcolor;" \n
+       "_wf setVariable [""D_CURCAPTIME"", 0, true];" \n
+       "" \n
+       "_sent = switch (_wf getVariable ""D_SIDE"") do {" \n
+       "	case ""WEST"": {""RussianCampByUS""};" \n
+       "	case ""EAST"": {""USCampByRussian""};" \n
+       "};" \n
+       "d_kb_logic1 kbTell [d_kb_logic2,d_kb_topic_side,_sent,true];" \n
+       "[""d_ccso""] call d_fnc_NetCallEventToClients;" \n
+       "" \n
+       "_timeend = time + _delay;";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="time >= _timeend";
+          action="";
+        };
+      };
+    };
+  };
+  initState="Start";
+  finalStates[] =
+  {
+    "End",
+  };
+};

@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="sys_cargo">
+<!-- DISPLAYNAMES -->
+<Container name="STR_DN">
+<Key ID="STR_DN_ACE_JERRYCAN_DUMMY">
+<German>Benzinkanister</German>
+<English>Jerrycan</English>
+<Spanish>Bidón</Spanish>
+<Czech>Kanystr</Czech>
+<French>Jerrican</French>
+<Polish>Kanister</Polish>
+<Italian>Tanica</Italian>
+<Russian>Канистра</Russian>
+<Hungarian>Marmonkanna</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_SPARE_TYRE">
+<German>Reserverad</German>
+<English>Spare Tyre</English>
+<Spanish>Rueda de repuesto</Spanish>
+<Czech>Rezervní pneumatika</Czech>
+<French>Roue de secours</French>
+<Polish>Koło zapasowe</Polish>
+<Italian>Ruota Di Scorta</Italian>
+<Russian>Запасное колесо</Russian>
+<Hungarian>Pótkerék</Hungarian>
+</Key>
+</Container>
+<!-- DIALOG -->
+<Container name="STR_DIALOG">
+<Key ID="STR_DIAG_ACE_CARGO_CANCEL">
+<German>Abbrechen</German>
+<English>Cancel</English>
+<Spanish>Cancel</Spanish>
+<Czech>Zrušit</Czech>
+<French>Annuler</French>
+<Polish>Przerwij</Polish>
+<Italian>Cancella</Italian>
+<Russian>Отмена</Russian>
+<Hungarian>Mégse</Hungarian>
+</Key>
+<Key ID="STR_DIAG_ACE_CARGO_UNLOAD">
+<German>Entladen</German>
+<English>Unload</English>
+<Spanish>Unload</Spanish>
+<Czech>Vyložit</Czech>
+<French>Unload</French>
+<Polish>Rozładuj</Polish>
+<Italian>Unload</Italian>
+<Russian>Выгрузить</Russian>
+<Hungarian>Unload</Hungarian>
+</Key>
+<Key ID="STR_DIAG_ACE_CARGO_TITLE">
+<German>Ladung %1</German>
+<English>Cargo %1</English>
+<Spanish>Cargo %1</Spanish>
+<Czech>Náklad %1</Czech>
+<French>Cargo %1</French>
+<Polish>Bagaż %1</Polish>
+<Italian>Cargo %1</Italian>
+<Russian>Багаж %1</Russian>
+<Hungarian>Cargo %1</Hungarian>
+</Key>
+</Container>
+<Container name="STR_BLABLA">
+<!-- HINT -->
+<Key ID="STR_ACE_CARGO_LOADING">
+<German>Lade ...</German>
+<English>Loading ...</English>
+<Spanish>Loading ...</Spanish>
+<Czech>Nakládám ...</Czech>
+<French>Loading ...</French>
+<Polish>Ładowanie...</Polish>
+<Italian>Loading ...</Italian>
+<Russian>Загружаю ...</Russian>
+<Hungarian>Loading ...</Hungarian>
+</Key>
+<Key ID="STR_ACE_CARGO_DROPPED">
+<German>Fallengelassen ...</German>
+<English>Dropped ...</English>
+<Spanish>Dropped ...</Spanish>
+<Czech>Dropped ...</Czech>
+<French>Dropped ...</French>
+<Polish>Zostawiono...</Polish>
+<Italian>Dropped ...</Italian>
+<Russian>Dropped ...</Russian>
+<Hungarian>Dropped ...</Hungarian>
+</Key>
+<Key ID="STR_ACE_CARGO_HELPREQUIRED">
+<German>Deine Hilfe wird beim Tragen von %1 benötigt</German>
+<English>Your help is requested in carrying %1</English>
+<Spanish>Your help is requested in carrying %1</Spanish>
+<Czech>Tvá pomoc je žádána při nesení %1</Czech>
+<French>Your help is requested in carrying %1</French>
+<Polish>Zostałeś poproszony o pomoc w noszeniu %1</Polish>
+<Italian>Your help is requested in carrying %1</Italian>
+<Russian>Требуется ваша помощь при переноске %1</Russian>
+<Hungarian>Your help is requested in carrying %1</Hungarian>
+</Key>
+<!-- ACTION MENU ENTRY -->
+<Key ID="STR_ACE_CARGO_RELASE">
+<German>Ziehen beenden</German>
+<English>End drag</English>
+<Spanish>End drag</Spanish>
+<Czech>Ukončit táhnutí</Czech>
+<French>Laisser</French>
+<Polish>Zostaw</Polish>
+<Italian>Fine Trascinamento</Italian>
+<Russian>Завершить перенос</Russian>
+<Hungarian>Vonszolás abbahagy</Hungarian>
+</Key>
+<Key ID="STR_ACE_CARGO_CARRYRELASE">
+<German>Tragen beenden</German>
+<English>End carry</English>
+<Spanish>End carry</Spanish>
+<Czech>Položit</Czech>
+<French>End carry</French>
+<Polish>Zostaw</Polish>
+<Italian>End carry</Italian>
+<Russian>Завершить перенос</Russian>
+<Hungarian>End carry</Hungarian>
+</Key>
+</Container>
+<!-- ERROR -->
+<Container name="STR_ERROR">
+<Key ID="STR_ACE_CARGO_ERR_NOWEP">
+<German>Zu weit weg</German>
+<English>No weapon in range</English>
+<Spanish>No weapon in range</Spanish>
+<Czech>Žádná zbraň v dosahu</Czech>
+<French>Pas d'armes à proximité</French>
+<Polish>Za daleko</Polish>
+<Italian>Munizioni Sbagliate</Italian>
+<Russian>Оружие вне досягаемости</Russian>
+<Hungarian>Nincs fegyver a közelben.</Hungarian>
+</Key>
+<Key ID="STR_ACE_CARGO_ERR_POS">
+<German>Von dieser Position unmöglich</German>
+<English>Not possible from current position</English>
+<Spanish>Not possible from current position</Spanish>
+<Czech>Nemožné z aktuální pozice</Czech>
+<French>Impossible depuis cette position</French>
+<Polish>Niemożliwe z tej pozycji</Polish>
+<Italian>Non è possibile da questa posizione </Italian>
+<Russian>Действие невозможно с данной позиции</Russian>
+<Hungarian>Lehetetlen ebben a testhelyzetben.</Hungarian>
+</Key>
+<Key ID="STR_ACE_CARGO_ERR_MEXICO">
+<German>Ladung besetzt</German>
+<English>Cargo occupied</English>
+<Spanish>Cargo occupied</Spanish>
+<Czech>Náklad je používaný</Czech>
+<French>Cargo occupied</French>
+<Polish>Bagaż jest zajęty</Polish>
+<Italian>Cargo occupied</Italian>
+<Russian>Багажник используется</Russian>
+<Hungarian>Cargo occupied</Hungarian>
+</Key>
+<Key ID="STR_ACE_CARGO_ERR_HEAVY">
+<German>Zu schwer</German>
+<English>Too heavy</English>
+<Spanish>Too heavy</Spanish>
+<Czech>Příliš težké</Czech>
+<French>Too heavy</French>
+<Polish>Zbyt ciężki</Polish>
+<Italian>Too heavy</Italian>
+<Russian>Слишком тяжёлый</Russian>
+<Hungarian>Too heavy</Hungarian>
+</Key>
+<Key ID="STR_ACE_CARGO_ERR_OCC">
+<German>Kiste besetzt</German>
+<English>Box occupied</English>
+<Spanish>Box occupied</Spanish>
+<Czech>Bedna je používána</Czech>
+<French>Box occupied</French>
+<Polish>Skrzynia jest zajęta</Polish>
+<Italian>Box occupied</Italian>
+<Russian>Ящик используется</Russian>
+<Hungarian>Box occupied</Hungarian>
+</Key>
+<Key ID="STR_ACE_CARGO_ERR_OCCV">
+<German>Fahrzeug besetzt</German>
+<English>Vehicle occupied</English>
+<Spanish>Vehicle occupied</Spanish>
+<Czech>Vozidlo je obsazené</Czech>
+<French>Vehicle occupied</French>
+<Polish>Pojazd jest zajęty</Polish>
+<Italian>Vehicle occupied</Italian>
+<Russian>Машина используется</Russian>
+<Hungarian>Vehicle occupied</Hungarian>
+</Key>
+</Container>
+<!-- INTERACTION MENU -->
+<Container name="STR_INTERACTIONMENU">
+<Key ID="STR_ACE_CARGO_DRAG">
+<German>Ziehen</German>
+<English>Drag</English>
+<Spanish>Drag</Spanish>
+<Czech>Táhnout</Czech>
+<French>Trainer</French>
+<Polish>Ciągnij</Polish>
+<Italian>Trascina</Italian>
+<Russian>Тащить</Russian>
+<Hungarian>Vonszolás</Hungarian>
+</Key>
+<Key ID="STR_ACE_CARGO_CARRY">
+<German>Tragen</German>
+<English>Carry</English>
+<Spanish>Carry</Spanish>
+<Czech>Nést</Czech>
+<French>Carry</French>
+<Polish>Podnieś</Polish>
+<Italian>Carry</Italian>
+<Russian>Нести</Russian>
+<Hungarian>Carry</Hungarian>
+</Key>
+<Key ID="STR_ACE_CARGO_CARRY2">
+<English>Carry in pairs</English>
+<German>Zu zweit tragen</German>
+<Spanish>Carry in pairs</Spanish>
+<Czech>Nést ve dvou</Czech>
+<French>Carry in pairs</French>
+<Polish>Podnieś w parze</Polish>
+<Italian>Carry in pairs</Italian>
+<Russian>Нести вдвоем</Russian>
+<Hungarian>Carry in pairs</Hungarian>
+</Key>
+<Key ID="STR_ACE_CARGO_CARRY2_HELP">
+<English>Help %1 carry</English>
+<German>%1 beim Tragen helfen</German>
+<Spanish>Help %1 carry</Spanish>
+<Czech>Pomoc %1 táhnout</Czech>
+<French>Help %1 carry</French>
+<Polish>Pomóż %1 nieść</Polish>
+<Italian>Help %1 carry</Italian>
+<Russian>Помогаем %1 нести</Russian>
+<Hungarian>Help %1 carry</Hungarian>
+</Key>
+<Key ID="STR_ACE_CARGO_PUSH">
+<German>%1 schieben</German>
+<English>Push %1</English>
+<Spanish>Push %1</Spanish>
+<Czech>Tlačit %1</Czech>
+<French>Push %1</French>
+<Polish>Popchnij %1</Polish>
+<Italian>Push %1</Italian>
+<Russian>Толкнуть %1</Russian>
+<Hungarian>Push %1</Hungarian>
+</Key>
+<Key ID="STR_ACE_LOADCARGO">
+<German>Lade in %1</German>
+<English>Load in %1</English>
+<Spanish>Load in %1</Spanish>
+<Czech>Naložit do %1</Czech>
+<French>Load in %1</French>
+<Polish>Załaduj do %1</Polish>
+<Italian>Load in %1</Italian>
+<Russian>Погрузить в %1</Russian>
+<Hungarian>Load in %1</Hungarian>
+</Key>
+<Key ID="STR_ACE_SHOWCARGO">
+<German>Zeige Ladung</German>
+<English>Show cargo</English>
+<Spanish>Show cargo</Spanish>
+<Czech>Zobrazit náklad</Czech>
+<French>Show cargo</French>
+<Polish>Pokaż bagaż</Polish>
+<Italian>Show cargo</Italian>
+<Russian>Посмотреть багаж</Russian>
+<Hungarian>Show cargo</Hungarian>
+</Key>
+<Key ID="STR_ACE_UNPACKCAN">
+<German>Kanister auspacken</German>
+<English>Unpack jerrycan</English>
+<Spanish>Unpack jerrycan</Spanish>
+<Czech>Vybalit kanystr</Czech>
+<French>Unpack jerrycan</French>
+<Polish>Rozpakuj kanister</Polish>
+<Italian>Unpack jerrycan</Italian>
+<Russian>Распаковать канистру</Russian>
+<Hungarian>Unpack jerrycan</Hungarian>
+</Key>
+<Key ID="STR_ACE_PACKCAN">
+<German>Kanister einpacken</German>
+<English>Pack jerrycan</English>
+<Spanish>Pack jerrycan</Spanish>
+<Czech>Zabalit kanystr</Czech>
+<French>Pack jerrycan</French>
+<Polish>Zapakuj kanister</Polish>
+<Italian>Pack jerrycan</Italian>
+<Russian>Упаковать канистру</Russian>
+<Hungarian>Pack jerrycan</Hungarian>
+</Key>
+<Key ID="STR_ACE_FIXTYRE">
+<German>Reifen ersetzen</German>
+<English>Replace Tyre</English>
+<Spanish>Sustitución de los neumáticos</Spanish>
+<Czech>Vyměnit pneumatiku</Czech>
+<French>Remplacer des pneus</French>
+<Polish>Wymiana koła</Polish>
+<Italian>Sostituire il pneumatico</Italian>
+<Russian>Заменить шины</Russian>
+<Hungarian>Cserélje gumiabroncs</Hungarian>
+</Key>
+<Key ID="STR_ACE_CAPACITYCAN">
+<German>Prüfe Kanister</German>
+<English>Check jerrycan</English>
+<Spanish>Check jerrycan</Spanish>
+<Czech>Zkontrolovat kanystr</Czech>
+<French>Check jerrycan</French>
+<Polish>Sprawdź kanister</Polish>
+<Italian>Check jerrycan</Italian>
+<Russian>Проверить содержимое</Russian>
+<Hungarian>Check jerrycan</Hungarian>
+</Key>
+<Key ID="STR_ACE_TRANNYFUELCAR">
+<German>Betanke %1</German>
+<English>Transfer fuel to %1</English>
+<Spanish>Transfer fuel to %1</Spanish>
+<Czech>Přelít palivo do %1</Czech>
+<French>Transfer fuel to %1</French>
+<Polish>Przelej paliwo do %1</Polish>
+<Italian>Transfer fuel to %1</Italian>
+<Russian>Перелить топливо в %1</Russian>
+<Hungarian>Transfer fuel to %1</Hungarian>
+</Key>
+<Key ID="STR_ACE_TRANNYFUELCAN">
+<German>%1 auffüllen</German>
+<English>Refill %1</English>
+<Spanish>Refill %1</Spanish>
+<Czech>Refill %1</Czech>
+<French>Refill %1</French>
+<Polish>Refill %1</Polish>
+<Italian>Refill %1</Italian>
+<Russian>Refill %1</Russian>
+<Hungarian>Refill %1</Hungarian>
+</Key>
+<Key ID="STR_ACE_DRAGQUEENSTOP">
+<German>Ziehen zuerst beenden...</German>
+<English>Stop dragging first...</English>
+<Spanish>Stop dragging first...</Spanish>
+<Czech>Nejdříve přestaň tahat...</Czech>
+<French>Stop dragging first...</French>
+<Polish>Ciągniesz teraz coś innego...</Polish>
+<Italian>Stop dragging first...</Italian>
+<Russian>Сначала прекратите тащить...</Russian>
+<Hungarian>Stop dragging first...</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_CARRY_COMPONENT_BACK">
+<English>Lift %1 (back)</English>
+<Italian>Lift %1 (back)</Italian>
+<German>%1 hinten anheben</German>
+<Spanish>Lift %1 (back)</Spanish>
+<Czech>Zvednout %1 (vzdadu)</Czech>
+<Russian>Поднять %1 (сзади)</Russian>
+<Polish>Lift %1 (back)</Polish>
+<French>Lever %1 (derrière)</French>
+<Hungarian>Lift %1 (back)</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_CARRY_COMPONENT_FRONT">
+<English>Lift %1 (front)</English>
+<Italian>Lift %1 (front)</Italian>
+<German>%1 vorne anheben</German>
+<Spanish>Lift %1 (front)</Spanish>
+<Czech>Zvednout %1 (vpředu)</Czech>
+<Russian>Поднять %1 (спереди)</Russian>
+<Polish>Lift %1 (front)</Polish>
+<French>Lever %1 (devant)</French>
+<Hungarian>Lift %1 (front)</Hungarian>
+</Key>
+</Container>
+</Package></Project>

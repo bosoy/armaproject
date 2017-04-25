@@ -1,0 +1,97 @@
+class FSM
+{
+  fsmName = "DeleteEmpty";
+  class States
+  {
+    class Start
+    {
+      name = "Start";
+      init = "private [""_tpos"", ""_tradius"", ""_delpos"", ""_delfirebase_objects"", ""_vecs"", ""_no"", ""_vehicle"",""_endtime""];" \n
+       "_tpos = _this select 0;" \n
+       "_tradius = (_this select 1) select 0;" \n
+       "" \n
+       "_delpos =+ _tpos;" \n
+       "" \n
+       "_delfirebase_objects =+ d_delfirebase_objects;" \n
+       "_delfirebase_objects = [_delfirebase_objects, d_del_camps_stuff] call d_fnc_arrayPushStack2;" \n
+       "" \n
+       "{" \n
+       "	if !(_x in _delfirebase_objects) then {" \n
+       "		_delfirebase_objects set [count _delfirebase_objects, _x];" \n
+       "	};" \n
+       "	_x setVariable [""d_v_p_mt_t"", position _x];" \n
+       "} forEach d_delvecsmt;" \n
+       "" \n
+       "d_del_camps_stuff = [];" \n
+       "" \n
+       "_endtime = time + ((d_delete_mt_vehicles_after_time * 60) + (random 100));";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = "";
+          condition="time > _endtime";
+          action="";
+        };
+      };
+    };
+    class End
+    {
+      name = "End";
+      init = "_vecs = [];" \n
+       "switch (d_enemy_side) do {" \n
+       "	case ""EAST"" : {{[_vecs, _x] call d_fnc_arrayPushStack2} forEach d_veh_a_E};" \n
+       "	case ""WEST"" : {{[_vecs, _x] call d_fnc_arrayPushStack2} forEach d_veh_a_W};" \n
+       "	case ""GUER"" : {{[_vecs, _x] call d_fnc_arrayPushStack2} forEach d_veh_a_G};" \n
+       "};" \n
+       "" \n
+       "if (""ACE"" in d_version) then {" \n
+       "	_vecs = [_vecs, [""ACE_BombCrater"",""ACE_HEShellCrater"",""ACE_ArtyShellCrater"",""ACE_HERocketCrater""]] call d_fnc_arrayPushStack2;" \n
+       "};" \n
+       "" \n
+       "_no =_delpos nearEntities [_vecs, _tradius];" \n
+       "" \n
+       "if (count _no > 0) then {" \n
+       "	{" \n
+       "		_vehicle = _x;" \n
+       "		if (!isNull _vehicle) then {" \n
+       "			if (_vehicle call d_fnc_GetVehicleEmpty) then {" \n
+       "				deleteVehicle _vehicle;" \n
+       "			};" \n
+       "		};" \n
+       "	} forEach _no;" \n
+       "};" \n
+       "" \n
+       "_no = nil;" \n
+       "" \n
+       "if (count _delfirebase_objects > 0) then {" \n
+       "	{" \n
+       "		if (!isNull _x) then {" \n
+       "			_d_v_p_mt_t = _x getVariable ""d_v_p_mt_t"";" \n
+       "			if (isNil ""_d_v_p_mt_t"") then {" \n
+       "				deleteVehicle _x;" \n
+       "			} else {" \n
+       "				if (_x distance _d_v_p_mt_t < 100) then {" \n
+       "					deleteVehicle _x;" \n
+       "				};" \n
+       "			};" \n
+       "		};" \n
+       "	} forEach _delfirebase_objects;" \n
+       "};" \n
+       "" \n
+       "_delfirebase_objects = nil;";
+      precondition = "";
+      class Links
+      {
+      };
+    };
+  };
+  initState="Start";
+  finalStates[] =
+  {
+    "End",
+  };
+};

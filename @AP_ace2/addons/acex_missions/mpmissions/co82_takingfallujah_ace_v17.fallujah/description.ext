@@ -1,0 +1,157 @@
+class Header
+{
+  gameType = Coop;
+  minPlayers = 1;
+  maxPlayers = 82;
+};
+
+onLoadMission = "The Taking of Fallujah - ACE";
+onLoadIntro = "";
+onLoadIntroTime = FALSE;
+onLoadMissionTime = FALSE;
+
+respawn = "BASE";
+respawndelay = 10;
+disabledAI = 1;
+
+ class CfgSounds
+{
+  #include "scripts\IEDdetect\IEDdetect_sounds.cpp"
+};
+
+class RscTitles
+{
+  #include "scripts\IEDdetect\IEDdetect_screens.cpp"
+};
+
+class Params
+{
+  class DayTime //paramsArray[0]
+  {
+    title = "Local Time";
+    values[] = {-6, 0, 4, 8, 12};
+    texts[] = {"0230HRS", "0830HRS", "1230HRS", "1830HRS", "2030HRS"};
+    default = 0;
+  };
+    class ArtyAvail  // paramsArray[1]
+  {
+    title = "Artillery";
+    values[] = {0,1};
+    texts[] = {"Not Available", "Available"};
+    default = 1;
+  };
+    class VD //paramsArray[2]
+  {
+    title = "View Distance";
+    values[] = {1600,2000,2600,3000,3500,4000,4500,5000};
+    texts[] = {"1600m","2000m","2600m","3000m","3500m","4000m","4500m","5000m"};
+    default = 2600;
+  };
+    class EpiUse //paramsArray[3]
+  {
+    title = "Epi and Morphine for Medics only";
+    values[] = {0,1};
+    texts[] = {"Disabled","Enabled"};
+    default = 1;
+  };
+    class No3rdPerson //paramsArray[4]
+  {
+    title = "Force 1st Person Outside Vehicles";
+    values[] = {0,1};
+    texts[] = {"No","Yes"};
+    default = 1;
+  };
+    class aiTalk //paramsArray[5]
+  {
+    title = "ACE AI Talk";
+    values[] = {0,1,2};
+    texts[] = {"Disabled","AI only","Players and AI"};
+    default = 1;
+  };
+    class radioSound //paramsArray[6]
+  {
+    title = "ACE Radio Sounds";
+    values[] = {0,1};
+    texts[] = {"Disabled","Enabled"};
+    default = 1;
+  };
+    class rndWeather //paramsArray[7]
+  {
+    title = "Weather Conditions";
+    values[] = {0,1,2,3};
+    texts[] = {"Random","Rainy","Average","Sunny"};
+    default = 2;
+  };
+    class rndForecast //paramsArray[8]
+  {
+    title = "Weather Forecast";
+    values[] = {0,1,2,3};
+    texts[] = {"Random","Rainy","Average","Sunny"};
+    default = 2;
+  };
+    class GroupMarkersAvail //paramsArray[9]
+  {
+    title = "Group Markers";
+    values[] = {0,1};
+    texts[] = {"Off","On"};
+    default = 0;
+  };
+    class Armored //paramsArray[10]
+  {
+    title = "Armored Threat";
+    values[] = {0,10,20,40};
+    texts[] = {"Null","Low","Medium","High"};
+    default = 10;
+  };
+    class Snipers //paramsArray[11]
+  {
+    title = "Snipers Threat";
+    values[] = {0,10,20,40};
+    texts[] = {"Null","Low","Medium","High"};
+    default = 10;
+  };
+    class Patrols //paramsArray[12]
+  {
+    title = "Patrols Threat";
+    values[] = {0,10,25,50};
+    texts[] = {"Null","Low","Medium","High"};
+    default = 25;
+  };
+    class Civvies //paramsArray[13]
+  {
+    title = "Civilians";
+    values[] = {0,25,50,100};
+    texts[] = {"Not Present","A Few","Average","Many"};
+    default = 50;
+  };
+    class CivVEH //paramsArray[14]
+  {
+    title = "Civilian Vehicles";
+    values[] = {0,25,50,100};
+    texts[] = {"Not Present","A Few","Average","Many"};
+    default = 50;
+  };
+    class ACM //paramsArray[15]
+  {
+    title = "Ambient Combat";
+    values[] = {0,1};
+    texts[] = {"Disabled", "Enabled"};
+    default = 1;
+  };
+    class ACMlevel //paramsArray[16]
+  {
+    title = "Ambient Combat Level";
+    values[] = {5,10,22,30,60};
+    texts[] = {"Very Low", "Low", "Medium", "High","Very High"};
+    default = 5;
+  };
+    class ACREradios //paramsArray[17]
+  {
+    title = "Crate with ACRE radios";
+    values[] = {0,1};
+    texts[] = {"Disabled", "Enabled"};
+    default = 0;
+  };  
+};
+
+#include "scripts\IEDdetect\IEDdetect_dialog.h"

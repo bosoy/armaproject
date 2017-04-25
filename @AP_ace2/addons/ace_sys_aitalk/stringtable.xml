@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2">
+<Package name="ACE2">
+<Container name="MODULE_DN">
+<Key ID="STR_ACE_AITALK_ENABLE">
+<English>(Æ) Enable AI Talk</English>
+<Italian>(Æ) Enable AI Talk</Italian>
+<German>(Æ) Audio: KI Konversation einschalten</German>
+<Spanish>(Æ) Enable AI Talk</Spanish>
+<Czech>(Æ) Povolit mluvení AI</Czech>
+<Russian>(Æ) Включить разговоры ИИ</Russian>
+<Polish>(Æ) Pogaduszki SI</Polish>
+<French>(Æ) Activer discussion IA</French>
+<Hungarian>(Æ) MI beszéd engedélyezése</Hungarian>
+</Key>
+<Key ID="STR_ACE_RADIOTALK_ENABLE">
+<English>(Æ) Enable Radio Sounds</English>
+<Italian>(Æ) Enable Radio Sounds</Italian>
+<German>(Æ) Audio: Funkverkehr einschalten</German>
+<Spanish>(Æ) Enable Radio Sounds</Spanish>
+<Czech>(Æ) Povolit radiové zvuky v pozadí</Czech>
+<Russian>(Æ) Включить радиопереговоры</Russian>
+<Polish>(Æ) Rozmowy w eterze</Polish>
+<French>(Æ) Activer ambiance radio</French>
+<Hungarian>(Æ) Rádió hangok engedélyezése</Hungarian>
+</Key>
+</Container></Package></Project>

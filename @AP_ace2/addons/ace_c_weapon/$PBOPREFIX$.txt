@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\c_weapon
+Pbo Type is: Arma Addon
+Sha: 'A07F7E5480EF9D9152310A8B386AAA69D3385753'
+//////</HEADER>//////

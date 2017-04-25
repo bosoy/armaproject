@@ -1,0 +1,28 @@
+onLoadMission="+++  ACE Air Cavalry  +++";
+onLoadIntroTime = false;
+onLoadMissionTime = false;
+
+class Header
+{
+	gameType = Coop;            //DM, Team, Coop, ...
+	minPlayers = 1;             //min # of players the mission supports
+	maxPlayers = 50;            //Max # of players the mission supports
+};
+
+respawn = BASE;
+respawndelay = 20;
+disabledAI = 1;
+
+titleParam1 = "Daytime";
+valuesParam1[] = {1, 2, 3, 4};
+defValueParam1 = 1;
+textsParam1[] = {"Morning", "Day", "Evening", "Night"};
+
+titleParam2 = "Chopper Respawn";
+valuesParam2[] = {1, 2};
+defValueParam2 = 1;
+textsParam2[] = {"Yes", "No"};
+
+#include "x_dlg\IntroText.hpp"
+#include "x_dlg\Artillery.hpp"
+#include "spect\spectating.hpp"

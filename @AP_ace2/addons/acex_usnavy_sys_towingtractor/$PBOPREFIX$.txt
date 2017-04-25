@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex_usnavy\addons\sys_towingtractor
+Pbo Type is: Arma Addon
+Sha: '8C03C7081E623617DB86E13953AE9D5DED47CC66'
+//////</HEADER>//////

@@ -1,0 +1,224 @@
+class FSM
+{
+  fsmName = "RepWreck";
+  class States
+  {
+    class Start
+    {
+      name = "Start";
+      init = "_endtime = time + 17;";
+      precondition = "";
+      class Links
+      {
+        class Not_Server
+        {
+          priority = 1.000000;
+          to="End";
+          precondition = "";
+          condition="!isServer";
+          action="";
+        };
+        class Delay
+        {
+          priority = 0.000000;
+          to="Init";
+          precondition = "";
+          condition="time > _endtime";
+          action="";
+        };
+      };
+    };
+    class End
+    {
+      name = "End";
+      init = "";
+      precondition = "";
+      class Links
+      {
+      };
+    };
+    class Init
+    {
+      name = "Init";
+      init = "private [""_rep_station"",""_name"",""_types"",""_wreck"",""_type"",""_dpos"",""_ddir"",""_new_vec"",""_timenow"",""_endtime"", ""_rep_station_side""];" \n
+       "" \n
+       "_rep_station = _this select 0;" \n
+       "_name = _this select 1;" \n
+       "_types = _this select 2;" \n
+       "" \n
+       "_rep_station_side = if (""TT"" in d_version) then {" \n
+       "	if (_rep_station == d_wreck_rep) then {west} else {east}" \n
+       "} else {" \n
+       "	civilian" \n
+       "};" \n
+       "" \n
+       "_timenow = time + 10;";
+      precondition = "";
+      class Links
+      {
+        class Delay_10
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class Loop
+    {
+      name = "Loop";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class Is_MP
+        {
+          priority = 1.000000;
+          to="Sleep";
+          precondition = "";
+          condition="isMultiplayer && (call d_fnc_PlayersNumber) == 0";
+          action="";
+        };
+        class Allways
+        {
+          priority = 0.000000;
+          to="Check";
+          precondition = "";
+          condition="true";
+          action="";
+        };
+      };
+    };
+    class Sleep
+    {
+      name = "Sleep";
+      init = "_timenow = time + 2.34;";
+      precondition = "";
+      class Links
+      {
+        class Delay2
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class Check
+    {
+      name = "Check";
+      init = "_wreck = [_rep_station,_types] call d_fnc_GetWreck;" \n
+       "_timenow = time + 2.432;";
+      precondition = "";
+      class Links
+      {
+        class Not_Null_Wreck
+        {
+          priority = 1.000000;
+          to="Rebuild";
+          precondition = "";
+          condition="!isNull _wreck";
+          action="";
+        };
+        class Delay_2
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class Rebuild
+    {
+      name = "Rebuild";
+      init = "_type = typeOf _wreck;" \n
+       "_dpos = position _wreck;" \n
+       "_ddir = direction _wreck;" \n
+       "private ""_sidevar"";" \n
+       "_sidevar = _wreck getVariable ""D_VEC_SIDE"";" \n
+       "private ""_maxrep"";" \n
+       "_maxrep = _wreck getVariable ""d_WreckMaxRepair"";" \n
+       "deleteVehicle _wreck;" \n
+       "_new_vec = createVehicle [_type, _dpos, [], 0, ""NONE""];" \n
+       "_new_vec setDir _ddir;" \n
+       "_new_vec setPos [_dpos select 0, _dpos select 1, 0];" \n
+       "_new_vec lock true;" \n
+       "_type_name = [_type,0] call d_fnc_GetDisplayName;" \n
+       "if (!isNil ""_sidevar"") then {_new_vec setVariable [""D_VEC_SIDE"", _sidevar]};" \n
+       "if (isNil ""_maxrep"") then {_maxrep = d_WreckMaxRepair};" \n
+       "_new_vec setVariable [""d_WreckMaxRepair"", _maxrep, true];" \n
+       "" \n
+       "d_wreck_cur_ar set [count d_wreck_cur_ar, _new_vec];" \n
+       "" \n
+       "if (!(""TT"" in d_version)) then {" \n
+       "	d_kb_logic1 kbTell [d_kb_logic2,d_kb_topic_side,""RebuildWreck"",[""1"","""",_type_name,[]],[""2"","""",_name,[]],true];" \n
+       "} else {" \n
+       "	switch (_rep_station_side) do {" \n
+       "		case west: {d_hq_logic_en1 kbTell [d_hq_logic_en2,""HQ_W"",""RebuildWreck"",[""1"","""",_type_name,[]],[""2"","""",_name,[]],true]};" \n
+       "		case east: {d_hq_logic_ru1 kbTell [d_hq_logic_ru2,""HQ_E"",""RebuildWreck"",[""1"","""",_type_name,[]],[""2"","""",_name,[]],true]};" \n
+       "	};" \n
+       "};" \n
+       "" \n
+       "_sleep_time = 240;" \n
+       "if (_new_vec isKindOf ""Plane"") then {" \n
+       "	_sleep_time =720;" \n
+       "} else {" \n
+       "	if (_new_vec isKindOf ""Helicopter"") then {" \n
+       "		_sleep_time = 480;" \n
+       "	};" \n
+       "};" \n
+       "_sleep_time = _sleep_time + random 10;" \n
+       "_timenow = time + _sleep_time;";
+      precondition = "";
+      class Links
+      {
+        class Delay_Rebuildtim
+        {
+          priority = 0.000000;
+          to="Unlock_Vehicle";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class Unlock_Vehicle
+    {
+      name = "Unlock_Vehicle";
+      init = "d_wreck_cur_ar = d_wreck_cur_ar - [_new_vec];" \n
+       "_new_vec lock false;" \n
+       "_new_vec execFSM ""fsms\Wreckmarker.fsm"";" \n
+       "if (!(""TT"" in d_version)) then {" \n
+       "	d_kb_logic1 kbTell [d_kb_logic2,d_kb_topic_side,""WreckRepaired"",[""1"","""",_type_name,[]],[""2"","""",_name,[]],true];" \n
+       "} else {" \n
+       "	switch (_rep_station_side) do {" \n
+       "		case west: {d_hq_logic_en1 kbTell [d_hq_logic_en2,""HQ_W"",""WreckRepaired"",[""1"","""",_type_name,[]],[""2"","""",_name,[]],true]};" \n
+       "		case east: {d_hq_logic_ru1 kbTell [d_hq_logic_ru2,""HQ_E"",""WreckRepaired"",[""1"","""",_type_name,[]],[""2"","""",_name,[]],true]};" \n
+       "	};" \n
+       "};";
+      precondition = "";
+      class Links
+      {
+        class Allways
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="true";
+          action="";
+        };
+      };
+    };
+  };
+  initState="Start";
+  finalStates[] =
+  {
+    "End",
+  };
+};

@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_blood
+Pbo Type is: Arma Addon
+Sha: 'FC285D129CDAF5EACA4A6704CBAB57580052284A'
+//////</HEADER>//////

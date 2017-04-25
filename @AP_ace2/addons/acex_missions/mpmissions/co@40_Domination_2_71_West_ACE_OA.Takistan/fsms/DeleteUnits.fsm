@@ -1,0 +1,70 @@
+class FSM
+{
+  fsmName = "DeleteUnits";
+  class States
+  {
+    class Start
+    {
+      name = "Start";
+      init = "private [""_index"", ""_dummy"", ""_current_target_pos"", ""_old_units_trigger"", ""_i"", ""_list"",""_timenow"", ""_mtunits""];" \n
+       "_index = _this;" \n
+       "" \n
+       "_mtunits =+ d_delinfsm;" \n
+       "" \n
+       "_dummy = d_target_names select _index;" \n
+       "_current_target_pos = _dummy select 0;" \n
+       "" \n
+       "_old_units_trigger = [_current_target_pos, [350, 350, 0, false], [d_enemy_side, ""PRESENT"", false], [""this"", """", """"]] call d_fnc_CreateTrigger;" \n
+       "" \n
+       "d_delinfsm = [];" \n
+       "" \n
+       "_timenow = time + 240;";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class End
+    {
+      name = "End";
+      init = "_list = (list _old_units_trigger) unitsBelowHeight 20;" \n
+       "{" \n
+       "	if !(_x isKindOf ""CAManBase"") then {" \n
+       "		_isp = false;" \n
+       "		{if (isPlayer _x) exitWith {_isp = true}} forEach (crew _x);" \n
+       "		if (!_isp) then {_x call d_fnc_DelVecAndCrew};" \n
+       "	} else {" \n
+       "		if (!isPlayer _x) then {deleteVehicle _x};" \n
+       "	};" \n
+       "} foreach _list;" \n
+       "_list = nil;" \n
+       "" \n
+       "deleteVehicle _old_units_trigger;" \n
+       "" \n
+       "_mtunits = _mtunits - [objNull];" \n
+       "" \n
+       "{" \n
+       "	_x setDamage 1;" \n
+       "} forEach _mtunits;" \n
+       "_mtunits = nil;" \n
+       "";
+      precondition = "";
+      class Links
+      {
+      };
+    };
+  };
+  initState="Start";
+  finalStates[] =
+  {
+    "End",
+  };
+};

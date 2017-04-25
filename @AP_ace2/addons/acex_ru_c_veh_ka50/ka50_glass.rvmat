@@ -1,0 +1,27 @@
+ambient[]={1.000000,1.000000,1.000000,1.000000};
+diffuse[]={1.000000,1.000000,1.000000,1.000000};
+forcedDiffuse[]={0.000000,0.000000,0.000000,0.000000};
+emmisive[]={0.000000,0.000000,0.000000,1.000000};
+specular[]={1.000000,1.000000,1.000000,0.000000};
+specularPower=1000.000000;
+renderFlags[]=
+{
+	"NoAlphaWrite"
+};
+nextPass="x\acex_ru\addons\c_veh_ka50\glass-pass2.rvmat";
+PixelShaderID="Glass";
+VertexShaderID="Glass";
+class Stage1
+{
+	texture="#(ai,64,64,1)fresnelGlass(1.8)";
+	uvSource="none";
+};
+class Stage2
+{
+	texture="x\acex_ru\addons\t_veh_ka50\reflect_co.paa";
+	uvSource="none";
+};
+class StageTI
+{
+ texture = "ca\air_e\ah64\data\ah64d_glass_ti_ca.paa";
+};

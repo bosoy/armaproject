@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex_ru\addons\t_veh_air_wep
+Pbo Type is: Arma Addon
+Sha: 'CA630254FC10718979350882278A513FBD5BFFF8'
+//////</HEADER>//////

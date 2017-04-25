@@ -1,0 +1,205 @@
+/*%FSM<COMPILE "G:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, gpsmarkers">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"start",0,250,169.531448,-287.357178,240.025543,-241.270416,0.000000,"start"};
+item1[] = {"ok",4,218,-37.307625,-15.087145,19.436523,30.575130,0.000000,"ok"};
+item2[] = {"update_all__mark",2,250,-54.878868,106.119812,35.121063,156.119965,0.000000,"update all " \n "markers"};
+item3[] = {"not_ok",4,218,266.210632,-17.240042,326.569519,31.314138,0.000000,"not ok"};
+item4[] = {"delete_all_marke",2,4346,254.055145,107.920761,344.055359,157.920853,0.000000,"delete all" \n "markers"};
+item5[] = {"sleep",4,218,103.992363,108.163193,193.992325,158.163177,0.000000,"sleep"};
+item6[] = {"wait_5s",4,218,257.605591,-204.709671,335.722839,-168.581314,0.000000,"wait 5s"};
+item7[] = {"evaluate_conditi",2,250,98.931656,-18.353622,188.931702,31.646389,0.000000,"evaluate" \n "conditions"};
+item8[] = {"module_enabled_",2,250,236.051636,-131.102356,359.894409,-103.341843,0.000000,"module enabled ?"};
+item9[] = {"yes",4,218,115.201401,-104.568626,173.187164,-60.668068,0.000000,"yes"};
+item10[] = {"no",4,218,392.653900,-50.064880,454.223083,-8.680328,0.000000,"no"};
+item11[] = {"end",1,250,394.067566,36.169361,460.806030,77.553925,0.000000,"end"};
+link0[] = {0,6};
+link1[] = {1,2};
+link2[] = {2,5};
+link3[] = {3,4};
+link4[] = {4,5};
+link5[] = {5,7};
+link6[] = {6,8};
+link7[] = {7,1};
+link8[] = {7,3};
+link9[] = {8,9};
+link10[] = {8,10};
+link11[] = {9,7};
+link12[] = {10,11};
+globals[] = {0.000000,0,0,0,0,640,480,1,23,6316128,1,-190.717880,512.298401,269.661865,-360.123535,816,921,1};
+window[] = {2,-1,-1,-1,-1,657,25,1105,25,3,834};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "gpsmarkers";
+  class States
+  {
+    /*%FSM<STATE "start">*/
+    class start
+    {
+      name = "start";
+      init = /*%FSM<STATEINIT""">*/"private[""_allunits"",""_sidep"",""_sidex"",""_show"",""_wait""];" \n
+       "// get player side from config;" \n
+       "_sidep = getNumber (configFile >> ""CfgVehicles"" >> typeOf player >> ""side"");" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "wait_5s">*/
+        class wait_5s
+        {
+          priority = 0.000000;
+          to="module_enabled_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > 5"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "update_all__mark">*/
+    class update_all__mark
+    {
+      name = "update_all__mark";
+      init = /*%FSM<STATEINIT""">*/"ace_sys_tracking_gpsUMnew = [];" \n
+       "_allunits =	if (isMultiplayer) then {playableUnits} else {switchableUnits};" \n
+       "" \n
+       "{" \n
+       "	_sidex = getNumber (configFile >> ""CfgVehicles"" >> typeOf _x >> ""side"");" \n
+       "	if (!isNull _x && {_sidex == _sidep} && {_x call ace_sys_tracking_fnc_hasGPS}) then {" \n
+       "		[_x] call ace_sys_tracking_fnc_gpsUM_update;" \n
+       "	};" \n
+       "} forEach _allunits;" \n
+       "" \n
+       "//delete markers that were not updated" \n
+       "{deleteMarkerLocal _x} forEach ace_sys_tracking_gpsUM;" \n
+       "" \n
+       "// update the list of markers" \n
+       "ace_sys_tracking_gpsUM = + ace_sys_tracking_gpsUMnew;" \n
+       "" \n
+       "_wait = time + 5;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "sleep">*/
+        class sleep
+        {
+          priority = 0.000000;
+          to="evaluate_conditi";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _wait"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "delete_all_marke">*/
+    class delete_all_marke
+    {
+      name = "delete_all_marke";
+      init = /*%FSM<STATEINIT""">*/"{deleteMarkerLocal _x} forEach ace_sys_tracking_gpsUM;" \n
+       "ace_sys_tracking_gpsUM = [];" \n
+       "" \n
+       "_wait = time + 5;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "sleep">*/
+        class sleep
+        {
+          priority = 0.000000;
+          to="evaluate_conditi";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _wait"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "evaluate_conditi">*/
+    class evaluate_conditi
+    {
+      name = "evaluate_conditi";
+      init = /*%FSM<STATEINIT""">*/"_show = ace_sys_tracking_gpsUMshow && {lifeState player == ""ALIVE""} && {player call ace_sys_tracking_fnc_hasGPS};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "not_ok">*/
+        class not_ok
+        {
+          priority = 0.000000;
+          to="delete_all_marke";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!_show" \n
+           ""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "ok">*/
+        class ok
+        {
+          priority = 0.000000;
+          to="update_all__mark";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_show" \n
+           ""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "module_enabled_">*/
+    class module_enabled_
+    {
+      name = "module_enabled_";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "no">*/
+        class no
+        {
+          priority = 0.000000;
+          to="end";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!ace_sys_tracking_gpsUM_enabled"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "yes">*/
+        class yes
+        {
+          priority = 0.000000;
+          to="evaluate_conditi";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"ace_sys_tracking_gpsUM_enabled"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "end">*/
+    class end
+    {
+      name = "end";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="start";
+  finalStates[] =
+  {
+    "end",
+  };
+};
+/*%FSM</COMPILE>*/

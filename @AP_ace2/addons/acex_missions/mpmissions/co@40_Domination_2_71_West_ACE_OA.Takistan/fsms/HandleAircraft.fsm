@@ -1,0 +1,222 @@
+class FSM
+{
+  fsmName = "HandleAircraft";
+  class States
+  {
+    class Start
+    {
+      name = "Start";
+      init = "private [ ""_vec"", ""_type"", ""_is_pilot""];";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class Loop
+    {
+      name = "Loop";
+      init = "_has_handler = false;";
+      precondition = "";
+      class Links
+      {
+        class vehicle_player_
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = "";
+          condition="vehicle player != player";
+          action="";
+        };
+      };
+    };
+    class _
+    {
+      name = "_";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class is_air
+        {
+          priority = 1.000000;
+          to="__3";
+          precondition = "";
+          condition="vehicle player isKindOf ""Air"" && !(vehicle player isKindOf ""ParachuteBase"") && !(vehicle player isKindOf ""BIS_Steerable_Parachute"")";
+          action="";
+        };
+        class _
+        {
+          priority = 0.000000;
+          to="__2";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class __1
+    {
+      name = "__1";
+      init = "_timenow = time + 2;";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class __2
+    {
+      name = "__2";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class vehicle_player_
+        {
+          priority = 0.000000;
+          to="__1";
+          precondition = "";
+          condition="vehicle player == player";
+          action="";
+        };
+      };
+    };
+    class __3
+    {
+      name = "__3";
+      init = "_vec = vehicle player;";
+      precondition = "";
+      class Links
+      {
+        class player____driver
+        {
+          priority = 1.000000;
+          to="__4";
+          precondition = "";
+          condition="player == driver _vec";
+          action="";
+        };
+        class _
+        {
+          priority = 0.000000;
+          to="__2";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class __4
+    {
+      name = "__4";
+      init = "_is_pilot = true;";
+      precondition = "";
+      class Links
+      {
+        class __count_d_only_pilots
+        {
+          priority = 1.000000;
+          to="__5";
+          precondition = "";
+          condition="(count d_only_pilots_can_fly) > 0";
+          action="";
+        };
+        class _
+        {
+          priority = 0.000000;
+          to="__6";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class __5
+    {
+      name = "__5";
+      init = "if !(d_string_player in d_only_pilots_can_fly) then {" \n
+       "	if (isEngineOn _vec) then {" \n
+       "		_vec engineOn false;" \n
+       "		player action [""engineOff"", _vec];" \n
+       "	};" \n
+       "	player action [""eject"", _vec];" \n
+       "	hintSilent localize ""STR_DOM_MISSIONSTRING_1417"";" \n
+       "	_is_pilot = false;" \n
+       "};" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class ___is_pilot
+        {
+          priority = 0.000000;
+          to="__2";
+          precondition = "";
+          condition="!_is_pilot";
+          action="";
+        };
+        class _is_pilot
+        {
+          priority = 0.000000;
+          to="__7";
+          precondition = "";
+          condition="_is_pilot";
+          action="";
+        };
+      };
+    };
+    class __6
+    {
+      name = "__6";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class _is_pilot
+        {
+          priority = 0.000000;
+          to="__7";
+          precondition = "";
+          condition="_is_pilot";
+          action="";
+        };
+      };
+    };
+    class __7
+    {
+      name = "__7";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="__2";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+  };
+  initState="Start";
+  finalStates[] =
+  {
+  };
+};

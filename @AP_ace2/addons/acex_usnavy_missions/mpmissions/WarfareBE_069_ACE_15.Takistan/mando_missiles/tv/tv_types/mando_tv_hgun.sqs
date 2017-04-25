@@ -1,0 +1,54 @@
+;mando Missile TV activation for AG heavy Gun system
+;mando_tv_hgun.sqs
+;Sep 2008 mandoble
+;
+; Missile TV system is activated
+; This script is executed by action added to indicated vehicles by mando_mccallow_by_name.sqf or
+; mando_mccallow_by_type.sqf
+;
+;
+
+
+_params = (_this select 3)
+_targettypes = _params select 0
+_launchpos   = _params select 1
+_camerapos   = _params select 2
+_fixeddir    = _params select 3
+_missileidx  = _params select 4
+_backcolor   = _params select 5
+_scanstoload = _params select 6
+
+mando_tv_gun_ammo = "Sh_122_HE"
+mando_tv_gun_sound = "mando_gun_lite"
+mando_tv_gun_dispersion = [0.6,0.6];
+
+mando_tv_info       = "Heavy Gun"
+mando_tv_cam_pos    = [_camerapos select 0,_camerapos select 1,_camerapos select 2]
+mando_tv_launch_pos = _launchpos
+mando_tv_missileidx = _missileidx
+mando_tv_backcolor  = _backcolor
+mando_tv_target_types = [];
+mando_tv_target_types = mando_tv_target_types + _targettypes;
+mando_tv_ang_to_lock = 1
+mando_tv_plane = vehicle player
+mando_tv_no_manauto = true
+mando_tv_no_remloc = false
+mando_tv_remote = false
+mando_tv_man = false
+mando_tv_init_ang = _camerapos select 3;
+mando_tv_max_ang = _camerapos select 4;
+mando_tv_wtype = "GUN"
+mando_tv_sensor_rng_w = 800
+mando_tv_sensor_rng_l = 2000
+mando_tv_sensor_rects = true
+mando_tv_firing_pos = [_launchpos select 0, _launchpos select 1,_launchpos select 2]
+mando_tv_weapon_length = 0;
+? ((count _launchpos) > 3): mando_tv_weapon_length = _launchpos select 3
+mando_tv_init_dir = _fixeddir
+mando_tv_ammo_base = ""
+mando_tv_firing_delay = _scanstoload
+mando_tv_weaponname = ""
+mando_tv_camppe = 1
+[]execVM (mando_missile_path + "tv\mando_missile_tv.sqf")
+
+exit

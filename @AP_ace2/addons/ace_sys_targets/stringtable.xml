@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ArmA2_ACE2">
+<Package name="sys_invisible_targets">
+<Container name="STR_ACE">
+<Key ID="STR_ACE_INV_TARGETS">
+<English>Æ Invisible Targets</English>
+<German>Æ Unsichtbare Ziele</German>
+<Spanish>Æ Invisible Targets</Spanish>
+<Czech>Æ Neviditelné cíle</Czech>
+<Russian>Æ Невидимые цели</Russian>
+<Italian>Æ Invisible Targets</Italian>
+<Polish>Æ Niewidzialne cele</Polish>
+<French>Æ Cibles invisibles</French>
+<Hungarian>Æ Láthatatlan célpontok</Hungarian>
+</Key>
+<Key ID="STR_ACE_INV_TARGET_EINF">
+<English>(Infantry target OPFOR)</English>
+<German>(Infanterieziel OPFOR)</German>
+<Spanish>(Infantry target OPFOR)</Spanish>
+<Czech>(Pěchotní cíl (OPFOR))</Czech>
+<Russian>(Пехотная цель (Красные))</Russian>
+<Italian>(Infantry target OPFOR)</Italian>
+<Polish>(Piechota OPFOR)</Polish>
+<French>(Cible infanterie OPFOR)</French>
+<Hungarian>(OPFOR Gyalogos célpont)</Hungarian>
+</Key>
+<Key ID="STR_ACE_INV_TARGET_WINF">
+<English>(Infantry target BLUFOR)</English>
+<German>(Infanterieziel BLUFOR)</German>
+<Spanish>(Infantry target BLUFOR)</Spanish>
+<Czech>(Pěchotní cíl (BLUFOR))</Czech>
+<Russian>(Пехотная цель (Синие))</Russian>
+<Italian>(Infantry target BLUFOR)</Italian>
+<Polish>(Piechota BLUFOR)</Polish>
+<French>(Cible infanterie BLUFOR)</French>
+<Hungarian>(BLUFOR Gyalogos célpont)</Hungarian>
+</Key>
+<Key ID="STR_ACE_INV_TARGET_RINF">
+<English>(Infantry target Resistance)</English>
+<German>(Infanterieziel Widerstand)</German>
+<Spanish>(Infantry target Resistance)</Spanish>
+<Czech>(Pěchotní cíl (Odboje))</Czech>
+<Russian>(Пехотная цель (Сопротивление))</Russian>
+<Italian>(Infantry target Resistance)</Italian>
+<Polish>(Piechota Ruchu Oporu)</Polish>
+<French>(Cible infanterie Résistance)</French>
+<Hungarian>(Ellenálló gyalogos célpont)</Hungarian>
+</Key>
+<Key ID="STR_ACE_INV_TARGET_CINF">
+<English>(Infantry target Civilian)</English>
+<German>(Infanterieziel Zivil)</German>
+<Spanish>(Infantry target Civilian)</Spanish>
+<Czech>(Pěchotní cíl (Civilní))</Czech>
+<Russian>(Пехотная цель (Гражданские))</Russian>
+<Italian>(Infantry target Civilian)</Italian>
+<Polish>(Piechota cywilna)</Polish>
+<French>(Cible infanterie Civile)</French>
+<Hungarian>(Civil gyalogos célpont)</Hungarian>
+</Key>
+<Key ID="STR_ACE_INV_TARGET_ELAS">
+<English>(Laser target OPFOR)</English>
+<German>(Laserziel OPFOR)</German>
+<Spanish>(Laser target OPFOR)</Spanish>
+<Czech>(Laserový cíl (OPFOR))</Czech>
+<Russian>(Лазерная цель (Красные))</Russian>
+<Italian>(Laser target OPFOR)</Italian>
+<Polish>(Cel laserowy OPFOR)</Polish>
+<French>(Cible laser OPFOR)</French>
+<Hungarian>(OPFOR Lézer célpont)</Hungarian>
+</Key>
+<Key ID="STR_ACE_INV_TARGET_WLAS">
+<English>(Laser target BLUFOR)</English>
+<German>(Laserziel BLUFOR)</German>
+<Spanish>(Laser target BLUFOR)</Spanish>
+<Czech>(Laserový cíl (BLUFOR))</Czech>
+<Russian>(Лазерная цель (Синие))</Russian>
+<Italian>(Laser target BLUFOR)</Italian>
+<Polish>(Cel laserowy BLUFOR)</Polish>
+<French>(Cible laser BLUFOR)</French>
+<Hungarian>(BLUFOR Lézer célpont)</Hungarian>
+</Key>
+<Key ID="STR_ACE_INV_TARGET_RLAS">
+<English>(Laser target Resistance)</English>
+<German>(Laserziel Widerstand)</German>
+<Spanish>(Laser target Resistance)</Spanish>
+<Czech>(Laserový cíl (Odboj))</Czech>
+<Russian>(Лазерная цель (Сопротивление))</Russian>
+<Italian>(Laser target Resistance)</Italian>
+<Polish>(Cel laserowy Ruchu Oporu)</Polish>
+<French>(Cible laser Résistance)</French>
+<Hungarian>(Ellenálló Lézer célpont)</Hungarian>
+</Key>
+<Key ID="STR_ACE_INV_TARGET_CLAS">
+<English>(Laser target Civilian)</English>
+<German>(Laserziel Zivil)</German>
+<Spanish>(Laser target Civilian)</Spanish>
+<Czech>(Laserový cíl (Civilní))</Czech>
+<Russian>(Лазерная цель (Гражданские))</Russian>
+<Italian>(Laser target Civilian)</Italian>
+<Polish>(Cel laserowy cywilny)</Polish>
+<French>(Cible laser Civile)</French>
+<Hungarian>(Civil Lézer célpont)</Hungarian>
+</Key>
+<Key ID="STR_ACE_INV_TARGET_EARM">
+<English>(Armored target OPFOR)</English>
+<German>(Panzerziel OPFOR)</German>
+<Spanish>(Armored target OPFOR)</Spanish>
+<Czech>(Obrněný cíl (OPFOR))</Czech>
+<Russian>(Бронированная цель (Красные))</Russian>
+<Italian>(Armored target OPFOR)</Italian>
+<Polish>(Pojazd opancerzony OPFOR)</Polish>
+<French>(Cible blindé OPFOR)</French>
+<Hungarian>(OPFOR Páncélozott célpont)</Hungarian>
+</Key>
+<Key ID="STR_ACE_INV_TARGET_WARM">
+<English>(Armored target BLUFOR)</English>
+<German>(Panzerziel BLUFOR)</German>
+<Spanish>(Armored target BLUFOR)</Spanish>
+<Czech>(Obrněný cíl (BLUFOR))</Czech>
+<Russian>(Бронированная цель (Синие))</Russian>
+<Italian>(Armored target BLUFOR)</Italian>
+<Polish>(Pojazd opancerzony BLUFOR)</Polish>
+<French>(Cible blindé BLUFOR)</French>
+<Hungarian>(BLUFOR Páncélozott célpont)</Hungarian>
+</Key>
+<Key ID="STR_ACE_INV_TARGET_RARM">
+<English>(Armored target Resistance)</English>
+<German>(Panzerziel Widerstand)</German>
+<Spanish>(Armored target Resistance)</Spanish>
+<Czech>(Obrněný cíl (Odboj))</Czech>
+<Russian>(Бронированная цель (Сопротивление))</Russian>
+<Italian>(Armored target Resistance)</Italian>
+<Polish>(Pojazd opancerzony Ruchu Oporu)</Polish>
+<French>(Cible blindé Résistance)</French>
+<Hungarian>(Ellenálló Páncélozott célpont)</Hungarian>
+</Key>
+<Key ID="STR_ACE_INV_TARGET_CARM">
+<English>(Armored target Civilian)</English>
+<German>(Panzerziel Zivil)</German>
+<Spanish>(Armored target Civilian)</Spanish>
+<Czech>(Obrněný cíl (Civilní))</Czech>
+<Russian>(Бронированная цель (Гражданские))</Russian>
+<Italian>(Armored target Civilian)</Italian>
+<Polish>(Pojazd opancerzony cywilny)</Polish>
+<French>(Cible blindé Civile)</French>
+<Hungarian>(Civil Páncélozott célpont)</Hungarian>
+</Key>
+<Key ID="STR_ACE_INV_TARGET_EARMH">
+<English>(Heavy Armored target OPFOR)</English>
+<German>(Schweres Panzerziel OPFOR)</German>
+<Spanish>(Heavy Armored target OPFOR)</Spanish>
+<Czech>(Těžký obrněný cíl (OPFOR))</Czech>
+<Russian>(Тяжело бронированная цель (Красные))</Russian>
+<Italian>(Heavy Armored target OPFOR)</Italian>
+<Polish>(Czołg OPFOR)</Polish>
+<French>(Cible blindé lourd OPFOR)</French>
+<Hungarian>(OPFOR Erősen páncélozott célp.)</Hungarian>
+</Key>
+<Key ID="STR_ACE_INV_TARGET_WARMH">
+<English>(Heavy Armored target BLUFOR)</English>
+<German>(Schweres Panzerziel BLUFOR)</German>
+<Spanish>(Heavy Armored target BLUFOR)</Spanish>
+<Czech>(Těžký obrněný cíl (BLUFOR))</Czech>
+<Russian>(Тяжело бронированная цель (Синие))</Russian>
+<Italian>(Heavy Armored target BLUFOR)</Italian>
+<Polish>(Czołg BLUFOR)</Polish>
+<French>(Cible blindé lourd BLUFOR)</French>
+<Hungarian>(BLUFOR Erősen páncélozott célp.)</Hungarian>
+</Key>
+<Key ID="STR_ACE_INV_TARGET_RARMH">
+<English>(Heavy Armored target Resistance)</English>
+<German>(Schweres Panzerziel Widerstand)</German>
+<Spanish>(Heavy Armored target Resistance)</Spanish>
+<Czech>(Těžký obrněný cíl (Odboj))</Czech>
+<Russian>(Тяжело бронированная цель (Сопротивление))</Russian>
+<Italian>(Heavy Armored target Resistance)</Italian>
+<Polish>(Czołg Ruchu Oporu)</Polish>
+<French>(Cible blindé lourd Résistance)</French>
+<Hungarian>(Ellenálló Erősen páncélozott célp.)</Hungarian>
+</Key>
+<Key ID="STR_ACE_INV_TARGET_CARMH">
+<English>(Heavy Armored target Civilian)</English>
+<German>(Schweres Panzerziel Zivil)</German>
+<Spanish>(Heavy Armored target Civilian)</Spanish>
+<Czech>(Těžký obrněný cíl (Odboj))</Czech>
+<Russian>(Тяжело бронированная цель (Гражданские))</Russian>
+<Italian>(Heavy Armored target Civilian)</Italian>
+<Polish>(Czołg cywilny)</Polish>
+<French>(Cible blindé lourd Civile)</French>
+<Hungarian>(Civil Erősen páncélozott célp.)</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

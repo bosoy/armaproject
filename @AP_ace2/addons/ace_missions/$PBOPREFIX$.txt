@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=x\ace\addons\missions
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: '3317CF8D63B4B418A6F14D1618E0280F07B0C1B2'
+//////</HEADER>//////

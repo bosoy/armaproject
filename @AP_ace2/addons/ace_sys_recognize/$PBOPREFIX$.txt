@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_recognize
+Pbo Type is: Arma Addon
+Sha: 'D63642344DEFF6F131C4DFDDCE76C51BFE3B083A'
+//////</HEADER>//////

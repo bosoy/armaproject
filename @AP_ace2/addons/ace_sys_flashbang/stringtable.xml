@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="ACE2"><Container name="sys_flashbang">
+<Key ID="STR_DN_ACE_FLASHBANG">
+<English>Flashbang</English>
+<German>Blendgranate</German>
+<Spanish>Flashbang</Spanish>
+<Czech>Oslepující granát</Czech>
+<Russian>Ослепл.граната</Russian>
+<Italian>Granata Stordente</Italian>
+<Polish>Granat błyskowy</Polish>
+<French>Flashbang</French>
+<Hungarian>Villanógránát</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_TORCH_C">
+<English>Torch-C</English>
+<German>Torch-C</German>
+<Spanish>Torch-C</Spanish>
+<Czech>Torch-C</Czech>
+<Russian>Факел-Ц</Russian>
+<Italian>Torch-C</Italian>
+<Polish>Fakel-C</Polish>
+<French>Torche-C</French>
+<Hungarian>Torch-C</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_VG40SZ">
+<English>VG-40SZ</English>
+<German>VG-40SZ</German>
+<Spanish>VG-40SZ</Spanish>
+<Czech>VG-40SZ</Czech>
+<Russian>ВГ-40СЗ</Russian>
+<Italian>VG-40SZ</Italian>
+<Polish>VG-40SZ</Polish>
+<French>VG-40SZ</French>
+<Hungarian>VG-40SZ</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_M84">
+<English>M84</English>
+<German>M84</German>
+<Spanish>M84</Spanish>
+<Czech>M84</Czech>
+<Russian>M84</Russian>
+<Italian>M84</Italian>
+<Polish>M84</Polish>
+<French>M84</French>
+<Hungarian>M84</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_FLASHBANG2">
+<English>2 Bang</English>
+<German>Irritationskörper 2Knall</German>
+<Spanish>2 Knall</Spanish>
+<Czech>2 Knall</Czech>
+<Russian>2 Knall</Russian>
+<Italian>2 Knall</Italian>
+<Polish>2 Bang</Polish>
+<French>2 Knall</French>
+<Hungarian>2 Knall</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_FLASHBANG9">
+<English>9 Bang</English>
+<German>Irritationskörper 9Knall</German>
+<Spanish>9 Knall</Spanish>
+<Czech>9 Knall</Czech>
+<Russian>9 Knall</Russian>
+<Italian>9 Knall</Italian>
+<Polish>9 Bang</Polish>
+<French>9 Knall</French>
+<Hungarian>9 Knall</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_FLASHBANG">
+<English>Flashbang</English>
+<German>Blendgranate</German>
+<Spanish>Flashbang</Spanish>
+<Czech>Oslepující granát</Czech>
+<Russian>Ослепл.граната</Russian>
+<Italian>Granata Stordente</Italian>
+<Polish>Granat błyskowy</Polish>
+<French>Flashbang</French>
+<Hungarian>Villanógránát</Hungarian>
+</Key>
+</Container>
+<Container name="obsolete">
+<Key ID="STR_ACE_LIB_ACE_FLASHBANG">
+<English>Flashbang</English>
+<German>Blendgranate</German>
+<Spanish>Flashbang</Spanish>
+<Czech>Oslepující granát</Czech>
+<Russian>Ослепл. граната</Russian>
+<Italian>Granata Stordente</Italian>
+<Polish>Granat błyskowy</Polish>
+<French>Flashbang</French>
+<Hungarian>Villanógránát</Hungarian>
+</Key>
+<Key ID="STR_ACE_LIB_ACE_M84FLASHBANG">
+<English>M84 - Flashbang</English>
+<German>M84 - Blendgranate</German>
+<Spanish>M84 - Flashbang</Spanish>
+<Czech>M84 - Oslepující granát</Czech>
+<Russian>M84 - Ослепл. граната</Russian>
+<Italian>M84 - Granata Stordente</Italian>
+<Polish>Granat błyskowy M84</Polish>
+<French>M84 - Flashbang</French>
+<Hungarian>M84 - Villanógránát</Hungarian>
+</Key>
+</Container>
+</Package></Project>

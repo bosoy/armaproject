@@ -1,0 +1,74 @@
+onLoadMission="Go kill em all!";
+onLoadMissionTime = true;
+
+
+respawn=3;
+respawndelay=4;
+disabledAI = true;
+
+class Header
+{
+gameType = COOP;            //DM, Team, Coop, CTI
+minPlayers = 1;             //min # of players the mission supports
+maxPlayers = 30;            //Max # of players the mission supports
+playerCountMultipleOf = 1;  //Unknown
+};
+
+
+
+#include "revive_sqf\dialogs\config.hpp"
+#include "revive_sqf\dialogs\define.hpp"
+#include "revive_sqf\dialogs\rev_cam_dialog.hpp"
+#include "revive_sqf\dialogs\respawn_button_1.hpp"
+#include "revive_sqf\dialogs\respawn_button_2.hpp"
+#include "revive_sqf\dialogs\respawn_button_3.hpp"
+#include "revive_sqf\dialogs\respawn_button_4.hpp"
+#include "revive_sqf\dialogs\respawn_button_1b.hpp"
+#include "revive_sqf\dialogs\respawn_button_1c.hpp"
+#include "revive_sqf\dialogs\respawn_button_2b.hpp"
+#include "revive_sqf\dialogs\respawn_button_3b.hpp"
+#include "revive_sqf\dialogs\respawn_button_4b.hpp"
+#include "revive_sqf\dialogs\respawn_button_1map.hpp"
+#include "revive_sqf\dialogs\respawn_button_2map.hpp"
+#include "revive_sqf\dialogs\respawn_button_3map.hpp"
+#include "revive_sqf\dialogs\respawn_button_4map.hpp"
+#include "revive_sqf\dialogs\OK_map.hpp"
+#include "revive_sqf\dialogs\dead_cam_dialog.hpp"
+
+
+//class Params
+//{
+//        class param1
+//        {
+//		//paramsArray[1]
+//                title = "Revive Time";
+//                values[] = {60,120,180,240,300,360,600};
+//                texts[] = {"60","120","180","240","300","360","600"};
+//                default = 300;
+//        };
+//        class param2
+//        {
+//		// paramsArray[2]
+//                title = "Number of Revives:";
+//                values[] = {1000,15,7,3,1};
+//                texts[] = {"Infinite -  Noobfriendly ","15 - Easy ","7 - Normal","3 - Hard","1 - Recommended"};
+//                default = 15;
+//        };
+//};
+
+titleParam1 = "Revive Time:"; 
+valuesParam1[] = {60,120,180,240,300,360,"600"};
+defValueParam1 = 300; 
+textsParam1[] = {"60","120","180","240","300","360","600"};
+
+
+titleParam2 = "Number of Revives:"; 
+valuesParam2[] = {1000,15,7,3,1};
+defValueParam2 = 7; 
+textsParam2[] = {"Infinite -  Noobfriendly ","15 - Easy ","7 - Normal","3 - Hard","1 - Recommended"};
+
+
+
+
+
+

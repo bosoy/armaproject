@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_rocket_ballistics
+Pbo Type is: Arma Addon
+Sha: 'AC203804EDA575211F5953F8ACBA48B69D9673ED'
+//////</HEADER>//////

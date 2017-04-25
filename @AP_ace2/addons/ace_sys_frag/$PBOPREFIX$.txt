@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_frag
+Pbo Type is: Arma Addon
+Sha: '3272B718163C01DA71B3B6378A01D3215CD6D0BB'
+//////</HEADER>//////

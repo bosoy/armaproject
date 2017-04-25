@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_aitalk
+Pbo Type is: Arma Addon
+Sha: '084F5B1FD53F296E24896047D2735BA0E828ECA9'
+//////</HEADER>//////

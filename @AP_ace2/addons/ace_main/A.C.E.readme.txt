@@ -1,0 +1,58 @@
+/////////////////////////////////////////////////////////////////////////////////
+#                                                                               #
+#                       ADVANCED COMBAT ENVIRONMENT 2 FILE                      #
+#                                                                               #
+/////////////////////////////////////////////////////////////////////////////////
+ 
+
+#===========#
+| Component |
+#===========#
+
+ace_main
+
+#================#
+| Main author(s) |
+#================#
+
+ACE Team
+
+#===============#
+| Local credits |
+#===============#
+
+Fragorl
+Killswitch
+Kronzky
+
+#=============================#
+| Rough component description |
+#=============================#
+
+Container for 3rd party code (functions and configs).
+Generic ACE code is found in here as well.
+
+#=================#
+| Contact details |
+#=================#
+
+Page:	http://dev-heaven.net/projects/show/ace-mod2
+
+
+
+/////////////////////////////////////////////////////////////////////////////////
+#                                                                               #
+#                       ADVANCED COMBAT ENVIRONMENT 2 FILE                      #
+#                                                                               #
+/////////////////////////////////////////////////////////////////////////////////
+//                                                                             //
+#               Copyright 2009 A.C.E MOD, ALL RIGHTS RESERVED                   #
+//                                                                             //
+//  This product is licensed for personal use only.  Commercial distribution   //
+//  prohibited.  Military use prohibited.  Use prohibited if any component     //
+//  of this distribution removed or modified without express written consent   //
+//  of the developer. For further licensing details please refer to the        //
+//  End User License Agreement provided within this PBO file.                  //
+//  Any questions or comments, please contact contact@acemod.net               //
+//                                                                             //
+/////////////////////////////////////////////////////////////////////////////////

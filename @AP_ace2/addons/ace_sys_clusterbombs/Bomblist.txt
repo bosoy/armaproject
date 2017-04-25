@@ -1,0 +1,49 @@
+
+/* ace_sys_clusterbombs (.pbo) | (c) 2008, 2009, 2010 by rocko */
+
+CBU 87 CEM System
+----------
+Combined Effects munition
+Detonating bomblets for various targets.
+
+Container:
+----------
+SUU-65/B
+
+
+Bomblets:
+------------
+202 BLU 97/B (detonating on impact)
+
+
+=============================================================
+CBU 89 Gator Mine System
+-----------------
+Mix of AP and AT mines, depending on payload.
+NOT depicted in ACE due to non-existant AP mines.
+
+Container:
+----------
+SUU-64//B
+
+Bomlets:
+--------
+CBU-89/B (72 BLU-91/B 22 BLU-92/B)
+CBU-89A/B         ""
+
+
+===============================================================
+CBU 97 Sensor Fuzed Weapon
+--------------------------
+
+10 BLU-108 submunitions @ 4 projectiles.
+Infrared and laser sensors.
+
+Container:
+----------
+SUU-66/B
+
+Bomblets:
+---------
+10 BLU-108/B (A/B), (B/B), (C/B)
+

@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\cba\addons\ai
+Pbo Type is: Arma Addon
+Sha: '37D7D9D8B322764C4F5BE2C7A631ACCA32D8136C'
+//////</HEADER>//////

@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=dac_sounds
+Pbo Type is: Arma Addon
+Sha: 'D2DA47FE746BD50886D8E440789F75CD604D0461'
+//////</HEADER>//////

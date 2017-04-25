@@ -1,0 +1,47 @@
+/////////////////////////////////////////////////////////////////////////////////
+#                                                                               #
+#                       ADVANCED COMBAT ENVIRONMENT 2 FILE                      #
+#                                                                               #
+/////////////////////////////////////////////////////////////////////////////////
+
+
+#===========#
+| Component |
+#===========#
+
+ace_sys_explosives
+
+#================#
+| Main author(s) |
+#================#
+
+Daman (M49 model)
+q1184 (Pellet simulation)
+rocko (Initial version, DM31 model, DM12 model, OSM-4 model, M86PDM model, Breaching object model, Stake model, Tripwire model, Clacker model + textures/materials, Burying mines, Maintaining scripts and component)
+Scubaman3D (M16A1, M2/4 Slam models)
+SerapH (M18 model)
+
+#=================#
+| Contact details |
+#=================#
+
+
+Page:	http://dev-heaven.net/projects/show/ace-mod2
+
+
+/////////////////////////////////////////////////////////////////////////////////
+#                                                                               #
+#                       ADVANCED COMBAT ENVIRONMENT 2 FILE                      #
+#                                                                               #
+/////////////////////////////////////////////////////////////////////////////////
+//                                                                             //
+#               Copyright 2009 A.C.E MOD, ALL RIGHTS RESERVED                   #
+//                                                                             //
+//  This product is licensed for personal use only.  Commercial distribution   //
+//  prohibited.  Military use prohibited.  Use prohibited if any component     //
+//  of this distribution removed or modified without express written consent   //
+//  of the developer. For further licensing details please refer to the        //
+//  End User License Agreement provided within this PBO file.                  //
+//  Any questions or comments, please contact contact@acemod.net               //
+//                                                                             //
+/////////////////////////////////////////////////////////////////////////////////

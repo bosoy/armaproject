@@ -1,0 +1,23 @@
+// Mission Header
+class Header
+{
+  gameType = Coop;
+};
+onLoadMission = "Seek & Destroy" ;
+OnLoadMissionTime = FALSE;
+
+class CfgSounds
+{
+//// List of sounds (.ogg files without the .ogg extension)
+sounds[] = {bomb};
+
+//// Definition for each sound
+class bc_bomb
+{
+name = "bc_bomb"; // Name for mission editor
+sound[] = {\sound\bomb.ogg, 1, 1.0};
+titles[] = {};
+};
+
+};
+loadscreen = "picture\FinalPush.jpg";

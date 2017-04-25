@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_gas
+Pbo Type is: Arma Addon
+Sha: '2F73F7C56D7138EB7693388A15CEB820A4C34C1F'
+//////</HEADER>//////

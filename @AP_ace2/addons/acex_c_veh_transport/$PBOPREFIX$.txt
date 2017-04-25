@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex\addons\c_veh_transport
+Pbo Type is: Arma Addon
+Sha: '6E9AB6A87FCE5D6138BC258EF8241F58221458F6'
+//////</HEADER>//////

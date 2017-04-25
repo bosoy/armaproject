@@ -1,0 +1,192 @@
+OnLoadMission="Reaper (v1.2) by AnimalMother92";
+
+OnLoadIntroTime=FALSE;
+OnLoadMissionTime=TRUE;
+loadScreen = "pic2.paa";
+
+disabledAI=FALSE;
+ShowGPS=1;
+showCompass=1;
+showWatch=1;
+showMap=1;
+showNotePad=1;
+briefing=1;
+debriefing=1;
+
+class Weapons 
+ {
+  class M249_TWS_EP1 {count = 1;};
+  class ACE_M249_AIM {count = 1;};
+  class M60A4_EP1 {count = 1;};
+  class ACE_HK416_D14_TWS {count = 1;};
+  class ACE_HK416_D14_COMPM3_M320 {count = 1;};
+  class ACE_HK416_D10_COMPM3_SD {count = 1;};
+  class ACE_HK417_Eotech_4x {count = 1;};
+  class ACE_HK417_micro {count = 1;};
+  class ACE_SOC_M4A1_Eotech_4x {count = 1;};
+  class ACE_SOC_M4A1_TWS {count = 1;};
+  class Sa58V_CCO_EP1 {count = 1;};
+  class ACE_SCAR_H_STD_Spect {count = 1;};
+  class SCAR_H_LNG_Sniper {count = 1;};
+  class SCAR_H_CQC_CCO {count = 1;};
+  class SCAR_L_STD_EGLM_TWS {count = 1;};
+  class SCAR_H_LNG_Sniper_SD {count = 1;};
+  class SCAR_L_CQC_Holo {count = 1;};
+  class SCAR_L_CQC_CCO_SD {count = 1;};
+  class M14_EP1 {count = 1;};
+  class m107_TWS_EP1 {count = 1;};
+  class M24_des_EP1 {count = 1;};
+  class ACE_P226 {count = 4;};
+  class ACE_Javelin_CLU {count = 1;};
+  class Javelin {count = 1;};
+  class ACE_M136_CSRS {count = 2;};
+  class Binocular_Vector {count = 2;};
+ };
+
+class Magazines 
+ {
+  class 30Rnd_762x39_SA58 {count = 20;};
+  class ACE_20Rnd_762x51_SB_HK417 {count = 20;};
+  class ACE_100Rnd_556x45_T_M249 {count = 20;};
+  class ACE_30Rnd_556x45_SB_Stanag {count = 50;};
+  class 100Rnd_762x51_M240 {count = 20;};
+  class ACE_20Rnd_762x51_SB_SCAR {count = 50;};
+  class ACE_20Rnd_762x51_B_M14 {count = 20;};
+  class ACE_10Rnd_127x99_Raufoss_m107 {count = 20;};
+  class 5Rnd_762x51_M24 {count = 20;};
+  class ACE_15Rnd_9x19_P226 {count = 20;};
+  class 1Rnd_HE_M203 {count = 20;};
+  class HandGrenade_West {count = 20;};
+  class SmokeShell {count = 20;};
+  class Laserbatteries {count = 5;};
+  class ACE_Battery_Rangefinder {count = 5;};
+ };
+
+class CfgSounds
+{
+ sounds[]={};
+	class uavonline
+	{
+		name = "uavonline";
+		sound[] = {"\sound\uavonline.ogg", 0.5, 1};
+		titles[]={};
+	};
+	class uavoffline
+	{
+		name = "uavoffline";
+		sound[] = {"\sound\uavoffline.ogg", 1, 1};
+		titles[]={};
+	};
+	class agmonline
+	{
+		name = "agmonline";
+		sound[] = {"\sound\agmonline.ogg", 1, 1};
+		titles[]={};
+	};
+	class agmoffline
+	{
+		name = "agmoffline";
+		sound[] = {"\sound\agmoffline.ogg", 1, 1};
+		titles[]={};
+	};
+	class lock
+	{
+		name = "lock";
+		sound[] = {"\sound\lock.ogg", 1, 1};
+		titles[]={};
+	};
+	class notarget
+	{
+		name = "notarget";
+		sound[] = {"\sound\notarget.ogg", 1, 1};
+		titles[]={};
+	};
+	class trophy
+	{
+		name = "trophy";
+		sound[] = {"\sound\trophy.ogg", 2, 1};
+		titles[]={};
+	};
+};
+
+class CfgMusic
+{
+ tracks[]={};
+	class AM92Intro
+	{
+		name = "AM92Intro";
+		sound[] = {"\music\AM92Intro.ogg", db+0, 1.0};
+	};
+};
+
+class Header
+{
+gameType=COOP;
+minPlayers=1;
+maxPlayers=10;
+};
+
+respawn=4;
+respawnDelay=10;
+respawnDialog=0;
+
+
+
+// Other code
+doneKeys[]={"Reaper"};
+
+#define FontM "Zeppelin32"
+#define FontHTML "Zeppelin32"
+
+class RscTitles
+{	
+	class Credit1
+   	{
+      idd=-1;
+      movingEnable=true;
+      duration=10;
+      name="Credit1";
+      controls[]={"text1"};
+
+      class text1
+      {
+         idc = -1;
+         type = 0;
+         style = 2;
+         x = 0.2;
+         y = 0;
+         w = 1;
+         h = 0.04;
+	 font = "Zeppelin32";
+       sizeEx = 0.05;
+       colorBackground[] = {0, 0, 0, 0};
+   	 colorText[] = {1, 1, 1, 0.8};
+  	 text = "AnimalMother92 Presents...";
+      };
+   	};
+   
+   	class Credit2
+   	{
+      idd=-1;
+      movingEnable=true;
+      duration=10;
+      name="Credit2";
+      controls[]={"text1"};
+
+      class text1
+      {
+         idc = -1;
+         type = 0;
+         style = 2;
+         x = 0.2;
+         y = 0.2;
+         w = 1;
+         h = 0.05;
+	 font = "Zeppelin32";
+       sizeEx = 0.05;
+       colorBackground[] = {0, 0, 0, 0};
+   	 colorText[] = {1, 1, 1, 0.8};
+  	 text = "Reaper";
+      };
+    };
+};

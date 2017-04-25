@@ -1,0 +1,1 @@
+setViewDistance ((_this select 3) select 0);

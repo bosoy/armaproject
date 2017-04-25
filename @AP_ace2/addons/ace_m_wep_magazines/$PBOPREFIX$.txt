@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\m_wep_magazines
+Pbo Type is: Arma Addon
+Sha: '7FFF3BADB049695BAF00416872376A67858A9C34'
+//////</HEADER>//////

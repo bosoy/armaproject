@@ -1,0 +1,90 @@
+ambient[]={1,1,1,1.000000};
+diffuse[]={1,1,1,1.000000};
+forcedDiffuse[]={0.000000,0.000000,0.000000,0.000000};
+emmisive[]={0.000000,0.000000,0.000000,0.00000};
+specular[]={.1,.1,.1,1.000000};
+specularPower=35.000000;
+PixelShaderID="super";
+VertexShaderID="super";
+class Stage1
+{
+	texture="x\acex\addons\t_wep_rifle\llm01_nohq.paa";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1.000000,0.000000,0.000000};
+		up[]={0.000000,1.000000,0.000000};
+		dir[]={0.000000,0.000000,0.000000};
+		pos[]={0.000000,0.000000,0.000000};
+	};
+};
+class Stage2
+{
+	texture="CA\Data\detail_maps\plastic_512_dt.paa";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={10.0000,0.000000,0.000000};
+		up[]={0.000000,10.0000,0.000000};
+		dir[]={0.000000,0.000000,0.000000};
+		pos[]={0.000000,0.000000,0.000000};
+	};
+};
+class Stage3
+{
+	texture="#(argb,8,8,3)color(0,0,0,0,MC)";
+	//texture="x\acex\addons\t_wep_rifle\llm01_mc.paa";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1.000000,0.000000,0.000000};
+		up[]={0.000000,1.000000,0.000000};
+		dir[]={0.000000,0.000000,0.000000};
+		pos[]={0.000000,0.000000,0.000000};
+	};
+};
+class Stage4
+{
+	texture="#(argb,8,8,3)color(0,1,1,1)";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1.000000,0.000000,0.000000};
+		up[]={0.000000,1.000000,0.000000};
+		dir[]={0.000000,0.000000,0.000000};
+		pos[]={0.000000,0.000000,0.000000};
+	};
+};
+class Stage5
+{
+	texture="x\acex\addons\t_wep_rifle\llm01_smdi_test.paa";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1.000000,0.000000,0.000000};
+		up[]={0.000000,1.000000,0.000000};
+		dir[]={0.000000,0.000000,0.000000};
+		pos[]={0.000000,0.000000,0.000000};
+	};
+};
+class Stage6
+{
+	texture="#(ai,64,64,1)fresnel(1.5,1.22)";
+	uvSource="none";
+};
+class Stage7
+{
+	texture="ca\Data\env_land_co.paa";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1.000000,0.000000,0.000000};
+		up[]={0.000000,1.000000,0.000000};
+		dir[]={0.000000,0.000000,0.000000};
+		pos[]={0.000000,0.000000,0.000000};
+	};
+};
+class StageTI
+{
+ texture = "ca\weapons_e\data\default_ti_ca.paa";
+};

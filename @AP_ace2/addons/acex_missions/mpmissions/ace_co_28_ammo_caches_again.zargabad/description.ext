@@ -1,0 +1,28 @@
+disabledAI=1;
+respawn=BIRD;
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 10;
+};
+
+class params
+{
+	class ViewDistance
+	{
+		title = "View Distance";
+		values[] = {500, 750, 1000, 1300, 1500, 1700, 2000, 2300, 2600, 3000, 3500, 4000};
+		texts[] = {"500", "750", "1000", "1300", "1500", "1700", "2000", "2300", "2600", "3000", "3500", "4000"};
+		default = 1500;
+	}; 
+	
+	class Difficulty
+	{
+		title = "Difficulty";
+		values[] = {1, 2, 3, 4, 5, 6};
+		texts[] = {"Extremely easy", "Very easy", "Easy", "Medium", "Hard", "Very hard"};
+		default = 4;
+	}
+};

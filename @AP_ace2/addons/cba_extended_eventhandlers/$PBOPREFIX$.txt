@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=extended_eventhandlers
+Pbo Type is: Arma Addon
+Sha: '888CFC8EEEE50E593B138045F520B3ADD25B5237'
+//////</HEADER>//////

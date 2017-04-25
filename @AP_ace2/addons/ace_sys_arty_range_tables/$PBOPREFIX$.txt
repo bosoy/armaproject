@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=x\ace\Addons\sys_arty_range_tables
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: '31FC4EFA616081DF21CFF6C9B40B5E8B4B243384'
+//////</HEADER>//////

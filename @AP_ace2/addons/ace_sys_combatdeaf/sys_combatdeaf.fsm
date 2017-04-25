@@ -1,0 +1,475 @@
+/*%FSM<COMPILE "scriptedFSM.cfg, sys_combatdeaf">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"sys_combatdeaf",0,250,-475.000000,275.000000,-375.000000,325.000000,0.000000,"sys_combatdeaf"};
+item1[] = {"true",8,218,-350.000000,350.000000,-250.000000,400.000000,0.000000,"true"};
+item2[] = {"compare",3,250,-100.000000,500.000000,0.000000,550.000000,0.000000,"compare"};
+item3[] = {"Loop",2,250,-225.000000,350.000000,-125.000000,400.000000,0.000000,"Loop"};
+item4[] = {"true",8,218,-225.000000,500.000000,-125.000000,550.000000,0.000000,"true"};
+item5[] = {"Diff___0_9",4,218,-100.000000,575.000000,0.000000,625.000000,1.000000,"Diff > 0.9"};
+item6[] = {"playSound",3,250,-350.000000,500.000000,-250.000000,550.000000,0.000000,"playSound"};
+item7[] = {"___10",4,218,400.000000,350.000000,500.000000,400.000000,1.000000,"> 10"};
+item8[] = {"playSound_1",3,250,275.000000,575.000000,375.000000,625.000000,0.000000,"playSound"};
+item9[] = {"not_ringing",4,218,400.000000,575.000000,500.000000,625.000000,1.000000,"not ringing"};
+item10[] = {"check",3,250,400.000000,500.000000,500.000000,550.000000,0.000000,"check"};
+item11[] = {"true",8,218,-100.000000,350.000000,0.000000,400.000000,0.000000,"true"};
+item12[] = {"wait",4,218,25.000000,500.000000,125.000000,550.000000,0.000000,"wait"};
+item13[] = {"check_1",3,250,275.000000,350.000000,375.000000,400.000000,0.000000,"check"};
+item14[] = {"display_image",3,250,-100.000000,275.000000,0.000000,325.000000,0.000000,"display image"};
+item15[] = {"deaf",4,218,-225.000000,275.000000,-125.000000,325.000000,2.000000,"deaf"};
+item16[] = {"wait",3,250,150.000000,500.000000,250.000000,550.000000,0.000000,"wait"};
+item17[] = {"true",8,218,275.000000,500.000000,375.000000,550.000000,0.000000,"true"};
+item18[] = {"check_2",3,4346,-225.000000,575.000000,-125.000000,625.000000,0.000000,"check"};
+item19[] = {"not_ringing",4,218,-350.000000,575.000000,-250.000000,625.000000,1.000000,"not ringing"};
+item20[] = {"is_disabled",4,218,-350.000000,425.000000,-250.000000,475.000000,3.000000,"is disabled"};
+item21[] = {"reset_and_wait",3,250,-475.000000,425.000000,-375.000000,475.000000,0.000000,"reset and wait"};
+item22[] = {"is_enabled",4,218,-475.000000,350.000000,-375.000000,400.000000,0.000000,"is enabled"};
+item23[] = {"is_0",4,218,-100.000000,425.000000,0.000000,475.000000,1.000000,"is 0"};
+item24[] = {"reset",3,250,25.000000,425.000000,125.000000,475.000000,0.000000,"reset"};
+item25[] = {"fadeVolume",3,250,25.000000,350.000000,125.000000,400.000000,0.000000,"fadeVolume"};
+item26[] = {"true",8,218,150.000000,350.000000,250.000000,400.000000,0.000000,"true"};
+link0[] = {0,1};
+link1[] = {1,3};
+link2[] = {2,4};
+link3[] = {2,5};
+link4[] = {3,11};
+link5[] = {3,15};
+link6[] = {3,20};
+link7[] = {3,23};
+link8[] = {4,3};
+link9[] = {5,18};
+link10[] = {6,4};
+link11[] = {7,10};
+link12[] = {8,17};
+link13[] = {9,8};
+link14[] = {10,9};
+link15[] = {10,17};
+link16[] = {11,25};
+link17[] = {12,2};
+link18[] = {13,7};
+link19[] = {13,17};
+link20[] = {14,11};
+link21[] = {15,14};
+link22[] = {16,12};
+link23[] = {17,16};
+link24[] = {18,4};
+link25[] = {18,19};
+link26[] = {19,6};
+link27[] = {20,21};
+link28[] = {21,22};
+link29[] = {22,0};
+link30[] = {23,24};
+link31[] = {24,26};
+link32[] = {25,26};
+link33[] = {26,13};
+globals[] = {25.000000,1,0,0,0,640,480,1,210,6316128,1,-555.839844,683.913574,962.487122,-125.607040,1030,904,1};
+window[] = {2,-1,-1,-1,-1,923,225,1675,225,3,1048};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "sys_combatdeaf";
+  class States
+  {
+    /*%FSM<STATE "sys_combatdeaf">*/
+    class sys_combatdeaf
+    {
+      name = "sys_combatdeaf";
+      init = /*%FSM<STATEINIT""">*/"// copyright (2010) Rommel GNU License etc etc" \n
+       "" \n
+       "private [""_volume"", ""_prior"", ""_beep"", ""_time2"",""_time3"",""_time4""];" \n
+       "_beep = false;" \n
+       "_beep2 = false;" \n
+       "_time2 = 0;" \n
+       "_time3 = 0;" \n
+       "_time4 = 0;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "compare">*/
+    class compare
+    {
+      name = "compare";
+      init = /*%FSM<STATEINIT""">*/"// if the difference over 1 second is over 1.1, then their ears are getting pummelled..."/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Diff___0_9">*/
+        class Diff___0_9
+        {
+          priority = 1.000000;
+          to="check_2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"((player getvariable [""ace_sys_combatdeaf_dv"",0]) - (player getvariable [""ace_sys_combatdeaf_prior"",0])) > 0.9"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Loop">*/
+    class Loop
+    {
+      name = "Loop";
+      init = /*%FSM<STATEINIT""">*/"_prior = (player getvariable [""ace_sys_combatdeaf_dv"",0]) min 20;" \n
+       "player setvariable [""ace_sys_combatdeaf_prior"",_prior];" \n
+       "_volume = (1 -  (_prior / 20)) max 0;" \n
+       "" \n
+       "if (_prior > 19.75) then {" \n
+       "	player setvariable [""ace_sys_combatdeaf_deaf"",true];" \n
+       "} else {" \n
+       "	player setvariable [""ace_sys_combatdeaf_deaf"",false];" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "is_disabled">*/
+        class is_disabled
+        {
+          priority = 3.000000;
+          to="reset_and_wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!ACE_SYS_COMBATDEAF"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "deaf">*/
+        class deaf
+        {
+          priority = 2.000000;
+          to="display_image";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(player getvariable [""ace_sys_combatdeaf_deaf"",false]) && {time > _time4}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "is_0">*/
+        class is_0
+        {
+          priority = 1.000000;
+          to="reset";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_prior < 0.02"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="fadeVolume";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "playSound">*/
+    class playSound
+    {
+      name = "playSound";
+      init = /*%FSM<STATEINIT""">*/"playSound ""ace_combat_deafness"";" \n
+       "_beep2 = true;" \n
+       "_time3 = time + 5;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "playSound_1">*/
+    class playSound_1
+    {
+      name = "playSound_1";
+      init = /*%FSM<STATEINIT""">*/"playSound ""ACE_Ring_Backblast"";" \n
+       "_time2 = time + 22;" \n
+       "_beep = true;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "check">*/
+    class check
+    {
+      name = "check";
+      init = /*%FSM<STATEINIT""">*/"//check if the ringing is already being played" \n
+       "if (time > _time2) then {" \n
+       "	_beep = false;" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "not_ringing">*/
+        class not_ringing
+        {
+          priority = 1.000000;
+          to="playSound_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!_beep"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "check_1">*/
+    class check_1
+    {
+      name = "check_1";
+      init = /*%FSM<STATEINIT""">*/"//the cycle rate is 1hz" \n
+       "_timeWait = time + 1;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "___10">*/
+        class ___10
+        {
+          priority = 1.000000;
+          to="check";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_prior > 10"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "display_image">*/
+    class display_image
+    {
+      name = "display_image";
+      init = /*%FSM<STATEINIT""">*/"// Near deafness or deaf, so make sure the player knows" \n
+       "_img = ""<img image='x\ace\addons\sys_combatdeaf\data\ace_deaf_ca.paa' size='3' align='center'/>"";" \n
+       "" \n
+       "playSound ""ace_combat_deafness"";" \n
+       "_beep2 = true;" \n
+       "_time3 = time + 10;" \n
+       "_time4 = time + 30;" \n
+       "hintSilent parseText (_img + "" "");"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="fadeVolume";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "wait">*/
+    class wait
+    {
+      name = "wait";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "wait">*/
+        class wait
+        {
+          priority = 0.000000;
+          to="compare";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timeWait"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "check_2">*/
+    class check_2
+    {
+      name = "check_2";
+      init = /*%FSM<STATEINIT""">*/"//check if the ringing is already being played" \n
+       "if (time > _time3) then {" \n
+       "	_beep2 = false;" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "not_ringing">*/
+        class not_ringing
+        {
+          priority = 1.000000;
+          to="playSound";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!_beep2"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "reset_and_wait">*/
+    class reset_and_wait
+    {
+      name = "reset_and_wait";
+      init = /*%FSM<STATEINIT""">*/"0 fadeSound 1;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "is_enabled">*/
+        class is_enabled
+        {
+          priority = 0.000000;
+          to="sys_combatdeaf";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"ACE_SYS_COMBATDEAF"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "reset">*/
+    class reset
+    {
+      name = "reset";
+      init = /*%FSM<STATEINIT""">*/"// No need to adjust sound volume if DV is 0" \n
+       "player setvariable [""ace_sys_combatdeaf_dv"",0];" \n
+       "" \n
+       "// Possible the unit died, so stop all things (shouldn't occur at this low anyway)" \n
+       "_beep = false;" \n
+       "_beep2 = false;" \n
+       "_time2 = 0;" \n
+       "_time3 = 0;" \n
+       "_time4 = 0;" \n
+       "" \n
+       "if !(player getVariable ""ace_sys_goggles_earplugs"") then {" \n
+       "	10 fadeSound 1;" \n
+       "	10 fadeRadio 1;" \n
+       "	10 fadeMusic 1;" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="check_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "fadeVolume">*/
+    class fadeVolume
+    {
+      name = "fadeVolume";
+      init = /*%FSM<STATEINIT""">*/"#define DECREMENT 0.5" \n
+       "" \n
+       "// Hearing takes longer to return to normal after it hits rock bottom" \n
+       "player setvariable [""ace_sys_combatdeaf_dv"",_prior - (DECREMENT * (_volume max 0.1))];" \n
+       "1 fadeSound _volume;" \n
+       "1 fadeRadio _volume;" \n
+       "1 fadeMusic _volume;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="check_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="sys_combatdeaf";
+  finalStates[] =
+  {
+  };
+};
+/*%FSM</COMPILE>*/

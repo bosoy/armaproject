@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex_ru\addons\a2_compat
+Pbo Type is: Arma Addon
+Sha: 'A1E8BDC5BCC38F48E84CBC4F36792D6AF09E55C9'
+//////</HEADER>//////

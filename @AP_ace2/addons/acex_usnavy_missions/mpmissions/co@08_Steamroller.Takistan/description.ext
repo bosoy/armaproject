@@ -1,0 +1,138 @@
+OnLoadMission="Steamroller (v1.2) by AnimalMother92";
+
+OnLoadIntroTime=FALSE;
+OnLoadMissionTime=TRUE;
+loadScreen = "pic2.paa";
+
+disabledAI=FALSE;
+ShowGPS=1;
+showCompass=1;
+showWatch=1;
+showMap=1;
+showNotePad=1;
+briefing=1;
+debriefing=1;
+
+class CfgSounds
+{
+ sounds[]={};
+	class wind
+	{
+		name = "wind";
+		sound[] = {"\sound\wind.ogg", 0.6, 1};
+		titles[]={};
+	};
+	class trophy
+	{
+		name = "trophy";
+		sound[] = {"\sound\trophy.ogg", 2, 1};
+		titles[]={};
+	};
+};
+
+class CfgMusic
+{
+ tracks[]={};
+	class AM92Intro
+	{
+		name = "AM92Intro";
+		sound[] = {"\music\AM92Intro.ogg", db+0, 1.0};
+	};
+};
+
+class Header
+{
+gameType=COOP;
+minPlayers=1;
+maxPlayers=8;
+};
+
+respawn=4;
+respawnDelay=10;
+respawnDialog=0;
+
+
+
+// Other code
+doneKeys[]={"Steamroller"};
+
+enableItemsDropping = 0;
+
+#define FontM "Zeppelin32"
+#define FontHTML "Zeppelin32"
+
+class RscTitles
+{	
+	class Credit1
+   	{
+      idd=-1;
+      movingEnable=true;
+      duration=10;
+      name="Credit1";
+      controls[]={"text1"};
+
+      class text1
+      {
+         idc = -1;
+         type = 0;
+         style = 2;
+         x = 0.2;
+         y = 0;
+         w = 1;
+         h = 0.04;
+	 font = "Zeppelin32";
+       sizeEx = 0.05;
+       colorBackground[] = {0, 0, 0, 0};
+   	 colorText[] = {1, 1, 1, 0.8};
+  	 text = "AnimalMother92 Presents...";
+      };
+   	};
+   
+   	class Credit2
+   	{
+      idd=-1;
+      movingEnable=true;
+      duration=10;
+      name="Credit2";
+      controls[]={"text1"};
+
+      class text1
+      {
+         idc = -1;
+         type = 0;
+         style = 2;
+         x = 0.2;
+         y = 0.2;
+         w = 1;
+         h = 0.05;
+	 font = "Zeppelin32";
+       sizeEx = 0.05;
+       colorBackground[] = {0, 0, 0, 0};
+   	 colorText[] = {1, 1, 1, 0.8};
+  	 text = "Steamroller";
+      };
+    };
+	
+	class goggles {
+	  idd = -1;
+	  movingEnable = 0;
+	  duration = 10000;
+	  fadein = 0;
+	  fadeout = 0;
+	  name="goggles";
+
+	  controls[]={"goggles"};
+
+	  class goggles {
+		 x=safeZoneX; y=safeZoneY; w=safeZoneW; h=safeZoneH;
+		 text="goggles.paa";
+		 sizeEx = 1;
+		 type=0;
+		 idc=-1;
+		 style=48;
+		 colorBackground[]={0,0,0,0};
+		 colorText[]={1,1,1,1};
+		 font="Bitstream";
+		};
+	};
+};

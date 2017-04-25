@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_flashlight
+Pbo Type is: Arma Addon
+Sha: 'E2AF277674102A9F94506309A9025B431D1CB5DF'
+//////</HEADER>//////

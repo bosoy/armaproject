@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=x\acex_usnavy\addons\settings_external
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: '0F3CF72B031CB843CA06B0670FD4E10FCEE129BD'
+//////</HEADER>//////

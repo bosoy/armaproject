@@ -1,0 +1,23 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 5.24
+//Produced on Mon Oct 14 23:06:17 2013 : Created on Mon Oct 14 23:06:17 2013
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class ace_sys_arty_aimingpoints : data\c2.rvmat{
+ambient[] = {1,1,1,1};
+diffuse[] = {1,1,1,1};
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {0,0,0,1};
+specular[] = {0,0,0,1};
+specularPower = 1;
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";
+class Stage0
+{
+	texture = "x\ace\Addons\sys_arty_aimingpoints\data\collimator_pattern_alpha.paa";
+	uvSource = "tex";
+};
+//};

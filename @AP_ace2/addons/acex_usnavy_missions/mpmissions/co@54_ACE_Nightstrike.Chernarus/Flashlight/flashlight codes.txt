@@ -1,0 +1,7 @@
+. .			hail/get attention
+_ _			received/go ahead
+......		please resend
+. _ _ . . .		go!
+. . . _ _ .		ready.
+. _ . _	. _ . _		danger!
+. . . _ _ _ . . .	SOS

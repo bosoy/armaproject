@@ -1,0 +1,288 @@
+class FSM
+{
+  fsmName = "AmmoLoad";
+  class States
+  {
+    class Start
+    {
+      name = "Start";
+      init = "private [""_ammoload"",""_old_vec"",""_vec"",""_nobjs"",""_timenow"", ""_oposvec""];" \n
+       "_ammoload = _this select 0;" \n
+       "_old_vec = objNull;" \n
+       "_vec = objNull;" \n
+       "_timenow = time + 6;";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class Loop
+    {
+      name = "Loop";
+      init = "_nobjs = (getPos _ammoload) nearEntities [d_check_ammo_load_vecs, 9];";
+      precondition = "";
+      class Links
+      {
+        class count__nobjs___
+        {
+          priority = 1.000000;
+          to="Sleep";
+          precondition = "";
+          condition="count _nobjs == 0";
+          action="";
+        };
+        class _
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class Sleep
+    {
+      name = "Sleep";
+      init = "_vec = objNull;" \n
+       "_old_vec = objNull;" \n
+       "_timenow = time + 1.023;";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class _
+    {
+      name = "_";
+      init = "_vec = _nobjs select 0;" \n
+       "_timenow = time + 1.023;";
+      precondition = "";
+      class Links
+      {
+        class __isNull__vec__
+        {
+          priority = 1.000000;
+          to="__1";
+          precondition = "";
+          condition="!isNull _vec && alive _vec";
+          action="";
+        };
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class __1
+    {
+      name = "__1";
+      init = "_timenow = time + 1.023;";
+      precondition = "";
+      class Links
+      {
+        class local__driver__vec
+        {
+          priority = 1.000000;
+          to="__2";
+          precondition = "";
+          condition="local (driver _vec) || player == driver _vec";
+          action="";
+        };
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class __2
+    {
+      name = "__2";
+      init = "_thebox = _vec getVariable ""d_ammobox"";" \n
+       "if (isNil ""_thebox"") then {_thebox = false};" \n
+       "_timenow = time + 1.023;";
+      precondition = "";
+      class Links
+      {
+        class _vec_____old_vec
+        {
+          priority = 1.000000;
+          to="__3";
+          precondition = "";
+          condition="_vec != _old_vec";
+          action="";
+        };
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class __3
+    {
+      name = "__3";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class _thebox
+        {
+          priority = 1.000000;
+          to="__4";
+          precondition = "";
+          condition="_thebox";
+          action="";
+        };
+        class _
+        {
+          priority = 0.000000;
+          to="__5";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class __4
+    {
+      name = "__4";
+      init = "[_vec, localize ""STR_DOM_MISSIONSTRING_269""] call d_fnc_VehicleChat;" \n
+       "_old_vec = _vec;" \n
+       "_timenow = time + 1.023;";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class __5
+    {
+      name = "__5";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class ammo_boxes____d
+        {
+          priority = 1.000000;
+          to="__6";
+          precondition = "";
+          condition="(X_JIPH getVariable ""d_num_ammo_boxes"") >= d_MaxNumAmmoboxes";
+          action="";
+        };
+        class _
+        {
+          priority = 0.000000;
+          to="__7";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class __6
+    {
+      name = "__6";
+      init = "[_vec, format [localize ""STR_DOM_MISSIONSTRING_1411"", d_MaxNumAmmoboxes]] call d_fnc_VehicleChat;" \n
+       "_old_vec = _vec;" \n
+       "_timenow = time + 1.023;";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class __7
+    {
+      name = "__7";
+      init = "[_vec, localize ""STR_DOM_MISSIONSTRING_1412""] call d_fnc_VehicleChat;" \n
+       "_oposvec = position _vec;" \n
+       "_oposvec set [2,0];" \n
+       "_timenow = time + 5;";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="__8";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class __8
+    {
+      name = "__8";
+      init = "_pvec2 = position _vec;" \n
+       "_pvec2 set [2,0];" \n
+       "if (_oposvec distance _pvec2 < 6) then {" \n
+       "	_vec setVariable [""d_ammobox"", true,true];" \n
+       "	_old_vec = _vec;" \n
+       "	[_vec, localize ""STR_DOM_MISSIONSTRING_1413""] call d_fnc_VehicleChat;" \n
+       "	X_JIPH setVariable [""d_num_ammo_boxes"",(X_JIPH getVariable ""d_num_ammo_boxes"") + 1, true];" \n
+       "} else {" \n
+       "	[_vec, localize ""STR_DOM_MISSIONSTRING_1414""] call d_fnc_VehicleChat;" \n
+       "};";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+  };
+  initState="Start";
+  finalStates[] =
+  {
+  };
+};

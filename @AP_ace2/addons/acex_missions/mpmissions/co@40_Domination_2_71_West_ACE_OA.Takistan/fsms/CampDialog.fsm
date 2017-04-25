@@ -1,0 +1,162 @@
+class FSM
+{
+  fsmName = "CampDialog";
+  class States
+  {
+    class Start
+    {
+      name = "Start";
+      init = "private [""_no"",""_wtype"",""_timenow"",""_curside"",""_progon"",""_wf""];" \n
+       "_wtype = d_wcamp;" \n
+       "_progon = false;" \n
+       "_timenow = time + 17;";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="Check_for_Camp";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class Check_for_Camp
+    {
+      name = "Check_for_Camp";
+      init = "_no =  (position player) nearObjects [_wtype, 12];" \n
+       "_timenow = time + 3;";
+      precondition = "";
+      class Links
+      {
+        class __count__no____0
+        {
+          priority = 1.000000;
+          to="Create_Check_Sid";
+          precondition = "";
+          condition="(count _no) > 0";
+          action="";
+        };
+        class Delay
+        {
+          priority = 0.000000;
+          to="Check_for_Camp";
+          precondition = "";
+          condition="time >= _timenow";
+          action="";
+        };
+      };
+    };
+    class Create_Check_Sid
+    {
+      name = "Create_Check_Sid";
+      init = "_curside = (_no select 0) getVariable ""D_SIDE"";" \n
+       "if (isNil ""_curside"") then {_curside = d_own_side_trigger};" \n
+       "_timenow = time + 3;";
+      precondition = "";
+      class Links
+      {
+        class _curside____d_own
+        {
+          priority = 1.000000;
+          to="Create_Dialog";
+          precondition = "";
+          condition="_curside != d_own_side_trigger";
+          action="";
+        };
+        class Delay
+        {
+          priority = 0.000000;
+          to="Check_for_Camp";
+          precondition = "";
+          condition="time >= _timenow";
+          action="";
+        };
+      };
+    };
+    class Create_Dialog
+    {
+      name = "Create_Dialog";
+      init = "// create dialog" \n
+       "_no =  (position player) nearObjects [_wtype, 8];" \n
+       "_curside = if (count _no > 0) then {" \n
+       "	(_no select 0) getVariable ""D_SIDE""" \n
+       "} else {" \n
+       "	""""" \n
+       "};" \n
+       "if (!_progon && count _no > 0 && _curside != d_own_side_trigger) then {" \n
+       "	_wf = _no select 0;" \n
+       "	3 cutRsc [""XProgressBar"",""PLAIN""];" \n
+       "	_progon = true;" \n
+       "};" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class __count__no____
+        {
+          priority = 1.000000;
+          to="Close_Dialog";
+          precondition = "";
+          condition="(count _no) == 0 || !alive player || _curside == d_own_side_trigger";
+          action="";
+        };
+        class _
+        {
+          priority = 0.000000;
+          to="Update_Dialog";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class Close_Dialog
+    {
+      name = "Close_Dialog";
+      init = "// close dialog" \n
+       "if (_progon) then {" \n
+       "	3 cutText["""", ""PLAIN""];" \n
+       "	_progon = false;" \n
+       "};" \n
+       "_timenow = time + 2;";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="Check_for_Camp";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class Update_Dialog
+    {
+      name = "Update_Dialog";
+      init = "[_wf] spawn d_fnc_ProgBarCall;" \n
+       "" \n
+       "_timenow = time + 1;";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="Create_Dialog";
+          precondition = "";
+          condition="time >= _timenow";
+          action="";
+        };
+      };
+    };
+  };
+  initState="Start";
+  finalStates[] =
+  {
+  };
+};

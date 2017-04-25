@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="ACE2">
+<Container name="sys_tankfcs">
+<Key ID="STR_ACE_TFCSLASE">
+<English>LASE</English>
+<Italian>LASE</Italian>
+<German>LASE</German>
+<Russian>ДАЛЬНОСТЬ</Russian>
+<French>ILLUMINER</French>
+<Spanish>LASE</Spanish>
+<Czech>ZMĚŘIT VZDÁLENOST</Czech>
+<Polish>Zmierz odległość</Polish>
+<Hungarian>MEGJ.</Hungarian>
+</Key>
+<Key ID="STR_ACE_TFCSDUMP">
+<English>DUMP</English>
+<Italian>DUMP</Italian>
+<German>DUMP</German>
+<Russian>СБРОС УПРЕЖД</Russian>
+<French>VIDER</French>
+<Spanish>DUMP</Spanish>
+<Czech>RESET PŘEDSAZENÍ</Czech>
+<Polish>Oblicz poprawkę</Polish>
+<Hungarian>TÖRÖL</Hungarian>
+</Key>
+<Key ID="STR_ACE_TFCSBSGT">
+<English>BSGT</English>
+<Italian>BSGT</Italian>
+<German>BSGT</German>
+<Russian>ПРЯМ ВЫСТР</Russian>
+<French>BSGT</French>
+<Spanish>BSGT</Spanish>
+<Czech>RESET FCS</Czech>
+<Polish>Resetuj SKO</Polish>
+<Hungarian>ALAP.</Hungarian>
+</Key>
+<Key ID="STR_ACE_TFCSFCSOFF">
+<English>FCS OFF</English>
+<Italian>FCS OFF</Italian>
+<German>FCS OFF</German>
+<Russian>ВЫКЛ ПРИЦЕЛ</Russian>
+<French>FCS OFF</French>
+<Spanish>FCS OFF</Spanish>
+<Czech>VYPNOUT FCS</Czech>
+<Polish>Wyłącz SKO</Polish>
+<Hungarian>TVR Ki</Hungarian>
+</Key></Container></Package></Project>

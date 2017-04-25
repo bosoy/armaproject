@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_huntir
+Pbo Type is: Arma Addon
+Sha: 'CC9D825EFDCBE5A8B2A14C951F670D5B75BBED51'
+//////</HEADER>//////

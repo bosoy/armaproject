@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2">
+<Package name="sys_magazines">
+<Container name="INTERACTION">
+<Key ID="STR_DN_ACE_MAGAZINES_MENU">
+<German>Magazine ></German>
+<English>Magazines ></English>
+<Italian>Magazines ></Italian>
+<Spanish>Magazines ></Spanish>
+<French>Magazines ></French>
+<Czech>Zásobníky ></Czech>
+<Russian>Магазины ></Russian>
+<Polish>Magazynki ></Polish>
+<Hungarian>Magazines ></Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_MAGAZINESREFILL_MENU">
+<German>Auffüllen</German>
+<English>Repack</English>
+<Italian>Repack</Italian>
+<Spanish>Repack</Spanish>
+<French>Repack</French>
+<Czech>Přepáskovat</Czech>
+<Russian>Переупаковать</Russian>
+<Polish>Załaduj ponownie</Polish>
+<Hungarian>Repack</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_MAGAZINESREFILL_PB">
+<German>Fülle Magazin auf</German>
+<English>Repacking magazine</English>
+<Italian>Repacking magazine</Italian>
+<Spanish>Repacking magazine</Spanish>
+<French>Repacking magazine</French>
+<Czech>Přepáskovat zásobník</Czech>
+<Russian>Переупаковывание магазинов</Russian>
+<Polish>Przepakowanie magazynków</Polish>
+<Hungarian>Repacking magazine</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_MAGAZINESCONVERT_MENU">
+<German>Konvertieren</German>
+<English>Convert</English>
+<Italian>Convert</Italian>
+<Spanish>Convert</Spanish>
+<French>Convert</French>
+<Czech>Zkonvertovat</Czech>
+<Russian>Перевести</Russian>
+<Polish>Przepakuj</Polish>
+<Hungarian>Convert</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_UNLOADWEAPON_MENU">
+<German>Waffe entladen</German>
+<English>Unload weapon</English>
+<Italian>Unload weapon</Italian>
+<Spanish>Unload weapon</Spanish>
+<French>Unload weapon</French>
+<Czech>Vybít zbraň</Czech>
+<Russian>Разрядить оружие</Russian>
+<Polish>Rozładowanie broni</Polish>
+<Hungarian>Unload weapon</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

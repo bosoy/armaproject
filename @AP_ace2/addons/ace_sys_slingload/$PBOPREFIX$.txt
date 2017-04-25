@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_slingload
+Pbo Type is: Arma Addon
+Sha: '3D73574E452F212A05F808B1A524E3A34646446A'
+//////</HEADER>//////

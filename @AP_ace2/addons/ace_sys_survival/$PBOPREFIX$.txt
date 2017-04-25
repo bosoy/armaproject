@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_survival
+Pbo Type is: Arma Addon
+Sha: '510E654A66821F3D93518A1E5EFD046F33B34C83'
+//////</HEADER>//////

@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex\addons\m_wep_sniper
+Pbo Type is: Arma Addon
+Sha: '4D262588A5023261446EDD2F20EADD8CEB100BA6'
+//////</HEADER>//////

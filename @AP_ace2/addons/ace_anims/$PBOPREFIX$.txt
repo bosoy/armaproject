@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\anims
+Pbo Type is: Arma Addon
+Sha: '52DA0411FA446F50C3E20F31320CD518EAF3C327'
+//////</HEADER>//////

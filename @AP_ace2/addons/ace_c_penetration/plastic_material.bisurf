@@ -1,0 +1,19 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 3.52
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class Ca : Data\Penetration\plastic_material.bisurf{
+Density = 780;
+rough = 0.1;
+dust = 0;
+bulletPenetrability = 500;
+soundEnviron = "Empty";
+isWater = "false";
+friction = 0.7;
+restitution = 0.3;
+impact = "default_Mat";
+soundHit = "plastic";
+//};

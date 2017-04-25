@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACE">
+<Package name="c_weapon">
+<Container name="STR_ACE_DN_ACTION">
+	<Key ID="STR_ACE_DN_ACTION_LOADMAGAZINE">
+	<Original>Load %1</Original>
+	<German>Laden %1</German>
+	<English>Load %1</English>
+	<Italian>Carica %1</Italian>
+	<Spanish>Cargar %1</Spanish>
+	<French>Charger %1</French>
+	<Czech>Nabít %1</Czech>
+	<Russian>Зарядить %1</Russian>
+	<Polish>Załaduj %1</Polish>
+	<Hungarian>%1 töltése</Hungarian>
+</Key>
+<Key ID="STR_ACE_DN_ACTION_FIRECONTROL">
+	<Original>Fire control</Original>
+	<German>Manuelles Feuern</German>
+	<English>Fire control</English>
+	<Italian>Fuoco manuale</Italian>
+	<Spanish>Fuego manual</Spanish>
+	<French>Tir manuel</French>
+	<Czech>Manuální střelba</Czech>
+	<Russian>Ручное управление огнем</Russian>
+	<Polish>Przejmij kontrolę ognia</Polish>
+	<Hungarian>Kézi tűzvezérlés</Hungarian>
+</Key>
+<Key ID="STR_ACE_DN_ACTION_DISABLEFIRECONTROL">
+	<Original>Disable fire control</Original>
+	<German>Manuelles Feuern abbrechen</German>
+	<English>Disable fire control</English>
+	<Italian>Disattiva fuoco manuale</Italian>
+	<Spanish>Cancelar fuego manual</Spanish>
+	<French>Annuler tir manuel</French>
+	<Czech>Zrušit manuální střelbu</Czech>
+	<Russian>Отмена ручного управления огнем</Russian>
+	<Polish>Oddaj kontrolę ognia</Polish>
+	<Hungarian>Kézi tűzvezérlés ki</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

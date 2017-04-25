@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="sys_arty">
+<!-- DISPLAYNAMES -->
+<Container name="STR_ACE_VC_OBJECTS">
+<Key ID="STR_ACE_ARTY_VEHCLS_HOWITZERS">
+<German>Æ Statisch (Art.)</German>
+<English>Æ Arty Howitzers</English>
+<Italian>Æ Arty Howitzers</Italian>
+<Spanish>Æ Arty Howitzers</Spanish>
+<French>Æ Arty Howitzers</French>
+<Czech>Æ Dělostřelecké houfnice</Czech>
+<Russian>Æ Артиллерия гаубицы</Russian>
+<Polish>Æ Działa artyleryjskie</Polish>
+<Hungarian>Æ Arty Howitzers</Hungarian>
+</Key>
+<Key ID="STR_ACE_ARTY_VEHCLS_AMMO">
+<German>Æ Munition (Art.)</German>
+<English>Æ Ammunition (Arty)</English>
+<Italian>Æ Ammunition (Arty)</Italian>
+<Spanish>Æ Ammunition (Arty)</Spanish>
+<French>Æ Ammunition (Arty)</French>
+<Czech>Æ Munice (Dělostřel.)</Czech>
+<Russian>Æ Боеприпасы (Артиллерия)</Russian>
+<Polish>Æ Amunicja (artyleria)</Polish>
+<Hungarian>Æ Ammunition (Arty)</Hungarian>
+</Key>
+<Key ID="STR_ACE_ARTY_VEHCLS_EQUIPMENT">
+<German>Æ Ausrüstung (Art.)</German>
+<English>Æ Arty Equipment</English>
+<Italian>Æ Arty Equipment</Italian>
+<Spanish>Æ Arty Equipment</Spanish>
+<French>Æ Arty Equipment</French>
+<Czech>Æ Dělostřelecké vybavení</Czech>
+<Russian>Æ Артиллерия оборудование</Russian>
+<Polish>Æ Wyposażenie artyleryjskie</Polish>
+<Hungarian>Æ Arty Equipment</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

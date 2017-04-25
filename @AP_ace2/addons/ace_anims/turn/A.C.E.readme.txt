@@ -1,0 +1,59 @@
+///////////////////////////////////////////////////////////////////////////////
+#                                                                             #
+#                       ADVANCED COMBAT ENVIRONMENT FILE                      #
+#                                                                             #
+///////////////////////////////////////////////////////////////////////////////
+
+
+#====================#
+| A.C.E. release tag |
+#====================#
+
+A.C.E private alpha v20, 2008-10-17 (17th of October, 2008)
+
+#===========#
+| Component |
+#===========#
+
+ace_anims_turn
+
+#================#
+| Main author(s) |
+#================#
+
+q1184
+
+#===============#
+| Local credits |
+#===============#
+
+
+#=============================#
+| Rough component description |
+#=============================#
+
+Turn speeds.
+
+#=================#
+| Contact details |
+#=================#
+
+Mail:	contact@acemod.net 
+Page:	http://www.acemod.net/forums/index.php
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+#                                                                             #
+#                       ADVANCED COMBAT ENVIRONMENT FILE                      #
+#                                                                             #
+///////////////////////////////////////////////////////////////////////////////
+//                                                                           //
+#               Copyright 2003-2008 A.C.E MOD, ALL RIGHTS RESERVED            #
+//                                                                           //
+// This product is licensed for personal use only.  Commercial distribution  //
+//  prohibitted.  Military use prohibitted.  For further licensing details   //
+//  please refer to the End User License Agreement provided within this PBO  //
+//  file.  Any questions or comments, please contact contact@acemod.net      //
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////

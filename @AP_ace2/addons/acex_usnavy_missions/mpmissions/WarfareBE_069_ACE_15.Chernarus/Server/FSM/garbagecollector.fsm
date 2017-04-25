@@ -1,0 +1,165 @@
+/*%FSM<COMPILE "D:\ArmA2\FSM Editor Personal Edition\scriptedFSM.cfg, garbagecollector">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Init",0,250,27.096645,-357.382507,117.096680,-307.382507,0.000000,"Init"};
+item1[] = {"Loop",4,218,349.567535,-189.804108,439.567596,-139.804062,0.000000,"Loop"};
+item2[] = {"End",1,250,35.343773,-97.642059,125.343819,-47.642326,0.000000,"End"};
+item3[] = {"Arrowhead_Garbag",2,4346,201.635025,-189.872375,291.634949,-139.872375,0.000000,"Arrowhead" \n "Garbage"};
+item4[] = {"Loop",4,218,-301.789124,-191.088837,-211.789047,-141.088791,0.000000,"Loop"};
+item5[] = {"Vanilla",4,218,-28.368071,-262.232788,61.631752,-212.232986,0.000000,"Vanilla"};
+item6[] = {"Arrowhead",4,218,94.700302,-263.344727,184.700043,-213.344574,0.000000,"Arrowhead"};
+item7[] = {"Vanilla_Garbage",2,250,-153.091797,-191.262604,-63.091869,-141.262650,0.000000,"Vanilla" \n "Garbage"};
+item8[] = {"Gameover",4,218,34.943623,-190.869827,124.943687,-140.869797,0.000000,"Gameover"};
+link0[] = {0,5};
+link1[] = {0,6};
+link2[] = {1,3};
+link3[] = {3,1};
+link4[] = {3,8};
+link5[] = {4,7};
+link6[] = {5,7};
+link7[] = {6,3};
+link8[] = {7,4};
+link9[] = {7,8};
+link10[] = {8,2};
+globals[] = {0.000000,0,0,0,0,640,480,1,38,6316128,1,-314.217926,456.388641,91.977463,-442.708069,748,514,1};
+window[] = {0,-1,-1,-1,-1,659,25,1285,25,1,766};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "garbagecollector";
+  class States
+  {
+    /*%FSM<STATE "Init">*/
+    class Init
+    {
+      name = "Init";
+      init = /*%FSM<STATEINIT""">*/"_lastUpdate = time;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Arrowhead">*/
+        class Arrowhead
+        {
+          priority = 0.000000;
+          to="Arrowhead_Garbag";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!WF_A2_Vanilla"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Vanilla">*/
+        class Vanilla
+        {
+          priority = 0.000000;
+          to="Vanilla_Garbage";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"WF_A2_Vanilla"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End">*/
+    class End
+    {
+      name = "End";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Arrowhead_Garbag">*/
+    class Arrowhead_Garbag
+    {
+      name = "Arrowhead_Garbag";
+      init = /*%FSM<STATEINIT""">*/"_lastUpdate = time;" \n
+       "" \n
+       "/* Units Removal */" \n
+       "" \n
+       "_whq = (west) Call GetSideHQ;" \n
+       "_ehq = (East) Call GetSideHQ;" \n
+       "" \n
+       "{" \n
+       "	if (!(_x in trashQueu) && !(_x in ignoreQueu) && !(_x in playableUnits) && (_x != _whq) && (_x != _ehq)) then {" \n
+       "		_x Spawn TrashObject;" \n
+       "	};" \n
+       "} forEach allDead;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Gameover">*/
+        class Gameover
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"gameOver"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Loop">*/
+        class Loop
+        {
+          priority = 0.000000;
+          to="Arrowhead_Garbag";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _lastUpdate > 30 && !gameOver"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Vanilla_Garbage">*/
+    class Vanilla_Garbage
+    {
+      name = "Vanilla_Garbage";
+      init = /*%FSM<STATEINIT""">*/"_objects = WF_Logic getVariable ""trash"";" \n
+       "{" \n
+       "	if !(_x in trashQueu) then {" \n
+       "		_objects2 = WF_Logic getVariable ""trash"";" \n
+       "		trashQueu = trashQueu + [_x];" \n
+       "		_x Spawn TrashObject;" \n
+       "		_renewed = _objects2 - [_x] - [objNull];" \n
+       "		WF_Logic setVariable [""trash"",_renewed,true];" \n
+       "	};" \n
+       "} forEach _objects;" \n
+       "" \n
+       "_lastUpdate = time;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Gameover">*/
+        class Gameover
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"gameOver"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Loop">*/
+        class Loop
+        {
+          priority = 0.000000;
+          to="Vanilla_Garbage";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _lastUpdate > 0.5 && !gameOver"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Init";
+  finalStates[] =
+  {
+    "End"
+  };
+};
+/*%FSM</COMPILE>*/

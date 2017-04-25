@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_turret_indicator
+Pbo Type is: Arma Addon
+Sha: 'B12ACB01A0C11E7997631F2DA70CDACA7F116CC7'
+//////</HEADER>//////

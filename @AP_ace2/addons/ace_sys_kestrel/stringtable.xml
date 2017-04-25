@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACE">
+<Package name="sys_wind_deflection">
+<Container name="STR_ACE_UA">
+<Key ID="STR_ACE_UA_TURNON_KESTREL">
+<German>Kestrel 4500</German>
+<English>Kestrel 4500</English>
+<Italian>Kestrel 4500</Italian>
+<Spanish>Kestrel 4500</Spanish>
+<French>Kestrel 4500</French>
+<Czech>Kestrel 4500</Czech>
+<Russian>Kestrel 4500</Russian>
+<Polish>Kestrel 4500</Polish>
+<Hungarian>Kestrel 4500</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

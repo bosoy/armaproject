@@ -1,0 +1,36 @@
+execVM "LightsOutFOB.sqf"
+showCinemaBorder false
+camUseNVG true
+titlecut ["","BLACK IN", 5]
+1 cutRsc ["Credit1", "PLAIN",3]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal", "back"]
+playMusic "AM92Intro"
+
+;=== 0:05:29
+_camera camPrepareTarget [-18054.53,-82655.46,-2874.18]
+_camera camPreparePos [12066.94,12651.85,2.20]
+_camera camPrepareFOV 0.700
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+~0
+
+;=== 0:21:08
+_camera camPrepareTarget [-46058.16,-68168.93,-7924.59]
+_camera camPreparePos [12129.17,12751.77,6.07]
+_camera camPrepareFOV 0.700
+_camera camCommitPrepared 23
+@camCommitted _camera
+
+titlecut ["","BLACK OUT", 10]
+2 cutRsc ["Credit2", "PLAIN",3]
+
+~10
+
+titlecut [" ","BLACK IN", 5]
+
+Player cameraEffect ["terminate", "back"]
+camDestroy _camera
+endMission "END1";
+Exit;

@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex\addons\t_wep_shotgun
+Pbo Type is: Arma Addon
+Sha: 'B56AC3E669F87C747E60BB236161C88D349506C4'
+//////</HEADER>//////

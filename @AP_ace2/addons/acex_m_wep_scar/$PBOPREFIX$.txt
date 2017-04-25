@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex\addons\m_wep_scar
+Pbo Type is: Arma Addon
+Sha: '04FBCF2145F91F9FB80E12AF35B6BA5B3FD58C44'
+//////</HEADER>//////

@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=dac_source
+Pbo Type is: Arma Addon
+Sha: '47C797D87AEF8AE54E7F38E25856F541B094EE1C'
+//////</HEADER>//////

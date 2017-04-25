@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2">
+<Package name="ACE2">
+<Container name="STR_DN">
+<Key ID="STR_DN_ACE_SMAW_SPOTTINGMAG">
+<English>SMAW special magazine</English>
+<German>SMAW Spezialpatrone</German>
+<Spanish>SMAW special magazine</Spanish>
+<Czech>SMAW Zás. Speciální</Czech>
+<Russian>SMAW пристрелочный маг.</Russian>
+<Italian>SMAW Caricatore Speciale</Italian>
+<Polish>Magazynek karabinka SMAW</Polish>
+<French>SMAW special magazine</French>
+<Hungarian>SMAW különleges tár</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_SMAW_SPOTTINGRIFLE">
+<German>SMAW-Zielhilfe</German>
+<English>SMAW Spotting</English>
+<Italian>SMAW Intelligente</Italian>
+<Spanish>Señalador SMAW</Spanish>
+<French>Observ. SMAW</French>
+<Czech>Vyhledávač SMAW</Czech>
+<Russian>Пристрелка SMAW</Russian>
+<Polish>Karabinek testowy SMAW</Polish>
+<Hungarian>SMAW mérő lőszer</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

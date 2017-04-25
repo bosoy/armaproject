@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="ACE2"><Container name="sys_handsignals">
+<Key ID="STR_ACE_HANDSIGNALS">
+<English>Handsignal:</English>
+<German>Handzeichen:</German>
+<Spanish>Handsignal:</Spanish>
+<Czech>Posunky:</Czech>
+<Russian>Жесты:</Russian>
+<Italian>Handsignal:</Italian>
+<Polish>Sygnały ręczne:</Polish>
+<French>Handsignal:</French>
+<Hungarian>Handsignal:</Hungarian>
+</Key>
+<Key ID="STR_ACE_HANDSIGNAL_FREEZE">
+<English>Stop</English>
+<German>Stop</German>
+<Spanish>Parar</Spanish>
+<Czech>Stop</Czech>
+<Russian>Стоп</Russian>
+<Italian>Alt</Italian>
+<Polish>Stop</Polish>
+<French>Arrêt</French>
+<Hungarian>Stop</Hungarian>
+</Key>
+<Key ID="STR_ACE_HANDSIGNAL_GO">
+<English>Go</English>
+<German>Los</German>
+<Spanish>Ya</Spanish>
+<Czech>Dělej</Czech>
+<Russian>Иди</Russian>
+<Italian>Via</Italian>
+<Polish>Naprzód</Polish>
+<French>Partez</French>
+<Hungarian>Mozgás</Hungarian>
+</Key>
+<Key ID="STR_ACE_HANDSIGNAL_TAKECOVER">
+<English>Take cover</English>
+<German>Deckung</German>
+<Spanish>A cubierto</Spanish>
+<Czech>Krejte se</Czech>
+<Russian>В укрытие</Russian>
+<Italian>Al riparo</Italian>
+<Polish>Kryć się</Polish>
+<French>À couvert</French>
+<Hungarian>Fedezékbe</Hungarian>
+</Key>
+<Key ID="STR_ACE_HANDSIGNAL_OPENFIRE">
+<English>Open fire</English>
+<German>Feuer</German>
+<Spanish>Abrir fuego</Spanish>
+<Czech>Střílet</Czech>
+<Russian>Открыть огонь</Russian>
+<Italian>Aprire il fuoco</Italian>
+<Polish>Otworzyć ogień</Polish>
+<French>Ouvrir le feu</French>
+<Hungarian>Tüzelhet ha akar</Hungarian>
+</Key>
+<Key ID="STR_ACE_HANDSIGNAL_CEASEFIRE">
+<English>Cease Fire</English>
+<German>Feuer einstellen</German>
+<Spanish>Alto el fuego</Spanish>
+<Czech>Zastavit palbu</Czech>
+<Russian>Отставить огонь</Russian>
+<Italian>Cessare il fuoco</Italian>
+<Polish>Wstrzymać ogień</Polish>
+<French>Halte au feu</French>
+<Hungarian>Tüzet szüntess</Hungarian>
+</Key>
+<Key ID="STR_ACE_HANDSIGNAL_FOLLOW">
+<English>Follow</English>
+<German>Folgen</German>
+<Spanish>Seguir</Spanish>
+<Czech>Následuj</Czech>
+<Russian>Следовать</Russian>
+<Italian>Seguire</Italian>
+<Polish>Podążanie</Polish>
+<French>Suivre</French>
+<Hungarian>Követés</Hungarian>
+</Key>
+<Key ID="STR_ACE_HANDSIGNAL_UP">
+<English>Up</English>
+<German>Aufstehen</German>
+<Spanish>En pie</Spanish>
+<Czech>Vstát</Czech>
+<Russian>Положение стоя</Russian>
+<Italian>Alzarsi</Italian>
+<Polish>Wstać</Polish>
+<French>Debout</French>
+<Hungarian>Állj fel</Hungarian>
+</Key>
+<Key ID="STR_ACE_HANDSIGNAL_ADVANCE">
+<English>Advance</English>
+<German>Vorrücken</German>
+<Spanish>Avanza</Spanish>
+<Czech>Postoupit</Czech>
+<Russian>Вперед</Russian>
+<Italian>Avanzare</Italian>
+<Polish>Naprzód</Polish>
+<French>Avancer</French>
+<Hungarian>Előre tarts</Hungarian>
+</Key>
+<Key ID="STR_ACE_HANDSIGNAL_WATCH">
+<English>Watch Direction</English>
+<German>Richtung beobachten</German>
+<Spanish>Vigilar dirección</Spanish>
+<Czech>Sledujte směr</Czech>
+<Russian>Направление обзора</Russian>
+<Italian>Osservare direzione</Italian>
+<Polish>Kierunek obserwacji</Polish>
+<French>Observer direction</French>
+<Hungarian>Figyelj ebbe az irányba…</Hungarian>
+</Key>
+<Key ID="STR_ACE_TITLE_HANDSIGNALS">
+<English>Show Handsignals</English>
+<German>Handzeichen aktivieren</German>
+<Spanish>Show Handsignals</Spanish>
+<Czech>Posunky</Czech>
+<Russian>Жесты</Russian>
+<Italian>Show Handsignals</Italian>
+<Polish>Sygnały ręczne</Polish>
+<French>Show Handsignal</French>
+<Hungarian>Show Handsignal</Hungarian>
+</Key>
+<Key ID="STR_ACE_HANDSIGNALS_PIC">
+<English>hand_signals_en.paa</English>
+<German>hand_signals_de.paa</German>
+<Spanish>hand_signals_en.paa</Spanish>
+<Czech>hand_signals_cz.paa</Czech>
+<Russian>hand_signals_ru.paa</Russian>
+<Italian>hand_signals_en.paa</Italian>
+<Polish>hand_signals_pl.paa</Polish>
+<French>hand_signals_en.paa</French>
+<Hungarian>hand_signals_en.paa</Hungarian>
+</Key>
+</Container></Package></Project>

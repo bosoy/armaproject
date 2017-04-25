@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ArmA2_ACE2">
+<Package name="c_veh_su30">
+<Container name="STR_ACE_VDN">
+<Key ID="STR_ACE_VDN_SU30">
+<English>Su-30 Flanker-C</English>
+<Czech>Su-30 Flanker-C</Czech>
+<German>Su-30 Flanker-C</German>
+<Polish>Su-30 Flanker-C</Polish>
+<Russian>Су-30</Russian>
+<French>Su-30 Flanker-C</French>
+<Spanish>Su-30 Flanker-C</Spanish>
+<Italian>Su-30 Flanker-C</Italian>
+<Hungarian>Szu-30 Flanker-C</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_SU30_MR">
+<English>Su-30 Flanker-C MR</English>
+<Czech>Su-30 Flanker-C MR</Czech>
+<German>Su-30 Flanker-C MR</German>
+<Polish>Su-30 Flanker-C MR</Polish>
+<Russian>Су-30 МР</Russian>
+<French>Su-30 Flanker-C MR</French>
+<Spanish>Su-30 Flanker-C MR</Spanish>
+<Italian>Su-30 Flanker-C MR</Italian>
+<Hungarian>Szu-30 Flanker-C MR</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

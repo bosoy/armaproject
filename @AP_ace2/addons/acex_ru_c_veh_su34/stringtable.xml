@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ArmA2_ACE2">
+<Package name="c_veh_su34">
+<Container name="STR_ACE_VDN">
+<Key ID="STR_ACE_VDN_SU34_MR">
+<English>Su-34 Fullback MR</English>
+<Czech>Su-34 Fullback MR</Czech>
+<German>Su-34 Fullback MR</German>
+<Polish>Su-34 Fullback MR</Polish>
+<Russian>Су-34 МР</Russian>
+<French>Su-34 Fullback MR</French>
+<Spanish>Su-34 Fullback MR</Spanish>
+<Italian>Su-34 Fullback MR</Italian>
+<Hungarian>Szu-34 Fullback MR</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

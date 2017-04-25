@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_sight_adjustment_rifle
+Pbo Type is: Arma Addon
+Sha: 'C8D9E1BB2523C40D2E93C908918E44D8E424F39F'
+//////</HEADER>//////

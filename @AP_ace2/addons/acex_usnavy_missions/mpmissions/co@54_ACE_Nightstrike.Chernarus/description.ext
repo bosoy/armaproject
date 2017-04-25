@@ -1,0 +1,33 @@
+onLoadMission = "ACE Nightstrike";
+OnLoadMissionTime = False;
+
+class Header
+{
+	gameType = coop;
+	minPlayers = 1;
+	maxPlayers = 54;
+};
+
+//showgps = 1;
+ShowWatch = 1;
+ShowCompass = 1;
+//disabledAI = 1;
+respawn = INSTANT;
+respawnDelay = 45;
+
+class Params {
+	class d_WithAcre {
+		title = "With ACRE support:";
+		values[] = {0,1};
+		default = 1;
+		texts[] = {"Yes","No"};
+	};
+};
+
+// Homer Johnston's flashlight-signalling dialog - made for Operation Mongoose. May be released on the forums at OFPEC, check there for better versions
+
+#include "dlg\MyDialogDefines.hpp"
+#include "dlg\MyRscClasses.hpp"
+
+#include "dlg\FlashlightSignals.hpp"
+#include "dlg\FlashlightCodeOverlay.hpp"

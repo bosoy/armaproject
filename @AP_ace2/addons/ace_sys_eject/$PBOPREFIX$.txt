@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_eject
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: 'D6C40460362ABF46D3BECB37C4F716A06A0B6866'
+//////</HEADER>//////

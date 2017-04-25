@@ -1,0 +1,75 @@
+<html>
+<body>
+
+<h2><a name="Main"></a></h2>
+<h2 align="center">MCC Console</h2>
+<h4>
+<br>
+Left panel shows actual contacts with their ranges and sides. Contacts closer than missile's seeker range will be shown with an "A" (active seeker shot), the rest with an "I" (inertial guidance shot). Depending on the type of targets, Map marker may be listed too.
+<br>
+<br>
+To fire a missile, first select a contact clicking on it and then click "Target Selected Contact" button. The right panel will show updated information about the target. When TTI (time to impact) is smaller than missile's endurance, you may fire a missile. After firing a missile, the system will take few seconds before allowing to fire a new one (you will see the fire missile button grayed meanwhile).
+<br>
+<br>
+A missile fired against a target beyond its seeker range will fly in inertial modes 0 and 1 until it reaches the pre-caculated seeker activation point (the altitude above sea level of that point may be entered manually, entered altitude is ASL over target altitude), then the missile will switch on its own seeker to pursue the target. If the target changed its course drastically while the missile was flying in inertial mode, probably the missile will see "nothing" when it activates its onboard seeker.
+<br>
+<br>
+The small map to the left has two purposes: track indicated object (contact, target or MCC vehicle) and change the position of the map mark (yellow mark). To change the position of the map mark just left-click over the desired position of the map. Make sure the map is "free" so you can zoom/pan it. If the NAV/MARK button is indicating NAV and your vehicle has a driver, it will be commanded to move to the new placement of the map mark (using this mark you may effectively control the driver of the MCC vehicle). If that button is indicating MARK, when left-clicking over the map you will change the position of the mark but the driver will not receive any move command. Depending on the type of targets for the MCC, that map mark may be listed in the list of targets, so you may select it and fire against it. This way you may zoom over map structures, place the mark over them and attack them (note that the mark will be shown in your contact list only if it is in-range).
+<br>
+<br>
+The dark green firing solution circle in the center will turn bright green when the target is inside launcher horizontal scan arc considering the launching direction if the launching direction is fixed. "IN RANGE" message will be shown inside that circle when the calculated Time To Impact (TTI in the right console) is smaller than the endurace of the type of missile used. If the target is moving fast towards the MCC launcher, it may be safe even to fire a missile without "IN RANGE" message displayed.
+<br>
+<br>
+</h4>
+<h2 align="center">MCC Controls</h2>
+<h4>
+<br>
+<br>
+Contact list:
+<br>
+<br>
+Shows the current list of contacts available to be selected as targets (which depends on the available target types for the MCC). Contacts detected by MCC radar are listed as "Contact#", remote contacts transmitted by other friendly units are listed as "Remote target", active surface radar emitters are listed as "Active surface Radar", interceptable missiles are listed as "Missile" and the map mark is listed as "Contact# (MAP MARK)". 
+<br>
+<br>
+<br>
+<br>
+Target Selected Contact button:
+<br>
+<br>
+Marks as target the last selected contact from the contact list. The MCC will start tracking that contact and will show target data in the right console.
+<br>
+<br>
+<br>
+<br>
+Left console map and map buttons:
+<br>
+<br>
+The map may work in several modes: tracking current contact, tracking current target, tracking the MCC vehicle or free so the player may zoom/pan at will. When tracking a contact, the contact will be displayed as an small green square. When tracking a target, the target will be displayed as a green arrow and a small green dot will mark the pre-calculated point of impact if a missile is fired against the target. When tracking the MCC, the MCC will be displayed with four green small arrows pointing to the MCC position. In free mode the player may zoom and pan the map at will and may also rightclick to change the placement of the "map mark". In NAV mode, re-positioning the "map mark" will also command the MCC vehicle driver to move there. Depending on the available target types of the MCC, the "mark map" itself may be marked as target, so you may place the mark over any ground structure and fire against it.
+<br>
+<br>
+<br>
+<br>
+Alt ASL modes 0/1:
+<br>
+<br>
+Entry here the altitude above target level that should be kept by the missile when flying in inertial mode. Lower altitudes makes the missile hard to see by the enemy, but the probabilities of impact against ground obstacles will be high.
+<br>
+<br>
+<br>
+<br>
+Missile Camera button:
+<br>
+<br>
+This button allows you to turn on/off the missile camera. If turned on, the camera will follow the last fired missile in-flight. If you click the button while the camera is following a missile, you will return to normal MCC view. Low FPS may occur if the camera overflies complex and not pre-cached terrain while following the missile.
+<br>
+<br>
+<br>
+<br>
+Fire Missile button:
+<br>
+<br>
+Fires a missile. This button will be grayed after firing a missile as many seconds as indicated by the configured ratio of fire of each MCC unit.
+</h4>
+<hr>
+</body>
+</html>

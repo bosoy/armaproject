@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex_usnavy\addons\c_men
+Pbo Type is: Arma Addon
+Sha: '4C805336D0D7D5F5FCEEF3AAAFFCDAD4B148BC9D'
+//////</HEADER>//////

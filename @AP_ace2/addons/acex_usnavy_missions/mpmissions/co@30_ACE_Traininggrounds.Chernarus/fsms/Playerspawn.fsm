@@ -1,0 +1,103 @@
+/*%FSM<COMPILE "D:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, Playerspawn">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Start_",0,4346,65.870651,493.431152,155.870636,543.431152,0.000000,"Start" \n ""};
+item1[] = {"Not_alive_player",4,218,66.768272,592.349854,156.768433,642.349854,0.000000,"Not alive player"};
+item2[] = {"Save_Weapons",2,250,-61.697655,658.367004,28.302345,708.367004,0.000000,"Save Weapons"};
+item3[] = {"Alive_Player",4,218,73.905243,727.060608,163.905273,777.060608,0.000000,"Alive Player"};
+item4[] = {"Restore_Weapons",2,250,215.753021,652.122253,305.753021,702.122253,0.000000,"Restore Weapons"};
+link0[] = {0,1};
+link1[] = {1,2};
+link2[] = {2,3};
+link3[] = {3,4};
+link4[] = {4,1};
+globals[] = {0.000000,0,0,0,0,640,480,1,9,6316128,1,-276.305664,479.323303,1205.259521,442.493500,847,855,1};
+window[] = {2,-1,-1,-32000,-32000,747,29,1147,29,3,865};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "Playerspawn";
+  class States
+  {
+    /*%FSM<STATE "Start_">*/
+    class Start_
+    {
+      name = "Start_";
+      init = /*%FSM<STATEINIT""">*/"private [""_weapons"", ""_magazines"", ""_p"", ""_primw"", ""_muzzles""];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Not_alive_player">*/
+        class Not_alive_player
+        {
+          priority = 0.000000;
+          to="Save_Weapons";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!alive player"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Save_Weapons">*/
+    class Save_Weapons
+    {
+      name = "Save_Weapons";
+      init = /*%FSM<STATEINIT""">*/"_weapons = weapons player;" \n
+       "_magazines = magazines player;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Alive_Player">*/
+        class Alive_Player
+        {
+          priority = 0.000000;
+          to="Restore_Weapons";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"alive player"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Restore_Weapons">*/
+    class Restore_Weapons
+    {
+      name = "Restore_Weapons";
+      init = /*%FSM<STATEINIT""">*/"_p = player;" \n
+       "removeAllItems _p;" \n
+       "removeAllWeapons _p;" \n
+       "{_p addMagazine _x;} forEach _magazines;" \n
+       "{_p addWeapon _x;} forEach _weapons;" \n
+       "_primw = primaryWeapon _p;" \n
+       "if (_primw != """") then {" \n
+       "    _p selectWeapon _primw;" \n
+       "    // Fix for weapons with grenade launcher" \n
+       "    _muzzles = getArray(configFile>>""cfgWeapons"" >> _primw >> ""muzzles"");" \n
+       "    _p selectWeapon (_muzzles select 0);" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Not_alive_player">*/
+        class Not_alive_player
+        {
+          priority = 0.000000;
+          to="Save_Weapons";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!alive player"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Start_";
+  finalStates[] =
+  {
+  };
+};
+/*%FSM</COMPILE>*/

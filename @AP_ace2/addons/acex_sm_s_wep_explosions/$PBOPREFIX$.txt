@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex_sm\addons\s_wep_explosions
+Pbo Type is: Arma Addon
+Sha: 'C1708AB442D2C073FB79A3BCFC70B589B7547449'
+//////</HEADER>//////

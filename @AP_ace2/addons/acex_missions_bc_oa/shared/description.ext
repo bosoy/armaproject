@@ -1,0 +1,19 @@
+// TODO: Evaluate External includes on deddys
+
+#include "script_component.hpp"
+
+#include "\x\acex\addons\missions_bc_oa\bc\descDefault.hpp"
+#include "\x\acex\addons\missions_bc_oa\bc\desc.hpp"
+
+// Load ace_sys_bc\missionInit.sqf
+class Extended_PreInit_Eventhandlers {
+	class GVAR(missionInit) {
+		init = QUOTE(GVAR(default_startPos) = [BC_STARTPOS]; GVAR(default_spawnPos) = [BC_SPAWNPOS]; call COMPILE_FILE(missionInit));
+	};
+};
+
+class Extended_PostInit_Eventhandlers {
+	class GVAR(missionInit) {
+		clientInit = QUOTE(execVM 'PATHTO(briefing)');
+	};
+};

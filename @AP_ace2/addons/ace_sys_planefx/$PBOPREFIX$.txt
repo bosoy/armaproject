@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_planefx
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: '93402BE01B6766F18A7062DFE5520E880B4B62DD'
+//////</HEADER>//////

@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\c_veh_lights
+Pbo Type is: Arma Addon
+Sha: 'AF0A85CA9DE07B6D311F3C4F9B66E487B50C3E84'
+//////</HEADER>//////

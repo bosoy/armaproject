@@ -1,0 +1,19 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 3.52
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class Ca : Data\Penetration\meat.bisurf{
+Density = 200;
+bulletPenetrability = 500;
+soundEnviron = "Empty";
+isWater = "false";
+impact = "Hit_Rubber";
+soundHit = "body";
+rough = 0.1;
+dust = 0;
+friction = 0.9;
+restitution = 0.5;
+//};

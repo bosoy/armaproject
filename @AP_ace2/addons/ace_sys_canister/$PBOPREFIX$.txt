@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_canister
+Pbo Type is: Arma Addon
+Sha: '2BF61E3D997948E4D65A3579CE43CC0536E45AD1'
+//////</HEADER>//////

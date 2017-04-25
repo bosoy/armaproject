@@ -1,0 +1,18 @@
+////////////////////////////////////////////////////////////////////
+//Produced from mikero's Dos Tools using dll 2.71
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class no_lighting.rvmat{
+ambient[] = {1.1,1.1,1.1,1.1};
+diffuse[] = {0,0,0,0};
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {0,0,0,0};
+specular[] = {0,0,0,0};
+specularPower = 100;
+renderFlags[] = {"NoZWrite"};
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";
+//};

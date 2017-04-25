@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2">
+<Package name="ACE2">
+<Container name="STR_DN">
+<Key ID="STR_ACE_SA_CLOSE">
+<English>Close table</English>
+<German>Schließen</German>
+<Spanish>Close table</Spanish>
+<Czech>Zavřít tabulku</Czech>
+<Russian>Закр. таб.</Russian>
+<Italian>Chiudi Tabella</Italian>
+<Polish>Zamknij tabelę</Polish>
+<French>Fermer table</French>
+<Hungarian>Tábl. bezárása</Hungarian>
+</Key>
+<Key ID="STR_ACE_SA_TandE">
+<English>Use T-E</English>
+<German>T-E</German>
+<Spanish>Use T-E</Spanish>
+<Czech>Použít T-E</Czech>
+<Russian>Исп. T-E</Russian>
+<Italian>Usa T-E</Italian>
+<Polish>Pomocnik T-E</Polish>
+<French>Utiliser T-E</French>
+<Hungarian>T-E Haszn.</Hungarian>
+</Key>
+<Key ID="STR_ACE_SA_TandE_END">
+<English>End using T-E</English>
+<German>T-E beenden</German>
+<Spanish>End using T-E</Spanish>
+<Czech>Ukončit T-E</Czech>
+<Russian>Завершить исп. T-E</Russian>
+<Italian>Fine Uso T-E</Italian>
+<Polish>Wyłącz pomocnika T-E</Polish>
+<French>Arreter T-E</French>
+<Hungarian>T-E kikapcs.</Hungarian>
+</Key>
+<Key ID="STR_ACE_SA_SA">
+<English>Sight Adjustment</English>
+<German>Visiereinstellung</German>
+<Spanish>Sight Adjustment</Spanish>
+<Czech>Kalibrace Mířidel</Czech>
+<Russian>Регулировка прицела</Russian>
+<Italian>Regola Mira</Italian>
+<Polish>Kalibracja celownika</Polish>
+<French>Reglage de la mire</French>
+<Hungarian>Irányzék állítás</Hungarian>
+</Key>
+<Key ID="STR_ACE_SA_deg">
+<English>deg</English>
+<German>Grad</German>
+<Spanish>deg</Spanish>
+<Czech>stupňů</Czech>
+<Russian>град.</Russian>
+<Italian>deg</Italian>
+<Polish>stopni</Polish>
+<French>deg</French>
+<Hungarian>fok</Hungarian>
+</Key>
+<Key ID="STR_ACE_SA_RANGETABLE">
+<English>Range table</English>
+<German>Tabelle</German>
+<Spanish>Range table</Spanish>
+<Czech>Tabulka náměrů</Czech>
+<Russian>Таб. дальн.</Russian>
+<Italian>Tabella delle Distanze</Italian>
+<Polish>Tabela balistyczna</Polish>
+<French>Range table</French>
+<Hungarian>Táv. tábl.</Hungarian>
+</Key>
+<Key ID="STR_ACE_SA_CONFIRM">
+<English>Confirm</English>
+<German>Anwenden</German>
+<Spanish>Confirm</Spanish>
+<Czech>Potvrdit</Czech>
+<Russian>Подтв.</Russian>
+<Italian>Conferma</Italian>
+<Polish>Ustaw</Polish>
+<French>Confirmer</French>
+<Hungarian>Megerősít</Hungarian>
+</Key>
+<Key ID="STR_ACE_SA_ATGL_RANGE">
+<English>Range</English>
+<German>Reichweite</German>
+<Spanish>Range</Spanish>
+<Czech>Vzdálenost</Czech>
+<Russian>Дист.</Russian>
+<Italian>Distanza</Italian>
+<Polish>Odległość</Polish>
+<French>Distance</French>
+<Hungarian>Táv.</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_carglass
+Pbo Type is: Arma Addon
+Sha: '17ACAF5873CC99C66EF89885F2F796E7EE4160BE'
+//////</HEADER>//////

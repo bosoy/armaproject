@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2">
+<Package name="ACE2">
+<Container name="sys_ravlifter">
+<Key ID="STR_DN_ACE_DISABLE_SLINGLOAD">
+<Russian>(Æ) Выключить грузовые тросы у вертолётов</Russian>
+<English>(Æ) Disable Sling Loading</English>
+<Spanish>(Æ) Disable Sling Loading</Spanish>
+<Italian>(Æ) Disable Sling Loading</Italian>
+<French>(Æ) Désactiver manut. de charges</French>
+<Czech>(Æ) Vypnout přepravu pomocí lana</Czech>
+<Polish>(Æ) Bez transportu ładunków na uprzęży</Polish>
+<Hungarian>(Æ) Hevederes szállítás kikapcs.</Hungarian>
+<German>(Æ) Support: Seilschlinge ausschalten (Helikopter)</German>
+</Key>
+<Key ID="STR_UA_ACE_ATTACHROPECARGO">
+<Russian>Прицепить грузовой трос</Russian>
+<English>Attach sling rope</English>
+<Spanish>Attach sling rope</Spanish>
+<Italian>Attach sling rope</Italian>
+<French>Fixer élingue</French>
+<Czech>Připevnit lano</Czech>
+<Polish>Załóż uprzęż na ładunek</Polish>
+<Hungarian>Hordszíj rögzítése</Hungarian>
+<German>Seilschlinge anbringen</German>
+</Key>
+<Key ID="STR_UA_ACE_DETACHROPECARGO">
+<Russian>Отцепить грузовой трос</Russian>
+<English>Remove sling rope</English>
+<Spanish>Remove sling rope</Spanish>
+<Italian>Remove sling rope</Italian>
+<French>Détacher élingue</French>
+<Czech>Odstranit lano</Czech>
+<Polish>Zdejmij uprzęż z ładunku</Polish>
+<Hungarian>Hordszíj eltávolítása</Hungarian>
+<German>Seilschlinge entfernen</German>
+</Key>
+<Key ID="STR_UA_ACE_ATTACHROPECARGOHELI">
+<Russian>Зацепить грузовой трос</Russian>
+<English>Hook sling rope</English>
+<Spanish>Hook sling rope</Spanish>
+<Italian>Hook sling rope</Italian>
+<French>Accrocher élingue</French>
+<Czech>Zaháknout lano</Czech>
+<Polish>Przymocuj uprzęż do śmigłowca</Polish>
+<Hungarian>Hordszíj megkötése</Hungarian>
+<German>Seilschlinge einhängen</German>
+</Key>
+<Key ID="STR_UA_ACE_CARGOHELIHOOKED">
+<Russian>Грузовой трос зацеплен</Russian>
+<English>Sling rope hooked</English>
+<Spanish>Sling rope hooked</Spanish>
+<Italian>Sling rope hooked</Italian>
+<French>Sling rope hooked</French>
+<Czech>Lano zaháknuto</Czech>
+<Polish>Uprzęż założona</Polish>
+<Hungarian>Sling rope hooked</Hungarian>
+<German>Seilschlinge eingehangen</German>
+</Key>
+<Key ID="STR_UA_ACE_RELEASESLING">
+<Russian>Отцепить трос</Russian>
+<English>Release load</English>
+<Spanish>Release load</Spanish>
+<Italian>Release load</Italian>
+<French>Libérer la charge</French>
+<Czech>Pustit náklad</Czech>
+<Polish>Wypuść ładunek</Polish>
+<Hungarian>Szállítmány elengedése</Hungarian>
+<German>Last trennen</German>
+</Key>
+<Key ID="STR_DN_ACE_ROPE_MRL">
+<English>Rope</English>
+<German>Seil</German>
+<Spanish>Rope</Spanish>
+<Czech>Lano</Czech>
+<Russian>Трос</Russian>
+<Italian>Rope</Italian>
+<Polish>Lina</Polish>
+<French>Corde</French>
+<Hungarian>Kötél</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_ROPE_M5">
+<English>Sling rope</English>
+<German>Seilschlinge</German>
+<Spanish>Sling rope</Spanish>
+<Czech>Lano se smyčkou</Czech>
+<Russian>Грузовой трос</Russian>
+<Italian>Sling rope</Italian>
+<Polish>Lina uprzężowa</Polish>
+<French>Elingue</French>
+<Hungarian>Hordszíj</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_HOOKERBLOCKAGE">
+<English>The hook has blocked</English>
+<German>Der Haken blockiert</German>
+<Spanish>The hook has blocked</Spanish>
+<Czech>The hook has blocked</Czech>
+<Russian>The hook has blocked</Russian>
+<Italian>The hook has blocked</Italian>
+<Polish>The hook has blocked</Polish>
+<French>The hook has blocked</French>
+<Hungarian>The hook has blocked</Hungarian>
+</Key>
+</Container></Package></Project>

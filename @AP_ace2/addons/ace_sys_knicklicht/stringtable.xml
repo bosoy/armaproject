@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2">
+<Package name="ACE2">
+<Container name="STR_WDN">
+<Key ID="STR_WDN_ACE_KNICKLICHT">
+<English>Chemlight</English>
+<German>Knicklicht</German>
+<Spanish>Chemlight</Spanish>
+<Czech>Chemické světlo</Czech>
+<Russian>Световая трубка</Russian>
+<Italian>Chemlight</Italian>
+<Polish>Świetlik</Polish>
+<French>Chemlight</French>
+<Hungarian>Világító rúd</Hungarian>
+</Key>
+<Key ID="STR_WDN_ACE_KNICKLICHT_USED">
+<English>Chemlight (glowing)</English>
+<German>Knicklicht (aktiviert)</German>
+<Spanish>Chemlight (glowing)</Spanish>
+<Czech>Chem. světlo (svítící)</Czech>
+<Russian>Свет. трубка (светящ.)</Russian>
+<Italian>Chemlight(accesa)</Italian>
+<Polish>Świetlik (świecący)</Polish>
+<French>Chemlight (brillant)</French>
+<Hungarian>Világító rúd</Hungarian>
+</Key>
+</Container>
+<Container name="STR_MDN">
+<Key ID="STR_MDN_ACE_KNICKLICHT_ROT">
+<English>Chemlight red</English>
+<German>Knicklicht rot</German>
+<Spanish>Chemlight red</Spanish>
+<Czech>Chem. světlo červené</Czech>
+<Russian>Свет. трубка (красн.)</Russian>
+<Italian>Chemlight Rossa</Italian>
+<Polish>Świetlik (czerwony)</Polish>
+<French>Chemlight rouge</French>
+<Hungarian>Világító rúd (vörös)</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_KNICKLICHT_GELB">
+<English>Chemlight yellow</English>
+<German>Knicklicht gelb</German>
+<Spanish>Chemlight yellow</Spanish>
+<Czech>Chem. světlo žluté</Czech>
+<Russian>Свет. трубка (жёл.)</Russian>
+<Italian>Chemlight Gialla</Italian>
+<Polish>Świetlik (żółty)</Polish>
+<French>Chemlight jaune</French>
+<Hungarian>Világító rúd (sárga)</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_KNICKLICHT_BLAU">
+<English>Chemlight blue</English>
+<German>Knicklicht blau</German>
+<Spanish>Chemlight blue</Spanish>
+<Czech>Chem. světlo modré</Czech>
+<Russian>Свет. трубка (син.)</Russian>
+<Italian>Chemlight Blu</Italian>
+<Polish>Świetlik (niebieski)</Polish>
+<French>Chemlight bleue</French>
+<Hungarian>Világító rúd (kék)</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_KNICKLICHT_WEISS">
+<English>Chemlight white</English>
+<German>Knicklicht weiß</German>
+<Spanish>Chemlight white</Spanish>
+<Czech>Chem. světlo bílé</Czech>
+<Russian>Свет. трубка (бел.)</Russian>
+<Italian>Chemlight Bianca</Italian>
+<Polish>Świetlik (biały)</Polish>
+<French>Chemlight blanche</French>
+<Hungarian>Világító rúd (fehér)</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_KNICKLICHT_GRUN">
+<English>Chemlight green</English>
+<German>Knicklicht grün</German>
+<Spanish>Chemlight green</Spanish>
+<Czech>Chem. světlo zelené</Czech>
+<Russian>Свет. трубка (зел.)</Russian>
+<Italian>Chemlight Verde</Italian>
+<Polish>Świetlik (zielony)</Polish>
+<French>Chemlight verte</French>
+<Hungarian>Világító rúd (zöld)</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_KNICKLICHT_IR">
+<English>Chemlight IR</English>
+<German>Knicklicht IR</German>
+<Spanish>Chemlight IR</Spanish>
+<Czech>Chem. světlo IR</Czech>
+<Russian>Свет. трубка (ИК)</Russian>
+<Italian>Chemlight IR</Italian>
+<Polish>Świetlik (IR)</Polish>
+<French>Chemlight IR</French>
+<Hungarian>Világító rúd (IR)</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_KNICKLICHT_ROT_USED">
+<English>Chemlight red (glowing)</English>
+<German>Knicklicht rot (aktiviert)</German>
+<Spanish>Chemlight red (glowing)</Spanish>
+<Czech>Chem. světlo červené (svítící)</Czech>
+<Russian>Свет. трубка (красн. светящ.)</Russian>
+<Italian>Chemlight Rossa (accesa)</Italian>
+<Polish>Świetlik (czerwony)</Polish>
+<French>Chemlight rouge (brillant)</French>
+<Hungarian>Világító rúd (vörös)</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_KNICKLICHT_GELB_USED">
+<English>Chemlight yellow (glowing)</English>
+<German>Knicklicht gelb (aktiviert)</German>
+<Spanish>Chemlight yellow (glowing)</Spanish>
+<Czech>Chem. světlo žluté (svítící)</Czech>
+<Russian>Свет. трубка (жёл. светящ.)</Russian>
+<Italian>Chemlight Gialla (accesa)</Italian>
+<Polish>Świetlik (żółty)</Polish>
+<French>Chemlight jaune (brillant)</French>
+<Hungarian>Világító rúd (sárga)</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_KNICKLICHT_BLAU_USED">
+<English>Chemlight blue (glowing)</English>
+<German>Knicklicht blau (aktiviert)</German>
+<Spanish>Chemlight blue (glowing)</Spanish>
+<Czech>Chem. světlo modré (svítící)</Czech>
+<Russian>Свет. трубка (син. светящ)</Russian>
+<Italian>Chemlight Blu (accesa)</Italian>
+<Polish>Świetlik (niebieski)</Polish>
+<French>Chemlight bleue (brillant)</French>
+<Hungarian>Világító rúd (kék)</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_KNICKLICHT_WEISS_USED">
+<English>Chemlight white (glowing)</English>
+<German>Knicklicht weiß (aktiviert)</German>
+<Spanish>Chemlight white (glowing)</Spanish>
+<Czech>Chem. světlo bílé (svítící)</Czech>
+<Russian>Свет. трубка (бел. светящ.)</Russian>
+<Italian>Chemlight Bianca (accesa)</Italian>
+<Polish>Świetlik (biały)</Polish>
+<French>Chemlight blanche (brillant)</French>
+<Hungarian>Világító rúd (fehér)</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_KNICKLICHT_GRUN_USED">
+<English>Chemlight green (glowing)</English>
+<German>Knicklicht grün (aktiviert)</German>
+<Spanish>Chemlight green (glowing)</Spanish>
+<Czech>Chem. světlo zelené (svítící)</Czech>
+<Russian>Свет. трубка (зел. светящ.)</Russian>
+<Italian>Chemlight Verde (accesa)</Italian>
+<Polish>Świetlik (zielony)</Polish>
+<French>Chemlight verte (brillant)</French>
+<Hungarian>Világító rúd (zöld)</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_KNICKLICHT_IR_USED">
+<English>Chemlight IR (glowing)</English>
+<German>Knicklicht IR (aktiviert)</German>
+<Spanish>Chemlight IR (glowing)</Spanish>
+<Czech>Chem. světlo IR (svítící)</Czech>
+<Russian>Свет. трубка (ИК светящ.)</Russian>
+<Italian>Chemlight IR (accesa)</Italian>
+<Polish>Świetlik (IR)</Polish>
+<French>Chemlight IR (brillant)</French>
+<Hungarian>Világító rúd (IR)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_KNICKLICHT_BOX">
+<English>Chemlight box</English>
+<German>Knicklicht Schachtel</German>
+<Spanish>Chemlight box</Spanish>
+<Czech>Krabice s chemickými světly</Czech>
+<Russian>Ящик со свет. трубками</Russian>
+<Italian>Cassa Luci Chemlight</Italian>
+<Polish>Skrzynia ze świetlikami</Polish>
+<French>Caisse de Chemlight</French>
+<Hungarian>Világító rudas doboz</Hungarian>
+</Key>
+</Container>
+<Container name="UA">
+<Key ID="STR_ACE_UA_KNICKLICHT_AUFNEHMEN">
+<English>Pick up chemlight</English>
+<German>Knicklicht aufheben</German>
+<Spanish>Pick up chemlight</Spanish>
+<Czech>Vzít chemické světlo</Czech>
+<Russian>Поднять свет. трубку</Russian>
+<Italian>Raccogli Chemlight</Italian>
+<Polish>Zabierz świetlik</Polish>
+<French>Ramasser chemlight</French>
+<Hungarian>Világító rúd felvétele</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_KNICKLICHT_ZERSTOREN">
+<English>Destroy chemlight</English>
+<German>Knicklicht zerstören</German>
+<Spanish>Destroy chemlight</Spanish>
+<Czech>Zničit chemické světlo</Czech>
+<Russian>Сломать свет. трубку</Russian>
+<Italian>Distruggi Chemlight</Italian>
+<Polish>Zniszcz świetlik</Polish>
+<French>Détruire chemlight</French>
+<Hungarian>Világító rúd megsemmisítése</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_KNICKLICHT_LEUCHT">
+<English>as light</English>
+<German>als Leuchte</German>
+<Spanish>as light</Spanish>
+<Czech>jako světlo</Czech>
+<Russian>Как фонарик</Russian>
+<Italian>per illuminare</Italian>
+<Polish>jako oświetlenie</Polish>
+<French>Eclairer</French>
+<Hungarian>as light</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_KNICKLICHT_ANBRINGEN">
+<English>Attach</English>
+<German>befestigen</German>
+<Spanish>Attach</Spanish>
+<Czech>Připnout</Czech>
+<Russian>Прицепить</Russian>
+<Italian>Attacca</Italian>
+<Polish>Przyczep</Polish>
+<French>Attacher</French>
+<Hungarian>Attach</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_KNICKLICHT_AB">
+<English>Remove chemlight</English>
+<German>Knicklicht entfernen</German>
+<Spanish>Remove chemlight</Spanish>
+<Czech>Odstranit chemické světlo</Czech>
+<Russian>Убрать свет. трубку</Russian>
+<Italian>Rimuovi Chemlight</Italian>
+<Polish>Odczep świetlik</Polish>
+<French>Enlever chemlight</French>
+<Hungarian>Világító rúd eltávolítása</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_KNICKLICHT_LEUCHTENDE">
+<English>Pack chemlight</English>
+<German>Knicklicht einpacken</German>
+<Spanish>Pack chemlight</Spanish>
+<Czech>Zabalit chemické světlo</Czech>
+<Russian>Упаковать свет. трубку</Russian>
+<Italian>Impacchetta Chemlight</Italian>
+<Polish>Spakuj świetlik</Polish>
+<French>Ranger chemlight</French>
+<Hungarian>Világító rúd elrakása</Hungarian>
+</Key>
+</Container>
+<Container name="STR_DSS">
+<Key ID="STR_DSS_ACE_KNICKLICHT_WEISS">
+<German>Typ: Knicklicht &lt;br/&gt;Farbe: Weiß</German>
+<English>Type: Chemlight &lt;br/&gt;Color: White</English>
+<Italian>Tipo: Chemlight - Luce d'emergenza &lt;br/&gt;Colore: Bianco</Italian>
+<Spanish>Tipo: Chemlight &lt;br/&gt;Color: Blanco</Spanish>
+<French>Type: Chemlight &lt;br/&gt;Couleur: Blanche</French>
+<Czech>Typ: Chemické světlo &lt;br/&gt;Barva: Bílá</Czech>
+<Russian>Тип: Хим. источник света &lt;br/&gt;Цвет: белый</Russian>
+<Polish>Typ: świetlik &lt;br/&gt;Kolor: biały </Polish>
+<Hungarian>Típus: Világító rúd &lt;br/&gt; Szín: Fehér</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_KNICKLICHT_BLAU">
+<German>Typ: Knicklicht &lt;br/&gt;Farbe: Blau</German>
+<English>Type: Chemlight &lt;br/&gt;Color: Blue</English>
+<Italian>Tipo: Chemlight - Luce d'emergenza &lt;br/&gt;Colore: Blu</Italian>
+<Spanish>Tipo: Chemlight &lt;br/&gt;Color: azul</Spanish>
+<French>Type: Chemlight &lt;br/&gt;Couleur: Bleue</French>
+<Czech>Typ: Chemické světlo &lt;br/&gt;Barva: Modrá</Czech>
+<Russian>Тип: Хим. источник света &lt;br/&gt;Цвет: синий</Russian>
+<Polish>Typ: świetlik &lt;br/&gt;Kolor: niebieski</Polish>
+<Hungarian>Típus: Világító rúd &lt;br/&gt; Szín: Kék</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_KNICKLICHT_GRUN">
+<German>Typ: Knicklicht &lt;br/&gt;Farbe: Grün</German>
+<English>Type: Chemlight &lt;br/&gt;Color: Green</English>
+<Italian>Tipo: Chemlight - Luce d'emergenza &lt;br/&gt;Colore: Verde</Italian>
+<Spanish>Tipo: Chemlight &lt;br/&gt;Color: Verde</Spanish>
+<French>Type: Chemlight &lt;br/&gt;Couleur: Verte</French>
+<Czech>Typ: Chemické světlo &lt;br/&gt;Barva: Zelená</Czech>
+<Russian>Тип: Хим. источник света &lt;br/&gt;Цвет: зеленый</Russian>
+<Polish>Typ: świetlik &lt;br/&gt;Kolor: zielony </Polish>
+<Hungarian>Típus: Világító rúd &lt;br/&gt; Szín: Zöld</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_KNICKLICHT_ROT">
+<German>Typ: Knicklicht &lt;br/&gt;Farbe: Rot</German>
+<English>Type: Chemlight&lt;br/&gt;Color: Red</English>
+<Italian>Tipo: Chemlight - Luce d'emergenza &lt;br/&gt;Colore: Rosso</Italian>
+<Spanish>Tipo: Chemlight &lt;br/&gt;Color: Rojo</Spanish>
+<French>Type: Chemlight &lt;br/&gt;Couleur: Rouge</French>
+<Czech>Typ: Chemické světlo &lt;br/&gt;Barva: Červená</Czech>
+<Russian>Тип: Хим. источник света &lt;br/&gt;Цвет: красный</Russian>
+<Polish>Typ: świetlik &lt;br/&gt;Kolor: czerwony </Polish>
+<Hungarian>Típus: Világító rúd &lt;br/&gt; Szín: Vörös</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_KNICKLICHT_GELB">
+<German>Typ: Knicklicht &lt;br/&gt;Farbe: Gelb</German>
+<English>Type: Chemlight &lt;br/&gt;Color: Yellow</English>
+<Italian>Tipo: Chemlight - Luce d'emergenza &lt;br/&gt;Colore: Giallo</Italian>
+<Spanish>Tipo: Chemlight &lt;br/&gt;Color: Amarillo</Spanish>
+<French>Type: Chemlight &lt;br/&gt;Couleur: Jaune</French>
+<Czech>Typ: Chemické světlo &lt;br/&gt;Barva: Žlutá</Czech>
+<Russian>Тип: Хим. источник света &lt;br/&gt;Цвет: жёлтый</Russian>
+<Polish>Typ: świetlik &lt;br/&gt;Kolor: żółty </Polish>
+<Hungarian>Típus: Világító rúd &lt;br/&gt; Szín: Sárga</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_KNICKLICHT_IR">
+<German>Typ: Knicklicht &lt;br/&gt;Farbe: IR</German>
+<English>Type: Chemlight &lt;br/&gt;Color: IR</English>
+<Italian>Tipo: Chemlight - Luce d'emergenza &lt;br/&gt;Colore: IR</Italian>
+<Spanish>Tipo: Chemlight &lt;br/&gt;Color: IR</Spanish>
+<French>Type: Chemlight &lt;br/&gt;Couleur: IR</French>
+<Czech>Typ: Chemické světlo &lt;br/&gt;Barva: IR</Czech>
+<Russian>Тип: Хим. источник света &lt;br/&gt;Цвет: ИК</Russian>
+<Polish>Typ: świetlik &lt;br/&gt;Kolor: IR</Polish>
+<Hungarian>Típus: Világító rúd &lt;br/&gt; Szín: IR</Hungarian>
+</Key>
+</Container>
+<Container name="INTERACTION">
+<Key ID="STR_DN_ACE_KNICKLICHT_MENU">
+<German>Knicklicht ></German>
+<English>Chemlight ></English>
+<Italian>Chemlight ></Italian>
+<Spanish>Chemlight ></Spanish>
+<French>Chemlight ></French>
+<Czech>Chemické světlo ></Czech>
+<Russian>Свет. трубка ></Russian>
+<Polish>Świetlik ></Polish>
+<Hungarian>Világító rúd ></Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

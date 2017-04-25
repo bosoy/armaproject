@@ -1,0 +1,247 @@
+class FSM
+{
+  fsmName = "Illum";
+  class States
+  {
+    class Start
+    {
+      name = "Start";
+      init = "private [""_flare"", ""_light""];" \n
+       "_flare = objNull;";
+      precondition = "";
+      class Links
+      {
+        class Not_Server
+        {
+          priority = 1.000000;
+          to="End";
+          precondition = "";
+          condition="!isServer";
+          action="";
+        };
+        class Allways
+        {
+          priority = 0.000000;
+          to="Init";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class Init
+    {
+      name = "Init";
+      init = "private [""_trg_center"",""_radius"",""_center_x"",""_center_y"",""_timenow"",""_rantime"" ];" \n
+       "_trg_center = _this select 0;" \n
+       "_radius = _this select 1;" \n
+       "_center_x = _trg_center select 0;_center_y = _trg_center select 1;";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="Spotted";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class End
+    {
+      name = "End";
+      init = "if (!isNull _flare) then {deleteVehicle _flare};";
+      precondition = "";
+      class Links
+      {
+      };
+    };
+    class Spotted
+    {
+      name = "Spotted";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class illum_over
+        {
+          priority = 3.000000;
+          to="End";
+          precondition = "";
+          condition="!d_run_illum";
+          action="";
+        };
+        class Not_spotted
+        {
+          priority = 1.000000;
+          to="Delay";
+          precondition = "";
+          condition="!d_mt_spotted";
+          action="";
+        };
+        class _
+        {
+          priority = 0.000000;
+          to="loop";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class Delay
+    {
+      name = "Delay";
+      init = "_timenow = time + 7.75;" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class Delay_7
+        {
+          priority = 0.000000;
+          to="Spotted";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class loop
+    {
+      name = "loop";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class illum_over
+        {
+          priority = 3.000000;
+          to="End";
+          precondition = "";
+          condition="!d_run_illum";
+          action="";
+        };
+        class No_players
+        {
+          priority = 2.000000;
+          to="Delay_1";
+          precondition = "";
+          condition="isMultiplayer && (call d_fnc_PlayersNumber) == 0";
+          action="";
+        };
+        class correct_daytime
+        {
+          priority = 1.000000;
+          to="Create_Flare";
+          precondition = "";
+          condition="(daytime > 17.5 || daytime < 6.25)";
+          action="";
+        };
+        class Time_not_correct
+        {
+          priority = 0.000000;
+          to="Delay_2";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class Delay_1
+    {
+      name = "Delay_1";
+      init = "_timenow = time + (1.012 + random 1);";
+      precondition = "";
+      class Links
+      {
+        class Delay_2
+        {
+          priority = 0.000000;
+          to="loop";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class Create_Flare
+    {
+      name = "Create_Flare";
+      init = "_flare = objNull;" \n
+       "_angle = floor (random 360);" \n
+       "_x1 = _center_x - ((random _radius) * sin _angle);" \n
+       "_y1 = _center_y - ((random _radius) * cos _angle);" \n
+       "_flare = createVehicle [""ARTY_Flare_Medium"",  [_x1, _y1, 250], [], 0, ""NONE""];" \n
+       "_light = ""#lightpoint"" createVehicleLocal [0,0,0];" \n
+       "_light setLightBrightness 1;" \n
+       "_light setLightAmbient[0.2, 0.2, 0.2];" \n
+       "_light setLightColor[0.01, 0.01, 0.01];" \n
+       "_light lightAttachObject [_flare, [0,0,0]];" \n
+       "[""d_m_l_o"", _flare] call d_fnc_NetCallEventToClients;" \n
+       "_timenow = time + (25 + random 30);";
+      precondition = "";
+      class Links
+      {
+        class illum_over
+        {
+          priority = 3.000000;
+          to="End";
+          precondition = "";
+          condition="!d_run_illum";
+          action="";
+        };
+        class Delay_25plus
+        {
+          priority = 0.000000;
+          to="Delete_flare";
+          precondition = "";
+          condition="time > _timenow || !d_run_illum";
+          action="";
+        };
+      };
+    };
+    class Delete_flare
+    {
+      name = "Delete_flare";
+      init = "if (!isNull _flare) then {deleteVehicle _flare};" \n
+       "if (!isNull _light) then {deleteVehicle _light};";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="loop";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class Delay_2
+    {
+      name = "Delay_2";
+      init = "_timenow = time + 5 + random 2;";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="loop";
+          precondition = "";
+          condition="time > _timenow || !d_run_illum";
+          action="";
+        };
+      };
+    };
+  };
+  initState="Start";
+  finalStates[] =
+  {
+    "End",
+  };
+};

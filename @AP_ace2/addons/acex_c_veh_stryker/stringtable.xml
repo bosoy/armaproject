@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="ArmA2_ACE2">
+<Package name="c_veh_stryker">
+<Container name="STR_DN">
+<Key ID="STR_ACE_GDN_ACE_STRYKER_RECON_SECTION">
+<German>Mechanisierte Aufklärungssektion (Stryker RV)</German>
+<English>Mechanized Recon Section (Stryker RV)</English>
+<Italian>Sez. da ricogn. Meccan. (Stryker RV)</Italian>
+<Spanish>Sección de reconocimiento mecanizado (Stryker RV)</Spanish>
+<French>Groupe reco mécanisée (Stryker RV)</French>
+<Czech>Mechanizovaná průzkumná sekce (Stryker RV)</Czech>
+<Russian>Разведотделение (Stryker RV)</Russian>
+<Polish>Sekcja zwiadu zmechanizowanego (Stryker RV)</Polish>
+<Hungarian>Mechanized Recon Section (Stryker RV)</Hungarian>
+</Key>
+<Key ID="STR_ACE_GDN_ACE_US_STRYKER_TOW_PLATOON">
+<German>Stryker TOW-Zug</German>
+<English>Stryker TOW Platoon</English>
+<Italian>Plotone Stryker TOW</Italian>
+<Spanish>Pelotón Stryker TOW</Spanish>
+<French>Peloton Stryker TOW</French>
+<Czech>Četa Stryker TOW</Czech>
+<Russian>Огневой взвод M1128 'Страйкер' TOW</Russian>
+<Polish>Pluton M1128 Stryker ATGM</Polish>
+<Hungarian>Stryker TOW Platoon</Hungarian>
+</Key>
+
+</Container>
+</Package>
+</Project>

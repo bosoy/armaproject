@@ -1,0 +1,232 @@
+/*%FSM<COMPILE "G:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, fnc_turnrocket">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"fnc_turnrocket",0,250,-100.000000,0.000000,0.000000,50.000000,0.000000,"fnc_turnrocket"};
+item1[] = {"_",4,218,-150.000000,75.000000,-50.000000,125.000000,1.000000,""};
+item2[] = {"__1",4,218,-25.000000,75.000000,75.000000,125.000000,0.000000,""};
+item3[] = {"_",2,250,-150.000000,175.000000,-50.000000,225.000000,0.000000,""};
+item4[] = {"_",8,218,-25.000000,175.000000,75.000000,225.000000,0.000000,""};
+item5[] = {"__1",2,250,100.000000,125.000000,200.000000,175.000000,0.000000,""};
+item6[] = {"_",4,218,225.000000,100.000000,325.000000,150.000000,1.000000,""};
+item7[] = {"__1",4,218,225.000000,150.000000,325.000000,200.000000,0.000000,""};
+item8[] = {"__2",2,250,350.000000,100.000000,450.000000,150.000000,0.000000,""};
+item9[] = {"__3",1,250,350.000000,150.000000,450.000000,200.000000,0.000000,""};
+item10[] = {"__1",4,4314,450.000000,75.000000,550.000000,125.000000,0.000000,""};
+item11[] = {"_",4,218,475.000000,150.000000,575.000000,200.000000,1.000000,""};
+item12[] = {"__4",2,250,575.000000,75.000000,675.000000,125.000000,0.000000,""};
+item13[] = {"_",8,218,575.000000,0.000000,675.000000,50.000000,0.000000,""};
+item14[] = {"",7,210,146.000000,20.999998,154.000000,29.000000,0.000000,""};
+link0[] = {0,1};
+link1[] = {0,2};
+link2[] = {1,3};
+link3[] = {2,5};
+link4[] = {3,4};
+link5[] = {4,5};
+link6[] = {5,6};
+link7[] = {5,7};
+link8[] = {6,8};
+link9[] = {7,9};
+link10[] = {8,10};
+link11[] = {8,11};
+link12[] = {10,12};
+link13[] = {11,9};
+link14[] = {12,13};
+link15[] = {13,14};
+link16[] = {14,5};
+globals[] = {25.000000,1,0,0,0,640,480,1,21,6316128,1,-199.442825,742.727173,504.353424,-481.863312,877,921,1};
+window[] = {2,-1,-1,-1,-1,882,200,1160,200,3,895};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "fnc_turnrocket";
+  class States
+  {
+    /*%FSM<STATE "fnc_turnrocket">*/
+    class fnc_turnrocket
+    {
+      name = "fnc_turnrocket";
+      init = /*%FSM<STATEINIT""">*/"" \n
+       "//  FSM by rocko" \n
+       "" \n
+       "// Debug" \n
+       "_debug = false;" \n
+       "" \n
+       "// Init" \n
+       "private [""_spd"", ""_upx"", ""_upy"", ""_upz"", ""_x1"", ""_y1"", ""_z1"", ""_k"", ""_xy"", ""_bullet"", ""_sleep"", ""_delay""];" \n
+       "" \n
+       "_bullet = _this select 0;" \n
+       "_sleep = _this select 1;" \n
+       "_delay = _this select 2;" \n
+       "" \n
+       "if (_debug) then" \n
+       "{" \n
+       "	_msg = format[""%1 %2 %3"", _bullet,_sleep,_delay];" \n
+       "	diag_log _msg;" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 1.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_delay > 0)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__1">*/
+        class __1
+        {
+          priority = 0.000000;
+          to="__1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "_">*/
+    class _
+    {
+      name = "_";
+      init = /*%FSM<STATEINIT""">*/"_timeNow = time + _delay;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time >= _timeNow"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__1">*/
+    class __1
+    {
+      name = "__1";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 1.000000;
+          to="__2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(alive _bullet) && (speed _bullet > 1)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__1">*/
+        class __1
+        {
+          priority = 0.000000;
+          to="__3";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__2">*/
+    class __2
+    {
+      name = "__2";
+      init = /*%FSM<STATEINIT""">*/"_spd = (velocity _bullet) call ACE_fnc_magnitude;" \n
+       "_x1 = ((velocity _bullet) select 0) / _spd;" \n
+       "_y1 = ((velocity _bullet) select 1) / _spd;" \n
+       "_z1 = ((velocity _bullet) select 2) / _spd;" \n
+       "	" \n
+       "_xy = sqrt(_x1^2 + _y1^2);"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 1.000000;
+          to="__3";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_xy <= 0.001)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__1">*/
+        class __1
+        {
+          priority = 0.000000;
+          to="__4";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__3">*/
+    class __3
+    {
+      name = "__3";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__4">*/
+    class __4
+    {
+      name = "__4";
+      init = /*%FSM<STATEINIT""">*/"_k = -_z1/sqrt(_x1^2 + _y1^2);		//xup = k*x1, yup = k*y1" \n
+       "_upx = _k*_x1;" \n
+       "_upy = _k*_y1;" \n
+       "_upz = sqrt (_x1^2 + _y1^2);" \n
+       "" \n
+       "_bullet setvectorUp [_upx,_upy,_upz];" \n
+       "" \n
+       "if (_debug) then" \n
+       "{" \n
+       "	_msg = format [""Adjusting vector %1 (was %2) Position %3"",[_upx,_upy,_upz], vectorUp _bullet, getPos _bullet];" \n
+       "	diag_log _msg;" \n
+       "};" \n
+       "" \n
+       "_timeNow = time;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(time - _timeNow) >= _sleep"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="fnc_turnrocket";
+  finalStates[] =
+  {
+    "__3",
+  };
+};
+/*%FSM</COMPILE>*/

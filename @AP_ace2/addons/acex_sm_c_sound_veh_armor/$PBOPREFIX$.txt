@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex_sm\addons\c_sound_veh_armor
+Pbo Type is: Arma Addon
+Sha: 'BE7613AD0021E4F3ABC7CF76CBE7BE0654466332'
+//////</HEADER>//////

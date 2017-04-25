@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\m_tracer
+Pbo Type is: Arma Addon
+Sha: '78A8EC8FC27C8EBB87F49988D53C0383D285BEDA'
+//////</HEADER>//////

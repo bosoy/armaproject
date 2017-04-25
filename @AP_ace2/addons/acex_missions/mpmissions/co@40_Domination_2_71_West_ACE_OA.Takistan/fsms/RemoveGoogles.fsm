@@ -1,0 +1,47 @@
+class FSM
+{
+  fsmName = "RemoveGoogles";
+  class States
+  {
+    class Start
+    {
+      name = "Start";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class _
+    {
+      name = "_";
+      init = "if (player hasWeapon ""NVGoggles"") then {" \n
+       "	player removeWeapon ""NVGoggles"";" \n
+       "};";
+      precondition = "";
+      class Links
+      {
+        class Has_NVG__
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = "";
+          condition="player hasWeapon ""NVGoggles""";
+          action="";
+        };
+      };
+    };
+  };
+  initState="Start";
+  finalStates[] =
+  {
+  };
+};

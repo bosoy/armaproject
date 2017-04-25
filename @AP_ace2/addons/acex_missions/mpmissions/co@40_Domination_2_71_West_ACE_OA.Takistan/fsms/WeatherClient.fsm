@@ -1,0 +1,53 @@
+class FSM
+{
+  fsmName = "WeatherClient";
+  class States
+  {
+    class Start
+    {
+      name = "Start";
+      init = "private [""_timenow"",""_overCast""];" \n
+       "_timenow = time + 5.221;" \n
+       "" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="Change_Weather";
+          precondition = "";
+          condition="time >= _timenow";
+          action="";
+        };
+      };
+    };
+    class Change_Weather
+    {
+      name = "Change_Weather";
+      init = "_overCast = X_JIPH getVariable ""d_overcast"";" \n
+       "if (_overCast != d_lastovercast) then {" \n
+       "	400 setOvercast _overCast;" \n
+       "	d_lastovercast = _overCast;" \n
+       "};" \n
+       "_timenow = time + 5.221;";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="Change_Weather";
+          precondition = "";
+          condition="time >= _timenow";
+          action="";
+        };
+      };
+    };
+  };
+  initState="Start";
+  finalStates[] =
+  {
+  };
+};

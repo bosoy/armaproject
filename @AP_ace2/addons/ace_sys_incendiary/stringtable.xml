@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="ACE2"><Container name="sys_incendiary">
+<Key ID="STR_WDN_ACE_INCENDIARYRULEZ">
+<English>Incendiary</English>
+<German>Brandsatz</German>
+<Spanish>Incendiary</Spanish>
+<Czech>Zápalný</Czech>
+<Russian>Зажигательный боеприпас</Russian>
+<Italian>Incendiary</Italian>
+<Polish>Zapalające</Polish>
+<French>Incendiary</French>
+<Hungarian>Incendiary</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_ANM14">
+<English>AN-M14</English>
+<German>AN-M14</German>
+<Spanish>AN-M14</Spanish>
+<Czech>AN-M14</Czech>
+<Russian>AN-M14</Russian>
+<Italian>AN-M14</Italian>
+<Polish>AN-M14</Polish>
+<French>AN-M14</French>
+<Hungarian>AN-M14</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_ANM14">
+<English>Incendiary</English>
+<German>Brandsatz</German>
+<Spanish>Incendiary</Spanish>
+<Czech>Zápalný</Czech>
+<Russian>Зажигательный боеприпас</Russian>
+<Italian>Incendiary</Italian>
+<Polish>Zapalający</Polish>
+<French>Incendiary</French>
+<Hungarian>Incendiary</Hungarian>
+</Key>
+</Container>
+</Package></Project>

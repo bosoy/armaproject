@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_autorotation
+Pbo Type is: Arma Addon
+Sha: '41E6CF9AAC50A81058CF0ECCA104667051DDE6D0'
+//////</HEADER>//////

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="sys_grenadethrow2">
+<!-- Titles SUB-->
+<Container name="STR_ACE_MENU">
+<Key ID="STR_ACE_MENU_GRENADETHROW2_UNDERHAND">
+<English>Underhand throw</English>
+<German>Schleuderwurf</German>
+<Spanish>Underhand throw</Spanish>
+<Czech>Hod spodem</Czech>
+<Russian>Underhand throw</Russian>
+<Italian>Underhand throw</Italian>
+<Polish>Podrzut</Polish>
+<French>Underhand throw</French>
+<Hungarian>Underhand throw</Hungarian>
+</Key>
+</Container>
+</Package></Project>

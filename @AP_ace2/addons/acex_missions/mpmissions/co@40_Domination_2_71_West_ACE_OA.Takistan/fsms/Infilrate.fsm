@@ -1,0 +1,160 @@
+class FSM
+{
+  fsmName = "Infiltrate";
+  class States
+  {
+    class Start
+    {
+      name = "Start";
+      init = "private [""_pilot"", ""_chopper"", ""_grp"", ""_end_posh"", ""_start_posh"", ""_vehicle"", ""_unit"", ""_attack_pos"",""_timenow"",""_ranwait""];";
+      precondition = "";
+      class Links
+      {
+        class Not_Server
+        {
+          priority = 1.000000;
+          to="End";
+          precondition = "";
+          condition="!isServer";
+          action="";
+        };
+        class Allways
+        {
+          priority = 0.000000;
+          to="Init";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class Init
+    {
+      name = "Init";
+      init = "_chopper = d_transport_chopper call d_fnc_RandomArrayVal;" \n
+       "" \n
+       "_timenow = time + 3000 + (random 600);";
+      precondition = "";
+      class Links
+      {
+        class Delay_4000plus
+        {
+          priority = 0.000000;
+          to="MP_Player_Check";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class End
+    {
+      name = "End";
+      init = "";
+      precondition = "";
+      class Links
+      {
+      };
+    };
+    class Create_Chopper
+    {
+      name = "Create_Chopper";
+      init = "_grp = [d_side_enemy] call d_fnc_creategroup;" \n
+       "" \n
+       "_end_posh = call d_fnc_GetRanPointOuterAir;" \n
+       "_start_posh = call d_fnc_GetRanPointOuterAir;" \n
+       "_start_posh set [2, 300];" \n
+       "" \n
+       "_cdir = [_start_posh, _end_posh] call d_fnc_DirTo;" \n
+       "_veca = [_start_posh, _cdir, _chopper, _grp] call d_fnc_spawnVehicle;" \n
+       "_vehicle = _veca select 0;" \n
+       "" \n
+       "if (d_domdatabase) then {" \n
+       "	_vehicle addMPEventHandler [""MPKilled"", {if (isServer) then {if (isPlayer (_this select 1)) then {(_this select 1) call d_fnc_PAddChopperKillPoints}}}];" \n
+       "};" \n
+       "" \n
+       "if !((toUpper _chopper) in d_heli_wreck_lift_types) then {d_allunits_add set [count d_allunits_add, _vehicle]};" \n
+       "" \n
+       "_attack_pos = [position D_FLAG_BASE,800] call d_fnc_GetRanPointCircleOld;" \n
+       "[_grp,_vehicle,_attack_pos,_end_posh] execVM ""x_server\x_createpara2.sqf"";" \n
+       "" \n
+       "_timenow = time + 400;";
+      precondition = "";
+      class Links
+      {
+        class Delay_400
+        {
+          priority = 0.000000;
+          to="Dummy";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class Dummy
+    {
+      name = "Dummy";
+      init = "_timenow = time + 3000 + (random 600);";
+      precondition = "";
+      class Links
+      {
+        class Delay_4000plus
+        {
+          priority = 0.000000;
+          to="MP_Player_Check";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class Sleep
+    {
+      name = "Sleep";
+      init = "_timenow = time + 2.38;";
+      precondition = "";
+      class Links
+      {
+        class Delay2
+        {
+          priority = 0.000000;
+          to="MP_Player_Check";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class MP_Player_Check
+    {
+      name = "MP_Player_Check";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class Is_MP
+        {
+          priority = 1.000000;
+          to="Sleep";
+          precondition = "";
+          condition="isMultiplayer && (call d_fnc_PlayersNumber) == 0";
+          action="";
+        };
+        class _
+        {
+          priority = 0.000000;
+          to="Create_Chopper";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+  };
+  initState="Start";
+  finalStates[] =
+  {
+    "End",
+  };
+};

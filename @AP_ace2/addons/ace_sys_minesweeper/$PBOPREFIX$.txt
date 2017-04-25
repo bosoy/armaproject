@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_minesweeper
+Pbo Type is: Arma Addon
+Sha: 'BE982527555F4D75C87891FF0E5153C85EEEE36D'
+//////</HEADER>//////

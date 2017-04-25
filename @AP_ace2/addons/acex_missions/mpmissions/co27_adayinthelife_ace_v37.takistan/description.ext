@@ -1,0 +1,129 @@
+class Header
+{
+  gameType = Coop;
+  minPlayers = 1;
+  maxPlayers = 27;
+};
+
+onLoadMission="A Day In The Life - ACE";
+onLoadIntro="";
+onLoadIntroTime = false;
+onLoadMissionTime = false;
+
+respawn = "BASE";
+respawndelay = 10;
+disabledAI=1;
+
+#include "scripts\IEDdetect\IEDdetect_dialog.h"
+
+ class CfgSounds
+{
+  #include "scripts\IEDdetect\IEDdetect_sounds.cpp"
+};
+
+class RscTitles
+{
+  #include "scripts\IEDdetect\IEDdetect_screens.cpp"
+};
+
+class Params
+{
+  class DayTime //paramsArray[0]
+  {
+    title = "Local Time";
+    values[] = {-6, 0, 4, 8, 12};
+    texts[] = {"0230HRS", "0830HRS", "1230HRS", "1830HRS", "2030HRS"};
+    default = 0;
+  };
+    class EpiUse //paramsArray[1]
+  {
+    title = "Epi and Morphone for Medics only";
+    values[] = {0,1};
+    texts[] = {"Disabled","Enabled"};
+    default = 0;
+  };
+    class VD //paramsArray[2]
+  {
+    title = "View Distance";
+    values[] = {1600,2000,2600,3000,3500,4000,4500,5000};
+    texts[] = {"1600m","2000m","2600m","3000m","3500m","4000m","4500m","5000m"};
+    default = 2600;
+  };
+    class No3rdPerson //paramsArray[3]
+  {
+    title = "Force 1st Person Outside Vehicles";
+    values[] = {0,1};
+    texts[] = {"No","Yes"};
+    default = 1;
+  };
+    class UAVSupport //paramsArray[4]
+  {
+    title = "UAV Support";
+    values[] = {0,1};
+    texts[] = {"Not Available","Available"};
+    default = 1;
+  };
+    class aiTalk //paramsArray[5]
+  {
+    title = "ACE AI Talk";
+    values[] = {0,1};
+    texts[] = {"Disabled","Enabled"};
+    default = 1;
+  };
+    class radioSound //paramsArray[6]
+  {
+    title = "ACE Radio Sounds";
+    values[] = {0,1};
+    texts[] = {"Disabled","Enabled"};
+    default = 1;
+  };
+    class rndWeather //paramsArray[7]
+  {
+    title = "Weather Conditions";
+    values[] = {0,1,2,3};
+    texts[] = {"Random","Rainy","Average","Sunny"};
+    default = 2;
+  };
+    class rndForecast //paramsArray[8]
+  {
+    title = "Weather Forecast";
+    values[] = {0,1,2,3};
+    texts[] = {"Random","Rainy","Average","Sunny"};
+    default = 2;
+  };
+    class GroupMarkersAvail //paramsArray[9]
+  {
+    title = "Group Markers";
+    values[] = {0,1};
+    texts[] = {"Off","On"};
+    default = 0;
+  };
+    class ACM //paramsArray[10]
+  {
+    title = "Ambient Combat";
+    values[] = {0,1};
+    texts[] = {"Disabled", "Enabled"};
+    default = 1;
+  };
+    class ACMlevel //paramsArray[11]
+  {
+    title = "Ambient Combat Level";
+    values[] = {5,10,22,30,60};
+    texts[] = {"Very Low", "Low", "Medium", "High","Very High"};
+    default = 5;
+  };
+    class ACREradios //paramsArray[12]
+  {
+    title = "Crate with ACRE radios";
+    values[] = {0,1};
+    texts[] = {"Disabled", "Enabled"};
+    default = 0;
+  };
+    class MagicBox //paramsArray[13]
+  {
+    title = "Magic Box";
+    values[] = {0,1};
+    texts[] = {"Not Available", "Available"};
+    default = 0;
+  };
+};

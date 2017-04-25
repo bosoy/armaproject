@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\m_wep_upk23
+Pbo Type is: Arma Addon
+Sha: 'DD3DFE0B856D64AC55A03A2572829966104D321D'
+//////</HEADER>//////

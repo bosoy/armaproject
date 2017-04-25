@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ArmA2_ACE2">
+<Package name="c_veh_ah1">
+<Container name="STR_ACE">
+<Key ID="STR_ACE_UA_PWINDOWOPEN">
+<English>Open Pilot Window</English>
+<German>Kabinentüren öffnen</German>
+<Italian>Open Pilot Window</Italian>
+<Spanish>Open Pilot Window</Spanish>
+<Czech>Otevřít okno pilota</Czech>
+<Hungarian>Kabin kinyitása</Hungarian>
+<Polish>Otwórz okno pilota</Polish>
+<Russian>Открыть окно пилота</Russian>
+<French>Open Pilot Window</French>
+</Key>
+<Key ID="STR_ACE_UA_PWINDOWCLOSE">
+<English>Close Pilot Window</English>
+<German>Kabinentüren schließen</German>
+<Italian>Close Pilot Window</Italian>
+<Spanish>Close Pilot Window</Spanish>
+<Czech>Zavřít okno pilota</Czech>
+<Hungarian>Kabin bezárása</Hungarian>
+<Polish>Zamknij okno pilota</Polish>
+<Russian>Закрыть окно пилота</Russian>
+<French>Close Pilot Window</French>
+</Key>
+<Key ID="STR_ACE_UA_GWINDOWOPEN">
+<English>Open Gunner Window</English>
+<German>Kabinentüren öffnen</German>
+<Italian>Open Gunner Window</Italian>
+<Spanish>Open Gunner Window</Spanish>
+<Czech>Otevřít okno střelce</Czech>
+<Hungarian>Kabin kinyitása</Hungarian>
+<Polish>Otwórz okno strzelca</Polish>
+<Russian>Открыть окно стрелка</Russian>
+<French>Open Gunner Window</French>
+</Key>
+<Key ID="STR_ACE_UA_GWINDOWCLOSE">
+<English>Close Gunner Window</English>
+<German>Kabinentüren schließen</German>
+<Italian>Close Gunner Window</Italian>
+<Spanish>Close Gunner Window</Spanish>
+<Czech>Zavřít okno střelce</Czech>
+<Hungarian>Kabin bezárása</Hungarian>
+<Polish>Zamknij okno strzelca</Polish>
+<Russian>Закрыть окно стрелка</Russian>
+<French>Close Gunner Window</French>
+</Key>
+</Container>
+</Package>
+</Project>

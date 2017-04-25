@@ -1,0 +1,19 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 5.24
+//Produced on Sat Sep 22 15:13:16 2012 : Created on Sat Sep 22 15:13:16 2012
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class ace_m_tracer : data\slx_yellowtracer_material.rvmat{
+ambient[] = {1,0.98,0.137,1};
+diffuse[] = {1,0.98,0.137,1};
+forcedDiffuse[] = {1,0.98,0.137,1};
+emmisive[] = {1,0.98,0.137,1};
+specular[] = {0.0,0.0,0.0,0.0};
+specularPower = 0.0;
+renderFlags[] = {"NoZWrite","NoAlphaWrite","AddBlend"};
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";
+//};

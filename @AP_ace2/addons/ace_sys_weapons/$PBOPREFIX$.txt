@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_weapons
+Pbo Type is: Arma Addon
+Sha: '99B5E5D407A1949D3C9AE3889306FF10F399F56C'
+//////</HEADER>//////

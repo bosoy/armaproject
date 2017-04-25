@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACEX">
+<Package name="c_wep_hk">
+<Container name="STR_DSS">
+<Key ID="STR_DSS_ACE_HK417">
+<German>Sturmgewehr &lt;br/&gt;Kaliber: 7,62x51mm NATO</German>
+<English>Assault rifle &lt;br/&gt;Caliber: 7.62x51mm NATO</English>
+<Italian>Fucile d'assalto &lt;br/&gt;Calibro: 7,62x51 mm NATO</Italian>
+<Spanish>Fusil de asalto &lt;br/&gt;Calibre: 7,62x51 mm OTAN</Spanish>
+<French>Fusil d'assaut &lt;br/&gt;Calibre : 7.62x51 mm OTAN</French>
+<Czech>Útočná puška &lt;br/&gt;Ráže: 7,62x51mm NATO</Czech>
+<Russian>Штурмовая винтовка &lt;br/&gt;Калибр: 7,62x51мм НАТО</Russian>
+<Polish>Karabin szturmowy &lt;br/&gt;Kaliber: 7,62x51mm NATO</Polish>
+<Hungarian>Gépkarabély &lt;br/&gt; Kaliber: 7.62x51mm NATO</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

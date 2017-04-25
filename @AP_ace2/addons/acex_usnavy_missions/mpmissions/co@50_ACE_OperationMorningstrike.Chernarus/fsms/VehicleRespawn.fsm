@@ -1,0 +1,206 @@
+/*%FSM<COMPILE "D:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, VehicleRespawn">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Start_",0,250,24.804947,275.211731,114.804947,325.211731,0.000000,"Start" \n ""};
+item1[] = {"Allways_",4,218,25.151543,361.563080,115.151543,411.563080,0.000000,"Allways" \n ""};
+item2[] = {"Main_Loop",2,250,25.632294,433.655548,115.632309,483.655548,0.000000,"Main Loop"};
+item3[] = {"Delay_",4,218,24.984634,510.612366,114.984627,560.612366,0.000000,"Delay" \n ""};
+item4[] = {"Check_values_",2,250,24.141312,593.944275,114.141327,643.944275,0.000000,"Check values" \n ""};
+item5[] = {"Nothing_should_be",4,218,-190.284058,502.699402,-12.841103,575.510620,0.000000,"Nothing should be done" \n ""};
+item6[] = {"Vehicle_needs_re",4,218,189.902832,586.340576,346.815582,650.787720,1.000000,"Vehicle needs respawn"};
+item7[] = {"Respawn_vehicle",2,250,217.321625,513.750793,317.966827,566.792297,0.000000,"Respawn vehicle"};
+item8[] = {"True",8,4314,223.341843,434.300812,313.341827,484.300812,0.000000,"True"};
+item9[] = {"No_crew_",4,218,23.433628,663.642761,113.433609,713.642761,1.000000,"No crew" \n ""};
+item10[] = {"Check_if_disab_led",2,250,-10.924561,749.343445,146.748734,811.509399,0.000000,"Check if disab" \n "led or moved"};
+item11[] = {"Not_Server",4,218,142.017273,274.477448,232.017380,324.477448,1.000000,"Not Server"};
+item12[] = {"Exit",1,250,270.079559,273.681976,360.079590,323.681946,0.000000,"Exit"};
+link0[] = {0,1};
+link1[] = {0,11};
+link2[] = {1,2};
+link3[] = {2,3};
+link4[] = {3,4};
+link5[] = {4,5};
+link6[] = {4,9};
+link7[] = {5,2};
+link8[] = {6,7};
+link9[] = {7,8};
+link10[] = {8,2};
+link11[] = {9,10};
+link12[] = {10,5};
+link13[] = {10,6};
+link14[] = {11,12};
+globals[] = {0.000000,0,0,0,0,640,480,1,18,6316128,1,-276.305664,479.323303,956.238159,134.592010,847,921,1};
+window[] = {2,-1,-1,-1,-1,918,200,1318,200,3,865};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "VehicleRespawn";
+  class States
+  {
+    /*%FSM<STATE "Start_">*/
+    class Start_
+    {
+      name = "Start_";
+      init = /*%FSM<STATEINIT""">*/"private [""_vehicle"", ""_delay"", ""_startpos"", ""_startdir"", ""_type"", ""_disabled"",""_timenow"",""_ranval""];" \n
+       "" \n
+       "_vehicle = _this select 0;" \n
+       "_delay = _this select 1;" \n
+       "_startpos = position _vehicle;" \n
+       "_startdir = direction _vehicle;" \n
+       "_type = typeof _vehicle;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Not_Server">*/
+        class Not_Server
+        {
+          priority = 1.000000;
+          to="Exit";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!isServer"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Allways_">*/
+        class Allways_
+        {
+          priority = 0.000000;
+          to="Main_Loop";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Main_Loop">*/
+    class Main_Loop
+    {
+      name = "Main_Loop";
+      init = /*%FSM<STATEINIT""">*/"_timenow = time;" \n
+       "_ranval = random 15;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Delay_">*/
+        class Delay_
+        {
+          priority = 0.000000;
+          to="Check_values_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(time - _timenow) >= (_delay + _ranval)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Check_values_">*/
+    class Check_values_
+    {
+      name = "Check_values_";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "No_crew_">*/
+        class No_crew_
+        {
+          priority = 1.000000;
+          to="Check_if_disab_led";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"({alive _x} count (crew _vehicle)) == 0"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Nothing_should_be">*/
+        class Nothing_should_be
+        {
+          priority = 0.000000;
+          to="Main_Loop";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Respawn_vehicle">*/
+    class Respawn_vehicle
+    {
+      name = "Respawn_vehicle";
+      init = /*%FSM<STATEINIT""">*/"deletevehicle _vehicle;" \n
+       "_vehicle = objNull;" \n
+       "_vehicle = _type createvehicle _startpos;" \n
+       "_vehicle setPos _startpos;" \n
+       "_vehicle setdir _startdir;" \n
+       "_vehicle addeventhandler [""getin"", {_this execVM ""x_scripts\x_checkhelipilot.sqf"";}];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "True">*/
+        class True
+        {
+          priority = 0.000000;
+          to="Main_Loop";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Check_if_disab_led">*/
+    class Check_if_disab_led
+    {
+      name = "Check_if_disab_led";
+      init = /*%FSM<STATEINIT""">*/"_disabled = (if (damage _vehicle > 0.9) then {true} else {false});" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Vehicle_needs_re">*/
+        class Vehicle_needs_re
+        {
+          priority = 1.000000;
+          to="Respawn_vehicle";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_disabled || !(alive _vehicle)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Nothing_should_be">*/
+        class Nothing_should_be
+        {
+          priority = 0.000000;
+          to="Main_Loop";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Exit">*/
+    class Exit
+    {
+      name = "Exit";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Start_";
+  finalStates[] =
+  {
+    "Exit",
+  };
+};
+/*%FSM</COMPILE>*/

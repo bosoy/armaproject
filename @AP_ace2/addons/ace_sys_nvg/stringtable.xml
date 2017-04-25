@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="ACE2">
+<Container name="STR_DN">
+<Key ID="STR_DN_ACE_SYS_NVG_SENS">
+<English>NV Sensitivity: </English>
+<German>NS Empfindlichkeit: </German>
+<Spanish>NV Sensitivity: </Spanish>
+<Czech>Citlivost NV: </Czech>
+<Russian>Чувствительность ПНВ: </Russian>
+<Italian>NV Sensibilità: </Italian>
+<Polish>Czułość noktowizora: </Polish>
+<French>Sensibilité NV: </French>
+<Hungarian>Éjjellátó érzékenység: </Hungarian>
+</Key>
+</Container>
+<Container name="STR_ACE">
+<Key ID="STR_ACE_NVGRNGLIM_ENABLE">
+<English>(Æ) Limit NV/TI Range</English>
+<German>(Æ) Weapons: Sichtbegrenzung für NS/TI</German>
+<Russian>(Æ) Ограничить видимость ПНВ/ТПВ</Russian>
+<Polish>(Æ) Ograniczony zasięg widoczności NV/TI</Polish>
+<Spanish>(Æ) Limit NV/TI Range</Spanish>
+<French>(Æ) Limit NV/TI Range</French>
+<Czech>(Æ) Omezit dosah NV/TI</Czech>
+<Italian>(Æ) Limit NV/TI Range</Italian>
+<Hungarian>(Æ) Limit NV/TI Range</Hungarian>
+</Key>
+</Container>
+<!-- Titles SUB-->
+<Container name="STR_ACE_MENU">
+<Key ID="STR_ACE_MENU_NVG_BRIGHTNESSUP">
+<English>Brightness (+)</English>
+<German>Helligkeit (+)</German>
+<Spanish>Brightness (+)</Spanish>
+<Czech>Jas (+)</Czech>
+<Russian>Яркость (+)</Russian>
+<Italian>Brightness (+)</Italian>
+<Polish>Jasność (+)</Polish>
+<French>Brightness (+)</French>
+<Hungarian>Brightness (+)</Hungarian>
+</Key>
+<Key ID="STR_ACE_MENU_NVG_BRIGHTNESSDN">
+<English>Brightness (-)</English>
+<German>Helligkeit (-)</German>
+<Spanish>Brightness (-)</Spanish>
+<Czech>Jas (-)</Czech>
+<Russian>Яркость (-)</Russian>
+<Italian>Brightness (-)</Italian>
+<Polish>Jasność (-)</Polish>
+<French>Brightness (-)</French>
+<Hungarian>Brightness (-)</Hungarian>
+</Key>
+</Container>
+</Package></Project>

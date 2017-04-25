@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACE">
+<Package name="c_ui">
+<Container name="STR_DISP">
+<Key ID="STR_DISP_ACE_ZEROING">
+<Original>Sight</Original> 
+<German>Haltepunkt</German> 
+<English>Sight</English> 
+<Italian>Azzeramento</Italian> 
+<Spanish>Mira</Spanish> 
+<French>Remise a zero</French> 
+<Czech>Náměr</Czech> 
+<Russian>Калибровка</Russian> 
+<Polish>Poprawka</Polish> 
+<Hungarian>Sight</Hungarian> 
+</Key>
+</Container>
+</Package>
+</Project>

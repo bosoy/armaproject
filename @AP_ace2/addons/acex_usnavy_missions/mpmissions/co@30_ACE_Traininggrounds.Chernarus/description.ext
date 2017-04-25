@@ -1,0 +1,25 @@
+onLoadMission="Training Grounds";
+onLoadIntroTime=false;
+onLoadMissionTime=false;
+
+class Header
+{
+	gameType = COOP;            //DM, Team, Coop, CTI
+	minPlayers = 1;             //min # of players the mission supports
+	maxPlayers = 30;
+	playerCountMultipleOf = 1;  //Unknown
+};
+
+respawn = BASE;
+respawndelay = 15;
+disabledAI = 1;
+
+#include "x_dlg\dummy.hpp"
+#include "x_dlg\SettingsDialog.hpp"
+#include "x_dlg\ViewDistanceDialog.hpp"
+#include "x_dlg\GrasLayerDialog.hpp"
+
+class RscTitles
+{
+	#include "x_dlg\IntroText.hpp"
+};

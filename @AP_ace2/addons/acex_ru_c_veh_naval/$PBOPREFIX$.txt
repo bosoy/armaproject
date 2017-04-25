@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex_ru\addons\c_veh_naval
+Pbo Type is: Arma Addon
+Sha: 'E46B662C538DE3C9D5DF518799E84AC343D21BC9'
+//////</HEADER>//////

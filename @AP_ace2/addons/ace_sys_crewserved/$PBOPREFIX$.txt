@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_crewserved
+Pbo Type is: Arma Addon
+Sha: 'A2841683F020C6019CE019C1A1E1ED8064910C9A'
+//////</HEADER>//////

@@ -1,0 +1,19 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 5.24
+//Produced on Mon Oct 14 23:05:55 2013 : Created on Mon Oct 14 23:05:55 2013
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class ace_c_weapon : data\laserbeam.rvmat{
+ambient[] = {1.0,1.0,1.0,3.25};
+diffuse[] = {1.0,1.0,1.0,1.0};
+forcedDiffuse[] = {0.0,0.0,0.0,0.0};
+emmisive[] = {1.0,1.0,1.0,1.0};
+specular[] = {0.0,0.0,0.0,1.0};
+specularPower = 1.0;
+renderFlags[] = {"NoZWrite","AddBlend"};
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";
+//};

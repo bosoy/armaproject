@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=map_eu
+Pbo Type is: Arma Addon
+Sha: '97BCD0F50210CD8A2141D09EBD7B2B7A1ED0E17E'
+//////</HEADER>//////

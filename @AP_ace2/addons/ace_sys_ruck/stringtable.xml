@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ArmA2_ACE2">
+<Package name="sys_ruck">
+<Container name="STR_ACE">
+<Key ID="STR_ACE_SUPPLY">
+<English>Supply</English>
+<Czech>Vybalit na zem</Czech>
+<German>Entfernen</German>
+<Polish>Wyrzuć</Polish>
+<Russian>На землю</Russian>
+<French>Approvisionner</French>
+<Spanish>Proveer</Spanish>
+<Italian>Posa</Italian>
+<Hungarian>Kivesz</Hungarian>
+</Key>
+<Key ID="STR_ACE_PACK">
+<English>Pack</English>
+<Czech>Zabalit</Czech>
+<German>Einpacken</German>
+<Polish>Spakuj</Polish>
+<Russian>В рюкзак</Russian>
+<French>Empaqueter</French>
+<Spanish>Paquete</Spanish>
+<Italian>Porta</Italian>
+<Hungarian>Elpakol</Hungarian>
+</Key>
+<Key ID="STR_ACE_UNPACK">
+<English>Unpack</English>
+<Czech>Vybalit</Czech>
+<German>Auspacken</German>
+<Polish>Wypakuj</Polish>
+<Russian>Распаковать</Russian>
+<French>Décaisser</French>
+<Spanish>Desempaquete</Spanish>
+<Italian>Disfai</Italian>
+<Hungarian>Kipakol</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_RUCK_DRUCK">
+<English>Drop Ruck</English>
+<Czech>Položit batoh</Czech>
+<German>Rucksack ablegen</German>
+<Polish>Zostaw plecak</Polish>
+<Russian>Бросить рюкзак</Russian>
+<French>Lacher le sac</French>
+<Spanish>Drop Ruck</Spanish>
+<Italian>Drop Ruck</Italian>
+<Hungarian>Hátiszák eldobása</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_RUCK_TAKRUCK">
+<English>Take Ruck</English>
+<Czech>Vzít batoh</Czech>
+<German>Rucksack aufnehmen</German>
+<Polish>Zabierz plecak</Polish>
+<Russian>Взять рюкзак</Russian>
+<French>Prendre le sac</French>
+<Spanish>Take Ruck</Spanish>
+<Italian>Take Ruck</Italian>
+<Hungarian>Hátizsák felvétele</Hungarian>
+</Key>
+<Key ID="STR_ACE_ON_BACK">
+<English>On Back</English>
+<Czech>Na záda</Czech>
+<German>Umhängen</German>
+<Polish>Na plecy</Polish>
+<Russian>На спину</Russian>
+<French>Sur le dos</French>
+<Spanish>A la espalda</Spanish>
+<Italian>In spalla</Italian>
+<Hungarian>Hátra</Hungarian>
+</Key>
+<Key ID="STR_ACE_IN_HANDS">
+<English>In Hands</English>
+<Czech>Do rukou</Czech>
+<German>Ausrüsten</German>
+<Polish>Do rąk</Polish>
+<Russian>В руки</Russian>
+<French>En mains</French>
+<Spanish>En manos</Spanish>
+<Italian>In mano</Italian>
+<Hungarian>Kézbe</Hungarian>
+</Key>
+<Key ID="STR_ACE_RUCK_ITEMS">
+<English>Ruck Items:</English>
+<Czech>Věci v batohu:</Czech>
+<German>Im Rucksack:</German>
+<Polish>Plecak:</Polish>
+<Russian>Рюкзак:</Russian>
+<French>Articles du sac:</French>
+<Spanish>Objetos del ruck:</Spanish>
+<Italian>Oggetti nello zaino:</Italian>
+<Hungarian>Hátizsák tartalma:</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_RUCK_KILOGRAMS">
+<English>kg</English>
+<Czech>kg</Czech>
+<German>kg</German>
+<Polish>kg</Polish>
+<Russian>кг</Russian>
+<French>kg</French>
+<Spanish>kg</Spanish>
+<Italian>kg</Italian>
+<Hungarian>kg</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_RUCK_KILOGRAM">
+<English>kg</English>
+<Czech>kg</Czech>
+<German>kg</German>
+<Polish>kg</Polish>
+<Russian>кг</Russian>
+<French>kg</French>
+<Spanish>kg</Spanish>
+<Italian>kg</Italian>
+<Hungarian>kg</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_RUCK_CUBICCENTIMETERS">
+<English>cc</English>
+<Czech>ccm</Czech>
+<German>cm³</German>
+<Polish>cm³</Polish>
+<Russian>см.куб.</Russian>
+<French>cm³</French>
+<Spanish>ccm</Spanish>
+<Italian>cm³</Italian>
+<Hungarian>ccm</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_RUCK_WEIGHT">
+<English>Weight:</English>
+<Czech>Hmotnost:</Czech>
+<German>Gewicht:</German>
+<Polish>Masa:</Polish>
+<Russian>Вес:</Russian>
+<French>Poids:</French>
+<Spanish>Weight:</Spanish>
+<Italian>Peso:</Italian>
+<Hungarian>Súly:</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_RUCK_SIZE">
+<English>Size:</English>
+<Czech>Velikost:</Czech>
+<German>Inhalt:</German>
+<Polish>Rozmiar:</Polish>
+<Russian>Размер:</Russian>
+<French>Taille:</French>
+<Spanish>Size:</Spanish>
+<Italian>Dimensione:</Italian>
+<Hungarian>Méret:</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_RUCK_FREESPACE">
+<English>free</English>
+<Czech>volno</Czech>
+<German>frei</German>
+<Polish>wolne</Polish>
+<Russian>свободно</Russian>
+<French>libre</French>
+<Spanish>free</Spanish>
+<Italian>free</Italian>
+<Hungarian>szabad</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_RUCK_PACKSIZE">
+<English>Pack size:</English>
+<Czech>Velikost batohu:</Czech>
+<German>Volumen:</German>
+<Polish>Pojemność:</Polish>
+<Russian>Размер снаряжения:</Russian>
+<French>Volume:</French>
+<Spanish>Pack size:</Spanish>
+<Italian>Dimensione dello zaino:</Italian>
+<Hungarian>Zsák mérete:</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_RUCK_NORUCK">
+<English>No Ruck</English>
+<Czech>Nemáš batoh</Czech>
+<German>Kein Rucksack</German>
+<Polish>Brak plecaka</Polish>
+<Russian>Нет рюкзака</Russian>
+<French>Pas de sac</French>
+<Spanish>No Ruck</Spanish>
+<Italian>No Ruck</Italian>
+<Hungarian>Nincs hátizsák</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_RUCK_OWNRUCK">
+<English>%1's Ruck</English>
+<Czech>Batoh od %1</Czech>
+<German>%1's Rucksack</German>
+<Polish>Plecak (%1)</Polish>
+<Russian>Рюкзак %1</Russian>
+<French>Sac de %1</French>
+<Spanish>%1's Ruck</Spanish>
+<Italian>%1's Ruck</Italian>
+<Hungarian>%1 hátizsákja</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_RUCK_OWNBAG">
+<English>%1's bag</English>
+<Czech>Batoh od %1</Czech>
+<German>%1's Tasche</German>
+<Polish>Torba (%1)</Polish>
+<Russian>Рюкзак %1</Russian>
+<French>%1's bag</French>
+<Spanish>%1's bag</Spanish>
+<Italian>%1's bag</Italian>
+<Hungarian>%1's bag</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_RUCK_TOOFULL">
+<English>Over capacity!</English>
+<Czech>Překročena kapacita!</Czech>
+<German>Überladen!</German>
+<Polish>Brak miejsca</Polish>
+<Russian>Переполнен!</Russian>
+<French>Capacité dépassée!</French>
+<Spanish>Over capacity!</Spanish>
+<Italian>Over capacity!</Italian>
+<Hungarian>Tele van!</Hungarian>
+</Key>
+<Key ID="STR_ACE_GEAR_NAME">
+<English>(Æ) Gear</English>
+<Czech>(Æ) Výzbroj</Czech>
+<German>(Æ) Ausrüstung</German>
+<Polish>(Æ) Wyposażenie</Polish>
+<Russian>(Æ) Снаряжение</Russian>
+<French>(Æ) Equipement</French>
+<Spanish>(Æ) Gear</Spanish>
+<Italian>(Æ) Gear</Italian>
+<Hungarian>(Æ) Felszerelés</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_RUCK_OPEN">
+<English>Open %1</English>
+<Czech>Otevřít %1</Czech>
+<German>Öffne %1</German>
+<Polish>Otwórz %1</Polish>
+<Russian>Открыть %1</Russian>
+<French>Ouvrir %1</French>
+<Spanish>Open %1</Spanish>
+<Italian>Open %1</Italian>
+<Hungarian>Kinyit %1</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_RUCK_BUSY">
+<English>already in use</English>
+<Czech>již je používán</Czech>
+<German>bereits in Benutzung</German>
+<Polish>używany</Polish>
+<Russian>уже используется</Russian>
+<French>en cours d'utilisation</French>
+<Spanish>already in use</Spanish>
+<Italian>already in use</Italian>
+<Hungarian>already in use</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_RUCK_OPENING">
+<English>opening</English>
+<Czech>otvírám</Czech>
+<German>öffne</German>
+<Polish>otwieranie</Polish>
+<Russian>открываем</Russian>
+<French>opening</French>
+<Spanish>opening</Spanish>
+<Italian>opening</Italian>
+<Hungarian>opening</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_RUCK_ROOM">
+<English>You have no room for that ruck.</English>
+<Czech>Na ten batoh nemáš místo.</Czech>
+<German>Kein Platz für Rucksack.</German>
+<Polish>Brak miejsca na plecak.</Polish>
+<Russian>Нет места для рюкзака.</Russian>
+<French>You have no room for that ruck.</French>
+<Spanish>You have no room for that ruck.</Spanish>
+<Italian>You have no room for that ruck.</Italian>
+<Hungarian>You have no room for that ruck.</Hungarian>
+</Key>
+<Key ID="STR_ACE_SYS_RUCK_CRATE_OVER">
+<English>That ruck is overflowing!</English>
+<Czech>Ten batoh je přeplněný!</Czech>
+<German>Rucksack ist überladen!</German>
+<Polish>Plecak jest przeładowany!</Polish>
+<Russian>Рюкзак переполнен!</Russian>
+<French>That ruck is overflowing!</French>
+<Spanish>That ruck is overflowing!</Spanish>
+<Italian>That ruck is overflowing!</Italian>
+<Hungarian>That ruck is overflowing!</Hungarian>
+</Key>
+</Container><Container name="STR_DN">
+<Key ID="STR_DN_ACE_RUCKSACK">
+<English>Rucksack</English>
+<Czech>Batoh</Czech>
+<German>Rucksack</German>
+<Polish>Plecak</Polish>
+<Russian>Рюкзак</Russian>
+<French>Sac à dos</French>
+<Spanish>Mochila</Spanish>
+<Italian>Zaino</Italian>
+<Hungarian>Hátizsák</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_RUCK_LOCKED">
+<English>Locked</English>
+<German>Abgeschlossen</German>
+<Spanish>Locked</Spanish>
+<Czech>Zamčen</Czech>
+<Polish>Zamknięty</Polish>
+<Russian>Заперт</Russian>
+<Italian>Locked</Italian>
+<Hungarian>Zárva</Hungarian>
+<French>Bloqué</French>
+</Key>
+<Key ID="STR_DN_ACE_RUCK_TEAM">
+<English>Team</English>
+<German>Team</German>
+<Spanish>Team</Spanish>
+<Czech>Pro stranu</Czech>
+<Polish>Drużyna</Polish>
+<Russian>Команда</Russian>
+<Italian>Team</Italian>
+<Hungarian>Team</Hungarian>
+<French>Team</French>
+</Key>
+<Key ID="STR_DN_ACE_RUCK_TEAM_LTR">
+<English>T</English>
+<German>T</German>
+<Spanish>T</Spanish>
+<Czech>S</Czech>
+<Polish>D</Polish>
+<Russian>К</Russian>
+<Italian>T</Italian>
+<Hungarian>T</Hungarian>
+<French>T</French>
+</Key>
+<Key ID="STR_DN_ACE_RUCK_SQUAD">
+<English>Squad</English>
+<German>Gruppe</German>
+<Spanish>Squad</Spanish>
+<Czech>Pro tým</Czech>
+<Polish>Oddział</Polish>
+<Russian>Отделение</Russian>
+<Italian>Squad</Italian>
+<Hungarian>Squad</Hungarian>
+<French>Squad</French>
+</Key>
+<Key ID="STR_DN_ACE_RUCK_SQUAD_LTR">
+<English>S</English>
+<German>G</German>
+<Spanish>S</Spanish>
+<Czech>T</Czech>
+<Polish>O</Polish>
+<Russian>О</Russian>
+<Italian>S</Italian>
+<Hungarian>S</Hungarian>
+<French>S</French>
+</Key>
+<Key ID="STR_DN_ACE_RUCK_IN_USE">
+<English>In Use By</English>
+<German>Benutzt von</German>
+<Spanish>In Use By</Spanish>
+<Czech>Používáno</Czech>
+<Polish>Przeglądany przez</Polish>
+<Russian>Используется</Russian>
+<Italian>In Use By</Italian>
+<Hungarian>In Use By</Hungarian>
+<French>In Use By</French>
+</Key>
+<Key ID="STR_DN_ACE_RUCK_CANCEL">
+<English>Interrupt</English>
+<German>Unterbrechen</German>
+<Spanish>Interrupt</Spanish>
+<Czech>Přerušit</Czech>
+<Polish>Przerwij</Polish>
+<Russian>Прервать</Russian>
+<Italian>Interrupt</Italian>
+<Hungarian>Interrupt</Hungarian>
+<French>Interrupt</French>
+</Key>
+<Key ID="STR_DN_ACE_RUCK_ACCESSING">
+<English>%1 is accessing the ruck of %2.</English>
+<German>%1 schaut in %2's Rucksack.</German>
+<Spanish>%1 is accessing the ruck of %2.</Spanish>
+<Czech>%1 šahá do batohu %2.</Czech>
+<Polish>%1 zagląda do plecaka %2.</Polish>
+<Russian>%1 залез в рюкзак %2.</Russian>
+<Italian>%1 is accessing the ruck of %2.</Italian>
+<Hungarian>%1 is accessing the ruck of %2.</Hungarian>
+<French>%1 is accessing the ruck of %2.</French>
+</Key>
+<Key ID="STR_DN_ACE_RUCK_UNLOCK">
+<English>Unlock</English>
+<German>Entsperren</German>
+<Spanish>Unlock</Spanish>
+<Czech>Odemknout</Czech>
+<Polish>Odblokuj</Polish>
+<Russian>Открыт</Russian>
+<Italian>Unlock</Italian>
+<Hungarian>Unlock</Hungarian>
+<French>Unlock</French>
+</Key>
+<Key ID="STR_DN_ACE_RUCK_NOT_IN_RANGE">
+<English>No Ruck in Range</English>
+<German>Kein Rucksack in Reichweite</German>
+<Spanish>No Ruck in Range</Spanish>
+<Czech>V dosahu není žádný batoh</Czech>
+<Polish>Brak plecaka w zasięgu ręki</Polish>
+<Russian>Нет рюкзака рядом</Russian>
+<Italian>No Ruck in Range</Italian>
+<Hungarian>No Ruck in Range</Hungarian>
+<French>No Ruck in Range</French>
+</Key>
+</Container><Container name="STR_LIB">
+<Key ID="STR_LIB_ACE_RUCKSACK">
+<English>Allows you to carry more equipment.</English>
+<Czech>Dovolí ti nést více vybavení.</Czech>
+<German>Erlaubt Ihnen, mehr Ausrüstung zu tragen.</German>
+<Polish>Pozwala Ci zabrać więcej wyposażenia.</Polish>
+<Russian>Позволяет носить больше предметов.</Russian>
+<French>Vous permet de porter plus d'équipement.</French>
+<Spanish>Permite que usted lleve m?s equipo.</Spanish>
+<Italian>Ti permette di portare più strumentazione.</Italian>
+<Hungarian>Több felszerelést vihetsz.</Hungarian>
+</Key>
+</Container><Container name="STR_VC">
+<Key ID="STR_VC_ACE_AMMO_RUCK">
+<English>Æ Ammunition (Ruck)</English>
+<Czech>Æ Munice (Batohy)</Czech>
+<German>Æ Munition (Rucksäcke)</German>
+<Polish>Æ Amunicja (plecaki)</Polish>
+<Russian>Æ Амуниция (Рюкзаки)</Russian>
+<French>Æ Munitions (Sac à dos)</French>
+<Spanish>Æ Ammunition (Ruck)</Spanish>
+<Italian>Æ Ammunition (Ruck)</Italian>
+<Hungarian>Æ Hátizsák Tároló</Hungarian>
+</Key>
+</Container><Container name="STR_VDN">
+<Key ID="STR_VDN_ACE_RUCK_BOX">
+<English>Ruck box</English>
+<Czech>Krabice s batohy</Czech>
+<German>Rucksack Kiste</German>
+<Polish>Skrzynia z plecakami</Polish>
+<Russian>Ящик с рюкзаками</Russian>
+<French>Caisse de sacs à dos</French>
+<Spanish>Ruck box</Spanish>
+<Italian>Ruck box</Italian>
+<Hungarian>Hátizsákos láda</Hungarian>
+</Key>
+<Key ID="STR_VDN_ACE_RUCK_BOX_WEST">
+<English>Ruck box WEST</English>
+<Czech>Krabice s batohy (BLUFOR)</Czech>
+<German>Rucksack Kiste (BLUFOR)</German>
+<Polish>Skrzynia z plecakami (BLUFOR)</Polish>
+<Russian>Ящик с рюкзаками (Синие)</Russian>
+<French>Caisse de sacs à dos (BLUFOR)</French>
+<Spanish>Ruck box WEST</Spanish>
+<Italian>Ruck box WEST</Italian>
+<Hungarian>Hátizsákos láda (Nyugat)</Hungarian>
+</Key>
+<Key ID="STR_VDN_ACE_RUCK_BOX_EAST">
+<English>Ruck box EAST</English>
+<Czech>Bedna s batohy (OPFOR)</Czech>
+<German>Rucksack Kiste (OPFOR)</German>
+<Polish>Skrzynia z plecakami (OPFOR)</Polish>
+<Russian>Ящик с рюкзаками (Красные)</Russian>
+<French>Caisse de sacs à dos (OPFOR)</French>
+<Spanish>Ruck box EAST</Spanish>
+<Italian>Ruck box EAST</Italian>
+<Hungarian>Hátizsákos láda (Kelet)</Hungarian>
+</Key>
+<Key ID="STR_VDN_ACE_RUCK_BOX_IND">
+<English>Ruck box IND</English>
+<Czech>Bedna s batohy (Nezávislí)</Czech>
+<German>Rucksack Kiste (Guerilla)</German>
+<Polish>Skrzynia z plecakami (niezależni)</Polish>
+<Russian>Ящик с рюкзаками (Сопротивление)</Russian>
+<French>Caisse de sacs à dos (INDEPENDANT)</French>
+<Spanish>Ruck box IND</Spanish>
+<Italian>Ruck box IND</Italian>
+<Hungarian>Hátizsákos láda (Függ.)</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

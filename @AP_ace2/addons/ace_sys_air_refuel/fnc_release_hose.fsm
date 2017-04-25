@@ -1,0 +1,242 @@
+/*%FSM<COMPILE "G:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, fnc_release_hose">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"fnc_release_hose",0,250,-75.000000,-100.000000,25.000000,-50.000000,0.000000,"fnc_release_hose"};
+item1[] = {"__2",4,218,-25.000000,-25.000000,75.000000,25.000000,0.000000,""};
+item2[] = {"_",2,250,-25.000000,50.000000,75.000000,100.000000,0.000000,""};
+item3[] = {"__1",4,218,-150.000000,-25.000000,-50.000000,25.000000,1.000000,""};
+item4[] = {"__1",1,250,-250.000000,-25.000000,-150.000000,25.000000,0.000000,""};
+item5[] = {"__1",4,218,50.000000,125.000000,150.000000,175.000000,0.000000,""};
+item6[] = {"_",4,218,-100.000000,125.000000,0.000000,175.000000,1.000000,""};
+item7[] = {"__2",2,250,50.000000,200.000000,150.000000,250.000000,0.000000,""};
+item8[] = {"__3",1,250,-200.000000,125.000000,-100.000000,175.000000,0.000000,""};
+item9[] = {"_",4,218,50.000000,275.000000,150.000000,325.000000,0.000000,""};
+item10[] = {"__4",2,250,50.000000,350.000000,150.000000,400.000000,0.000000,""};
+item11[] = {"_",4,4314,50.000000,425.000000,150.000000,475.000000,0.000000,""};
+item12[] = {"__5",1,250,50.000000,500.000000,150.000000,550.000000,0.000000,""};
+item13[] = {"_",4,218,-175.000000,-100.000000,-75.000000,-50.000000,2.000000,""};
+item14[] = {"__6",1,250,-275.000000,-100.000000,-175.000000,-50.000000,0.000000,""};
+link0[] = {0,1};
+link1[] = {0,3};
+link2[] = {0,13};
+link3[] = {1,2};
+link4[] = {2,5};
+link5[] = {2,6};
+link6[] = {3,4};
+link7[] = {5,7};
+link8[] = {6,8};
+link9[] = {7,9};
+link10[] = {9,10};
+link11[] = {10,11};
+link12[] = {11,12};
+link13[] = {13,14};
+globals[] = {25.000000,1,0,0,0,640,480,1,16,6316128,1,-316.996643,316.996613,680.509033,-244.638687,368,537,1};
+window[] = {0,-1,-1,-1,-1,932,250,1210,250,1,386};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "fnc_release_hose";
+  class States
+  {
+    /*%FSM<STATE "fnc_release_hose">*/
+    class fnc_release_hose
+    {
+      name = "fnc_release_hose";
+      init = /*%FSM<STATEINIT""">*/"/* ace_sys_air_refuel | (c) 2008, 2009 by rocko */" \n
+       "" \n
+       "// THIS FSM RUNS IS LOCAL TO TANKER PLANE" \n
+       "" \n
+       "_debug = false;" \n
+       "" \n
+       "private[""_refueler"",""_fh_1"",""_fh_2"",""_dam"",""_rel""];" \n
+       "_refueler = _this select 0;" \n
+       "_dam = getDammage _refueler;" \n
+       "_refueler setVariable [""ace_sys_air_refuel_busy"", true, false];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 2.000000;
+          to="__6";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(isEngineOn _refueler)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__1">*/
+        class __1
+        {
+          priority = 1.000000;
+          to="__1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_dam > 0.4)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__2">*/
+        class __2
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "_">*/
+    class _
+    {
+      name = "_";
+      init = /*%FSM<STATEINIT""">*/"_rel = _refueler getVariable ""ace_sys_air_refuel_hose_released"";" \n
+       "if (isNil ""_rel"") then { _rel = false; };"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 1.000000;
+          to="__3";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_rel"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__1">*/
+        class __1
+        {
+          priority = 0.000000;
+          to="__2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__1">*/
+    class __1
+    {
+      name = "__1";
+      init = /*%FSM<STATEINIT""">*/"if (driver _refueler == player) then {" \n
+       "	[localize ""STR_ACE_AIR_REFUEL_DAMAGED"",[1,0,0,1],true,1] spawn ACE_fnc_visual;" \n
+       "};" \n
+       "_refueler setVariable [""ace_sys_air_refuel_busy"", false, false];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__2">*/
+    class __2
+    {
+      name = "__2";
+      init = /*%FSM<STATEINIT""">*/"if (driver _refueler == player) then {" \n
+       "	(localize ""STR_ACE_AIR_REFUEL_UA_REL"") spawn ACE_fnc_visual;" \n
+       "};" \n
+       "_timeNow = time + 15;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__4";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timeNow"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__3">*/
+    class __3
+    {
+      name = "__3";
+      init = /*%FSM<STATEINIT""">*/"_refueler setVariable [""ace_sys_air_refuel_busy"", false, false];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__4">*/
+    class __4
+    {
+      name = "__4";
+      init = /*%FSM<STATEINIT""">*/"if (driver _refueler == player) then {" \n
+       "	(localize ""STR_ACE_AIR_REFUEL_DEPLOYED"") spawn ACE_fnc_visual;" \n
+       "};" \n
+       "_fh_1 = ""ACE_Refueling_Hose"" createVehicle [0,0];" \n
+       "_fh_2 = ""ACE_Refueling_Hose"" createVehicle [0,0];" \n
+       "_fh_1 attachTo [_refueler,[-7.65,-2.2,-2.8],""""];" \n
+       "_fh_2 attachTo [_refueler,[7.65,-2.2,-2.8],""""];" \n
+       "_refueler setVariable [""ace_sys_air_refuel_hose_released"", true, true];" \n
+       "_refueler setVariable [""ace_sys_air_refuel_hose_1"", _fh_1, true];" \n
+       "_refueler setVariable [""ace_sys_air_refuel_hose_2"", _fh_2, true];" \n
+       "" \n
+       "_timeNow = time + 2;" \n
+       "" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__5";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timeNow"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__5">*/
+    class __5
+    {
+      name = "__5";
+      init = /*%FSM<STATEINIT""">*/"_refueler setVariable [""ace_sys_air_refuel_busy"", false, false];" \n
+       "[_refueler,_fh_1,_fh_2] execFSM ""\x\ace\addons\sys_air_refuel\fnc_refuel.fsm"";"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__6">*/
+    class __6
+    {
+      name = "__6";
+      init = /*%FSM<STATEINIT""">*/"if (driver _refueler == player) then {" \n
+       "	[""!!!"",[1,0,0,1],true,1] spawn ACE_fnc_visual;" \n
+       "};" \n
+       "_refueler setVariable [""ace_sys_air_refuel_busy"", false, false];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="fnc_release_hose";
+  finalStates[] =
+  {
+    "__1",
+    "__3",
+    "__5",
+    "__6",
+  };
+};
+/*%FSM</COMPILE>*/

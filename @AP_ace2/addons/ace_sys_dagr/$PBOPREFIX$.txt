@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_dagr
+Pbo Type is: Arma Addon
+Sha: '4F17B36C96293702240B35204E4775D95E2E790A'
+//////</HEADER>//////

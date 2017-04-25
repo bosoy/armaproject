@@ -1,0 +1,52 @@
+﻿////////////////////////////////////////////////////////////////////////////////
+// Localization file (i18n).                                                  //
+// Write only in UTF-8 charset!!!                                             //
+//                                                                            //
+// $Id:: Stringtable.csv 121 2009-03-24 00:25:33Z ist                      $: //
+////////////////////////////////////////////////////////////////////////////////
+LANGUAGE,               English,                Russian,                 German
+// Faction names: ///////////////////////////////////////////////////////////////
+// Object names: ///////////////////////////////////////////////////////////////
+STR_BMD2_Name,          BMD 2,                  БМД 2,                   BMD 2
+STR_BMD2_rus1_Name,          BMD 2 (Camo 1),                  БМД 2 (Камо 1),                   BMD 2 (Kamo 1)
+STR_BMD2_rus2_Name,          BMD 2 (Camo 2),                  БМД 2 (Камо 2),                   BMD 2 (Kamo 2)
+STR_BMD2_rus3_Name,          BMD 2 (Camo 3),                  БМД 2 (Камо 3),                   BMD 2 (Kamo 3)
+STR_BMD2_rus4_Name,          BMD 2 (Camo 4),                  БМД 2 (Камо 4),                   BMD 2 (Kamo 4)
+STR_BMD2_des_Name,          BMD 2 (Desert),                  БМД 2 (Горный),                   BMD 2 (Kamo 5)
+STR_BMD2_peace_Name,          BMD 2 (Peacekeeper),                  БМД 2 (МС),                   BMD 2 (Friedenswächter)
+STR_BMD2K_Name,          BMD 2K,                  БМД 2K,                   BMD 2K
+STR_BMD2K_rus1_Name,          BMD 2K (Camo 1),                  БМД 2K (Камо 1),                   BMD 2K (Kamo 1)
+STR_BMD2K_rus2_Name,          BMD 2K (Camo 2),                  БМД 2K (Камо 2),                   BMD 2K (Kamo 2)
+STR_BMD2K_rus3_Name,          BMD 2K (Camo 3),                  БМД 2K (Камо 3),                   BMD 2K (Kamo 3)
+STR_BMD2K_rus4_Name,          BMD 2K (Camo 4),                  БМД 2K (Камо 4),                   BMD 2K (Kamo 4)
+STR_BMD2K_des_Name,          BMD 2K (Desert),                  БМД 2K (Горный),                   BMD 2K (Kamo 5)
+STR_BMD2K_peace_Name,          BMD 2K (Peacekeeper),                  БМД 2K (МС),                   BMD 2K (Friedenswächter)
+STR_9M113,             9M113 Konkurs,          9М113 Конкурс,            9M113 Konkurs
+STR_O915_WPN_6P7M,						7.62 PKMT Machinegun,			7.62 ПКМТ,						7.62 PKMT Maschinengewehr 
+STR_O915_MAG_LPS_100,					7.62x54R LPS (100),				7.62x54R ЛПС (100 шт.),			7.62x54R LPS (100)
+STR_O915_MAG_LPS_250,					7.62x54R LPS (250),				7.62x54R ЛПС (250 шт.),			7.62x54R LPS (100)
+STR_O915_MAG_LPS_500,					7.62x54R LPS (500),				7.62x54R ЛПС (500 шт.),			7.62x54R LPS (500)
+STR_O915_MAG_LPS_1000,					7.62x54R LPS (1000),			7.62x54R ЛПС (1000 шт.),		7.62x54R LPS (1000)
+STR_O915_MAG_LPS_2000,					7.62x54R LPS (2000),			7.62x54R ЛПС (2000 шт.),		7.62x54R LPS (1000)
+STR_O915_OBJ_AMMOCRATE,					Russian ammo crate,				Российский патронный ящик,		Russan ammo crate
+STR_O915_OBJ_AMMOCRATE_762_LPS_440,		7.62 LPS ammo crate (440 pcs),	Укупорка (7.62 ЛПС гж 440),		7.62 LPS ammo crate (440 pcs)
+STR_O915_OBJ_AMMOCRATE_762_LPS_880,		7.62 LPS ammo crate (880 pcs),	Ящик (7.62 ЛПС гж 880),			7.62 LPS ammo crate (880 pcs)
+// Vehicle factions /////////////////////////////////////////////////////////////
+STR_BMD2_ukr,			Ukraine,				Украина,				Ukraine					
+// Vehicle classes /////////////////////////////////////////////////////////////
+STR_VDV_Vehicles,       RHS Armour - VDV,            RHS Бронетехника - ВДВ,       RHS Armour - VDV
+STR_VMF_Vehicles,       RHS Armour - VMF,            RHS Бронетехника - ВМФ,       RHS Armour - VMF
+// Vehicle actions /////////////////////////////////////////////////////////////
+STR_UA_LowerSusp,       Lower Suspension,       Уменьшить клиренс,       Fahrwerk senken
+STR_UA_RaiseSusp,       Raise Suspension,       Увеличить клиренс,       Fahrwerk heben
+STR_BMD2_LibDesc,            The BMD vehicle is the soul of the Soviet Airborne forces.,   БМД - ну кто её не знает?! =), Das Fahrzeug BMD ist die Seele der Russischen Fallschirmjäger
+// Crew ////////////////////////////////////////////////////////////////////////
+STR_Commander		   Commander,			   Командир,				 Kommandier
+STR_MGFrontRight,      Right Hull Gunner,      Пулемётчик,               Bugschütze rechts
+STR_CargoBackLeft,     Left Cargo,             Десант слева,             Passagierraum links
+STR_CargoBackRight,    Right Cargo,            Десант справа,            Passagierraum rechts
+STR_CargoBackCenter,   Back Cargo,             Десант по центру,         Passagierraum mitte
+
+
+
+ 

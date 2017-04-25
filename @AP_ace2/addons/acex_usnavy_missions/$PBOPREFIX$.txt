@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=x\acex_usnavy\addons\missions
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: '094238F093CCC1297542113B66558D422ACCE7D6'
+//////</HEADER>//////

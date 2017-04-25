@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_air_fcs
+Pbo Type is: Arma Addon
+Sha: 'CDEC01A4818997A460FEFEFB4C0DDE3F74A3D597'
+//////</HEADER>//////

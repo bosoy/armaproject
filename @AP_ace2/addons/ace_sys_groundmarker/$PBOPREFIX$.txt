@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_groundmarker
+Pbo Type is: Arma Addon
+Sha: 'BD8C8D8428E9338F8C79B3680D34669CE0AED9F5'
+//////</HEADER>//////

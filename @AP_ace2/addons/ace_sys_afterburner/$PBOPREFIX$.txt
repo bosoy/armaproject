@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_afterburner
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: '9F05F9957B4CEB29C1700B5A9DF1F2F055228FFF'
+//////</HEADER>//////

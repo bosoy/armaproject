@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\c_ai_dispersion
+Pbo Type is: Arma Addon
+Sha: '9B3E93C733C99B2D1F84AD6B0DF8A0DBB477A6E7'
+//////</HEADER>//////

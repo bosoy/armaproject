@@ -1,0 +1,8 @@
+Loom of the Fruit
+-----------------
+Obsolete items become useless. Fruits are useless, too, so our useless items are converted into nice useless fruits
+
+Please list obsolete items here.
+
+
+1. ACE_Jerrycan - Banana

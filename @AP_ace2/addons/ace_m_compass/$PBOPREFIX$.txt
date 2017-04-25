@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=x\ace\addons\m_compass
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: 'EDB178AE7302211FCB4227C577744DE04AD88B1E'
+//////</HEADER>//////

@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_dogtag
+Pbo Type is: Arma Addon
+Sha: 'B1ACAD717DE7CE954F342C7805AA3A155E82E790'
+//////</HEADER>//////

@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_sniper_tools
+Pbo Type is: Arma Addon
+Sha: '605D4892BAC70913A42EE7FCBB7AE14632258952'
+//////</HEADER>//////

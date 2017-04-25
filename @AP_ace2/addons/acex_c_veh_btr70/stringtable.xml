@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACEX">
+<Package name="c_veh_btr70">
+<Container name="STR_ACE_VDN">
+<Key ID="STR_ACE_VDN_BTR70">
+<German>BTR-70</German>
+<English>BTR-70</English>
+<Italian>BTR-70</Italian>
+<Spanish>BTR-70</Spanish>
+<French>BTR-70</French>
+<Czech>BTR-70</Czech>
+<Russian>БТР-70</Russian>
+<Polish>BTR-70</Polish>
+<Hungarian>BTR-70</Hungarian>
+</Key>
+</Container>
+<Container name="STR_ACE_GDN">
+<Key ID="STR_ACE_GDN_ACE_TK_MECHANIZED_SQUAD_BTR70">
+<German>Mechanisierter Infanterietrupp (BTR-70)</German>
+<English>Mechanized Infantry Squad (BTR-70)</English>
+<Italian>Sq.Fant.Mecc. (BTR-70)</Italian>
+<Spanish>Escuadra de infantería mecanizada (BTR-70)</Spanish>
+<French>Groupe d'infanterie mécanisé (BTR-70)</French>
+<Czech>Mechanizované pěchtoní družstvo (BTR-70)</Czech>
+<Russian>Мотострелковое отделение на БТР-70</Russian>
+<Polish>Drużyna piechoty zmechanizowanej (BTR-70)</Polish>
+<Hungarian>Mechanized Infantry Squad (BTR-70)</Hungarian>
+</Key>
+<Key ID="STR_ACE_GDN_ACE_UN_MECHANIZED_PATROL_BTR70">
+<German>Mechanisierte Patrouille (BTR-70)</German>
+<English>Mechanized Patrol (BTR-70)</English>
+<Italian>Pattuglia mecc. (BTR-70)</Italian>
+<Spanish>Patrulla mecanizada (BTR-70)</Spanish>
+<French>Patrouille mécanisée (BTR-70)</French>
+<Czech>Mechanizovaná patrola (BTR-70)</Czech>
+<Russian>Мотопехотное отделение на БТР-70</Russian>
+<Polish>Patrol zmechanizowany (BTR-70)</Polish>
+<Hungarian>Mechanized Patrol (BTR-70)</Hungarian>
+</Key>
+</Container>
+<Container name="STR_ACE_UA">
+<Key ID="STR_ACE_UA_OpenShield">
+<German>Sichtschild öffnen</German>
+<English>Open shield</English>
+<Italian>Open shield</Italian>
+<Spanish>Open shield</Spanish>
+<French>Open shield</French>
+<Czech>Otevřít štít</Czech>
+<Russian>Открыть люк</Russian>
+<Polish>Otwórz klapę</Polish>
+<Hungarian>Open shield</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_CloseShield">
+<German>Sichtschild schliessen</German>
+<English>Close shield</English>
+<Italian>Close shield</Italian>
+<Spanish>Close shield</Spanish>
+<French>Close shield</French>
+<Czech>Zavřít štít</Czech>
+<Russian>Закрыть люк</Russian>
+<Polish>Zamknij klapę</Polish>
+<Hungarian>Close shield</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_OpenGunport">
+<German>Schießscharte öffnen</German>
+<English>Open gunport</English>
+<Italian>Open gunport</Italian>
+<Spanish>Open gunport</Spanish>
+<French>Open gunport</French>
+<Czech>Otevřít střílnu</Czech>
+<Russian>Открыть бойницу</Russian>
+<Polish>Otwórz gniazdo</Polish>
+<Hungarian>Open gunport</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_CloseGunport">
+<German>Schießscharte schliessen</German>
+<English>Close gunport</English>
+<Italian>Close gunport</Italian>
+<Spanish>Close gunport</Spanish>
+<French>Close gunport</French>
+<Czech>Zavřít střílnu</Czech>
+<Russian>Закрыть бойницу</Russian>
+<Polish>Zamknij gniazdo</Polish>
+<Hungarian>Close gunport</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_OpenLHatch">
+<German>Linke Seitentür öffnen</German>
+<English>Open left hatch</English>
+<Italian>Open left hatch</Italian>
+<Spanish>Open left hatch</Spanish>
+<French>Open left hatch</French>
+<Czech>Otevřít levý poklop</Czech>
+<Russian>Открыть левый люк</Russian>
+<Polish>Otwórz lewy właz</Polish>
+<Hungarian>Open left hatch</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_OpenRHatch">
+<German>Rechte Seitentür öffnen</German>
+<English>Open right hatch</English>
+<Italian>Open right hatch</Italian>
+<Spanish>Open right hatch</Spanish>
+<French>Open right hatch</French>
+<Czech>Otevřít pravý poklop</Czech>
+<Russian>Открыть правый люк</Russian>
+<Polish>Otwórz prawy właz</Polish>
+<Hungarian>Open right hatch</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_OpenTHatch">
+<German>Dachluke öffnen</German>
+<English>Open top hatch</English>
+<Italian>Open top hatch</Italian>
+<Spanish>Open top hatch</Spanish>
+<French>Open top hatch</French>
+<Czech>Otevřít horní poklop</Czech>
+<Russian>Открыть верхний люк</Russian>
+<Polish>Otwórz górny właz</Polish>
+<Hungarian>Open top hatch</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_CloseLHatch">
+<German>Linke Seitentür schliessen</German>
+<English>Close left hatch</English>
+<Italian>Close left hatch</Italian>
+<Spanish>Close left hatch</Spanish>
+<French>Close left hatch</French>
+<Czech>Zavřít levý poklop</Czech>
+<Russian>Закрыть левый люк</Russian>
+<Polish>Zamknij lewy właz</Polish>
+<Hungarian>Close left hatch</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_CloseRHatch">
+<German>Rechte Seitentür schliessen</German>
+<English>Close right hatch</English>
+<Italian>Close right hatch</Italian>
+<Spanish>Close right hatch</Spanish>
+<French>Close right hatch</French>
+<Czech>Zavřít pravý poklop</Czech>
+<Russian>Закрыть правый люк</Russian>
+<Polish>Zamknij prawy właz</Polish>
+<Hungarian>Close right hatch</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_CloseTHatch">
+<German>Dachluke schliessen</German>
+<English>Close top hatch</English>
+<Italian>Close top hatch</Italian>
+<Spanish>Close top hatch</Spanish>
+<French>Close top hatch</French>
+<Czech>Zavřít horní poklop</Czech>
+<Russian>Закрыть верхний люк</Russian>
+<Polish>Zamknij górny właz</Polish>
+<Hungarian>Close top hatch</Hungarian>
+</Key>
+</Container>
+<Container name="STR_BTR70">
+<Key ID="STR_BTR70_retread_L1">
+<German>Wechseln des linken Vorderrad</German>
+<English>Change front left wheel</English>
+<Italian>Change front left wheel</Italian>
+<Spanish>Change front left wheel</Spanish>
+<French>Change front left wheel</French>
+<Czech>Vyměnit přední levé kolo</Czech>
+<Russian>Заменить переднее левое колесо</Russian>
+<Polish>Wymiana przedniego lewego koła</Polish>
+<Hungarian>Change front left wheel</Hungarian>
+</Key>
+<Key ID="STR_BTR70_retread_L2">
+<German>Wechseln des zweiten linken Rades</German>
+<English>Change second left wheel</English>
+<Italian>Change second left wheel</Italian>
+<Spanish>Change second left wheel</Spanish>
+<French>Change second left wheel</French>
+<Czech>Vyměnit druhé levé kolo</Czech>
+<Russian>Заменить второе левое колесо</Russian>
+<Polish>Wymiana drugiego lewego koła</Polish>
+<Hungarian>Change second left wheel</Hungarian>
+</Key>
+<Key ID="STR_BTR70_retread_L3">
+<German>Wechseln des dritten linken Rades</German>
+<English>Change third left wheel</English>
+<Italian>Change third left wheel</Italian>
+<Spanish>Change third left wheel</Spanish>
+<French>Change third left wheel</French>
+<Czech>Vyměnit třetí levé kolo</Czech>
+<Russian>Заменить третье левое колесо</Russian>
+<Polish>Wymiana trzeciego lewego koła</Polish>
+<Hungarian>Change third left wheel</Hungarian>
+</Key>
+<Key ID="STR_BTR70_retread_L4">
+<German>Wechseln des hinteren linken Rades</German>
+<English>Change rear left wheel</English>
+<Italian>Change rear left wheel</Italian>
+<Spanish>Change rear left wheel</Spanish>
+<French>Change rear left wheel</French>
+<Czech>Vyměnit zadní levé kolo</Czech>
+<Russian>Заменить заднее левое колесо</Russian>
+<Polish>Wymiana tylnego lewego koła</Polish>
+<Hungarian>Change rear left wheel</Hungarian>
+</Key>
+<Key ID="STR_BTR70_retread_P1">
+<German>Wechseln des rechten Vorderrad</German>
+<English>Change front right wheel</English>
+<Italian>Change front right wheel</Italian>
+<Spanish>Change front right wheel</Spanish>
+<French>Change front right wheel</French>
+<Czech>Vyměnit přední pravé kolo</Czech>
+<Russian>Заменить переднее правое колесо</Russian>
+<Polish>Wymiana przedniego prawego koła</Polish>
+<Hungarian>Change front right wheel</Hungarian>
+</Key>
+<Key ID="STR_BTR70_retread_P2">
+<German>Wechseln des zweiten rechten Rades</German>
+<English>Change second right wheel</English>
+<Italian>Change second right wheel</Italian>
+<Spanish>Change second right wheel</Spanish>
+<French>Change second right wheel</French>
+<Czech>Vyměnit druhé pravé kolo</Czech>
+<Russian>Заменить второе правое колесо</Russian>
+<Polish>Wymiana drugiego prawego koła</Polish>
+<Hungarian>Change second right wheel</Hungarian>
+</Key>
+<Key ID="STR_BTR70_retread_P3">
+<German>Wechseln des dritten rechten Rades</German>
+<English>Change third right wheel</English>
+<Italian>Change third right wheel</Italian>
+<Spanish>Change third right wheel</Spanish>
+<French>Change third right wheel</French>
+<Czech>Vyměnit třetí pravé kolo</Czech>
+<Russian>Заменить третье правое колесо</Russian>
+<Polish>Wymiana trzeciego prawego koła</Polish>
+<Hungarian>Change third right wheel</Hungarian>
+</Key>
+<Key ID="STR_BTR70_retread_P4">
+<German>Wechseln des hinteren rechten Rades</German>
+<English>Change rear right wheel</English>
+<Italian>Change rear right wheel</Italian>
+<Spanish>Change rear right wheel</Spanish>
+<French>Change rear right wheel</French>
+<Czech>Vyměnit zadní pravé kolo</Czech>
+<Russian>Заменить заднее правое колесо</Russian>
+<Polish>Wymiana tylnego prawego koła</Polish>
+<Hungarian>Change rear right wheel</Hungarian>
+</Key>
+<Key ID="STR_BTR70_retread_delimsa">
+<German>Reserverad abgeben</German>
+<English>Transfer spare wheel</English>
+<Italian>Transfer spare wheel</Italian>
+<Spanish>Transfer spare wheel</Spanish>
+<French>Transfer spare wheel</French>
+<Czech>Přemístit náhradní kolo</Czech>
+<Russian>Отдать запаску</Russian>
+<Polish>Przeniesienie koła zapasowego</Polish>
+<Hungarian>Transfer spare wheel</Hungarian>
+</Key>
+<Key ID="STR_BTR70_retread_delimsa_not">
+<German>Kein Platz für das Reserverad</German>
+<English>No place for spare wheel</English>
+<Italian>No place for spare wheel</Italian>
+<Spanish>No place for spare wheel</Spanish>
+<French>No place for spare wheel</French>
+<Czech>Není místo pro náhradní kolo</Czech>
+<Russian>Нет места для запасного колеса</Russian>
+<Polish>Brak miejsca na koło zapasowe</Polish>
+<Hungarian>No place for spare wheel</Hungarian>
+</Key>
+<Key ID="STR_BTR70_retread_delimsa_start">
+<German>Reserverad wird übergeben</German>
+<English>Transferring the spare wheel</English>
+<Italian>Transferring the spare wheel</Italian>
+<Spanish>Transferring the spare wheel</Spanish>
+<French>Transferring the spare wheel</French>
+<Czech>Přemisťuji náhradní kolo</Czech>
+<Russian>Перекладываем запасное колесо</Russian>
+<Polish>Przenoszenie koła zapasowego</Polish>
+<Hungarian>Transferring the spare wheel</Hungarian>
+</Key>
+<Key ID="STR_BTR70_retread_fail">
+<German>Fahrzeug ist ausser Reichweite</German>
+<English>BTR has left...</English>
+<Italian>BTR has left...</Italian>
+<Spanish>BTR has left...</Spanish>
+<French>BTR has left...</French>
+<Czech>BTR odlejo...</Czech>
+<Russian>БТР уехал...</Russian>
+<Polish>BTR odjechał...</Polish>
+<Hungarian>BTR has left...</Hungarian>
+</Key>
+<Key ID="STR_BTR70_retread_not">
+<German>Kein verbleibendes Reserverad</German>
+<English>No spare wheel</English>
+<Italian>No spare wheel</Italian>
+<Spanish>No spare wheel</Spanish>
+<French>No spare wheel</French>
+<Czech>Žádné náhradní kolo</Czech>
+<Russian>Нет запаски</Russian>
+<Polish>Brak koła zapasowego</Polish>
+<Hungarian>No spare wheel</Hungarian>
+</Key>
+<Key ID="STR_BTR70_retread_delimsa_ok">
+<German>Reserverad übergeben</German>
+<English>Spare wheel transferred</English>
+<Italian>Spare wheel transferred</Italian>
+<Spanish>Spare wheel transferred</Spanish>
+<French>Spare wheel transferred</French>
+<Czech>Náhradní kolo přemístěno</Czech>
+<Russian>Запаска переложена</Russian>
+<Polish>Przeniesiono koło zapasowe</Polish>
+<Hungarian>Spare wheel transferred</Hungarian>
+</Key>
+<Key ID="STR_BTR70_retread_start">
+<German>Reserverad wird montiert</German>
+<English>Replacing wheel</English>
+<Italian>Replacing wheel</Italian>
+<Spanish>Replacing wheel</Spanish>
+<French>Replacing wheel</French>
+<Czech>Vyměnuji kolo</Czech>
+<Russian>Начинаем замену колеса</Russian>
+<Polish>Wymiana koła</Polish>
+<Hungarian>Replacing wheel</Hungarian>
+</Key>
+<Key ID="STR_BTR70_retread_finish">
+<German>Reserverad wurde angebracht</German>
+<English>Wheel replaced</English>
+<Italian>Wheel replaced</Italian>
+<Spanish>Wheel replaced</Spanish>
+<French>Wheel replaced</French>
+<Czech>Kolo vyměněno</Czech>
+<Russian>Колесо заменено</Russian>
+<Polish>Koło wymienione</Polish>
+<Hungarian>Wheel replaced</Hungarian>
+</Key>
+<Key ID="STR_BTR70_LIB">
+<German>This armored personnel carrier was created as a substitute for the older BTR-60 family of APCs and was among the best machines in its class at that time. It was adopted in 1972 and eventually become something more than just a troop carrier. Such numerous and important improvements like centralized tyre-pressure adjustment 2 new powerful eight-cylinder engines and outstanding amphibious capabilities allowed it to become a universal maneuverable and reliable combat vehicle.</German>
+<English>This armored personnel carrier was created as a substitute for the older BTR-60 family of APCs and was among the best machines in its class at that time. It was adopted in 1972 and eventually become something more than just a troop carrier. Such numerous and important improvements like centralized tyre-pressure adjustment 2 new powerful eight-cylinder engines and outstanding amphibious capabilities allowed it to become a universal maneuverable and reliable combat vehicle.</English>
+<Italian>This armored personnel carrier was created as a substitute for the older BTR-60 family of APCs and was among the best machines in its class at that time. It was adopted in 1972 and eventually become something more than just a troop carrier. Such numerous and important improvements like centralized tyre-pressure adjustment 2 new powerful eight-cylinder engines and outstanding amphibious capabilities allowed it to become a universal maneuverable and reliable combat vehicle.</Italian>
+<Spanish>This armored personnel carrier was created as a substitute for the older BTR-60 family of APCs and was among the best machines in its class at that time. It was adopted in 1972 and eventually become something more than just a troop carrier. Such numerous and important improvements like centralized tyre-pressure adjustment 2 new powerful eight-cylinder engines and outstanding amphibious capabilities allowed it to become a universal maneuverable and reliable combat vehicle.</Spanish>
+<French>This armored personnel carrier was created as a substitute for the older BTR-60 family of APCs and was among the best machines in its class at that time. It was adopted in 1972 and eventually become something more than just a troop carrier. Such numerous and important improvements like centralized tyre-pressure adjustment 2 new powerful eight-cylinder engines and outstanding amphibious capabilities allowed it to become a universal maneuverable and reliable combat vehicle.</French>
+<Czech>Tohle APC bylo vytvořeno jako náhrada za starší rodinu APC BTR-60 a bylo mezi nejlepšími stroji svého druhu a času. Bylo osvojeno v roce 1792 a na konec se stalo něcím více něz přepravníkem vojáků. Jako četné a důležité vylepšení je centralizované dofukování gum, 2 nové silné osmi-válcové motory a vynikající obojživejné vlastnosti umožnili stát se univerzálním, obratným a spolehlivým bojovým vozidlem.</Czech>
+<Russian>Бронетранспортёр создававшийся на замену устаревшему БТР-60ПБ и принятый на вооружение Советской Армии в 1972 году на тот момент являл собой одну из наиболее совершенных машин подобного класса. Такие многочисленные и важные улучшения как установка двух новых мощных восьмицилиндровых двигателей централизованная регулировка давления в шинах и выдающиеся амфибийные способности позволили превратить простой транспорт пехоты в универсальную маневренную и надёжную боевую машину.</Russian>
+<Polish>Ten transporter opancerzony został zbudowany celem zastąpienia pojazdów BTR-60 i w swoim czasie był jedną z najlepszych konstrukcji tego typu. Po wprowadzeniu do służby w 1972 stał się czymś więcej niż tylko transporterem piechoty. Liczne i znaczące poprawki, takie jak centralny układ zarządzania ciśnieniem opon, 2 potężne 8-cylindrowe silniki i wzorowe zdolności amfibijne pozwoliły mu stać się uniwersalnym, sprawnym i niezawodnym wozem bojowym.</Polish>
+<Hungarian>This armored personnel carrier was created as a substitute for the older BTR-60 family of APCs and was among the best machines in its class at that time. It was adopted in 1972 and eventually become something more than just a troop carrier. Such numerous and important improvements like centralized tyre-pressure adjustment 2 new powerful eight-cylinder engines and outstanding amphibious capabilities allowed it to become a universal maneuverable and reliable combat vehicle.</Hungarian>
+</Key>
+</Container>
+</Package></Project>

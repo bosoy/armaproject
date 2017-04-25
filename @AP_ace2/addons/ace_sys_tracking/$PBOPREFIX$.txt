@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_tracking
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: '6E9CA19A8509E44DF554D61C02779886264DBC97'
+//////</HEADER>//////

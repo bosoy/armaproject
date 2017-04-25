@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\c_men_gear
+Pbo Type is: Arma Addon
+Sha: '09CD5C76C975F0F37C8E1E6F21608CDF56B51121'
+//////</HEADER>//////

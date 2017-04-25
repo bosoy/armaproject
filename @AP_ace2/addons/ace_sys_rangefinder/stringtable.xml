@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="sys_rangefinder">
+<Container name="STR_DN">
+<Key ID="STR_DN_ACE_RANGEFINDER_OD">
+<English>Vector 21B Nite</English>
+<German>Vector 21B Nite</German>
+<Spanish>Vector 21B Nite</Spanish>
+<Czech>Vector 21B Nite</Czech>
+<Russian>ЛД Vector 21Б Nite</Russian>
+<Italian>Vector 21B Nite</Italian>
+<Polish>Vector 21B Nite</Polish>
+<French>Vector 21B Nite</French>
+<Hungarian>Vector 21B Nite</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_LASERDESIGNATOR">
+<English>GLTDII SOFLAM</English>
+<German>GLTDII SOFLAM</German>
+<Spanish>GLTDII SOFLAM</Spanish>
+<Czech>GLTDII SOFLAM</Czech>
+<Russian>ЛЦУ/ЛД GLTDII SOFLAM</Russian>
+<Italian>GLTDII SOFLAM</Italian>
+<Polish>GLTDII SOFLAM</Polish>
+<French>GLTDII SOFLAM</French>
+<Hungarian>GLTDII SOFLAM</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_LASERDESIGNATOR_D">
+<English>Damaged GLTDII SOFLAM</English>
+<German>Beschädigter GLTDII SOFLAM</German>
+<Spanish>Damaged GLTDII SOFLAM</Spanish>
+<Czech>Poškozený GLTDII SOFLAM</Czech>
+<Russian>Поврежденный ЛЦУ GLTDII SOFLAM</Russian>
+<Italian>GLTDII SOFLAM Danneggiato</Italian>
+<Polish>Uszkodzony GLTDII SOFLAM</Polish>
+<French>GLTDII SOFLAM endommagé</French>
+<Hungarian>Sérült GLTDII SOFLAM</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_BATTERY_RANGEFINDER">
+<English>2CR5 Battery</English>
+<German>2CR5 Batterie</German>
+<Spanish>2CR5 Battery</Spanish>
+<Czech>2CR5 Baterie</Czech>
+<Russian>2CR5 Батарея</Russian>
+<Italian>2CR5 Batteria</Italian>
+<Polish>Akumulator 2CR5</Polish>
+<Hungarian>2CR5 Elem</Hungarian>
+<French>2CR5 Batterie</French>
+</Key>
+<Key ID="STR_DN_ACE_LASERBATTERIES">
+<English>BA5590 Battery</English>
+<German>BA5590 Batterie</German>
+<Spanish>BA5590 Battery</Spanish>
+<Czech>BA5590 Baterie</Czech>
+<Russian>BA5590 Батарея</Russian>
+<Italian>BA5590 Batteria</Italian>
+<Polish>Akumulator BA5590</Polish>
+<Hungarian>BA5590 Elem</Hungarian>
+<French>BA5590 Batterie</French>
+</Key>
+<Key ID="STR_DN_ACE_BB2847">
+<English>BB2847 Battery</English>
+<German>BB2847 Batterie</German>
+<Spanish>BB2847 Battery</Spanish>
+<Czech>BB2847 Baterie</Czech>
+<Russian>BB2847 Батарея</Russian>
+<Italian>BB2847 Batteria</Italian>
+<Polish>Akumulator BB2847</Polish>
+<Hungarian>BB2847 Elem</Hungarian>
+<French>BB2847 Batterie</French>
+</Key>
+<Key ID="STR_DN_ACE_MX2A">
+<English>MX-2A</English>
+<German>MX-2A</German>
+<Spanish>MX-2A</Spanish>
+<Czech>MX-2A</Czech>
+<Russian>MX-2A</Russian>
+<Italian>MX-2A</Italian>
+<Polish>MX-2A</Polish>
+<French>MX-2A</French>
+<Hungarian>MX-2A</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_LRTV">
+<English>LRTV</English>
+<German>LRTV</German>
+<Spanish>LRTV</Spanish>
+<Czech>LRTV</Czech>
+<Russian>LRTV</Russian>
+<Italian>LRTV</Italian>
+<Polish>LRTV</Polish>
+<French>LRTV</French>
+<Hungarian>LRTV</Hungarian>
+</Key>
+</Container>
+<Container name="STR_DSS">
+<Key ID="STR_DSS_ACE_RANGEFINDER_OD">
+<English>Rangefinder</English>
+<German>Entfernungsmesser</German>
+<Spanish>Rangefinder</Spanish>
+<Czech>Dálkoměr</Czech>
+<Russian>Дальномер</Russian>
+<Italian>Rangefinder</Italian>
+<Polish>Dalmierz</Polish>
+<Hungarian>Távmérő</Hungarian>
+<French>Télémètre</French>
+</Key>
+<Key ID="STR_DSS_ACE_BATTERY_RANGEFINDER">
+<English>Rangefinder Battery</English>
+<German>Entfernungsmesser Batterie</German>
+<Spanish>Rangefinder Battery</Spanish>
+<Czech>Baterie dálkoměru</Czech>
+<Russian>Батарея для дальномера</Russian>
+<Italian>Rangefinder Battery</Italian>
+<Polish>Akumulator dalmierza</Polish>
+<Hungarian>Távmérő Elem</Hungarian>
+<French>Batterie du désignateur</French>
+</Key>
+<Key ID="STR_DSS_ACE_LASERDESIGNATOR_D">
+<English>Damaged Designator</English>
+<German>Beschädigter Designator</German>
+<Spanish>Damaged Designator</Spanish>
+<Czech>Poškozený Značkovač</Czech>
+<Russian>Поврежденный ЛЦУ</Russian>
+<Italian>Damaged Designator</Italian>
+<Polish>Uszkodzony wskaźnik laserowy</Polish>
+<Hungarian>Sérült célmegjelölő</Hungarian>
+<French>Désignateur endommagé</French> 
+</Key>
+<Key ID="STR_DSS_ACE_MX2A">
+<English>Thermal Scope</English>
+<German>Thermal Scope</German>
+<Spanish>Thermal Scope</Spanish>
+<Czech>Termální dalekohled</Czech>
+<Russian>Термальный прицел</Russian>
+<Italian>Thermal Scope</Italian>
+<Polish>Termowizor</Polish>
+<Hungarian>Thermal Scope</Hungarian>
+<French>Thermal Scope</French>
+</Key>
+</Container>
+<Container name="STRINGS">
+<Key ID="STR_EMP_RF_DEGREES">
+<English>%1°</English>
+<German>%1°</German>
+<Spanish>%1°</Spanish>
+<Czech>%1°</Czech>
+<Russian>%1°</Russian>
+<Italian>%1°</Italian>
+<Polish>%1°</Polish>
+<French>%1°</French>
+<Hungarian>%1°</Hungarian>
+</Key>
+<Key ID="STR_EMP_RF_USED_BATTERY_LOAD">
+<English>Used Battery loaded</English>
+<German>Vorherige Batterie geladen</German>
+<Spanish>Used Battery loaded</Spanish>
+<Czech>Použitá Baterie vložena.</Czech>
+<Russian>Вставлена использованная батарея.</Russian>
+<Italian>Batteria Usata Caricata.</Italian>
+<Polish>Wstawiono zużyty akumulator.</Polish>
+<French>Batterie usée chargée.</French>
+<Hungarian>Használt elem lett betöltve.</Hungarian>
+</Key>
+<Key ID="STR_EMP_RF_BATTERY_LOAD">
+<English>Battery loaded</English>
+<German>Batterie geladen</German>
+<Spanish>Battery loaded</Spanish>
+<Czech>Batterie vložena.</Czech>
+<Russian>Батарея вставлена.</Russian>
+<Italian>Batteria Caricata.</Italian>
+<Polish>Wstawiono akumulator.</Polish>
+<French>Batterie chargée.</French>
+<Hungarian>Elem betöltve.</Hungarian>
+</Key>
+<Key ID="STR_EMP_RF_OUT_BATTERY">
+<English>Out of batteries</English>
+<German>Keine Batterien</German>
+<Spanish>Out of batteries</Spanish>
+<Czech>Žádné baterie.</Czech>
+<Russian>Нет батареи.</Russian>
+<Italian>Batterie Terminate.</Italian>
+<Polish>Brak akumulatorów.</Polish>
+<French>Plus de batteries.</French>
+<Hungarian>Nincs több elem.</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_SOFLAMTRIPOD">
+<English>SOFLAM Tripod</English>
+<German>SOFLAM Tripod</German>
+<Spanish>SOFLAM Tripod</Spanish>
+<Czech>Trojnožka pro SOFLAM</Czech>
+<Russian>Штатив для SOFLAM</Russian>
+<Italian>SOFLAM Tripod</Italian>
+<Polish>Trójnóg SOFLAM</Polish>
+<French>SOFLAM Tripod</French>
+<Hungarian>SOFLAM Tripod</Hungarian>
+</Key>
+<Key ID="STR_ACE_PICKUPSOFLAMTRIPOD">
+<English>Pick Up SOFLAM Tripod</English>
+<German>Pick Up SOFLAM Tripod</German>
+<Spanish>Pick Up SOFLAM Tripod</Spanish>
+<Czech>Vzít trojnožku pro SOFLAM</Czech>
+<Russian>Взять штатив для SOFLAM</Russian>
+<Italian>Pick Up SOFLAM Tripod</Italian>
+<Polish>Zabierz trójnóg SOFLAM</Polish>
+<French>Pick Up SOFLAM Tripod</French>
+<Hungarian>Pick Up SOFLAM Tripod</Hungarian>
+</Key>
+<Key ID="STR_ACE_PLACESOFLAMTRIPOD">
+<English>Place SOFLAM Tripod</English>
+<German>Place SOFLAM Tripod</German>
+<Spanish>Place SOFLAM Tripod</Spanish>
+<Czech>Umístit trojnožku pro SOFLAM</Czech>
+<Russian>Установить штатив для SOFLAM</Russian>
+<Italian>Place SOFLAM Tripod</Italian>
+<Polish>Ustaw trójnóg SOFLAM</Polish>
+<French>Place SOFLAM Tripod</French>
+<Hungarian>Place SOFLAM Tripod</Hungarian>
+</Key>
+</Container></Package></Project>

@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\cba\addons\network
+Pbo Type is: Arma Addon
+Sha: '74D7090589512F07D451EF627ED00CE1F76C30C5'
+//////</HEADER>//////

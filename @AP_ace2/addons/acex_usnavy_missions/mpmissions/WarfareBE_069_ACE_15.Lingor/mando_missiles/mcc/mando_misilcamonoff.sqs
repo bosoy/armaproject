@@ -1,0 +1,11 @@
+;mando Missile Control Center missile camera selector ON/OFF
+;mando_misilcamonoff.sqs
+;Jan 2007 mandoble
+;
+;This is executed when clicking the camera button on the right pannel
+
+MCC_CAMERAONOFF = 21925
+
+
+if (mando_missile_camera) then {mando_missile_camera=false;mando_mccpredicam=false;ctrlSetText [MCC_CAMERAONOFF,"Weapon Camera is OFF"]} else{mando_missile_camera=true;ctrlSetText [MCC_CAMERAONOFF,"Weapon Camera is ON"]}
+exit

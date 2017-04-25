@@ -1,0 +1,2914 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Arma2">
+  <Package name="CWarfare">
+    <Container name="WF">
+      <Key ID="STR_WF_Abort">
+        <English>Abort</English>
+        <French>Annuler</French>
+        <German>Abbrechen</German>
+        <Russian>Отменить</Russian>
+        <Italian>Annulla</Italian>
+      </Key>
+      <Key ID="STR_WF_Accept">
+        <English>Accept</English>
+        <French>Accépter</French>
+        <German>Akzeptieren</German>
+        <Russian>Подтвердить</Russian>
+        <Italian>Accetta</Italian>
+      </Key>
+      <Key ID="STR_WF_Action_Lockpick">
+        <English>Lockpick</English>
+        <French>Crocheter</French>
+        <German>Schloss knacken</German>
+        <Russian>Открыть отмычкой</Russian>
+        <Italian>Apri Serratura</Italian>
+      </Key>
+      <Key ID="STR_WF_Action_DeployMASH">
+        <English>Deploy MASH</English>
+        <French>Déployer Hopital de Campagne</French>
+        <German>Feldlazarett aufbauen</German>
+        <Russian>Развернуть госпиталь</Russian>
+        <Italian>Monta ospedale da campo</Italian>
+      </Key>
+      <Key ID="STR_WF_Action_Lockpick_Failed">
+        <English>Skill Information:\n\n - You've failed to unlock the vehicle.</English>
+        <French>Information d'Habilité:\n\n - Vous n'avez pas réussi à déverouiller le véhicule.</French>
+        <German>Fähigkeiteninformation:\n\n - Sie haben es nicht geschafft, das Fahrzeug zu öffnen.</German>
+        <Russian>Информация:\n\n Вам не удалось открыть транспорт отмычкой.</Russian>
+        <Italian>Informazione Abilità:\n\n - Non sei riuscito ad aprire il veicolo</Italian>
+      </Key>
+      <Key ID="STR_WF_Action_Lockpick_Succeed">
+        <English>Skill Information:\n\n - The vehicle has been successfully unlocked.</English>
+        <French>Information d'Habilité:\n\n - Le véhicule à été déverouillé avec succès.</French>
+        <German>Fähigkeiteninformation:\n\n - Sie haben das Fahrzeug erfolgreich geöffnet.</German>
+        <Russian>Информация:\n\n Транспорт успешно открыт отмычкой.</Russian>
+        <Italian>Informazione Abilità:\n\n - Sei riuscito ad aprire il veicolo!</Italian>
+      </Key>
+      <Key ID="STR_WF_Action_Repair">
+        <English>Repair</English>
+        <French>Réparer</French>
+        <German>Reparieren</German>
+        <Russian>Ремонт</Russian>
+        <Italian>Ripara</Italian>
+      </Key>
+      <Key ID="STR_WF_Action_Spot">
+        <English>Spot</English>
+        <French>Repérer</French>
+        <German>Beobachten</German>
+        <Russian>Указать</Russian>
+        <Italian>Individua</Italian>
+      </Key>
+      <Key ID="STR_WF_Action_Spot_Info">
+        <English>Skill Information:\n\n - Spotting Ability require the use of binoculars.</English>
+        <French>Information d'Habilité:\n\n - Le Repérage requiert l'utilisation d'une paire de jumelle.</French>
+        <German>Fähigkeiteninformation:\n\n - Zum Beobachten ist ein Fernglas notwendig.</German>
+        <Russian>Информация:\n\n Чтобы указать цель используйте бинокль.</Russian>
+        <Italian>Informazione abilità:\n\n Hai bisogno del binocolo per Individuare.</Italian>
+      </Key>
+      <Key ID="STR_WF_AI">
+        <English>AI</English>
+        <French>IA</French>
+        <German>KI</German>
+        <Russian>ИИ</Russian>
+        <Italian>IA</Italian>
+      </Key>
+      <Key ID="STR_WF_AI_Commander">
+        <English>AI Commander Selected.</English>
+        <French>Commandeur IA Sélectioné.</French>
+        <German>KI Kommandeur ausgewählt!</German>
+        <Russian>Командует ИИ.</Russian>
+        <Italian>Comandante IA Selezionato.</Italian>
+      </Key>
+	  <Key ID="STR_WF_Aircraft">
+		<English>Aircraft</English>
+		<French>Aviation</French>
+		<German>Aircraft</German>
+		<Russian>Авиация</Russian>
+		<Italian>Aircraft</Italian>
+	  </Key>
+	  <Key ID="STR_WF_AircraftFactory">
+		<English>Aircraft Factory</English>
+		<French>Usine aviation</French>
+		<German>Lufteinheiten-Fabrik</German>
+		<Russian>Авиазавод</Russian>
+		<Italian>Fabbrica velivoli</Italian>
+	  </Key>
+      <Key ID="STR_WF_Airlift">
+        <English>Airlift</English>
+        <French>Transport Aérien</French>
+        <German>Lufttransport</German>
+        <Russian>Авиатранспортировка</Russian>
+        <Italian>Trasporto Aereo</Italian>
+      </Key>
+      <Key ID="STR_WF_All">
+        <English>All</English>
+        <French>Tous</French>
+        <German>Alle</German>
+        <Russian>Все</Russian>
+        <Italian>Tutti</Italian>
+      </Key>
+      <Key ID="STR_WF_Ammo">
+        <English>Ammunition</English>
+        <French>Munitions</French>
+        <German>Munition</German>
+        <Russian>Боеприпасы</Russian>
+        <Italian>Munizioni</Italian>
+      </Key>
+      <Key ID="STR_WF_Armor">
+        <English>Armor</English>
+        <French>Armure</French>
+        <German>Rüstung</German>
+        <Russian>Броня</Russian>
+        <Italian>Armatura</Italian>
+      </Key>
+      <Key ID="STR_WF_Artillery">
+        <English>Artillery:</English>
+        <French>Artillerie:</French>
+        <German>Artillerie:</German>
+        <Russian>Артиллерия:</Russian>
+        <Italian>Artiglieria</Italian>
+      </Key>
+      <Key ID="STR_WF_ArtilleryAmmo">
+        <English>Artillery Ammunition</English>
+        <French>Artillerie Munition</French>
+        <German>Artillerie Munition</German>
+        <Russian>Артиллерийская Амуниция</Russian>
+        <Italian>Munizioni Artiglieria</Italian>
+      </Key>
+	  <Key ID="STR_WF_ArtilleryMinimapInfo">
+        <English>An Artillery Minimap display fitler has been toggled.</English>
+        <French>Un filtre d'affichage de l'artillerie sur la carte à été activer.</French>
+        <German>An Artillery Minimap display fitler has been toggled.</German>
+        <Russian>Режим фильтра на артиллерийском дисплее был сменен.</Russian>
+        <Italian>An Artillery Minimap display fitler has been toggled.</Italian>
+      </Key>
+	  <Key ID="STR_WF_ArtilleryNest">
+        <English>Earthen artillery nest</English>
+        <French>Nid artil. terre</French>
+        <German>Erd-Artilleriestellung</German>
+        <Russian>Окоп артиллерии</Russian>
+        <Italian>Nido mitragliatrici di terra</Italian>
+      </Key>
+      <Key ID="STR_WF_ArtilleryOverview">
+        <English>Artillery Overview</English>
+        <French>Vue d'ensemble - Artillerie</French>
+        <German>Artillery Overview</German>
+        <Russian>Обзор артиллерии</Russian>
+        <Italian>Artillery Overview</Italian>
+      </Key>
+      <Key ID="STR_WF_ArtilleryUpgrade">
+        <English>Artillery Reloading</English>
+        <French>Rech. Artillerie</French>
+        <German>Artillerienachladezeit</German>
+        <Russian>Перезарядка артиллерии</Russian>
+        <Italian>Tempi riarmo Artiglieria</Italian>
+      </Key>
+      <Key ID="STR_WF_Award_Bounty">
+        <English>$%1. Received for neutralizing a %2</English>
+        <French>$%1. Gagné pour la neutralisation d'un %2</French>
+        <German>%2 neutralisiert! $%1. erhalten</German>
+        <Russian>+$%1 за нейтрализацию %2</Russian>
+        <Italian>$%1. Ricevuti per aver neutralizzato un %2</Italian>
+      </Key>
+      <Key ID="STR_WF_Award_Bounty_Assist">
+        <English>$%1. Received for the neutralization assistance of a %2</English>
+        <French>$%1. Gagné pour l'assistance à la neutralisation d'un %2</French>
+        <German>$%1. Received for the neutralization assistance of a %2</German>
+        <Russian>+$%1 за помощь в нейтрализации %2</Russian>
+        <Italian>$%1. Received for the neutralization assistance of a %2</Italian>
+      </Key>
+      <Key ID="STR_WF_AutoAI">
+        <English>Auto AI: Enable</English>
+        <French>IA Auto: Activée</French>
+        <German>Auto KI: Aktivieren</German>
+        <Russian>Авто ИИ: Вкл</Russian>
+        <Italian>IA Automatica: Abilitata</Italian>
+      </Key>
+      <Key ID="STR_WF_AutoAIOff">
+        <English>Auto AI: Disable</English>
+        <French>IA Auto: Désact.</French>
+        <German>Auto AI: Deaktivieren</German>
+        <Russian>Авто ИИ: Откл</Russian>
+        <Italian>IA Automatica: Disabilitata</Italian>
+      </Key>
+      <Key ID="STR_WF_Available">
+        <English>Available</English>
+        <French>Disponible</French>
+        <German>Verfügbar</German>
+        <Russian>Доступно</Russian>
+        <Italian>Disponibile</Italian>
+      </Key>
+	  <Key ID="STR_WF_Automatic">
+        <English>Automatic</English>
+        <French>Automatique</French>
+        <German>Automatisch</German>
+        <Russian>Автоматически</Russian>
+        <Italian>Automatico</Italian>
+      </Key>
+      <Key ID="STR_WF_Balance">
+        <English>Gameplay: Units Balancing</English>
+        <French>Jouabilité: Equilibrage Unitées</French>
+        <German>Gameplay: Einheiten Ausgleich</German>
+        <Russian>Геймплей: Баланс подразделений</Russian>
+        <Italian>Gameplay: Bilanciamento Unità</Italian>
+      </Key>
+      <Key ID="STR_WF_BaseArea">
+        <English>Base: Areas Limit</English>
+        <French>Base: Limite de Zones</French>
+        <German>Basis: Anzahl begrenzen</German>
+        <Russian>База: Ограничение районов</Russian>
+        <Italian>Base: Limite Area</Italian>
+      </Key>
+      <Key ID="STR_WF_BaseArea_Limit">
+        <English>Base: Areas Limit Max.</English>
+        <French>Base: Max. Limite de Zones</French>
+        <German>Basis: Max. Anzahl an Basen</German>
+        <Russian>База: Ограничение кол-ва районов</Russian>
+        <Italian>Base: Limite massimo Aree</Italian>
+      </Key>
+      <Key ID="STR_WF_BaseArea_Reached">
+        <English>Building Information:\n\n - You've reached the bases area limit, you can sell old buildings or build in an existing base area.</English>
+        <French>Information de Construction:\n\n - La limite de bases est atteinte, il est possible de vendre des vieilles structures ou de construire dans une base existante.</French>
+        <German>Bauinformation:\n\n - Sie haben die Basenobergrenze erreicht. Sie können entweder alte Gebäude verkaufen oder in bereits bestehenden Basenbereichen weiterbauen.</German>
+        <Russian>Информация:\n\n Количество районов для баз достигло предела, вы можете продать старые здания, или построить в районе существующей базы.</Russian>
+        <Italian>Informazioni Costruzione:\n\n - Hai raggiunto il limite di aree basi, puoi vendere le vecchie costruzioni o costruire in un area base esistente.</Italian>
+      </Key>
+      <Key ID="STR_WF_Behavior">
+        <English>Behavior :</English>
+        <French>Comportement :</French>
+        <German>Verhalten :</German>
+        <Russian>Поведение :</Russian>
+        <Italian>Comportamento :</Italian>
+      </Key>
+      <Key ID="STR_WF_Build_Complete">
+        <English>&lt;t color='#F8D664'&gt;Factory Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Your &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; has arrived.</English>
+        <French>&lt;t color='#F8D664'&gt;Information Usine:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Votre &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; est arrivé.</French>
+        <German>&lt;t color='#F8D664'&gt;Fabrik-Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Ihr &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; ist angekommen.</German>
+        <Russian>&lt;t color='#F8D664'&gt;Информация:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t color='#85B5FA'&gt;%1&lt;/t&gt; готов.</Russian>
+        <Italian>&lt;t color='#F8D664'&gt;Informazioni fabrica:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - il Tuo &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; è arrivato.</Italian>
+      </Key>
+      <Key ID="STR_WF_BuildMenu">
+        <English>Open Construction Menu</English>
+        <French>Ouvrir Menu de Construction</French>
+        <German>Öffne Konstruktionsmenü</German>
+        <Russian>Открыть меню строительства</Russian>
+        <Italian>Apri Menu Costruzione</Italian>
+      </Key>
+      <Key ID="STR_WF_BuildMenu_Repair">
+        <English>Open Construction Menu (Repair Truck)</English>
+        <French>Ouvrir Menu de Construction (Camion de Réparation)</French>
+        <German>Öffne Konstruktionsmenü (Reparatur LKW)</German>
+        <Russian>Открыть меню строительства (Рем. грузовик)</Russian>
+        <Italian>Apri Menu Costruzione (Camion Riparazioni)</Italian>
+      </Key>
+      <Key ID="STR_WF_BuyEffective">
+        <English>&lt;t color='#F8D664'&gt;Factory Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Building &lt;t color='#85B5FA'&gt;%1&lt;/t&gt;.</English>
+        <French>&lt;t color='#F8D664'&gt;Information Usine:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; en Production.</French>
+        <German>&lt;t color='#F8D664'&gt;Fabrik-Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; wird gebaut.</German>
+        <Russian>&lt;t color='#F8D664'&gt;Информация:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t color='#85B5FA'&gt;%1&lt;/t&gt; в производстве</Russian>
+        <Italian>&lt;t color='#F8D664'&gt;Informazioni Fabrica:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; In Costruzione.</Italian>
+      </Key>
+      <Key ID="STR_WF_BuyType">
+        <English>Buy Types:</English>
+        <French>Type d'Achats:</French>
+        <German>Einheitskategorien:</German>
+        <Russian>Тип отряда:</Russian>
+        <Italian>Tipi di Acquisto:</Italian>
+      </Key>
+      <Key ID="STR_WF_Camp_Captured">
+        <English>Your side has captured a camp at %1.</English>
+        <French>Un campement a été capturé à %1.</French>
+        <German>Ihre Seite hat ein Camp bei %1 eingenommen.</German>
+        <Russian>Ваша команда захватила лагерь в %1.</Russian>
+        <Italian>La tua fazione ha catturato un campo a %1.</Italian>
+      </Key>
+      <Key ID="STR_WF_Camp_Captured_Bounty">
+        <English>Your team has captured a camp at %1. $%2. earned.</English>
+        <French>Votre équipe à capturé un campement à %1. Vous gagné $%2.</French>
+        <German>Ihr Team hat ein Camp bei %1 eingenommen. $%2 verdient.</German>
+        <Russian>+$%2 за захват лагеря в %1.</Russian>
+        <Italian>Il tuo team ha catturato un campo a %1. $%2. Guadagnati!</Italian>
+      </Key>
+      <Key ID="STR_WF_Camp_Captured_Enemy">
+        <English>The enemy has captured a camp at %1.</English>
+        <French>L'énemie à capturé un campement à %1.</French>
+        <German>Der Gegner hat ein Camp bei %1 eingenommen.</German>
+        <Russian>Противник захватил лагерь в %1.</Russian>
+        <Italian>Il nemico ha catturato un campo a %1.</Italian>
+      </Key>
+      <Key ID="STR_WF_Cargo_Eject">
+        <English>Eject Cargo</English>
+        <French>Ejection de la cargaison.</French>
+        <German>Fracht abwerfen / Abspringen lassen</German>
+        <Russian>Высадить экипаж</Russian>
+        <Italian>Scarica Carico</Italian>
+      </Key>
+      <Key ID="STR_WF_Cash">
+        <English>Funds: $%1.</English>
+        <French>Fonds: $%1.</French>
+        <German>Geld: $%1</German>
+        <Russian>Деньги: $%1</Russian>
+        <Italian>Fondi: $%1.</Italian>
+      </Key>
+      <Key ID="STR_WF_CashLabel">
+        <English>Funds:</English>
+        <French>Fonds:</French>
+        <German>Geld:</German>
+        <Russian>Деньги:</Russian>
+        <Italian>Fondi:</Italian>
+      </Key>
+	  <Key ID="STR_WF_Classic">
+        <English>Classic</English>
+        <French>Classique</French>
+        <German>Klassisch</German>
+        <Russian>Класический</Russian>
+        <Italian>Classica</Italian>
+      </Key>
+	  <Key ID="STR_WF_ClickOnMap">
+        <English>Click on the map to activate the selected action</English>
+        <French>Cliquer sur la carte pour activer l'action séléctionnée.</French>
+        <German>Click on the map to activate the selected action</German>
+        <Russian>Кликните на карте для активации выбранного действия</Russian>
+        <Italian>Click on the map to activate the selected action</Italian>
+      </Key>
+	  <Key ID="STR_WF_Collide">
+        <English>Collide</English>
+        <French>Collision</French>
+        <German>Collide</German>
+        <Russian>С наложением</Russian>
+        <Italian>Collisione</Italian>
+      </Key>
+	  <Key ID="STR_WF_Collide_No">
+        <English>No Collide</English>
+        <French>Aucune Collision</French>
+        <German>No Collide</German>
+        <Russian>Без наложения</Russian>
+        <Italian>Nessuna Collisione</Italian>
+      </Key>
+      <Key ID="STR_WF_CombatMode">
+        <English>Combat Mode :</English>
+        <French>Mode de combat :</French>
+        <German>Kampfmodus :</German>
+        <Russian>Режим боя :</Russian>
+        <Italian>Modalità di Combattimento :</Italian>
+      </Key>
+      <Key ID="STR_WF_Commander">
+        <English>Commander: %1</English>
+        <French>Commandant: %1</French>
+        <German>Kommandeur: %1</German>
+        <Russian>Командир: %1</Russian>
+        <Italian>Comandante: %1.</Italian>
+      </Key>
+      <Key ID="STR_WF_Commander_Bounty_Town">
+        <English>Commanding Bounty: You've received $%1. due to the capture of %2 by your team.</English>
+        <French>Bonus Commandement: Vous avez reçu $%1. en raison de la capture de %2 par votre équipe.</French>
+        <German>Kommandeur-Bonus: Sie haben für die Eroberung von %2 durch ihr Team $%1. erhalten.</German>
+        <Russian>+$%1 за захват города %2. (Премия командира)</Russian>
+        <Italian>Bonus di comando: hai ricevuto $%1. per la cattura di %2 da parte del tuo Team.</Italian>
+      </Key>
+      <Key ID="STR_WF_Commander_Menu">
+        <English>Commander Menu</English>
+        <French>Menu Commandant</French>
+        <German>Commander Menu</German>
+        <Russian>Командирское меню</Russian>
+        <Italian>Commander Menu</Italian>
+      </Key>
+      <Key ID="STR_WF_CommandMenu">
+        <English>Commanding</English>
+        <French>Commandemment</French>
+        <German>Kommandieren</German>
+        <Russian>Командование</Russian>
+        <Italian>Menu Comando</Italian>
+      </Key>
+      <Key ID="STR_WF_Commandteam">
+        <English>Team Orders</English>
+        <French>Ordres d'Equipe</French>
+        <German>Team-Befehle</German>
+        <Russian>Приказы отрядам</Russian>
+        <Italian>Ordini di Squadra</Italian>
+      </Key>
+      <Key ID="STR_WF_CommandCenter">
+        <English>Command Center</English>
+        <French>Centre de Commandement</French>
+        <German>Befehlsstelle</German>
+        <Russian>Командный центр</Russian>
+        <Italian>Centro di Comando</Italian>
+      </Key>
+      <Key ID="STR_WF_CommandCenter_RU">
+        <English>Command Center (RU)</English>
+        <French>Centre de Commandement (RU)</French>
+        <German>Befehlsstelle (RU)</German>
+        <Russian>Командный центр (РФ)</Russian>
+        <Italian>Centro di Comando</Italian>
+      </Key>
+      <Key ID="STR_WF_CommandCenter_USMC">
+        <English>Command Center (USMC)</English>
+        <French>Centre de Commandement (USMC)</French>
+        <German>Befehlsstelle (USMC)</German>
+        <Russian>Командный центр (КМП США)</Russian>
+        <Italian>Centro di Comando</Italian>
+      </Key>
+      <Key ID="STR_WF_Cost">
+        <English>Cost: $ %1.</English>
+        <French>Coût: $ %1.</French>
+        <German>Kosten: $ %1.</German>
+        <Russian>Цена: $ %1.</Russian>
+        <Italian>Costo: $ %1.</Italian>
+      </Key>
+	  <Key ID="STR_WF_Respawn_Cost">
+        <English>Respawn Cost: $ %1.</English>
+        <French>Respawn Coût: $ %1.</French>
+        <German>Respawn Kosten: $ %1.</German>
+        <Russian>Respawn Цена: $ %1.</Russian>
+        <Italian>Respawn Costo: $ %1.</Italian>
+      </Key>
+      <Key ID="STR_WF_Countermeasures">
+        <English>Countermeasures</English>
+        <French>Contres Mesures</French>
+        <German>Täuschkörper</German>
+        <Russian>Контрмеры</Russian>
+        <Italian>Contromisure</Italian>
+      </Key>
+      <Key ID="STR_WF_CurrentCost">
+        <English>Current Cost: $%1.</English>
+        <French>Coût Actuel: $%1.</French>
+        <German>Bisherige Kosten: $%1.</German>
+        <Russian>Цена: $%1.</Russian>
+        <Italian>Costo Attuale: $%1.</Italian>
+      </Key>
+      <Key ID="STR_WF_CurrentMission">
+        <English>Current Mission: %1</English>
+        <French>Mission en cours: $%1.</French>
+        <German>Aktueller Auftrag: %1</German>
+        <Russian>Текущее задание: %1</Russian>
+        <Italian>Missione attuale: %1</Italian>
+      </Key>
+      <Key ID="STR_WF_Default">
+        <English>Default</English>
+        <French>Défaut</French>
+        <German>Default</German>
+        <Russian>По умолчанию</Russian>
+        <Italian>Default</Italian>
+      </Key>
+	  <Key ID="STR_WF_Defense">
+        <English>Defend</English>
+        <French>Défense</French>
+        <German>Verteidigung</German>
+        <Russian>Защита</Russian>
+        <Italian>Difendi</Italian>
+      </Key>
+      <Key ID="STR_WF_Delete">
+        <English>Delete</English>
+        <French>Supprimer</French>
+        <German>Löschen</German>
+        <Russian>Удалить</Russian>
+        <Italian>Cancella</Italian>
+      </Key>
+      <Key ID="STR_WF_Disabled">
+        <English>Disabled</English>
+        <French>Désactivé</French>
+        <German>Deaktiviert</German>
+        <Russian>Отключить</Russian>
+        <Italian>Disabilitato</Italian>
+      </Key>
+      <Key ID="STR_WF_Disband">
+        <English>Disband</English>
+        <French>Dissoudre</French>
+        <German>Entfernen</German>
+        <Russian>Демобилизовать</Russian>
+        <Italian>Smobilita</Italian>
+      </Key>
+	  <Key ID="STR_WF_Divided_Towns">
+        <English>Divided Towns</English>
+        <French>Villes Divisés</French>
+        <German>Geteilte Städte</German>
+        <Russian>Разделения городов</Russian>
+        <Italian>Città Divise</Italian>
+      </Key>
+      <Key ID="STR_WF_EASA">
+		<English>Exchangeable Armament System</English>
+		<French>Système d'Echange d'Armement</French>
+		<German>Austauschbare Flugzeugbewaffnung</German>
+		<Russian>Система Смены Вооружения</Russian>
+		<Italian>Sistema di cambio Armamento</Italian>
+      </Key>
+      <Key ID="STR_WF_EASA_Purchase">
+		<English>&lt;t color='#F8D664'&gt;Exchangeable Armament System:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - EASA Setup Purchased: &lt;t color='#85B5FA'&gt;%1&lt;/t&gt;.</English>
+		<French>&lt;t color='#F8D664'&gt;Système d'Echange d'Armement:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Configuration EASA achetée: &lt;t color='#85B5FA'&gt;%1&lt;/t&gt;.</French>
+		<German>&lt;t color='#F8D664'&gt;Austauschbare Flugzeugbewaffnung:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - EASA Einstellung erworben: &lt;t color='#85B5FA'&gt;%1&lt;/t&gt;.</German>
+		<Russian>&lt;t color='#F8D664'&gt;Система Смены Вооружения:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Приобретен набор EASA: &lt;t color='#85B5FA'&gt;%1&lt;/t&gt;.</Russian>
+		<Italian>&lt;t color='#F8D664'&gt;Sistema di Cambio armamento:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - EASA Setup Acquistato: &lt;t color='#85B5FA'&gt;%1&lt;/t&gt;.</Italian>
+      </Key>
+	  <Key ID="STR_WF_Enabled">
+        <English>Enabled</English>
+        <French>Activé</French>
+        <German>Aktiviert</German>
+        <Russian>Доступно</Russian>
+        <Italian>Abilitato</Italian>
+      </Key>
+	  <Key ID="STR_WF_Enabled_Upgrade">
+        <English>Enabled with Upgrade</English>
+        <French>Activé avec Amélioration</French>
+        <German>Enabled with Upgrade</German>
+        <Russian>Доступно при обновлении</Russian>
+        <Italian>Enabled with Upgrade</Italian>
+      </Key>
+	  <Key ID="STR_WF_Extra_Small">
+        <English>Extra Small</English>
+        <French>Très Petit</French>
+        <German>Extra Klein</German>
+        <Russian>Очень мало</Russian>
+        <Italian>Extra Piccolo</Italian>
+      </Key>
+      <Key ID="STR_WF_Faction">
+        <English>Faction</English>
+        <French>Faction</French>
+        <German>Fraktion</German>
+        <Russian>Фракция</Russian>
+        <Italian>Fazione</Italian>
+      </Key>
+	  <Key ID="STR_WF_Factory">
+        <English>Factory:</English>
+        <French>Usine:</French>
+        <German>Fabrik:</German>
+        <Russian>Завод:</Russian>
+        <Italian>Fabrica:</Italian>
+      </Key>
+      <Key ID="STR_WF_FastTravel">
+        <English>Fast Travel</English>
+        <French>Déplacement Rapide</French>
+        <German>Fast Travel</German>
+        <Russian>Быстрое перемещение</Russian>
+        <Italian>Fast Travel</Italian>
+      </Key>
+	  <Key ID="STR_WF_Fee">
+        <English>Fee</English>
+        <French>Taxe</French>
+        <German>Gebühr</German>
+        <Russian>Плата</Russian>
+        <Italian>Tassa</Italian>
+      </Key>
+      <Key ID="STR_WF_FireMission">
+        <English>Call Fire Mission</English>
+        <French>Appel Appuie Feu</French>
+        <German>Feuerbefehl absetzen</German>
+        <Russian>Вызвать арт. удар</Russian>
+        <Italian>Richiedi Fuoco di Sbarramento</Italian>
+      </Key>
+      <Key ID="STR_WF_FireMission_Set">
+        <English>Set Fire Mission</English>
+        <French>Définir Appuie Feu</French>
+        <German>Setze Zielposition</German>
+        <Russian>Назначить арт. цель</Russian>
+        <Italian>Imposta Fuoco di Sbarramento</Italian>
+      </Key>
+      <Key ID="STR_WF_Formation">
+        <English>Formation :</English>
+        <French>Formation :</French>
+        <German>Formation :</German>
+        <Russian>Строй :</Russian>
+        <Italian>Formazione</Italian>
+      </Key>
+      <Key ID="STR_WF_Fortification">
+        <English>Fortification</English>
+        <French>Fortification</French>
+        <German>Feldbefestigungen</German>
+        <Russian>Укрепления</Russian>
+        <Italian>Fortificazione</Italian>
+      </Key>
+	  <Key ID="STR_WF_Free">
+        <English>Free</English>
+        <French>Gratuit</French>
+        <German>Gratis</German>
+        <Russian>Свободные</Russian>
+        <Italian>Free</Italian>
+      </Key>
+	  <Key ID="STR_WF_Full">
+        <English>Full</English>
+        <French>Complet</French>
+        <German>Voll</German>
+        <Russian>Полные</Russian>
+        <Italian>Full</Italian>
+      </Key>
+      <Key ID="STR_WF_Funds_Missing">
+        <English>&lt;t color='#F8D664'&gt;Factory Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - You are currently missing $&lt;t color='#85B5FA'&gt;%1&lt;/t&gt;. in order to buy: &lt;t color='#85B5FA'&gt;%2&lt;/t&gt;.</English>
+        <French>&lt;t color='#F8D664'&gt;Information Usine:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Il vous manque $&lt;t color='#85B5FA'&gt;%1&lt;/t&gt;. pour acheter: &lt;t color='#85B5FA'&gt;%2&lt;/t&gt;.</French>
+        <German>&lt;t color='#F8D664'&gt;Fabrik-Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Es fehlen $&lt;t color='#85B5FA'&gt;%1&lt;/t&gt;. um &lt;t color='#85B5FA'&gt;%2&lt;/t&gt; zu kaufen.</German>
+        <Russian>&lt;t color='#F8D664'&gt;Информация:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;Не хватает $&lt;t color='#85B5FA'&gt;%1&lt;/t&gt;, для покупки: &lt;t color='#85B5FA'&gt;%2&lt;/t&gt;.</Russian>
+        <Italian>&lt;t color='#F8D664'&gt;Informazioni Fabrica:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Ti Mancano $&lt;t color='#85B5FA'&gt;%1&lt;/t&gt;. per comprare: &lt;t color='#85B5FA'&gt;%2&lt;/t&gt;.</Italian>
+      </Key>
+      <Key ID="STR_WF_Funds_Missing_Gear">
+        <English>&lt;t color='#F8D664'&gt;Factory Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - You are currently missing $&lt;t color='#85B5FA'&gt;%1&lt;/t&gt;. in order to buy this loadout.</English>
+        <French>&lt;t color='#F8D664'&gt;Information Usine:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Il vous manque $&lt;t color='#85B5FA'&gt;%1&lt;/t&gt;. pour acheter cette configuration d'équipement.</French>
+        <German>&lt;t color='#F8D664'&gt;Fabrik-Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Ihnen fehlen $&lt;t color='#85B5FA'&gt;%1&lt;/t&gt;, um Ihre Auswahl zu kaufen!</German>
+        <Russian>&lt;t color='#F8D664'&gt;Информация:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;Не хватает $&lt;t color='#85B5FA'&gt;%1&lt;/t&gt;, для покупки снаряжения</Russian>
+        <Italian>&lt;t color='#F8D664'&gt;Informazioni Fabrica:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Ti Mancano $&lt;t color='#85B5FA'&gt;%1&lt;/t&gt;. per comprare questo equipaggiamento.</Italian>
+      </Key>
+      <Key ID="STR_WF_FundsTransfer">
+        <English>You have received $%1. from %2</English>
+        <French>Vous avez reçu $%1. de la part de %2</French>
+        <German>Du hast $%1. von %2 erhalten</German>
+        <Russian>Вы получили $%1. от %2</Russian>
+        <Italian>Hai ricevuto $%1. da %2 ringrazialo</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gameplay_AdvancedAir">
+        <English>Restriction: Advanced Aircraft</English>
+        <French>Réstriction: Aéronefs Avancées</French>
+        <German>Einschränkung: Flugzeuge</German>
+        <Russian>Запрет: Тяжелая авиация</Russian>
+        <Italian>Restrizione: Velivoli Avanzati</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_AICommander">
+        <English>Base: AI Commander</English>
+        <French>Base: Commandeur IA</French>
+        <German>Basis: KI-Kommandeur</German>
+        <Russian>База: Командир ИИ</Russian>
+        <Italian>Base: Comandante IA</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_AI">
+        <English>AI: Teams</English>
+        <French>IA: Equipes</French>
+        <German>KI: Teams</German>
+        <Russian>ИИ: Отряды</Russian>
+        <Italian>IA: Squadre</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gameplay_Alice">
+        <English>Gameplay: Ambient Civilians</English>
+        <French>Jouabilité: Vie Civil</French>
+        <German>Gameplay: Zivilisten</German>
+        <Russian>Геймплей: Гражданское окружение</Russian>
+        <Italian>Gameplay: Ambient Civilians</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_Allies">
+        <English>Base: Allies</English>
+        <French>Base: Alliés</French>
+        <German>Basis: Verbündete</German>
+        <Russian>База: Союзники</Russian>
+        <Italian>Base: Alleati</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_AntiAirRadar">
+        <English>Base: Anti-Air Radar</English>
+        <French>Base: Radar Anti-Air</French>
+        <German>Basis: Luftraumüberwachungsradar</German>
+        <Russian>База: Радар ПВО</Russian>
+        <Italian>Base: Radar Anti Aereo</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_Artillery">
+        <English>Artillery: Range</English>
+        <French>Artillerie: Portée</French>
+        <German>Artillerie: Reichweite</German>
+        <Russian>Артиллерия: Дальность</Russian>
+        <Italian>Artiglieria: Portata</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_ArtilleryComputer">
+        <English>Artillery: Computer</English>
+        <French>Artillerie: Ordinateur</French>
+        <German>Artillery: Computer</German>
+        <Russian>Артиллерия: Компьютер</Russian>
+        <Italian>Artillery: Computer</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_ArtilleryUI">
+        <English>Artillery: Interface</English>
+        <French>Artillerie: Interface</French>
+        <German>Artillerie: Interface</German>
+        <Russian>Артиллерия: Интерфейс</Russian>
+        <Italian>Artiglieria: Interfaccia</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_AutoDefense">
+        <English>Base: Auto Defenses</English>
+        <French>Base: Défenses Auto</French>
+        <German>Basis: Automatische Verteidigung</German>
+        <Russian>База: Авто Защита</Russian>
+        <Italian>Base: Difese Automatiche</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gameplay_AutoDefense_Range">
+        <English>Base: Auto Defenses Range</English>
+        <French>Base: Portée Défenses Auto</French>
+        <German>Basis: Reichweite der automatischen Verteidigung</German>
+        <Russian>База: Дальность автоматической защиты</Russian>
+        <Italian>Base: Raggio Difese Automatiche</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_Arty">
+        <English>Artillery: Calls</English>
+        <French>Artillerie: Support</French>
+        <German>Artillerie</German>
+        <Russian>Артиллерия: Вызов арт.удара</Russian>
+        <Italian>Artiglieria</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_BAF">
+        <English>Extension: British Armed Forces</English>
+        <French>Extension: British Armed Forces</French>
+        <German>Erweiterung: British Armed Forces</German>
+        <Russian>Дополнение: British Armed Forces</Russian>
+        <Italian>Extension: British Armed Forces</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gameplay_BasePatrols">
+        <English>Base: Patrols</English>
+        <French>Base: Patrouilles</French>
+        <German>Basis: Patrouillen</German>
+        <Russian>База: Патрули</Russian>
+        <Italian>Base: Pattuglie</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gameplay_BodiesTimeout">
+        <English>Gameplay: Bodies deletion Delay</English>
+        <French>Jouabilité: Délai de Suppression des Corps</French>
+        <German>Gameplay: Leichen entfernen</German>
+        <Russian>Геймплей: Удалять трупы</Russian>
+        <Italian>Gameplay: Ritardo rimozione corpi</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_BuildingsLimit">
+        <English>Base: Buildings Limit</English>
+        <French>Base: Limite Batiments</French>
+        <German>Basis: Gebäudelimit</German>
+        <Russian>База: Лимит строений</Russian>
+        <Italian>Base: Limite Costruzioni</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_Camp">
+        <English>Respawn: Camps</English>
+        <French>Réapparition: Camps</French>
+        <German>Widereinstieg: bei Vorposten</German>
+        <Russian>Возрожд.: В лагерях</Russian>
+        <Italian>Respawn: Campi</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_CampRespawnRule">
+        <English>Respawn: Enemy near</English>
+        <French>Réapparation: Enemy near</French>
+        <German>Widereinstieg: Feind nah</German>
+        <Russian>Возрожд.: Враг рядом</Russian>
+        <Italian>Respawn: Nemici Vicini</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_TownCivilians">
+        <English>Towns: Civilians</English>
+        <French>Villes: Civils</French>
+        <German>Städte: Zivilisten</German>
+        <Russian>Города: Гражданские</Russian>
+        <Italian>Città: Civili</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_Clouds">
+        <English>Module: Volumetric Clouds</English>
+        <French>Module: Nuages Volumétriques</French>
+        <German>Modul: Volumetrische Wolken</German>
+        <Russian>Модуль: Объемные облака</Russian>
+        <Italian>Modulo: Nuvole Volumetriche</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_Coloration">
+        <English>Gameplay: Map Coloration</English>
+        <French>Jouabilité: Coloration de la Carte</French>
+        <German>Gameplay: Map Coloration</German>
+        <Russian>Геймплей: Цветовая Схема Карты</Russian>
+        <Italian>Gameplay: Map Coloration</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_ConstructionMode">
+        <English>Base: Construction Mode</English>
+        <French>Base: Mode de Construction</French>
+        <German>Base: Construction Mode</German>
+        <Russian>База: Режим Строительства</Russian>
+        <Italian>Base: Construction Mode</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_Countermeasures">
+        <English>Module: Countermeasures</English>
+        <French>Module: Contres Mesures</French>
+        <German>Modul: Täuschkörper</German>
+        <Russian>Модуль: Контрмеры</Russian>
+        <Italian>Modulo: Contromisure</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_Currency">
+        <English>Economy: Currency</English>
+        <French>Economie: Monaie</French>
+        <German>Economy: Currency</German>
+        <Russian>Экономика: Валюта</Russian>
+        <Italian>Economy: Currency</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gameplay_DefensePlacement">
+        <English>Base: Defenses Placement</English>
+        <French>Base: Placement de Défenses</French>
+        <German>Base: Defenses Placement</German>
+        <Russian>База: Размещение обороны</Russian>
+        <Italian>Base: Piazzamento Difese</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_Difficulty_Occupation">
+        <English>Towns: Occupation Difficulty</English>
+        <French>Villes: Difficulté d'Occupation</French>
+        <German>Städte: Besatzungsstärke</German>
+        <Russian>Города: Сложность захвата</Russian>
+        <Italian>Città: Difficoltà Occupazione</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_Difficulty_Resistance">
+        <English>Towns: Resistance Difficulty</English>
+        <French>Villes: Difficulté de la Résistance</French>
+        <German>Städte: Widerstandsstärke</German>
+        <Russian>Города: Сложность Сопротивл.</Russian>
+        <Italian>Città: Difficoltà Resistenza</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_EASA">
+		<English>Module: EASA</English>
+		<French>Module: EASA</French>
+		<German>Modul: EASA</German>
+		<Italian>Модуль: EASA</Italian>
+		<Russian>Модуль: EASA</Russian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_FastTime">
+        <English>Environment: Fast Time</English>
+        <French>Environement: Temp Acceléré</French>
+        <German>Umgebung: Zeitraffer</German>
+        <Russian>Природа: Быстрое время</Russian>
+        <Italian>Ambiente: Tempo Accellerato</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_FastTravel">
+        <English>Gameplay: Fast Travel</English>
+        <French>Jouabilité: Déplacement Rapide</French>
+        <German>Gameplay: Fast Travel</German>
+        <Russian>Геймплей: Быстрое перемещение</Russian>
+        <Italian>Gameplay: Fast Travel</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_FriendlyFire">
+        <English>Gameplay: Friendly Fire (Buildings)</English>
+        <French>Jouabilité: Tirs Fratricide (Bâtiments)</French>
+        <German>Gameplay: Friendly Fire (Gebäude)</German>
+        <Russian>Геймплей: Огонь по своим (Заводы)</Russian>
+        <Italian>Gameplay: Friendly Fire (Costruzioni)</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_Funds_East">
+        <English>Economy: Starting Funds (East)</English>
+        <French>Economie: Fonds de départ (Est)</French>
+        <German>Wirtschaft: Startguthaben (Osten)</German>
+        <Russian>Экономика: Деньги на старте (Восток)</Russian>
+        <Italian>Economia: Fondi Iniziali (Est)</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gameplay_Funds_West">
+        <English>Economy: Starting Funds (West)</English>
+        <French>Economie: Fonds de départ (Ouest)</French>
+        <German>Wirtschaft: Startguthaben (Westen)</German>
+        <Russian>Экономика: Деньги на старте (Запад)</Russian>
+        <Italian>Economia: Fondi Iniziali (Ovest)</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_GearRestriction">
+        <English>Restriction: Camp Gear</English>
+        <French>Réstriction: Equipements Camps</French>
+        <German>Einschränkung: Vorpostenausrüstung</German>
+        <Russian>Запрет: Покупка оружия в лагерях</Russian>
+        <Italian>Restrizioni: Equipaggiamento Campi</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gameplay_Grass">
+        <English>Gameplay: Grass Distance</English>
+        <French>Jouabilité: Distance Herbes</French>
+        <German>Gameplay: Grasdichte</German>
+        <Russian>Геймплей: Дистанция травы</Russian>
+        <Italian>Gameplay: Distanza Erba</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_GroupSizeAI">
+        <English>AI: Group Size (AI Teams)</English>
+        <French>IA: Taille du Groupe (Equipes IA)</French>
+        <German>KI: Gruppenstärke (KI Teams)</German>
+        <Russian>ИИ: Размер отряда</Russian>
+        <Italian>IA: Dimensione Gruppo (Squadre IA)</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_GroupSizePlayer">
+        <English>AI: Group Size (Player)</English>
+        <French>IA: Taille du Groupe (Joueur)</French>
+        <German>KI: Gruppenstärke (Spieler Teams)</German>
+        <Russian>ИИ: Размер отряда (Игрок)</Russian>
+        <Italian>IA: Dimensione Gruppo (Giocatore)</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_Hangars">
+        <English>Gameplay: Airport Hangars</English>
+        <French>Jouabilité: Hangars (Aéroport)</French>
+        <German>Gameplay: Flugplatz-Hangars</German>
+        <Russian>Геймплей: Авиация в ангарах</Russian>
+        <Italian>Gameplay: Hangar</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_HighCommand">
+        <English>Module: High Command</English>
+        <French>Module: Haut-Commandement</French>
+        <German>Modul: Oberbefehlshaber</German>
+        <Russian>Модуль: Верховное командование</Russian>
+        <Italian>Modulo: Alto Comando</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_HQDeployCost">
+        <English>Base: HQ Deployment Cost</English>
+        <French>Base: Coût de deploiement HQ</French>
+        <German>Basis: HQ Aufbaukosten</German>
+        <Russian>База: Стоим. развертывания КШ</Russian>
+        <Italian>Base: Costo dispiegamento HQ</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_HQDeployRange">
+        <English>Base: HQ Deploy Range</English>
+        <French>Base: Rayon de Deploiement du QG</French>
+        <German>Basis: HQ-Reichweite zum Aufstellen</German>
+        <Russian>База: Дальность развертывания КШ</Russian>
+        <Italian>Base: HQ Deploy Range</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_KickTeamswapper">
+        <English>Gameplay: Kick Teamswappers</English>
+        <French>Jouabilité: Ejéction Teamswappers</French>
+        <German>Gameplay: Teamwechsler kicken</German>
+        <Russian>Геймплей: Запретить смену стороны</Russian>
+        <Italian>Gameplay: Caccia Teamswappers</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_ICBM">
+        <English>Module: ICBM</English>
+        <French>Module: MBI</French>
+        <German>Modul: Nuklearwaffen</German>
+        <Russian>Модуль: МБР</Russian>
+        <Italian>Modulo: Missile Nucleare</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_IncomeInterval">
+        <English>Economy: Income Interval</English>
+        <French>Economie: Intervalle de Rémunération</French>
+        <German>Wirtschaft: Einkommens-Interval</German>
+        <Russian>Экономика: Интервал доходов</Russian>
+        <Italian>Economia: Intervallo Entrate</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gameplay_IncomeSystem">
+        <English>Economy: Income System</English>
+        <French>Economie: Système de Rémunération</French>
+        <German>Wirtschaft: Einkommenssystem</German>
+        <Russian>Экономика: Система доходов</Russian>
+        <Italian>Economia: Sistema Entrate</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_IncomeSystem_Full">
+        <English>Full</English>
+        <French>Plein</French>
+        <German>Voll</German>
+        <Russian>100%</Russian>
+        <Italian>Pieno</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_IncomeSystem_Half">
+        <English>Half</English>
+        <French>Moitié</French>
+        <German>Halb</German>
+        <Russian>50%</Russian>
+        <Italian>Metà</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_ISIS">
+        <English>Module: Injury System (ISIS)</English>
+        <French>Module: Système de Blésurre (ISIS)</French>
+        <German>Modul: Verletztungssystem (ISIS)</German>
+        <Russian>Модуль: Система ранений (ISIS)</Russian>
+        <Italian>Modulo: Injury System (ISIS)</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_Kamov">
+        <English>Restriction: Kamov</English>
+        <French>Réstriction: Kamov</French>
+        <German>Einschränkung: Kamov</German>
+        <Russian>Запрет: КА-52</Russian>
+        <Italian>Restrizione: Kamov</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_KeepAI">
+        <English>AI: Keep units on JIP</English>
+        <French>IA: Maintien des unités durant JIP</French>
+        <German>KI: Einheiten bei JIP erhalten</German>
+        <Russian>ИИ: Сохранять состав отряда</Russian>
+        <Italian>IA: Mantieni unità durante JIP</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gameplay_LimitedBoundaries">
+        <English>Gameplay: Limited Boundaries</English>
+        <French>Jouabilité: Frontières Limitées</French>
+        <German>Gameplay: Kartenbegrenzung</German>
+        <Russian>Геймплей: Ограничение границ</Russian>
+        <Italian>Gameplay: Confini Limitati</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gameplay_MandoMissiles">
+        <English>Gameplay: Mando Missiles</English>
+        <French>Jouabilité: Mando Missiles</French>
+        <German>Gameplay: Mando Missiles</German>
+        <Russian>Геймплей: Mando Missiles</Russian>
+        <Italian>Gameplay: Mando Missiles</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_MaxResPatrols">
+        <English>Towns: Patrols Max.</English>
+        <French>Villes: Patrouilles</French>
+        <German>Städte: Max. Patrouillen</German>
+        <Russian>Города: Патрули Сопротивл. кол-во</Russian>
+        <Italian>Città: Pattuglie Massime.</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_MaxResStriker">
+        <English>Towns: Assault Teams Max.</English>
+        <French>Villes: Max. Equipe d'Assault</French>
+        <German>Städte: Max. Angriffsteams</German>
+        <Russian>Города: Штурм. отряды кол-во</Russian>
+        <Italian>Città: Team di Assalto Massimi.</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_MissileRange">
+        <English>Gameplay: Missile Range Limitation</English>
+        <French>Jouabilité: Limitation de la distance des Missiles.</French>
+        <German>Gameplay: Missile Range Limitation</German>
+        <Russian>Геймплей: Ограничение дальн. ракет</Russian>
+        <Italian>Gameplay: Missile Range Limitation</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_MobileRespawn">
+        <English>Respawn: Mobile</English>
+        <French>Réapparition: Mobile</French>
+        <German>Widereinstieg: Mobil</German>
+        <Russian>Возрожд: Медицинская машина</Russian>
+        <Italian>Respawn: Mobile</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_Occupation">
+        <English>Towns: Occupation</English>
+        <French>Villes: Occupation</French>
+        <German>Städte: Besatzung</German>
+        <Russian>Города: Захват</Russian>
+        <Italian>Città: Occupazione</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gameplay_Occupation_Type_East">
+        <English>Towns: Occupation Faction - East</English>
+        <French>Villes: Faction d'Occupation Est</French>
+        <German>Towns: Occupation Faction - East</German>
+        <Russian>Города: Охраняющая Фракция - Восток</Russian>
+        <Italian>Towns: Occupation Faction - East</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gameplay_Occupation_Type_West">
+        <English>Towns: Occupation Faction - West</English>
+        <French>Villes: Faction d'Occupation Ouest</French>
+        <German>Towns: Occupation Faction - West</German>
+        <Russian>Города: Охраняющая Фракция - Запад</Russian>
+        <Italian>Towns: Occupation Faction - West</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gameplay_PMC">
+        <English>Extension: Private Military Company</English>
+        <French>Extension: Private Military Company</French>
+        <German>Erweiterung: Private Military Company</German>
+        <Russian>Дополнение: Private Military Company</Russian>
+        <Italian>Extension: Private Military Company</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_Extended_Inventory">
+        <English>Gameplay: Extended Inventory</English>
+        <French>Jouabilité: Inventaire Etendus</French>
+        <German>Gameplay: Eweitertes Inventar</German>
+        <Russian>Геймплей: Расширенный инвентарь</Russian>
+        <Italian>Gameplay: Inventario Esteso</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_Reinforcement_Occupation">
+        <English>Towns: Occupation Reinforcements</English>
+        <French>Villes: Renforts d'Occupation</French>
+        <German>Städte: Besatzungsverstärkung</German>
+        <Russian>Города: Подкрепл. сил противника</Russian>
+        <Italian>Città: Rinforzi Occupazione</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_Reinforcement_Resistance">
+        <English>Towns: Resistance Reinforcements</English>
+        <French>Villes: Renforts Résistants</French>
+        <German>Städte: Widerstandsverstärkung</German>
+        <Russian>Города: Подкрепл. сил Сопротивл.</Russian>
+        <Italian>Città: Rinforzi Resistenza</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gameplay_Reinforcement_Type">
+        <English>Towns: Resistance Faction</English>
+        <French>Villes: Faction Résistante</French>
+        <German>Städte: Widerstandsfraktion</German>
+        <Russian>Города: Фракция сопротивления</Russian>
+        <Italian>Towns: Fazione Resistenza</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_Resistance">
+        <English>Towns: Resistance</English>
+        <French>Villes: Résistance</French>
+        <German>Städte: Widerstand</German>
+        <Russian>Города: Сопротивление</Russian>
+        <Italian>Città: Resistenza</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gameplay_Resistance_VehLock">
+        <English>Towns: Resistance Veh. Lock</English>
+        <French>Villes: Vérouillage Véhi. Résistance</French>
+        <German>Städte: Fahrzeuge des Widerstandes sind verschlossen.</German>
+        <Russian>Города: Техника сопротивления закрыта</Russian>
+        <Italian>Towns: Veicoli Resist. Chiusi</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_Respawn">
+        <English>Respawn: Delay</English>
+        <French>Réapparition: Délai</French>
+        <German>Widereinstieg: Verzögerung</German>
+        <Russian>Возрожд: Задержка</Russian>
+        <Italian>Respawn: Ritardo</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_Respawn_MASH">
+        <English>Respawn: MASH</English>
+        <French>Réapparition: Hôpital de Campagne</French>
+        <German>Widereinstieg: Feldlazarett</German>
+        <Russian>Возрожд: На госпитале</Russian>
+        <Italian>Respawn: Ospedale da Campo</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_ResistancePatrol">
+        <English>Towns: Patrols</English>
+        <French>Villes: Patrouilles</French>
+        <German>Städte: Patrouillen</German>
+        <Russian>Города: Патрули Сопротивл.</Russian>
+        <Italian>Towns: Pattuglie</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_ResistanceStriker">
+        <English>Towns: Assault Teams</English>
+        <French>Villes: Equipes d'assault</French>
+        <German>Städte: Angriffsteams</German>
+        <Russian>Города: Штурм. отряды Сопротивл.</Russian>
+        <Italian>Città: Pattuglie</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_SecondaryMissions">
+        <English>Gameplay: Secondary Missions</English>
+        <French>Jouabilité: Missions Secondaire</French>
+        <German>Gameplay: Sekundäre Mission</German>
+        <Russian>Геймплей: Вторичные миссии</Russian>
+        <Italian>Gameplay: Missioni Secondarie</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gameplay_ShowUID">
+        <English>Gameplay: Show Player UID</English>
+        <French>Jouabilité: Affichage ID Joueur</French>
+        <German>Gameplay: Zeige Spieler-ID</German>
+        <Russian>Геймплей: Показывать UID Игрока</Russian>
+        <Italian>Gameplay: Mostra UID Giocatore</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gameplay_Specialization">
+        <English>Gameplay: Specialization</English>
+        <French>Jouabilité: Spécialisation</French>
+        <German>Gameplay: Specialization</German>
+        <Russian>Геймплей: Специализация</Russian>
+        <Italian>Gameplay: Specialization</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_StartingDistance">
+        <English>Base: Starting Distance</English>
+        <French>Base: Distance de Démarrage</French>
+        <German>Basis: Startentfernung</German>
+        <Russian>База: Дистанция на старте</Russian>
+        <Italian>Base: Distanza Iniziale</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_StartingLocations">
+        <English>Base: Starting Locations</English>
+        <French>Base: Position de Démarrage</French>
+        <German>Basis: Startpunkt</German>
+        <Russian>База: Позиции на старте</Russian>
+        <Italian>Base: Posizione Iniziale</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_StartingLocations_Random">
+        <English>Random</English>
+        <French>Aléatoire</French>
+        <German>Zufällig</German>
+        <Russian>Случайно</Russian>
+        <Italian>Casuale</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_StartingLocations_WestNorth">
+        <English>West N | East S</English>
+        <French>Ouest N | Est S</French>
+        <German>Westen N | Osten S</German>
+        <Russian>Запад С | Восток Ю</Russian>
+        <Italian>Ovest N | Est S</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_StartingLocations_WestSouth">
+        <English>West S | East N</English>
+        <French>Ouest S | Est N</French>
+        <German>Westen S | Osten N</German>
+        <Russian>Запад Ю | Восток С</Russian>
+        <Italian>Ovest S | Est N </Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_StartingMode">
+        <English>Towns: Starting Mode</English>
+        <French>Villes: Mode de démarrage</French>
+        <German>Städte: Startmodus</German>
+        <Russian>Города: Начальные условия</Russian>
+        <Italian>Città: Modalità Iniziale</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_Supply_East">
+        <English>Economy: Starting Supply (East)</English>
+        <French>Economie: Logistique de départ (Est)</French>
+        <German>Wirtschaft: Startversorgung (Osten)</German>
+        <Russian>Экономика: Снабжение на старте (Восток)</Russian>
+        <Italian>Economia: Supply Iniziali (Est)</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gameplay_Supply_West">
+        <English>Economy: Starting Supply (West)</English>
+        <French>Economie: Logistique de départ (Ouest)</French>
+        <German>Wirtschaft: Startversorgung (Westen)</German>
+        <Russian>Экономика: Снабжение на старте (Запад)</Russian>
+        <Italian>Economia: Supply Iniziali (Ovest)</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_SupplySystem">
+        <English>Economy: Supply System</English>
+        <French>Economie: Système Logistique</French>
+        <German>Wirtschaft: Versorgungssystem</German>
+        <Russian>Экономика: Система снабжения</Russian>
+        <Italian>Economia: Sistema Supply</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_SupplySystem_Truck">
+        <English>Trucks</English>
+        <French>Camions</French>
+        <German>Lastwagen</German>
+        <Russian>Грузовики</Russian>
+        <Italian>Camion</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_ThermalImaging">
+        <English>Gameplay: Thermal Imaging</English>
+        <French>Jouabilité: Images Thermique</French>
+        <German>Gameplay: Thermal Imaging</German>
+        <Russian>Геймплей: ТВП</Russian>
+        <Italian>Gameplay: Thermal Imaging</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_TownsAmount">
+        <English>Towns: Amount</English>
+        <French>Villes: Nombre</French>
+        <German>Städte: Anzahl</German>
+        <Russian>Города: Количество</Russian>
+        <Italian>Città: Numero</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gameplay_TownsCamps">
+        <English>Towns: Camps</English>
+        <French>Villes: Camps</French>
+        <German>Towns: Camps</German>
+        <Russian>Города: Лагеря</Russian>
+        <Italian>Towns: Camps</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gameplay_TownsCaptureMode">
+        <English>Towns: Capture Mode</English>
+        <French>Villes: Mode de Capture</French>
+        <German>Städte: Eroberungs-Modus</German>
+        <Russian>Города: Способ захвата</Russian>
+        <Italian>Città: Modalità Cattura</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gameplay_TownsCaptureMode_AllCamps">
+        <English>All Camps are Required</English>
+        <French>Tous les camp sont Nécessaire</French>
+        <German>Alle Camps sind notwendig</German>
+        <Russian>Требуются все лагеря</Russian>
+        <Italian>Tutti i campi richiesti</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gameplay_TownsCaptureMode_Threshold">
+        <English>Units Threshold</English>
+        <French>Seuil d'Unités</French>
+        <German>Einheiten-Grenze</German>
+        <Russian>Количество юнитов</Russian>
+        <Italian>Soglia Unità</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_TownsPurchaseMilita">
+        <English>Towns: Purchase Infantry</English>
+        <French>Villes: Achat d'Infantrie</French>
+        <German>Städte: Infantrie einkaufen</German>
+        <Russian>Города: Покупка пехоты</Russian>
+        <Italian>Città: Compra Fanteria</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_TrackAI">
+        <English>Gameplay: Track AI on Map</English>
+        <French>Jouabilité: Affichage IA sur Carte</French>
+        <German>Gameplay: KI auf Karte zeigen</German>
+        <Russian>Геймплей: Показывать ИИ на карте</Russian>
+        <Italian>Gameplay: Segna IA sulla Mappa</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_TrackPlayers">
+        <English>Gameplay: Track Players on Map</English>
+        <French>Jouabilité: Affichage joueur sur Carte</French>
+        <German>Gameplay: Spieler auf Karte zeigen</German>
+        <Russian>Геймплей: Показывать игроков на карте</Russian>
+        <Italian>Gameplay: Segna Giocatori sulla Mappa</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_TimeOfDay">
+        <English>Environment: Time of Day</English>
+        <French>Environement: Heure de la Journée</French>
+        <German>Umgebung: Tageszeit</German>
+        <Russian>Природа: Время дня</Russian>
+        <Italian>Ambiente: Orario del giorno</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_TownProtectionRange">
+        <English>Towns: Protection Range</English>
+        <French>Villes: Distance de protection</French>
+        <German>Städte: Verteidigungsradius</German>
+        <Russian>Города: Радиус защиты</Russian>
+        <Italian>Città: Raggio di Protezione</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_TownRespawnRange">
+        <English>Respawn: Towns Range</English>
+        <French>Réapparition: Distance Villes</French>
+        <German>Widereinstieg: Wiedereinstiegsradius</German>
+        <Russian>Возрожд: Радиус в городе</Russian>
+        <Italian>Respawn: Raggio delle Città</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_UnitsBounty">
+        <English>Gameplay: Units Bounty</English>
+        <French>Jouabilité: Récompenses d'Unités (bounty)</French>
+        <German>Gameplay: Einheiten Kopfgeld</German>
+        <Russian>Геймплей: Награда за убийство юнитов</Russian>
+        <Italian>Gameplay: Taglia Unità</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_UPSMON">
+        <English>Module: UPSMON AI</English>
+        <French>Module: IA UPSMON</French>
+        <German>Modul: UPSMON AI</German>
+        <Russian>Модуль: UPSMON AI</Russian>
+        <Italian>Modulo: UPSMON AI</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gameplay_VehicleDelay">
+        <English>Gameplay: Empty Vehicles Lifespan</English>
+        <French>Jouabilité: Durée de Vie des Véhicules Vide</French>
+        <German>Gameplay: Lebensdauer Fahrzeuge</German>
+        <Russian>Геймплей: Удалять пустой транспорт</Russian>
+        <Italian>Gameplay: Tempo di rimozione Veicoli Vuoti</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_VictoryCondition">
+        <English>Gameplay: Victory Condition</English>
+        <French>Jouabilité: Condition de Victoire</French>
+        <German>Gameplay: Siegbedingung</German>
+        <Russian>Геймплей: Условие для победы</Russian>
+        <Italian>Gameplay: Condizioni di Vittoria</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gameplay_ViewDistance">
+        <English>Gameplay: View Distance</English>
+        <French>Jouabilité: Distance de Vue</French>
+        <German>Gameplay: Sichtweite</German>
+        <Russian>Геймплей: Дистанция видимости</Russian>
+        <Italian>Gameplay: View Distance</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_Weather">
+        <English>Environment: Weather</English>
+        <French>Environement: Météo</French>
+        <German>Umgebung: Wetter</German>
+        <Russian>Природа: Погода</Russian>
+        <Italian>Ambiente: Meteo</Italian>
+      </Key>
+      <Key ID="STR_WF_Gear">
+        <English>Gear</English>
+        <French>Equipement</French>
+        <German>Ausrüstung</German>
+        <Russian>Снаряжение</Russian>
+        <Italian>Equipaggiamento</Italian>
+      </Key>
+      <Key ID="STR_WF_Gear_Label">
+        <English>Gear Menu:</English>
+        <French>Menu d'Equipement:</French>
+        <German>Ausrüstung:</German>
+        <Russian>Меню покупки снаряжения:</Russian>
+        <Italian>Equipaggiamento:</Italian>
+      </Key>
+      <Key ID="STR_WF_Gear_MenuEquip">
+        <English>Equipements</English>
+        <French>Equipements</French>
+        <German>Ausrüstung</German>
+        <Russian>Снаряжение</Russian>
+        <Italian>Equipaggiamento</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gear_RespawnCharge">
+        <English>You were deducted $%1 due to your gear</English>
+        <French>Vous avez été déduit de $%1. en raison de votre équipement</French>
+        <German>You were deducted from $%1. due to your gear</German>
+        <Russian>У вас изъято $%1. за ваше снаряжение</Russian>
+        <Italian>You were deducted $%1 due to your gear</Italian>
+      </Key>
+      <Key ID="STR_WF_Gear_AllowTwo">
+        <English>&lt;t color='#F8D664'&gt;Gear Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - This weapon/loadout cannot be purchased due to your current loadout settings. &lt;br/&gt;&lt;br/&gt; (The &lt;t color='#85B5FA'&gt;Realistic Gear&lt;/t&gt; parameter prevent the use of heavy primary weapons with launchers or backpacks).</English>
+        <French>&lt;t color='#F8D664'&gt;Information d'Equipement:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Cette arme ou ensemble d'équipement ne peut être acheter en raison de votre équipement courant (Le paramètre &lt;t color='#85B5FA'&gt; Equipement réalistique &lt;/t&gt; empêche l'utilisation d'armement lourd avec des lance-missiles ou des sac à dos).</French>
+        <German>&lt;t color='#F8D664'&gt;Ausrüstungs-Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Diese Waffe bzw. diese Ausrüstungs-Zusammenstellung kann aufgrund von Restriktionen nicht gekauft werden. &lt;br/&gt;&lt;br/&gt; (Der &lt;t color='#85B5FA'&gt;Realistische-Ausrüstung &lt;/t&gt; Parameter verhindert die Verwendung von schweren Primärwaffen mit Raketenwerfern und/oder Rucksäcken).</German>
+        <Russian>&lt;t color='#F8D664'&gt;Информация о оружии:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Это оружие/не может быть куплено из за настроек игры. &lt;br/&gt;&lt;br/&gt; (The &lt;t color='#85B5FA'&gt;Реалистичное оружие&lt;/t&gt; параметр использования тяжелого оружия с гранатометами или рюкзаками).</Russian>
+        <Italian>&lt;t color='#F8D664'&gt;Informazioni Equipaggiamento:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Questo tipo di equipaggiamento non può essere acquistato a causa delle impostazioni attuali sull'armamento. &lt;br/&gt;&lt;br/&gt; (Il parametro &lt;t color='#85B5FA'&gt;Armamento Realistico&lt;/t&gt; impedisce l'uso di armi pesanti con lanciarazzi o zaini).</Italian>
+      </Key>
+      <Key ID="STR_WF_Hard">
+        <English>Hard</English>
+        <French>Difficile</French>
+        <German>Hard</German>
+        <Russian>Тяжелый</Russian>
+        <Italian>Difficile</Italian>
+      </Key>
+      <Key ID="STR_WF_Heal">
+        <English>Heal</English>
+        <French>Soins</French>
+        <German>Heilen</German>
+        <Russian>Вылечить</Russian>
+        <Italian>Medicazione</Italian>
+      </Key>
+      <Key ID="STR_WF_Healing">
+        <English>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; is being healed... &lt;br/&gt;&lt;br/&gt;Please wait for &lt;t color='#85B5FA'&gt;%2&lt;/t&gt; seconds during the healing...</English>
+        <French>&lt;t color='#F8D664'&gt;Information Véhicule:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Un &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; est en cours de soins... &lt;br/&gt;&lt;br/&gt;Veuillez attendre &lt;t color='#85B5FA'&gt;%2&lt;/t&gt; secondes durant les soins...</French>
+        <German>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; is being healed... &lt;br/&gt;&lt;br/&gt;Please wait for &lt;t color='#85B5FA'&gt;%2&lt;/t&gt; seconds during the healing...</German>
+        <Russian>&lt;t color='#F8D664'&gt;Информация:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; лечится... &lt;br/&gt;&lt;br/&gt;Пожалуйста подождите &lt;t color='#85B5FA'&gt;%2&lt;/t&gt; секунд для лечения...</Russian>
+        <Italian>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; is being healed... &lt;br/&gt;&lt;br/&gt;Please wait for &lt;t color='#85B5FA'&gt;%2&lt;/t&gt; seconds during the healing...</Italian>
+      </Key>
+      <Key ID="STR_WF_Heal_Failed">
+        <English>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; has failed to be healed.</English>
+        <French>&lt;t color='#F8D664'&gt;Information Véhicule:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Un &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; n'a pas été soigner.</French>
+        <German>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; has failed to be healed.</German>
+        <Russian>&lt;t color='#F8D664'&gt;Информация:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; не вылечен.</Russian>
+        <Italian>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; has failed to be healed.</Italian>
+      </Key>
+	  <Key ID="STR_WF_Heal_Success">
+        <English>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; has been successfully healed.</English>
+        <French>&lt;t color='#F8D664'&gt;Information Véhicule:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Un &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; a été soigner.</French>
+        <German>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;- &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; has been successfully healed.</German>
+        <Russian>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; вылечен.</Russian>
+        <Italian>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; has been successfully healed.</Italian>
+      </Key>
+	  
+	  
+      <Key ID="STR_WF_HeadbugFix">
+        <English>Fix Headbug</English>
+        <French>Règler Headbug</French>
+        <German>Headbug beheben</German>
+        <Russian>Исправить баг головы</Russian>
+        <Italian>Fix Headbug</Italian>
+      </Key>
+      <Key ID="STR_WF_HireWorker">
+        <English>Hire Worker</English>
+        <French>Engager Travailleur</French>
+        <German>Hire Worker</German>
+        <Russian>Нанять рабочего</Russian>
+        <Italian>Hire Worker</Italian>
+      </Key>
+      <Key ID="STR_WF_Hook_Manned">
+        <English>Vehicle Information:\n\n - Manned Vehicles cannot be hooked. Make sure that the vehicle is empty.</English>
+        <French>Information Véhicule:\n\n - Les véhicules avec équipage ne peuvent être accrochées. Assurez-vous que le véhicule est vide.</French>
+        <German>Fahrzeug Information:\n\n - Bemannte Fahrzeuge können nicht per Luft transportiert werden. Versichere Dich, dass das Fahrzeug leer ist.</German>
+        <Russian>Информация:\n\n - Техника с юнитами не может перевозиться. Убедись что техника пуста.</Russian>
+        <Italian>Informazioni veicolo:\n\n - I veicoli con a bordo personale non possono essere agganciati, assicurati che sia vuoto.</Italian>
+      </Key>
+	  <Key ID="STR_WF_ICBM">
+        <English>ICBM</English>
+        <French>MBI</French>
+        <German>ICBM</German>
+        <Russian>МБР</Russian>
+        <Italian>ICBM</Italian>
+      </Key>
+      <Key ID="STR_WF_ICBM_Launch">
+        <English>WARNNING! An Intercontinental ballistic missile launch has been detected!</English>
+        <French>ATTENTION! Lelancement d'un Missile balistique intercontinental a été detecté!</French>
+        <German>WARNUNG! Der Abschuss einer Interkontinentalrakete wurde festgestellt!</German>
+        <Russian>ВНИМАНИЕ! Зафиксирован пуск МБР!</Russian>
+        <Italian>ATTENZIONE! Un Missile Balistico intercontinentale è stato avvistato!</Italian>
+      </Key>
+      <Key ID="STR_WF_Income">
+        <English>Income: $%1.($%2./Min)</English>
+        <French>Salaire: $%1.($%2./Min)</French>
+        <German>Einkommen: $%1 ($%2/Min.)</German>
+        <Russian>Наличные: $%1 ($%2/мин)</Russian>
+        <Italian>Entrate: $%1.($%2/Min.)</Italian>
+      </Key>
+      <Key ID="STR_WF_Income_Sys">
+        <English>Income</English>
+        <French>Salaire</French>
+        <German>Einkommen</German>
+        <Russian>Наличные</Russian>
+        <Italian>Entrate</Italian>
+      </Key>
+	  <Key ID="STR_WF_Income_Sys_Com">
+        <English>Commander Income</English>
+        <French>Salaire Commandant</French>
+        <German>Commander Income</German>
+        <Russian>Доход Командира</Russian>
+        <Italian>Commander Income</Italian>
+      </Key>
+	  <Key ID="STR_WF_Income_Sys_Param">
+        <English>Commander Income - Realistic System</English>
+        <French>Salaire Commandant - Système Réaliste</French>
+        <German>Commander Income - Realistic System</German>
+        <Russian>Доход Командира - Realistic System</Russian>
+        <Italian>Commander Income - Realistic System</Italian>
+      </Key>
+	  <Key ID="STR_WF_Income_Sys_Param_Full">
+        <English>Commander Income - Full Income System</English>
+        <French>Salaire Commandant - Système de Salaire Complet</French>
+        <German>Commander Income - Full Income System</German>
+        <Russian>Доход Командира - Full Income System</Russian>
+        <Italian>Commander Income - Full Income System</Italian>
+      </Key>
+      <Key ID="STR_WF_Income_Sys_Ply">
+        <English>Leaders Income</English>
+        <French>Salaire Leaders</French>
+        <German>Leaders Income</German>
+        <Russian>Доход Командиров Отделений</Russian>
+        <Italian>Leaders Income</Italian>
+      </Key>
+      <Key ID="STR_WF_Infantry">
+        <English>Infantry</English>
+        <French>Infantrie</French>
+        <German>Infantry</German>
+        <Russian>Пехота</Russian>
+        <Italian>Infantry</Italian>
+      </Key>
+	  <Key ID="STR_WF_Impossible">
+        <English>Impossible</English>
+        <French>Impossible</French>
+        <German>Unmöglich</German>
+        <Russian>Невозможно</Russian>
+        <Italian>Impossibile</Italian>
+      </Key>
+      <Key ID="STR_WF_Large">
+        <English>Large</English>
+        <French>Grand</French>
+        <German>Gross</German>
+        <Russian>Большой</Russian>
+        <Italian>Grande</Italian>
+      </Key>
+	  <Key ID="STR_WF_LandVehicles">
+        <English>Land Vehicles</English>
+        <French>Véhicules Terrestre</French>
+        <German>Land Vehicles</German>
+        <Russian>Сухопутная техника</Russian>
+        <Italian>Land Vehicles</Italian>
+      </Key>
+	  <Key ID="STR_WF_Leader">
+        <English>Leaders</English>
+        <French>Chefs d'Equipes</French>
+        <German>Leaders</German>
+        <Russian>Командиры</Russian>
+        <Italian>Leaders</Italian>
+      </Key>
+      <Key ID="STR_WF_Level">
+        <English>Current Level: %1</English>
+        <French>Niveau Actuel: %1</French>
+        <German>Aktuelle Stufe: %1</German>
+        <Russian>Уровень: %1</Russian>
+        <Italian>Livello Attuale: %1</Italian>
+      </Key>
+      <Key ID="STR_WF_Lift">
+        <English>Attach (Vehicle)</English>
+        <French>Attacher (Véhicule)</French>
+        <German>Befestigen (Fahrzeug)</German>
+        <Russian>Прицепить (Транспорт)</Russian>
+        <Italian>Aggancia (Veicolo)</Italian>
+      </Key>
+      <Key ID="STR_WF_Lift_Detach">
+        <English>Detach (Vehicle)</English>
+        <French>Détacher (Véhicule)</French>
+        <German>Lösen (Fahrzeug)</German>
+        <Russian>Отцепить (Транспорт)</Russian>
+        <Italian>Sgancia (Veicolo)</Italian>
+      </Key>
+      <Key ID="STR_WF_Light">
+        <English>Light</English>
+        <French>Léger</French>
+        <German>Leicht</German>
+        <Russian>Легкий</Russian>
+        <Italian>Leggero</Italian>
+      </Key>
+	  <Key ID="STR_WF_Loading">
+        <English>Loading (may take a few minutes)</English>
+        <French>Chargement (plusiers minutes)</French>
+        <German>Loading (may take a few minutes)</German>
+        <Russian>Загрузка (может занять несколько минут)</Russian>
+        <Italian>Loading (may take a few minutes)</Italian>
+      </Key>
+	  <Key ID="STR_WF_Lock">
+        <English>Lock</English>
+        <French>Verrouiller</French>
+        <German>Abschliessen</German>
+        <Russian>Запереть</Russian>
+        <Italian>Chiudi</Italian>
+      </Key>
+      <Key ID="STR_WF_Lock_MHQ">
+        <English>Lock MHQ</English>
+        <French>Verrouiller PC</French>
+        <German>MHQ abschliessen</German>
+        <Russian>Запереть КШМ</Russian>
+        <Italian>Chiudi MHQ</Italian>
+      </Key>
+      <Key ID="STR_WF_Long">
+        <English>Long</English>
+        <French>Longue</French>
+        <German>Lang</German>
+        <Russian>Большая</Russian>
+        <Italian>Lungo</Italian>
+      </Key>
+      <Key ID="STR_WF_Options">
+        <English>Options</English>
+        <French>Options</French>
+        <German>Optionen</German>
+        <Russian>Опции</Russian>
+        <Italian>Opzioni</Italian>
+      </Key>
+      <Key ID="STR_WF_M_BASE_Attack">
+        <English>Defense: Base</English>
+        <French>Défense: Base</French>
+        <German>Defense: Base</German>
+        <Russian>Защита: База</Russian>
+        <Italian>Defense: Base</Italian>
+      </Key>
+      <Key ID="STR_WF_M_BASE_Attack_Description">
+        <English>One of our scout team has reported us that multiple resistance squads are heading toward our base.&lt;br/&gt;&lt;br/&gt;According to the report, theirs arrival is imminent, we will have to defend the base at all cost, HQ has ordered us to neutralize the threat even if the base is lost.&lt;br/&gt;&lt;br/&gt;</English>
+        <French>Une de nos équipes de reconnaissance nous a informé de l'arrivé de plusieurs escouades resistantes vers notre base.&lt;br/&gt;&lt;br/&gt;D'après le rapport officiel, leurs arrivées est imminente. Nous allons devoir défendre la base à tout prix, le QG nous a ordonné de neutraliser cette menace même si la base est perdue.&lt;br/&gt;&lt;br/&gt;</French>
+        <German>One of our scout team has reported us that multiple resistance squads are heading toward our base.&lt;br/&gt;&lt;br/&gt;According to the report, theirs arrival is imminent, we will have to defend the base at all cost, HQ has ordered us to neutralize the threat even if the base is lost.&lt;br/&gt;&lt;br/&gt;</German>
+        <Russian>Одна из наших разведкоманд сообщает о многочисленных отрядах сопротивления приближающихся к нашей базе.&lt;br/&gt;&lt;br/&gt;Из их доклада следует что нападение неизбежно, мы должны защитить базу любой ценой, штаб приказал нейтрализовать угрозу даже если база уничтожена.&lt;br/&gt;&lt;br/&gt;</Russian>
+        <Italian>One of our scout team has reported us that multiple resistance squads are heading toward our base.&lt;br/&gt;&lt;br/&gt;According to the report, theirs arrival is imminent, we will have to defend the base at all cost, HQ has ordered us to neutralize the threat even if the base is lost.&lt;br/&gt;&lt;br/&gt;</Italian>
+      </Key>
+      <Key ID="STR_WF_M_PLAYERS_Attack_Air">
+        <English>Search and Destroy: Vehicle</English>
+        <French>Recherche et Destruction: Véhicule</French>
+        <German>Search and Destroy: Vehicle</German>
+        <Russian>Найти и уничтожить: Машина</Russian>
+        <Italian>Search and Destroy: Vehicle</Italian>
+      </Key>
+	  <Key ID="STR_WF_M_PLAYERS_Attack_Air_Description">
+        <English>HQ warned us about an incomming mercenary helicopter hunting down our teams leaders.&lt;br/&gt;&lt;br/&gt;Your mission is to locate and destroy that helicopter.&lt;br/&gt;&lt;br/&gt;</English>
+        <French>Le QG nous à alerté de l'arrivée d'un hélicoptère mercenaire chassant nos chefs d'équipes.&lt;br/&gt;&lt;br/&gt;Votre mission est de trouver et détruire cette hélicoptère.&lt;br/&gt;&lt;br/&gt;</French>
+        <German>HQ warned us about an incomming mercenary helicopter hunting down our teams leaders.&lt;br/&gt;&lt;br/&gt;Your mission is to locate and destroy that helicopter.&lt;br/&gt;&lt;br/&gt;</German>
+        <Russian>Штаб уведомил нас о приближающемся вертолете наемников,охотящимся на командиров отделений.&lt;br/&gt;&lt;br/&gt;Ваша задача - обнаружить и уничтожить вертолет.&lt;br/&gt;&lt;br/&gt;</Russian>
+        <Italian>HQ warned us about an incomming mercenary helicopter hunting down our teams leaders.&lt;br/&gt;&lt;br/&gt;Your mission is to locate and destroy that helicopter.&lt;br/&gt;&lt;br/&gt;</Italian>
+      </Key>
+	  <Key ID="STR_WF_M_TOWN_Attack">
+        <English>Defense: %1</English>
+        <French>Défense: %1</French>
+        <German>Verteidigung: %1</German>
+        <Russian>Защита: %1</Russian>
+        <Italian>Difesa: %1</Italian>
+      </Key>
+	  <Key ID="STR_WF_M_TOWN_Attack_Description">
+        <English>Our intels has informed us that a resistance commander is planning an attack on &lt;marker name='%1Depot'&gt;%1&lt;marker&gt;.&lt;br/&gt;&lt;br/&gt;The attack will be launched soon, make sure to defend that town at all cost.&lt;br/&gt;&lt;br/&gt;A Search and Destroy mission will be necessary to complete %1 defense.&lt;br/&gt;&lt;br/&gt;</English>
+        <French>Nos renseignements nous indique qu'un commandant resistant plannifie d'attaquer &lt;marker name='%1Depot'&gt;%1&lt;marker&gt;.&lt;br/&gt;&lt;br/&gt; L'attaque doit avoir lieu bientôt, assurez-vous de défendre cette ville à tout prix.&lt;br/&gt;&lt;br/&gt;Une mission de Recherche et Destruction sera nécessaire finaliser la défense de %1.&lt;br/&gt;&lt;br/&gt;</French>
+        <German>Wir wurden informiert, dass ein Kommandeur des Widerstandes einen Angriff auf &lt;marker name='%1Depot'&gt;%1&lt;marker&gt;.&lt;br/&gt;&lt;br/&gt; plant. Der Angriff wird bald stattfinden, verteidige die Stadt unter allen Umständen.&lt;br/&gt;&lt;br/&gt;Eine Suchen-und-Zerstören Mission ist notwendig, um die Verteidigung von %1 sicherzustellen.&lt;br/&gt;&lt;br/&gt;</German>
+        <Russian>Наша разведка сообщила нам, что командующий силами сопротивления планирует нападение на &lt;marker name='%1Depot'&gt;%1&lt;marker&gt;.&lt;br/&gt;&lt;br/&gt; Наступление начнется скоро, будте уверены, этот город должен быть защищен любой ценой.&lt;br/&gt;&lt;br/&gt;Необходимо найти и уничтожить силы сопротивления %1 defense.&lt;br/&gt;&lt;br/&gt;</Russian>
+        <Italian>La nostra Inteligence ci ha informato che commando della resistenza sta pianificando un attacco a &lt;marker name='%1Depot'&gt;%1&lt;marker&gt;.&lt;br/&gt;&lt;br/&gt;L'attacco verra lanciato preso, assicurati di difentere questa città a tutti i costi.&lt;br/&gt;&lt;br/&gt;Una missione di ricerca e distruzione sarà necessaria per completare la difesa di %1.&lt;br/&gt;&lt;br/&gt;</Italian>
+      </Key>
+      <Key ID="STR_WF_M_UAV_RetrieveModule">
+        <English>Assist: UAV Module Retrieval</English>
+        <French>Assistance: Recupération Module Drone</French>
+        <German>Assistieren: UAV-Module Bergung</German>
+        <Russian>Помощь: Поиск модуля БЛА</Russian>
+        <Italian>Assist: Recupero Modulo UAV</Italian>
+      </Key>
+	  <Key ID="STR_WF_M_UAV_RetrieveModule_Description">
+        <English>From what we've learned from our intels, an UAV has been shot down in this area, retrieving it's module is essential for our team as it contains critical intel about enemy forces. &lt;br/&gt;&lt;br/&gt;Once that your team has secured the crash site, we will send a team to retrieve the module, make sure to protect them.&lt;br/&gt;&lt;br/&gt;</English>
+        <French>D'après ce que nos renseignements nous ont appris, un Drone a été abattu dans cette zone, il est essentiel de recupérer son module en raison d'importants renseignements qu'il contient sur les forces enemies. &lt;br/&gt;&lt;br/&gt; Une fois le site du crash sécurisé, nous enverrons une équipe récuperer le module, assurez-vous de les protéger.&lt;br/&gt;&lt;br/&gt;</French>
+        <German>Soviel wir von unseren Berichten gelernt haben, wurde ein UAV in dieser Gegend abgeschossen. Oberste Priorität für unser Team sollte nun die Bergung des UAV-Moduls sein, da es kritische Informationen über die feindlichen Streitkräfte beinhaltet. &lt;br/&gt;&lt;br/&gt; Sobald die Absturzstelle gesichert ist, werden wir ein Team senden, um das Modul zu bergen. Sichere die Absturzstelle und beschütze das Team bei der Bergung!&lt;br/&gt;&lt;br/&gt;</German>
+        <Russian>По данным нашей разведки БЛА был сбит в этом районе, нужно вернуть модуль БЛА так как он важен для нашей команды, поскольку содержит критически важные сведения о вражеских силах, &lt;br/&gt;&lt;br/&gt; Как только Ваша команда обнаружит место крушения, мы пошлем команду, чтобы извлечь модуль, позаботьтесь об их защите.&lt;br/&gt;&lt;br/&gt;</Russian>
+        <Italian>Da quello che abbiamo appreso dalla nostra Inteligence, un UAV è stato abbattuto in questa area, recuperare il suo modulo è essenziale per noi perchè contiene informazioni critiche sulle forze nemiche &lt;br/&gt;&lt;br/&gt; Una volta assicurata la zona dove è caduto, manderemo un team a recuperare il modulo, assicurati di proteggerlo.&lt;br/&gt;&lt;br/&gt;</Italian>
+      </Key>
+	  <Key ID="STR_WF_Magazines">
+        <English>Magazines</English>
+        <French>Magasines</French>
+        <German>Magazine</German>
+        <Russian>Магазины</Russian>
+        <Italian>Munizioni</Italian>
+      </Key>
+      <Key ID="STR_WF_MaxGroup">
+        <English>&lt;t color='#F8D664'&gt;Factory Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Units Limit reached (&lt;t color='#85B5FA'&gt;%1&lt;/t&gt; Units).</English>
+        <French>&lt;t color='#F8D664'&gt;Information Usine:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Maximum d'Unité atteint (&lt;t color='#85B5FA'&gt;%1&lt;/t&gt; Unités).</French>
+        <German>&lt;t color='#F8D664'&gt;Fabrik-Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Maximales Einheiten-Limit erreicht (&lt;t color='#85B5FA'&gt;%1&lt;/t&gt; Einheiten).</German>
+        <Russian>&lt;t color='#F8D664'&gt;Информация:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;Достигнут лимит отряда (&lt;t color='#85B5FA'&gt;%1&lt;/t&gt; человек)</Russian>
+        <Italian>&lt;t color='#F8D664'&gt;Informazioni Fabrica:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Limite Unità Raggiunto (&lt;t color='#85B5FA'&gt;%1&lt;/t&gt; Unità).</Italian>
+      </Key>
+      <Key ID="STR_WF_MaxSpeed">
+        <English>Maximum Speed</English>
+        <French>Vitesse Maximale</French>
+        <German>Maximale Geschwindigkeit</German>
+        <Russian>Максимальная скорость</Russian>
+        <Italian>Massima Velocità</Italian>
+      </Key>
+      <Key ID="STR_WF_Medium">
+        <English>Medium</English>
+        <French>Moyen</French>
+        <German>Mittel</German>
+        <Russian>Средний</Russian>
+        <Italian>Medio</Italian>
+      </Key>
+	  <Key ID="STR_WF_Move">
+        <English>Move</English>
+        <French>Déplacement</French>
+        <German>Bewegen</German>
+        <Russian>Передвижение</Russian>
+        <Italian>Muovi</Italian>
+      </Key>
+      <Key ID="STR_WF_MoneyTransfer">
+        <English>Funds Transfer: $%1.</English>
+        <French>Transfert de fonds: $%1.</French>
+        <German>Geld überweisen: $%1.</German>
+        <Russian>Денежный перевод: $%1.</Russian>
+        <Italian>Trasferimento Fondi: $%1.</Italian>
+      </Key>
+      <Key ID="STR_WF_Minefield">
+        <English>Minefield</English>
+        <French>Champs de Mines</French>
+        <German>Minenfeld</German>
+        <Russian>Минное поле</Russian>
+        <Italian>Campo Minato</Italian>
+      </Key>
+      <Key ID="STR_WF_Mission">
+        <English>Mission Type</English>
+        <French>Type de Mission</French>
+        <German>Auftragstyp</German>
+        <Russian>Тип задания</Russian>
+        <Italian>Tipo di Missione</Italian>
+      </Key>
+      <Key ID="STR_WF_Mission_Abort">
+        <English>Mission Information:\n\n - Current Mission Aborted.</English>
+        <French>Information Mission:\n\n - Mission en cours Annulé.</French>
+        <German>Auftragsinformation:\n\n - Aktueller Auftrag abgebrochen.</German>
+        <Russian>Информация:\n\n Текущее задание отменено.</Russian>
+        <Italian>Informzioni Missione:\n\n - Missione Attuale Annullata!</Italian>
+      </Key>
+      <Key ID="STR_WF_Mission_Description">
+        <English>After selecting a mission, you will have to capture the Town Depot of the selected town, don't forget that capturing the camps around the depot will give you a respawn possibility in this town.</English>
+        <French>Après avoir acceptée une mission, vous devez capturer le Dépot de la ville, capturer les camps autours de celui-ci aiderons à sa capture.</French>
+        <German>Nachdem Sie einen Auftrag angenommen haben, müssen Sie die Stadt einnehmen. Begeben Sie sich dazu zum Depot (der große Bunker oder Turm in der Stadtmitte). Nehmen Sie vorher jedoch mindestens einen Vorposten ein, denn dort können Sie dann wieder einsteigen (Respawn), insofern diese Option aktiviert ist.</German>
+        <Russian>После выбора задания вам необходимо захватить склад города. Захват лагерей поможет в захвате города.</Russian>
+        <Italian>Dopo aver selezionato una missione, dovrai catturare il Deposito Centrale della Città selezionata, non dimenticare che catturare i campi intorno al deposito ti daranno una possibilità di respawn nella città.</Italian>
+      </Key>
+      <Key ID="STR_WF_Mission_Information">
+        <English>Mission Information:</English>
+        <French>Information Mission:</French>
+        <German>Auftragsinformation:</German>
+        <Russian>Информация о задании:</Russian>
+        <Italian>Informazioni Missione:</Italian>
+      </Key>
+      <Key ID="STR_WF_Mission_Running">
+        <English>Mission Information:\n\n - You cannot take another mission while you already have one. Complete it or abort it first.</English>
+        <French>Information Mission:\n\n - Vous ne pouvez pas prendre une autre mission car il y a déjà une mission en cours. Terminée la ou abandonée la.</French>
+        <German>Auftrags-Information:\n\n - Es ist nicht möglich, einen anderen Auftrag zu wählen, wenn Ihnen bereits einer zugeordnet ist. Beenden ODER stoppen Sie den laufenden Auftrag und wählen Sie dann eine neue Stadt als Ziel aus.</German>
+        <Russian>Информация:\n\n Вы не можете выбрать другое задание, не завершив или не отменив текущее.</Russian>
+        <Italian>Informazioni Missione:\n\n - Non puoi prendere un'altra missione se ne hai già un'altra, completala o abbandonala prima.</Italian>
+      </Key>
+      <Key ID="STR_WF_Money">
+        <English>Money</English>
+        <French>Argent</French>
+        <German>Money</German>
+        <Russian>Деньги</Russian>
+        <Italian>Money</Italian>
+      </Key>
+	  <Key ID="STR_WF_Money_Supply">
+        <English>Money and Supply</English>
+        <French>Argent et Logistique</French>
+        <German>Money and Supply</German>
+        <Russian>Деньги и снабжение</Russian>
+        <Italian>Money and Supply</Italian>
+      </Key>
+	  <Key ID="STR_WF_NATO_Coloration">
+        <English>NATO Coloration</English>
+        <French>Coloration NATO</French>
+        <German>NATO Coloration</German>
+        <Russian>Схема НАТО</Russian>
+        <Italian>NATO Coloration</Italian>
+      </Key>
+	  <Key ID="STR_WF_Nearby_Town">
+        <English>Nearby Towns</English>
+        <French>Villes Voisines</French>
+        <German>Nearby Towns</German>
+        <Russian>Близлежащие города</Russian>
+        <Italian>Città Vicine</Italian>
+      </Key>
+      <Key ID="STR_WF_NoArty">
+        <English>Artillery Information:\n\n - You need at last one artillery in order to call a Fire Mission.</English>
+        <French>Information d'Artillerie:\n\n - Au moins une unité d'artillerie est nécessaire pour utiliser un Appuie Feu.</French>
+        <German>Artillerie-Information:\n\n - Sie benötigen mind. eine Artillerie-Einheit, um einen Feuerbefehl zu erteilen.</German>
+        <Russian>Информация:\n\n Для вызова артиллерии у Вас должна быть хотя бы одна арт. установка.</Russian>
+        <Italian>Informazioni Artiglieria:\n\n - Hai bisogno di almeno un unità di artiglieria per chiamare il fuoco di soppressione.</Italian>
+      </Key>
+	  <Key ID="STR_WF_None">
+        <English>None</English>
+        <French>Aucun</French>
+        <German>Keine</German>
+        <Russian>Ни одного</Russian>
+        <Italian>Niente</Italian>
+      </Key>
+	  <Key ID="STR_WF_OffmapWarning">
+        <English>&lt;t color='#EB0606'&gt;Warning!&lt;/t&gt; &lt;br/&gt;&lt;br/&gt; You are leaving the battlefield!&lt;br/&gt;&lt;br/&gt; &lt;t color='#EB0606'&gt; %1 &lt;/t&gt; Seconds left.</English>
+        <French>&lt;t color='#EB0606'&gt;Attention!&lt;/t&gt; &lt;br/&gt;&lt;br/&gt; Vous quittez le champs de bataille!&lt;br/&gt;&lt;br/&gt; &lt;t color='#EB0606'&gt;%1&lt;/t&gt; Secondes restantes.</French>
+        <German>&lt;t color='#EB0606'&gt;Achtung!&lt;/t&gt; &lt;br/&gt;&lt;br/&gt; Du verlässt die Kampfzone!&lt;br/&gt;&lt;br/&gt; &lt;t color='#EB0606'&gt;%1&lt;/t&gt; Sekunden verbleiben.</German>
+        <Russian>&lt;t color='#EB0606'&gt;Warning!&lt;/t&gt; &lt;br/&gt;&lt;br/&gt; Вы покинули поле битвы!Осталось &lt;br/&gt;&lt;br/&gt; &lt;t color='#EB0606'&gt;%1&lt;/t&gt; секунд до наказания.</Russian>
+        <Italian>&lt;t color='#EB0606'&gt;Warning!&lt;/t&gt; &lt;br/&gt;&lt;br/&gt; Stai lasciando il campo di battaglia!&lt;br/&gt;&lt;br/&gt; &lt;t color='#EB0606'&gt;%1&lt;/t&gt; Secondi rimasti.</Italian>
+      </Key>
+      <Key ID="STR_WF_Paradrop">
+        <English>Paradrop</English>
+        <French>Parachutage</French>
+        <German>Abwurf</German>
+        <Russian>Высадка десанта</Russian>
+        <Italian>Paradrop</Italian>
+      </Key>
+      <Key ID="STR_WF_Paradrop_Ammo">
+        <English>Paradrop - Ammunition</English>
+        <French>Parachutage - Munitions</French>
+        <German>Paradrop - Ammunition</German>
+        <Russian>Сброс - Амуниция</Russian>
+        <Italian>Paradrop - Ammunition</Italian>
+      </Key>
+	  <Key ID="STR_WF_Paradrop_Vehicle">
+        <English>Paradrop - Vehicle</English>
+        <French>Parachutage - Véhicule</French>
+        <German>Paradrop - Vehicle</German>
+        <Russian>Сброс - Машина</Russian>
+        <Italian>Paradrop - Vehicle</Italian>
+      </Key>
+      <Key ID="STR_WF_Paratroop">
+        <English>Paratroops</English>
+        <French>Parachutistes</French>
+        <German>Fallschirmjäger</German>
+        <Russian>Десант</Russian>
+        <Italian>Paracadutisti</Italian>
+      </Key>
+      <Key ID="STR_WF_Paratroop_Info">
+        <English>Paratroops Information:\n\n - An aerial unit has been called according to your order, it shall arrive here quite soon.</English>
+        <French>Information Parachutistes:\n\n - Une unité aérienne a été assigner sur votre demande, elle sera la sous peut.</French>
+        <German>Fallschirmjäger-Information:\n\n - Die Fallschirmjäger sind auf dem Weg zur Absetzstelle.</German>
+        <Russian>Информация:\n\n По вашему приказу вызван десантный ЛА, он скоро прибудет на место.</Russian>
+        <Italian>Informazioni Paracadutisti:\n\n - Un unità aerea è stata assegnata su vostra richiesta, arriverà presto.</Italian>
+      </Key>
+      <Key ID="STR_WF_Patrol">
+        <English>Patrol</English>
+        <French>Patrouiller</French>
+        <German>Patrouillieren</German>
+        <Russian>Патрулирование</Russian>
+        <Italian>Pattuglie</Italian>
+      </Key>
+      <Key ID="STR_WF_Penalty">
+        <English>$%1. Lost for a civilian neutralization! be careful!</English>
+        <French>$%1. Perdu pour la neutralisation d'un civil! soyer prudent!</French>
+        <German>$%1. Lost for a civilian neutralization! be careful!</German>
+        <Russian>$%1. Потерянно за убийство гражданского! Будьте осторожны!</Russian>
+        <Italian>$%1. Perduti per aver neutralizzato un civile! stai attento!</Italian>
+      </Key>
+      <Key ID="STR_WF_PlayerCommander">
+        <English>You are the Commander.</English>
+        <French>Vous êtes le Commandeur.</French>
+        <German>Sie sind der Kommandeur!</German>
+        <Russian>Вы Командующий</Russian>
+        <Italian>Sei il Comandante!</Italian>
+      </Key>
+      <Key ID="STR_WF_Preload">
+        <English>Preloading the environment... be patient...</English>
+        <French>Pré-chargement de l'environnement... soyez patient...</French>
+        <German>Preloading the environment... be patient...</German>
+        <Russian>Загрузка окружения... пожалуйста подождите...</Russian>
+        <Italian>Preloading the environment... be patient...</Italian>
+      </Key>
+	  <Key ID="STR_WF_Price">
+        <English>Price</English>
+        <French>Prix</French>
+        <German>Preis</German>
+        <Russian>Цена</Russian>
+        <Italian>Prezzo</Italian>
+      </Key>
+      <Key ID="STR_WF_Property">
+        <English>Properties:</English>
+        <French>Propriétés:</French>
+        <German>Eigenschaften:</German>
+        <Russian>Приказ:</Russian>
+        <Italian>Proprietà</Italian>
+      </Key>
+	  <Key ID="STR_WF_Purchase">
+        <English>Buy</English>
+        <French>Achat</French>
+        <German>Kaufen</German>
+        <Russian>Купить</Russian>
+        <Italian>Compra</Italian>
+      </Key>
+      <Key ID="STR_WF_Purchase_Gear">
+        <English>Purchase: Gear</English>
+        <French>Achat: Equipement</French>
+        <German>Ausrüstung kaufen</German>
+        <Russian>Снаряжение</Russian>
+        <Italian>Equipaggiamento</Italian>
+      </Key>
+      <Key ID="STR_WF_Purchase_Units">
+        <English>Purchase: Units</English>
+        <French>Achat: Unités</French>
+        <German>Einheiten kaufen</German>
+        <Russian>Отряды</Russian>
+        <Italian>Compra: Unità</Italian>
+      </Key>
+      <Key ID="STR_WF_Push">
+        <English>Push (Vehicle)</English>
+        <French>Pousser (Véhicule)</French>
+        <German>Anschieben (Fahrzeug)</German>
+        <Russian>Толкнуть (Транспорт)</Russian>
+        <Italian>Spingi (Veicolo)</Italian>
+      </Key>
+      <Key ID="STR_WF_Queu">
+        <English>&lt;t color='#F8D664'&gt;Factory Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; Queued.</English>
+        <French>&lt;t color='#F8D664'&gt;Information Usine:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; Mis en attente.</French>
+        <German>&lt;t color='#F8D664'&gt;Fabrik-Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; in der Warteschlange.</German>
+        <Russian>&lt;t color='#F8D664'&gt;Информация:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t color='#85B5FA'&gt;%1&lt;/t&gt; на очереди.</Russian>
+        <Italian>&lt;t color='#F8D664'&gt;Informazioni Fabrica:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; In Coda.</Italian>
+      </Key>
+	  <Key ID="STR_WF_Queu_Max">
+        <English>&lt;t color='#F8D664'&gt;Factory Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - The maximal queue has been reached for this factory (&lt;t color='#85B5FA'&gt;%1&lt;/t&gt;), please be patient.</English>
+        <French>&lt;t color='#F8D664'&gt;Factory Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - La file d'attente maximale à été atteinte pour cette usine (&lt;t color='#85B5FA'&gt;%1&lt;/t&gt;), veuillez patienter.</French>
+        <German>&lt;t color='#F8D664'&gt;Factory Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - The maximal queue has been reached for this factory (&lt;t color='#85B5FA'&gt;%1&lt;/t&gt;), please be patient.</German>
+        <Russian>&lt;t color='#F8D664'&gt;Информация о заводе:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - очередь завода достигла максимума (&lt;t color='#85B5FA'&gt;%1&lt;/t&gt;), пожалуйста подождите.</Russian>
+        <Italian>&lt;t color='#F8D664'&gt;Factory Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - The maximal queue has been reached for this factory (&lt;t color='#85B5FA'&gt;%1&lt;/t&gt;), please be patient.</Italian>
+      </Key>
+      <Key ID="STR_WF_Queued">
+        <English>Factory Queue: %1</English>
+        <French>Queu de fabrication: %1</French>
+        <German>Warteschlange: %1</German>
+        <Russian>Очередь завода: %1</Russian>
+        <Italian>Coda Produzione:</Italian>
+      </Key>
+      <Key ID="STR_WF_Rearm">
+        <English>Rearm</English>
+        <French>Réarmer</French>
+        <German>Aufmunitionieren</German>
+        <Russian>Перезарядить</Russian>
+        <Italian>Riarma</Italian>
+      </Key>
+      <Key ID="STR_WF_Rearming">
+		<English>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; is being rearmed... &lt;br/&gt;&lt;br/&gt;Please wait for &lt;t color='#85B5FA'&gt;%2&lt;/t&gt; seconds during the rearm process...</English>
+        <French>&lt;t color='#F8D664'&gt;Information Véhicule:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Un &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; est en cours de réarmement... &lt;br/&gt;&lt;br/&gt;Veuillez attendre &lt;t color='#85B5FA'&gt;%2&lt;/t&gt; secondes durant la phase de réarmement...</French>
+        <German>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; is being rearmed... &lt;br/&gt;&lt;br/&gt;Please wait for &lt;t color='#85B5FA'&gt;%2&lt;/t&gt; seconds during the rearm process...</German>
+        <Russian>&lt;t color='#F8D664'&gt;Информация о технике:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; перевооружается... &lt;br/&gt;&lt;br/&gt;Ждите &lt;t color='#85B5FA'&gt;%2&lt;/t&gt; секунд для перезарядки...</Russian>
+        <Italian>&lt;t color='#F8D664'&gt;Informazioni Veicolo:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; riarmo in corso... &lt;br/&gt;&lt;br/&gt;Please wait for &lt;t color='#85B5FA'&gt;%2&lt;/t&gt; seconds during the rearm process...</Italian>
+      </Key>
+      <Key ID="STR_WF_Rearm_Failed">
+        <English>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; has failed to be rearmed.</English>
+        <French>&lt;t color='#F8D664'&gt;Information Véhicule:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Un &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; n'a pas été réarmé.</French>
+        <German>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; has failed to be rearmed.</German>
+        <Russian>&lt;t color='#F8D664'&gt;Информация о технике:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; не перезаряжена.</Russian>
+        <Italian>&lt;t color='#F8D664'&gt;Informazioni Veicolo:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; riarmo fallito.</Italian>
+      </Key>
+	  <Key ID="STR_WF_Rearm_Success">
+        <English>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; has been rearmed.</English>
+        <French>&lt;t color='#F8D664'&gt;Information Véhicule:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Un &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; a été réarmé.</French>
+        <German>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; has been rearmed.</German>
+        <Russian>&lt;t color='#F8D664'&gt;Информация о технике:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; перезаряжена.</Russian>
+        <Italian>&lt;t color='#F8D664'&gt;Informazioni Veicolo:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; è stato riarmato.</Italian>
+      </Key>
+      <Key ID="STR_WF_Refuel">
+        <English>Refuel</English>
+        <French>Ravitailler</French>
+        <German>Auftanken</German>
+        <Russian>Заправить</Russian>
+        <Italian>Rifornimento</Italian>
+      </Key>
+      <Key ID="STR_WF_Refueling">
+        <English>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; is being refueled... &lt;br/&gt;&lt;br/&gt;Please wait for &lt;t color='#85B5FA'&gt;%2&lt;/t&gt; seconds during the refuel process...</English>
+        <French>&lt;t color='#F8D664'&gt;Information Véhicule:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Un &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; est en cours de ravitaillement... &lt;br/&gt;&lt;br/&gt;Veuillez attendre &lt;t color='#85B5FA'&gt;%2&lt;/t&gt; secondes durant la phase de ravitaillement...</French>
+        <German>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; is being refueled... &lt;br/&gt;&lt;br/&gt;Please wait for &lt;t color='#85B5FA'&gt;%2&lt;/t&gt; seconds during the refuel process...</German>
+        <Russian>&lt;t color='#F8D664'&gt;Информация о технике:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; заправляется... &lt;br/&gt;&lt;br/&gt;Пожалуйста ждите &lt;t color='#85B5FA'&gt;%2&lt;/t&gt; секунд для заправки...</Russian>
+        <Italian>&lt;t color='#F8D664'&gt;Informazioni Veicolo:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; rifornimento in corso... &lt;br/&gt;&lt;br/&gt;Please wait for &lt;t color='#85B5FA'&gt;%2&lt;/t&gt; seconds during the refuel process...</Italian>
+      </Key>
+      <Key ID="STR_WF_Refueling_Failed">
+        <English>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; has failed to be refueled.</English>
+        <French>&lt;t color='#F8D664'&gt;Information Véhicule:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Un &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; n'a pas été ravitaillé.</French>
+        <German>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; has failed to be refueled.</German>
+        <Russian>&lt;t color='#F8D664'&gt;Информация о технике:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; обломись с заправкой.</Russian>
+        <Italian>&lt;t color='#F8D664'&gt;Informazioni Veicolo:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; rifornimento fallito.</Italian>
+      </Key>
+	  <Key ID="STR_WF_Refueling_Success">
+        <English>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; has been refueled.</English>
+        <French>&lt;t color='#F8D664'&gt;Information Véhicule:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Un &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; a été ravitaillé.</French>
+        <German>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; has been refueled.</German>
+        <Russian>&lt;t color='#F8D664'&gt;Информация о технике:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; полный бак.</Russian>
+        <Italian>&lt;t color='#F8D664'&gt;Informazioni Veicolo:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; è stato rifornito.</Italian>
+      </Key>
+      <Key ID="STR_WF_Repair">
+        <English>Repair</English>
+        <French>Réparer</French>
+        <German>Reparieren</German>
+        <Russian>Ремонт</Russian>
+        <Italian>Ripara</Italian>
+      </Key>
+      <Key ID="STR_WF_Repairing">
+        <English>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; is being repaired... &lt;br/&gt;&lt;br/&gt;Please wait for &lt;t color='#85B5FA'&gt;%2&lt;/t&gt; seconds during the reparations...</English>
+        <French>&lt;t color='#F8D664'&gt;Information Véhicule:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Un &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; est en cours de réparation... &lt;br/&gt;&lt;br/&gt;Veuillez attendre &lt;t color='#85B5FA'&gt;%2&lt;/t&gt; secondes durant les réparations...</French>
+        <German>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; is being repaired... &lt;br/&gt;&lt;br/&gt;Please wait for &lt;t color='#85B5FA'&gt;%2&lt;/t&gt; seconds during the reparations...</German>
+        <Russian>&lt;t color='#F8D664'&gt;Информация о технике:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; ремонтируется... &lt;br/&gt;&lt;br/&gt;Ждите &lt;t color='#85B5FA'&gt;%2&lt;/t&gt; секунд для починки...</Russian>
+        <Italian>&lt;t color='#F8D664'&gt;Informazioni Veicolo:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; riparazione in corso... &lt;br/&gt;&lt;br/&gt;Please wait for &lt;t color='#85B5FA'&gt;%2&lt;/t&gt; secondi al termine della riparazione...</Italian>
+      </Key>
+      <Key ID="STR_WF_Repair_Failed">
+        <English>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; has failed to be repaired.</English>
+        <French>&lt;t color='#F8D664'&gt;Information Véhicule:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Un &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; n'a pas été reparé.</French>
+        <German>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; has failed to be repaired.</German>
+        <Russian>&lt;t color='#F8D664'&gt;Информация о технике:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; обломись с починкой.</Russian>
+        <Italian>&lt;t color='#F8D664'&gt;Informazioni Veicolo:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; riparazione fallita.</Italian>
+      </Key>
+	  <Key ID="STR_WF_Repair_Success">
+        <English>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; has been successfully repaired.</English>
+        <French>&lt;t color='#F8D664'&gt;Information Véhicule:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - Un &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; a été reparé.</French>
+        <German>&lt;t color='#F8D664'&gt;Vehicle Information:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; has been successfully repaired.</German>
+        <Russian>&lt;t color='#F8D664'&gt;Информация о технике:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; все путем.</Russian>
+        <Italian>&lt;t color='#F8D664'&gt;Informazioni Veicolo:&lt;/t&gt;&lt;br/&gt;&lt;br/&gt; - A &lt;t color='#85B5FA'&gt;%1&lt;/t&gt; è stato completamente riparato</Italian>
+      </Key>
+      <Key ID="STR_WF_Repair_MHQ">
+        <English>Repair (MHQ)</English>
+        <French>Réparation (PC)</French>
+        <German>Reparatur (MHQ)</German>
+        <Russian>Восстановить (КШМ)</Russian>
+        <Italian>Riparazione (MHQ)</Italian>
+      </Key>
+	  <Key ID="STR_WF_Repair_MHQ_BeingRepaired">
+        <English>Vehicle Information:\n\n - The HQ is already being repaired.</English>
+        <French>Information Véhicule:\n\n - Le PC est déjà en cours de réparation.</French>
+        <German>Vehicle Information:\n\n - The HQ is already being repaired.</German>
+        <Russian>Информация о технике:\n\n - КШ уже в ремонте.</Russian>
+        <Italian>Vehicle Information:\n\n - The HQ is already being repaired.</Italian>
+      </Key>
+      <Key ID="STR_WF_Repair_MHQ_Funds">
+        <English>Vehicle Information:\n\n - %1%2. Needed in order to repair the MHQ.</English>
+        <French>Information Véhicule:\n\n - %1%2. Manquant afin de réparer le PC.</French>
+        <German>Vehicle Information:\n\n - %1%2. Needed in order to repair the MHQ.</German>
+        <Russian>Информация о технике:\n\n - %1%2. необходимо для восстановления КШМ.</Russian>
+        <Italian>Vehicle Information:\n\n - %1%2. Needed in order to repair the MHQ.</Italian>
+      </Key>
+	  <Key ID="STR_WF_Repair_MHQ_None">
+        <English>Vehicle Information:\n\n - There is no HQ to repair around.</English>
+        <French>Information Véhicule:\n\n - Il n'y a aucun PC à réparer a proximité.</French>
+        <German>Vehicle Information:\n\n - There is no HQ to repair around.</German>
+        <Russian>Информация о технике:\n\n - Поблизости нет КШ.</Russian>
+        <Italian>Vehicle Information:\n\n - There is no HQ to repair around.</Italian>
+      </Key>
+	  <Key ID="STR_WF_Repair_MHQ_Repair">
+        <English>Vehicle Information:\n\n - The HQ is being fixed... be patient...</English>
+        <French>Information Véhicule:\n\n - Le PC est en cours de réparation... veuillez patienter...</French>
+        <German>Vehicle Information:\n\n - The HQ is being fixed... be patient...</German>
+        <Russian>Информация о технике:\n\n - КШ ремонтируется... пожалуйста подождите...</Russian>
+        <Italian>Vehicle Information:\n\n - The HQ is being fixed... be patient...</Italian>
+      </Key>
+      <Key ID="STR_WF_Require">
+        <English>Require: %1</English>
+        <French>Nécessite: %1</French>
+        <German>Erfordern: %1</German>
+        <Russian>Нужно: %1</Russian>
+        <Italian>Richiede: %1</Italian>
+      </Key>
+      <Key ID="STR_WF_Respawn">
+        <English>Respawn</English>
+        <French>Réapparaitre</French>
+        <German>Wiedereinstieg</German>
+        <Russian>Возрождение</Russian>
+        <Italian>Respawn</Italian>
+      </Key>
+      <Key ID="STR_WF_Respawn_CampsNearby">
+        <English>Nearby Camps</English>
+        <French>Camps à Proximité</French>
+        <German>Camps in der Nähe</German>
+        <Russian>Близлежащие лагеря</Russian>
+        <Italian>Campi Vicini</Italian>
+      </Key>
+	  <Key ID="STR_WF_Respawn_Defender">
+        <English>Occupation Only</English>
+        <French>Occupation Seulement</French>
+        <German>Nur Besatzungsmacht</German>
+        <Russian>Только оккупация</Russian>
+        <Italian>Solo Occupazione</Italian>
+      </Key>
+	  <Key ID="STR_WF_Respawn_CampsRule_WestEast">
+        <English>West | East</English>
+        <French>Ouest | Est</French>
+        <German>Westen | Osten</German>
+        <Russian>Запад | Восток</Russian>
+        <Italian>Ovest | Est</Italian>
+      </Key>
+	  <Key ID="STR_WF_Respawn_CampsRule_WestEastRes">
+        <English>West | East | Resistance</English>
+        <French>Ouest | Est | Résistance</French>
+        <German>Westen | Osten | Widerstand</German>
+        <Russian>Запад | Восток | Сопротивление</Russian>
+        <Italian>Ovest | Est | Resistenza</Italian>
+      </Key>
+	  <Key ID="STR_WF_Respawn_Penalty">
+        <English>Respawn: Penalty</English>
+        <French>Réapparition: Pénalité</French>
+        <German>Widereinstieg: Strafe</German>
+        <Russian>Возрожд.: Штраф</Russian>
+        <Italian>Respawn: Penalità</Italian>
+      </Key>
+	  <Key ID="STR_WF_Respawn_Penalty_Full">
+        <English>Gear Price</English>
+        <French>Prix Equipement</French>
+        <German>Ausrüstung Preis</German>
+        <Russian>Стоимость снаряжения</Russian>
+        <Italian>Prezzo Equipaggiamento</Italian>
+      </Key>
+	  <Key ID="STR_WF_Respawn_Penalty_Mobile">
+        <English>Gear Price on Mobile Respawn</English>
+        <French>Prix Equipement lors de Réapparition Mobile</French>
+        <German>Gear Price on Mobile Respawn</German>
+        <Russian>Стоимость снаряжения на моб.респауне</Russian>
+        <Italian>Gear Price on Mobile Respawn</Italian>
+      </Key>
+	  <Key ID="STR_WF_Respawn_Penalty_OneFourth">
+        <English>Gear Price 1/4</English>
+        <French>Prix Equipement 1/4</French>
+        <German>Ausrüstung Preis 1/4</German>
+        <Russian>1/4 стоимости снаряжения</Russian>
+        <Italian>Prezzo Equipaggiamento 1/4</Italian>
+      </Key>
+	  <Key ID="STR_WF_Respawn_Penalty_OneHalf">
+        <English>Gear Price 1/2</English>
+        <French>Prix Equipement 1/2</French>
+        <German>Ausrüstung Preis 1/2</German>
+        <Russian>1/2 стоимости снаряжения</Russian>
+        <Italian>Prezzo Equipaggiamento 1/2</Italian>
+      </Key>
+	  <Key ID="STR_WF_Respawn_Penalty_Remove">
+        <English>Default Gear</English>
+        <French>Equipement par Défaut</French>
+        <German>Standard Ausrüstung</German>
+        <Russian>Cнаряжения по умолчанию</Russian>
+        <Italian>Equipaggiamento Default</Italian>
+      </Key>
+      <Key ID="STR_WF_RespawnInfo">
+        <English>Respawn Information:\n\n - You can select a respawn location by clicking on the map Yellow Circle (Around the team buildings or a friendly Town Camp).</English>
+        <French>Menu de Réapparation:\n\n - Il est possible de sélectionner un point de réapparation en cliquant sur les Cercles Jaunes de la carte (Batîments Alliés ou Campement).</French>
+        <German>Wiedereinstiegs-Information:\n\n - Wählen Sie den Wiedereinstiegs-Punkt, indem Sie auf den gelben Kreis klicken (in der Nähe von Team-Gebäuden, eingenommenen Vorposten oder mobilen Wiedereinstiegspunkten</German>
+        <Russian>Информация:\n\n Вы можете выбрать место возрождения, кликнув по желтому кругу на карте (возрождение возможно у строений на базе и лагерей в городах).</Russian>
+        <Italian>Informazioni Respawn:\n\n - Puoi selezionare un punto di riapparizione cliccando sui cerchi gialli nella mappa (Vicino le costruzioni o i campi delle città catturate).</Italian>
+      </Key>
+      <Key ID="STR_WF_RespawnMenu">
+        <English>Respawn Menu</English>
+        <French>Menu de Réapparition</French>
+        <German>Wiedereinstiegsmenü</German>
+        <Russian>Меню возрождения</Russian>
+        <Italian>Menu Respawn</Italian>
+      </Key>
+      <Key ID="STR_WF_RespawnRange">
+        <English>Ambulance Range</English>
+        <French>Porté d'Ambulance</French>
+        <German>Ambulanzreichweite</German>
+        <Russian>Радиус возрождения на мед. машинке</Russian>
+        <Italian>Raggio Ambulanza</Italian>
+      </Key>
+      <Key ID="STR_WF_RespawnST">
+        <English>Respawn Supply Tr.</English>
+        <French>Réapparition Cam Log.</French>
+        <German>Wiedereinstieg Versorgungs-LKW</German>
+        <Russian>Возродить грузовики снаб.</Russian>
+        <Italian>Respawn Camion Supply</Italian>
+      </Key>
+      <Key ID="STR_WF_RespawnStatus">
+        <English>Respawning in %1 Seconds at %2.</English>
+        <French>Réapparation dans %1 Secondes à %2.</French>
+        <German>Wiedereinstieg in %1 Sekunden bei %2.</German>
+        <Russian>Возрождение через %1 секунд на %2</Russian>
+        <Italian>Rinascerai in %1 Secondi a: %2.</Italian>
+      </Key>
+      <Key ID="STR_WF_Salvaged_Unit">
+        <English>$%1. Received for salvaging a %2</English>
+        <French>Vous avez reçu $%1. pour le recyclage d'un %2.</French>
+        <German>$%1. erhalten für die Bergung von %2</German>
+        <Russian>Получено $%1. за утилизацию %2</Russian>
+        <Italian>$%1. Ricevuti recuperando i pezzi di un %2</Italian>
+      </Key>
+	  <Key ID="STR_WF_Save">
+        <English>Save</English>
+        <French>Enregistrer</French>
+        <German>Speichern</German>
+        <Russian>Сохранить</Russian>
+        <Italian>Salva</Italian>
+      </Key>
+	  <Key ID="STR_WF_Short">
+        <English>Short</English>
+        <French>Courte</French>
+        <German>Kurz</German>
+        <Russian>Малая</Russian>
+        <Italian>Corto</Italian>
+      </Key>
+	  <Key ID="STR_WF_Restriction_Air_H">
+        <English>Helicopters</English>
+        <French>Hélicoptères</French>
+        <German>Hubschrauber</German>
+        <Russian>Вертолёты</Russian>
+        <Italian>Helicopters</Italian>
+      </Key>
+	  <Key ID="STR_WF_Restriction_Air_HTransport">
+        <English>Transport Helicopters</English>
+        <French>Hélicoptères de Transport</French>
+        <German>Transport Hubschrauber</German>
+        <Russian>Транспортные вертолёты</Russian>
+        <Italian>Transport Helicopters</Italian>
+      </Key>
+      <Key ID="STR_WF_Seconds">
+        <English>Seconds</English>
+        <French>Secondes</French>
+        <German>Sekunden</German>
+        <Russian>Секунды</Russian>
+        <Italian>Secondi</Italian>
+      </Key>
+	  <Key ID="STR_WF_Secondary_Award">
+        <English>Your team has been awarded with %1%2. for the completion of a secondary objective.</English>
+        <French>Votre équipe à été récompensé avec %1%2. en raison de la validation d'un objectif secondaire.</French>
+        <German>Your team has been awarded with %1%2. for the completion of a secondary objective.</German>
+        <Russian>Ваша команда получила в награду %1%2. за выполнение вторичного задания.</Russian>
+        <Italian>Your team has been awarded with %1%2. for the completion of a secondary objective.</Italian>
+      </Key>
+      <Key ID="STR_WF_SellStructure">
+        <English>Sell Structure</English>
+        <French>Vendre Structure</French>
+        <German>Gebäude verkaufen</German>
+        <Russian>Продать постройку</Russian>
+        <Italian>Vendi Strutture</Italian>
+      </Key>
+      <Key ID="STR_WF_SetBuyType">
+        <English>Set Buy Types:</English>
+        <French>Définir Type d'Achats:</French>
+        <German>Einheitenkategorie festlegen:</German>
+        <Russian>Установить тип отряда</Russian>
+        <Italian>Imposta tipo di acquisto</Italian>
+      </Key>
+      <Key ID="STR_WF_SetIncome">
+        <English>Set Commander Income</English>
+        <French>Définir Salaire Commandant</French>
+        <German>Set Commander Income</German>
+        <Russian>Установить доход командира</Russian>
+        <Italian>Set Commander Income</Italian>
+      </Key>
+	  <Key ID="STR_WF_ServicePoint">
+        <English>Service point</English>
+        <French>Point de service</French>
+        <German>Wartungsposition</German>
+        <Russian>Пункт обслуживания</Russian>
+        <Italian>Punto di servizio</Italian>
+      </Key>
+      <Key ID="STR_WF_SetRespawn">
+        <English>Set Respawn</English>
+        <French>Définir Réapparation</French>
+        <German>Wiedereinstieg</German>
+        <Russian>Выберите точку возрождения</Russian>
+        <Italian>Imposta Respawn</Italian>
+      </Key>
+      <Key ID="STR_WF_SetTeamProperties">
+        <English>Set Team Properties</English>
+        <French>Application des Propriétés à l'Equipe</French>
+        <German>Teameinstellungen vornehmen</German>
+        <Russian>Установить свойства отряду</Russian>
+        <Italian>Imposta proprietà TEAM</Italian>
+      </Key>
+      <Key ID="STR_WF_Side_East">
+        <English>East</English>
+        <French>Est</French>
+        <German>Osten</German>
+        <Russian>Восток</Russian>
+        <Italian>Est</Italian>
+      </Key>
+      <Key ID="STR_WF_Side_Resistance">
+        <English>Resistance</English>
+        <French>Résistance</French>
+        <German>Widerstand</German>
+        <Russian>Сопротивление</Russian>
+        <Italian>Resistenza</Italian>
+      </Key>
+      <Key ID="STR_WF_Side_West">
+        <English>West</English>
+        <French>Ouest</French>
+        <German>Westen</German>
+        <Russian>Запад</Russian>
+        <Italian>Ovest</Italian>
+      </Key>
+	  <Key ID="STR_WF_Skill">
+        <English>Skill</English>
+        <French>Habilité</French>
+        <German>Fähigkeit</German>
+        <Russian>Уровень</Russian>
+        <Italian>Abilità</Italian>
+      </Key>
+	  <Key ID="STR_WF_Small">
+        <English>Small</English>
+        <French>Petit</French>
+        <German>Klein</German>
+        <Russian>Маленький</Russian>
+        <Italian>Piccolo</Italian>
+      </Key>
+      <Key ID="STR_WF_Soldier_Lost">
+        <English>Soldiers Lost</English>
+        <French>Soldats Perdus</French>
+        <German>Soldaten verloren</German>
+        <Russian>Погибло солдат</Russian>
+        <Italian>Soldati Persi</Italian>
+      </Key>
+      <Key ID="STR_WF_Soldier_Recruited">
+        <English>Soldier Recruited</English>
+        <French>Soldats Recrutés</French>
+        <German>Soldaten rekrutiert</German>
+        <Russian>Мобилизовано солдат</Russian>
+        <Italian>Soldati Reclutati</Italian>
+      </Key>
+      <Key ID="STR_WF_Gameplay_SpawnSystemRestrict">
+        <English>Base: Start Near towns</English>
+        <French>Base: Placement près des Villes</French>
+        <German>Basis: Startpunkt in Stadtnähe</German>
+        <Russian>База: Позиция около городов</Russian>
+        <Italian>Base: Inizio Città Vicine</Italian>
+      </Key>
+      <Key ID="STR_WF_Special">
+        <English>Special:</English>
+        <French>Spécial:</French>
+        <German>Spezial:</German>
+        <Russian>Специальное:</Russian>
+        <Italian>Special:</Italian>
+      </Key>
+      <Key ID="STR_WF_SpecialMenu">
+        <English>Special Menu</English>
+        <French>Menu Spécial</French>
+        <German>Spezial</German>
+        <Russian>Специальное меню</Russian>
+        <Italian>Special Menu</Italian>
+      </Key>
+      <Key ID="STR_WF_Speed">
+        <English>Speed :</English>
+        <French>Vitesse :</French>
+        <German>Geschwindigkeit :</German>
+        <Russian>Скорость :</Russian>
+        <Italian>Velocità :</Italian>
+      </Key>
+      <Key ID="STR_WF_Status">
+        <English>Status</English>
+        <French>Etat</French>
+        <German>Status</German>
+        <Russian>Статус</Russian>
+        <Italian>Stato</Italian>
+      </Key>
+      <Key ID="STR_WF_Strategic">
+        <English>Strategic</English>
+        <French>Stratégique</French>
+        <German>Strategisch</German>
+        <Russian>Стратегические</Russian>
+        <Italian>Strategico</Italian>
+      </Key>
+      <Key ID="STR_WF_Structure_Sell">
+        <English>A "%1" structure is going to be sold in %2 seconds.</English>
+        <French>>Une structure de type "%1" va être vendu dans %2 secondes.</French>
+        <German>A "%1" structure is going to be sold in %2 seconds.</German>
+        <Russian>Строение "%1" будет продано через %2 сек.</Russian>
+        <Italian>A "%1" structure is going to be sold in %2 seconds.</Italian>
+      </Key>
+	  <Key ID="STR_WF_Structure_Sold">
+        <English>A "%1" structure has been sold.</English>
+        <French>>Une structure de type "%1" à été vendu.</French>
+        <German>A "%1" Gebäude wurde verkauft.</German>
+        <Russian>Строение "%1" продано.</Russian>
+        <Italian>A "%1" structure has been sold.</Italian>
+      </Key>
+      <Key ID="STR_WF_SupportMenu">
+        <English>Support Menu</English>
+        <French>Menu de Soutien</French>
+        <German>Unterstützung</German>
+        <Russian>Меню поддержки</Russian>
+        <Italian>Menu Supporto</Italian>
+      </Key>
+      <Key ID="STR_WF_Supply">
+        <English>Supply</English>
+        <French>Logistique</French>
+        <German>Versorgung</German>
+        <Russian>Снабжение</Russian>
+        <Italian>Supply</Italian>
+      </Key>
+      <Key ID="STR_WF_Supply_Deliver">
+        <English>Supply Truck Information:\n\n - A Supply truck of your team has delivered supplies at %1, the supply value is now %2/%3. $%4. Gained during the delivery.</English>
+        <French>Information Camion Logistique:\n\n - Un Camion Logistique de votre équipe a livré de la logistique à %1, la valeur logistique est désormais de %2/%3. $%4. gagné lors de la livraison.</French>
+        <German>Versorgungs-LKW Information:\n\n - Ein Versorgungs-LKW Ihres Teams hat Nachschub zu %1 geliefert, neuer Stand: %2/%3. Du hast $%4 für die Lieferung erhalten.</German>
+        <Russian>Информация:\n\n Грузовик снабжения доставил 1% единиц припасов. Объем припасов %2/%3. $%4 Получено во время доставки.</Russian>
+        <Italian>Informazioni Camion Supply:\n\n - Un Camion Supply del tuo Team ha consegnato a %1, il valore dei rifornimenti è ora %2/%3. $%4. Aumentati durante la consegna.</Italian>
+      </Key>
+      <Key ID="STR_WF_Supply_Equal">
+        <English>Supply Truck Information:\n\n - A Supply truck of your team has delivered supplies at %1, the supply value is %2/%3.</English>
+        <French>Information Camion Logistique:\n\n - Un Camion Logistique de votre équipe a livré de la logistique à %1, la valeur logistique est de %2/%3.</French>
+        <German>Versorgungs-LKW Information:\n\n - Ein Versorgungs-LKW Ihres Teams hat Nachschub zu %1 geliefert, neuer Stand: %2/%3.</German>
+        <Russian>Информация:\n\n Грузовик снабжения доставил %1 единиц припасов, Объем припасов %2/%3.</Russian>
+        <Italian>Informazioni Camion Supply:\n\n - Un Camion Supply del tuo Team ha consegnato a %1, il valore dei rifornimenti è ora %2/%3.</Italian>
+      </Key>
+      <Key ID="STR_WF_Supply_Full">
+        <English>Supply Truck Information:\n\n - The Supply truck is fully loaded.</English>
+        <French>Information Camion Logistique:\n\n - Le Camion Logistique est chargé au maximum.</French>
+        <German>Versorgungs-LKW Information:\n\n - Der Versorgungs-LKW ist voll beladen.</German>
+        <Russian>Информация:\n\n Грузовик снабжения заполнен.</Russian>
+        <Italian>Informazioni Camion Supply:\n\n - Il Camion Supply è completamente carico</Italian>
+      </Key>
+      <Key ID="STR_WF_Supply_Status">
+        <English>Supply Truck Information:\n\n - The Supply truck has %1 supplies in cargo.</English>
+        <French>Information Camion Logistique:\n\n - Le Camion Logistique dispose de %1 logistique en chargement.</French>
+        <German>Versorgungs-LKW Information:\n\n - Der Versorgungs-LKW hat %1 Einheiten geladen.</German>
+        <Russian>Информация:\n\n В грузовик снабжения загружено %1 единиц поставки.</Russian>
+        <Italian>Informazioni Camion Supply:\n\n - Il Camion Supply ha caricato %1 Supply</Italian>
+      </Key>
+      <Key ID="STR_WF_TakeTowns">
+        <English>Take Towns</English>
+        <French>Prendre Villes</French>
+        <German>Städte einnehmen</German>
+        <Russian>Захватывать города</Russian>
+        <Italian>Cattura Città</Italian>
+      </Key>
+      <Key ID="STR_WF_Tasks">
+        <English>Tasks</English>
+        <French>Tâches</French>
+        <German>Missionen</German>
+        <Russian>Задачи</Russian>
+        <Italian>Incarichi</Italian>
+      </Key>
+      <Key ID="STR_WF_TaskTO">
+        <English>Task Type</English>
+        <French>Type de Tâche</French>
+        <German>Missionstyp</German>
+        <Russian>Тип задачи</Russian>
+        <Italian>Tipi di Incarichi</Italian>
+      </Key>
+      <Key ID="STR_WF_TaskTO_Display">
+        <English>Your commander has ordered you to perform a "%1" order for %2.</English>
+        <French>Votre commandeur vous a donner l'ordre "%1" pour une durée de %2.</French>
+        <German>Ihr Kommandeur hat Ihnen befohlen, einen "%1"-Befehl für %2 durchzuführen.</German>
+        <Russian>Ваш командир приказывает "%1" 2%.</Russian>
+        <Italian>Il tuo comandante ti ha ordinato di "%1" per una durata di %2.</Italian>
+      </Key>
+      <Key ID="STR_WF_TaskTO_Set">
+        <English>Set Task</English>
+        <French>Définir la Tâche</French>
+        <German>Mission festlegen</German>
+        <Russian>Выбрать задание</Russian>
+        <Italian>Imposta Incarichi</Italian>
+      </Key>
+      <Key ID="STR_WF_TaskTO_Time">
+        <English>Task Duration:</English>
+        <French>Durée de la Tâche:</French>
+        <German>Missionsdauer:</German>
+        <Russian>Продолж. задачи:</Russian>
+        <Italian>Durata Incarichi:</Italian>
+      </Key>
+      <Key ID="STR_WF_TaskTown">
+        <English>Capturing &lt;marker name='%1Depot'&gt;%1&lt;marker&gt; is essential to our team, neutralizing &lt;marker name='%1Depot'&gt;%1&lt;marker&gt; Depot will ensure it's capture.&lt;br/&gt;&lt;br/&gt;</English>
+        <French>Capturer &lt;marker name='%1Depot'&gt;%1&lt;marker&gt; est éssentiel à notre équipe, neutraliser le Dépot de &lt;marker name='%1Depot'&gt;%1&lt;marker&gt; pour procéder à la capture.&lt;br/&gt;&lt;br/&gt;</French>
+        <German>&lt;marker name='%1Depot'&gt;%1&lt;marker&gt; einzunehmen ist essentiell für das Team, neutralisieren Sie das zentrale Depot, um die Stadt einzunehmen.&lt;br/&gt;&lt;br/&gt;</German>
+        <Russian>Захват &lt;marker name='%1Depot'&gt;%1&lt;marker&gt; имеет большое значение для нас. Захватите бункер в центре для захвата города.&lt;br/&gt;&lt;br/&gt;</Russian>
+        <Italian>Conquistare &lt;marker name='%1Depot'&gt;%1&lt;marker&gt; è fondamentale per il nostro Team, neutralizza il deposito di &lt;marker name='%1Depot'&gt;%1&lt;marker&gt; per catturarlo.&lt;br/&gt;&lt;br/&gt;</Italian>
+      </Key>
+	  <Key ID="STR_WF_TaskTown_Complete">
+        <English>&lt;marker name='%1Depot'&gt;%1&lt;marker&gt; has been captured by our team, Defending &lt;marker name='%1Depot'&gt;%1&lt;marker&gt; Depot and Camps might be necessary to prevent enemies from taking it.</English>
+        <French>Notre équipe à capturé &lt;marker name='%1Depot'&gt;%1&lt;marker&gt;, la défense du Dépot de &lt;marker name='%1Depot'&gt;%1&lt;marker&gt; et de ses Camps sera peut être nécessaire pour empêcher l'énemie de s'en emparer.</French>
+        <German>&lt;marker name='%1Depot'&gt;%1&lt;marker&gt; wurde von unserem Team eingenommen, Verteidige &lt;marker name='%1Depot'&gt;%1&lt;marker&gt; Depot und Camps könnten hilfreich sein, um Feinde daran zu hindern, die Stadt einzunehmen.</German>
+        <Russian>&lt;цель='%1Depot'&gt;%1&lt;marker&gt; было захвачено вашей командой, Защитите &lt;marker name='%1Depot'&gt;%1&lt;marker&gt;  контролировать склад и лагеря необходимо для контроля города.</Russian>
+        <Italian>&lt;marker name='%1Depot'&gt;%1&lt;marker&gt; è stato catturata dal tuo team, difendere &lt;marker name='%1Depot'&gt;%1&lt;marker&gt; Depositi e Campi è essere necessario per evitare che vengano catturati dai nemici.</Italian>
+      </Key>
+      <Key ID="STR_WF_TaskTown_Display">
+        <English>Capture %1</English>
+        <French>Capturer %1</French>
+        <German>Erobern Sie %1</German>
+        <Russian>Захватить %1</Russian>
+        <Italian>Catture %1</Italian>
+      </Key>
+      <Key ID="STR_WF_TaxiReverse">
+        <English>Taxi Reverse</English>
+        <French>Marche Arrière</French>
+        <German>Rückwärts fahren</German>
+        <Russian>Задний Ход</Russian>
+        <Italian>Retromarcia</Italian>
+      </Key>
+      <Key ID="STR_WF_Teamkill_Building">
+        <English>Player %1 (ID: %2) has teamkilled a %3!.</English>
+        <French>Le joueur %1 (ID: %2) a teamkillé un %3!</French>
+        <German>Spieler %1 (ID: %2) hat Spieler %3 vom eigenen Team eliminiert!</German>
+        <Russian>Игрок %1 (ID: %2) вел дружественный огонь по %3!.</Russian>
+        <Italian>Il Giocatore %1 (ID: %2) ha ucciso %3 compagno di squadra!</Italian>
+      </Key>
+      <Key ID="STR_WF_TeamsDetails">
+        <English>Teams Management</English>
+        <French>Management des Equipes</French>
+        <German>Teams Verwaltung</German>
+        <Russian>Управление командой</Russian>
+        <Italian>Gestione Squadre</Italian>
+      </Key>
+      <Key ID="STR_WF_TeamMenu">
+        <English>Team Menu</English>
+        <French>Menu d'équipe</French>
+        <German>Team</German>
+        <Russian>Меню</Russian>
+        <Italian>Team Menu</Italian>
+      </Key>
+      <Key ID="STR_WF_TeamsSetting">
+        <English>Teams Settings</English>
+        <French>Propriétés des Equipes</French>
+        <German>Team Einstellungen</German>
+        <Russian>Свойства отряда</Russian>
+        <Italian>Impostazioni Team</Italian>
+      </Key>
+      <Key ID="STR_WF_Teamswap">
+        <English>Player %1 (ID: %2) has teamswapped! (From %3 to %4)</English>
+        <French>Le joueur %1 (ID: %2) a changé d'équipe! (De %3 à %4)</French>
+        <German>Spieler %1 (ID: %2) hat das Team gewechselt! (von %3 nach %4)</German>
+        <Russian>Игрок %1 (ID: %2) сменил сторону! (с %3 на %4)</Russian>
+        <Italian>Il Giocatore %1 (ID: %2) ha cambiato squadra! (da %3 a %4)</Italian>
+      </Key>
+      <Key ID="STR_WF_Teamswap_Warnning">
+        <English>You will be sent back to the lobby for teamswapping. Please join your original team.</English>
+        <French>Vous allez être renvoyé vers l'écran de séléction des rôles pour avoir changé d'équipe. Veuillez rejoindre votre équipe d'origine.</French>
+        <German>You will be sent back to the lobby for teamswapping. Please join your original team.</German>
+        <Russian>Вы будете возвращены в лобби за смену команды. Пожалуйста вернитесь в вашу команду.</Russian>
+        <Italian>You will be sent back to the lobby for teamswapping. Please join your original team.</Italian>
+      </Key>
+      <Key ID="STR_WF_Teamkill">
+        <English>$%1. Removed for a teamkill.</English>
+        <French>$%1. Enlever pour un tir fratricide.</French>
+        <German>$%1. Strafe für einen Teamkill!</German>
+        <Russian>-$%1 за огонь по своим.</Russian>
+        <Italian>$%1. Rimossi per un Teamkill!</Italian>
+      </Key>
+      <Key ID="STR_WF_TerrainGrid">
+        <English>Terrain Grid: %1</English>
+        <French>Grille de Terrain: %1</French>
+        <German>Gelände-Detailstufe: %1</German>
+        <Russian>Детализация земли: %1</Russian>
+        <Italian>Griglia Terreno: %1</Italian>
+      </Key>
+      <Key ID="STR_WF_Time">
+        <English>Time</English>
+        <French>Temps</French>
+        <German>Zeit</German>
+        <Russian>Время</Russian>
+        <Italian>A Tempo</Italian>
+      </Key>
+      <Key ID="STR_WF_TimeLeft">
+        <English>Time Left</English>
+        <French>Temp Restant</French>
+        <German>Verbleibende Zeit</German>
+        <Russian>Осталось времени</Russian>
+        <Italian>Tempo Restante</Italian>
+      </Key>
+	  <Key ID="STR_WF_Tooltips_ArtilleryToggle">
+        <English>This icon allows you to toggle between the different artillery display mode on the map.</English>
+        <French>Cet icône vous permet de changer le mode d'affichage de l'artillerie sur la carte.</French>
+        <German>This icon allows you to toggle between the different artillery display mode on the map.</German>
+        <Russian>Эта кнопка позволит вам переключать различные режимы отображения артиллерии на карте.</Russian>
+        <Italian>This icon allows you to toggle between the different artillery display mode on the map.</Italian>
+      </Key>
+	  <Key ID="STR_WF_Tooltips_Backpack">
+        <English>Gear: Backpack Management (Require a backpack).</English>
+        <French>Equipement: Management de Sac à dos (Requiert un sac).</French>
+        <German>Gear: Rucksack Verwaltung (Rucksack benötigt).</German>
+        <Russian>Оружие: Backpack Management (Требуется рюкзак).</Russian>
+        <Italian>Equipaggiamento: Gestisci Zaino (Richiede uno zaino).</Italian>
+      </Key>
+	  <Key ID="STR_WF_Tooltips_Buy_Extra">
+        <English>Vehicle Special crew.</English>
+        <French>Equipage spécial du Véhicule.</French>
+        <German>Vehicle Special crew.</German>
+        <Russian>Спец. экипаж для техн.</Russian>
+        <Italian>Vehicle Special crew.</Italian>
+      </Key>
+	  <Key ID="STR_WF_Tooltips_Buy_Locked">
+        <English>Vehicle lock.</English>
+        <French>Vérouillage du Véhicule.</French>
+        <German>Vehicle lock.</German>
+        <Russian>Запереть техн.</Russian>
+        <Italian>Vehicle lock.</Italian>
+      </Key>
+	  <Key ID="STR_WF_Tooltips_GearClear">
+        <English>Gear: Clear the current loadout.</English>
+        <French>Equipement: Effacer l'équipement présent.</French>
+        <German>Ausrüstung: Derzeitige Auswahl löschen.</German>
+        <Russian>Снаряжение: Очистить текущее снаряжение.</Russian>
+        <Italian>Equipaggiamento: Annulla il carico attuale.</Italian>
+      </Key>
+	  <Key ID="STR_WF_Tooltips_GearReload">
+        <English>Gear: Reload the previous loadout.</English>
+        <French>Equipement: Charger l'équipement précédent.</French>
+        <German>Ausrüstung: Die letzte Auswahl erneut laden.</German>
+        <Russian>Снаряжение: Вернуть предыдущее снаряжение.</Russian>
+        <Italian>Equipaggiamento: ricarica precedente.</Italian>
+      </Key>
+      <Key ID="STR_WF_Town_Captured">
+        <English>%1 was captured by %2.</English>
+        <French>%1 a été capturé par %2 !.</French>
+        <German>%1 wurde von %2 eingenommen.</German>
+        <Russian>%1 захватил %2.</Russian>
+        <Italian>%1 è stata conquistata da %2!</Italian>
+      </Key>
+      <Key ID="STR_WF_Town_Bounty_Full">
+        <English>Your team has captured %1. $%2. earned.</English>
+        <French>Votre équipe à capturé %1. Vous gagné $%2.</French>
+        <German>Ihr Team hat %1 eingenommen. $%2 verdient.</German>
+        <Russian>+$%2 за захват %1.</Russian>
+        <Italian>Il tuo Team ha conquistato %1. $%2. Guadagnati.</Italian>
+      </Key>
+      <Key ID="STR_WF_Town_Bounty_Assist">
+        <English>Your team has assisted in capturing %1. $%2. earned.</English>
+        <French>Votre équipe à aidé à la capture de %1. Vous gagné $%2.</French>
+        <German>Ihr Team assistierte beim Einnehmen von %1. $%2 verdient.</German>
+        <Russian>+$%2 за помощь в захвате %1.</Russian>
+        <Italian>Il tuo Team ha assistito alla cattura di %1. $%2. Guadagnati.</Italian>
+      </Key>
+      <Key ID="STR_WF_Tooltips_Preload">
+        <English>Enable the Environment Preloading (P) or not (N).</English>
+        <French>Activation du Pré-chargement de l'environnement (P) ou non (N).</French>
+        <German>Enable the Environment Preloading (P) or not (N).</German>
+        <Italian>Enable the Environment Preloading (P) or not (N).</Italian>
+        <Russian>Включить подгрузку Природы (P) или нет (N).</Russian>
+      </Key>
+	  <Key ID="STR_WF_Tooltips_RespawnDefault">
+        <English>Toggle between the default (D) and current gear (C).</English>
+        <French>Changement entre le kit par défaut (D) et le kit courrant (C).</French>
+        <German>Toggle between the default (D) and current gear (C).</German>
+        <Italian>Toggle between the default (D) and current gear (C).</Italian>
+        <Russian>Переключить между снаряжением по умолчанию (D) и текущим (C).</Russian>
+      </Key>
+      <Key ID="STR_WF_Transfer">
+        <English>Transfer</English>
+        <French>Transfert</French>
+        <German>Überweisen</German>
+        <Russian>Перевести деньги</Russian>
+        <Italian>Trasferisci</Italian>
+      </Key>
+	  <Key ID="STR_WF_Transport_Cability">
+        <English>Transport Capacity</English>
+        <French>Capacité de transport</French>
+        <German>Transport-Kapazität</German>
+        <Russian>Вместимость транспорта</Russian>
+        <Italian>Transport Capacity</Italian>
+      </Key>
+      <Key ID="STR_WF_UAV">
+        <English>UAV - Deploy</English>
+        <French>Drone - Déployer</French>
+        <German>UAV - Deploy</German>
+        <Russian>БЛА - развернуть</Russian>
+        <Italian>UAV - Deploy</Italian>
+      </Key>
+      <Key ID="STR_WF_UAV_Destroy">
+        <English>UAV - Destroy</English>
+        <French>Drone - Détruire</French>
+        <German>UAV - Destroy</German>
+        <Russian>БЛА - уничтожить</Russian>
+        <Italian>UAV - Destroy</Italian>
+      </Key>
+	  <Key ID="STR_WF_UAV_RemoteControl">
+        <English>UAV - Remote Control</English>
+        <French>Drone - Contrôle à Distance</French>
+        <German>UAV - Remote Control</German>
+        <Russian>БЛА - удалённый доступ</Russian>
+        <Italian>UAV - Remote Control</Italian>
+      </Key>
+      <Key ID="STR_WF_Unflip">
+        <English>Unflip</English>
+        <French>Retourner</French>
+        <German>Aufrichten</German>
+        <Russian>Перевернуть</Russian>
+        <Italian>Ribalta</Italian>
+      </Key>
+      <Key ID="STR_WF_Unlock">
+        <English>Unlock</English>
+        <French>Déverrouiller</French>
+        <German>Entsperren</German>
+        <Russian>Открыть</Russian>
+        <Italian>Apri</Italian>
+      </Key>
+      <Key ID="STR_WF_Unlock_MHQ">
+        <English>Unlock MHQ</English>
+        <French>Déverrouiller PC</French>
+        <German>Entsperre MHQ</German>
+        <Russian>Открыть КШМ</Russian>
+        <Italian>Apri MHQ</Italian>
+      </Key>
+      <Key ID="STR_WF_Upgrade">
+        <English>Upgrade</English>
+        <French>Amélioration</French>
+        <German>Verbessern</German>
+        <Russian>Модернизация</Russian>
+        <Italian>Aggiornamento</Italian>
+      </Key>
+      <Key ID="STR_WF_Upgrade_Running_Info">
+        <English>Upgrade in Progress</English>
+        <French>Amélioration en Cours</French>
+        <German>Upgrade in Progress</German>
+        <Russian>Проводится модернизация</Russian>
+        <Italian>Upgrade in Progress</Italian>
+      </Key>
+      <Key ID="STR_WF_Upgrades_East">
+        <English>Gameplay: Upgrades (East)</English>
+        <French>Jouabilité: Améliorations (Est)</French>
+        <German>Verbesserungen (Osten)</German>
+        <Russian>Геймплей: Модернизация (Восток)</Russian>
+        <Italian>Gameplay: Aggiornamenti (Est)</Italian>
+      </Key>
+	  <Key ID="STR_WF_Upgrades_West">
+        <English>Gameplay: Upgrades (West)</English>
+        <French>Jouabilité: Améliorations (Ouest)</French>
+        <German>Verbesserungen (Westen)</German>
+        <Russian>Геймплей: Модернизация (Запад)</Russian>
+        <Italian>Gameplay: Aggiornamenti (Ovest)</Italian>
+      </Key>
+      <Key ID="STR_WF_Upgrade_Complete_Message">
+        <English>Upgrade Information: - %1 Upgrade Completed, %1 is now at Level %2.</English>
+        <French>Information d'Amélioration: - Amélioration %1 Complète, %1 est désormais au Niveau %2.</French>
+        <German>Ausbau Information: - Ausbau von %1 abgeschlossen, %1 ist nun auf Stufe %2.</German>
+        <Russian>Информация: %1 модернизация завершена, достигнут уровень %2.</Russian>
+        <Italian>Informazione Aggiornamenti: - Aggiornamento %1 Completato, %1 è ora a Livello %2.</Italian>
+      </Key>
+      <Key ID="STR_WF_Upgrade_Condition">
+        <English>This upgrade require a parameter to be enabled</English>
+        <French>Cette Amélioration nécessite l'activation d'un paramètre</French>
+        <German>Diese Verbesserung wurde per Parameter deaktiviert.</German>
+        <Russian>Эта модернизация должна быть разрешена в настройках миссии</Russian>
+        <Italian>Questo aggiornamento ha bisogno di essere abilitato</Italian>
+      </Key>
+      <Key ID="STR_WF_Upgrade_Dependent">
+        <English>This upgrade require the %1 upgrade at level %2</English>
+        <French>Cette amélioration requiert que l'amélioration %1 soit au niveau %2</French>
+        <German>Diese Verbesserung benötigt die %1-Verbesserung auf Stufe %2</German>
+        <Russian>Требуется предварительная модернизация %1 до уровня %2</Russian>
+        <Italian>Questo aggiornamento richiede l'aggiornamento %1 al livello %2 </Italian>
+      </Key>
+      <Key ID="STR_WF_Upgrade_Maximum">
+        <English>Upgrade Level Limit reached</English>
+        <French>Niveau d'Amélioration maximal atteint</French>
+        <German>Maximale Stufe erreicht!</German>
+        <Russian>Достигнут предельный уровень модернизации</Russian>
+        <Italian>Limite Livello Aggiornamenti raggiunto</Italian>
+      </Key>
+      <Key ID="STR_WF_Upgrade_Menu">
+        <English>Upgrade Menu</English>
+        <French>Menu d'Amélioration</French>
+        <German>Verbesserungen</German>
+        <Russian>Модернизация</Russian>
+        <Italian>Menu Aggiornamenti</Italian>
+      </Key>
+      <Key ID="STR_WF_Upgrade_Running">
+        <English>An Upgrade is already running</English>
+        <French>Une Amélioration est déjà en cours</French>
+        <German>Es wird bereits etwas verbessert.</German>
+        <Russian>Модернизация уже проводится.</Russian>
+        <Italian>Un Aggiornamento è già in corso</Italian>
+      </Key>
+      <Key ID="STR_WF_Upgrade_Start">
+        <English>Upgrade Information:\n\n - Starting %1 Upgrade.</English>
+        <French>Information d'Amélioration:\n\n - Amélioration %1 en cours</French>
+        <German>Ausbau-Information:\n\n - Ausbau %1 gestartet.</German>
+        <Russian>Информация:\n\n Начата модернизация: %1.</Russian>
+        <Italian>Informazioni Aggiornamenti:\n\n - Aggiornamento %1 in corso.</Italian>
+      </Key>
+      <Key ID="STR_WF_Uptime">
+        <English>Uptime: %1 days, %2 hours, %3 minutes, %4 seconds</English>
+        <French>Uptime: %1 jours, %2 heures, %3 minutes, %4 secondes</French>
+        <German>Spielzeit: %1 Tage, %2 Stunden, %3 Minuten, %4 Sekündchen</German>
+        <Russian>Время работы: %1 день, %2 часов, %3 минут, %4 секунд</Russian>
+        <Italian>Uptime: %1 giorni, %2 ore, %3 minuti, %4 secondi</Italian>
+      </Key>
+      <Key ID="STR_WF_Unit">
+        <English>Unit:</English>
+        <French>Unité:</French>
+        <German>Einheit:</German>
+        <Russian>Боец:</Russian>
+        <Italian>Unità:</Italian>
+      </Key>
+	  <Key ID="STR_WF_Unit_Information">
+        <English>Unit Information:</English>
+        <French>Information Unité:</French>
+        <German>Einheiten Information:</German>
+        <Russian>Информация о боевой единице:</Russian>
+        <Italian>Informazioni Unità:</Italian>
+      </Key>
+      <Key ID="STR_WF_UnitCam">
+        <English>Units Camera</English>
+        <French>Caméra d'Unitées</French>
+        <German>Einheitenkamera</German>
+        <Russian>Взгляд глазами бойца</Russian>
+        <Italian>Camerà Unità</Italian>
+      </Key>
+	  <Key ID="STR_WF_Use">
+        <English>Use</English>
+        <French>Utiliser</French>
+        <German>Use</German>
+        <Russian>Использовать</Russian>
+        <Italian>Use</Italian>
+      </Key>
+      <Key ID="STR_WF_Vehicle_Built">
+        <English>Vehicles Built</English>
+        <French>Véhicules Construits</French>
+        <German>Fahrzeuge gebaut</German>
+        <Russian>Техники построено</Russian>
+        <Italian>Veicoli Costruiti</Italian>
+      </Key>
+      <Key ID="STR_WF_Vehicle_Lost">
+        <English>Vehicles Lost</English>
+        <French>Véhicules Perdus</French>
+        <German>Fahrzeuge verloren</German>
+        <Russian>Техники потеряно</Russian>
+        <Italian>Veicoli Persi</Italian>
+      </Key>
+	  <Key ID="STR_WF_Vehicles">
+        <English>Vehicles</English>
+        <French>Véhicules</French>
+        <German>Vehicles</German>
+        <Russian>Машины</Russian>
+        <Italian>Vehicles</Italian>
+      </Key>
+      <Key ID="STR_WF_Victory">
+        <English>%1 Team has won</English>
+        <French>L'équipe %1 a gagné</French>
+        <German>Team %1 hat gewonnen</German>
+        <Russian>%1 выиграл!</Russian>
+        <Italian>%1 ha Vinto!</Italian>
+      </Key>
+      <Key ID="STR_WF_Victory_Annihilation">
+        <English>Annihilation</English>
+        <French>Annihilation</French>
+        <German>Vernichtung</German>
+        <Russian>Аннигиляция</Russian>
+        <Italian>Annihilation</Italian>
+      </Key>
+      <Key ID="STR_WF_Victory_Assassination">
+        <English>Assassination</English>
+        <French>Assassination</French>
+        <German>Attentat</German>
+        <Russian>Убийство</Russian>
+        <Italian>Assassination</Italian>
+      </Key>
+      <Key ID="STR_WF_Victory_Supremacy">
+        <English>Supremacy</English>
+        <French>Suprémacie</French>
+        <German>Übermacht</German>
+        <Russian>Превосходство</Russian>
+        <Italian>Supremacy</Italian>
+      </Key>
+	  <Key ID="STR_WF_Victory_Towns">
+        <English>Towns</English>
+        <French>Villes</French>
+        <German>Städte</German>
+        <Russian>Города</Russian>
+        <Italian>Città</Italian>
+      </Key>
+      <Key ID="STR_WF_ViewDistance">
+        <English>View Distance: %1</English>
+        <French>Distance d'affichage: %1</French>
+        <German>Sichtweite: %1</German>
+        <Russian>Дальность видимости: %1</Russian>
+        <Italian>Distanza Visiva: %1</Italian>
+      </Key>
+      <Key ID="STR_WF_Vote_PopUp_On">
+        <English>Vote Pop-Up On</English>
+        <French>Pop-Up Vote On</French>
+        <German>Abstimmungsfenster an</German>
+        <Russian>Выкл. голосование</Russian>
+        <Italian>Pop-Up Voti ON</Italian>
+      </Key>
+      <Key ID="STR_WF_Vote_PopUp_Off">
+        <English>Vote Pop-Up Off</English>
+        <French>Pop-Up Vote Off</French>
+        <German>Abstimmungsfenster aus</German>
+        <Russian>Вкл. голосование</Russian>
+        <Italian>Pop-UP Voti OFF</Italian>
+      </Key>
+      <Key ID="STR_WF_VoteForCommander">
+        <English>Commander Vote</English>
+        <French>Vote Commandeur</French>
+        <German>Kommandeur wählen</German>
+        <Russian>Голосование</Russian>
+        <Italian>Vota Comandante</Italian>
+      </Key>
+      <Key ID="STR_WF_VoteForNewCommander">
+        <English>%1 is the Commander.</English>
+        <French>%1 est le Commandeur.</French>
+        <German>%1 ist der Kommandeur.</German>
+        <Russian>%1 командует.</Russian>
+        <Italian>%1 è il Comandante!</Italian>
+      </Key>
+	  <Key ID="STR_WF_Weapons">
+        <English>Weapons</English>
+        <French>Armes</French>
+        <German>Waffen</German>
+        <Russian>Вооружение</Russian>
+        <Italian>Armi</Italian>
+      </Key>
+	  <Key ID="STR_WF_Weather_Clear">
+        <English>Clear</English>
+        <French>Clair</French>
+        <German>Klar</German>
+        <Russian>Чисто</Russian>
+        <Italian>Sereno</Italian>
+      </Key>
+	  <Key ID="STR_WF_Weather_Cloudy">
+        <English>Cloudy</English>
+        <French>Nuageux</French>
+        <German>Wolkig</German>
+        <Russian>Облачно</Russian>
+        <Italian>Nuovoloso</Italian>
+      </Key>
+	  <Key ID="STR_WF_Weather_Dynamic">
+        <English>Dynamic</English>
+        <French>Dynamique</French>
+        <German>Dynamisch</German>
+        <Russian>Динамично</Russian>
+        <Italian>Dinamiche</Italian>
+      </Key>
+	  <Key ID="STR_WF_Weather_Rainy">
+        <English>Rainy</English>
+        <French>Pluvieux</French>
+        <German>Regnerisch</German>
+        <Russian>Дождливая</Russian>
+        <Italian>Piovoso</Italian>
+      </Key>
+	  <Key ID="STR_WF_Workers">
+        <English>Workers</English>
+        <French>Travailleurs</French>
+        <German>Workers</German>
+        <Russian>Рабочие</Russian>
+        <Italian>Workers</Italian>
+      </Key>
+	  <Key ID="STR_WF_Ruck_Space_Free">
+        <English>Ruck: %1cc free</English>
+        <French>Ruck: %1cc free</French>
+        <German>Ruck: %1cc free</German>
+        <Russian>Рюкзак: %1к.см свободно</Russian>
+        <Italian>Ruck: %1cc free</Italian>
+      </Key>
+	  <Key ID="STR_WF_Base_Only">
+        <English>Base Only</English>
+        <French>Base Only</French>
+        <German>Base Only</German>
+        <Russian>Только База</Russian>
+        <Italian>Base Only</Italian>
+      </Key>
+	  <Key ID="STR_WF_Base_And_Towns">
+        <English>Base And Friendly Towns</English>
+        <French>Base And Friendly Towns</French>
+        <German>Base And Friendly Towns</German>
+        <Russian>База и Дружественные Города</Russian>
+        <Italian>Base And Friendly Towns</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gameplay_DefenseAmmo">
+        <English>Gameplay: Defense Auto Reload</English>
+        <French>Gameplay: Defense Auto Reload</French>
+        <German>Gameplay: Defense Auto Reload</German>
+        <Russian>Геймплей: Автом. перезаряд. у защиты</Russian>
+        <Italian>Gameplay: Defense Auto Reload</Italian>
+      </Key>
+	  <Key ID="STR_WF_Gameplay_AceWounds">
+        <English>Gameplay: ACE Wounds</English>
+        <French>Gameplay: ACE Wounds</French>
+        <German>Gameplay: ACE Wounds</German>
+        <Russian>Геймплей: ACE Wounds</Russian>
+        <Italian>Gameplay: ACE Wounds</Italian>
+      </Key>
+    </Container>
+  </Package>
+</Project>

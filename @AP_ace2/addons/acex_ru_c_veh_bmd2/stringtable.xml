@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ArmA2_ACE2">
+<Package name="c_veh_bmd2">
+<Container name="STR_ACE_OBJ">
+<Key ID="STR_ACE_VDN_BMD_2_BASE">
+<English>BMD-2</English>
+<German>BMD-2</German>
+<Russian>БМД-2</Russian>
+<Polish>BMD-2</Polish>
+<Spanish>BMD-2</Spanish>
+<French>BMD-2</French>
+<Czech>BMD-2</Czech>
+<Italian>BMD-2</Italian>
+<Hungarian>BMD-2</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_BMD_2K_BASE">
+<English>BMD-2K</English>
+<German>BMD-2K</German>
+<Russian>БМД-2K</Russian>
+<Polish>BMD-2K</Polish>
+<Spanish>BMD-2K</Spanish>
+<French>BMD-2K</French>
+<Czech>BMD-2K</Czech>
+<Italian>BMD-2K</Italian>
+<Hungarian>BMD-2K</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_BMD_2_RUS">
+<English>BMD-2 (camo)</English>
+<German>BMD-2 (Camo)</German>
+<Russian>БМД-2 (K)</Russian>
+<Polish>BMD-2 (kamuflaż)</Polish>
+<Spanish>BMD-2 (camo)</Spanish>
+<French>BMD-2 (camo)</French>
+<Czech>BMD-2 (kamufláž)</Czech>
+<Italian>BMD-2 (camo)</Italian>
+<Hungarian>BMD-2 (álcázott)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_BMD_2K_RUS">
+<English>BMD-2K (camo)</English>
+<German>BMD-2K (Camo)</German>
+<Russian>БМД-2K (K)</Russian>
+<Polish>BMD-2K (kamuflaż)</Polish>
+<Spanish>BMD-2K (camo)</Spanish>
+<French>BMD-2K (camo)</French>
+<Czech>BMD-2K (kamufláž)</Czech>
+<Italian>BMD-2K (camo)</Italian>
+<Hungarian>BMD-2K (álcázott)</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

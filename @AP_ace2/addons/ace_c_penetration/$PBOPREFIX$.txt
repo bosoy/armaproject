@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=ca\Data\Penetration
+Pbo Type is: Arma Addon
+Sha: 'BA1A6F29D6D8929489E03507DF06A4900CEE6F78'
+//////</HEADER>//////

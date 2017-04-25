@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_roundcount
+Pbo Type is: Arma Addon
+Sha: '80A27A0DBEA0DE96E8AD0611B1623477F8641606'
+//////</HEADER>//////

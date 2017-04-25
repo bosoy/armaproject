@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=ace_settings_external
+Pbo Type is: Arma Addon
+Sha: '8B578A17B2055A6A52F42F693B9754C9C7D9D59A'
+//////</HEADER>//////

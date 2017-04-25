@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\m_veh_wrecks
+Pbo Type is: Arma Addon
+Sha: 'B495F166D87794DB367CDE601A7B221E5CAF3A35'
+//////</HEADER>//////

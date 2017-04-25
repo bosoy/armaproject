@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex_usnavy\addons\sys_crewprotection
+Pbo Type is: Arma Addon
+Sha: 'D6E104A6A87D4CF171A389C65D93E5034C0DEB0B'
+//////</HEADER>//////

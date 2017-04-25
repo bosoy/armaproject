@@ -1,0 +1,77 @@
+class FSM
+{
+  fsmName = "FastTime";
+  class States
+  {
+    class Start
+    {
+      name = "Start";
+      init = "private [""_timenow"",""_timerate""];" \n
+       "_onesec = 1 / 3600;" \n
+       "" \n
+       "_timerate = switch (d_FastTime) do {" \n
+       "	case 1: {_onesec * 60};" \n
+       "	case 2: {_onesec * (60 / 5)};" \n
+       "	case 3: {_onesec * (60 / 10)};" \n
+       "	case 4: {_onesec * (60 / 10)};" \n
+       "	case 5: {_onesec * (60 / 30)};" \n
+       "};" \n
+       "" \n
+       "X_JIPH setVariable [""currentTime"", DayTime, true];" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class Loop
+    {
+      name = "Loop";
+      init = "_timenow = time + 1;";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="Send";
+          precondition = "";
+          condition="time >= _timenow";
+          action="";
+        };
+      };
+    };
+    class Send
+    {
+      name = "Send";
+      init = "skipTime _timerate;" \n
+       "X_JIPH setVariable [""currentTime"", DayTime, true];" \n
+       "_timenow = time + 1;" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="Send";
+          precondition = "";
+          condition="time >= _timenow";
+          action="";
+        };
+      };
+    };
+  };
+  initState="Start";
+  finalStates[] =
+  {
+  };
+};

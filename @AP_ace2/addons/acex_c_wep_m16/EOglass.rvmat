@@ -1,0 +1,28 @@
+ambient[]={1.000000,1.000000,1.000000,1.000000};
+diffuse[]={1.000000,1.000000,1.000000,1.000000};
+forcedDiffuse[]={0.000000,0.000000,0.000000,0.000000};
+emmisive[]={0.000000,0.000000,0.000000,1.000000};
+specular[]={0.250000,0.250000,0.250000,1.000000};
+specularPower=32.000000;
+PixelShaderID="Glass";
+VertexShaderID="Glass";
+class Stage0
+{
+	texture="#(argb,8,8,3)color(0,0,0,0.01,CO)";
+	uvSource="tex";
+	Filter="Anizotropic";
+};
+class Stage1
+{
+	texture="x\acex\addons\t_wep_m16\EO_fresnel.paa";
+	uvSource="none";
+};
+class Stage2
+{
+	texture = "ca\data\env_land_co.paa";
+	uvSource="none";
+};
+class StageTI
+{
+ texture = "ca\weapons_e\data\default_ti_ca.paa";
+};

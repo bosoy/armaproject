@@ -1,0 +1,19 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 3.52
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class Ca : Data\Penetration\granite.bisurf{
+Density = 1200;
+rough = 0.1;
+dust = 0;
+bulletPenetrability = 340;
+soundEnviron = "Empty";
+isWater = "false";
+friction = 0.4;
+restitution = 0.2;
+impact = "default_Mat";
+soundHit = "hard_ground";
+//};

@@ -1,0 +1,87 @@
+_posx = _this select 0
+_posy = _this select 1
+
+
+#hatvar
+_next = 0
+_hatposz = 10.0
+_hatsize = 0.6
+_scl = 1.0
+_hatalfa1 = 1.0
+_hatalfa2 = 0.0
+_col = 0.01
+_mushflag = 0
+_glaretrans = 0.3
+#hatstart
+[_posx,_posy,_hatposz] exec "mando_missiles\warheads\giga\nuke_hatexp.sqs"
+[_posx + (50 - random 100),_posy + (50 - random 100),_hatposz] exec "mando_missiles\warheads\giga\nuke_mush2.sqs"
+_cnt = 0
+_agl = random 360
+_scl = _scl * 0.990
+?(_col < 0.6 and _next > 50) : _col = _col * 1.02
+?(_hatsize  < 0.99) : _hatsize  = _hatsize  * 1.004
+?(_hatalfa1 > 0.01 and _next > 200) : _hatalfa1 = _hatalfa1 * 0.98
+?(_hatalfa2 < 0.99 and _next > 10) : _hatalfa2 = _hatalfa2 + 0.02
+_hatposz = _hatposz + (5.0 * _scl)
+_next = _next + 1
+?(_next == 300) : goto "end"
+#hatloop
+?(_cnt == 10) : goto "hatloopend"
+
+_velx = (sin _agl) * (10.0 + random 10.0) * _hatsize
+_vely = (cos _agl) * (10.0 + random 10.0) * _hatsize
+
+_rdm = (random 36) - 18
+_rdm2 = (random 36) - 18
+_hatposx1 = _posx + ((sin (_agl + _rdm)) * 5 * _hatsize)
+_hatposy1 = _posy + ((cos (_agl + _rdm)) * 5 * _hatsize)
+
+_rdm = (random 36) - 18
+_rdm2 = 5 - (random 10)
+_hatposx2 = _posx + ((sin (_agl + _rdm)) * (5 + _rdm2) * _hatsize)
+_hatposy2 = _posy + ((cos (_agl + _rdm)) * (5 + _rdm2) * _hatsize)
+
+_rdm = (random 36) - 18
+_rdm2 = 25 - (random 50)
+_hatposx3 = _posx + ((sin (_agl + _rdm)) * (50 + _rdm2) * _hatsize)
+_hatposy3 = _posy + ((cos (_agl + _rdm)) * (50 + _rdm2) * _hatsize)
+
+_rdm = (random 36) - 18
+_rdm2 = 20 - (random 40)
+_hatposx4 = _posx + ((sin (_agl + _rdm)) * (100 + _rdm2) * _hatsize)
+_hatposy4 = _posy + ((cos (_agl + _rdm)) * (100 + _rdm2) * _hatsize)
+
+_rdm = (random 36) - 18
+_hatposx5 = _posx + ((sin (_agl + _rdm)) * (random 70) * _hatsize)
+_hatposy5 = _posy + ((cos (_agl + _rdm)) * (random 70) * _hatsize)
+
+_dcol = 0.2 + random 0.1
+drop [["\Ca\Data\ParticleEffects\Universal\Universal", 16, 12, 8],"","Billboard",1,3.0,[_hatposx2,_hatposy2,_hatposz -  0 + (5 - random 10)],[_velx*2,_vely*2,5*_scl],1,1.5,1.0,0.01,[80 * _hatsize,100 * _hatsize],[[_col+0.0,_col+0.0,_col+0.0,0.0],[_col+_dcol+0.0,_col+_dcol+0.0,_col+_dcol+0.0,_hatalfa1*_hatalfa2*1.0],[_col+_dcol+0.1,_col+_dcol+0.1,_col+_dcol+0.1,0.0]],[0],0.0,0.5,"","",""]
+
+drop [["\Ca\Data\ParticleEffects\Universal\Universal", 16, 12, 8],"","Billboard",1,2.0,[_hatposx3,_hatposy3,_hatposz - 20 + (5 - random 10)],[_velx,_vely,5*_scl],1,1.5,1.0,0.01,[90 * _hatsize,100 * _hatsize],[[_col+0.0,_col+0.0,_col+0.0,0.0],[_col+_dcol+0.0,_col+_dcol+0.0,_col+_dcol+0.0,_hatalfa1*_hatalfa2*1.0],[_col+_dcol+0.1,_col+_dcol+0.1,_col+_dcol+0.1,0.0]],[0],0.0,0.5,"","",""]
+
+drop [["\Ca\Data\ParticleEffects\Universal\Universal", 16, 12, 8],"","Billboard",1,2.0,[_hatposx4,_hatposy4,_hatposz - 45 + (5 - random 10)],[_velx*(-0.8),_vely*(-0.8),10*_scl],1,1.5,1.0,0.01,[100 * _hatsize,90 * _hatsize],[[_col+0.0,_col+0.0,_col+0.0,0.0],[_col+_dcol+0.0,_col+_dcol+0.0,_col+_dcol+0.0,_hatalfa1*_hatalfa2*1.0],[_col+_dcol+0.1,_col+_dcol+0.1,_col+_dcol+0.1,0.0]],[0],0.0,0.5,"","",""]
+
+drop ["\Ca\Data\Cl_basic","","Billboard",1,2.0,[_hatposx4,_hatposy4,_hatposz - 50 + (5 - random 10)],[_velx*(-0.8),_vely*(-0.8),10*_scl],1,1.5,1.0,0.01,[110 * _hatsize,100 * _hatsize],[[_col+0.0,_col+0.0,_col+0.0,0.0],[_col+_dcol+0.0,_col+_dcol+0.0,_col+_dcol+0.0,_hatalfa1*_hatalfa2*1.0],[_col+_dcol+0.1,_col+_dcol+0.1,_col+_dcol+0.1,0.0]],[0],0.0,0.5,"","",""]
+
+drop ["\Ca\Data\cl_fireD","","Billboard",1,1.0,[_hatposx5,_hatposy5,_hatposz - 30 + (15 - random 30)],[_velx*0.8,_vely*0.8,0],1,1.5,1.0,0.01,[90 * _hatsize,100 * _hatsize],[[_dcol+0.7,_dcol+0.1,_dcol+0.0,0.0],[_dcol+0.7,_dcol+0.1,_dcol+0.0,_dcol+_hatalfa1*_hatalfa2*0.3],[_dcol+0.7,_dcol+0.1,_dcol+0.0,0.0]],[0],0.0,0.5,"","",""]
+
+_agl = _agl + 36.0
+_cnt = _cnt + 1
+goto "hatloop"
+#hatloopend
+
+_glareagl = random 360
+_glareposx = _posx + 40 * (sin _glareagl)
+_glareposy = _posy + 40 * (cos _glareagl)
+drop ["\Ca\Data\kouleSvetlo.p3d","","Billboard",1,10.0,[_glareposx,_glareposy, _hatposz - 30 + random(20)],[0,0,10*_scl],1,1.3,1.0,0.0,[1000],[[1.0,0.6,0.4,0.0],[1.0,0.6,0.4,0.2 * _glaretrans],[1.0,0.6,0.4,0.0]],[0],0.0,0.0,"","",""]
+_glaretrans = _glaretrans * 0.990
+
+~0.2
+?(_mushflag == 0) : [_posx,_posy] exec "mando_missiles\warheads\giga\nuke_mush.sqs"; _mushflag = 1
+goto "hatstart"
+
+
+
+#end
+exit

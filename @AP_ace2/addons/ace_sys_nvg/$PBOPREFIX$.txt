@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_nvg
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: '70F470D86600141C4C409C4DB5377329F7D184B9'
+//////</HEADER>//////

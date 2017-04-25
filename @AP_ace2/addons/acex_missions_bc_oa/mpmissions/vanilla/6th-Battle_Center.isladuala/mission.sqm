@@ -1,0 +1,4417 @@
+#include "script_component.hpp"
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		DEFAULT_ADDONS,
+		ADDONS
+	};
+	addOnsAuto[]=
+	{
+		DEFAULT_ADDONS,
+		ADDONS
+	};
+	INTEL
+	randomSeed=RANDOMSEED;
+	class Groups
+	{
+		items=72;
+		#include "\x\acex\addons\missions_bc_oa\bc\units_USMC.hpp"
+		
+		// Platoon PL1
+		// Squad PL1 Alpha
+		// Group PL1 Alpha Lead
+		class Item0 {
+			side=SIDE;
+			class Vehicles {
+				items=2;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=0;
+					side=SIDE;
+					vehicle=UNIT_SL;
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Lead,Squad Leader);
+					text="p1";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=1;
+					side=SIDE;
+					vehicle=UNIT_MEDIC;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Lead,Medic);
+					text="p2";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Alpha One
+		class Item1 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=2;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha One,Fireteam Leader);
+					text="p3";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=3;
+					side=SIDE;
+					vehicle=UNIT_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha One,Automatic Rifleman);
+					text="p4";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=4;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha One,Rifleman);
+					text="p5";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=5;
+					side=SIDE;
+					vehicle=UNIT_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha One,Grenadier);
+					text="p6";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Alpha Two
+		class Item2 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=6;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Two,Fireteam Leader);
+					text="p7";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=7;
+					side=SIDE;
+					vehicle=UNIT_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Two,Automatic Rifleman);
+					text="p8";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=8;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Two,Rifleman);
+					text="p9";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=9;
+					side=SIDE;
+					vehicle=UNIT_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Two,Grenadier);
+					text="p10";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Alpha Three
+		class Item3 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=10;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Three,Fireteam Leader);
+					text="p11";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=11;
+					side=SIDE;
+					vehicle=UNIT_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Three,Automatic Rifleman);
+					text="p12";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=12;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Three,Rifleman);
+					text="p13";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=13;
+					side=SIDE;
+					vehicle=UNIT_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Three,Grenadier);
+					text="p14";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Squad PL1 Bravo
+		// Group PL1 Bravo Lead
+		class Item4 {
+			side=SIDE;
+			class Vehicles {
+				items=2;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=14;
+					side=SIDE;
+					vehicle=UNIT_SL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Lead,Squad Leader);
+					text="p15";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=15;
+					side=SIDE;
+					vehicle=UNIT_MEDIC;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Lead,Medic);
+					text="p16";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Bravo One
+		class Item5 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=16;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo One,Fireteam Leader);
+					text="p17";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=17;
+					side=SIDE;
+					vehicle=UNIT_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo One,Automatic Rifleman);
+					text="p18";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=18;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo One,Rifleman);
+					text="p19";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=19;
+					side=SIDE;
+					vehicle=UNIT_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo One,Grenadier);
+					text="p20";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Bravo Two
+		class Item6 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=20;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Two,Fireteam Leader);
+					text="p21";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=21;
+					side=SIDE;
+					vehicle=UNIT_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Two,Automatic Rifleman);
+					text="p22";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=22;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Two,Rifleman);
+					text="p23";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=23;
+					side=SIDE;
+					vehicle=UNIT_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Two,Grenadier);
+					text="p24";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Bravo Three
+		class Item7 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=24;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Three,Fireteam Leader);
+					text="p25";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=25;
+					side=SIDE;
+					vehicle=UNIT_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Three,Automatic Rifleman);
+					text="p26";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=26;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Three,Rifleman);
+					text="p27";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=27;
+					side=SIDE;
+					vehicle=UNIT_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Three,Grenadier);
+					text="p28";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Squad PL1 Charlie
+		// Group PL1 Charlie Lead
+		class Item8 {
+			side=SIDE;
+			class Vehicles {
+				items=2;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=28;
+					side=SIDE;
+					vehicle=UNIT_SL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Lead,Squad Leader);
+					text="p29";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=29;
+					side=SIDE;
+					vehicle=UNIT_MEDIC;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Lead,Medic);
+					text="p30";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Charlie One
+		class Item9 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=30;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie One,Fireteam Leader);
+					text="p31";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=31;
+					side=SIDE;
+					vehicle=UNIT_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie One,Automatic Rifleman);
+					text="p32";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=32;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie One,Rifleman);
+					text="p33";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=33;
+					side=SIDE;
+					vehicle=UNIT_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie One,Grenadier);
+					text="p34";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Charlie Two
+		class Item10 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=34;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Two,Fireteam Leader);
+					text="p35";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=35;
+					side=SIDE;
+					vehicle=UNIT_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Two,Automatic Rifleman);
+					text="p36";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=36;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Two,Rifleman);
+					text="p37";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=37;
+					side=SIDE;
+					vehicle=UNIT_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Two,Grenadier);
+					text="p38";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Charlie Three
+		class Item11 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=38;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Three,Fireteam Leader);
+					text="p39";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=39;
+					side=SIDE;
+					vehicle=UNIT_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Three,Automatic Rifleman);
+					text="p40";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=40;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Three,Rifleman);
+					text="p41";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=41;
+					side=SIDE;
+					vehicle=UNIT_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Three,Grenadier);
+					text="p42";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Lead
+		class Item12 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=42;
+					side=SIDE;
+					vehicle=UNIT_SL;
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Lead,Platoon Leader);
+					text="p43";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=43;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Lead,Platoon Sergeant);
+					text="p44";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=44;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Lead,RTO);
+					text="p45";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=45;
+					side=SIDE;
+					vehicle=UNIT_MEDIC;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Lead,Medic);
+					text="p46";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+        // PL1 MG Team
+		class Item13 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=46;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 MG Team,Team Leader);
+					text="p47";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=47;
+					side=SIDE;
+					vehicle=UNIT_MG;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 MG Team,Gunner);
+					text="p48";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=48;
+					side=SIDE;
+					vehicle=UNIT_AMG;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 MG Team,Assistant Gunner);
+					text="p49";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=49;
+					side=SIDE;
+					vehicle=UNIT_AMG;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 MG Team,Rifleman);
+					text="p50";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Squad Sierra
+		// Group Sierra One
+		class Item14 {
+			side=SIDE;
+			class Vehicles {
+				items=2;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=50;
+					side=SIDE;
+					vehicle=UNIT_SNIPER;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(Sierra One,Sniper);
+					text="p51";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=51;
+					side=SIDE;
+					vehicle=UNIT_SPOTTER;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(Sierra One,Spotter);
+					text="p52";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group Sierra Two
+		class Item15 {
+			side=SIDE;
+			class Vehicles {
+				items=2;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=52;
+					side=SIDE;
+					vehicle=UNIT_SNIPER;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(Sierra Two,Sniper);
+					text="p53";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=53;
+					side=SIDE;
+					vehicle=UNIT_SPOTTER;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(Sierra Two,Spotter);
+					text="p54";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Squad SF
+		// Group SF One
+		class Item16 {
+			side=SIDE;
+			class Vehicles {
+				items=6;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=54;
+					side=SIDE;
+					vehicle=UNIT_SF_L;
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(SF One,Team Leader);
+					text="p55";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=55;
+					side=SIDE;
+					vehicle=UNIT_SF_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF One,Heavy Gunner);
+					text="p56";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=56;
+					side=SIDE;
+					vehicle=UNIT_SF_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF One,Grenadier);
+					text="p57";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=57;
+					side=SIDE;
+					vehicle=UNIT_SF_DMR;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF One,Marksman);
+					text="p58";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item4 {
+					position[]={SIDE_STARTPOS};
+					id=58;
+					side=SIDE;
+					vehicle=UNIT_SF_SAB;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF One,Saboteur);
+					text="p59";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item5 {
+					position[]={SIDE_STARTPOS};
+					id=59;
+					side=SIDE;
+					vehicle=UNIT_SF_MEDIC;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF One,Medic);
+					text="p60";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group SF Two
+		class Item17 {
+			side=SIDE;
+			class Vehicles {
+				items=6;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=60;
+					side=SIDE;
+					vehicle=UNIT_SF_L;
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(SF Two,Team Leader);
+					text="p61";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=61;
+					side=SIDE;
+					vehicle=UNIT_SF_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF Two,Heavy Gunner);
+					text="p62";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=62;
+					side=SIDE;
+					vehicle=UNIT_SF_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF Two,Grenadier);
+					text="p63";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=63;
+					side=SIDE;
+					vehicle=UNIT_SF_DMR;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF Two,Marksman);
+					text="p64";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item4 {
+					position[]={SIDE_STARTPOS};
+					id=64;
+					side=SIDE;
+					vehicle=UNIT_SF_SAB;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF Two,Saboteur);
+					text="p65";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item5 {
+					position[]={SIDE_STARTPOS};
+					id=65;
+					side=SIDE;
+					vehicle=UNIT_SF_MEDIC;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF Two,Medic);
+					text="p66";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Squad Delta
+		// Group Delta Lead
+		class Item18 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=66;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(Delta Lead,Commander);
+					text="p67";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=67;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(Delta Lead,Gunner);
+					text="p68";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=68;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(Delta Lead,Driver);
+					text="p69";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=69;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(Delta Lead,Loader);
+					text="p70";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group Delta One
+		class Item19 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=70;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(Delta One,Commander);
+					text="p71";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=71;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(Delta One,Gunner);
+					text="p72";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=72;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(Delta One,Driver);
+					text="p73";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=73;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(Delta One,Loader);
+					text="p74";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group Delta Two
+				class Item20 {
+				side=SIDE;
+				class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=74;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(Delta Two,Commander);
+					text="p75";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=75;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(Delta Two,Gunner);
+					text="p76";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=76;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(Delta Two,Driver);
+					text="p77";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=77;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(Delta Two,Loader);
+					text="p78";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group Echo Lead
+		class Item21 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=78;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(Echo Lead,Pilot);
+					text="p79";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=79;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=0;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(Echo Lead,Co Pilot);
+					text="p80";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=80;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(Echo Lead,Crew Chief);
+					text="p81";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=81;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(Echo Lead,Door Gunner);
+					text="p82";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group Echo One
+		class Item22 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=82;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(Echo One,Pilot);
+					text="p83";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=83;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=0;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(Echo One,Co Pilot);
+					text="p84";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=84;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(Echo One,Crew Chief);
+					text="p85";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=85;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(Echo One,Door Gunner);
+					text="p86";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group Echo Two
+		class Item23 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=86;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(Echo Two,Pilot);
+					text="p87";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=87;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=0;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(Echo Two,Co Pilot);
+					text="p88";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=88;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(Echo Two,Crew Chief);
+					text="p89";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=89;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(Echo Two,Door Gunner);
+					text="p90";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		#include "\x\acex\addons\missions_bc_oa\bc\units_RU.hpp"
+		
+		// Platoon PL1
+		// Squad PL1 Alpha
+		// Group PL1 Alpha Lead
+		class Item24 {
+			side=SIDE;
+			class Vehicles {
+				items=2;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=90;
+					side=SIDE;
+					vehicle=UNIT_SL;
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Lead,Squad Leader);
+					text="p91";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=91;
+					side=SIDE;
+					vehicle=UNIT_MEDIC;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Lead,Medic);
+					text="p92";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Alpha One
+		class Item25 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=92;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha One,Fireteam Leader);
+					text="p93";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=93;
+					side=SIDE;
+					vehicle=UNIT_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha One,Automatic Rifleman);
+					text="p94";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=94;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha One,Rifleman);
+					text="p95";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=95;
+					side=SIDE;
+					vehicle=UNIT_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha One,Grenadier);
+					text="p96";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Alpha Two
+		class Item26 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=96;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Two,Fireteam Leader);
+					text="p97";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=97;
+					side=SIDE;
+					vehicle=UNIT_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Two,Automatic Rifleman);
+					text="p98";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=98;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Two,Rifleman);
+					text="p99";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=99;
+					side=SIDE;
+					vehicle=UNIT_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Two,Grenadier);
+					text="p100";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Alpha Three
+		class Item27 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=100;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Three,Fireteam Leader);
+					text="p101";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=101;
+					side=SIDE;
+					vehicle=UNIT_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Three,Automatic Rifleman);
+					text="p102";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=102;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Three,Rifleman);
+					text="p103";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=103;
+					side=SIDE;
+					vehicle=UNIT_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Three,Grenadier);
+					text="p104";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Squad PL1 Bravo
+		// Group PL1 Bravo Lead
+		class Item28 {
+			side=SIDE;
+			class Vehicles {
+				items=2;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=104;
+					side=SIDE;
+					vehicle=UNIT_SL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Lead,Squad Leader);
+					text="p105";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=105;
+					side=SIDE;
+					vehicle=UNIT_MEDIC;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Lead,Medic);
+					text="p106";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Bravo One
+		class Item29 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=106;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo One,Fireteam Leader);
+					text="p107";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=107;
+					side=SIDE;
+					vehicle=UNIT_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo One,Automatic Rifleman);
+					text="p108";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=108;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo One,Rifleman);
+					text="p109";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=109;
+					side=SIDE;
+					vehicle=UNIT_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo One,Grenadier);
+					text="p110";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Bravo Two
+		class Item30 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=110;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Two,Fireteam Leader);
+					text="p111";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=111;
+					side=SIDE;
+					vehicle=UNIT_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Two,Automatic Rifleman);
+					text="p112";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=112;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Two,Rifleman);
+					text="p113";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=113;
+					side=SIDE;
+					vehicle=UNIT_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Two,Grenadier);
+					text="p114";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Bravo Three
+		class Item31 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=114;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Three,Fireteam Leader);
+					text="p115";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=115;
+					side=SIDE;
+					vehicle=UNIT_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Three,Automatic Rifleman);
+					text="p116";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=116;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Three,Rifleman);
+					text="p117";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=117;
+					side=SIDE;
+					vehicle=UNIT_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Three,Grenadier);
+					text="p118";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Squad PL1 Charlie
+		// Group PL1 Charlie Lead
+		class Item32 {
+			side=SIDE;
+			class Vehicles {
+				items=2;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=118;
+					side=SIDE;
+					vehicle=UNIT_SL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Lead,Squad Leader);
+					text="p119";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=119;
+					side=SIDE;
+					vehicle=UNIT_MEDIC;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Lead,Medic);
+					text="p120";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Charlie One
+		class Item33 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=120;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie One,Fireteam Leader);
+					text="p121";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=121;
+					side=SIDE;
+					vehicle=UNIT_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie One,Automatic Rifleman);
+					text="p122";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=122;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie One,Rifleman);
+					text="p123";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=123;
+					side=SIDE;
+					vehicle=UNIT_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie One,Grenadier);
+					text="p124";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Charlie Two
+		class Item34 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=124;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Two,Fireteam Leader);
+					text="p125";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=125;
+					side=SIDE;
+					vehicle=UNIT_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Two,Automatic Rifleman);
+					text="p126";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=126;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Two,Rifleman);
+					text="p127";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=127;
+					side=SIDE;
+					vehicle=UNIT_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Two,Grenadier);
+					text="p128";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Charlie Three
+		class Item35 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=128;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Three,Fireteam Leader);
+					text="p129";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=129;
+					side=SIDE;
+					vehicle=UNIT_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Three,Automatic Rifleman);
+					text="p130";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=130;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Three,Rifleman);
+					text="p131";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=131;
+					side=SIDE;
+					vehicle=UNIT_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Three,Grenadier);
+					text="p132";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Lead
+		class Item36 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=132;
+					side=SIDE;
+					vehicle=UNIT_SL;
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Lead,Platoon Leader);
+					text="p133";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=133;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Lead,Platoon Sergeant);
+					text="p134";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=134;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Lead,RTO);
+					text="p135";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=135;
+					side=SIDE;
+					vehicle=UNIT_MEDIC;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Lead,Medic);
+					text="p136";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+        // PL1 MG Team
+		class Item37 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=136;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 MG Team,Team Leader);
+					text="p137";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=137;
+					side=SIDE;
+					vehicle=UNIT_MG;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 MG Team,Gunner);
+					text="p138";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=138;
+					side=SIDE;
+					vehicle=UNIT_AMG;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 MG Team,Assistant Gunner);
+					text="p139";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=139;
+					side=SIDE;
+					vehicle=UNIT_AMG;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 MG Team,Rifleman);
+					text="p140";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Squad Sierra
+		// Group Sierra One
+		class Item38 {
+			side=SIDE;
+			class Vehicles {
+				items=2;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=140;
+					side=SIDE;
+					vehicle=UNIT_SNIPER;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(Sierra One,Sniper);
+					text="p141";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=141;
+					side=SIDE;
+					vehicle=UNIT_SPOTTER;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(Sierra One,Spotter);
+					text="p142";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group Sierra Two
+		class Item39 {
+			side=SIDE;
+			class Vehicles {
+				items=2;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=142;
+					side=SIDE;
+					vehicle=UNIT_SNIPER;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(Sierra Two,Sniper);
+					text="p143";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=143;
+					side=SIDE;
+					vehicle=UNIT_SPOTTER;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(Sierra Two,Spotter);
+					text="p144";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Squad SF
+		// Group SF One
+		class Item40 {
+			side=SIDE;
+			class Vehicles {
+				items=6;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=144;
+					side=SIDE;
+					vehicle=UNIT_SF_L;
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(SF One,Team Leader);
+					text="p145";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=145;
+					side=SIDE;
+					vehicle=UNIT_SF_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF One,Heavy Gunner);
+					text="p146";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=146;
+					side=SIDE;
+					vehicle=UNIT_SF_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF One,Grenadier);
+					text="p147";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=147;
+					side=SIDE;
+					vehicle=UNIT_SF_DMR;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF One,Marksman);
+					text="p148";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item4 {
+					position[]={SIDE_STARTPOS};
+					id=148;
+					side=SIDE;
+					vehicle=UNIT_SF_SAB;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF One,Saboteur);
+					text="p149";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item5 {
+					position[]={SIDE_STARTPOS};
+					id=149;
+					side=SIDE;
+					vehicle=UNIT_SF_MEDIC;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF One,Medic);
+					text="p150";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group SF Two
+		class Item41 {
+			side=SIDE;
+			class Vehicles {
+				items=6;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=150;
+					side=SIDE;
+					vehicle=UNIT_SF_L;
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(SF Two,Team Leader);
+					text="p151";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=151;
+					side=SIDE;
+					vehicle=UNIT_SF_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF Two,Heavy Gunner);
+					text="p152";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=152;
+					side=SIDE;
+					vehicle=UNIT_SF_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF Two,Grenadier);
+					text="p153";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=153;
+					side=SIDE;
+					vehicle=UNIT_SF_DMR;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF Two,Marksman);
+					text="p154";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item4 {
+					position[]={SIDE_STARTPOS};
+					id=154;
+					side=SIDE;
+					vehicle=UNIT_SF_SAB;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF Two,Saboteur);
+					text="p155";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item5 {
+					position[]={SIDE_STARTPOS};
+					id=155;
+					side=SIDE;
+					vehicle=UNIT_SF_MEDIC;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF Two,Medic);
+					text="p156";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Squad Delta
+		// Group Delta Lead
+		class Item42 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=156;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(Delta Lead,Commander);
+					text="p157";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=157;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(Delta Lead,Gunner);
+					text="p158";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=158;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(Delta Lead,Driver);
+					text="p159";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=159;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(Delta Lead,Loader);
+					text="p160";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group Delta One
+		class Item43 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=160;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(Delta One,Commander);
+					text="p161";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=161;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(Delta One,Gunner);
+					text="p162";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=162;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(Delta One,Driver);
+					text="p163";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=163;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(Delta One,Loader);
+					text="p164";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group Delta Two
+				class Item44 {
+				side=SIDE;
+				class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=164;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(Delta Two,Commander);
+					text="p165";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=165;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(Delta Two,Gunner);
+					text="p166";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=166;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(Delta Two,Driver);
+					text="p167";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=167;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(Delta Two,Loader);
+					text="p168";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group Echo Lead
+		class Item45 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=168;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(Echo Lead,Pilot);
+					text="p169";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=169;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=0;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(Echo Lead,Co Pilot);
+					text="p170";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=170;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(Echo Lead,Crew Chief);
+					text="p171";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=171;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(Echo Lead,Door Gunner);
+					text="p172";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group Echo One
+		class Item46 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=172;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(Echo One,Pilot);
+					text="p173";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=173;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=0;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(Echo One,Co Pilot);
+					text="p174";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=174;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(Echo One,Crew Chief);
+					text="p175";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=175;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(Echo One,Door Gunner);
+					text="p176";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group Echo Two
+		class Item47 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=176;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(Echo Two,Pilot);
+					text="p177";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=177;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=0;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(Echo Two,Co Pilot);
+					text="p178";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=178;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(Echo Two,Crew Chief);
+					text="p179";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=179;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(Echo Two,Door Gunner);
+					text="p180";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		#include "\x\acex\addons\missions_bc_oa\bc\units_GUE.hpp"
+		
+		// Platoon PL1
+		// Squad PL1 Alpha
+		// Group PL1 Alpha Lead
+		class Item48 {
+			side=SIDE;
+			class Vehicles {
+				items=2;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=180;
+					side=SIDE;
+					vehicle=UNIT_SL;
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Lead,Squad Leader);
+					text="p181";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=181;
+					side=SIDE;
+					vehicle=UNIT_MEDIC;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Lead,Medic);
+					text="p182";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Alpha One
+		class Item49 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=182;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha One,Fireteam Leader);
+					text="p183";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=183;
+					side=SIDE;
+					vehicle=UNIT_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha One,Automatic Rifleman);
+					text="p184";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=184;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha One,Rifleman);
+					text="p185";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=185;
+					side=SIDE;
+					vehicle=UNIT_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha One,Grenadier);
+					text="p186";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Alpha Two
+		class Item50 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=186;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Two,Fireteam Leader);
+					text="p187";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=187;
+					side=SIDE;
+					vehicle=UNIT_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Two,Automatic Rifleman);
+					text="p188";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=188;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Two,Rifleman);
+					text="p189";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=189;
+					side=SIDE;
+					vehicle=UNIT_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Two,Grenadier);
+					text="p190";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Alpha Three
+		class Item51 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=190;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Three,Fireteam Leader);
+					text="p191";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=191;
+					side=SIDE;
+					vehicle=UNIT_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Three,Automatic Rifleman);
+					text="p192";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=192;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Three,Rifleman);
+					text="p193";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=193;
+					side=SIDE;
+					vehicle=UNIT_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Alpha Three,Grenadier);
+					text="p194";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Squad PL1 Bravo
+		// Group PL1 Bravo Lead
+		class Item52 {
+			side=SIDE;
+			class Vehicles {
+				items=2;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=194;
+					side=SIDE;
+					vehicle=UNIT_SL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Lead,Squad Leader);
+					text="p195";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=195;
+					side=SIDE;
+					vehicle=UNIT_MEDIC;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Lead,Medic);
+					text="p196";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Bravo One
+		class Item53 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=196;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo One,Fireteam Leader);
+					text="p197";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=197;
+					side=SIDE;
+					vehicle=UNIT_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo One,Automatic Rifleman);
+					text="p198";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=198;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo One,Rifleman);
+					text="p199";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=199;
+					side=SIDE;
+					vehicle=UNIT_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo One,Grenadier);
+					text="p200";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Bravo Two
+		class Item54 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=200;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Two,Fireteam Leader);
+					text="p201";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=201;
+					side=SIDE;
+					vehicle=UNIT_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Two,Automatic Rifleman);
+					text="p202";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=202;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Two,Rifleman);
+					text="p203";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=203;
+					side=SIDE;
+					vehicle=UNIT_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Two,Grenadier);
+					text="p204";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Bravo Three
+		class Item55 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=204;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Three,Fireteam Leader);
+					text="p205";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=205;
+					side=SIDE;
+					vehicle=UNIT_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Three,Automatic Rifleman);
+					text="p206";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=206;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Three,Rifleman);
+					text="p207";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=207;
+					side=SIDE;
+					vehicle=UNIT_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Bravo Three,Grenadier);
+					text="p208";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Squad PL1 Charlie
+		// Group PL1 Charlie Lead
+		class Item56 {
+			side=SIDE;
+			class Vehicles {
+				items=2;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=208;
+					side=SIDE;
+					vehicle=UNIT_SL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Lead,Squad Leader);
+					text="p209";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=209;
+					side=SIDE;
+					vehicle=UNIT_MEDIC;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Lead,Medic);
+					text="p210";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Charlie One
+		class Item57 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=210;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie One,Fireteam Leader);
+					text="p211";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=211;
+					side=SIDE;
+					vehicle=UNIT_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie One,Automatic Rifleman);
+					text="p212";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=212;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie One,Rifleman);
+					text="p213";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=213;
+					side=SIDE;
+					vehicle=UNIT_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie One,Grenadier);
+					text="p214";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Charlie Two
+		class Item58 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=214;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Two,Fireteam Leader);
+					text="p215";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=215;
+					side=SIDE;
+					vehicle=UNIT_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Two,Automatic Rifleman);
+					text="p216";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=216;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Two,Rifleman);
+					text="p217";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=217;
+					side=SIDE;
+					vehicle=UNIT_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Two,Grenadier);
+					text="p218";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Charlie Three
+		class Item59 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=218;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Three,Fireteam Leader);
+					text="p219";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=219;
+					side=SIDE;
+					vehicle=UNIT_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Three,Automatic Rifleman);
+					text="p220";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=220;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Three,Rifleman);
+					text="p221";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=221;
+					side=SIDE;
+					vehicle=UNIT_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Charlie Three,Grenadier);
+					text="p222";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group PL1 Lead
+		class Item60 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=222;
+					side=SIDE;
+					vehicle=UNIT_SL;
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Lead,Platoon Leader);
+					text="p223";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=223;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(PL1 Lead,Platoon Sergeant);
+					text="p224";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=224;
+					side=SIDE;
+					vehicle=UNIT_RIFLEMAN;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 Lead,RTO);
+					text="p225";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=225;
+					side=SIDE;
+					vehicle=UNIT_MEDIC;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 Lead,Medic);
+					text="p226";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+        // PL1 MG Team
+		class Item61 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=226;
+					side=SIDE;
+					vehicle=UNIT_TL;
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 MG Team,Team Leader);
+					text="p227";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=227;
+					side=SIDE;
+					vehicle=UNIT_MG;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(PL1 MG Team,Gunner);
+					text="p228";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=228;
+					side=SIDE;
+					vehicle=UNIT_AMG;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 MG Team,Assistant Gunner);
+					text="p229";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=229;
+					side=SIDE;
+					vehicle=UNIT_AMG;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(PL1 MG Team,Rifleman);
+					text="p230";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Squad Sierra
+		// Group Sierra One
+		class Item62 {
+			side=SIDE;
+			class Vehicles {
+				items=2;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=230;
+					side=SIDE;
+					vehicle=UNIT_SNIPER;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(Sierra One,Sniper);
+					text="p231";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=231;
+					side=SIDE;
+					vehicle=UNIT_SPOTTER;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(Sierra One,Spotter);
+					text="p232";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group Sierra Two
+		class Item63 {
+			side=SIDE;
+			class Vehicles {
+				items=2;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=232;
+					side=SIDE;
+					vehicle=UNIT_SNIPER;
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(Sierra Two,Sniper);
+					text="p233";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=233;
+					side=SIDE;
+					vehicle=UNIT_SPOTTER;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(Sierra Two,Spotter);
+					text="p234";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Squad SF
+		// Group SF One
+		class Item64 {
+			side=SIDE;
+			class Vehicles {
+				items=6;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=234;
+					side=SIDE;
+					vehicle=UNIT_SF_L;
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(SF One,Team Leader);
+					text="p235";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=235;
+					side=SIDE;
+					vehicle=UNIT_SF_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF One,Heavy Gunner);
+					text="p236";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=236;
+					side=SIDE;
+					vehicle=UNIT_SF_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF One,Grenadier);
+					text="p237";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=237;
+					side=SIDE;
+					vehicle=UNIT_SF_DMR;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF One,Marksman);
+					text="p238";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item4 {
+					position[]={SIDE_STARTPOS};
+					id=238;
+					side=SIDE;
+					vehicle=UNIT_SF_SAB;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF One,Saboteur);
+					text="p239";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item5 {
+					position[]={SIDE_STARTPOS};
+					id=239;
+					side=SIDE;
+					vehicle=UNIT_SF_MEDIC;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF One,Medic);
+					text="p240";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group SF Two
+		class Item65 {
+			side=SIDE;
+			class Vehicles {
+				items=6;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=240;
+					side=SIDE;
+					vehicle=UNIT_SF_L;
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(SF Two,Team Leader);
+					text="p241";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=241;
+					side=SIDE;
+					vehicle=UNIT_SF_AR;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF Two,Heavy Gunner);
+					text="p242";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=242;
+					side=SIDE;
+					vehicle=UNIT_SF_GL;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF Two,Grenadier);
+					text="p243";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=243;
+					side=SIDE;
+					vehicle=UNIT_SF_DMR;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF Two,Marksman);
+					text="p244";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item4 {
+					position[]={SIDE_STARTPOS};
+					id=244;
+					side=SIDE;
+					vehicle=UNIT_SF_SAB;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF Two,Saboteur);
+					text="p245";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item5 {
+					position[]={SIDE_STARTPOS};
+					id=245;
+					side=SIDE;
+					vehicle=UNIT_SF_MEDIC;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(SF Two,Medic);
+					text="p246";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Squad Delta
+		// Group Delta Lead
+		class Item66 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=246;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(Delta Lead,Commander);
+					text="p247";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=247;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(Delta Lead,Gunner);
+					text="p248";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=248;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(Delta Lead,Driver);
+					text="p249";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=249;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(Delta Lead,Loader);
+					text="p250";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group Delta One
+		class Item67 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=250;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(Delta One,Commander);
+					text="p251";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=251;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(Delta One,Gunner);
+					text="p252";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=252;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(Delta One,Driver);
+					text="p253";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=253;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(Delta One,Loader);
+					text="p254";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group Delta Two
+				class Item68 {
+				side=SIDE;
+				class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=254;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(Delta Two,Commander);
+					text="p255";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=255;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=0;
+					rank="SERGEANT";
+					skill=SKILL;
+					FNC_UNIT(Delta Two,Gunner);
+					text="p256";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=256;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(Delta Two,Driver);
+					text="p257";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=257;
+					side=SIDE;
+					vehicle=UNIT_CREW;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(Delta Two,Loader);
+					text="p258";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group Echo Lead
+		class Item69 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=258;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(Echo Lead,Pilot);
+					text="p259";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=259;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=0;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(Echo Lead,Co Pilot);
+					text="p260";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=260;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(Echo Lead,Crew Chief);
+					text="p261";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=261;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(Echo Lead,Door Gunner);
+					text="p262";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group Echo One
+		class Item70 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=262;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(Echo One,Pilot);
+					text="p263";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=263;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=0;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(Echo One,Co Pilot);
+					text="p264";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=264;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(Echo One,Crew Chief);
+					text="p265";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=265;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(Echo One,Door Gunner);
+					text="p266";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+		// Group Echo Two
+		class Item71 {
+			side=SIDE;
+			class Vehicles {
+				items=4;
+				class Item0 {
+					position[]={SIDE_STARTPOS};
+					id=266;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(Echo Two,Pilot);
+					text="p267";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item1 {
+					position[]={SIDE_STARTPOS};
+					id=267;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=0;
+					rank="LIEUTENANT";
+					skill=SKILL;
+					FNC_UNIT(Echo Two,Co Pilot);
+					text="p268";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item2 {
+					position[]={SIDE_STARTPOS};
+					id=268;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=0;
+					rank="CORPORAL";
+					skill=SKILL;
+					FNC_UNIT(Echo Two,Crew Chief);
+					text="p269";
+					special="NONE";
+					synchronizations[]={};
+				};
+				class Item3 {
+					position[]={SIDE_STARTPOS};
+					id=269;
+					side=SIDE;
+					vehicle=UNIT_PILOT;
+					player="PLAY CDG";
+					leader=0;
+					rank="PRIVATE";
+					skill=SKILL;
+					FNC_UNIT(Echo Two,Door Gunner);
+					text="p270";
+					special="NONE";
+					synchronizations[]={};
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=3;
+		class Item0
+		{
+			position[]={DEFAULT_STARTPOS_EAST};
+			id=270;
+			side="EMPTY";
+			vehicle="Land_Mil_hangar_EP1";
+			leader=1;
+			init=QUOTE(this setPos DEFAULT_SCRIPTPOS_EAST);
+			text="ace_sys_bc_safezone_east";
+		};
+		class Item1
+		{
+			position[]={DEFAULT_STARTPOS_WEST};
+			id=271;
+			side="EMPTY";
+			vehicle="Land_Mil_hangar_EP1";
+			leader=1;
+			init=QUOTE(this setPos DEFAULT_SCRIPTPOS_WEST);
+			text="ace_sys_bc_safezone_west";
+		};
+		class Item2
+		{
+			position[]={DEFAULT_STARTPOS_GUER};
+			id=272;
+			side="EMPTY";
+			vehicle="Land_Mil_hangar_EP1";
+			leader=1;
+			init=QUOTE(this setPos DEFAULT_SCRIPTPOS_GUER);
+			text="ace_sys_bc_safezone_guer";
+		};
+	};
+	class Markers
+	{
+	};
+	class Sensors
+	{
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		DEFAULT_ADDONS,
+		ADDONS
+	};
+	addOnsAuto[]=
+	{
+		DEFAULT_ADDONS,
+		ADDONS
+	};
+	INTEL
+	randomSeed=RANDOMSEED;
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		DEFAULT_ADDONS,
+		ADDONS
+	};
+	addOnsAuto[]=
+	{
+		DEFAULT_ADDONS,
+		ADDONS
+	};
+	INTEL
+	randomSeed=RANDOMSEED;
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		DEFAULT_ADDONS,
+		ADDONS
+	};
+	addOnsAuto[]=
+	{
+		DEFAULT_ADDONS,
+		ADDONS
+	};
+	INTEL
+	randomSeed=RANDOMSEED;
+};

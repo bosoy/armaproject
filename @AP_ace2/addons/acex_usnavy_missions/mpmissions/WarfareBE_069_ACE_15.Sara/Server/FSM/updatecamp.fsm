@@ -1,0 +1,252 @@
+/*%FSM<COMPILE "D:\ArmA2\FSM Editor Personal Edition\scriptedFSM.cfg, updatecamp">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Init",0,250,-63.253571,-299.618378,26.746418,-249.618469,0.000000,"Init"};
+item1[] = {"End",1,250,-182.368073,-113.480629,-92.368042,-63.480659,0.000000,"End"};
+item2[] = {"Gameover",4,218,-182.650177,-187.482422,-92.650192,-137.482452,0.000000,"Gameover"};
+item3[] = {"_",8,218,-34.448154,-230.434799,-2.642141,-207.859543,0.000000,""};
+item4[] = {"Camp_Core",2,4346,-63.405182,-187.376434,26.594841,-137.376434,0.000000,"Camp Core"};
+item5[] = {"Camp_Advanced",2,250,-64.617218,-39.786873,25.382790,10.213146,0.000000,"Camp" \n "Advanced"};
+item6[] = {"Empty",4,218,57.329758,-187.310150,147.329803,-137.310150,0.000000,"Empty"};
+item7[] = {"Not_Empty",4,218,-63.807266,-111.064079,26.192720,-61.064079,0.000000,"Not Empty"};
+item8[] = {"Capture",4,218,-182.872635,-39.579437,-92.872635,10.420566,0.000000,"Capture"};
+item9[] = {"Skip",4,218,57.688011,-38.769463,147.687988,11.230536,0.000000,"Skip"};
+item10[] = {"",7,210,215.273621,-222.741318,223.273621,-214.741318,0.000000,""};
+item11[] = {"_",2,250,174.323486,-38.769455,264.323486,11.230541,0.000000,""};
+item12[] = {"Capture",2,250,-301.937958,-38.769463,-211.937988,11.230541,0.000000,"Capture"};
+item13[] = {"",7,210,-260.177917,-222.741318,-252.177872,-214.741318,0.000000,""};
+link0[] = {0,3};
+link1[] = {2,1};
+link2[] = {3,4};
+link3[] = {4,2};
+link4[] = {4,6};
+link5[] = {4,7};
+link6[] = {5,8};
+link7[] = {5,9};
+link8[] = {6,11};
+link9[] = {7,5};
+link10[] = {8,12};
+link11[] = {9,11};
+link12[] = {10,3};
+link13[] = {11,10};
+link14[] = {12,13};
+link15[] = {13,3};
+globals[] = {0.000000,0,0,0,0,640,480,1,29,6316128,1,-374.429932,315.755920,137.483551,-318.334381,748,514,1};
+window[] = {0,-1,-1,-1,-1,859,225,1485,225,1,766};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "updatecamp";
+  class States
+  {
+    /*%FSM<STATE "Init">*/
+    class Init
+    {
+      name = "Init";
+      init = /*%FSM<STATEINIT""">*/"_lastUpdate = -5;" \n
+       "" \n
+       "_camp = _this Select 0;" \n
+       "_town = _this Select 1;" \n
+       "_flag = _this Select 2;" \n
+       "" \n
+       "_delay = 3;" \n
+       "_timeToCapture = 0;" \n
+       "_townName = str _town;" \n
+       "_campName = Str _camp;" \n
+       "" \n
+       "_townSideID = _town getVariable ""sideID"";" \n
+       "_supply = _town getVariable ""supplyValue"";" \n
+       "_lastSupply = _supply;" \n
+       "" \n
+       "_awaits = _delay;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Camp_Core";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _lastUpdate > _awaits"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End">*/
+    class End
+    {
+      name = "End";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Camp_Core">*/
+    class Camp_Core
+    {
+      name = "Camp_Core";
+      init = /*%FSM<STATEINIT""">*/"_lastUpdate = time + random(0.2);" \n
+       "" \n
+       "_objects = _camp NearEntities[""Man"",5];" \n
+       "_livingUnits = _objects Call GetLiveUnits;" \n
+       "_west = West CountSide _livingUnits;" \n
+       "_east = East CountSide _livingUnits;" \n
+       "" \n
+       "_awaits = (_delay) Call GetSleepFPS;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Empty">*/
+        class Empty
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_east == 0 && _west == 0 && !gameOver"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Not_Empty">*/
+        class Not_Empty
+        {
+          priority = 0.000000;
+          to="Camp_Advanced";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_east != 0 || _west != 0) && !gameOver"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Gameover">*/
+        class Gameover
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"gameOver"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Camp_Advanced">*/
+    class Camp_Advanced
+    {
+      name = "Camp_Advanced";
+      init = /*%FSM<STATEINIT""">*/"_skip = false;" \n
+       "_capture = false;" \n
+       "" \n
+       "_sideID = _camp getVariable ""sideID"";" \n
+       "_supply = _town getVariable ""supplyValue"";" \n
+       "_timeToCapture = _camp getVariable ""supplyValue"";" \n
+       "_force = (_east + _west) * _delay;" \n
+       "if (_sideID == EASTID && _east > 0) then {_timeToCapture = _timeToCapture + _east};" \n
+       "if (_sideID == EASTID && _west > 0) then {_timeToCapture = _timeToCapture - _west};" \n
+       "if (_sideID == WESTID && _west > 0) then {_timeToCapture = _timeToCapture + _west};" \n
+       "if (_sideID == WESTID && _east > 0) then {_timeToCapture = _timeToCapture - _east};" \n
+       "if (_sideID != EASTID && _sideID != WESTID) then {_timeToCapture = _timeToCapture - _force};" \n
+       "if (_timeToCapture > _supply) then {_timeToCapture = _supply};" \n
+       "if (_timeToCapture <= 0) then {_skip = true;_capture = true};" \n
+       "if (!_skip) then {" \n
+       "	_townSideID = _town getVariable ""sideID"";" \n
+       "	if (_timeToCapture == _lastSupply && _force == 0 && _sideID == _townSideID) then {_timeToCapture = _supply};" \n
+       "	_lastSupply = _supply;" \n
+       "	if (_timeToCapture == (_camp getVariable ""supplyValue"")) then {_skip = true};" \n
+       "	if (!_skip) then {_camp setVariable [""supplyValue"",_timeToCapture,true]};" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Skip">*/
+        class Skip
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!_capture"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Capture">*/
+        class Capture
+        {
+          priority = 0.000000;
+          to="Capture";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_capture"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "_">*/
+    class _
+    {
+      name = "_";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Camp_Core";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _lastUpdate > _awaits"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Capture">*/
+    class Capture
+    {
+      name = "Capture";
+      init = /*%FSM<STATEINIT""">*/"_captureSideID = WESTID;" \n
+       "if (_sideID == WESTID || (_sideID == RESISTANCEID && _east > 0)) then {_captureSideID = EASTID};" \n
+       "_side = _sideID Call GetSideFromID;" \n
+       "if (_sideID == WESTID || _sideID == EASTID) then {[""LostAt"",""Strongpoint"",_side,_town] Spawn SideMessage};" \n
+       "_camp setVariable [""sideID"",_captureSideID,true];" \n
+       "WFBE_CampCaptured = [nil,'CLTFNCCAMPCAPTURED',[_town,_captureSideID,_camp]];" \n
+       "publicVariable 'WFBE_CampCaptured';" \n
+       "if (isHostedServer) then {[nil,'CLTFNCCAMPCAPTURED',[_town,_captureSideID,_camp]] Spawn HandlePVF};" \n
+       "_side = _captureSideID Call GetSideFromID;" \n
+       "if (_captureSideID != RESISTANCEID) then {[""CapturedNear"",""Strongpoint"",_side,_town] Spawn SideMessage};" \n
+       "_texture = Format[""WFBE_%1FLAG"",str _side] Call GetNamespace;" \n
+       "_flag setFlagTexture _texture;" \n
+       "if (_townSideID == _captureSideID) then {_timeToCapture = _supply};" \n
+       "if (_townSideID != _captureSideID) then {_timeToCapture = _town getVariable ""startingSupplyValue""};" \n
+       "_sideID = _captureSideID;" \n
+       "_camp setVariable [""supplyValue"",_timeToCapture,true];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Camp_Core";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _lastUpdate > _awaits"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Init";
+  finalStates[] =
+  {
+    "End"
+  };
+};
+/*%FSM</COMPILE>*/

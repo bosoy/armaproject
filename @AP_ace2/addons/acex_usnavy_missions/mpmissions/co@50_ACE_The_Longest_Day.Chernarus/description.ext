@@ -1,0 +1,21 @@
+onLoadMission="The Longest Day";
+onLoadIntroTime = false;
+onLoadMissionTime = false;
+
+class Header
+{
+	gameType = Coop;            //DM, Team, Coop, ...
+	minPlayers = 1;             //min # of players the mission supports
+	maxPlayers = 50;            //Max # of players the mission supports
+};
+
+respawn = BASE;
+respawndelay = 20;
+disabledAI = 1;
+
+//titleParam1 = "Daytime";
+//valuesParam1[] = {1, 2, 3, 4};
+//defValueParam1 = 1;
+//textsParam1[] = {"Morning", "Day", "Evening", "Night"};
+
+#include "x_dlg\IntroText.hpp"

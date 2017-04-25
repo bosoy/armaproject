@@ -1,0 +1,86 @@
+/*%FSM<COMPILE "D:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, geblackout">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Start",0,250,-50.000000,75.000000,50.000000,125.000000,0.000000,"Start"};
+item1[] = {"End",1,250,-50.000000,225.000000,50.000000,275.000000,0.000000,"End"};
+item2[] = {"Action",4,4314,-50.000000,150.000000,50.000000,200.000000,0.000000,"Action"};
+link0[] = {0,2};
+link1[] = {2,1};
+globals[] = {25.000000,1,0,0,0,640,480,1,71,6316128,1,-397.383179,350.335693,583.892822,-189.870178,467,573,1};
+window[] = {0,-1,-1,-32000,-32000,1047,547,1507,329,1,485};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "geblackout";
+  class States
+  {
+    /*%FSM<STATE "Start">*/
+    class Start
+    {
+      name = "Start";
+      init = /*%FSM<STATEINIT""">*/"private [""_o"", ""_timeend"", ""_ti"", ""_ret"", ""_reson""];" \n
+       "_o = _this select 0;" \n
+       "_timeend = -1;" \n
+       "_ret = false;" \n
+       "_reson = false;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Action">*/
+        class Action
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"if (_o getVariable ""ACE_pinplane"") then {" \n
+           "	_g_s = _o getVariable ""ACE_g_s"";" \n
+           "	if (_g_s >= 3 && _timeend == -1) then {" \n
+           "		_ti = switch (_g_s) do {" \n
+           "			case 3: {0.5 * (_o getVariable ""ACE_gforce"")};" \n
+           "			case 4: {1.5 * (_o getVariable ""ACE_gforce"")};" \n
+           "			case 5: {2.5 * (_o getVariable ""ACE_gforce"")}; // death after some time ?" \n
+           "			default {1};" \n
+           "		};" \n
+           "" \n
+           "		13526 cutText["""",""BLACK OUT"", 2];" \n
+           "		13526 cutFadeOut _ti;" \n
+           "		_timeend = time + _ti + 1;" \n
+           "	};" \n
+           "" \n
+           "	if (_timeend != -1) then {" \n
+           "		if (time >= _timeend) then {" \n
+           "			_timeend = -1;" \n
+           "			ace_sys_g_effects_doblacko = -1;" \n
+           "		};" \n
+           "	};" \n
+           "} else {" \n
+           "	_ret = true;" \n
+           "};" \n
+           "" \n
+           "_ret"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End">*/
+    class End
+    {
+      name = "End";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Start";
+  finalStates[] =
+  {
+    "End",
+  };
+};
+/*%FSM</COMPILE>*/

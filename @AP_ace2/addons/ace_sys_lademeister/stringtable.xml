@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="ACE2">
+<Container name="STR_DN">
+<Key ID="STR_ACE_LADEMEISTER_AIRFLOW">
+<English>Dangerous Airspeed</English>
+<German>Gefährliche Luftströmung</German>
+<Spanish>Dangerours Airspeed</Spanish>
+<Czech>Nebezpečná Rychlost</Czech>
+<Russian>Опасная скорость полета</Russian>
+<Italian>Pericolo Velocità Aerea</Italian>
+<Polish>Niebezpieczna prędkość</Polish>
+<French>Vitesse excessive</French>
+<Hungarian>Veszélyes sebesség</Hungarian>
+</Key>
+</Container>
+</Package></Project>

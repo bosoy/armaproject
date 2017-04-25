@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ArmA2_ACE2">
+<Package name="c_veh_ah1">
+<Container name="STR_ACE">
+<Key ID="STR_ACE_VDN_5TTRUCK_ARMED">
+<German>M923A2 (bewaffnet)</German>
+<English>M923A2 (armed)</English>
+<Italian>M923A2 (armato)</Italian>
+<Spanish>M923A2 (armado)</Spanish>
+<French>M923A2 (armé)</French>
+<Czech>M923A2 (ozbrojený)</Czech>
+<Russian>M923A2 (вооружённый)</Russian>
+<Polish>M923A2 (uzbrojona)</Polish>
+<Hungarian>M923A2 (felfegyverzett)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_5TTRUCK_ARMED_OPEN">
+<German>M923A2 (bewaffnet, offen)</German>
+<English>M923A2 (armed, open)</English>
+<Italian>M923A2 (armato, aperto)</Italian>
+<Spanish>M923A2 (armado, abierto)</Spanish>
+<French>M923A2 (armé, découvert)</French>
+<Czech>M923A2 (ozbrojený, otevřený)</Czech>
+<Russian>M923A2 (вооружённый, открытый)</Russian>
+<Polish>M923A2 (uzbrojona, otwarta)</Polish>
+<Hungarian>M923A2 (felfegyverzett, nyitott)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_5TTRUCK_MG_OPEN">
+<German>M923A2 (M2, offen)</German>
+<English>M923A2 (M2, open)</English>
+<Italian>M923A2 (M2, aperto)</Italian>
+<Spanish>M923A2 (M2, abierto)</Spanish>
+<French>M923A2 (M2, découvert)</French>
+<Czech>M923A2 (M2, otevřený)</Czech>
+<Russian>M923A2 (M2, открытый)</Russian>
+<Polish>M923A2 (M2, otwarta)</Polish>
+<Hungarian>M923A2 (M2, nyitott)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_5TTRUCK_MG">
+<German>M923A2 (M2)</German>
+<English>M923A2 (M2)</English>
+<Italian>M923A2 (M2)</Italian>
+<Spanish>M923A2 (M2)</Spanish>
+<French>M923A2 (M2)</French>
+<Czech>M923A2 (M2)</Czech>
+<Russian>M923A2 (M2)</Russian>
+<Polish>M923A2 (M2)</Polish>
+<Hungarian>M923A2 (M2)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_5T_TRUCK_SHORT">
+<German>LKW</German>
+<English>Truck</English>
+<Italian>Camion</Italian>
+<Spanish>Camión</Spanish>
+<French>Camion</French>
+<Czech>Náklaďák</Czech>
+<Russian>Грузовик</Russian>
+<Polish>Ciężarówka</Polish>
+<Hungarian>Teherautó</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_5TTRUCK_OPEN">
+<German>M923A2 (offen)</German>
+<English>M923A2 (open)</English>
+<Italian>M923A2 (aperto)</Italian>
+<Spanish>M923A2 (abierto)</Spanish>
+<French>M923A2 (découvert)</French>
+<Czech>M923A2 (otevřený)</Czech>
+<Russian>M923A2 (открытый)</Russian>
+<Polish>M923A2 (otwarta)</Polish>
+<Hungarian>M923A2 (nyitott)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_5TTRUCK">
+<German>M923A2</German>
+<English>M923A2</English>
+<Italian>M923A2</Italian>
+<Spanish>M923A2</Spanish>
+<French>M923A2</French>
+<Czech>M923A2</Czech>
+<Russian>M923A2</Russian>
+<Polish>M923A2</Polish>
+<Hungarian>M923A2</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_5TTRUCK_REPAIR">
+<German>M923A2 (Reparatur)</German>
+<English>M923A2 (repair)</English>
+<Italian>M923A2 (per riparazioni)</Italian>
+<Spanish>M923A2 (reparar)</Spanish>
+<French>M923A2 (dépannage)</French>
+<Czech>M923A2 (opravářský)</Czech>
+<Russian>M923A2 (ремонтный)</Russian>
+<Polish>M923A2 (techniczna)</Polish>
+<Hungarian>M923A2 (szervízkocsi)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_5TTRUCK_FUEL">
+<German>M923A2 (Treibstoff)</German>
+<English>M923A2 (fuel)</English>
+<Italian>M923A2 per rifornimento</Italian>
+<Spanish>M923A2 (combustible)</Spanish>
+<French>M923A2 carburant</French>
+<Czech>M923A2 (palivo)</Czech>
+<Russian>M923A2 (заправщик)</Russian>
+<Polish>M923A2 (cysterna)</Polish>
+<Hungarian>M923A2 (üzemanyag)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_5TTRUCK_AMMO">
+<German>M923A2 (Munition)</German>
+<English>M923A2 (Ammunition)</English>
+<Italian>M923A2 portamunizioni</Italian>
+<Spanish>M923A2 (munición)</Spanish>
+<French>M923A2 munitions</French>
+<Czech>M923A2 (muniční)</Czech>
+<Russian>M923A2 (с боеприпасами)</Russian>
+<Polish>M923A2 (amunicja)</Polish>
+<Hungarian>M923A2 (lőszerszállító)</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

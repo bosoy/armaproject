@@ -1,0 +1,194 @@
+/*%FSM<COMPILE "E:\BITools\FSM Editor Personal Edition\scriptedFSM.cfg, fnc_g_force_check">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"fnc_g_force_chec",0,250,-38.372608,-61.671597,51.627396,-11.671597,0.000000,"fnc_g_force_check"};
+item1[] = {"_",4,218,-38.837852,36.945946,51.162148,86.945908,0.000000,""};
+item2[] = {"_",2,250,-39.486488,122.567574,50.513542,172.567566,0.000000,""};
+item3[] = {"__3",4,218,71.843117,200.467896,161.843201,250.467911,0.000000,""};
+item4[] = {"__1",2,250,174.728333,161.334686,264.728333,211.334686,0.000000,""};
+item5[] = {"_",4,218,75.717064,123.403664,165.717072,173.403656,0.000000,""};
+item6[] = {"_",4,218,-36.252422,199.375626,53.747578,249.375626,10.000000,""};
+item7[] = {"__2",4,218,-136.783722,198.783768,-46.783775,248.783813,1.000000,""};
+item8[] = {"__1",4,218,-241.216202,201.378387,-151.216202,251.378372,2.000000,""};
+item9[] = {"__2",1,250,-145.216156,356.405396,-55.216125,406.405396,0.000000,""};
+item10[] = {"__3",1,250,-260.027039,342.135132,-170.027008,392.135132,0.000000,""};
+item11[] = {"__4",1,250,-44.417053,344.006561,45.582977,394.006531,0.000000,""};
+link0[] = {0,1};
+link1[] = {1,2};
+link2[] = {2,3};
+link3[] = {2,6};
+link4[] = {2,7};
+link5[] = {2,8};
+link6[] = {3,4};
+link7[] = {4,5};
+link8[] = {5,2};
+link9[] = {6,11};
+link10[] = {7,9};
+link11[] = {8,10};
+globals[] = {0.000000,0,0,0,0,640,480,1,16,6316128,1,-513.011841,513.011108,859.951721,-168.289673,925,927,1};
+window[] = {2,-1,-1,-1,-1,777,66,1026,66,3,942};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "fnc_g_force_check";
+  class States
+  {
+    /*%FSM<STATE "fnc_g_force_chec">*/
+    class fnc_g_force_chec
+    {
+      name = "fnc_g_force_chec";
+      init = /*%FSM<STATEINIT""">*/"// ace_sys_air_refuel | (c) 2008, 2009 by rocko */" \n
+       "" \n
+       "private [""_to_refuel"", ""_dock"", ""_refueler"", ""_x_dock"", ""_getVar"", ""_att"",""_timeNow""];" \n
+       "" \n
+       "_to_refuel = _this select 0;" \n
+       "_dock = _this select 1;" \n
+       "_refueler = _this select 2;" \n
+       "" \n
+       "private [""_g""];" \n
+       "_g = 0;" \n
+       "" \n
+       "_debug = false;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "_">*/
+    class _
+    {
+      name = "_";
+      init = /*%FSM<STATEINIT""">*/"private[""_v0"",""_v1""];" \n
+       "_v0 = velocity _refueler;" \n
+       "_timeNow = time;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 10.000000;
+          to="__4";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_g > 1"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__1">*/
+        class __1
+        {
+          priority = 2.000000;
+          to="__3";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"ace_sys_air_refuel_abort"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__2">*/
+        class __2
+        {
+          priority = 1.000000;
+          to="__2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(alive _refueler)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__3">*/
+        class __3
+        {
+          priority = 0.000000;
+          to="__1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(time - _timeNow) >= 0.1"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__1">*/
+    class __1
+    {
+      name = "__1";
+      init = /*%FSM<STATEINIT""">*/"private[""_a_x"",""_a_y"",""_a_z""];" \n
+       "_v1 = velocity _refueler;" \n
+       "_a_x = (( _v0 select 0 ) - ( _v1 select 0 ))/9.8;" \n
+       "_a_y = (( _v0 select 1 ) - ( _v1 select 1 ))/9.8;" \n
+       "_a_z = (( _v0 select 2 ) - ( _v1 select 2 ))/9.8;" \n
+       "" \n
+       "_g = (sqrt( ((_a_x)*(_a_x)) + ((_a_y)*(_a_y)) + ((_a_z)*(_a_z)))) * 8;" \n
+       "" \n
+       "if (_debug) then {" \n
+       "	diag_log _g;" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__2">*/
+    class __2
+    {
+      name = "__2";
+      init = /*%FSM<STATEINIT""">*/"_refueler setVariable [""ace_sys_air_refuel_high_g"", false, true];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__3">*/
+    class __3
+    {
+      name = "__3";
+      init = /*%FSM<STATEINIT""">*/"_refueler setVariable [""ace_sys_air_refuel_high_g"", false, true];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__4">*/
+    class __4
+    {
+      name = "__4";
+      init = /*%FSM<STATEINIT""">*/"_refueler setVariable [""ace_sys_air_refuel_high_g"", true, true];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="fnc_g_force_chec";
+  finalStates[] =
+  {
+    "__2",
+    "__3",
+    "__4",
+  };
+};
+/*%FSM</COMPILE>*/

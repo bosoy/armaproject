@@ -1,0 +1,3537 @@
+version=11;
+class Mission
+{
+	addOns[]=
+  {
+    "cba_main",
+    "ace_c_weapon",
+		"ca_modules_functions",
+		"ca_highcommand",
+		"CAWheeled_E_stryker",
+		"CAWheeled2_BTR90",
+		"camisc_e",
+		"takistan",
+		"cacharacters2",
+		"cacharacters_e",
+		"caweapons_e",
+		"castructures_e_mil",
+		"warfare2vehicles",
+		"cacharacters_baf",
+		"cawheeled_w_baf",
+		"catracked_w_baf",
+		"caair_baf_ch_47f",
+		"caair_baf",
+		"caweapons_baf",
+		"caui",
+		"acex_veh_stryker",
+		"ace_main",
+		"ace_c_vehicle",
+		"ace_sys_aitalk",
+		"ace_sys_crewserved",
+		"ace_sys_tracking",
+		"cacharacters_pmc",
+		"cawheeled_pmc_armoredsuv",
+		"caair_pmc_ka60",
+		"ace_sys_ruck",
+		"ace_sys_wounds"
+	};
+	addOnsAuto[]=
+  {
+    "cba_main",
+    "ace_c_weapon",
+		"cacharacters_e",
+		"cacharacters2",
+		"ca_modules_functions",
+		"ca_highcommand",
+		"CAWheeled_E_stryker",
+		"CAWheeled2_BTR90",
+		"camisc_e",
+		"caweapons_e",
+		"castructures_e_mil",
+		"takistan"
+	};
+	randomSeed=6848509;
+	class Intel
+	{
+		briefingName="Warfare BE V2.069 ACE [Chux 1.5] - Takistan";
+		briefingDescription="By Benny; ACE by Joehunk; Add'l configs by woore";
+		resistanceWest=0;
+		startWeather=0;
+		forecastWeather=0;
+		year=2010;
+		month=6;
+		day=30;
+		hour=9;
+		minute=20;
+	};
+	class Groups
+	{
+		items=63;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7184.5527,41.020695,12769.293};
+					id=0;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="WestSlot1";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7186.6816,41.058601,12769.304};
+					id=1;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="WestSlot2";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7188.6592,41.170414,12769.328};
+					id=2;
+					side="WEST";
+					vehicle="US_Delta_Force_TL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="WestSlot3";
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7190.4741,41.306908,12769.328};
+					id=3;
+					side="WEST";
+					vehicle="US_Delta_Force_TL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="WestSlot4";
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7192.1504,41.434361,12769.353};
+					id=4;
+					side="WEST";
+					vehicle="US_Soldier_Sniper_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="WestSlot5";
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7193.7334,41.539417,12769.327};
+					id=5;
+					side="WEST";
+					vehicle="US_Soldier_Sniper_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="WestSlot6";
+				};
+			};
+		};
+		class Item6
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7195.2461,41.792511,12769.352};
+					id=6;
+					side="WEST";
+					vehicle="US_Soldier_Engineer_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="WestSlot7";
+				};
+			};
+		};
+		class Item7
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7196.875,42.066162,12769.352};
+					id=7;
+					side="WEST";
+					vehicle="US_Soldier_Engineer_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="WestSlot8";
+				};
+			};
+		};
+		class Item8
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7198.3418,42.31337,12769.376};
+					id=8;
+					side="WEST";
+					vehicle="US_Soldier_Engineer_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="WestSlot9";
+				};
+			};
+		};
+		class Item9
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7199.9463,42.5979,12769.397};
+					id=9;
+					side="WEST";
+					vehicle="US_Soldier_Engineer_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="WestSlot10";
+				};
+			};
+		};
+		class Item10
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7184.5527,40.960743,12767.815};
+					id=10;
+					side="WEST";
+					vehicle="US_Soldier_SL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="WestSlot11";
+				};
+			};
+		};
+		class Item11
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7186.6816,40.998634,12767.826};
+					id=11;
+					side="WEST";
+					vehicle="US_Soldier_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="WestSlot12";
+				};
+			};
+		};
+		class Item12
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7188.6592,41.111244,12767.851};
+					id=12;
+					side="WEST";
+					vehicle="US_Soldier_Medic_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="WestSlot13";
+				};
+			};
+		};
+		class Item13
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7190.498,41.249512,12767.851};
+					id=13;
+					side="WEST";
+					vehicle="US_Soldier_Medic_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="WestSlot14";
+				};
+			};
+		};
+		class Item14
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7192.1504,41.374485,12767.875};
+					id=14;
+					side="WEST";
+					vehicle="US_Delta_Force_Medic_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="WestSlot15";
+				};
+			};
+		};
+		class Item15
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7193.7334,41.492786,12767.85};
+					id=15;
+					side="WEST";
+					vehicle="US_Delta_Force_Medic_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="WestSlot16";
+				};
+			};
+		};
+		class Item16
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7458.353,269.83954,50.020874};
+					id=18;
+					side="EAST";
+					vehicle="RUS_Soldier1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="EastSlot1";
+				};
+			};
+		};
+		class Item17
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7461.4585,269.66058,50.018921};
+					id=19;
+					side="EAST";
+					vehicle="RUS_Soldier1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="EastSlot2";
+				};
+			};
+		};
+		class Item18
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7464.6675,269.59052,50.019897};
+					id=20;
+					side="EAST";
+					vehicle="RUS_Soldier_TL";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="EastSlot3";
+				};
+			};
+		};
+		class Item19
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7467.7495,269.57672,50.041382};
+					id=21;
+					side="EAST";
+					vehicle="RUS_Soldier_TL";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="EastSlot4";
+				};
+			};
+		};
+		class Item20
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7470.7671,269.50647,50.022827};
+					id=22;
+					side="EAST";
+					vehicle="RU_Soldier_Sniper";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="EastSlot5";
+				};
+			};
+		};
+		class Item21
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7473.6812,269.41107,49.973999};
+					id=23;
+					side="EAST";
+					vehicle="RU_Soldier_Sniper";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="EastSlot6";
+				};
+			};
+		};
+		class Item22
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7476.5552,269.28915,49.973999};
+					id=24;
+					side="EAST";
+					vehicle="MVD_Soldier_TL";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="EastSlot7";
+				};
+			};
+		};
+		class Item23
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7479.5415,269.13727,49.995483};
+					id=25;
+					side="EAST";
+					vehicle="MVD_Soldier_TL";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="EastSlot8";
+				};
+			};
+		};
+		class Item24
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7482.3384,268.992,49.948608};
+					id=26;
+					side="EAST";
+					vehicle="MVD_Soldier_TL";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="EastSlot9";
+				};
+			};
+		};
+		class Item25
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7485.1333,268.84982,49.970093};
+					id=27;
+					side="EAST";
+					vehicle="MVD_Soldier_TL";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="EastSlot10";
+				};
+			};
+		};
+		class Item26
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7458.2622,269.72095,47.113647};
+					id=28;
+					side="EAST";
+					vehicle="RUS_Commander";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="EastSlot11";
+				};
+			};
+		};
+		class Item27
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7461.3677,269.52661,47.112671};
+					id=29;
+					side="EAST";
+					vehicle="RUS_Soldier3";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="EastSlot12";
+				};
+			};
+		};
+		class Item28
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7464.5767,269.46478,47.113647};
+					id=30;
+					side="EAST";
+					vehicle="RU_Soldier_Medic";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="EastSlot13";
+				};
+			};
+		};
+		class Item29
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7467.6587,269.45609,47.135132};
+					id=31;
+					side="EAST";
+					vehicle="RU_Soldier_Medic";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="EastSlot14";
+				};
+			};
+		};
+		class Item30
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7470.6763,269.38531,47.116577};
+					id=32;
+					side="EAST";
+					vehicle="RU_Soldier_Medic";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="EastSlot15";
+				};
+			};
+		};
+		class Item31
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7473.5903,269.28839,47.066772};
+					id=33;
+					side="EAST";
+					vehicle="RU_Soldier_Medic";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="EastSlot16";
+				};
+			};
+		};
+		class Item32
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6985.2676,32.497849,12555.093};
+					id=34;
+					side="LOGIC";
+					vehicle="LocationLogic";
+					leader=1;
+					skill=0.60000002;
+					text="StartingLocation0";
+				};
+			};
+		};
+		class Item33
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1765.8735,443.01462,1837.2264};
+					id=35;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="WF_Logic";
+					init="this setVariable [""totalTowns"",31];this setVariable [""Towns_RemovedXSmall"",[""FeeruzAbad"",""Nagara"",""Garmsar"",""Bastam"",""Zavarak"",""ChakChak"",""Sakhee"",""Garmarud"",""Falar"",""Chaman"",""Mulladoost"",""Nur"",""Karachinar"",""Rasman"",""Ravanay"",""Imarat"",""Shamali"",""Gospandi"",""Landay"",""Jaza"",""Timurkalay"",""Sultansafee"",""Shukurkalay"",""Jilavur"",""Khushab"",""Kakaru"",""Anar"",""HazarBagh""]];this setVariable [""Towns_RemovedSmall"",[""FeeruzAbad"",""Garmsar"",""Zavarak"",""ChakChak"",""LoyManara"",""Sakhee"",""Garmarud"",""Falar"",""Chaman"",""Mulladoost"",""Chardarakht"",""Karachinar"",""Ravanay"",""Imarat"",""Landay"",""Jaza"",""Timurkalay"",""Huzrutimam"",""Sultansafee"",""Shukurkalay"",""Jilavur"",""Khushab"",""Kakaru"",""Anar"",""HazarBagh""]];this setVariable [""Towns_RemovedMedium"",[""FeeruzAbad"",""Garmsar"",""Zavarak"",""ChakChak"",""LoyManara"",""Sakhee"",""Chaman"",""Chardarakht"",""Nur"",""Karachinar"",""Ravanay"",""Landay"",""Jaza"",""Timurkalay"",""Huzrutimam"",""Sultansafee"",""Shukurkalay"",""Jilavur"",""Kakaru"",""Anar"",""HazarBagh""]];this setVariable [""Towns_RemovedLarge"",[""Chaman"",""HazarBagh"",""Jilavur"",""Nur""]];nullReturn = [this] ExecVM ""Common\Init\Init_TownMode.sqf""";
+				};
+			};
+		};
+		class Item34
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1795.475,456.811,1837.4178};
+					id=36;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="RCoin";
+				};
+			};
+		};
+		class Item35
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1780.0337,449.4277,1837.4178};
+					id=37;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="MCoin";
+				};
+			};
+		};
+		class Item36
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1809.7582,464.76926,1837.5604};
+					id=38;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="UAVL";
+				};
+			};
+		};
+		class Item37
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1809.8734,460.7327,1850.8699};
+					id=39;
+					side="LOGIC";
+					vehicle="FunctionsManager";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item38
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1809.7386,456.76685,1863.5847};
+					id=40;
+					side="LOGIC";
+					vehicle="HighCommand";
+					leader=1;
+					skill=0.60000002;
+					text="HC";
+					init="this SetVariable [""addAllGroups"",false];";
+				};
+			};
+		};
+		class Item39
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7267.793,279.09085,577.28552};
+					id=45;
+					side="LOGIC";
+					vehicle="LocationLogic";
+					leader=1;
+					skill=0.60000002;
+					text="StartingLocation1";
+				};
+			};
+		};
+		class Item40
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={264.33078,310.00266,5576.8745};
+					id=46;
+					side="LOGIC";
+					vehicle="LocationLogic";
+					leader=1;
+					skill=0.60000002;
+					text="StartingLocation2";
+				};
+			};
+		};
+		class Item41
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12767.58,123.66901,10964.095};
+					id=47;
+					side="LOGIC";
+					vehicle="LocationLogic";
+					leader=1;
+					skill=0.60000002;
+					text="StartingLocation3";
+				};
+			};
+		};
+		class Item42
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={132.34744,494.0629,7288.2813};
+					id=48;
+					side="LOGIC";
+					vehicle="LocationLogic";
+					leader=1;
+					skill=0.60000002;
+					text="StartingLocation4";
+				};
+			};
+		};
+		class Item43
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7582.4424,321.2175,2717.4216};
+					id=49;
+					side="LOGIC";
+					vehicle="LocationLogic";
+					leader=1;
+					skill=0.60000002;
+					text="StartingLocation5";
+				};
+			};
+		};
+		class Item44
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4417.7666,112.92186,9653.3359};
+					id=50;
+					side="LOGIC";
+					vehicle="LocationLogic";
+					leader=1;
+					skill=0.60000002;
+					text="StartingLocation6";
+				};
+			};
+		};
+		class Item45
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8402.2178,200.22688,8570.9023};
+					id=51;
+					side="LOGIC";
+					vehicle="LocationLogic";
+					leader=1;
+					skill=0.60000002;
+					text="StartingLocation7";
+				};
+			};
+		};
+		class Item46
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5254.4956,312.51715,1101.0781};
+					id=52;
+					side="LOGIC";
+					vehicle="LocationLogic";
+					leader=1;
+					skill=0.60000002;
+					text="StartingLocation8";
+				};
+			};
+		};
+		class Item47
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2727.0166,215.16878,7929.6299};
+					id=53;
+					side="LOGIC";
+					vehicle="LocationLogic";
+					leader=1;
+					skill=0.60000002;
+					text="StartingLocation9";
+				};
+			};
+		};
+		class Item48
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1719.1658,309.03238,10826.558};
+					id=54;
+					side="LOGIC";
+					vehicle="LocationLogic";
+					leader=1;
+					skill=0.60000002;
+					text="StartingLocation10";
+				};
+			};
+		};
+		class Item49
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8395.9268,230.74681,10688.013};
+					id=55;
+					side="LOGIC";
+					vehicle="LocationLogic";
+					leader=1;
+					skill=0.60000002;
+					text="StartingLocation11";
+				};
+			};
+		};
+		class Item50
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2117.0427,208.48465,4358.4937};
+					id=56;
+					side="LOGIC";
+					vehicle="LocationLogic";
+					leader=1;
+					skill=0.60000002;
+					text="StartingLocation12";
+				};
+			};
+		};
+		class Item51
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4420.585,607.93793,2863.3357};
+					id=57;
+					side="LOGIC";
+					vehicle="LocationLogic";
+					leader=1;
+					skill=0.60000002;
+					text="StartingLocation13";
+				};
+			};
+		};
+		class Item52
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1252.2125,408.67441,6877.3945};
+					id=58;
+					side="LOGIC";
+					vehicle="LocationLogic";
+					leader=1;
+					skill=0.60000002;
+					text="StartingLocation14";
+				};
+			};
+		};
+		class Item53
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7309.2412,110.79861,9791.3008};
+					id=59;
+					side="LOGIC";
+					vehicle="LocationLogic";
+					leader=1;
+					skill=0.60000002;
+					text="StartingLocation15";
+				};
+			};
+		};
+		class Item54
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11529.753,212.88901,9517.2461};
+					id=60;
+					side="LOGIC";
+					vehicle="LocationLogic";
+					leader=1;
+					skill=0.60000002;
+					text="StartingLocation16";
+				};
+			};
+		};
+		class Item55
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9575.9551,420.57523,3023.0022};
+					id=249;
+					side="LOGIC";
+					vehicle="LocationLogic";
+					leader=1;
+					skill=0.60000002;
+					text="StartingLocation17";
+				};
+			};
+		};
+		class Item56
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3549.7537,366.47385,1317.5571};
+					id=250;
+					side="LOGIC";
+					vehicle="LocationLogic";
+					leader=1;
+					skill=0.60000002;
+					text="StartingLocation18";
+				};
+			};
+		};
+		class Item57
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9509.2969,155.64734,10228.081};
+					id=251;
+					side="LOGIC";
+					vehicle="LocationLogic";
+					leader=1;
+					skill=0.60000002;
+					text="StartingLocation19";
+				};
+			};
+		};
+		class Item58
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5408.0376,0.45808399,349.78986};
+					id=328;
+					side="LOGIC";
+					vehicle="ACE_AITalk_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item59
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5344.1792,0.33804491,483.58673};
+					id=330;
+					side="LOGIC";
+					vehicle="ACE_CSW_AI";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item60
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5412.5991,0.24247436,485.10822};
+					id=331;
+					side="LOGIC";
+					vehicle="ACE_ForceGroupMarkersOn_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item61
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5403.4761,0.065649539,415.16974};
+					id=329;
+					side="LOGIC";
+					vehicle="ACE_Required_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item62
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5345.6997,0.43284008,351.30939};
+					id=327;
+					side="LOGIC";
+					vehicle="ACE_RadioTalk_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=194;
+		class Item0
+		{
+			position[]={7179.1768,40.891232,12768.78};
+			id=16;
+			side="EMPTY";
+			vehicle="M1130_CV_EP1";
+			leader=1;
+			lock="LOCKED";
+			skill=0.60000002;
+			text="WestMHQ";
+		};
+		class Item1
+		{
+			position[]={7453.9741,270.05609,48.609741};
+			id=17;
+			side="EMPTY";
+			vehicle="BTR90_HQ";
+			leader=1;
+			lock="LOCKED";
+			skill=0.60000002;
+			text="EastMHQ";
+		};
+		class Item2
+		{
+			position[]={6204.3521,60.362103,11162.997};
+			azimut=300;
+			id=41;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Rasman";
+			init="nullreturn = [this,""Rasman"",[""HugeTown"",""HugeTown2""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item3
+		{
+			position[]={6099.6616,81.475502,11457.03};
+			azimut=45;
+			id=42;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="RasmanCamp1";
+			init="nullreturn = [this,Rasman]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item4
+		{
+			position[]={6114.1221,66.579498,10951.979};
+			azimut=20;
+			id=43;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="RasmanCamp3";
+			init="nullreturn = [this,Rasman]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item5
+		{
+			position[]={6464.7593,63.564827,11271.886};
+			azimut=220;
+			id=44;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="RasmanCamp2";
+			init="nullreturn = [this,Rasman]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item6
+		{
+			position[]={5203.2109,145.39999,6069.9277};
+			azimut=165;
+			id=61;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="FeeruzAbad";
+			init="nullreturn = [this,""Feruz Abad"",[""HugeTown"",""HugeTown2""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item7
+		{
+			position[]={5101.5898,174.88908,6353.4253};
+			azimut=155;
+			id=62;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="FeeruzAbadCamp1";
+			init="nullreturn = [this,FeeruzAbad]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item8
+		{
+			position[]={4983.0786,149.93127,6052.6323};
+			azimut=330;
+			id=63;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="FeeruzAbadCamp3";
+			init="nullreturn = [this,FeeruzAbad]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item9
+		{
+			position[]={5393.1235,140.17632,6261.6274};
+			azimut=155;
+			id=64;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="FeeruzAbadCamp2";
+			init="nullreturn = [this,FeeruzAbad]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item10
+		{
+			position[]={6114.2646,66.541786,10941.902};
+			azimut=190;
+			id=65;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item11
+		{
+			position[]={6101.417,66.152046,10951.195};
+			azimut=255;
+			id=66;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item12
+		{
+			position[]={6179.3442,81.858398,11534.751};
+			azimut=55;
+			id=67;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item13
+		{
+			position[]={5993.8755,83.040001,11525.895};
+			azimut=210;
+			id=68;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item14
+		{
+			position[]={6511.6714,61.38979,11314.444};
+			azimut=45;
+			id=69;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item15
+		{
+			position[]={6435.624,60.461811,11240.283};
+			azimut=125;
+			id=70;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item16
+		{
+			position[]={4973.0786,150.76207,6048.9634};
+			azimut=230;
+			id=71;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item17
+		{
+			position[]={5097.3779,176.47673,6364.1147};
+			azimut=330;
+			id=72;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item18
+		{
+			position[]={5376.145,140.13539,6289.8979};
+			azimut=70;
+			id=73;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item19
+		{
+			position[]={3144.0029,60.31218,9960.8848};
+			azimut=230;
+			id=74;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Nagara";
+			init="nullreturn = [this,""Nagara"",[""HugeTown"",""HugeTown2""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item20
+		{
+			position[]={3007.916,112.439,10223.669};
+			azimut=125;
+			id=75;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="NagaraCamp1";
+			init="nullreturn = [this,Nagara]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item21
+		{
+			position[]={3132.2454,70.962219,9765.5732};
+			azimut=320;
+			id=76;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="NagaraCamp3";
+			init="nullreturn = [this,Nagara]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item22
+		{
+			position[]={3318.0024,52.299343,10086.807};
+			azimut=150;
+			id=77;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="NagaraCamp2";
+			init="nullreturn = [this,Nagara]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item23
+		{
+			position[]={3139.4209,72.568916,9755.0107};
+			azimut=125;
+			id=78;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item24
+		{
+			position[]={2995.8179,113.25877,10230.521};
+			azimut=310;
+			id=79;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item25
+		{
+			position[]={3363.2119,51.388546,10104.71};
+			azimut=45;
+			id=80;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item26
+		{
+			position[]={10924.954,287.38004,6320.4771};
+			azimut=15;
+			id=81;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Garmsar";
+			init="nullreturn = [this,""Garmsar"",[""HugeTown"",""HugeTown2""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item27
+		{
+			position[]={10690.41,272.61554,6318.3315};
+			azimut=90;
+			id=82;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="GarmsarCamp1";
+			init="nullreturn = [this,Garmsar]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item28
+		{
+			position[]={10977.05,310.3613,6511.4189};
+			azimut=320;
+			id=83;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="GarmsarCamp3";
+			init="nullreturn = [this,Garmsar]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item29
+		{
+			position[]={10721.229,278.8804,6467.2593};
+			azimut=340;
+			id=84;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="GarmsarCamp2";
+			init="nullreturn = [this,Garmsar]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item30
+		{
+			position[]={10714.065,276.71143,6453.25};
+			azimut=245;
+			id=85;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item31
+		{
+			position[]={10685.984,272.79919,6282.6201};
+			azimut=285;
+			id=86;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item32
+		{
+			position[]={5942.7026,104.49103,8970.0273};
+			azimut=165;
+			id=87;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Bastam";
+			init="nullreturn = [this,""Bastam"",[""LargeTown"",""LargeTown2""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item33
+		{
+			position[]={5672.1484,78.279999,9186.9678};
+			azimut=90;
+			id=88;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="BastamCamp1";
+			init="nullreturn = [this,Bastam]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item34
+		{
+			position[]={6267.9468,104.91795,8938.8965};
+			azimut=95;
+			id=89;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="BastamCamp3";
+			init="nullreturn = [this,Bastam]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item35
+		{
+			position[]={5754.7998,93.955635,8781.2393};
+			azimut=340;
+			id=90;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="BastamCamp2";
+			init="nullreturn = [this,Bastam]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item36
+		{
+			position[]={6355.7417,105.2673,8954.708};
+			azimut=80;
+			id=91;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item37
+		{
+			position[]={5675.3452,78.279999,9199.5771};
+			azimut=310;
+			id=92;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item38
+		{
+			position[]={5737.7227,96.416725,8757.7598};
+			azimut=195;
+			id=93;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item39
+		{
+			position[]={5672.3071,78.279999,9175.5596};
+			azimut=210;
+			id=94;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item40
+		{
+			position[]={9813.0723,116.71713,11495.391};
+			azimut=120;
+			id=95;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Zavarak";
+			init="nullreturn = [this,""Zavarak"",[""LargeTown"",""LargeTown2""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item41
+		{
+			position[]={9596.3916,102.47839,11740.176};
+			azimut=320;
+			id=96;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="ZavarakCamp1";
+			init="nullreturn = [this,Zavarak]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item42
+		{
+			position[]={10003.844,121.28088,11410.772};
+			azimut=215;
+			id=97;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="ZavarakCamp3";
+			init="nullreturn = [this,Zavarak]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item43
+		{
+			position[]={9808.1758,126.3987,11193.47};
+			azimut=20;
+			id=98;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="ZavarakCamp2";
+			init="nullreturn = [this,Zavarak]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item44
+		{
+			position[]={10064.305,124.75961,11375.554};
+			azimut=115;
+			id=99;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item45
+		{
+			position[]={9806.459,126.99588,11180.77};
+			azimut=195;
+			id=100;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item46
+		{
+			position[]={4392.7866,346.20001,767.80762};
+			azimut=105;
+			id=101;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="ChakChak";
+			init="nullreturn = [this,""Chak Chak"",[""LargeTown"",""LargeTown2""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item47
+		{
+			position[]={4352.2407,394.9747,1054.6903};
+			azimut=90;
+			id=102;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="ChakChakCamp1";
+			init="nullreturn = [this,ChakChak]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item48
+		{
+			position[]={4653.2246,317.59763,713.68787};
+			azimut=220;
+			id=103;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="ChakChakCamp3";
+			init="nullreturn = [this,ChakChak]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item49
+		{
+			position[]={4138.1045,324.78494,517.83282};
+			azimut=350;
+			id=104;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="ChakChakCamp2";
+			init="nullreturn = [this,ChakChak]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item50
+		{
+			position[]={4743.0171,317.12363,763.05621};
+			azimut=65;
+			id=105;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item51
+		{
+			position[]={4106.5005,325.82333,514.19409};
+			azimut=285;
+			id=106;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item52
+		{
+			position[]={4343.5439,395.29874,1087.8391};
+			azimut=340;
+			id=107;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item53
+		{
+			position[]={8532.2236,308.60532,2467.1226};
+			azimut=265;
+			id=108;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="LoyManara";
+			init="nullreturn = [this,""Loy Manara"",[""HugeTown"",""HugeTown2""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item54
+		{
+			position[]={8687.75,301.90201,2288.1995};
+			azimut=310;
+			id=109;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="LoyManaraCamp1";
+			init="nullreturn = [this,LoyManara]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item55
+		{
+			position[]={8361.0771,296.59439,2261.9631};
+			azimut=265;
+			id=110;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="LoyManaraCamp3";
+			init="nullreturn = [this,LoyManara]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item56
+		{
+			position[]={8768.4219,333.50424,2580.376};
+			azimut=155;
+			id=111;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="LoyManaraCamp2";
+			init="nullreturn = [this,LoyManara]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item57
+		{
+			position[]={8330.8789,296.54047,2239.5054};
+			azimut=295;
+			id=112;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item58
+		{
+			position[]={8700.7549,301.2019,2268.2966};
+			azimut=150;
+			id=113;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item59
+		{
+			position[]={8780.6377,334.73077,2581.5637};
+			azimut=70;
+			id=114;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item60
+		{
+			position[]={8401.6563,296.77884,2235.5786};
+			azimut=215;
+			id=115;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item61
+		{
+			position[]={8707.25,302.75781,2279.9084};
+			azimut=65;
+			id=116;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item62
+		{
+			position[]={3673.3813,232.36745,4347.6274};
+			azimut=135;
+			id=117;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Sakhee";
+			init="nullreturn = [this,""Sakhe"",[""LargeTown"",""LargeTown2""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item63
+		{
+			position[]={3871.2075,226.60645,4364.4419};
+			azimut=350;
+			id=118;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="SakheeCamp1";
+			init="nullreturn = [this,Sakhee]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item64
+		{
+			position[]={3675.4055,220.81696,4596.4097};
+			azimut=70;
+			id=119;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="SakheeCamp3";
+			init="nullreturn = [this,Sakhee]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item65
+		{
+			position[]={3520.8394,235.19487,4180.7109};
+			id=120;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="SakheeCamp2";
+			init="nullreturn = [this,Sakhee]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item66
+		{
+			position[]={3650.6326,220.24666,4632.812};
+			azimut=350;
+			id=121;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item67
+		{
+			position[]={3512.0935,236.56686,4152.417};
+			azimut=140;
+			id=122;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item68
+		{
+			position[]={3490.9734,236.9017,4146.2695};
+			azimut=225;
+			id=123;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item69
+		{
+			position[]={9146.3271,207.14778,6699.1484};
+			id=124;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Garmarud";
+			init="nullreturn = [this,""Garmarud"",[""MediumTown1Tank"",""MediumTown2Tank""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item70
+		{
+			position[]={9331.29,221.93893,6614.1885};
+			azimut=280;
+			id=125;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="GarmarudCamp1";
+			init="nullreturn = [this,Garmarud]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item71
+		{
+			position[]={8954.7002,202.1465,6897.1104};
+			azimut=145;
+			id=126;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="GarmarudCamp3";
+			init="nullreturn = [this,Garmarud]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item72
+		{
+			position[]={9111.0635,209.90384,6480.7891};
+			azimut=270;
+			id=127;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="GarmarudCamp2";
+			init="nullreturn = [this,Garmarud]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item73
+		{
+			position[]={8951.0469,202.07858,6910.356};
+			azimut=350;
+			id=128;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item74
+		{
+			position[]={9349.25,226.13005,6580.2354};
+			azimut=95;
+			id=129;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item75
+		{
+			position[]={9120.2207,209.50665,6471.2866};
+			azimut=165;
+			id=130;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item76
+		{
+			position[]={5961.062,122.29,7356.8315};
+			azimut=195;
+			id=131;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Falar";
+			init="nullreturn = [this,""Falar"",[""MediumTown1Tank"",""MediumTown2Tank""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item77
+		{
+			position[]={6220.5308,132.33542,7310.6274};
+			azimut=255;
+			id=132;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="FalarCamp1";
+			init="nullreturn = [this,Falar]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item78
+		{
+			position[]={5993.4927,112.16015,7645.1582};
+			azimut=75;
+			id=133;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="FalarCamp3";
+			init="nullreturn = [this,Falar]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item79
+		{
+			position[]={5931.5771,128.3345,7123.0547};
+			azimut=330;
+			id=134;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="FalarCamp2";
+			init="nullreturn = [this,Falar]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item80
+		{
+			position[]={5979.7993,111.42103,7656.2314};
+			azimut=350;
+			id=135;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item81
+		{
+			position[]={6239.6738,133.65527,7313.1074};
+			azimut=65;
+			id=136;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item82
+		{
+			position[]={5958.1011,132.29706,7075.5068};
+			azimut=165;
+			id=137;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item83
+		{
+			position[]={513.33392,248.22556,2805.6206};
+			azimut=170;
+			id=138;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Chaman";
+			init="nullreturn = [this,""Chaman"",[""MediumTown1Tank"",""MediumTown2Tank""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item84
+		{
+			position[]={731.53613,236.9837,2949.592};
+			azimut=40;
+			id=139;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="ChamanCamp1";
+			init="nullreturn = [this,Chaman]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item85
+		{
+			position[]={755.81335,236.67316,2981.4436};
+			azimut=35;
+			id=140;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item86
+		{
+			position[]={2094.7036,270.07294,7657.418};
+			azimut=170;
+			id=141;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Mulladoost";
+			init="nullreturn = [this,""Mulladost"",[""MediumTown"",""MediumTown2""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item87
+		{
+			position[]={2335.3203,242.80579,7746.9653};
+			azimut=170;
+			id=142;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="MulladoostCamp1";
+			init="nullreturn = [this,Mulladoost]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item88
+		{
+			position[]={1896.5824,330.16251,7850.9316};
+			azimut=120;
+			id=143;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="MulladoostCamp2";
+			init="nullreturn = [this,Mulladoost]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item89
+		{
+			position[]={2340.365,241.57968,7777.832};
+			azimut=75;
+			id=144;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item90
+		{
+			position[]={1944.5396,306.40442,7510.6973};
+			azimut=35;
+			id=145;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="MulladoostCamp3";
+			init="nullreturn = [this,Mulladoost]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item91
+		{
+			position[]={1936.0923,309.35651,7499.9858};
+			azimut=215;
+			id=146;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item92
+		{
+			position[]={1858.3547,338.72974,7867.8936};
+			azimut=280;
+			id=147;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item93
+		{
+			position[]={10274.896,354.29211,2332.1287};
+			azimut=75;
+			id=148;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Chardarakht";
+			init="nullreturn = [this,""Chardarakht"",[""MediumTown"",""MediumTown2""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item94
+		{
+			position[]={10525.5,366.78253,2357.4006};
+			azimut=170;
+			id=149;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="ChardarakhtCamp1";
+			init="nullreturn = [this,Chardarakht]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item95
+		{
+			position[]={10527.999,366.81122,2385.1772};
+			azimut=85;
+			id=150;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item96
+		{
+			position[]={10034.447,344.45612,2312.9082};
+			azimut=5;
+			id=151;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="ChardarakhtCamp2";
+			init="nullreturn = [this,Chardarakht]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item97
+		{
+			position[]={10008.987,343.69217,2315.573};
+			azimut=285;
+			id=152;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item98
+		{
+			position[]={1784.1737,145.85312,11932.631};
+			azimut=45;
+			id=153;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Nur";
+			init="nullreturn = [this,""Nur"",[""MediumTown"",""MediumTown2""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item99
+		{
+			position[]={1959.3477,144.33141,11749.457};
+			azimut=210;
+			id=154;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="NurCamp1";
+			init="nullreturn = [this,Nur]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item100
+		{
+			position[]={2003.7705,144.08835,11754.507};
+			azimut=110;
+			id=155;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item101
+		{
+			position[]={1606.9418,193.58101,11686.269};
+			azimut=205;
+			id=156;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="NurCamp2";
+			init="nullreturn = [this,Nur]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item102
+		{
+			position[]={1616.0708,194.38556,11650.092};
+			azimut=100;
+			id=157;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item103
+		{
+			position[]={12295.58,149.42178,10398.4};
+			azimut=185;
+			id=158;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Karachinar";
+			init="nullreturn = [this,""Karachinar"",[""SmallTown"",""SmallTown2""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item104
+		{
+			position[]={12454.914,171.1859,10162.416};
+			azimut=350;
+			id=159;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="KarachinarCamp1";
+			init="nullreturn = [this,Karachinar]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item105
+		{
+			position[]={12245.093,132.58435,10664.881};
+			azimut=80;
+			id=160;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="KarachinarCamp2";
+			init="nullreturn = [this,Karachinar]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item106
+		{
+			position[]={12216.064,131.6449,10719.615};
+			azimut=25;
+			id=161;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item107
+		{
+			position[]={12198.967,134.06403,10703.333};
+			azimut=280;
+			id=162;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item108
+		{
+			position[]={11483.688,272.78494,8302.3027};
+			azimut=115;
+			id=163;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Ravanay";
+			init="nullreturn = [this,""Ravanay"",[""SmallTown"",""SmallTown2""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item109
+		{
+			position[]={11566.186,261.08252,8574.7715};
+			azimut=100;
+			id=164;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="RavanayCamp1";
+			init="nullreturn = [this,Ravanay]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item110
+		{
+			position[]={11599.957,260.52374,8592.8125};
+			azimut=350;
+			id=165;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item111
+		{
+			position[]={8218.5693,175.32458,7783.1792};
+			azimut=125;
+			id=166;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Imarat";
+			init="nullreturn = [this,""Imarat"",[""SmallTown"",""SmallTown2""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item112
+		{
+			position[]={8369.502,177.35968,7621.7749};
+			azimut=225;
+			id=167;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="ImaratCamp1";
+			init="nullreturn = [this,Imarat]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item113
+		{
+			position[]={7976.188,157.27574,7973.9546};
+			azimut=20;
+			id=168;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="ImaratCamp2";
+			init="nullreturn = [this,Imarat]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item114
+		{
+			position[]={7964.5347,157.20473,7977.6401};
+			azimut=275;
+			id=169;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item115
+		{
+			position[]={8378.1729,178.49944,7612.3472};
+			azimut=125;
+			id=170;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item116
+		{
+			position[]={8396.0918,219.21194,8081.7041};
+			azimut=120;
+			id=171;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="ImaratCamp3";
+			init="nullreturn = [this,Imarat]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item117
+		{
+			position[]={8405.1982,220.57886,8095.3115};
+			azimut=25;
+			id=172;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item118
+		{
+			position[]={4118.5356,25.132339,11737.753};
+			azimut=260;
+			id=173;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Shamali";
+			init="nullreturn = [this,""Shamali"",[""SmallTown"",""SmallTown2""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item119
+		{
+			position[]={4176.1758,30.93034,11450.074};
+			azimut=345;
+			id=174;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="ShamaliCamp1";
+			init="nullreturn = [this,Shamali]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item120
+		{
+			position[]={4398.5068,54.324444,11880.354};
+			azimut=245;
+			id=175;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="ShamaliCamp2";
+			init="nullreturn = [this,Shamali]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item121
+		{
+			position[]={4412.9907,55.337719,11878.207};
+			azimut=45;
+			id=176;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item122
+		{
+			position[]={4142.502,30.719984,11451.083};
+			azimut=160;
+			id=177;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item123
+		{
+			position[]={3649.739,152.40453,8594.1328};
+			azimut=195;
+			id=178;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Gospandi";
+			init="nullreturn = [this,""Gospandi"",[""SmallTown"",""SmallTown2""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item124
+		{
+			position[]={3715.5862,140.75902,8896.6768};
+			azimut=110;
+			id=179;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="GospandiCamp1";
+			init="nullreturn = [this,Gospandi]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item125
+		{
+			position[]={3474.74,161.61252,8355.8301};
+			azimut=305;
+			id=180;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="GospandiCamp2";
+			init="nullreturn = [this,Gospandi]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item126
+		{
+			position[]={3469.8733,161.78041,8348.1436};
+			azimut=215;
+			id=181;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item127
+		{
+			position[]={3756.6775,139.59229,8908.3672};
+			azimut=25;
+			id=182;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item128
+		{
+			position[]={3701.9976,139.55022,8919.0068};
+			azimut=350;
+			id=183;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item129
+		{
+			position[]={2072.9368,361.47369,304.03827};
+			azimut=115;
+			id=184;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Landay";
+			init="nullreturn = [this,""Landay"",[""SmallTown"",""SmallTown2""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item130
+		{
+			position[]={2226.8525,365.60983,479.28333};
+			azimut=150;
+			id=185;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="LandayCamp1";
+			init="nullreturn = [this,Landay]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item131
+		{
+			position[]={2242.4797,366.85965,492.75961};
+			azimut=40;
+			id=186;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item132
+		{
+			position[]={9230.7939,341.00879,1831.8031};
+			azimut=130;
+			id=187;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Jaza";
+			init="nullreturn = [this,""Jaza"",[""SmallTown"",""SmallTown2""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item133
+		{
+			position[]={9128.4209,319.94482,1996.3755};
+			azimut=140;
+			id=188;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="JazaCamp1";
+			init="nullreturn = [this,Jaza]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item134
+		{
+			position[]={9133.9814,316.30527,2048.075};
+			azimut=40;
+			id=189;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item135
+		{
+			position[]={9119.8047,321.59146,1973.9083};
+			azimut=315;
+			id=190;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item136
+		{
+			position[]={8915.2871,265.43405,5304.3066};
+			azimut=230;
+			id=191;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Timurkalay";
+			init="nullreturn = [this,""Timurkalay"",[""SmallTown"",""SmallTown2""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item137
+		{
+			position[]={8762.5557,272.13724,5185.5225};
+			azimut=320;
+			id=192;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="TimurkalayCamp1";
+			init="nullreturn = [this,Timurkalay]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item138
+		{
+			position[]={8707.0908,316.5889,5427.0396};
+			azimut=345;
+			id=193;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="TimurkalayCamp2";
+			init="nullreturn = [this,Timurkalay]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item139
+		{
+			position[]={8696.7236,318.93228,5425.1489};
+			azimut=255;
+			id=194;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item140
+		{
+			position[]={8757.0313,272.51569,5175.1274};
+			azimut=220;
+			id=195;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item141
+		{
+			position[]={8968.4092,246.02066,5627.8677};
+			azimut=185;
+			id=196;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="TimurkalayCamp3";
+			init="nullreturn = [this,Timurkalay]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item142
+		{
+			position[]={8966.6367,244.81989,5639.979};
+			azimut=25;
+			id=197;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item143
+		{
+			position[]={6133.3257,290.16391,1143.3959};
+			azimut=175;
+			id=198;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Huzrutimam";
+			init="nullreturn = [this,""Huzrutimam"",[""MediumTown"",""MediumTown2""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item144
+		{
+			position[]={6372.9531,289.8746,1191.1912};
+			azimut=170;
+			id=199;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="HuzrutimamCamp1";
+			init="nullreturn = [this,Huzrutimam]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item145
+		{
+			position[]={5934.6738,306.40067,1329.6317};
+			azimut=70;
+			id=200;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="HuzrutimamCamp2";
+			init="nullreturn = [this,Huzrutimam]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item146
+		{
+			position[]={6382.3867,290.44589,1193.6033};
+			azimut=75;
+			id=201;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item147
+		{
+			position[]={5856.3706,310.78943,960.98932};
+			azimut=35;
+			id=202;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="HuzrutimamCamp3";
+			init="nullreturn = [this,Huzrutimam]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item148
+		{
+			position[]={5873.2466,311.26309,941.25006};
+			azimut=235;
+			id=203;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item149
+		{
+			position[]={5928.1909,306.37775,1337.5084};
+			azimut=325;
+			id=204;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item150
+		{
+			position[]={6483.7319,350.67819,2080.071};
+			azimut=5;
+			id=205;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Sultansafee";
+			init="nullreturn = [this,""Sultansafee"",[""SmallTown"",""SmallTown2""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item151
+		{
+			position[]={6738.8872,314.88907,1967.026};
+			azimut=325;
+			id=206;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="SultansafeeCamp1";
+			init="nullreturn = [this,Sultansafee]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item152
+		{
+			position[]={6338.0283,350.02536,1925.2587};
+			azimut=305;
+			id=207;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="SultansafeeCamp2";
+			init="nullreturn = [this,Sultansafee]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item153
+		{
+			position[]={6331.7427,350.12921,1912.4364};
+			azimut=210;
+			id=208;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item154
+		{
+			position[]={6753.4614,314.42722,1956.842};
+			azimut=160;
+			id=209;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item155
+		{
+			position[]={1480.4498,215.4565,3513.3572};
+			azimut=255;
+			id=210;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Shukurkalay";
+			init="nullreturn = [this,""Shukurkalay"",[""MediumTown1Tank"",""MediumTown2Tank""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item156
+		{
+			position[]={1277.7783,219.39999,3351.137};
+			azimut=305;
+			id=211;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="ShukurkalayCamp1";
+			init="nullreturn = [this,Shukurkalay]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item157
+		{
+			position[]={1284.0447,259.05914,3752.2646};
+			azimut=55;
+			id=212;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="ShukurkalayCamp2";
+			init="nullreturn = [this,Shukurkalay]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item158
+		{
+			position[]={1280.2725,260.56927,3761.8301};
+			azimut=320;
+			id=213;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item159
+		{
+			position[]={1252.2217,218.94066,3370.0901};
+			azimut=220;
+			id=214;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item160
+		{
+			position[]={1651.2396,211.19431,3680.8469};
+			azimut=140;
+			id=215;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="ShukurkalayCamp3";
+			init="nullreturn = [this,Shukurkalay]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item161
+		{
+			position[]={1662.2144,211.11031,3688.8003};
+			azimut=35;
+			id=216;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item162
+		{
+			position[]={2528.926,193.74281,5071.126};
+			azimut=5;
+			id=217;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Jilavur";
+			init="nullreturn = [this,""Jilavur"",[""SmallTown"",""SmallTown2""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item163
+		{
+			position[]={2739.9419,193.38583,5190.6699};
+			azimut=140;
+			id=218;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="JilavurCamp1";
+			init="nullreturn = [this,Jilavur]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item164
+		{
+			position[]={2427.084,197.12701,4911.5132};
+			azimut=295;
+			id=219;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="JilavurCamp2";
+			init="nullreturn = [this,Jilavur]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item165
+		{
+			position[]={2399.8088,196.34361,4907.1821};
+			azimut=195;
+			id=220;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item166
+		{
+			position[]={2746.4746,192.46425,5200.3623};
+			azimut=45;
+			id=221;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item167
+		{
+			position[]={2395.4592,197.59595,5212.4829};
+			azimut=55;
+			id=222;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="JilavurCamp3";
+			init="nullreturn = [this,Jilavur]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item168
+		{
+			position[]={2389.4949,197.87984,5222.2007};
+			azimut=310;
+			id=223;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item169
+		{
+			position[]={1484.3348,235.64685,5745.5068};
+			azimut=300;
+			id=224;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Khushab";
+			init="nullreturn = [this,""Khushab"",[""SmallTown"",""SmallTown2""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item170
+		{
+			position[]={1764.7201,229.24213,5654.5176};
+			azimut=180;
+			id=225;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="KhushabCamp1";
+			init="nullreturn = [this,Khushab]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item171
+		{
+			position[]={1443.0812,256.82193,5491.835};
+			azimut=320;
+			id=226;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="KhushabCamp2";
+			init="nullreturn = [this,Khushab]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item172
+		{
+			position[]={1457.4434,256.88202,5469.6206};
+			azimut=235;
+			id=227;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item173
+		{
+			position[]={1787.821,227.18857,5657.0283};
+			azimut=110;
+			id=228;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item174
+		{
+			position[]={1481.6956,270.0238,6041.2788};
+			azimut=80;
+			id=229;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="KhushabCamp3";
+			init="nullreturn = [this,Khushab]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item175
+		{
+			position[]={1475.7312,272.26437,6050.9966};
+			azimut=340;
+			id=230;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item176
+		{
+			position[]={5318.4399,236.36421,4772.0347};
+			azimut=85;
+			id=231;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Kakaru";
+			init="nullreturn = [this,""Kakaru"",[""MediumTown1Tank"",""MediumTown2Tank""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item177
+		{
+			position[]={5294.373,218.29132,5037.7827};
+			azimut=55;
+			id=232;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="KakaruCamp1";
+			init="nullreturn = [this,Kakaru]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item178
+		{
+			position[]={5360.3228,259.27124,4533.6655};
+			azimut=255;
+			id=233;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="KakaruCamp2";
+			init="nullreturn = [this,Kakaru]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item179
+		{
+			position[]={5294.6597,218.51526,5054.6743};
+			azimut=305;
+			id=234;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item180
+		{
+			position[]={5361.6069,261.43469,4520.7988};
+			azimut=170;
+			id=235;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item181
+		{
+			position[]={6139.333,302.45493,5672.311};
+			azimut=105;
+			id=236;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="Anar";
+			init="nullreturn = [this,""Anar"",[""MediumTown"",""MediumTown2""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item182
+		{
+			position[]={6273.7056,323.08496,5967.4497};
+			azimut=160;
+			id=237;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="AnarCamp1";
+			init="nullreturn = [this,Anar]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item183
+		{
+			position[]={5905.2109,270.68103,5858.9316};
+			azimut=120;
+			id=238;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="AnarCamp2";
+			init="nullreturn = [this,Anar]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item184
+		{
+			position[]={6281.4136,324.33044,5969.1294};
+			azimut=70;
+			id=239;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item185
+		{
+			position[]={6137.6128,311.6088,5367.4951};
+			azimut=325;
+			id=240;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="AnarCamp3";
+			init="nullreturn = [this,Anar]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item186
+		{
+			position[]={6136.3682,311.82678,5354.647};
+			azimut=160;
+			id=241;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item187
+		{
+			position[]={5866.9834,261.05396,5875.8936};
+			azimut=280;
+			id=242;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item188
+		{
+			position[]={5890.2798,269.74561,5833.1821};
+			azimut=215;
+			id=243;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item189
+		{
+			position[]={11925.369,373.46564,2641.8398};
+			azimut=350;
+			id=244;
+			side="EMPTY";
+			vehicle="Land_fortified_nest_big_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="HazarBagh";
+			init="nullreturn = [this,""HazarBagh"",[""SmallTown"",""SmallTown2""]]ExecVM ""Server\Config\Config_Town.sqf""";
+		};
+		class Item190
+		{
+			position[]={11646.636,380.98077,2547.1321};
+			azimut=345;
+			id=245;
+			side="EMPTY";
+			vehicle="Land_Fort_Watchtower_EP1";
+			leader=1;
+			skill=0.60000002;
+			text="HazarBaghCamp1";
+			init="nullreturn = [this,HazarBagh]ExecVM ""Common\Init\Init_Camp.sqf""";
+		};
+		class Item191
+		{
+			position[]={11636.267,381.71423,2542.9509};
+			azimut=245;
+			id=246;
+			side="EMPTY";
+			vehicle="WarfareBMGNest_PK_TK_GUE_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item192
+		{
+			position[]={8077.5151,296.04001,1726.7372};
+			azimut=150;
+			id=247;
+			side="EMPTY";
+			vehicle="Land_Mil_hangar_EP1";
+			leader=1;
+			skill=0.60000002;
+			init="nullreturn = [this] ExecVM ""Common\Init\Init_Airfield.sqf""";
+		};
+		class Item193
+		{
+			position[]={5688.3335,83.123116,11177.587};
+			azimut=135;
+			id=248;
+			side="EMPTY";
+			vehicle="Land_Mil_hangar_EP1";
+			leader=1;
+			skill=0.60000002;
+			init="nullreturn = [this] ExecVM ""Common\Init\Init_Airfield.sqf""";
+		};
+	};
+	class Markers
+	{
+		items=4;
+		class Item0
+		{
+			position[]={12158.335,212.3174,12683.626};
+			name="WestTempRespawnMarker";
+			type="Empty";
+		};
+		class Item1
+		{
+			position[]={8656.2471,430.68979,486.49939};
+			name="EastTempRespawnMarker";
+			type="Empty";
+		};
+		class Item2
+		{
+			position[]={8077.5386,296.12076,1728.1144};
+			name="a1";
+			type="mil_triangle";
+			colorName="ColorBlue";
+		};
+		class Item3
+		{
+			position[]={5688.3569,83.125282,11178.964};
+			name="a2";
+			type="mil_triangle";
+			colorName="ColorBlue";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+  {
+    "cba_main",
+    "ace_c_weapon",
+		"takistan"
+	};
+	addOnsAuto[]=
+  {
+    "cba_main",
+    "ace_c_weapon",
+		"takistan"
+	};
+	randomSeed=12595034;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.40000001;
+		year=2009;
+		day=28;
+		hour=16;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+  {
+    "cba_main",
+    "ace_c_weapon",
+		"takistan"
+	};
+	addOnsAuto[]=
+  {
+    "cba_main",
+    "ace_c_weapon",
+		"takistan"
+	};
+	randomSeed=7691969;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.40000001;
+		year=2009;
+		day=28;
+		hour=16;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+  {
+    "cba_main",
+    "ace_c_weapon",
+		"takistan"
+	};
+	addOnsAuto[]=
+  {
+    "cba_main",
+    "ace_c_weapon",
+		"takistan"
+	};
+	randomSeed=14932386;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.40000001;
+		year=2009;
+		day=28;
+		hour=16;
+		minute=20;
+	};
+};
+
+

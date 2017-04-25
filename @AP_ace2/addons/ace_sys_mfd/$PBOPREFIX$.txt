@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_mfd
+Pbo Type is: Arma Addon
+Sha: '53DE2AB0CA65F305BF9AB2B4936BEF562749C69E'
+//////</HEADER>//////

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="RHS">
+<Package name="DECALS">
+<Container name="STR">
+<Key ID="STR_RHS_DECALS_CLASS_NAME">
+<German>Objekte (Abzeichen)</German>
+<English>Objects (Decals)</English>
+<Italian>Objects (Decals)</Italian>
+<Spanish>Objects (Decals)</Spanish>
+<French>Objects (Decals)</French>
+<Czech>Objekty (Dekorace)</Czech>
+<Russian>Объекты (декали)</Russian>
+<Polish>Obiekty (dekoracja)</Polish>
+<Hungarian>Objects (Decals)</Hungarian>
+</Key>
+<Key ID="STR_RHS_DECALS_NECK_BANNER">
+<German>Namensschild</German>
+<English>Neck banner</English>
+<Italian>Neck banner</Italian>
+<Spanish>Neck banner</Spanish>
+<French>Neck banner</French>
+<Czech>Jmenovka</Czech>
+<Russian>Объявление на шею</Russian>
+<Polish>Tabliczka z nazwiskiem</Polish>
+<Hungarian>Neck banner</Hungarian>
+</Key>
+<Key ID="STR_RHS_DECALS_WALLFLAG90x135">
+<German>Fahne</German>
+<English>Wall flag</English>
+<Italian>Wall flag</Italian>
+<Spanish>Wall flag</Spanish>
+<French>Wall flag</French>
+<Czech>Nástěnná vlajka</Czech>
+<Russian>Настенный флаг</Russian>
+<Polish>Flaga naścienna</Polish>
+<Hungarian>Wall flag</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

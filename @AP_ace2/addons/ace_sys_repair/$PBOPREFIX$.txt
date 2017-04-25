@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_repair
+Pbo Type is: Arma Addon
+Sha: 'F45FB60834CB52816B86BE5F921C63EB519807C5'
+//////</HEADER>//////

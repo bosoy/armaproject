@@ -1,0 +1,35 @@
+_posx = _this select 0
+_posy = _this select 1
+
+
+_light1 = "#lightpoint" createvehicle [0,0,0]
+_light1 setpos [ _posx, _posy, 10]
+_light1 setLightBrightness 80.0
+_light1 setLightAmbient[1.0, 1.0, 1.0]
+_light1 setLightColor[1.0, 1.0, 1.0]
+
+_lightg1 = "#lightpoint" createvehicle [0,0,0]
+_lightg1 setpos [ _posx, _posy, 10]
+_lightg1 setLightBrightness 30.0
+_lightg1 setLightAmbient[0.9, 0.6, 0.5]
+_lightg1 setLightColor[0.9, 0.6, 0.5]
+
+#var
+_cnt = 0
+_scl = 1.0
+_sclg = 1.0
+#loop
+?(_cnt == 100) : deletevehicle _light1
+?(_cnt == 1000) : deletevehicle _lightg1; goto "loopend"
+
+_light1 setLightBrightness (80.0 * _scl)
+_lightg1 setLightBrightness (30.0 * _sclg)
+
+_scl = _scl * 0.8
+_sclg = _sclg * 0.992
+_cnt = _cnt + 1
+~0.1
+goto "loop"
+#loopend
+
+exit

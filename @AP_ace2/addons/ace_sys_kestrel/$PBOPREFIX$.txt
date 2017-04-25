@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_kestrel
+Pbo Type is: Arma Addon
+Sha: 'E71DD2413A2FC8B5D969D6305CA60BEF35F1856A'
+//////</HEADER>//////

@@ -1,0 +1,153 @@
+/*%FSM<COMPILE "D:\ArmA2\FSM Editor Personal Edition\scriptedFSM.cfg, queryhandler">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Init",0,250,67.883751,-127.533096,157.883820,-77.533165,0.000000,"Init"};
+item1[] = {"Update_Query",2,250,67.881363,24.571560,157.881256,74.571510,0.000000,"Update" \n "Query"};
+item2[] = {"End",1,250,-189.891251,153.378479,-99.891129,203.378586,0.000000,"End"};
+item3[] = {"Loop",4,218,68.212364,-51.053558,158.212402,-1.053517,0.000000,"Loop"};
+item4[] = {"Gameover",4,218,-62.855103,24.549839,27.144907,74.549820,0.000000,"Gameover"};
+item5[] = {"End_Check",2,4346,-191.718842,24.369755,-101.718727,74.369736,0.000000,"End Check"};
+item6[] = {"_",8,218,-162.287018,100.867683,-128.674744,124.929321,0.000000,""};
+link0[] = {0,3};
+link1[] = {1,3};
+link2[] = {1,4};
+link3[] = {3,1};
+link4[] = {4,5};
+link5[] = {5,6};
+link6[] = {6,2};
+globals[] = {0.000000,0,0,0,0,640,480,1,21,6316128,1,-421.780701,421.779755,226.237854,-325.234192,748,514,1};
+window[] = {0,-1,-1,-1,-1,772,203,1463,138,1,766};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "queryhandler";
+  class States
+  {
+    /*%FSM<STATE "Init">*/
+    class Init
+    {
+      name = "Init";
+      init = /*%FSM<STATEINIT""">*/"_lastUpdate = time;" \n
+       "" \n
+       "_mysql_query = [];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Loop">*/
+        class Loop
+        {
+          priority = 0.000000;
+          to="Update_Query";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _lastUpdate > 0.3 && !gameOver"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Update_Query">*/
+    class Update_Query
+    {
+      name = "Update_Query";
+      init = /*%FSM<STATEINIT""">*/"_cobjects = WF_Logic getVariable ""WF_MYSQL_CLIENT"";" \n
+       "_sobjects = WF_Logic getVariable ""WF_MYSQL_SERVER"";" \n
+       "" \n
+       "_query = """";" \n
+       "" \n
+       "if (count _cobjects > 0) then {" \n
+       "	_query = _cobjects select 0;" \n
+       "	_cobjects set [0,""nil""];" \n
+       "	_cobjects = _cobjects - [""nil""];" \n
+       "	WF_Logic setVariable [""WF_MYSQL_CLIENT"",_cobjects,true];" \n
+       "};" \n
+       "" \n
+       "if (count _sobjects > 0 && _query == """") then {" \n
+       "	_query = _sobjects select 0;" \n
+       "	_sobjects set [0,""nil""];" \n
+       "	_sobjects = _sobjects - [""nil""];" \n
+       "	WF_Logic setVariable [""WF_MYSQL_SERVER"",_sobjects];" \n
+       "};" \n
+       "" \n
+       "if (_query != """") then {copyToClipboard _query};" \n
+       "" \n
+       "_lastUpdate = time;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Gameover">*/
+        class Gameover
+        {
+          priority = 0.000000;
+          to="End_Check";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"gameOver"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Loop">*/
+        class Loop
+        {
+          priority = 0.000000;
+          to="Update_Query";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _lastUpdate > 0.3 && !gameOver"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End">*/
+    class End
+    {
+      name = "End";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End_Check">*/
+    class End_Check
+    {
+      name = "End_Check";
+      init = /*%FSM<STATEINIT""">*/"[] Spawn {" \n
+       "	{" \n
+       "		if (isPlayer (leader _x)) then {" \n
+       "			sleep 0.3;" \n
+       "			" \n
+       "			_get = Format[""WFBE_JIP_USER%1"",getPlayerUID (leader _x)] Call GetNamespace;" \n
+       "			if !(isNil '_get') then {" \n
+       "				_field = if (side (leader _x) == (WF_Logic getVariable ""WF_Winner"")) then {""win""} else {""loss""};" \n
+       "				_strTr = if (side(leader _x) == west) then {'west'} else {'east'};" \n
+       "				copyToClipboard Format [""MYSQLDATA�WFBE_EndGame�%1�%2�%3�%4�%5�%6"",getPlayerUID (leader _x), name (leader _x), time - (_get select 5), _strTr, worldName, _field];" \n
+       "			};" \n
+       "		};" \n
+       "	} forEach (('WFBE_EASTTEAMS' Call GetNamespace)+('WFBE_WESTTEAMS' Call GetNamespace));" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Init";
+  finalStates[] =
+  {
+    "End"
+  };
+};
+/*%FSM</COMPILE>*/

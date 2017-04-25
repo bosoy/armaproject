@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex\addons\t_veh_gmv
+Pbo Type is: Arma Addon
+Sha: 'DD1D3C99EA6DF1C8789F4E65EDAAC24A229049A9'
+//////</HEADER>//////

@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_towing
+Pbo Type is: Arma Addon
+Sha: 'F652A0308640AE2BC477A1A4FB7C9DADDF347754'
+//////</HEADER>//////

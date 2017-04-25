@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\Addons\sys_arty_ammunition
+Pbo Type is: Arma Addon
+Sha: '41716B05327B8BA0DD1F686A4EA6D4AD1082120A'
+//////</HEADER>//////

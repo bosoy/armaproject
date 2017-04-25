@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_arty_aimingpoints
+Pbo Type is: Arma Addon
+Sha: 'BA3C29B4704F9AF9AE34872E7B81B49AAC3A543A'
+//////</HEADER>//////

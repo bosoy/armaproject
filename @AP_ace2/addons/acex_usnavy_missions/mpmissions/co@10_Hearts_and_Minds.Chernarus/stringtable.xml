@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<Project name="DraperAirSupport">
+<Package name="DraperAirSupport">
+<Container name="AirSupport">
+
+</////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////// Common defintions////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////>
+
+<Key ID="STR_HELOINC"><English>Two Apache attack helicopters are en route.</English><German>Kampfhubschrauber sind auf dem Weg hierher.</German><Russian>Штурмовые вертолеты на курсе.</Russian><French>Les hélicoptères d'attaque sont en route!</French></Key>
+<Key ID="STR_HELODON"><English>The Apaches have returned to base.</English><German>Die Hubschrauber sind zurückgekehrt.</German><Russian>Штурмовые вертолеты возвращаются.</Russian><French>Les hélicoptères sont sur le retour.</French></Key>
+<Key ID="STR_HELODIE"><English>The Apaches have been shot down!</English><German>Die Hubschrauber wurden abgeschossen!</German><Russian>Вертолет был сбит!</Russian><French>Les hélicoptères ont été abattus!</French></Key>
+<Key ID="STR_FIXDJDA"><English>A sortie with a JDAM in payload is in flight.</English><German>Ein Hubschrauber aus der Rotte führt eine JDAM mit.</German><Russian>Самолет с JDAM на курсе.</Russian><French>Un chasseur avec une bombe guidée est en route.</French></Key>
+<Key ID="STR_FIXDLGB"><English>A sortie with two LGB in payload is in flight.</English><German>Ein Hubschrauber aus der Rotte führt zwei LGB´s mit.</German><Russian>Самолет с КАБ на курсе.</Russian><French>Un chasseur avec deux bombes LGB en route.</French></Key>
+<Key ID="STR_FIXDCAP"><English>A sortie with a CBU Anti-Personnel in payload is in flight.</English><German>Ein Hubschrauber aus der Rotte führt auch eine CBU mit Anti-Personen Minen mit.</German><Russian>Самолет с противотанковыми кассетными боеприпасами на курсе.</Russian><French>Un chasseur armé d'une bombe à fragmentation anti-personnels est en route.</French></Key>
+<Key ID="STR_FIXDCAT"><English>A sortie with a CBU Anti-Tank in payload is in flight.</English><German>Ein Hubschrauber aus der Rotte führt auch eine CBU mit Anti-Panzer Minen mit.</German><Russian>Самолет с кассетными боеприпасами на курсе.</Russian><French>Un chasseur armé d'une bombe à fragmentation anti-chars est en route.</French></Key>
+<Key ID="STR_FIXDDON"><English>The sortie has RTB'D.</English><German>Die Rotte ist zur Basis zurückgekehrt.</German><Russian>Самолет возвращается на базу.</Russian><French>Retour à la base du chasseur.</French></Key>
+<Key ID="STR_FIXDDIE"><English>The sortie was shot down.</English><German>Die Rotte wurde abgeschossen!</German><Russian>Самолет был сбит!</Russian><French>Chasseur abattu!</French></Key>
+<Key ID="STR_MAPSEL"><English>Select the airstrike location on map.</English><German>Klicke auf die Map um die Position für den Luftangriff zu bestimmen.</German><Russian>Выберите координаты для удара на карте.</Russian><French>Sélectionner le nouveau lieu d'appui aérien sur la carte.</French></Key>
+<Key ID="STR_MENUASM"><English>Air Support</English><German>Luft-Unterstützung</German><Russian>Авиационная поддержка</Russian><French>Appui aérien</French></Key>
+<Key ID="STR_MENUFXD"><English>Call Fixed-Wing</English><German>Flugzeug rufen</German><Russian>Вызвать самолет</Russian><French>Appel d'un chasseur</French></Key>
+<Key ID="STR_MENUHEL"><English>Call Helicopters</English><German>Hubschrauber rufen</German><Russian>Вызвать вертолеты</Russian><French>Appel d'hélicoptères</French></Key>
+<Key ID="STR_MENUEXT"><English>Exit Menu</English><German>Menu beenden</German><Russian>Выйти в меню</Russian><French>Sortir du menu</French></Key>
+<Key ID="STR_NOMORE"><English>You can't call on this asset anymore.</English><German>Du kannst Dir keine Unterstützung aus diesem Arsenal mehr rufen.</German><Russian>Вы не можете вызывать больше.</Russian><French>Vous ne pouvez faire appel à cet appui plus.</French></Key>
+<Key ID="STR_FIXDCBM"><English>A sortie with a CBU Mine Dispenser in payload is in flight.</English><German>Ein Hubschrauber aus der Rotte führt auch einen CBU Minenwerfer mit.</German><Russian>Самолет с кассетной нагрузкой в пути.</Russian><French>Un chasseur armé d'une bombe à fragmentation contenant des mines est en route.</French></Key>
+<Key ID="STR_FIXDCAS"><English>A sortie to provide close air support is in flight.</English><German>Ein Hubschrauber aus der Rotte dient zur Luft unterstützung.</German><Russian>Непосредственная поддержка в пути.</Russian><French>Un chasseur est en route pour fournir un soutien aérien rapproché.</French></Key>
+<Key ID="STR_MAPPIK"><English>Indicate (left click) the pickup LZ on map.</English><German>Klicke auf die Map um den Wiederaufnahmepunkt zu markieren.</German><Russian>Укажите точку встречи на карте (ЛКМ).</Russian><French>Indiquez sur la carte (Click gauche) le lieu d'évacuation.</French></Key>
+<Key ID="STR_MAPDRO"><English>Indicate (left click) the drop-off LZ on the map.</English><German>Klicke auf die Map um den Abwurfpunkt zu markieren.</German><Russian>Укажите точку выброса на карте (ЛКМ).</Russian><French>Indiquez sur la carte (Click gauche) le site d'insertion.</French></Key>
+<Key ID="STR_TRANINC"><English>Transport helicopter is in route.</English><German>Transporthubschrauber ist auf dem Weg.</German><Russian>Транспортный вертолет в пути.</Russian><French>Hélicoptère de transport en route.</French></Key>
+<Key ID="STR_MENUHATT"><English>Attack</English><German>Angriff</German><Russian>Удар</Russian><French>Attaque</French></Key>
+<Key ID="STR_MENUHTRAN"><English>Transport</English><German>Transport</German><Russian>Транспорт</Russian><French>Transport</French></Key>
+<Key ID="STR_GTGPIL"><English>Good to go pilot!</English><German>Du kannst losfliegen!</German><Russian>Ожидаю на точке</Russian><French>Equipe à bord, prête pour le décollage.</French></Key>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

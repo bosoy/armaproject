@@ -1,0 +1,82 @@
+class FSM
+{
+  fsmName = "RemoveVehi";
+  class States
+  {
+    class Start
+    {
+      name = "Start";
+      init = "private ""_aunit"";" \n
+       "_aunit = _this;" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class ACE__
+        {
+          priority = 1.000000;
+          to="__1";
+          precondition = "";
+          condition="(""ACE"" in d_version)";
+          action="";
+        };
+        class _
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class End
+    {
+      name = "End";
+      init = "if (!isNull _aunit) then {{deleteVehicle _x} forEach (crew _aunit)};";
+      precondition = "";
+      class Links
+      {
+      };
+    };
+    class _
+    {
+      name = "_";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class Not_alive_vehicl
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = "";
+          condition="!(alive _aunit) || (isNull _aunit)";
+          action="";
+        };
+      };
+    };
+    class __1
+    {
+      name = "__1";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class Not_alive
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = "";
+          condition="!(_aunit call ace_v_alive) || (isNull _aunit)";
+          action="";
+        };
+      };
+    };
+  };
+  initState="Start";
+  finalStates[] =
+  {
+    "End",
+  };
+};

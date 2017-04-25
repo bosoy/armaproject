@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Arma2">
+<Package name="SACK2">
+<Container name="Sack">
+<Key ID="STR_DN_ACE_BMP2D_RU">
+<German>BMP-2D</German>
+<English>BMP-2D</English>
+<Italian>Rottami di BMP2D</Italian>
+<Spanish>BMP-2D</Spanish>
+<French>Épave BMP-2D</French>
+<Czech>BMP-2D</Czech>
+<Russian>БМП-2Д</Russian>
+<Polish>BMP-2D</Polish>
+<Hungarian>BMP-2D</Hungarian>
+</Key>
+</Container></Package></Project>

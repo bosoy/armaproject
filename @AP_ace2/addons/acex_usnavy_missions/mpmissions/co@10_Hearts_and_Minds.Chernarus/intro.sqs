@@ -1,0 +1,27 @@
+showCinemaBorder false
+titlecut ["","BLACK IN", 5]
+1 cutRsc ["Credit1", "PLAIN",3]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal", "back"]
+playMusic "AM92Intro"
+
+;=== 16:16:56
+_camera camPrepareTarget medic
+_camera camPreparePos [6763.12,5595.40,2.83]
+_camera camPrepareFOV 0.700
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+~20
+
+titlecut ["","BLACK OUT", 10]
+2 cutRsc ["Credit2", "PLAIN",3]
+
+~10
+
+titlecut [" ","BLACK IN", 5]
+
+Player cameraEffect ["terminate", "back"]
+camDestroy _camera
+endMission "END1";
+Exit;

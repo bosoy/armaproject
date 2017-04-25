@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACEx">
+<Package name="c_wep_rh_ak">
+<Container name="STR_DSS">
+<Key ID="STR_DSS_ACE_GROZA_9GL">
+<German>Sturmgewehr mit Granatwerfer &lt;br/&gt;Kaliber: 9x39mm</German>
+<English>Assault rifle with grenade launcher &lt;br/&gt;Caliber: 9x39mm</English>
+<Italian>Fucile d'assalto con lanciagranate &lt;br/&gt;Calibro: 9x39mm</Italian>
+<Spanish>Fusil de asalto con lanzagranadas &lt;br/&gt;Calibre: 9x39mm</Spanish>
+<French>Fusil d'assaut avec lance-grenades&lt;br/&gt;Calibre : 9x39mm</French>
+<Czech>Útočná puška s granátometem &lt;br/&gt;Kalibr: 9x39mm</Czech>
+<Russian>Штурмовая винтовка с гранатометом &lt;br/&gt;Калибр: 9x39мм</Russian>
+<Polish>Karabin szturmowy z granatnikiem &lt;br/&gt;Kaliber: 9x39mm</Polish>
+<Hungarian>Gépkarabély gránátvetővel &lt;br/&gt; Kaliber: 9x39mm</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_GROZA_9">
+<German>Sturmgewehr &lt;br/&gt;Kaliber: 9x39mm</German>
+<English>Assault rifle &lt;br/&gt;Caliber: 9x39mm</English>
+<Italian>Fucile d'assalto &lt;br/&gt;Calibro: 9x39mm</Italian>
+<Spanish>Fusil de asalto &lt;br/&gt;Calibre: 9x39mm</Spanish>
+<French>Fusil d'assaut &lt;br/&gt;Calibre : 9x39mm</French>
+<Czech>Útočná puška &lt;br/&gt;Kalibr: 9x39mm</Czech>
+<Russian>Штурмовая винтовка &lt;br/&gt;Калибр: 9x39мм</Russian>
+<Polish>Karabin szturmowy &lt;br/&gt;Kaliber: 9x39mm</Polish>
+<Hungarian>Gépkarabély &lt;br/&gt; Kaliber: 9x39mm</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_GROZA_9_SD_GL">
+<German>Schallgedämpftes Sturmgewehr mit Granatwerfer &lt;br/&gt;Kaliber: 9x39mm</German>
+<English>Silenced assault rifle with grenade launcher &lt;br/&gt;Caliber: 9x39mm</English>
+<Italian>Fucile d'assalto con lanciagranate e silenziatore &lt;br/&gt;Calibro: 9x39mm</Italian>
+<Spanish>Fusil de asalto con lanzagranadas con silenciador &lt;br/&gt;Calibre: 9x39mm</Spanish>
+<French>Fusil d'assaut avec lance-grenades à silencieux&lt;br/&gt;Calibre : 9x39mm</French>
+<Czech>Útočná puška s tlumičem a granátometem &lt;br/&gt;Kalibr: 9x39mm</Czech>
+<Russian>Штурмовая винтовка с глушителем и гранатометом&lt;br/&gt;Калибр: 9x39мм</Russian>
+<Polish>Karabin szturmowy z tłumikiem i granatnikiem &lt;br/&gt;Kaliber: 9x39mm</Polish>
+<Hungarian>Hangtompítós gépkarabély gránátvetővel &lt;br/&gt; Kaliber: 9x39mm</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_GROZA_9_SD">
+<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 9x39mm</German>
+<English>Silenced assault rifle &lt;br/&gt;Caliber: 9x39mm</English>
+<Italian>Fucile d'assalto con silenziatore &lt;br/&gt;Calibro: 9x39mm</Italian>
+<Spanish>Fusil de asalto con silenciador &lt;br/&gt;Calibre: 9x39mm</Spanish>
+<French>Fusil d'assaut à silencieux &lt;br/&gt;Calibre : 9x39mm</French>
+<Czech>Útočná puška s tlumičem &lt;br/&gt;Kalibr: 9x39mm</Czech>
+<Russian>Штурмовая винтовка с глушителем &lt;br/&gt;Калибр: 9x39мм</Russian>
+<Polish>Karabin szturmowy z tłumikiem &lt;br/&gt;Kaliber: 9x39mm</Polish>
+<Hungarian>Hangtompítós gépkarabély &lt;br/&gt; Kaliber: 9x39mm</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_GROZA_762_SD">
+<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 7,62x39mm</German>
+<English>Silenced assault rifle &lt;br/&gt;Caliber: 7.62x39mm</English>
+<Italian>Fucile d'assalto con silenziatore &lt;br/&gt;Calibro: 7,62x39mm</Italian>
+<Spanish>Fusil de asalto con silenciador &lt;br/&gt;Calibre: 7,62x39mm</Spanish>
+<French>Fusil d'assaut à silencieux &lt;br/&gt;Calibre : 7.62x39mm</French>
+<Czech>Útočná puška s tlumičem &lt;br/&gt;Kalibr: 7,62x39mm</Czech>
+<Russian>Штурмовая винтовка с глушителем &lt;br/&gt;Калибр: 7,62x39мм</Russian>
+<Polish>Karabin szturmowy z tłumikiem &lt;br/&gt;Kaliber: 7,62x39mm</Polish>
+<Hungarian>Hangtompítós gépkarabély &lt;br/&gt; Kaliber: 7.62x39mm</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

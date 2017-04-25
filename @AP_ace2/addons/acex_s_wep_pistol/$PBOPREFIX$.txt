@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex\addons\s_wep_pistol
+Pbo Type is: Arma Addon
+Sha: '268BB9B098814D4AAD7A81947B5EBEBE03CA10AC'
+//////</HEADER>//////

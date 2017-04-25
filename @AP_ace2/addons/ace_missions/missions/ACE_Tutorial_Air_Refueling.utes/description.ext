@@ -1,0 +1,4 @@
+OnLoadMission = $STR_ACE_TUTORIAL_AIR_REFUELING_TITLE;
+OnLoadIntro = $STR_ACE_TUTORIAL_AIR_REFUELING_TITLE;
+OnLoadIntroTime = False;
+OnLoadMissionTime = False;

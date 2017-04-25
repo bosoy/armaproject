@@ -1,0 +1,4 @@
+
+class StageTI {
+	texture = "x\ace\addons\sys_groundmarker\data\ace_vs21_ti_ca.paa";
+};

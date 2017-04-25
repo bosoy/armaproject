@@ -1,0 +1,1377 @@
+/*%FSM<COMPILE "E:\Bohemia Interactive\ArmA 2\FSM Editor Personal Edition\scriptedFSM.cfg, updatetownai">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Init",0,250,-81.542984,-257.577942,8.457038,-207.578140,0.000000,"Init"};
+item1[] = {"Loop",4,218,-81.400459,-164.956757,8.599551,-114.956772,0.000000,"Loop"};
+item2[] = {"Root",2,250,-81.695038,-84.595222,8.304958,-34.595226,0.000000,"Root"};
+item3[] = {"East____West",4,218,54.026054,-85.166306,144.026276,-35.166328,2.000000,"East || West"};
+item4[] = {"Resistance",4,218,-211.512375,-85.535400,-121.512367,-35.535374,1.000000,"Resistance"};
+item5[] = {"Enemies",2,250,-294.367432,85.381798,-204.367416,135.381744,0.000000,"Enemies"};
+item6[] = {"Enemies_1",2,250,121.220261,78.907684,211.220276,128.907654,0.000000,"Enemies"};
+item7[] = {"Clear",4,218,-437.596313,86.397621,-347.596313,136.397583,0.000000,"Clear"};
+item8[] = {"Hostile",4,218,-295.383301,171.725250,-205.383255,221.725250,0.000000,"Hostile"};
+item9[] = {"Hostile",4,218,121.220253,168.298737,211.220245,218.298767,0.000000,"Hostile"};
+item10[] = {"Clear",4,218,251.104004,79.940926,341.103973,129.940887,0.000000,"Clear"};
+item11[] = {"Update",2,250,-83.093033,145.655670,6.906990,195.655670,0.000000,"Update"};
+item12[] = {"East____West",4,218,51.054230,211.066879,141.054169,261.066833,2.000000,"East || West"};
+item13[] = {"Resistance",4,218,-225.570770,211.066833,-135.570770,261.066833,1.000000,"Resistance"};
+item14[] = {"Active",2,250,50.993599,303.105865,140.993622,353.105865,0.000000,"Active"};
+item15[] = {"Active_1",2,250,-226.321884,302.090027,-136.321869,352.090027,0.000000,"Active"};
+item16[] = {"Yes",4,218,-226.428909,389.984589,-136.428909,439.984589,0.000000,"Yes"};
+item17[] = {"No",4,218,-361.424255,303.105835,-271.424255,353.105835,0.000000,"No"};
+item18[] = {"Yes",4,218,50.993557,388.433655,140.993561,438.433655,0.000000,"Yes"};
+item19[] = {"No",4,218,180.001099,304.121643,270.001099,354.121643,0.000000,"No"};
+item20[] = {"Reinforcement",2,250,-228.026566,480.105957,-138.026550,530.105957,0.000000,"Reinforcement"};
+item21[] = {"Reinforcement_1",2,250,52.438057,477.071014,142.438080,527.070984,0.000000,"Reinforcement"};
+item22[] = {"Disabled",4,218,189.443558,474.997864,279.443420,524.997864,0.000000,"Disabled"};
+item23[] = {"Enabled",4,218,52.594284,569.904968,142.594299,619.904968,0.000000,"Enabled"};
+item24[] = {"Enabled",4,218,-227.136414,572.915527,-137.136414,622.915527,0.000000,"Enabled"};
+item25[] = {"Disabled",4,218,-356.889191,481.315216,-266.889191,531.315186,0.000000,"Disabled"};
+item26[] = {"Create_Teams",2,250,-504.760498,301.661316,-414.760498,351.661316,0.000000,"Create Teams"};
+item27[] = {"Filter_Out",2,250,312.391754,304.012329,402.391754,354.012329,0.000000,"Filter Out"};
+item28[] = {"Reinforce",2,250,-227.312881,661.195923,-137.312851,711.195923,0.000000,"Reinforce"};
+item29[] = {"Reinforce_1",2,4346,53.078735,665.977051,143.078766,715.977051,0.000000,"Reinforce"};
+item30[] = {"_",8,218,-61.027760,723.917419,-18.699284,749.470459,0.000000,""};
+item31[] = {"Resistance_Clean",2,250,-84.636703,800.070679,5.363308,850.070679,0.000000,"Resistance" \n "Clean" \n "Update"};
+item32[] = {"Activity",4,218,52.897964,800.575867,142.897949,850.575867,0.000000,"Activity"};
+item33[] = {"Skip",4,218,-84.158691,894.561279,5.841303,944.561279,1.000000,"Skip"};
+item34[] = {"Check_Time",2,250,197.415848,801.073425,287.415894,851.073425,0.000000,"Check Time"};
+item35[] = {"Occupation_Clean",2,250,-84.477402,988.013367,5.522614,1038.013428,0.000000,"Occupation" \n "Clean" \n "Update"};
+item36[] = {"_",8,218,516.491821,999.625427,558.820740,1025.178345,0.000000,""};
+item37[] = {"Activity",4,218,-227.812027,987.478455,-137.812027,1037.478271,0.000000,"Activity"};
+item38[] = {"Skip",4,218,-85.511490,1086.126953,4.488537,1136.126953,0.000000,"Skip"};
+item39[] = {"Check_Time_1",2,250,-362.144073,988.819214,-272.144043,1038.819214,0.000000,"Check Time"};
+item40[] = {"Skip",2,250,-356.665619,712.646545,-266.665619,762.646545,0.000000,"Skip"};
+item41[] = {"Skip_1",2,250,188.821106,711.607605,278.821106,761.607605,0.000000,"Skip"};
+item42[] = {"_",2,250,-720.830017,1086.698120,-630.829895,1136.698120,0.000000,""};
+item43[] = {"_",8,218,-614.807983,900.023926,-572.479492,925.577576,0.000000,""};
+item44[] = {"",7,210,-681.073242,-142.960266,-673.073242,-134.960266,0.000000,""};
+item45[] = {"Ground",4,218,313.725525,398.264923,403.725525,448.264923,0.000000,"Ground"};
+item46[] = {"",7,210,548.178650,101.751083,556.178650,109.751068,0.000000,""};
+item47[] = {"",7,210,557.477966,730.003906,565.478027,738.003906,0.000000,""};
+item48[] = {"",7,210,-641.013123,25.217754,-633.013123,33.217751,0.000000,""};
+item49[] = {"",7,210,-641.013062,733.310120,-633.013000,741.310120,0.000000,""};
+item50[] = {"Air",4,218,450.295349,303.113800,540.295410,353.113800,0.000000,"Air"};
+item51[] = {"Create_Teams_1",2,250,312.606049,503.490906,402.606079,553.490906,0.000000,"Create" \n "Teams"};
+item52[] = {"Create_AA_Teams",2,250,451.414673,503.490906,541.414734,553.490906,0.000000,"Create" \n "AA Teams"};
+item53[] = {"_",8,218,404.726166,577.962646,447.054626,603.515686,0.000000,""};
+item54[] = {"Civilians",4,218,-627.123352,300.957153,-537.123352,350.957153,0.000000,"Civilians"};
+item55[] = {"No_Civilians",4,218,-503.680084,396.450958,-413.680084,446.450958,0.000000,"No Civilians"};
+item56[] = {"Create_Civilians",2,250,-624.794250,497.767517,-534.794250,547.767517,0.000000,"Create Civilians"};
+item57[] = {"Skip_2",2,250,-503.680115,494.273926,-413.680084,544.273926,0.000000,"Skip"};
+item58[] = {"_",8,218,-546.874634,573.304443,-504.546204,598.857483,0.000000,""};
+item59[] = {"Gameover",4,218,-81.332367,-8.259530,8.667633,41.740471,0.000000,"Gameover"};
+item60[] = {"End",1,250,-79.733475,64.343887,10.266556,114.343887,0.000000,"End"};
+item61[] = {"Ready",4,218,345.695007,799.360779,435.695007,849.360779,0.000000,"Ready"};
+item62[] = {"Wait",4,218,198.982651,893.935669,288.982666,943.935669,0.000000,"Wait"};
+item63[] = {"Remove_Resistanc",2,250,493.620056,800.573181,583.620056,850.573181,0.000000,"Remove" \n "Resistance"};
+item64[] = {"Ready",4,218,-360.421417,889.169373,-270.421417,939.169373,0.000000,"Ready"};
+item65[] = {"Wait",4,218,-509.167969,988.333862,-419.167999,1038.333740,0.000000,"Wait"};
+item66[] = {"Remove_Occupatio",2,250,-510.321045,888.016357,-420.321045,938.016357,0.000000,"Remove" \n "Occupation"};
+item67[] = {"Occupation_Etat",2,250,177.150528,-86.332535,267.150513,-36.332535,0.000000,"Occupation" \n "Etat"};
+item68[] = {"No_Occupation",4,218,177.150635,-164.860199,267.150513,-114.860199,0.000000,"No" \n "Occupation"};
+item69[] = {"Idle",2,250,49.026558,-165.893478,139.026489,-115.893478,0.000000,"Idle"};
+item70[] = {"Occupation",4,218,121.354660,-3.671861,211.354614,46.328136,0.000000,"Occupation"};
+item71[] = {"Resistance_Etat",2,250,-349.607574,-84.825172,-259.607574,-34.825172,0.000000,"Resistance" \n "Etat"};
+item72[] = {"Resistance",4,218,-295.487061,-1.640314,-205.487045,48.359688,0.000000,"Resistance"};
+item73[] = {"No_Resistance",4,218,-495.933289,-84.825500,-405.933289,-34.825500,0.000000,"No" \n "Resistance"};
+item74[] = {"Idle_1",2,250,-637.440308,-84.593369,-547.440308,-34.593380,0.000000,"Idle"};
+link0[] = {0,1};
+link1[] = {1,2};
+link2[] = {2,3};
+link3[] = {2,4};
+link4[] = {2,59};
+link5[] = {3,67};
+link6[] = {4,71};
+link7[] = {5,7};
+link8[] = {5,8};
+link9[] = {6,9};
+link10[] = {6,10};
+link11[] = {7,48};
+link12[] = {8,11};
+link13[] = {9,11};
+link14[] = {10,46};
+link15[] = {11,12};
+link16[] = {11,13};
+link17[] = {12,14};
+link18[] = {13,15};
+link19[] = {14,18};
+link20[] = {14,19};
+link21[] = {15,16};
+link22[] = {15,17};
+link23[] = {16,20};
+link24[] = {17,26};
+link25[] = {18,21};
+link26[] = {19,27};
+link27[] = {20,24};
+link28[] = {20,25};
+link29[] = {21,22};
+link30[] = {21,23};
+link31[] = {22,41};
+link32[] = {23,29};
+link33[] = {24,28};
+link34[] = {25,40};
+link35[] = {26,54};
+link36[] = {26,55};
+link37[] = {27,45};
+link38[] = {27,50};
+link39[] = {28,30};
+link40[] = {29,30};
+link41[] = {30,31};
+link42[] = {31,32};
+link43[] = {31,33};
+link44[] = {32,34};
+link45[] = {33,35};
+link46[] = {34,61};
+link47[] = {34,62};
+link48[] = {35,37};
+link49[] = {35,38};
+link50[] = {36,35};
+link51[] = {37,39};
+link52[] = {38,42};
+link53[] = {39,64};
+link54[] = {39,65};
+link55[] = {40,30};
+link56[] = {41,30};
+link57[] = {42,44};
+link58[] = {43,42};
+link59[] = {44,1};
+link60[] = {45,51};
+link61[] = {46,47};
+link62[] = {47,41};
+link63[] = {48,49};
+link64[] = {49,40};
+link65[] = {50,52};
+link66[] = {51,53};
+link67[] = {52,53};
+link68[] = {53,41};
+link69[] = {54,56};
+link70[] = {55,57};
+link71[] = {56,58};
+link72[] = {57,58};
+link73[] = {58,40};
+link74[] = {59,60};
+link75[] = {61,63};
+link76[] = {62,35};
+link77[] = {63,36};
+link78[] = {64,66};
+link79[] = {65,42};
+link80[] = {66,43};
+link81[] = {67,68};
+link82[] = {67,70};
+link83[] = {68,69};
+link84[] = {69,1};
+link85[] = {70,6};
+link86[] = {71,72};
+link87[] = {71,73};
+link88[] = {72,5};
+link89[] = {73,74};
+link90[] = {74,44};
+globals[] = {0.000000,0,0,0,0,640,480,1,90,6316128,1,-779.566345,598.192566,1098.315674,-269.875427,720,715,1};
+window[] = {0,-1,-1,-1,-1,954,343,1756,94,1,738};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "updatetownai";
+  class States
+  {
+    /*%FSM<STATE "Init">*/
+    class Init
+    {
+      name = "Init";
+      init = /*%FSM<STATEINIT""">*/"_location = _this select 0;" \n
+       "_resistance_teamtypes = _this select 1;" \n
+       "_probability = _this select 2;" \n
+       "" \n
+       "_location_patroldistance = 'WFBE_TOWNUNITSPATROLDISTANCE' Call GetNamespace;" \n
+       "_location_range = _location getVariable 'range';" \n
+       "_location_rangepatrol = _location_range * ('WFBE_DETECTIONTOPATROLRANGERATIO' Call GetNamespace);" \n
+       "_location_rangespawn = 'WFBE_TOWNUNITSPAWNRANGE' Call GetNamespace;" \n
+       "" \n
+       "_location setVariable [""reinforcements"",0];" \n
+       "_location setVariable [""reinforcements_occ"",0];" \n
+       "" \n
+       "_camps = _location getVariable 'camps';" \n
+       "_defensiveTeam = objNull;" \n
+       "_position = [];" \n
+       "_totalCamps = count _camps;" \n
+       "" \n
+       "_lastUpdate = 10;" \n
+       "" \n
+       "_occupation_aaactive = false;" \n
+       "_occupation_active = false;" \n
+       "_occupation_difficulty = 'WFBE_TOWNOCCUPATIONDIFFICULTY' Call GetNamespace;" \n
+       "_occupation_inactive = 0;" \n
+       "_occupation_inactivetime = 'WFBE_OCCUPATIONINACTIVETIME' Call GetNamespace;" \n
+       "_occupation_manable = 'WFBE_OCCUPATIONMAXDEFENSES' Call GetNamespace;" \n
+       "_occupation_lastreinforcement = 0;" \n
+       "_occupation_reinforcementdelay = 'WFBE_OCCUPATIONREINFORCEMENTDELAY' Call GetNamespace;" \n
+       "_occupation_reinforcementteamsmax = if ((_location getVariable ""maxSupplyValue"")< 60) then {1 + ('WFBE_TOWNRESISTANCEDIFFICULTY' Call GetNamespace)} else {2 + ('WFBE_TOWNRESISTANCEDIFFICULTY' Call GetNamespace)};" \n
+       "" \n
+       "_occupation_teams = [];" \n
+       "_occupation_vehicles = [];" \n
+       "" \n
+       "_occupation_aasvfloor1 = 'WFBE_OCCUPATIONAATEAM1' Call GetNamespace;" \n
+       "_occupation_aasvfloor2 = 'WFBE_OCCUPATIONAATEAM2' Call GetNamespace;" \n
+       "" \n
+       "_resistance_active = false;" \n
+       "_resistance_defenses = _location nearEntities['WFBE_RESISTANCEDEFENSENAMES' Call GetNamespace,_location_range];" \n
+       "_resistance_inactive = 0;" \n
+       "_resistance_inactivetime = 'WFBE_RESISTANCEINACTIVETIME' Call GetNamespace;" \n
+       "_resistance_lastreinforcement = 0;" \n
+       "_resistance_reinforcementdelay = 'WFBE_RESISTANCEREINFORCEMENTDELAY' Call GetNamespace;" \n
+       "_resistance_reinforcementteamsmax = if ((_location getVariable ""maxSupplyValue"")< 60) then {1 + ('WFBE_TOWNRESISTANCEDIFFICULTY' Call GetNamespace)} else {2 + ('WFBE_TOWNRESISTANCEDIFFICULTY' Call GetNamespace)};" \n
+       "" \n
+       "_civilians_enabled = if (('WFBE_CIVILIANFACTION' Call GetNamespace) > 0) then {true} else {false};" \n
+       "_civilians_teamstype = """";" \n
+       "_civilians_coef = 1;" \n
+       "if (_civilians_enabled) then {" \n
+       "	if ((_location getVariable 'maxSupplyValue') <= 50) then {_civilians_teamstype = ""Villagers""};" \n
+       "	if ((_location getVariable 'maxSupplyValue') > 50 && (_location getVariable ""maxSupplyValue"") < 120) then {_civilians_teamstype = ""Citizen"";_civilians_coef = 2};" \n
+       "	if ((_location getVariable 'maxSupplyValue') >= 120) then {_civilians_teamstype = ""LargeCitizen"";_civilians_coef = 3};" \n
+       "};" \n
+       "" \n
+       "{_x addEventHandler [""Killed"",{[_this select 0,_this select 1,resistance] Spawn UnitKilled}]} forEach _resistance_defenses;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Loop">*/
+        class Loop
+        {
+          priority = 0.000000;
+          to="Root";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _lastUpdate > 5;"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Root">*/
+    class Root
+    {
+      name = "Root";
+      init = /*%FSM<STATEINIT""">*/"_lastUpdate = time;" \n
+       "" \n
+       "_sideID = _location getVariable 'sideID';" \n
+       "_side = _sideID Call GetSideFromID;" \n
+       "" \n
+       "_objects = _location nearEntities[[resistanceSoldierBaseClass,eastSoldierBaseClass,westSoldierBaseClass,""Car"",""Motorcycle"",""Tank"",""Air""],_location_range];" \n
+       "_objects = _objects unitsBelowHeight 200;" \n
+       "_resistanceEnemies = (West countSide _objects) + (East countSide _objects);" \n
+       "_occupationEnemies = if (_side == east) then {(west countSide _objects) + (resistance countSide _objects)} else {(east countSide _objects) + (resistance countSide _objects)};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "East____West">*/
+        class East____West
+        {
+          priority = 2.000000;
+          to="Occupation_Etat";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_sideID != RESISTANCEID && !gameOver"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Resistance">*/
+        class Resistance
+        {
+          priority = 1.000000;
+          to="Resistance_Etat";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_sideID == RESISTANCEID && !gameOver"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Gameover">*/
+        class Gameover
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"gameOver"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Enemies">*/
+    class Enemies
+    {
+      name = "Enemies";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Hostile">*/
+        class Hostile
+        {
+          priority = 0.000000;
+          to="Update";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_resistanceEnemies > 0"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Clear">*/
+        class Clear
+        {
+          priority = 0.000000;
+          to="Skip";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_resistanceEnemies == 0"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Enemies_1">*/
+    class Enemies_1
+    {
+      name = "Enemies_1";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Clear">*/
+        class Clear
+        {
+          priority = 0.000000;
+          to="Skip_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_occupationEnemies == 0"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Hostile">*/
+        class Hostile
+        {
+          priority = 0.000000;
+          to="Update";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_occupationEnemies > 0"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Update">*/
+    class Update
+    {
+      name = "Update";
+      init = /*%FSM<STATEINIT""">*/"if (_resistanceEnemies > 0) then {_resistance_inactive = time};" \n
+       "if (_occupationEnemies > 0) then {_occupation_inactive = time};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "East____West">*/
+        class East____West
+        {
+          priority = 2.000000;
+          to="Active";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_sideID != RESISTANCEID"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Resistance">*/
+        class Resistance
+        {
+          priority = 1.000000;
+          to="Active_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_sideID == RESISTANCEID"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Active">*/
+    class Active
+    {
+      name = "Active";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "No">*/
+        class No
+        {
+          priority = 0.000000;
+          to="Filter_Out";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!_occupation_active"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Yes">*/
+        class Yes
+        {
+          priority = 0.000000;
+          to="Reinforcement_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_occupation_active"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Active_1">*/
+    class Active_1
+    {
+      name = "Active_1";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "No">*/
+        class No
+        {
+          priority = 0.000000;
+          to="Create_Teams";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!_resistance_active"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Yes">*/
+        class Yes
+        {
+          priority = 0.000000;
+          to="Reinforcement";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_resistance_active"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Reinforcement">*/
+    class Reinforcement
+    {
+      name = "Reinforcement";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Disabled">*/
+        class Disabled
+        {
+          priority = 0.000000;
+          to="Skip";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!paramResReinf ||  (_location getVariable ""reinforcements"") >= _resistance_reinforcementteamsmax || time - _resistance_lastreinforcement <= _resistance_reinforcementdelay"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Enabled">*/
+        class Enabled
+        {
+          priority = 0.000000;
+          to="Reinforce";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"paramResReinf && (_location getVariable ""reinforcements"") < _resistance_reinforcementteamsmax && time - _resistance_lastreinforcement > _resistance_reinforcementdelay"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Reinforcement_1">*/
+    class Reinforcement_1
+    {
+      name = "Reinforcement_1";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Enabled">*/
+        class Enabled
+        {
+          priority = 0.000000;
+          to="Reinforce_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"paramOccReinf && (_location getVariable ""reinforcements_occ"") < _occupation_reinforcementteamsmax && time - _occupation_lastreinforcement > _occupation_reinforcementdelay"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Disabled">*/
+        class Disabled
+        {
+          priority = 0.000000;
+          to="Skip_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!paramOccReinf ||  (_location getVariable ""reinforcements_occ"") >= _occupation_reinforcementteamsmax || time - _occupation_lastreinforcement <= _occupation_reinforcementdelay"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Create_Teams">*/
+    class Create_Teams
+    {
+      name = "Create_Teams";
+      init = /*%FSM<STATEINIT""">*/"if (count _resistance_defenses > 0) then {" \n
+       "	//--- Update the defenses." \n
+       "	for '_i' from 0 to count(_resistance_defenses)-1 do {" \n
+       "		if !(alive (_resistance_defenses select _i)) then {_resistance_defenses = _resistance_defenses - [_resistance_defenses select _i]};" \n
+       "	};" \n
+       "" \n
+       "	//--- Man the defenses that can be manned." \n
+       "	{" \n
+       "		if (_x emptyPositions ""gunner"" > 0) then {" \n
+       "			if (isNull WF_ResistanceDefenseTeam) then {WF_ResistanceDefenseTeam = createGroup resistance};" \n
+       "			_unit = ['WFBE_GUERSOLDIER' Call GetNamespace,WF_ResistanceDefenseTeam,(getPos _x),resistance] Call CreateMan;" \n
+       "			_unit assignAsGunner _x;" \n
+       "			[_unit] orderGetIn true;" \n
+       "			_unit moveInGunner _x;" \n
+       "			[WF_ResistanceDefenseTeam, 350, _unit] Call RevealArea;" \n
+       "		};" \n
+       "	} forEach _resistance_defenses;" \n
+       "};" \n
+       "" \n
+       "_resistance_active = true;" \n
+       "_resistance_teams = [];" \n
+       "_resistance_vehicles = [];" \n
+       "_ci = 0;" \n
+       "" \n
+       "//--- Create the teams." \n
+       "{	" \n
+       "	_camp = objNull;" \n
+       "	if (_ci < _totalCamps) then {" \n
+       "		_position = ([getPos (_camps select _ci),8,40] Call GetRandomPosition);" \n
+       "		_camp = _camps select _ci;" \n
+       "		_ci = _ci + 1;" \n
+       "	} else {" \n
+       "		_position = ([getPos _location, _location_rangespawn, _location_rangepatrol] Call GetRandomPosition);" \n
+       "	};" \n
+       "	" \n
+       "	_team = createGroup resistance;" \n
+       "	_position = [_position, 50] Call GetSafePlace;" \n
+       "	" \n
+       "	_retVal = [Format[""WFBE_RES%1UNITS"",_x] Call GetNamespace, _position, resistance, paramResVehLock, _team, _probability] Call CreateTeamTemplate;" \n
+       "	_vehicles = _retVal select 1;" \n
+       "	" \n
+       "	emptyQueu = emptyQueu + _vehicles;" \n
+       "	{_x Spawn HandleEmptyVehicle} forEach _vehicles;" \n
+       "	" \n
+       "	_resistance_vehicles = _resistance_vehicles + _vehicles;" \n
+       "	_resistance_teams = _resistance_teams + [_team];" \n
+       "	" \n
+       "	[_team, 350, _position] Call RevealArea;" \n
+       "	[_location,_team,RESISTANCEID,_camp,false] ExecFSM ""Server\FSM\townpatrol.fsm"";" \n
+       "	if (paramUPSMON) then {[(leader _team),Format ['UPSMON_TOWN_%1',str _location],""move"",""nofollow"",""fortify"",""reinforcement""] Spawn UPSMON};" \n
+       "} forEach _resistance_teamtypes;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "No_Civilians">*/
+        class No_Civilians
+        {
+          priority = 0.000000;
+          to="Skip_2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!_civilians_enabled"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Civilians">*/
+        class Civilians
+        {
+          priority = 0.000000;
+          to="Create_Civilians";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_civilians_enabled"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Filter_Out">*/
+    class Filter_Out
+    {
+      name = "Filter_Out";
+      init = /*%FSM<STATEINIT""">*/"_isAirOnly = false;" \n
+       "if !(_occupation_aaactive) then {" \n
+       "	_objects = _location nearEntities[[""Air""],_location_range*1.5];" \n
+       "	_objects = [_objects Call GetLiveUnits,200,25] Call GetUnitsBelowHeight;" \n
+       "" \n
+       "	_airEnemies = if (_side == East) then {(West countSide _objects) + (Resistance countSide _objects)} else {(East countSide _objects) + (Resistance countSide _objects)};" \n
+       "	_isAirOnly = if (_airEnemies == _occupationEnemies) then {true} else {false};" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Air">*/
+        class Air
+        {
+          priority = 0.000000;
+          to="Create_AA_Teams";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_isAirOnly"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Ground">*/
+        class Ground
+        {
+          priority = 0.000000;
+          to="Create_Teams_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!_isAirOnly"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Reinforce">*/
+    class Reinforce
+    {
+      name = "Reinforce";
+      init = /*%FSM<STATEINIT""">*/"_resistance_lastreinforcement = time;" \n
+       "" \n
+       "//--- Create the team." \n
+       "_position = ([getPos _location, _location_rangespawn, _location_rangepatrol] Call GetRandomPosition);" \n
+       "_near = _position nearEntities 75;" \n
+       "_ctx = (east countSide _near) + (west countSide _near);" \n
+       "_i = 0;" \n
+       "while {_ctx > 0 && _i < 400} do {" \n
+       "	_position = ([getPos _location, _location_rangespawn + 200, _location_rangepatrol] Call GetRandomPosition);" \n
+       "	_near = _position nearEntities 75;" \n
+       "	_ctx = (east countSide _near) + (west countSide _near);" \n
+       "	_i = _i + 1;" \n
+       "};" \n
+       "" \n
+       "_team = createGroup resistance;" \n
+       "_position = [_position, 50] Call GetSafePlace;" \n
+       "" \n
+       "_retVal = [Format[""WFBE_RES%1UNITS"",_resistance_teamtypes select round (random ((count _resistance_teamtypes)-1))] Call GetNamespace, _position, resistance, paramResVehLock, _team, _probability] Call CreateTeamTemplate;" \n
+       "_vehicles = _retVal select 1;" \n
+       "" \n
+       "emptyQueu = emptyQueu + _vehicles;" \n
+       "{_x Spawn HandleEmptyVehicle} forEach _vehicles;" \n
+       "" \n
+       "_resistance_vehicles = _resistance_vehicles + _vehicles;" \n
+       "_resistance_teams = _resistance_teams + [_team];" \n
+       "" \n
+       "[_team, 350, _position] Call RevealArea;" \n
+       "[_location,_team,RESISTANCEID,objNull,true] ExecFSM ""Server\FSM\townpatrol.fsm"";" \n
+       "if (paramUPSMON) then {[(leader _team),Format ['UPSMON_TOWN_%1',str _location],""move"",""nofollow"",""fortify"",""reinforcement""] Spawn UPSMON};" \n
+       "" \n
+       "_existing = _location getVariable ""reinforcements"";" \n
+       "_location setVariable [""reinforcements"",_existing + 1];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Resistance_Clean";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Reinforce_1">*/
+    class Reinforce_1
+    {
+      name = "Reinforce_1";
+      init = /*%FSM<STATEINIT""">*/"_occupation_lastreinforcement = time;" \n
+       "" \n
+       "//--- Create the team." \n
+       "_position = ([getPos _location, _location_rangespawn, _location_rangepatrol] Call GetRandomPosition);" \n
+       "_near = _position nearEntities 75;" \n
+       "_ctx = (east countSide _near) + (west countSide _near);" \n
+       "_i = 0;" \n
+       "while {_ctx > 0 && _i < 400} do {" \n
+       "	_position = ([getPos _location, _location_rangespawn + 200, _location_rangepatrol] Call GetRandomPosition);" \n
+       "	_near = _position nearEntities 75;" \n
+       "	_ctx = (east countSide _near) + (west countSide _near);" \n
+       "	_i = _i + 1;" \n
+       "};" \n
+       "" \n
+       "_team = createGroup _side;" \n
+       "_position = [_position, 50] Call GetSafePlace;" \n
+       "" \n
+       "_occupation_teamtypes = [_location getVariable 'supplyValue'] Call SelectOccupTeam;" \n
+       "" \n
+       "_retVal = [Format[""WFBE_%1%2UNITS"",str _side, _occupation_teamtypes select round (random ((count _occupation_teamtypes)-1))] Call GetNamespace, _position, _side, true, _team, _probability] Call CreateTeamTemplate;" \n
+       "_vehicles = _retVal select 1;" \n
+       "" \n
+       "_built = count(_retVal select 0);" \n
+       "_builtveh = count _vehicles;" \n
+       "" \n
+       "emptyQueu = emptyQueu + _vehicles;" \n
+       "{_x Spawn HandleEmptyVehicle; _x setVariable [""WFBE_Taxi_Prohib"", true]} forEach _vehicles;" \n
+       "" \n
+       "_occupation_vehicles = _occupation_vehicles + _vehicles;" \n
+       "_occupation_teams = _occupation_teams + [_team];" \n
+       "" \n
+       "[_team, 350, _position] Call RevealArea;" \n
+       "[_location,_team,_sideID,objNull,true] ExecFSM ""Server\FSM\townpatrol.fsm"";" \n
+       "if (paramUPSMON) then {[(leader _team),Format ['UPSMON_TOWN_%1',str _location],""move"",""nofollow"",""fortify"",""reinforcement""] Spawn UPSMON};" \n
+       "" \n
+       "if (_built > 0) then {[str _side,'UnitsCreated',_built] Call UpdateStatistics};" \n
+       "if (_builtveh > 0) then {[str _side,'VehiclesCreated',_builtveh] Call UpdateStatistics};" \n
+       "" \n
+       "_existing = _location getVariable ""reinforcements_occ"";" \n
+       "_location setVariable [""reinforcements_occ"",_existing + 1];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Resistance_Clean";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Resistance_Clean">*/
+    class Resistance_Clean
+    {
+      name = "Resistance_Clean";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Skip">*/
+        class Skip
+        {
+          priority = 1.000000;
+          to="Occupation_Clean";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!_resistance_active"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Activity">*/
+        class Activity
+        {
+          priority = 0.000000;
+          to="Check_Time";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_resistance_active"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Check_Time">*/
+    class Check_Time
+    {
+      name = "Check_Time";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Wait">*/
+        class Wait
+        {
+          priority = 0.000000;
+          to="Occupation_Clean";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _resistance_inactive <= _resistance_inactivetime"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Ready">*/
+        class Ready
+        {
+          priority = 0.000000;
+          to="Remove_Resistanc";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _resistance_inactive > _resistance_inactivetime"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Occupation_Clean">*/
+    class Occupation_Clean
+    {
+      name = "Occupation_Clean";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Skip">*/
+        class Skip
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!_occupation_active && !_occupation_aaactive"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Activity">*/
+        class Activity
+        {
+          priority = 0.000000;
+          to="Check_Time_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_occupation_active || _occupation_aaactive"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Check_Time_1">*/
+    class Check_Time_1
+    {
+      name = "Check_Time_1";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Wait">*/
+        class Wait
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _occupation_inactive <= _occupation_inactivetime"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Ready">*/
+        class Ready
+        {
+          priority = 0.000000;
+          to="Remove_Occupatio";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _occupation_inactive > _occupation_inactivetime"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Skip">*/
+    class Skip
+    {
+      name = "Skip";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Resistance_Clean";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Skip_1">*/
+    class Skip_1
+    {
+      name = "Skip_1";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Resistance_Clean";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "_">*/
+    class _
+    {
+      name = "_";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Loop">*/
+        class Loop
+        {
+          priority = 0.000000;
+          to="Root";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _lastUpdate > 5;"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Create_Teams_1">*/
+    class Create_Teams_1
+    {
+      name = "Create_Teams_1";
+      init = /*%FSM<STATEINIT""">*/"[""HostilesDetectedNear"",_location,_side] Spawn SideMessage;" \n
+       "" \n
+       "_occupation_defenses = _location nearEntities [(Format ['WFBE_%1DEFENSENAMES',str _side] Call GetNamespace),_location_patroldistance*1.4];" \n
+       "if (count _occupation_defenses > 0) then {" \n
+       "	//--- Update the defenses." \n
+       "	for '_i' from 0 to count(_occupation_defenses)-1 do {" \n
+       "		if ((_occupation_defenses select _i) emptyPositions 'gunner' == 0) then {_occupation_defenses = _occupation_defenses - [_occupation_defenses select _i]};" \n
+       "	};" \n
+       "" \n
+       "	//--- Limit the defenses if we're above the limit." \n
+       "	if (count _occupation_defenses > _occupation_manable) then {_occupation_defenses resize (_occupation_manable - 1)};" \n
+       "" \n
+       "	_defensiveTeam = Call Compile Format [""WF_Defense%1Grp"",str _side];" \n
+       "	if (isNull _defensiveTeam) then {Call Compile Format [""WF_Defense%1Grp = createGroup %1"",str _side];_defensiveTeam = Call Compile Format [""WF_Defense%1Grp"",str _side];};" \n
+       "" \n
+       "	//--- Man the defenses." \n
+       "	{" \n
+       "		_unit = [Format [""WFBE_%1SOLDIER"",str _side] Call GetNamespace,_defensiveTeam,[(getPos _x select 0)+5,getPos _x select 1,0],_side] Call CreateMan;" \n
+       "		_unit assignAsGunner _x;" \n
+       "		[_unit] orderGetIn true;" \n
+       "		_unit moveInGunner _x;" \n
+       "		[_defensiveTeam, 350, _unit] Call RevealArea;" \n
+       "	} forEach _occupation_defenses;" \n
+       "};" \n
+       "" \n
+       "_occupation_active = true;" \n
+       "_occupation_teamtypes = [_location getVariable 'supplyValue'] Call SelectOccupTeam;" \n
+       "_ci = 0;" \n
+       "_built = 0;" \n
+       "_builtveh = 0;" \n
+       "" \n
+       "//--- Create the teams." \n
+       "{	" \n
+       "	_camp = objNull;" \n
+       "	if (_ci < _totalCamps) then {" \n
+       "		_position = ([getPos (_camps select _ci),8,40] Call GetRandomPosition);" \n
+       "		_camp = _camps select _ci;" \n
+       "		_ci = _ci + 1;" \n
+       "	} else {" \n
+       "		_position = ([getPos _location, _location_rangespawn, _location_rangepatrol] Call GetRandomPosition);" \n
+       "	};" \n
+       "	" \n
+       "	_team = createGroup _side;" \n
+       "	_position = [_position, 50] Call GetSafePlace;" \n
+       "	" \n
+       "	_retVal = [Format[""WFBE_%1%2UNITS"",str _side,_x] Call GetNamespace, _position, _side, true, _team, _probability] Call CreateTeamTemplate;" \n
+       "	_vehicles = _retVal select 1;" \n
+       "	" \n
+       "	_built = _built + (count(_retVal select 0));" \n
+       "	_builtveh = _builtveh + (count _vehicles);" \n
+       "	" \n
+       "	emptyQueu = emptyQueu + _vehicles;" \n
+       "	{_x Spawn HandleEmptyVehicle; _x setVariable [""WFBE_Taxi_Prohib"", true]} forEach _vehicles;" \n
+       "	" \n
+       "	_occupation_vehicles = _occupation_vehicles + _vehicles;" \n
+       "	_occupation_teams = _occupation_teams + [_team];" \n
+       "	" \n
+       "	[_team, 350, _position] Call RevealArea;" \n
+       "	[_location,_team,_sideID,_camp,false] ExecFSM ""Server\FSM\townpatrol.fsm"";" \n
+       "	if (paramUPSMON) then {[(leader _team),Format ['UPSMON_TOWN_%1',str _location],""move"",""nofollow"",""fortify"",""reinforcement""] Spawn UPSMON};" \n
+       "} forEach _occupation_teamtypes;" \n
+       "" \n
+       "if (_built > 0) then {[str _side,'UnitsCreated',_built] Call UpdateStatistics};" \n
+       "if (_builtveh > 0) then {[str _side,'VehiclesCreated',_builtveh] Call UpdateStatistics};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Skip_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Create_AA_Teams">*/
+    class Create_AA_Teams
+    {
+      name = "Create_AA_Teams";
+      init = /*%FSM<STATEINIT""">*/"[""HostilesDetectedNear"",_location,_side] Spawn SideMessage;" \n
+       "_occupation_aaactive = true;" \n
+       "" \n
+       "_currentSV = _location getVariable ""supplyValue"";" \n
+       "_type = 'Small';" \n
+       "if (_currentSV < _occupation_aasvfloor1) then {_type = 'Small'};" \n
+       "if (_currentSV >= _occupation_aasvfloor1 && _currentSV < _occupation_aasvfloor2) then {_type = 'Medium'};" \n
+       "if (_currentSV > _occupation_aasvfloor2) then {_type = 'Large'};" \n
+       "" \n
+       "_grps = 1 + floor(_occupation_difficulty/2);" \n
+       "if (_type == 'Small') then {_grps = _grps + 1};" \n
+       "" \n
+       "_built = 0;" \n
+       "_builtveh = 0;" \n
+       "" \n
+       "//--- Create the teams." \n
+       "for '_i' from 0 to _grps do {" \n
+       "	_position = ([getPos _location, _location_rangespawn, _location_rangepatrol] Call GetRandomPosition);" \n
+       "	" \n
+       "	_effectiveType = _type;" \n
+       "	if (_i > 2) then {" \n
+       "		if (_type == 'Medium' && random 100 > 75) then {_effectiveType = ['Small','Medium'] select round(random 1)};" \n
+       "		if (_type == 'Large' && random 100 > 70) then {_effectiveType = ['Small','Medium','Large'] select round(random 2)};" \n
+       "	};" \n
+       "	" \n
+       "	_team = createGroup _side;" \n
+       "	_position = [_position, 50] Call GetSafePlace;" \n
+       "	" \n
+       "	_retVal = [Format [""WFBE_%1%2AATEAMUNITS"",_side,_effectiveType] Call GetNamespace, _position, _side, true, _team, _probability] Call CreateTeamTemplate;" \n
+       "	_vehicles = _retVal select 1;" \n
+       "	" \n
+       "	_built = _built + (count(_retVal select 0));" \n
+       "	_builtveh = _builtveh + (count _vehicles);" \n
+       "	" \n
+       "	emptyQueu = emptyQueu + _vehicles;" \n
+       "	{_x Spawn HandleEmptyVehicle; _x setVariable [""WFBE_Taxi_Prohib"", true]} forEach _vehicles;" \n
+       "	" \n
+       "	_occupation_vehicles = _occupation_vehicles + _vehicles;" \n
+       "	_occupation_teams = _occupation_teams + [_team];" \n
+       "	" \n
+       "	[_location,_team,_sideID,objNull,false] ExecFSM ""Server\FSM\townpatrol.fsm"";" \n
+       "	" \n
+       "	//--- AA Team are well informed about air units." \n
+       "	{_team reveal _x} forEach _objects;" \n
+       "" \n
+       "	//--- Use UPSMON AI if enabled." \n
+       "	if (paramUPSMON) then {[(leader _team),Format ['UPSMON_TOWN_%1',str _location],""move"",""nofollow"",""reinforcement""] Spawn UPSMON};" \n
+       "};" \n
+       "" \n
+       "if (_built > 0) then {[str _side,'UnitsCreated',_built] Call UpdateStatistics};" \n
+       "if (_builtveh > 0) then {[str _side,'VehiclesCreated',_builtveh] Call UpdateStatistics};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Skip_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Create_Civilians">*/
+    class Create_Civilians
+    {
+      name = "Create_Civilians";
+      init = /*%FSM<STATEINIT""">*/"_civilians_teams = [];" \n
+       "" \n
+       "//--- Create the teams." \n
+       "for '_i' from 0 to _civilians_coef do {" \n
+       "	_position = ([getPos _location, _location_rangespawn, _location_rangepatrol] Call GetRandomPosition);" \n
+       "	" \n
+       "	_team = createGroup civilian;" \n
+       "	_position = [_position, 50] Call GetSafePlace;" \n
+       "	" \n
+       "	_unitTypes = Format[""WFBE_CIV%1%2UNITS"",_civilians_teamstype,(1+round(random 3))] Call GetNamespace;" \n
+       "	" \n
+       "	{" \n
+       "		_unit = _team createUnit [_x,_position,[],0.4,""FORM""];" \n
+       "		_unit addEventHandler ['Killed',{[_this select 0,_this select 1] Spawn CivilianKilled}];" \n
+       "	} forEach _unitTypes;" \n
+       "" \n
+       "	_civilians_teams = _civilians_teams + [_team];" \n
+       "	" \n
+       "	[_team,_location,(_location_patroldistance/2)] Spawn AITownPatrol;" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Skip";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Skip_2">*/
+    class Skip_2
+    {
+      name = "Skip_2";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Skip";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End">*/
+    class End
+    {
+      name = "End";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Remove_Resistanc">*/
+    class Remove_Resistanc
+    {
+      name = "Remove_Resistanc";
+      init = /*%FSM<STATEINIT""">*/"_resistance_active = false;" \n
+       "" \n
+       "//--- Teams Units." \n
+       "{" \n
+       "	if !(isNil '_x') then {" \n
+       "		if !(isNull _x) then {" \n
+       "			{deleteVehicle _x} forEach units _x;" \n
+       "			deleteGroup _x;" \n
+       "		};" \n
+       "	};" \n
+       "} forEach _resistance_teams;" \n
+       "" \n
+       "//--- Teams vehicles." \n
+       "{" \n
+       "	if (!isPlayer _x && side _x == resistance) then {deleteVehicle _x};" \n
+       "} forEach _resistance_vehicles;" \n
+       "" \n
+       "if (paramResReinf) then {_location setVariable [""reinforcements_alive"",0]};" \n
+       "" \n
+       "if (_civilians_enabled) then {" \n
+       "	{" \n
+       "		if !(isNil '_x') then {" \n
+       "			if !(isNull _x) then {" \n
+       "				{deleteVehicle _x} forEach units _x;" \n
+       "				deleteGroup _x;" \n
+       "			};" \n
+       "		};" \n
+       "	} forEach _civilians_teams;" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Occupation_Clean";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Remove_Occupatio">*/
+    class Remove_Occupatio
+    {
+      name = "Remove_Occupatio";
+      init = /*%FSM<STATEINIT""">*/"_occupation_active = false;" \n
+       "_occupation_aaactive = false;" \n
+       "" \n
+       "//--- Teams Units." \n
+       "{" \n
+       "	if !(isNil '_x') then {" \n
+       "		if !(isNull _x) then {" \n
+       "			{deleteVehicle _x} forEach units _x;" \n
+       "			deleteGroup _x;" \n
+       "		};" \n
+       "	};" \n
+       "} forEach _occupation_teams;" \n
+       "" \n
+       "//--- Teams vehicles." \n
+       "{" \n
+       "	if !(isPlayer _x) then {deleteVehicle _x};" \n
+       "} forEach _occupation_vehicles;" \n
+       "" \n
+       "if (paramOccReinf) then {_location setVariable [""reinforcements_occ"",0]};" \n
+       "" \n
+       "{" \n
+       "	if (!isNull(Gunner _x) && !isPlayer(Gunner _x)) then {" \n
+       "		_unit = (gunner _x);" \n
+       "		if (group _unit == _defensiveTeam) then {" \n
+       "			_unit setPos (getpos _x);" \n
+       "			deleteVehicle _unit;" \n
+       "		};" \n
+       "	};" \n
+       "} forEach _occupation_defenses;" \n
+       "_occupation_defenses = [];" \n
+       "_defensiveTeam = objNull;" \n
+       "" \n
+       "_occupation_teams = [];" \n
+       "_occupation_vehicles = [];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Occupation_Etat">*/
+    class Occupation_Etat
+    {
+      name = "Occupation_Etat";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Occupation">*/
+        class Occupation
+        {
+          priority = 0.000000;
+          to="Enemies_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"paramOccup"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "No_Occupation">*/
+        class No_Occupation
+        {
+          priority = 0.000000;
+          to="Idle";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!paramOccup"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Idle">*/
+    class Idle
+    {
+      name = "Idle";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Loop">*/
+        class Loop
+        {
+          priority = 0.000000;
+          to="Root";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _lastUpdate > 5;"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Resistance_Etat">*/
+    class Resistance_Etat
+    {
+      name = "Resistance_Etat";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "No_Resistance">*/
+        class No_Resistance
+        {
+          priority = 0.000000;
+          to="Idle_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!paramRes"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Resistance">*/
+        class Resistance
+        {
+          priority = 0.000000;
+          to="Enemies";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"paramRes"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Idle_1">*/
+    class Idle_1
+    {
+      name = "Idle_1";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Loop">*/
+        class Loop
+        {
+          priority = 0.000000;
+          to="Root";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _lastUpdate > 5;"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Init";
+  finalStates[] =
+  {
+    "End",
+  };
+};
+/*%FSM</COMPILE>*/

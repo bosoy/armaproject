@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_vehicledamage
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: '6844711F29E9DB5422D19100ED129176C88E69A0'
+//////</HEADER>//////

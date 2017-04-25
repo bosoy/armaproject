@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex\addons\t_veh_uav
+Pbo Type is: Arma Addon
+Sha: '72AE7FC049588B8033263F7916B858FD4E7F54D9'
+//////</HEADER>//////

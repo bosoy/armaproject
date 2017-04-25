@@ -1,0 +1,6 @@
+///////<HEADER>///////
+mikero=DePbo.dll
+prefix=rhs_decals
+Pbo Type is: Arma Addon
+Sha: 'C685C203C112096E23DE548CADFC59BAAC8111D0'
+//////</HEADER>//////

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACEX">
+<Package name="C_MEN_USNAVY">
+<Container name="STR_VC">
+<Key ID="STR_ACE_VC_USARMY_SF">
+<German>Æ Special Forces</German>
+<English>Æ Special Forces</English>
+<Italian>Æ Special Forces</Italian>
+<Spanish>Æ Special Forces</Spanish>
+<French>Æ Special Forces</French>
+<Czech>Æ Speciální jednotky</Czech>
+<Russian>Æ Спецназ</Russian>
+<Polish>Æ Siły specjalne</Polish>
+<Hungarian>Æ Különleges Erők</Hungarian>
+</Key>
+</Container>
+<Container name="STR_DN">
+<Key ID="STR_DN_ACE_USARMY_MEDIC">
+<German>Sanitäter</German>
+<English>Combat Medic</English>
+<Italian>Portaferiti</Italian>
+<Spanish>Médico</Spanish>
+<French>Infirmier</French>
+<Czech>Zdravotník</Czech>
+<Russian>Санинструктор</Russian>
+<Polish>Sanitariusz</Polish>
+<Hungarian>Szanitéc</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_USARMY_PLATOONLEADER">
+<German>Zugführer</German>
+<English>Platoon Leader</English>
+<Italian>Platoon Leader</Italian>
+<Spanish>Platoon Leader</Spanish>
+<French>Platoon Leader</French>
+<Czech>Velitel čety</Czech>
+<Russian>Командир взвода</Russian>
+<Polish>Dowódca plutonu</Polish>
+<Hungarian>Platoon Leader</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_USARMY_RTO">
+<German>Funker</German>
+<English>RTO</English>
+<Italian>RTO</Italian>
+<Spanish>RTO</Spanish>
+<French>RTO</French>
+<Czech>RTO</Czech>
+<Russian>Радист</Russian>
+<Polish>Radiooperator</Polish>
+<Hungarian>RTO</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_USARMY_ENG_MINES">
+<German>Pionier (Minen)</German>
+<English>Engineer (Mines)</English>
+<Italian>Geniere (Mina)</Italian>
+<Spanish>Ingeniero (Mina)</Spanish>
+<French>Sapeur (Mines)</French>
+<Czech>Ženista (Mina)</Czech>
+<Russian>Сапёр (Мина)</Russian>
+<Polish>Saper (miny)</Polish>
+<Hungarian>Mérnök (Akna)</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_USARMY_ENG_EXPLO">
+<German>Pionier (Sprengstoff)</German>
+<English>Engineer (Explosives)</English>
+<Italian>Geniere (Explosives)</Italian>
+<Spanish>Ingeniero (Explosives)</Spanish>
+<French>Sapeur (Explosives)</French>
+<Czech>Ženista (Výbušniny)</Czech>
+<Russian>Сапёр (ВВ)</Russian>
+<Polish>Saper</Polish>
+<Hungarian>Mérnök (Explosives)</Hungarian>
+</Key>
+</Container>
+<Container name="STR_CFGGROUPS">
+<Key ID="STR_ACE_CFGGROUPS_WEST_USNAVY_INFANTRY_SEAL_AOR1_SQUAD">
+<German>SEAL Squad (AOR1)</German>
+<English>SEAL Squad (AOR1)</English>
+<Italian>SEAL Squad (AOR1)</Italian>
+<Spanish>SEAL Squad (AOR1)</Spanish>
+<French>SEAL Squad (AOR1)</French>
+<Czech>Družstvo SEAL(AOR1)</Czech>
+<Russian>SEAL Отделение (AOR1)</Russian>
+<Polish>Oddział SEAL (AOR1)</Polish>
+<Hungarian>SEAL Squad (AOR1)</Hungarian>
+</Key>
+<Key ID="STR_ACE_CFGGROUPS_WEST_USNAVY_INFANTRY_SEAL_AOR1_HALFSQUAD1">
+<German>SEAL Half-Squad 1 (AOR1)</German>
+<English>SEAL Half-Squad 1 (AOR1)</English>
+<Italian>SEAL Half-Squad 1 (AOR1)</Italian>
+<Spanish>SEAL Half-Squad 1 (AOR1)</Spanish>
+<French>SEAL Half-Squad 1 (AOR1)</French>
+<Czech>SEAL (půl družstva) 1 (AOR1)</Czech>
+<Russian>SEAL Секция 1 (AOR1)</Russian>
+<Polish>Sekcja 1 SEAL (AOR1)</Polish>
+<Hungarian>SEAL Half-Squad 1 (AOR1)</Hungarian>
+</Key>
+<Key ID="STR_ACE_CFGGROUPS_WEST_USNAVY_INFANTRY_SEAL_AOR1_HALFSQUAD2">
+<German>SEAL Half-Squad 2 (AOR1)</German>
+<English>SEAL Half-Squad 2 (AOR1)</English>
+<Italian>SEAL Half-Squad 2 (AOR1)</Italian>
+<Spanish>SEAL Half-Squad 2 (AOR1)</Spanish>
+<French>SEAL Half-Squad 2 (AOR1)</French>
+<Czech>SEAL (půl družstva) 2 (AOR1)</Czech>
+<Russian>SEAL Секция 2 (AOR1)</Russian>
+<Polish>Sekcja 2 SEAL (AOR1)</Polish>
+<Hungarian>SEAL Half-Squad 2 (AOR1)</Hungarian>
+</Key>
+<Key ID="STR_ACE_CFGGROUPS_WEST_USNAVY_INFANTRY_SEAL_AOR2_SQUAD">
+<German>SEAL Squad (AOR2)</German>
+<English>SEAL Squad (AOR2)</English>
+<Italian>SEAL Squad (AOR2)</Italian>
+<Spanish>SEAL Squad (AOR2)</Spanish>
+<French>SEAL Squad (AOR2)</French>
+<Czech>Družstvo SEAL (AOR2)</Czech>
+<Russian>SEAL Отделение (AOR2)</Russian>
+<Polish>Oddział SEAL (AOR2)</Polish>
+<Hungarian>SEAL Squad (AOR2)</Hungarian>
+</Key>
+<Key ID="STR_ACE_CFGGROUPS_WEST_USNAVY_INFANTRY_SEAL_AOR2_HALFSQUAD1">
+<German>SEAL Half-Squad 1 (AOR2)</German>
+<English>SEAL Half-Squad 1 (AOR2)</English>
+<Italian>SEAL Half-Squad 1 (AOR2)</Italian>
+<Spanish>SEAL Half-Squad 1 (AOR2)</Spanish>
+<French>SEAL Half-Squad 1 (AOR2)</French>
+<Czech>SEAL (půl družstva) 1 (AOR2)</Czech>
+<Russian>SEAL Секция 1 (AOR2)</Russian>
+<Polish>Sekcja 1 SEAL (AOR2)</Polish>
+<Hungarian>SEAL Half-Squad 1 (AOR2)</Hungarian>
+</Key>
+<Key ID="STR_ACE_CFGGROUPS_WEST_USNAVY_INFANTRY_SEAL_AOR2_HALFSQUAD2">
+<German>SEAL Half-Squad 2 (AOR2)</German>
+<English>SEAL Half-Squad 2 (AOR2)</English>
+<Italian>SEAL Half-Squad 2 (AOR2)</Italian>
+<Spanish>SEAL Half-Squad 2 (AOR2)</Spanish>
+<French>SEAL Half-Squad 2 (AOR2)</French>
+<Czech>SEAL (půl družstva) 2 (AOR2)</Czech>
+<Russian>SEAL Секция 2 (AOR2)</Russian>
+<Polish>Sekcja 2 SEAL (AOR2)</Polish>
+<Hungarian>SEAL Half-Squad 2 (AOR2)</Hungarian>
+</Key>
+<Key ID="STR_ACE_CFGGROUPS_WEST_USNAVY_INFANTRY_SEAL_WM_SQUAD">
+<German>SEAL Squad (Woodland)</German>
+<English>SEAL Squad (Woodland)</English>
+<Italian>SEAL Squad (Woodland)</Italian>
+<Spanish>SEAL Squad (Woodland)</Spanish>
+<French>SEAL Squad (Woodland)</French>
+<Czech>SEAL Squad (Woodland)</Czech>
+<Russian>SEAL Отделение (Вудланд)</Russian>
+<Polish>Oddział SEAL (las)</Polish>
+<Hungarian>SEAL Squad (Woodland)</Hungarian>
+</Key>
+<Key ID="STR_ACE_CFGGROUPS_WEST_USNAVY_INFANTRY_SEAL_WM_HALFSQUAD1">
+<German>SEAL Half-Squad 1 (Woodland)</German>
+<English>SEAL Half-Squad 1 (Woodland)</English>
+<Italian>SEAL Half-Squad 1 (Woodland)</Italian>
+<Spanish>SEAL Half-Squad 1 (Woodland)</Spanish>
+<French>SEAL Half-Squad 1 (Woodland)</French>
+<Czech>SEAL Half-Squad 1 (Woodland)</Czech>
+<Russian>SEAL Секция 1 (Вудланд)</Russian>
+<Polish>Sekcja 1 SEAL (las)</Polish>
+<Hungarian>SEAL Half-Squad 1 (Woodland)</Hungarian>
+</Key>
+<Key ID="STR_ACE_CFGGROUPS_WEST_USNAVY_INFANTRY_SEAL_WM_HALFSQUAD2">
+<German>SEAL Half-Squad 2 (Woodland)</German>
+<English>SEAL Half-Squad 2 (Woodland)</English>
+<Italian>SEAL Half-Squad 2 (Woodland)</Italian>
+<Spanish>SEAL Half-Squad 2 (Woodland)</Spanish>
+<French>SEAL Half-Squad 2 (Woodland)</French>
+<Czech>SEAL (půl družstva) 2 (Woodland)</Czech>
+<Russian>SEAL Секция 2 (Вудланд)</Russian>
+<Polish>Sekcja 2 SEAL (las)</Polish>
+<Hungarian>SEAL Half-Squad 2 (Woodland)</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

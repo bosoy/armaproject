@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="sys_afterburner">
+<Container name="STR_TITLE">
+<Key ID="STR_ACE_TITLE_AFTERBURNER">
+<English>Afterburner</English>
+<German>Nachbrenner</German>
+<Spanish>Afterburner</Spanish>
+<Czech>Forsáž</Czech>
+<French>Afterburner</French>
+<Polish>Dopalacz</Polish>
+<Italian>Afterburner</Italian>
+<Russian>Форсаж</Russian>
+<Hungarian>Afterburner</Hungarian>
+</Key>
+</Container></Package></Project>

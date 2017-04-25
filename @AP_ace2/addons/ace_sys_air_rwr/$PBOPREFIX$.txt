@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_air_rwr
+Pbo Type is: Arma Addon
+Sha: 'B550D2E1F158FFB2E5012F250065E6423FF3FE65'
+//////</HEADER>//////

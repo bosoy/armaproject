@@ -1,0 +1,200 @@
+/*%FSM<COMPILE "scriptedFSM.cfg, fnc_tractor_pull">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"fnc_tractor_pull",0,250,-100.000000,-25.000000,0.000000,25.000000,0.000000,"fnc_tractor_pull"};
+item1[] = {"not_isnil_object",4,218,-225.000000,-25.000000,-125.000000,25.000000,1.000000,"not isnil object"};
+item2[] = {"true",8,218,100.000000,-25.000000,200.000000,25.000000,0.000000,"true"};
+item3[] = {"verification",2,250,-225.000000,50.000000,-125.000000,100.000000,0.000000,"verification"};
+item4[] = {"End",1,250,100.000000,125.000000,200.000000,175.000000,0.000000,"End"};
+item5[] = {"true",8,218,-225.000000,125.000000,-125.000000,175.000000,0.000000,"true"};
+item6[] = {"distance___8",4,218,-100.000000,125.000000,0.000000,175.000000,1.000000,"distance > 8"};
+item7[] = {"verified",2,250,-225.000000,200.000000,-125.000000,250.000000,0.000000,"verified"};
+item8[] = {"true",8,218,-225.000000,275.000000,-125.000000,325.000000,0.000000,"true"};
+item9[] = {"already_attached",4,218,-100.000000,200.000000,0.000000,250.000000,1.000000,"already" \n "attached"};
+item10[] = {"attach",2,4346,-225.000000,350.000000,-125.000000,400.000000,0.000000,"attach"};
+item11[] = {"true",8,218,100.000000,350.000000,200.000000,400.000000,0.000000,"true"};
+item12[] = {"c130",4,218,-100.000000,50.000000,0.000000,100.000000,2.000000,"c130"};
+link0[] = {0,1};
+link1[] = {0,2};
+link2[] = {1,3};
+link3[] = {2,4};
+link4[] = {3,5};
+link5[] = {3,6};
+link6[] = {3,12};
+link7[] = {5,7};
+link8[] = {6,4};
+link9[] = {7,8};
+link10[] = {7,9};
+link11[] = {8,10};
+link12[] = {9,4};
+link13[] = {10,11};
+link14[] = {11,4};
+link15[] = {12,4};
+globals[] = {25.000000,1,0,0,0,640,480,1,14,6316128,1,-426.184448,426.184174,584.965088,-262.786194,919,928,1};
+window[] = {2,-1,-1,-1,-1,772,90,1050,90,3,941};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "fnc_tractor_pull";
+  class States
+  {
+    /*%FSM<STATE "fnc_tractor_pull">*/
+    class fnc_tractor_pull
+    {
+      name = "fnc_tractor_pull";
+      init = /*%FSM<STATEINIT""">*/"// ace_sys_towingtractor (.pbo) | (c) 2009 by rocko */" \n
+       "" \n
+       "// Pull it baby, Pull it ....aw oohh yea, pull it off" \n
+       "// K, for nerds here's how it works" \n
+       "" \n
+       "private[""_exit"",""_puller"",""_object""];" \n
+       "_exit = false;" \n
+       "" \n
+       "_puller = _this select 0;" \n
+       "_object = nearestObject [_puller, ""Plane""]; 	// of course only planes !! other things would be stupid" \n
+       "" \n
+       "" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "not_isnil_object">*/
+        class not_isnil_object
+        {
+          priority = 1.000000;
+          to="verification";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(isNil ""_object"")"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "verification">*/
+    class verification
+    {
+      name = "verification";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "c130">*/
+        class c130
+        {
+          priority = 2.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(typeOf _object) isKindOf ""C130J"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "distance___8">*/
+        class distance___8
+        {
+          priority = 1.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"((_puller distance _object) > 8)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="verified";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End">*/
+    class End
+    {
+      name = "End";
+      init = /*%FSM<STATEINIT""">*/"_exit = true;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "verified">*/
+    class verified
+    {
+      name = "verified";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "already_attached">*/
+        class already_attached
+        {
+          priority = 1.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_puller getVariable ""ace_puller_attached"")"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="attach";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "attach">*/
+    class attach
+    {
+      name = "attach";
+      init = /*%FSM<STATEINIT""">*/"_object attachTo [_puller, [0,-7,0], ""gear_1_1""];" \n
+       "_object setPos (getPos _object);" \n
+       "" \n
+       "_puller setVariable[""ace_puller_attached"",true,true];" \n
+       "_object setVariable[""ace_puller_attached"",true,true];" \n
+       "_puller setVariable[""ace_puller_cargo"",_object,true];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="fnc_tractor_pull";
+  finalStates[] =
+  {
+    "End",
+  };
+};
+/*%FSM</COMPILE>*/

@@ -1,0 +1,147 @@
+OnLoadMission="Crash & Grab (v2.1) by AnimalMother92";
+
+OnLoadIntroTime=FALSE;
+OnLoadMissionTime=TRUE;
+loadScreen = "pic2.paa";
+
+disabledAI=FALSE;
+ShowGPS=1;
+showCompass=1;
+showWatch=1;
+showMap=1;
+showNotePad=1;
+briefing=1;
+debriefing=1;
+
+class Weapons 
+ {
+  class M249_TWS_EP1 {count = 1;};
+  class ACE_SOC_M4A1_AIM_SD {count = 1;};
+  class Mk_48 {count = 1;};
+  class ACE_SOC_M4A1_Eotech_4x {count = 1;};
+  class ACE_HK417_leupold {count = 1;};
+  class SCAR_H_LNG_Sniper_SD {count = 1;};
+  class ACE_M110_SD {count = 1;};
+  class ACE_P226 {count = 4;};
+  class ACE_SOC_M4A1_TWS {count = 1;};
+  class ACE_HK416_D14_TWS {count = 1;};
+  class ACE_HK416_D10_COMPM3_SD {count = 1;};
+  class ACE_SCAR_H_STD_Spect {count = 1;};
+  class ACE_M4SPR_SD {count = 1;};
+  class M4SPR {count = 1;};
+  class SCAR_L_STD_Mk4CQT {count = 1;};
+  class ACE_SOC_M4A1_SHORTDOT_SD {count = 1;};
+  class ACE_HK417_Eotech_4x {count = 1;};
+  class M110_NVG_EP1 {count = 1;};
+  class MAAWS {count = 1;};
+  class ACE_M136_CSRS {count = 2;};
+ };
+
+class Magazines 
+ {
+  class ACE_100Rnd_556x45_T_M249 {count = 20;};
+  class ACE_20Rnd_762x51_SB_HK417 {count = 20;};
+  class ACE_30Rnd_556x45_SB_Stanag {count = 50;};
+  class 30Rnd_556x45_StanagSD {count = 50;};
+  class 100Rnd_762x51_M240 {count = 20;};
+  class ACE_20Rnd_762x51_SB_M110 {count = 20;};
+  class ACE_20Rnd_762x51_SB_SCAR {count = 50;};
+  class MAAWS_HEDP {count = 5;};
+  class ACE_15Rnd_9x19_P226 {count = 20;};
+  class 1Rnd_HE_M203 {count = 20;};
+  class HandGrenade_West {count = 20;};
+  class SmokeShell {count = 20;};
+ };
+
+class CfgSounds
+{
+ sounds[]={};
+	class trophy
+	{
+		name = "trophy";
+		sound[] = {"\sound\trophy.ogg", 2, 1};
+		titles[]={};
+	};
+};
+
+class CfgMusic
+{
+ tracks[]={};
+	class AM92Intro
+	{
+		name = "AM92Intro";
+		sound[] = {"\music\AM92Intro.ogg", db+0, 1.0};
+	};
+};
+
+class Header
+{
+gameType=COOP;
+minPlayers=1;
+maxPlayers=7;
+};
+
+respawn=4;
+respawnDelay=10;
+respawnDialog=0;
+
+
+
+// Other code
+doneKeys[]={"Crash and Grab"};
+
+#define FontM "Zeppelin32"
+#define FontHTML "Zeppelin32"
+
+class RscTitles
+{	
+	class Credit1
+   	{
+      idd=-1;
+      movingEnable=true;
+      duration=10;
+      name="Credit1";
+      controls[]={"text1"};
+
+      class text1
+      {
+         idc = -1;
+         type = 0;
+         style = 2;
+         x = 0.2;
+         y = 0;
+         w = 1;
+         h = 0.04;
+	 font = "Zeppelin32";
+       sizeEx = 0.05;
+       colorBackground[] = {0, 0, 0, 0};
+   	 colorText[] = {1, 1, 1, 0.8};
+  	 text = "AnimalMother92 Presents...";
+      };
+   	};
+   
+   	class Credit2
+   	{
+      idd=-1;
+      movingEnable=true;
+      duration=10;
+      name="Credit2";
+      controls[]={"text1"};
+
+      class text1
+      {
+         idc = -1;
+         type = 0;
+         style = 2;
+         x = 0.2;
+         y = 0.2;
+         w = 1;
+         h = 0.05;
+	 font = "Zeppelin32";
+       sizeEx = 0.05;
+       colorBackground[] = {0, 0, 0, 0};
+   	 colorText[] = {1, 1, 1, 0.8};
+  	 text = "Crash & Grab";
+      };
+    };
+};

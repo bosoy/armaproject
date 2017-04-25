@@ -1,0 +1,555 @@
+/*%FSM<COMPILE "scriptedFSM.cfg, ci_fsm">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Interaction_doFSM",0,250,0.000000,-250.000000,125.000000,-175.000000,0.000000,"Interaction doFSM" \n "(Low level)" \n ""};
+item1[] = {"freeze",4,218,-350.000000,-75.000000,-250.000000,-25.000000,0.000000,"freeze"};
+item2[] = {"down",4,218,-250.000000,-75.000000,-150.000000,-25.000000,0.000000,"down"};
+item3[] = {"do",2,250,-250.000000,50.000000,-150.000000,100.000000,0.000000,"do"};
+item4[] = {"nothing",4,218,-100.000000,-225.000000,0.000000,-175.000000,0.000000,"nothing"};
+item5[] = {"do_1",2,250,-350.000000,50.000000,-250.000000,100.000000,0.000000,"do"};
+item6[] = {"exit",1,250,-200.000000,-225.000000,-100.000000,-175.000000,0.000000,"exit"};
+item7[] = {"away",4,218,-150.000000,-75.000000,-50.000000,-25.000000,0.000000,"away"};
+item8[] = {"do_2",2,250,-150.000000,50.000000,-50.000000,100.000000,0.000000,"do"};
+item9[] = {"fail",4,218,-225.000000,150.000000,-175.000000,175.000000,1.000000,"fail"};
+item10[] = {"completed",4,218,-125.000000,125.000000,-75.000000,150.000000,0.000000,"completed"};
+item11[] = {"inside",4,218,-50.000000,-75.000000,50.000000,-25.000000,0.000000,"inside"};
+item12[] = {"getout",4,218,50.000000,-75.000000,150.000000,-25.000000,0.000000,"getout"};
+item13[] = {"stop",4,218,150.000000,-75.000000,250.000000,-25.000000,0.000000,"stop"};
+item14[] = {"move_along",4,218,-450.000000,-75.000000,-350.000000,-25.000000,0.000000,"move along"};
+item15[] = {"do_3",2,250,-50.000000,50.000000,50.000000,100.000000,0.000000,"do"};
+item16[] = {"do_4",2,250,50.000000,50.000000,150.000000,100.000000,0.000000,"do"};
+item17[] = {"do_5",2,250,150.000000,50.000000,250.000000,100.000000,0.000000,"do"};
+item18[] = {"do_6",2,250,-450.000000,50.000000,-350.000000,100.000000,0.000000,"do"};
+item19[] = {"wait_300",4,218,150.000000,375.000000,250.000000,425.000000,0.000000,"wait" \n "300"};
+item20[] = {"wait_300",4,218,-350.000000,250.000000,-250.000000,300.000000,0.000000,"wait" \n "300"};
+item21[] = {"continue___exit",1,250,-350.000000,375.000000,-250.000000,425.000000,0.000000,"continue" \n "&" \n "exit"};
+item22[] = {"_",8,218,-450.000000,375.000000,-350.000000,425.000000,0.000000,""};
+item23[] = {"moveTo",2,4346,-50.000000,150.000000,0.000000,175.000000,0.000000,"moveTo"};
+item24[] = {"found",4,218,0.000000,100.000000,50.000000,125.000000,1.000000,"found"};
+item25[] = {"wait_300",2,250,-150.000000,250.000000,-50.000000,300.000000,0.000000,"wait 300"};
+item26[] = {"VEHICLE_continue",1,250,150.000000,500.000000,250.000000,550.000000,0.000000,"VEHICLE" \n "continue" \n "&" \n "exit"};
+item27[] = {"wait_300",4,218,50.000000,125.000000,150.000000,175.000000,0.000000,"wait" \n "300"};
+item28[] = {"do_getin",1,250,50.000000,250.000000,150.000000,300.000000,0.000000,"do" \n "getin"};
+item29[] = {"fail",8,218,-50.000000,100.000000,0.000000,125.000000,0.000000,"fail"};
+link0[] = {0,1};
+link1[] = {0,2};
+link2[] = {0,4};
+link3[] = {0,7};
+link4[] = {0,11};
+link5[] = {0,12};
+link6[] = {0,13};
+link7[] = {0,14};
+link8[] = {1,5};
+link9[] = {2,3};
+link10[] = {3,20};
+link11[] = {4,6};
+link12[] = {5,20};
+link13[] = {7,8};
+link14[] = {8,9};
+link15[] = {8,10};
+link16[] = {9,5};
+link17[] = {10,25};
+link18[] = {11,15};
+link19[] = {12,16};
+link20[] = {13,17};
+link21[] = {14,18};
+link22[] = {15,24};
+link23[] = {15,29};
+link24[] = {16,27};
+link25[] = {17,19};
+link26[] = {18,22};
+link27[] = {19,26};
+link28[] = {20,21};
+link29[] = {22,21};
+link30[] = {23,9};
+link31[] = {23,10};
+link32[] = {24,23};
+link33[] = {25,20};
+link34[] = {27,28};
+link35[] = {29,8};
+globals[] = {25.000000,1,0,0,0,640,480,1,60,6316128,1,-535.699219,343.716248,533.299133,-358.707062,908,921,1};
+window[] = {2,-1,-1,-32000,-32000,631,25,1033,25,3,926};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "ci_fsm";
+  class States
+  {
+    /*%FSM<STATE "Interaction_doFSM">*/
+    class Interaction_doFSM
+    {
+      name = "Interaction_doFSM";
+      init = /*%FSM<STATEINIT""">*/"// http://community.bistudio.com/wiki/doFSM" \n
+       "// _unit doFSM [""x\ace\addons\sys_interaction\ci_fsm.fsm"", getPos _unit, _unit]" \n
+       "// passed:" \n
+       "// _leader" \n
+       "// _destination" \n
+       "// _target" \n
+       "// _units" \n
+       "" \n
+       "DEBUG_CI = false;" \n
+       "" \n
+       "if (DEBUG_CI) then {" \n
+       "	diag_log _target;" \n
+       "	diag_log format [""%1"", typeOf _target];" \n
+       "" \n
+       "	diag_log _leader;" \n
+       "	diag_log _destination;" \n
+       "	diag_log _units;" \n
+       "" \n
+       "	if (_target isKindOf ""Car"") then {" \n
+       "		diag_log ""_target is a vehicle"";" \n
+       "	};" \n
+       "	diag_log format [""%1"",(count _units)];" \n
+       "};" \n
+       "" \n
+       "private [""_unit"",""_condition"",""_target"",""_leader"",""_destination"",""_units"",""_sleep"",""_behaviour"",""_house"",""_pos"",""_attempts"",""_allHouses"",""_newPos"",""_time2wait""];" \n
+       "" \n
+       "_unit = _target;" \n
+       "_condition = _unit getVariable [""ace_sys_interaction_ci_fsmcond"",""nothing""];" \n
+       "" \n
+       "_behaviour = behaviour _unit;" \n
+       "_sleep = if (DEBUG_CI) then { 5 } else { 300 };"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "down">*/
+        class down
+        {
+          priority = 0.000000;
+          to="do";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_condition == ""down"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "nothing">*/
+        class nothing
+        {
+          priority = 0.000000;
+          to="exit";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_condition == ""nothing"" || {!alive _unit}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "away">*/
+        class away
+        {
+          priority = 0.000000;
+          to="do_2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_condition == ""away"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "inside">*/
+        class inside
+        {
+          priority = 0.000000;
+          to="do_3";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_condition == ""inside"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "getout">*/
+        class getout
+        {
+          priority = 0.000000;
+          to="do_4";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_condition == ""getout"" && {_unit isKindOf ""Car""} "/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "stop">*/
+        class stop
+        {
+          priority = 0.000000;
+          to="do_5";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_condition == ""stop"" && {_unit isKindOf ""Car"" }"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "move_along">*/
+        class move_along
+        {
+          priority = 0.000000;
+          to="do_6";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_condition == ""move"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "freeze">*/
+        class freeze
+        {
+          priority = 0.000000;
+          to="do_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_condition == ""freeze"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "do">*/
+    class do
+    {
+      name = "do";
+      init = /*%FSM<STATEINIT""">*/"if (DEBUG_CI) then {" \n
+       "	diag_log ""Issuing GETDOWN"";" \n
+       "};" \n
+       "" \n
+       "_unit disableAI ""MOVE"";" \n
+       "_unit setBehaviour ""SAFE"";" \n
+       "_unit setUnitPos ""DOWN"";" \n
+       "" \n
+       "_time2wait = time + _sleep;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "wait_300">*/
+        class wait_300
+        {
+          priority = 0.000000;
+          to="continue___exit";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _time2wait"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "do_1">*/
+    class do_1
+    {
+      name = "do_1";
+      init = /*%FSM<STATEINIT""">*/"if (DEBUG_CI) then {" \n
+       "	diag_log ""Issuing FREEZE"";" \n
+       "};" \n
+       "" \n
+       "_unit disableAI ""MOVE"";" \n
+       "_unit playMove ""AmovPercMstpSsurWnonDnon"";" \n
+       "" \n
+       "_time2wait = time + _sleep;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "wait_300">*/
+        class wait_300
+        {
+          priority = 0.000000;
+          to="continue___exit";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _time2wait"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "exit">*/
+    class exit
+    {
+      name = "exit";
+      init = /*%FSM<STATEINIT""">*/"if (DEBUG_CI) then {" \n
+       "	diag_log ""Nothing issued -> Exiting"";" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "do_2">*/
+    class do_2
+    {
+      name = "do_2";
+      init = /*%FSM<STATEINIT""">*/"if (DEBUG_CI) then {" \n
+       "	diag_log ""Issuing MOVE AWAY"";" \n
+       "};" \n
+       "" \n
+       "_unit enableai ""MOVE"";" \n
+       "_unit setBehaviour ""SAFE"";" \n
+       "_unit setUnitPos ""Up"";	" \n
+       "_pos = getPos _unit;" \n
+       "_pos set [0, (_pos select 0) + (sin (random 360) * 100)];" \n
+       "_pos set [1, (_pos select 1) + (cos (random 360) * 100)];" \n
+       "_unit moveTo _pos;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "fail">*/
+        class fail
+        {
+          priority = 1.000000;
+          to="do_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"moveToFailed _unit"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "completed">*/
+        class completed
+        {
+          priority = 0.000000;
+          to="wait_300";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"moveToCompleted _unit"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "do_3">*/
+    class do_3
+    {
+      name = "do_3";
+      init = /*%FSM<STATEINIT""">*/"if (DEBUG_CI) then {" \n
+       "	diag_log ""Issuing GET INSIDE"";" \n
+       "};" \n
+       "" \n
+       "_unit enableai ""MOVE"";" \n
+       "_unit setBehaviour ""SAFE"";" \n
+       "_unit setUnitPos ""Up"";	" \n
+       "" \n
+       "_house = nearestBuilding _unit;" \n
+       "_pos = 0;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "found">*/
+        class found
+        {
+          priority = 1.000000;
+          to="moveTo";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"format [""%1"", _house buildingPos _pos] != ""[0,0,0]"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "fail">*/
+        class fail
+        {
+          priority = 0.000000;
+          to="do_2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "do_4">*/
+    class do_4
+    {
+      name = "do_4";
+      init = /*%FSM<STATEINIT""">*/"if (DEBUG_CI) then {" \n
+       "	diag_log ""Issuing GETOUT"";" \n
+       "};" \n
+       "" \n
+       "diag_log _units;" \n
+       "" \n
+       "_unit disableAI ""MOVE"";" \n
+       "doGetOut _units;" \n
+       "{" \n
+       "	_x disableAI ""MOVE"";" \n
+       "	_x playMove ""AmovPercMstpSsurWnonDnon"";" \n
+       "} foreach _units;" \n
+       "_units allowGetin false;" \n
+       "" \n
+       "_time2wait = time + _sleep;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "wait_300">*/
+        class wait_300
+        {
+          priority = 0.000000;
+          to="do_getin";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _time2wait"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "do_5">*/
+    class do_5
+    {
+      name = "do_5";
+      init = /*%FSM<STATEINIT""">*/"if (DEBUG_CI) then {" \n
+       "	diag_log ""Issuing STOP"";" \n
+       "};" \n
+       "" \n
+       "_unit disableAI ""MOVE"";" \n
+       "" \n
+       "_time2wait = time + _sleep;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "wait_300">*/
+        class wait_300
+        {
+          priority = 0.000000;
+          to="VEHICLE_continue";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _time2wait"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "do_6">*/
+    class do_6
+    {
+      name = "do_6";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="continue___exit";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "continue___exit">*/
+    class continue___exit
+    {
+      name = "continue___exit";
+      init = /*%FSM<STATEINIT""">*/"if (DEBUG_CI) then {" \n
+       "	diag_log ""Issuing ENDSTATE"";" \n
+       "};" \n
+       "" \n
+       "_unit enableai ""MOVE"";" \n
+       "[""ace_sys_interaction_swm2"", [_unit, """"]] call CBA_fnc_GlobalEvent;" \n
+       "_unit setUnitPos ""UP"";" \n
+       "_unit setBehaviour _behaviour;" \n
+       "[_unit,""nothing""] call ace_sys_interaction_fnc_ci_setVar;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "moveTo">*/
+    class moveTo
+    {
+      name = "moveTo";
+      init = /*%FSM<STATEINIT""">*/"_unit moveTo (_house buildingPos _pos);"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "fail">*/
+        class fail
+        {
+          priority = 1.000000;
+          to="do_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"moveToFailed _unit"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "completed">*/
+        class completed
+        {
+          priority = 0.000000;
+          to="wait_300";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"moveToCompleted _unit"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "wait_300">*/
+    class wait_300
+    {
+      name = "wait_300";
+      init = /*%FSM<STATEINIT""">*/"_unit disableAI ""MOVE"";" \n
+       "_time2wait = time + _sleep;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "wait_300">*/
+        class wait_300
+        {
+          priority = 0.000000;
+          to="continue___exit";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _time2wait"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "VEHICLE_continue">*/
+    class VEHICLE_continue
+    {
+      name = "VEHICLE_continue";
+      init = /*%FSM<STATEINIT""">*/"if (DEBUG_CI) then {" \n
+       "	diag_log ""Issuing ENDSTATE"";" \n
+       "};" \n
+       "" \n
+       "_unit enableai ""MOVE"";" \n
+       "_unit setBehaviour _behaviour;" \n
+       "[_unit,""nothing""] call ace_sys_interaction_fnc_ci_setVar;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "do_getin">*/
+    class do_getin
+    {
+      name = "do_getin";
+      init = /*%FSM<STATEINIT""">*/"if (DEBUG_CI) then {" \n
+       "	diag_log ""TIMEOUT -> Issuing GETIN and EXITING"";" \n
+       "};" \n
+       "" \n
+       "{" \n
+       "	[""ace_sys_interaction_swm2"", [_x, """"]] call CBA_fnc_GlobalEvent;" \n
+       "	_x enableai ""MOVE"";" \n
+       "} foreach _units;" \n
+       "_units allowGetin true;" \n
+       "" \n
+       "_unit enableai ""MOVE"";"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Interaction_doFSM";
+  finalStates[] =
+  {
+    "exit",
+    "continue___exit",
+    "VEHICLE_continue",
+    "do_getin",
+  };
+};
+/*%FSM</COMPILE>*/

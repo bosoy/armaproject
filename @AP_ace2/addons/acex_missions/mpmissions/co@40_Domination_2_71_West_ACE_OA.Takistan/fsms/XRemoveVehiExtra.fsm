@@ -1,0 +1,67 @@
+class FSM
+{
+  fsmName = "XRemoveVehiExtra";
+  class States
+  {
+    class Start
+    {
+      name = "Start";
+      init = "private [""_aunit"",""_position"",""_isruin"",""_timeend""];" \n
+       "_aunit = _this select 0;" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class __alive
+        {
+          priority = 0.000000;
+          to="Check";
+          precondition = "";
+          condition="!alive _aunit";
+          action="";
+        };
+      };
+    };
+    class End
+    {
+      name = "End";
+      init = "if (_isruin) then {" \n
+       "	_ruin = nearestObject [[_position select 0, _position select 1, 0], ""Ruins""];" \n
+       "	if (!isNull _ruin) then {" \n
+       "		[""d_del_ruin"", position _ruin] call d_fnc_NetCallEvent;" \n
+       "		deleteVehicle _ruin;" \n
+       "	};" \n
+       "};" \n
+       "" \n
+       "deleteVehicle _aunit;";
+      precondition = "";
+      class Links
+      {
+      };
+    };
+    class Check
+    {
+      name = "Check";
+      init = "_position = getPosASL _aunit;" \n
+       "_isruin = (_aunit isKindOf ""House"");" \n
+       "_timeend = time + 30; ";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = "";
+          condition="time > _timeend";
+          action="";
+        };
+      };
+    };
+  };
+  initState="Start";
+  finalStates[] =
+  {
+    "End",
+  };
+};

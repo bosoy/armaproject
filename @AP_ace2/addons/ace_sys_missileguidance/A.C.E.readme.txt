@@ -1,0 +1,64 @@
+/////////////////////////////////////////////////////////////////////////////////
+#                                                                               #
+#                       ADVANCED COMBAT ENVIRONMENT 2 FILE                      #
+#                                                                               #
+/////////////////////////////////////////////////////////////////////////////////
+
+
+#===========#
+| Component |
+#===========#
+
+ace_sys_missileguidance
+
+#================#
+| Main author(s) |
+#================#
+
+Headspace
+q1184
+
+#===============#
+| Local credits |
+#===============#
+
+q1184
+rocko
+Rommel
+Sickboy
+zGuba
+
+#=============================#
+| Rough component description |
+#=============================#
+
+This module takes care of several AT munitions guidance systems, like TOW, Shturm or Hellfire II / Longbow. Game's default missile guidance systems have been disabled for these.
+
+AI and players have to follow RL-alike measures to hit the target. You may avoid getting hit if You manage to neutralize SACLOS missile operator during missile flight.
+
+We can always make more fancy, detailed or correct simulation, if it's worth the work. Actually it follows simple routines to show gravity, wind and air friction influence on missiles.
+
+#=================#
+| Contact details |
+#=================#
+
+Page:	http://dev-heaven.net/projects/show/ace-mod2
+
+
+
+/////////////////////////////////////////////////////////////////////////////////
+#                                                                               #
+#                       ADVANCED COMBAT ENVIRONMENT 2 FILE                      #
+#                                                                               #
+/////////////////////////////////////////////////////////////////////////////////
+//                                                                             //
+#               Copyright 2009 A.C.E MOD, ALL RIGHTS RESERVED                   #
+//                                                                             //
+//  This product is licensed for personal use only.  Commercial distribution   //
+//  prohibited.  Military use prohibited.  Use prohibited if any component     //
+//  of this distribution removed or modified without express written consent   //
+//  of the developer. For further licensing details please refer to the        //
+//  End User License Agreement provided within this PBO file.                  //
+//  Any questions or comments, please contact contact@acemod.net               //
+//                                                                             //
+/////////////////////////////////////////////////////////////////////////////////

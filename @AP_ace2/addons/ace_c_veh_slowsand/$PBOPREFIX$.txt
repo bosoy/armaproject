@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\c_veh_slowsand
+Pbo Type is: Arma Addon
+Sha: 'ACF7CC4332B4CB2CF835A8E309CCA1828F5F81B9'
+//////</HEADER>//////

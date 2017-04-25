@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex\addons\t_wep_launcher
+Pbo Type is: Arma Addon
+Sha: '47039A7730EE57FFCA393C1CFC282B253604DA11'
+//////</HEADER>//////

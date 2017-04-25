@@ -1,0 +1,217 @@
+/*%FSM<COMPILE "D:\ArmA2\FSM Editor Personal Edition\scriptedFSM.cfg, townpatrol">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Init",0,4346,-27.775419,-111.166977,62.224556,-61.166962,0.000000,"Init"};
+item1[] = {"_",-1,250,-11.537962,23.713089,-8.193480,23.713089,0.000000,""};
+item2[] = {"_",8,218,-1.511484,-17.446537,36.912697,11.742107,0.000000,""};
+item3[] = {"Check",2,250,-28.138243,43.531616,61.861732,93.531563,0.000000,"Check"};
+item4[] = {"Team_is_Dead",4,218,96.689819,42.858948,186.689758,92.858955,1.000000,"Team is Dead"};
+item5[] = {"End",1,250,97.392929,120.390938,187.392944,170.390991,0.000000,"End"};
+item6[] = {"",7,210,203.696777,214.089935,211.696777,222.089935,0.000000,""};
+item7[] = {"Update",4,218,-27.899580,120.367233,62.100410,170.367279,0.000000,"Update"};
+item8[] = {"Change",2,250,-27.260115,192.051666,62.739876,242.051483,0.000000,"Change"};
+item9[] = {"",7,210,203.564392,-7.076275,211.564392,0.923725,0.000000,""};
+item10[] = {"Idle",4,218,-147.923401,44.465637,-57.923424,94.465645,0.000000,"Idle"};
+item11[] = {"Idle",2,250,-147.793304,-27.947792,-57.793274,22.052193,0.000000,"Idle"};
+version=1;
+class LayoutItems
+{
+	class Item1
+	{
+		class ItemInfo
+		{
+			FontFace="Arial";
+			FontHeight=10;
+			lStyle=1;
+		};
+	};
+};
+link0[] = {0,2};
+link1[] = {2,3};
+link2[] = {3,4};
+link3[] = {3,7};
+link4[] = {3,10};
+link5[] = {4,5};
+link6[] = {6,9};
+link7[] = {7,8};
+link8[] = {8,6};
+link9[] = {9,2};
+link10[] = {10,11};
+link11[] = {11,2};
+globals[] = {0.000000,0,0,0,0,640,480,1,33,6316128,1,-256.373871,339.914581,308.677979,-157.313736,659,515,1};
+window[] = {0,-1,-1,-1,-1,939,274,1534,304,1,677};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "townpatrol";
+  class States
+  {
+    /*%FSM<STATE "Init">*/
+    class Init
+    {
+      name = "Init";
+      init = /*%FSM<STATEINIT""">*/"_location = _this select 0;" \n
+       "_team = _this select 1;" \n
+       "_sideID = _this select 2;" \n
+       "_focus = _this select 3;" \n
+       "_isReinforcement = _this select 4;" \n
+       "_name = vehicleVarName _location;" \n
+       "" \n
+       "_lastUpdate = - 60;" \n
+       "" \n
+       "_lastSV = _location getVariable 'supplyValue';" \n
+       "_startSV = _location getVariable 'startingSupplyValue';" \n
+       "_mode = ""patrol"";" \n
+       "_lastMode = ""nil"";" \n
+       "" \n
+       "_tudd = 'WFBE_TOWNUNITSDEFENSEDISTANCE' Call GetNamespace;" \n
+       "_tupd = 'WFBE_TOWNUNITSPATROLDISTANCE' Call GetNamespace;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Check";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _lastUpdate > 30;"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Check">*/
+    class Check
+    {
+      name = "Check";
+      init = /*%FSM<STATEINIT""">*/"_lastUpdate = time;" \n
+       "" \n
+       "_aliveTeam = if (count ((units _team) Call GetLiveUnits) == 0) then {false} else {true};" \n
+       "" \n
+       "_currentSV = _location getVariable 'supplyValue';" \n
+       "if (_currentSV < _lastSV || _currentSV < _startSV || _sideID != (_location getVariable 'sideID')) then {" \n
+       "	_mode = ""defense"";" \n
+       "} else {" \n
+       "	_mode = ""patrol"";" \n
+       "};" \n
+       "" \n
+       "_lastSV = _currentSV;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Team_is_Dead">*/
+        class Team_is_Dead
+        {
+          priority = 1.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"gameOver || !_aliveTeam || isNull _team"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Idle">*/
+        class Idle
+        {
+          priority = 0.000000;
+          to="Idle";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_aliveTeam && !gameOver"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Update">*/
+        class Update
+        {
+          priority = 0.000000;
+          to="Change";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_aliveTeam && _mode != _lastMode && !gameOver"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End">*/
+    class End
+    {
+      name = "End";
+      init = /*%FSM<STATEINIT""">*/"if (_isReinforcement) then {" \n
+       "	if (_sideID == RESISTANCEID) then {" \n
+       "		_reinf = _location getVariable ""reinforcements"";" \n
+       "		_reinf = _reinf - 1;" \n
+       "		_location setVariable [""reinforcements"",_reinf];" \n
+       "	} else {" \n
+       "		_reinf = _location getVariable ""reinforcements_occ"";" \n
+       "		_reinf = _reinf - 1;" \n
+       "		_location setVariable [""reinforcements_occ"",_reinf];" \n
+       "	};" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Change">*/
+    class Change
+    {
+      name = "Change";
+      init = /*%FSM<STATEINIT""">*/"_lastMode = _mode;" \n
+       "" \n
+       "if (_mode == ""patrol"") then {" \n
+       "	if (isNull _focus) then {" \n
+       "		[_team,_location,_tupd] Spawn AITownPatrol;" \n
+       "	} else {" \n
+       "		[_team,_focus,_tupd/4] Spawn AIPatrol;" \n
+       "	};" \n
+       "} else {" \n
+       "	[_team,getPos _location,_tudd,""Defend""] Spawn AITownResitance;" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Check";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _lastUpdate > 30;"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Idle">*/
+    class Idle
+    {
+      name = "Idle";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Check";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _lastUpdate > 30;"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Init";
+  finalStates[] =
+  {
+    "End",
+  };
+};
+/*%FSM</COMPILE>*/

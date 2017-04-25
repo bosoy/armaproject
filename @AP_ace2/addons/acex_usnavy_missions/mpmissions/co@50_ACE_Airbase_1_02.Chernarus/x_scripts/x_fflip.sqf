@@ -1,0 +1,2 @@
+private ["_l","_vUp","_winkel"];
+if ((vehicle player) == player) then {unflip_objectID=(position player nearestObject "LandVehicle");if (!alive unflip_objectID || player distance unflip_objectID > 8)then{false}else{_vUp=vectorUp unflip_objectID;if((_vUp select 2) < 0 && player distance (position player nearestObject d_rep_truck) < 20)then{true}else{_l=sqrt((_vUp select 0)^2+(_vUp select 1)^2);if(_l != 0)then{_winkel=(_vUp select 2) atan2 _l;if(_winkel < 30 && player distance (position player nearestObject d_rep_truck) < 20)then{true}else{false};};};}} else {false}

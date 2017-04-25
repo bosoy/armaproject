@@ -1,0 +1,12 @@
+ambient[] = {0.0,0.0,0.0,1.0};
+diffuse[] = {0.0,0.0,0.0,1.0};
+forcedDiffuse[] = {0.03,0.03,0.03,1.0};
+emmisive[] = {1.0,1.0,1.0,0.0};
+specular[] = {0.0,0.0,0.0,0.0};
+specularPower = 0.0;
+renderFlags[] = {
+	"NoAlphaWrite",
+	"AddBlend"
+};
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";

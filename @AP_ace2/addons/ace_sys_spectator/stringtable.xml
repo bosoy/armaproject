@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2">
+<Package name="ACE2">
+<Container name="STR_DN">
+<Key ID="STR_ACE_SPECT_SHOWNSIDES">
+<German>(Æ) Spectator: Konfiguriere sichtbare Fraktionen</German>
+<English>(Æ) Spectator: Configure Shown Sides</English>
+<Italian>(Æ) Spectator: Configurare Visibile Sides</Italian>
+<Spanish>(Æ) Espectador: Configurar muestra lados</Spanish>
+<French>(Æ) Spectateur: Configurer l'affichage des camps</French>
+<Czech>(Æ) Režim diváka: Nastavit viditelnost frakcí</Czech>
+<Russian>(Æ) Спектатор: Настройка показываемых сторон</Russian>
+<Polish>(Æ) Tryb obserwacji: konfiguracja widoczności frakcji</Polish>
+<Hungarian>(Æ) Spectator: beállítása jelenik Sides</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_CAMFREE">
+<English>Free</English>
+<Italian>Free</Italian>
+<German>Frei</German>
+<Spanish>Free</Spanish>
+<Czech>Volná</Czech>
+<Russian>Свободная</Russian>
+<Polish>Swobodna</Polish>
+<French>Libre</French>
+<Hungarian>Szabad</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_CAMCHASE">
+<English>Chase</English>
+<Italian>Chase</Italian>
+<German>Verfolgen</German>
+<Spanish>Chase</Spanish>
+<Czech>V závěsu</Czech>
+<Russian>Следующая</Russian>
+<Polish>Pościgowa</Polish>
+<French>Poursuite</French>
+<Hungarian>Üldözés</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_CAMFLYBY">
+<English>Flyby</English>
+<Italian>Flyby</Italian>
+<German>Vorbeiflug</German>
+<Spanish>Flyby</Spanish>
+<Czech>Průlet</Czech>
+<Russian>Летящая за</Russian>
+<Polish>Przelotowa</Polish>
+<French>Flyby</French>
+<Hungarian>Repülés</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_CAMFTOPDOWN">
+<English>Top-down</English>
+<Italian>Top-down</Italian>
+<German>Von Oben</German>
+<Spanish>Top-down</Spanish>
+<Czech>Shora</Czech>
+<Russian>Сверху</Russian>
+<Polish>Prosto z góry</Polish>
+<French>Top-down</French>
+<Hungarian>Felülről</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_CAMFIRST">
+<English>1st person</English>
+<Italian>1st person</Italian>
+<German>Erste Person</German>
+<Spanish>1st person</Spanish>
+<Czech>První osoba</Czech>
+<Russian>От 1го лица</Russian>
+<Polish>Pierwsza osoba</Polish>
+<French>1ère personne</French>
+<Hungarian>Belső nézet</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_CAMMISSILE">
+<English>Missile camera</English>
+<Italian>Missile camera</Italian>
+<German>Raketen Kamera</German>
+<Spanish>Missile camera</Spanish>
+<Czech>Kamera rakety</Czech>
+<Russian>Камера ракеты</Russian>
+<Polish>Śledzenie pocisków</Polish>
+<French>Caméra Missile</French>
+<Hungarian>Lövedék kamera</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_CAMNIGHTV">
+<English>Night vision</English>
+<Italian>Night vision</Italian>
+<German>Nachtsicht</German>
+<Spanish>Night vision</Spanish>
+<Czech>Noční vidění</Czech>
+<Russian>Ночное видение</Russian>
+<Polish>Tryb nocny</Polish>
+<French>Vision nocturne</French>
+<Hungarian>Éjjellátó</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_CAMUNITTAGS">
+<English>Unit tags</English>
+<Italian>Unit tags</Italian>
+<German>Einheiten Tags</German>
+<Spanish>Unit tags</Spanish>
+<Czech>Značky jednotek</Czech>
+<Russian>Идентификаторы бойца</Russian>
+<Polish>ID jednostek</Polish>
+<French>Etiquettes unités</French>
+<Hungarian>Egység info</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_CAMFILTERAI">
+<English>Filter AI</English>
+<Italian>Filter AI</Italian>
+<German>KI filtern</German>
+<Spanish>Filter AI</Spanish>
+<Czech>Filtr AI</Czech>
+<Russian>Фильтр по ИИ</Russian>
+<Polish>Filtruj SI</Polish>
+<French>Filtre IA</French>
+<Hungarian>MI szűrése</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_CAMFILTERDEAD">
+<English>Filter Unknown (Dead)</English>
+<Italian>Filter Unknown (Dead)</Italian>
+<German>Tote Einh. filtern</German>
+<Spanish>Filter Unknown (Dead)</Spanish>
+<Czech>Filtrovat neznámé (mrtvé)</Czech>
+<Russian>Фильтр по неизвестным (Мёртвым)</Russian>
+<Polish>Filtruj nieznanych (martwych)</Polish>
+<French>Filtre inconnu (Mort)</French>
+<Hungarian>Ismeretlen (halott) szűrése</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_F1HELP">
+<English>Press F1 for help</English>
+<Italian>Press F1 for help</Italian>
+<German>F1 für Hilfe</German>
+<Spanish>Press F1 for help</Spanish>
+<Czech>Stiskni F1 pro nápovědu</Czech>
+<Russian>Нажмите F1 для подсказки</Russian>
+<Polish>Pomoc: F1</Polish>
+<French>Appuyer sur F1 pour aide</French>
+<Hungarian>F1: segítség</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_F1HELP2">
+<English>Press F1 for help, X to exit spectating</English>
+<Italian>Press F1 for help, X to exit spectating</Italian>
+<German>F1 für Hilfe, X zum beenden</German>
+<Spanish>Press F1 for help, X to exit spectating</Spanish>
+<Czech>Stiskni F1 pro nápovědu, nebo X pro ukončení pozorování</Czech>
+<Russian>Нажмите F1 для подсказки, X для выхода</Russian>
+<Polish>Pomoc: F1 Wyjście: X </Polish>
+<French>Appuyer sur F1 pour aide, X pour sortir du mode spec.</French>
+<Hungarian>F1: segítség, X: kilépés</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_SPECINIT">
+<English>Initializing</English>
+<Italian>Initializing</Italian>
+<German>Initialisiere</German>
+<Spanish>Initializing</Spanish>
+<Czech>Nahrávám</Czech>
+<Russian>Инициализация</Russian>
+<Polish>Ładowanie</Polish>
+<French>Initialisation</French>
+<Hungarian>Betöltés</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_UNKNOWN">
+<English>Unknown</English>
+<Italian>Unknown</Italian>
+<German>Unbekannt</German>
+<Spanish>Unknown</Spanish>
+<Czech>Neznámý</Czech>
+<Russian>Неизвестный</Russian>
+<Polish>Nieznany</Polish>
+<French>Inconnu</French>
+<Hungarian>Ismeretlen</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_INITED">
+<English>Spectator Mode Initialized.</English>
+<Italian>Spectator Mode Initialized.</Italian>
+<German>Spectator Modus initialisiert.</German>
+<Spanish>Spectator Mode Initialized.</Spanish>
+<Czech>Režim diváka nahrán.</Czech>
+<Russian>Режим спектатора инициализирован.</Russian>
+<Polish>Tryb obserwacji załadowany.</Polish>
+<French>Mode Spectateur Initialisé.</French>
+<Hungarian>Figyelő mód nincs betöltve.</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_DEAD">
+<English>(DEAD)</English>
+<Italian>(DEAD)</Italian>
+<German>(Tot)</German>
+<Spanish>(DEAD)</Spanish>
+<Czech>(MRTEV)</Czech>
+<Russian>(ТРУП)</Russian>
+<Polish>(martwy)</Polish>
+<French>(MORT)</French>
+<Hungarian>(HALOTT)</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_DRIVER">
+<English>(Driver)</English>
+<Italian>(Driver)</Italian>
+<German>(Fahrer)</German>
+<Spanish>(Driver)</Spanish>
+<Czech>(Řidič)</Czech>
+<Russian>(Водитель)</Russian>
+<Polish>(kierowca)</Polish>
+<French>(Conducteur)</French>
+<Hungarian>(Sofőr)</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_PILOT">
+<English>(Pilot)</English>
+<Italian>(Pilot)</Italian>
+<German>(Pilot)</German>
+<Spanish>(Pilot)</Spanish>
+<Czech>(Pilot)</Czech>
+<Russian>(Пилот)</Russian>
+<Polish>(pilot)</Polish>
+<French>(Pilote)</French>
+<Hungarian>(Pilóta)</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_GUNNER">
+<English>(Gunner)</English>
+<Italian>(Gunner)</Italian>
+<German>(Schütze)</German>
+<Spanish>(Gunner)</Spanish>
+<Czech>(Střelec)</Czech>
+<Russian>(Наводчик)</Russian>
+<Polish>(strzelec)</Polish>
+<French>(Tireur)</French>
+<Hungarian>(Irányzó)</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_COMMANDER">
+<English>(Commander)</English>
+<Italian>(Commander)</Italian>
+<German>(Kommandant)</German>
+<Spanish>(Commander)</Spanish>
+<Czech>(Velitel)</Czech>
+<Russian>(Командир)</Russian>
+<Polish>(dowódca)</Polish>
+<French>(Commandant)</French>
+<Hungarian>(Parancsnok)</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_SELCAM">
+<English>Camera: %1</English>
+<Italian>Camera: %1</Italian>
+<German>Kamera: %1</German>
+<Spanish>Camera: %1</Spanish>
+<Czech>Kamera: %1</Czech>
+<Russian>Камера: %1</Russian>
+<Polish>Kamera: %1</Polish>
+<French>Camera: %1</French>
+<Hungarian>Kamera: %1</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_LANDGROUND">
+<English>Land on ground to return to spectating\nClick at map to jump to location</English>
+<Italian>Land on ground to return to spectating\nClick at map to jump to location</Italian>
+<German>Lande auf dem Boden um zu Spectating zurückzukehren\nKlicke auf die Karte um zu einem Punkt zu springen</German>
+<Spanish>Land on ground to return to spectating\nClick at map to jump to location</Spanish>
+<Czech>Přistaň na zem aby jsi se vrátil do pozorování\nKlikni na mapu pro skok na lokaci</Czech>
+<Russian>Приземлитесь для возвращения к спектатору\nЩёлкните на карту для телепортации</Russian>
+<Polish>Wyląduj na ziemi, by powrócić do trybu obserwacji\nKliknij na mapie, by się teleportować</Polish>
+<French>Posez vous pour retourner au mode spec.\nCliquez sur la carte pour changer de position</French>
+<Hungarian>Szállj le a földre, hogy figyelő módba válts\nClick térképen, hogy a helyszínre ugorj</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_MARKERENABLED">
+<English>Map Marker Updates Enabled</English>
+<Italian>Map Marker Updates Enabled</Italian>
+<German>Marker Updates eingeschaltet</German>
+<Spanish>Map Marker Updates Enabled</Spanish>
+<Czech>Aktualizace značek na mapě zapnuty</Czech>
+<Russian>Обновление Маркеров включено</Russian>
+<Polish>Aktualizacja znaczników na mapie włączona</Polish>
+<French>Map Marker Updates Activé</French>
+<Hungarian>Térképjel frissítés engedélyezve</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_MARKERDISABLED">
+<English>Map Marker Updates Disabled</English>
+<Italian>Map Marker Updates Disabled</Italian>
+<German>Marker Updates ausgeschaltet</German>
+<Spanish>Map Marker Updates Disabled</Spanish>
+<Czech>Aktualizace značek na mapě vypnuty</Czech>
+<Russian>Обновление Маркеров выключено</Russian>
+<Polish>Aktualizacja znaczników na mapie wyłączona</Polish>
+<French>Map Marker Updates Désactivé</French>
+<Hungarian>Térképjel frissítés letiltva</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_HELPN1">
+<English>Click at the camera/target text at the top to open camera/target menus.</English>
+<Italian>Click at the camera/target text at the top to open camera/target menus.</Italian>
+<German>Klicke auf Kamera/Ziel oben um das Kamera/Ziel Menü zu öffnen.</German>
+<Spanish>Click at the camera/target text at the top to open camera/target menus.</Spanish>
+<Czech>Klikni na text kamera/cíl v horní části obrazovky, abys otevřel menu.</Czech>
+<Russian>Щёлкните на текст камеры/цели вверху чтобы открыть меню камеры/цели.</Russian>
+<Polish>Klinkij opis kamery/celu na górze ekranu by otworzyć menu ustawień kamery/celu.</Polish>
+<French>Cliquez sur caméra/texte cible au dessus pour ouvrir la caméra/menu cible.</French>
+<Hungarian>Hogy megnyisd a cél/kamera menüt kattints a fenti cél/kamera feliraton.</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_HELPN2">
+<English>Units on the map can be clicked to target them.</English>
+<Italian>Units on the map can be clicked to target them.</Italian>
+<German>Einheiten auf der Karte können angeklickt werden um dorthin zu wechseln.</German>
+<Spanish>Units on the map can be clicked to target them.</Spanish>
+<Czech>Na jednotky na mapě lze kliknout aby jsi se k nim přenesl.</Czech>
+<Russian>На карте можно щёлкнуть мышью по бойцам чтобы следить за ними.</Russian>
+<Polish>Kliknij jednostkę na mapie, by ustalić ją jako cel.</Polish>
+<French>Les unités sur la carte peuvent être cliquées pour être désignées.</French>
+<Hungarian>Térképen lévő egységeket kattintással jelölheted ki célnak.</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_HELPN3">
+<English>Keyboard controls:</English>
+<Italian>Keyboard controls:</Italian>
+<German>Tastaturbelegung:</German>
+<Spanish>Keyboard controls:</Spanish>
+<Czech>Klávesové ovládání:</Czech>
+<Russian>Управления клавиатурой:</Russian>
+<Polish>Klawisze:</Polish>
+<French>Touches clavier:</French>
+<Hungarian>Billentyű kiosztás:</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_HELPN4">
+<English>A/D - Previous/Next target</English>
+<Italian>A/D - Previous/Next target</Italian>
+<German>A/D - Vorheriges/nächstes Ziel</German>
+<Spanish>A/D - Previous/Next target</Spanish>
+<Czech>A/D - Předchozí/Další cíl</Czech>
+<Russian>A/D - Предыдущая/Следующая цель</Russian>
+<Polish>A/D - poprzedni/następny cel</Polish>
+<French>A/D - Précédente/Prochaine cible</French>
+<Hungarian>A/D - Előző/Köv. cél</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_HELPN5">
+<English>W/S - Previous/Next camera</English>
+<Italian>W/S - Previous/Next camera</Italian>
+<German>W/S - Vorherige/nächste Kamera</German>
+<Spanish>W/S - Previous/Next camera</Spanish>
+<Czech>W/S - Předchozí/Další kamera</Czech>
+<Russian>W/S - Предыдущая/Следующая камера</Russian>
+<Polish>W/S - poprzednia/następna kamera</Polish>
+<French>W/S - Précédente/prochaine caméra</French>
+<Hungarian>W/S - Előző/Köv. kamera</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_HELPN6">
+<English>1-5 - Direct camera change</English>
+<Italian>1-5 - Direct camera change</Italian>
+<German>1-5 - Direkter Kamera Wechsel</German>
+<Spanish>1-5 - Direct camera change</Spanish>
+<Czech>1-5 - Přímá změna kamery</Czech>
+<Russian>1-5 - Изменение направления камеры</Russian>
+<Polish>1-5 - szybka zmiana kamery</Polish>
+<French>1-5 - Changement direct caméra</French>
+<Hungarian>1-5 - Közvetlen kamera váltás</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_HELPN7">
+<English>N - 3D view: Toggle night vision on/off</English>
+<Italian>N - 3D view: Toggle night vision on/off</Italian>
+<German>N - 3D Sicht: Nachtsicht ein/aus</German>
+<Spanish>N - 3D view: Toggle night vision on/off</Spanish>
+<Czech>N - 3D pohled: Noční vidění zap./vyp.</Czech>
+<Russian>N - 3D вид: Режим ночного видения вкл./выкл.</Russian>
+<Polish>N - widok 3D: tryb nocny wł./wył.</Polish>
+<French>N - Vue 3D: Bascule Vision Nocturne on/off</French>
+<Hungarian>N - 3D nézet: Éjjellátó</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_HELPN8">
+<English>N - Full map: Toggle marker text off/names/types</English>
+<Italian>N - Full map: Toggle marker text off/names/types</Italian>
+<German>N - Große Karte: Wechsel Marker Text: aus/Namen/Typen</German>
+<Spanish>N - Full map: Toggle marker text off/names/types</Spanish>
+<Czech>N - Plná mapa: Přepnout text u značek vypnut/jména/typy</Czech>
+<Russian>N - в режиме карты: Подпись маркера нет/имя/тип</Russian>
+<Polish>N - mapa pełnoekranowa: podpisy znaczników wył./nazwa/typ</Polish>
+<French>N - Carte: Bascule texte marqueurs off/noms/types</French>
+<Hungarian>N - Térkép: Jelzés feliratok ki/nevek/típusok</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_HELPN9">
+<English>T - Toggle unit tags on/off</English>
+<Italian>T - Toggle unit tags on/off</Italian>
+<German>T - Einheiten Tags ein/aus</German>
+<Spanish>T - Toggle unit tags on/off</Spanish>
+<Czech>T - Přepnout značky jednotek zap./vyp.</Czech>
+<Russian>T - Идентификатор бойца вкл./выкл.</Russian>
+<Polish>T - ID jednostek wł./wył.</Polish>
+<French>T - Bascule étiquettes unités on/off</French>
+<Hungarian>T - Egység infó ki/be</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_HELPN10">
+<English>F - Toggle AI filter on/off</English>
+<Italian>F - Toggle AI filter on/off</Italian>
+<German>F - KI Filter ein/aus</German>
+<Spanish>F - Toggle AI filter on/off</Spanish>
+<Czech>F - Přepnout filtr UI zap./vyp.</Czech>
+<Russian>F - Фильтр по ИИ вкл./выкл.</Russian>
+<Polish>F - filtrowanie SI wł./wył.</Polish>
+<French>F - Bascule filtre IA on/off</French>
+<Hungarian>F - MI szűrő ki/be</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_HELPN11">
+<English>G - Toggle Group/Formation Leader filter on/off</English>
+<Italian>G - Toggle Group/Formation Leader filter on/off</Italian>
+<German>G - Gruppen/Formations Anführer Filter ein/aus</German>
+<Spanish>G - Toggle Group/Formation Leader filter on/off</Spanish>
+<Czech>G - Přepnout filtr velitele skupiny/formace zap./vyp.</Czech>
+<Russian>G - Фильтр лидеров групп/формаций вкл./выкл.</Russian>
+<Polish>G - filtrowanie liderów grup/formacji wł./wył.</Polish>
+<French>G - Toggle Group/Formation Leader filter on/off</French>
+<Hungarian>G - Csapat/Szak.vezető szűrés ki/be</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_HELPN12">
+<English>H - Toggle Map Markers Updates on/off</English>
+<Italian>H - Toggle Map Markers Updates on/off</Italian>
+<German>H - Karten Marker Updates ein/aus</German>
+<Spanish>H - Toggle Map Markers Updates on/off</Spanish>
+<Czech>H - Přepnout aktualizaci značek na mapě zap./vyp.</Czech>
+<Russian>H - Обновление маркеров на карте вкл./выкл.</Russian>
+<Polish>H - aktualizacja oznaczeń mapy wł./wył.</Polish>
+<French>H - Bascule mise ?? jour marqueurs on/off</French>
+<Hungarian>H - Térkép jelzések frissítése ki/be</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_HELPN13">
+<English>Tab - Toggle UI on/off</English>
+<Italian>Tab - Toggle UI on/off</Italian>
+<German>Tab - UI ein/aus</German>
+<Spanish>Tab - Toggle UI on/off</Spanish>
+<Czech>Tab - Přepnout interface uživatele zap./vyp.</Czech>
+<Russian>Tab - Пользовательский интерфейс вкл./выкл.</Russian>
+<Polish>Tab - interfejs wł./wył.</Polish>
+<French>Tab - Bascule UI on/off</French>
+<Hungarian>Tab - UI ki/be</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_HELPN14">
+<English>M - Toggle map on/full/off</English>
+<Italian>M - Toggle map on/full/off</Italian>
+<German>M - Karte ein/voll/aus</German>
+<Spanish>M - Toggle map on/full/off</Spanish>
+<Czech>M - Přepnout mapu zap./celá obrazovka/vyp.</Czech>
+<Russian>M - Подключить карту да/полностью/отключить</Russian>
+<Polish>M - mapa wł./pełnoekranowa/wył.</Polish>
+<French>M - Bascule carte on/pleine/off</French>
+<Hungarian>M - Térkép be/teljes/ki</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_HELPN14a">
+<English>K - Toggle map size</English>
+<Italian>K - Toggle map size</Italian>
+<German>K - Kartengröße ändern</German>
+<Spanish>K - Toggle map size</Spanish>
+<Czech>K - Přepnout velikost mapy</Czech>
+<Russian>K - Переключить размер карты</Russian>
+<Polish>K - Toggle map size</Polish>
+<French>K - Toggle map size</French>
+<Hungarian>K - Toggle map size</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_HELPN14b">
+<English>V - Change viewdistance</English>
+<Italian>V - Change viewdistance</Italian>
+<German>V - Sichtweite ändern</German>
+<Spanish>V - Change viewdistance</Spanish>
+<Czech>V - Change viewdistance</Czech>
+<Russian>V - Изменить дальность видимости</Russian>
+<Polish>V - Change viewdistance</Polish>
+<French>V - Change viewdistance</French>
+<Hungarian>V - Change viewdistance</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_HELPN15">
+<English>Numpad plus/minus - Increase/decrease full map marker size</English>
+<Italian>Numpad plus/minus - Increase/decrease full map marker size</Italian>
+<German>Numpad Plus/Minus - Vergrößere/Verkleinere Marker</German>
+<Spanish>Numpad plus/minus - Increase/decrease full map marker size</Spanish>
+<Czech>Numpad +/- - Zvětšit/Zmenšit velikost značek na velké mapě</Czech>
+<Russian>Numpad +/- - Увеличить/уменьшить размер маркера на карте</Russian>
+<Polish>Num +/- - powiększ/zmniejsz oznaczenia mapy pełnoekranowej</Polish>
+<French>Numpad plus/minus - Augmenter/diminuer la taile des marqueurs carte pleine</French>
+<Hungarian>Numpad +/- - Jelzések csökkentése/növelése</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_HELPN16">
+<English>Space - Drop camera (W,S,A,D keys = movement)</English>
+<Italian>Space - Drop camera (W,S,A,D keys = movement)</Italian>
+<German>Leertaste - Kamera fallen lassen (W,S,A,D Tasten = Bewegen)</German>
+<Spanish>Space - Drop camera (W,S,A,D keys = movement)</Spanish>
+<Czech>Mezerník - opustit cíl (W,S,A,D klávesy = pohyb)</Czech>
+<Russian>Пробел - Остановить камеру (клавиши W,S,A,D = движение)</Russian>
+<Polish>Spacja - upuszczenie kamery (ruch: W,S,A,D)</Polish>
+<French>Space - Libérer caméra (touches Z,Q,S,D = mouvement)</French>
+<Hungarian>Space - Kamera elengedése (W,S,A,D = mozgatás)</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_HELPN17">
+<English>Space - Toggle gunsight (1st person view)</English>
+<Italian>Space - Toggle gunsight (1st person view)</Italian>
+<German>Leertaste - Schützensicht umschalten (Erste Person)</German>
+<Spanish>Space - Toggle gunsight (1st person view)</Spanish>
+<Czech>Mezerník - Přepnout zaměřovač (pohled první osoby)</Czech>
+<Russian>Пробел - Вид из оружия (Вид от 1го лица)</Russian>
+<Polish>Spacja - celownik (1-sza osoba)</Polish>
+<French>Space - Bascule viseur (vue 1ère personne)</French>
+<Hungarian>Space - Belső nézet irányzék</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_HELPN18">
+<English>Esc - Butterfly mode</English>
+<Italian>Esc - Butterfly mode</Italian>
+<German>Esc - Schmetterling Modus</German>
+<Spanish>Esc - Butterfly mode</Spanish>
+<Czech>Esc - Do motýlka</Czech>
+<Russian>Esc - Режим чайки</Russian>
+<Polish>Esc - tryb motyla</Polish>
+<French>Esc - Mode papillon</French>
+<Hungarian>Esc - Pillangó mód</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_HELPN19">
+<English>X - Quit spectating (if enabled)</English>
+<Italian>X - Quit spectating (if enabled)</Italian>
+<German>X - Spectating beenden (wenn eingeschaltet)</German>
+<Spanish>X - Quit spectating (if enabled)</Spanish>
+<Czech>X - Ukončit pozorování (pokud zapnuto)</Czech>
+<Russian>X - Выйти из спектатора (если доступно)</Russian>
+<Polish>X - Wyłącz tryb obserwacji</Polish>
+<French>X - Quitter mode spec. (si activé)</French>
+<Hungarian>X - Kilépés (ha engedélyezett)</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_HELPN20">
+<English>Mouse controls:</English>
+<Italian>Mouse controls:</Italian>
+<German>Maussteuerung:</German>
+<Spanish>Mouse controls:</Spanish>
+<Czech>Ovládání myší:</Czech>
+<Russian>Управление мышью:</Russian>
+<Polish>Mysz:</Polish>
+<French>Contrôle souris:</French>
+<Hungarian>Egér vezérlés:</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_HELPN21">
+<English>Right button - Rotate camera (free camera mode only)</English>
+<Italian>Right button - Rotate camera (free camera mode only)</Italian>
+<German>Rechte Taste - Kamera rotieren (Nur im Frei Kamera Modus)</German>
+<Spanish>Right button - Rotate camera (free camera mode only)</Spanish>
+<Czech>Pravé tlačítko - Rotace kamery (pouze u volné kamery)</Czech>
+<Russian>Правая кнопка - Вращать камеру (только при режиме свободной камеры)</Russian>
+<Polish>Prawy przycisk - obrót kamery (tylko swobodna kamera)</Polish>
+<French>Bouton droite - Rotation caméra (mode caméra libre seulement)</French>
+<Hungarian>Jobb e.gomb - Kamera mozgatás (csak szabad módban)</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_HELPN22">
+<English>Left button - Move camera</English>
+<Italian>Left button - Move camera</Italian>
+<German>Linke Taste - Kamera bewegen</German>
+<Spanish>Left button - Move camera</Spanish>
+<Czech>Levé tlačítko - Pohyb kamery</Czech>
+<Russian>Левая кнопка - Перемещать камеру</Russian>
+<Polish>Lewy przycisk - ruch kamery</Polish>
+<French>Bouton gauche - Déplacer caméra</French>
+<Hungarian>Bal e.gomb - Kamera mozgatása</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_HELPN23">
+<English>Left and right button - Zoom</English>
+<Italian>Left and right button - Zoom</Italian>
+<German>Linke und rechte Taste - Zoom</German>
+<Spanish>Left and right button - Zoom</Spanish>
+<Czech>Levé i pravé tlačítko - Přiblížení</Czech>
+<Russian>Левая и правая кнопки - Приближение</Russian>
+<Polish>Lewy i prawy przycisk - zbliżenie</Polish>
+<French>Boutons droite+gauche - Zoom</French>
+<Hungarian>Bal és jobb e.gomb - Zoom</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_DCAM">
+<English>Camera</English>
+<Italian>Camera</Italian>
+<German>Kamera</German>
+<Spanish>Camera</Spanish>
+<Czech>Kamera</Czech>
+<Russian>Камера</Russian>
+<Polish>Kamera</Polish>
+<French>Caméra</French>
+<Hungarian>Kamera</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_DTARGET">
+<English>Target</English>
+<Italian>Target</Italian>
+<German>Ziel</German>
+<Spanish>Target</Spanish>
+<Czech>Cíl</Czech>
+<Russian>Цель</Russian>
+<Polish>Cel</Polish>
+<French>Cible</French>
+<Hungarian>Cél</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_SAVBUT">
+<English>Save</English>
+<German>Speichern</German>
+<Spanish>Save</Spanish>
+<Czech>Uložit</Czech>
+<Russian>Save</Russian>
+<Italian>Save</Italian>
+<Polish>Zapisz</Polish>
+<French>Save</French>
+<Hungarian>Save</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_CANCBUT">
+<English>Cancel</English>
+<German>Abbrechen</German>
+<Spanish>Cancel</Spanish>
+<Czech>Zrušit</Czech>
+<Russian>Отмена</Russian>
+<Italian>Cancel</Italian>
+<Polish>Anuluj</Polish>
+<French>Cancel</French>
+<Hungarian>Cancel</Hungarian>
+</Key>
+<Key ID="STR_ACE_SPECT_VDSTR">
+<English>Viewdistance: %1 m</English>
+<German>Sichtweite: %1 m</German>
+<Spanish>Viewdistance: %1 m</Spanish>
+<Czech>Dohlednost: %1 m</Czech>
+<Russian>Дальность видимости: %1 m</Russian>
+<Italian>Viewdistance: %1 m</Italian>
+<Polish>Widoczności: %1 m</Polish>
+<French>Viewdistance: %1 m</French>
+<Hungarian>Viewdistance: %1 m</Hungarian>
+</Key>
+</Container></Package></Project>

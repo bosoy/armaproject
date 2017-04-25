@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2">
+<Package name="ACE2">
+<Container name="MODULE_DN">
+<Key ID="STR_ACE_VB_GRASBLOCK_MOD">
+<English>(Æ) Enable AI grass viewblock</English>
+<German>(Æ) KI Gras Viewblock einschalten</German>
+<Russian>(Æ) Включить 'ИИ не видит сквозь траву'</Russian>
+<French>(Æ) Enable AI grass viewblock</French>
+<Spanish>(Æ) Enable AI grass viewblock</Spanish>
+<Czech>(Æ) Zakázat AI možnost vidět skrz trávu</Czech>
+<Italian>(Æ) Enable AI grass viewblock</Italian>
+<Hungarian>(Æ) Enable AI grass viewblock</Hungarian>
+<Polish>(Æ) Możliwość ukrycia się w trawie przed AI</Polish>
+</Key>
+</Container>
+</Package>
+</Project>

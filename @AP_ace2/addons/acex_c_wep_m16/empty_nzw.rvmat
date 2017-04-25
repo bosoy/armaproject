@@ -1,0 +1,5 @@
+renderFlags[] = {"NoZWrite"};
+class StageTI
+{
+ texture = "ca\weapons_e\data\default_ti_ca.paa";
+};

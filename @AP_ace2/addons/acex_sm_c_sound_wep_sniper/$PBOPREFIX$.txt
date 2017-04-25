@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex_sm\addons\c_sound_wep_sniper
+Pbo Type is: Arma Addon
+Sha: '81A3E17988226702176C0290B19D97E0489D805D'
+//////</HEADER>//////

@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_rangefinder
+Pbo Type is: Arma Addon
+Sha: '9A872BBFBFDA445E57D60D2744961AD72EF10B43'
+//////</HEADER>//////

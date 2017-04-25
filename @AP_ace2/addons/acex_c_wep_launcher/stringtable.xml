@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACEX">
+<Package name="c_wep_launcher">
+<Container name="STR_WDN">
+<Key ID="STR_WDN_ACE_RPG29">
+<German>RPG-29</German>
+<English>RPG-29</English>
+<Italian>RPG-29</Italian>
+<Spanish>RPG-29</Spanish>
+<French>RPG-29</French>
+<Czech>RPG-29</Czech>
+<Russian>РПГ-29</Russian>
+<Polish>RPG-29</Polish>
+<Hungarian>RPG-29</Hungarian>
+</Key>
+<Key ID="STR_WDN_ACE_RPG27">
+<German>RPG-27</German>
+<English>RPG-27</English>
+<Italian>RPG-27</Italian>
+<Spanish>RPG-27</Spanish>
+<French>RPG-27</French>
+<Czech>RPG-27</Czech>
+<Russian>РПГ-27</Russian>
+<Polish>RPG-27</Polish>
+<Hungarian>RPG-27</Hungarian>
+</Key>
+<Key ID="STR_WDN_ACE_RPG22">
+<German>RPG-22</German>
+<English>RPG-22</English>
+<Italian>RPG-22</Italian>
+<Spanish>RPG-22</Spanish>
+<French>RPG-22</French>
+<Czech>RPG-22</Czech>
+<Russian>РПГ-22</Russian>
+<Polish>RPG-22</Polish>
+<Hungarian>RPG-22</Hungarian>
+</Key>
+<Key ID="STR_WDN_ACE_RPOM">
+<German>RPO-M</German>
+<English>RPO-M</English>
+<Italian>RPO-M</Italian>
+<Spanish>RPO-M</Spanish>
+<French>RPO-M</French>
+<Czech>RPO-M</Czech>
+<Russian>РПО-М</Russian>
+<Polish>RPO-M</Polish>
+<Hungarian>RPO-M</Hungarian>
+</Key>
+<Key ID="STR_WDN_ACE_RPG22USED">
+<German>RPG-22 (leer)</German>
+<English>RPG-22 (used)</English>
+<Italian>RPG-22 (usato)</Italian>
+<Spanish>RPG-22 (usar)</Spanish>
+<French>RPG-22 (usé)</French>
+<Czech>RPG-22 (použité)</Czech>
+<Russian>РПГ-22 (исп.)</Russian>
+<Polish>RPG-22 (zużyta)</Polish>
+<Hungarian>RPG-22 (ellőtt)</Hungarian>
+</Key>
+<Key ID="STR_WDN_ACE_RPG27USED">
+<German>RPG-27 (leer)</German>
+<English>RPG-27 (used)</English>
+<Italian>RPG-27 (usato)</Italian>
+<Spanish>RPG-27 (usar)</Spanish>
+<French>RPG-27 (usé)</French>
+<Czech>RPG-27 (použité)</Czech>
+<Russian>РПГ-27 (исп.)</Russian>
+<Polish>RPG-27 (zużyta)</Polish>
+<Hungarian>RPG-27 (ellőtt)</Hungarian>
+</Key>
+<Key ID="STR_WDN_ACE_RPOMUSED">
+<German>RPO-M (leer)</German>
+<English>RPO-M (used)</English>
+<Italian>RPO-M (usato)</Italian>
+<Spanish>RPO-M (usar)</Spanish>
+<French>RPO-M (usé)</French>
+<Czech>RPO-M (použité)</Czech>
+<Russian>РПО-М (исп.)</Russian>
+<Polish>RPO-M (zużyta)</Polish>
+<Hungarian>RPO-M (ellőtt)</Hungarian>
+</Key>
+<Key ID="STR_WDN_ACE_M72A2USED">
+<German>M72A2 (leer)</German>
+<English>M72A2 (used)</English>
+<Italian>M72A2 (usato)</Italian>
+<Spanish>M72A2 (usar)</Spanish>
+<French>M72A2 (usé)</French>
+<Czech>M72A2 (použité)</Czech>
+<Russian>M72A2 (исп.)</Russian>
+<Polish>M72A2 (zużyta)</Polish>
+<Hungarian>M72A2 (ellőtt)</Hungarian>
+</Key>
+<Key ID="STR_WDN_ACE_RSHG1">
+<German>RShG-1</German>
+<English>RShG-1</English>
+<Italian>RShG-1</Italian>
+<Spanish>RShG-1</Spanish>
+<French>RShG-1</French>
+<Czech>RShG-1</Czech>
+<Russian>ПШГ-1</Russian>
+<Polish>RSzG-1</Polish>
+<Hungarian>RSG-1</Hungarian>
+</Key>
+<Key ID="STR_WDN_ACE_RSHG1_Used">
+<German>RShG-1 (leer)</German>
+<English>RShG-1 (used)</English>
+<Italian>RShG-1 (usato)</Italian>
+<Spanish>RShG-1 (usar)</Spanish>
+<French>RShG-1 (usé)</French>
+<Czech>RShG-1 (použité)</Czech>
+<Russian>ПШГ-1 (исп.)</Russian>
+<Polish>RSzG-1 (zużyta)</Polish>
+<Hungarian>RSG-1 (ellőtt)</Hungarian>
+</Key>
+<Key ID="STR_WDN_ACE_RMG">
+<German>RMG</German>
+<English>RMG</English>
+<Italian>RMG</Italian>
+<Spanish>RMG</Spanish>
+<French>RMG</French>
+<Czech>RMG</Czech>
+<Russian>РМГ</Russian>
+<Polish>RMG</Polish>
+<Hungarian>RMG</Hungarian>
+</Key>
+<Key ID="STR_WDN_ACE_RMG_Used">
+<German>RMG (leer)</German>
+<English>RMG (used)</English>
+<Italian>RMG (usato)</Italian>
+<Spanish>RMG (usar)</Spanish>
+<French>RMG (usé)</French>
+<Czech>RMG (použité)</Czech>
+<Russian>РМГ (исп.)</Russian>
+<Polish>RMG (zużyta)</Polish>
+<Hungarian>RMG (ellőtt)</Hungarian>
+</Key>
+</Container>
+<Container name="STR_MN">
+<Key ID="STR_MDN_ACE_6RND_40MM_M32">
+<German>40mm (6 Sch.)</German>
+<English>6Rnd. 40mm</English>
+<Italian>Caric. 6 mun. 40mm</Italian>
+<Spanish>40mm carga 6</Spanish>
+<French>40mm 6 c.</French>
+<Czech>6náb. 40mm</Czech>
+<Russian>40мм (6 выстр.)</Russian>
+<Polish>magazynek M32</Polish>
+<Hungarian>6lszr. 40mm</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_PG29">
+<German>PG-29V</German>
+<English>PG-29V</English>
+<Italian>PG-29V</Italian>
+<Spanish>PG-29V</Spanish>
+<French>PG-29V</French>
+<Czech>PG-29V</Czech>
+<Russian>ПГ-29В</Russian>
+<Polish>pocisk PG-29W kumulacyjny</Polish>
+<Hungarian>PG-29V</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_TBG29">
+<German>TBG-29V</German>
+<English>TBG-29V</English>
+<Italian>TBG-29V</Italian>
+<Spanish>TBG-29V</Spanish>
+<French>TBG-29V</French>
+<Czech>TBG-29V</Czech>
+<Russian>ТБГ-29В</Russian>
+<Polish>pocisk TBG-29W termobaryczny</Polish>
+<Hungarian>TBG-29V</Hungarian>
+</Key>
+<Key ID="STR_MDNS_ACE_PG29">
+<German>PG-29V</German>
+<English>PG-29V</English>
+<Italian>PG-29V</Italian>
+<Spanish>PG-29V</Spanish>
+<French>PG-29V</French>
+<Czech>PG-29V</Czech>
+<Russian>ПГ-29В</Russian>
+<Polish>PG-29W</Polish>
+<Hungarian>PG-29V</Hungarian>
+</Key>
+<Key ID="STR_MDNS_ACE_TBG29">
+<German>TBG-29V</German>
+<English>TBG-29V</English>
+<Italian>TBG-29V</Italian>
+<Spanish>TBG-29V</Spanish>
+<French>TBG-29V</French>
+<Czech>TBG-29V</Czech>
+<Russian>ТБГ-29В</Russian>
+<Polish>TBG-29W</Polish>
+<Hungarian>TBG-29V</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_M72A2">
+<German>M72A2</German>
+<English>M72A2</English>
+<Italian>M72A2</Italian>
+<Spanish>M72A2</Spanish>
+<French>M72A2</French>
+<Czech>M72A2</Czech>
+<Russian>M72A2</Russian>
+<Polish>M72A2</Polish>
+<Hungarian>M72A2</Hungarian>
+</Key>
+</Container>
+<Container name="STR_DSS">
+<Key ID="STR_DSS_ACE_PG29">
+<German>Reichweite: 0 – 500 m &lt;br/&gt;Typ: Tandem-HEAT &lt;br/&gt;Eingesetzt in: RPG-29</German>
+<English>Range: 0 - 500 m &lt;br/&gt;Type: tandem HEAT &lt;br/&gt;Used in: RPG-29</English>
+<Italian>Portata: 0 - 500 m &lt;br/&gt;Tipo: a doppia carica HEAT &lt;br/&gt;Si usa in: RPG-29</Italian>
+<Spanish>Alcance: 0 - 500 m &lt;br/&gt;Tipo: HEAT tandem &lt;br/&gt;Uso: RPG-29</Spanish>
+<French>Portée : 0 - 500 m &lt;br/&gt;Type : tandem HEAT &lt;br/&gt;Utilisé avec : RPG-29</French>
+<Czech>Dolet: 0 - 500 m &lt;br/&gt;Typ: Tandemová HEAT &lt;br/&gt;Pro: RPG-29</Czech>
+<Russian>Дальность: 0-500 м &lt;br/&gt;Тип: тандемная кумулятивная &lt;br/&gt;Используются в: РПГ-29</Russian>
+<Polish>Zasięg: 0 - 500 m &lt;br/&gt;Typ: dwugłowicowy kumulacyjny &lt;br/&gt;Używane w: RPG-29</Polish>
+<Hungarian>Hatótávolság: 0 - 500 m &lt;br/&gt; Típus: tandem kumulatív páncéltörő &lt;br/&gt; Hozzá tartozó fegyver: RPG-29</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_TBG29">
+<German>Reichweite: 0 – 500 m &lt;br/&gt;Typ: Explosivgeschoss &lt;br/&gt;Eingesetzt in: RPG-29</German>
+<English>Range: 0 - 500 m &lt;br/&gt;Type: high explosive &lt;br/&gt;Used in: RPG-29</English>
+<Italian>Portata: 0 - 500 m &lt;br/&gt;Tipo: altamente esplosivo &lt;br/&gt;Si usa in: RPG-29</Italian>
+<Spanish>Alcance: 0 - 500 m &lt;br/&gt;Tipo: altamente explosivo &lt;br/&gt;Uso: RPG-29</Spanish>
+<French>Portée : 0 - 500 m &lt;br/&gt;Type : explosif &lt;br/&gt;Utilisé avec : RPG-29</French>
+<Czech>Dolet: 0 - 500 m &lt;br/&gt;Typ: Vysoce explozivní &lt;br/&gt;Pro: RPG-29</Czech>
+<Russian>Дальность: 0-500 м &lt;br/&gt;Тип: термобарическая &lt;br/&gt;Используются в: РПГ-29</Russian>
+<Polish>Zasięg: 0 - 500 m &lt;br/&gt;Typ: termobaryczny &lt;br/&gt;Używane w: RPG-29</Polish>
+<Hungarian>Hatótávolság: 0 - 500 m &lt;br/&gt; Típus: nagy robbanóerejű &lt;br/&gt;Hozzá tartozó fegyver: RPG-29</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_LAUNCHER_UG">
+<German>Panzerabwehr-Raketenwerfer &lt;br/&gt;Ungelenkt</German>
+<English>Anti-tank missile launcher &lt;br/&gt;Unguided</English>
+<Italian>Lanciamissili anticarro &lt;br/&gt;Non guidati</Italian>
+<Spanish>Lanzamisiles antitanque &lt;br/&gt;No dirigido</Spanish>
+<French>Lance-missiles anti-blindés &lt;br/&gt;Non guidés</French>
+<Czech>Odpalovací zařízení protitankových střel &lt;br/&gt;Neřízené</Czech>
+<Russian>Противотанковый гранатомёт &lt;br/&gt;без наведения</Russian>
+<Polish>Wyrzutnia rakiet przeciwpancernych &lt;br/&gt;Niekierowane</Polish>
+<Hungarian>Páncéltörő &lt;br/&gt; Nem irányított</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_LAUNCHER_FAE">
+<German>Thermobaric rocket launcher &lt;br/&gt;Ungelenkt</German>
+<English>Thermobaric rocket launcher &lt;br/&gt;Unguided</English>
+<Italian>Thermobaric rocket launcher &lt;br/&gt;Non guidati</Italian>
+<Spanish>Thermobaric rocket launcher &lt;br/&gt;No dirigido</Spanish>
+<French>Thermobaric rocket launcher &lt;br/&gt;Non guidés</French>
+<Czech>Odpalovač termobarických raket &lt;br/&gt;Neřízené</Czech>
+<Russian>Термобарический гранатомёт &lt;br/&gt;без наведения</Russian>
+<Polish>Wyrzutnia pocisków termobarycznych &lt;br/&gt;Jednorazowa</Polish>
+<Hungarian>Thermobaric rocket launcher &lt;br/&gt; Nem irányított</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_GRENADELAUNCHER">
+<German>Granatwerfer &lt;br/&gt;Kaliber: 40mm</German>
+<English>Grenade launcher &lt;br/&gt;Caliber: 40mm</English>
+<Italian>Lanciagranate &lt;br/&gt;Calibro: 40 mm</Italian>
+<Spanish>Lanzagranadas &lt;br/&gt;Calibre: 40 mm</Spanish>
+<French>Lance-grenades &lt;br/&gt;Calibre : 40 mm</French>
+<Czech>Granátomet &lt;br/&gt;Kalibr: 40mm</Czech>
+<Russian>Гранатомёт &lt;br/&gt;Калибр: 40мм</Russian>
+<Polish>Granatnik &lt;br/&gt;Kaliber: 40mm</Polish>
+<Hungarian>Gránátvető &lt;br/&gt; Kaliber: 40mm</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

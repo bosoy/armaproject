@@ -1,0 +1,2 @@
+verified=true;
+publicvariable "verified";

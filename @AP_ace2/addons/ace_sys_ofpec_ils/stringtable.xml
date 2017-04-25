@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ArmA2_ACE2">
+<Package name="sys_ofpec_ils">
+<Container name="STR_ACE">
+<Key ID="STR_OFPEC_ILS_ACTIVATE">
+<English>Activate</English>
+<German>Aktivieren</German>
+<Spanish>Activate</Spanish>
+<Czech>Aktivovat</Czech>
+<Russian>Активировать</Russian>
+<Italian>Activate</Italian>
+<Polish>Włącz</Polish>
+<French>Activation</French>
+<Hungarian>Aktivál</Hungarian>
+</Key>
+<Key ID="STR_OFPEC_ILS_CANCEL">
+<English>Cancel</English>
+<German>Abbrechen</German>
+<Spanish>Cancel</Spanish>
+<Czech>Zrušit</Czech>
+<Russian>Очистить</Russian>
+<Italian>Cancel</Italian>
+<Polish>Wyłącz</Polish>
+<French>Annuler</French>
+<Hungarian>Mégse</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

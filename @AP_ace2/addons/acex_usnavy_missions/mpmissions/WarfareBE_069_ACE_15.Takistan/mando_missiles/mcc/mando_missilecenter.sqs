@@ -1,0 +1,11 @@
+; mando_missilecenter.sqs
+;By Mandoble June 2007
+
+;Purpose:
+;   Activates an MCC using the provided parameters   
+;   While you may execute this script directly, it is automatically executed by these in the mcc_types folder with missile and firing parameters predefined for some unit types.
+
+;Examples:
+
+
+_this execVM mando_missile_path+"mcc\mando_missilecenter.sqf";

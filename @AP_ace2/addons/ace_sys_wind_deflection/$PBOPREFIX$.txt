@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_wind_deflection
+Pbo Type is: Arma Addon
+Sha: 'F94A1DB8DD1C4526478FC3BEACCCBF422333D620'
+//////</HEADER>//////

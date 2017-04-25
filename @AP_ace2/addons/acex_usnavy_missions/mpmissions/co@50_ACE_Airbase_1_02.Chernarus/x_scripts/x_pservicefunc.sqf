@@ -1,0 +1,2 @@
+private ["_objs"];
+if ((vehicle player) == player)then{_objs = nearestObjects [player,["LandVehicle","Air"],5];if (count _objs > 0) then {x_repair_obj = _objs select 0;if (alive x_repair_obj) then {if(damage x_repair_obj > 0.05 || fuel x_repair_obj<1)then{true}else{false};}else{false};};}else{false};

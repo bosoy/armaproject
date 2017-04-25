@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2">
+<Package name="ACE2">
+<Container name="sys_frag">
+<Key ID="STR_DN_ACE_SYS_VEHICLEDAMAGE_ENCOOK">
+<English>(Æ) Enable Ammo Cookoff</English>
+<Czech>(Æ) Povolit explozi munice</Czech>
+<German>(Æ) Weapons: Munitionsbrand</German>
+<Polish>(Æ) Eksplozje amunicji w płonących pojazdach</Polish>
+<Russian>(Æ) Включить 'Самоподрыв боеприпасов в горящей технике'</Russian>
+<French>(Æ) Enable Ammo Cookoff</French>
+<Spanish>(Æ) Enable Ammo Cookoff</Spanish>
+<Italian>(Æ) Enable Ammo Cookoff</Italian>
+<Hungarian>(Æ) Enable Ammo Cookoff</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

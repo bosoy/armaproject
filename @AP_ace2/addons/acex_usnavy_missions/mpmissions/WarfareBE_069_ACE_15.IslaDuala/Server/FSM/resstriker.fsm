@@ -1,0 +1,302 @@
+/*%FSM<COMPILE "F:\ArmA2\FSM Editor Personal Edition\scriptedFSM.cfg, resstriker">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Init_Patrol",0,250,-37.336731,-245.259415,52.663269,-195.259415,0.000000,"Init Patrol"};
+item1[] = {"Wait",4,218,-35.585495,-60.933670,54.414505,-10.933670,0.000000,"Wait"};
+item2[] = {"Activity",2,4346,-38.403221,10.450424,51.596794,60.450424,0.000000,"Activity"};
+item3[] = {"is_Active",4,218,101.439552,11.111540,191.439560,61.111511,1.000000,"is Active"};
+item4[] = {"Actions",2,250,100.520218,-64.953995,190.520096,-14.954021,0.000000,"Actions"};
+item5[] = {"Spawn",4,218,-316.513123,35.015533,-226.513107,85.015488,10.000000,"Spawn"};
+item6[] = {"Create",2,250,-316.368622,-205.743271,-226.368637,-155.743256,0.000000,"Create"};
+item7[] = {"Gameover",4,218,-99.764572,74.877029,-9.764542,124.877037,0.000000,"Gameover"};
+item8[] = {"End",1,250,-101.050774,175.913666,-11.050694,225.913651,0.000000,"End"};
+item9[] = {"Wait",4,218,-38.930679,109.403816,51.069321,159.403778,0.000000,"Wait"};
+item10[] = {"Respawn_units",2,250,207.845749,108.995827,297.845764,158.995819,0.000000,"Respawn units"};
+item11[] = {"_",8,218,231.577728,-112.425110,275.102661,-89.123550,0.000000,""};
+item12[] = {"_",8,218,-14.641279,-176.291138,27.894829,-149.034271,0.000000,""};
+item13[] = {"Advanced_Init",2,250,-39.362053,-125.860779,50.637978,-75.860779,0.000000,"Advanced Init"};
+item14[] = {"Town_Enemy",4,218,-253.437073,0.921768,-163.437073,50.921768,0.000000,"Town Enemy"};
+item15[] = {"Idle",2,250,-251.141953,-120.718803,-161.141937,-70.718803,0.000000,"Idle"};
+link0[] = {0,12};
+link1[] = {1,2};
+link2[] = {2,3};
+link3[] = {2,5};
+link4[] = {2,7};
+link5[] = {2,9};
+link6[] = {2,14};
+link7[] = {3,4};
+link8[] = {4,1};
+link9[] = {5,6};
+link10[] = {6,1};
+link11[] = {7,8};
+link12[] = {9,10};
+link13[] = {10,11};
+link14[] = {11,13};
+link15[] = {12,13};
+link16[] = {13,1};
+link17[] = {14,15};
+link18[] = {15,1};
+globals[] = {0.000000,0,0,0,0,640,480,1,40,6316128,1,-358.298737,441.757324,317.624573,-294.183075,680,515,1};
+window[] = {0,-1,-1,-1,-1,838,154,1453,203,1,698};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "resstriker";
+  class States
+  {
+    /*%FSM<STATE "Init_Patrol">*/
+    class Init_Patrol
+    {
+      name = "Init_Patrol";
+      init = /*%FSM<STATEINIT""">*/"_location = _this select 0;" \n
+       "_target = objNull;" \n
+       "" \n
+       "_rsi = 'WFBE_RESSTRIKERINTERVAL' Call GetNamespace;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Advanced_Init";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Activity">*/
+    class Activity
+    {
+      name = "Activity";
+      init = /*%FSM<STATEINIT""">*/"_lastUpdate = time;" \n
+       "_sideID = _location getVariable ""sideID"";" \n
+       "_isActive = _location getVariable ""activeStriker"";" \n
+       "" \n
+       "_alives = if (!isNil ""_team"") then {Count ((Units  _team) Call GetLiveUnits)} else {0};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Spawn">*/
+        class Spawn
+        {
+          priority = 10.000000;
+          to="Create";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!gameOver && !_isActive && _sideID == RESISTANCEID"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "is_Active">*/
+        class is_Active
+        {
+          priority = 1.000000;
+          to="Actions";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!gameOver && _isActive && _alives > 0"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Wait">*/
+        class Wait
+        {
+          priority = 0.000000;
+          to="Respawn_units";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_alives <= 0 && _isActive"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Town_Enemy">*/
+        class Town_Enemy
+        {
+          priority = 0.000000;
+          to="Idle";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!gameOver && !_isActive && _sideID != RESISTANCEID"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Gameover">*/
+        class Gameover
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"gameOver"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Actions">*/
+    class Actions
+    {
+      name = "Actions";
+      init = /*%FSM<STATEINIT""">*/"_update = false;" \n
+       "if (time - _travelTime > 2400 || !alive _target || isNull _target) then {_update = true};" \n
+       "" \n
+       "if (_update) then {" \n
+       "	_buildings = (WestBaseStructures) + (EastBaseStructures) + [EastMHQ,WestMHQ];" \n
+       "	_near = [_location, _buildings] Call SortByDistance;" \n
+       "	_target = _near select 0;" \n
+       "	[_team, true, [[_target, 'SAD', 100, 60, "", []]]] Call AIWPAdd;" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Wait">*/
+        class Wait
+        {
+          priority = 0.000000;
+          to="Activity";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _lastUpdate > (40+random 2)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Create">*/
+    class Create
+    {
+      name = "Create";
+      init = /*%FSM<STATEINIT""">*/"_team = createGroup resistance;" \n
+       "_unit = objNull;" \n
+       "_vehicles = [];" \n
+       "_position = [getPos _location,100,300] Call GetRandomPosition;" \n
+       "" \n
+       "//--- Select a team." \n
+       "_types = Format [""WFBE_RESSTRIKERTYPE1%1"",round(random 3)] Call GetNamespace;" \n
+       "" \n
+       "{" \n
+       "	if (_x isKindOf ""Man"") then {" \n
+       "		_unit = [_x,_team,_position,resistance] Call CreateMan;" \n
+       "	} else {" \n
+       "		_type = if (_x isKindOf 'Man') then {'WFBE_GUERSOLDIER' Call GetNamespace} else {if (_x isKindOf 'Air') then {'WFBE_GUERPILOT' Call GetNamespace} else {'WFBE_GUERCREW' Call GetNamespace}};" \n
+       "		_vehicle = [_x,_position,resistance,paramResVehLock] Call CreateVehi;" \n
+       "		_vehicles = _vehicles + [_vehicle];" \n
+       "		_unit = [_type,_team,_position,resistance] Call CreateMan;" \n
+       "		_unit moveInDriver _vehicle;" \n
+       "		if (_vehicle emptyPositions ""gunner"" > 0) then {_unit = [_type,_team,_position,resistance] Call CreateMan;_unit moveInGunner _vehicle};" \n
+       "		if (_vehicle emptyPositions ""commander"" > 0) then {_unit = [_type,_team,_position,resistance] Call CreateMan;_unit moveInCommander _vehicle};" \n
+       "	};" \n
+       "} forEach _types;" \n
+       "" \n
+       "{_team addVehicle _x} forEach _vehicles;" \n
+       "" \n
+       "if (count _vehicles > 0) then {" \n
+       "	{" \n
+       "		emptyQueu = emptyQueu + [_x];" \n
+       "		_x Spawn HandleEmptyVehicle;" \n
+       "	} forEach _vehicles;" \n
+       "};" \n
+       "" \n
+       "_location setVariable [""activeStriker"",true];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Wait">*/
+        class Wait
+        {
+          priority = 0.000000;
+          to="Activity";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _lastUpdate > (40+random 2)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End">*/
+    class End
+    {
+      name = "End";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Respawn_units">*/
+    class Respawn_units
+    {
+      name = "Respawn_units";
+      init = /*%FSM<STATEINIT""">*/"_idleStart = time;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Advanced_Init";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _idleStart > _rsi"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Advanced_Init">*/
+    class Advanced_Init
+    {
+      name = "Advanced_Init";
+      init = /*%FSM<STATEINIT""">*/"_lastUpdate = 0;" \n
+       "_team = nil;" \n
+       "_travelTime = time;" \n
+       "" \n
+       "_location setVariable [""activeStriker"",false];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Wait">*/
+        class Wait
+        {
+          priority = 0.000000;
+          to="Activity";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _lastUpdate > (40+random 2)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Idle">*/
+    class Idle
+    {
+      name = "Idle";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Wait">*/
+        class Wait
+        {
+          priority = 0.000000;
+          to="Activity";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _lastUpdate > (40+random 2)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Init_Patrol";
+  finalStates[] =
+  {
+    "End"
+  };
+};
+/*%FSM</COMPILE>*/

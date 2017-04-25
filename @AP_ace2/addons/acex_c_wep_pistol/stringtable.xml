@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACEX">
+<Package name="c_wep_pistol">
+<Container name="STR_DN">
+<Key ID="STR_DN_ACE_FLAREGUN">
+<German>Signalpistole</German>
+<English>Flare gun</English>
+<Italian>Pistola Lanciarazzi</Italian>
+<Spanish>Flare gun</Spanish>
+<French>Lance fusée éclairante</French>
+<Czech>Signální pistole</Czech>
+<Russian>Сигнальный пистолет</Russian>
+<Polish>Starter</Polish>
+<Hungarian>Jelző pisztoly</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_APSB">
+<German>APS schallgedämpft</German>
+<English>APS Silenced</English>
+<Italian>APS con silenziatore</Italian>
+<Spanish>APS con silenciador</Spanish>
+<French>APS à silencieux</French>
+<Czech>APS s tlumičem</Czech>
+<Russian>АПСБ (АО-44)</Russian>
+<Polish>APS SD</Polish>
+<Hungarian>APS SD</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_USPSD">
+<German>USP schallgedämpft</German>
+<English>USP Silenced</English>
+<Italian>USP con silenziatore</Italian>
+<Spanish>USP con silenciador</Spanish>
+<French>USP à silencieux</French>
+<Czech>USP s tlumičem</Czech>
+<Russian>USP с глуш.</Russian>
+<Polish>USP SD</Polish>
+<Hungarian>USP SD</Hungarian>
+</Key>
+</Container>
+<Container name="STR_MN">
+<Key ID="STR_MN_ACE_15RND_9X19_P8">
+<German>P8 Mag.</German>
+<English>P8 Mag.</English>
+<Italian>Caric. P8</Italian>
+<Spanish>Carg. P8</Spanish>
+<French>Charg. P8</French>
+<Czech>P8 Zás.</Czech>
+<Russian>Магазин P8</Russian>
+<Polish>magazynek P8</Polish>
+<Hungarian>P8 tár</Hungarian>
+</Key>
+<Key ID="STR_MN_ACE_17Rnd_9x19_G17">
+<German>Glock 17-Mag.</German>
+<English>Glock 17 Mag.</English>
+<Italian>Caric. Glock 17</Italian>
+<Spanish>Carg. Glock 17</Spanish>
+<French>Charg. Glock 17</French>
+<Czech>Glock 17 Zás.</Czech>
+<Russian>Магазин Glock 17</Russian>
+<Polish>magazynek Glock 17</Polish>
+<Hungarian>Glock 17 tár</Hungarian>
+</Key>
+<Key ID="STR_MN_ACE_8Rnd_762x25_B_Tokarev">
+<German>Tokarev-Mag.</German>
+<English>Tokarev Mag.</English>
+<Italian>Caric. Tokarev</Italian>
+<Spanish>Carg. Tokarev</Spanish>
+<French>Charg. Tokarev</French>
+<Czech>Tokarev Zás.</Czech>
+<Russian>Магазин TT</Russian>
+<Polish>magazynek TT</Polish>
+<Hungarian>Tokarev tár</Hungarian>
+</Key>
+<Key ID="STR_MN_ACE_20Rnd_765x17_vz61">
+<German>Vz61-Mag.</German>
+<English>Vz61 Mag.</English>
+<Italian>Caric. Vz61</Italian>
+<Spanish>Carg. Vz61</Spanish>
+<French>Charg. Vz61</French>
+<Czech>Vz61 Zás.</Czech>
+<Russian>Магазин Vz61</Russian>
+<Polish>magazynek Vz.61</Polish>
+<Hungarian>Vz61 tár</Hungarian>
+</Key>
+<Key ID="STR_MN_ACE_20Rnd_9x18_APS">
+<German>APS-Mag.</German>
+<English>APS Mag.</English>
+<Italian>Caric. APS</Italian>
+<Spanish>Carg. APS</Spanish>
+<French>Charg. APS</French>
+<Czech>APS Zás.</Czech>
+<Russian>Магазин АПС</Russian>
+<Polish>magazynek APS</Polish>
+<Hungarian>APSz tár</Hungarian>
+</Key>
+<Key ID="STR_MN_ACE_20Rnd_9x18_APSB">
+<German>APSB-Mag.</German>
+<English>APSB Mag.</English>
+<Italian>Caric. APSB</Italian>
+<Spanish>Carg. APSB</Spanish>
+<French>Charg. APSB</French>
+<Czech>APSB Zás.</Czech>
+<Russian>Магазин АПСБ</Russian>
+<Polish>magazynek APSB</Polish>
+<Hungarian>APSzB tár</Hungarian>
+</Key>
+<Key ID="STR_MN_ACE_12RND_45ACP_USP">
+<German>USP Tactical-Mag.</German>
+<English>USP Tactical Mag.</English>
+<Italian>Caric. USP Tactical</Italian>
+<Spanish>Carg. USP Tactical</Spanish>
+<French>Charg. USP Tactical</French>
+<Czech>USP Tactical Zás.</Czech>
+<Russian>Магазин USP Tactical</Russian>
+<Polish>magazynek USP</Polish>
+<Hungarian>USP Tactical tár</Hungarian>
+</Key>
+<Key ID="STR_MN_ACE_12RND_45ACP_USPSD">
+<German>USP SD-Mag.</German>
+<English>USP SD Mag.</English>
+<Italian>Caric. USP sil.</Italian>
+<Spanish>Carg. USP SD</Spanish>
+<French>Charg. USP SD</French>
+<Czech>USP SD Zás.</Czech>
+<Russian>Магазин USP SD</Russian>
+<Polish>magazynek USP (SD)</Polish>
+<Hungarian>USP tár, Szub</Hungarian>
+</Key>
+<Key ID="STR_MN_ACE_15RND_9X19_P226">
+<German>P226-Mag.</German>
+<English>P226 Mag.</English>
+<Italian>Caric. P226</Italian>
+<Spanish>Carg. P226</Spanish>
+<French>Charg. P226</French>
+<Czech>P226 Zás.</Czech>
+<Russian>Магазин P226</Russian>
+<Polish>magazynek P226</Polish>
+<Hungarian>P226 tár</Hungarian>
+</Key>
+</Container>
+<Container name="STR_DSS">
+<Key ID="STR_DSS_ACE_15RND_9X19_P226">
+<German>Kaliber: 9mm &lt;br/&gt;Schuss: 15 &lt;br/&gt;Eingesetzt in: P226</German>
+<English>Caliber: 9mm &lt;br/&gt;Rounds: 15 &lt;br/&gt;Used in: P226</English>
+<Italian>Calibro: 9mm &lt;br/&gt;Munizioni: 15 &lt;br/&gt;Si usa in: P226</Italian>
+<Spanish>Calibre: 9mm &lt;br/&gt;Cargas: 15 &lt;br/&gt;Uso: P226</Spanish>
+<French>Calibre : 9mm &lt;br/&gt;Munitions : 15 &lt;br/&gt;Utilisé avec : P226</French>
+<Czech>Kalibr: 9mm &lt;br/&gt;Nábojů: 15 &lt;br/&gt;Pro: P226</Czech>
+<Russian>Калибр: 9мм &lt;br/&gt;Количество: 15 &lt;br/&gt;Используются в: P226</Russian>
+<Polish>Kaliber: 9mm &lt;br/&gt;Naboje: 15 &lt;br/&gt;Używane w: P226</Polish>
+<Hungarian>Kaliber: 9mm &lt;br/&gt; Töltények: 15 &lt;br/&gt; Hozzá tartozó fegyver: P226</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_15RND_9X19_P8">
+<German>Kaliber: 9mm &lt;br/&gt;Schuss: 15 &lt;br/&gt;Eingesetzt in: P8</German>
+<English>Caliber: 9mm &lt;br/&gt;Rounds: 15 &lt;br/&gt;Used in: P8</English>
+<Italian>Calibro: 9mm &lt;br/&gt;Munizioni: 15 &lt;br/&gt;Si usa in: P8</Italian>
+<Spanish>Calibre: 9mm &lt;br/&gt;Cargas: 15 &lt;br/&gt;Uso: P8</Spanish>
+<French>Calibre : 9mm &lt;br/&gt;Munitions : 15 &lt;br/&gt;Utilisé avec : P8</French>
+<Czech>Kalibr: 9mm &lt;br/&gt;Nábojů: 15 &lt;br/&gt;Pro: P8</Czech>
+<Russian>Калибр: 9мм &lt;br/&gt;Количество: 15 &lt;br/&gt;Используются в: P8</Russian>
+<Polish>Kaliber: 9mm &lt;br/&gt;Naboje: 15 &lt;br/&gt;Używane w: P8</Polish>
+<Hungarian>Kaliber: 9mm &lt;br/&gt; Töltények: 15 &lt;br/&gt; Hozzá tartozó fegyver: P8</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_12RND_45ACP_USP">
+<German>Kaliber: .45 ACP &lt;br/&gt;Schuss: 12 &lt;br/&gt;Eingesetzt in: USP Tactical, USP SD</German>
+<English>Caliber: .45 ACP &lt;br/&gt;Rounds: 12 &lt;br/&gt;Used in: USP Tactical, USP SD</English>
+<Italian>Calibro: .45 ACP &lt;br/&gt;Munizioni: 12 &lt;br/&gt;Si usa in: USP Tactical, USP SD</Italian>
+<Spanish>Calibre: .45 ACP &lt;br/&gt;Cargas: 12 &lt;br/&gt;Uso: USP Tactical, USP SD</Spanish>
+<French>Calibre : .45 ACP &lt;br/&gt;Munitions : 12 &lt;br/&gt;Utilisé avec : USP Tactical, USP SD</French>
+<Czech>Kalibr: .45 ACP &lt;br/&gt;Nábojů: 12 &lt;br/&gt;Pro: USP Tactical, USP SD</Czech>
+<Russian>Калибр: .45 ACP &lt;br/&gt;Количество: 12 &lt;br/&gt;Используются в: USP Tactical, USP SD</Russian>
+<Polish>Kaliber: .45 ACP &lt;br/&gt;Naboje: 12 &lt;br/&gt;Używane w: USP Tactical, USP SD</Polish>
+<Hungarian>Kaliber: .45 ACP &lt;br/&gt; Töltények: 12 &lt;br/&gt; Hozzá tartozó fegyver: USP Tactical, USP SD</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_17RND_9X19_G17">
+<German>Kaliber: 9mm &lt;br/&gt;Schuss: 17 &lt;br/&gt;Eingesetzt in: Glock 17, Glock 18</German>
+<English>Caliber: 9mm &lt;br/&gt;Rounds: 17 &lt;br/&gt;Used in: Glock 17, Glock 18</English>
+<Italian>Calibro: 9mm &lt;br/&gt;Munizioni: 17 &lt;br/&gt;Si usa in: Glock 17, Glock 18</Italian>
+<Spanish>Calibre: 9mm &lt;br/&gt;Cargas: 17 &lt;br/&gt;Uso: Glock 17, Glock 18</Spanish>
+<French>Calibre : 9mm &lt;br/&gt;Munitions : 17 &lt;br/&gt;Utilisé avec : Glock 17, Glock 18</French>
+<Czech>Ráže: 9mm &lt;br/&gt;Nábojů: 17 &lt;br/&gt;Pro: Glock 17, Glock 18</Czech>
+<Russian>Калибр: 9мм &lt;br/&gt;Количество: 17 &lt;br/&gt;Используются в: Glock 17, Glock 18</Russian>
+<Polish>Kaliber: 9mm &lt;br/&gt;Naboje: 17 &lt;br/&gt;Używane w: Glock 17, Glock 18</Polish>
+<Hungarian>Kaliber: 9mm &lt;br/&gt; Töltények: 17 &lt;br/&gt; Hozzá tartozó fegyver: Glock 17, Glock 18</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_8RND_762X25_B_TOKAREV">
+<German>Kaliber: 7,62x25mm &lt;br/&gt;Schuss: 8 &lt;br/&gt;Eingesetzt in: Tokarev</German>
+<English>Caliber: 7.62x25mm &lt;br/&gt;Rounds: 8 &lt;br/&gt;Used in: Tokarev</English>
+<Italian>Calibro: 7,62x25mm &lt;br/&gt;Munizioni: 8 &lt;br/&gt;Si usa in: Tokarev</Italian>
+<Spanish>Calibre: 7,62x25mm &lt;br/&gt;Cargas: 8 &lt;br/&gt;Uso: Tokarev</Spanish>
+<French>Calibre : 7.62x25mm &lt;br/&gt;Munitions : 8 &lt;br/&gt;Utilisé avec : Tokarev</French>
+<Czech>Ráže: 7,62x25mm &lt;br/&gt;Nábojů: 8 &lt;br/&gt;Pro: Tokarev</Czech>
+<Russian>Калибр: 7,62x25мм &lt;br/&gt;Количество: 8 &lt;br/&gt;Используются в: ТТ</Russian>
+<Polish>Kaliber: 7,62x25mm &lt;br/&gt;Naboje: 8 &lt;br/&gt;Używane w: TT</Polish>
+<Hungarian>Kaliber: 7.62x25mm &lt;br/&gt; Töltények: 8 &lt;br/&gt; Hozzá tartozó fegyver: Tokarev</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_20RND_765X17_VZ61">
+<German>Kaliber: 7,65x17mm &lt;br/&gt;Schuss: 20 &lt;br/&gt;Eingesetzt in: Vz61</German>
+<English>Caliber: 7.65x17mm &lt;br/&gt;Rounds: 20 &lt;br/&gt;Used in: Vz61</English>
+<Italian>Calibro: 7,65x17mm &lt;br/&gt;Munizioni: 20 &lt;br/&gt;Si usa in: Vz61</Italian>
+<Spanish>Calibre: 7,65x17mm &lt;br/&gt;Cargas: 20 &lt;br/&gt;Uso: Vz61</Spanish>
+<French>Calibre : 7.65x17mm &lt;br/&gt;Munitions : 20 &lt;br/&gt;Utilisé avec : Vz61</French>
+<Czech>Ráže: 7,65x17mm &lt;br/&gt;Nábojů: 20 &lt;br/&gt;Pro: Vz61</Czech>
+<Russian>Калибр: 7,65x17мм &lt;br/&gt;Количество: 20 &lt;br/&gt;Используются в: Vz61</Russian>
+<Polish>Kaliber: 7,65x17mm &lt;br/&gt;Naboje: 20 &lt;br/&gt;Używane w: Vz.61</Polish>
+<Hungarian>Kaliber: 7.65x17mm &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: Vz61</Hungarian>
+</Key>
+<Key ID="str_dss_ACE_20Rnd_9x18_APS">
+<German>Kaliber: 9mm &lt;br/&gt;Schuss: 20 &lt;br/&gt;Eingesetzt in: APS</German>
+<English>Caliber: 9mm &lt;br/&gt;Rounds: 20 &lt;br/&gt;Used in: APS</English>
+<Italian>Calibro: 9mm &lt;br/&gt;Munizioni: 20 &lt;br/&gt;Si usa in: APS</Italian>
+<Spanish>Calibre: 9mm &lt;br/&gt;Cargas: 20 &lt;br/&gt;Uso: APS</Spanish>
+<French>Calibre : 9mm &lt;br/&gt;Munitions : 20 &lt;br/&gt;Utilisé avec : APS</French>
+<Czech>Ráže: 9mm &lt;br/&gt;Nábojů: 20 &lt;br/&gt;Pro: APS</Czech>
+<Russian>Калибр: 9мм &lt;br/&gt;Количество: 20 &lt;br/&gt;Используются в: АПС</Russian>
+<Polish>Kaliber: 9mm &lt;br/&gt;Naboje: 20 &lt;br/&gt;Używane w: APS</Polish>
+<Hungarian>Kaliber: 9mm &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: APS</Hungarian>
+</Key>
+<Key ID="str_dss_ACE_20Rnd_9x18_APSB">
+<German>Kaliber: 9mm &lt;br/&gt;Schuss: 20 &lt;br/&gt;Eingesetzt in: APSB</German>
+<English>Caliber: 9mm &lt;br/&gt;Rounds: 20 &lt;br/&gt;Used in: APSB</English>
+<Italian>Calibro: 9mm &lt;br/&gt;Munizioni: 20 &lt;br/&gt;Si usa in: APSB</Italian>
+<Spanish>Calibre: 9mm &lt;br/&gt;Cargas: 20 &lt;br/&gt;Uso: APSB</Spanish>
+<French>Calibre : 9mm &lt;br/&gt;Munitions : 20 &lt;br/&gt;Utilisé avec : APSB</French>
+<Czech>Ráže: 9mm &lt;br/&gt;Nábojů: 20 &lt;br/&gt;Pro: APSB</Czech>
+<Russian>Калибр: 9мм &lt;br/&gt;Количество: 20 &lt;br/&gt;Используются в: АПСБ</Russian>
+<Polish>Kaliber: 9mm &lt;br/&gt;Naboje: 20 &lt;br/&gt;Używane w: APSB</Polish>
+<Hungarian>Kaliber: 9mm &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: APSB</Hungarian>
+</Key>
+<Key ID="str_dss_ACE_APSB">
+<German>Schallgedämpfte vollautomatische Pistole &lt;br/&gt;Kaliber: 9x18mm</German>
+<English>Silenced full-automatic pistol &lt;br/&gt;Caliber: 9x18mm</English>
+<Italian>Pistola silenziata Automatica &lt;br/&gt;Calibro: 9x18 mm</Italian>
+<Spanish>Silenced full-automatic pistol &lt;br/&gt;Calibre: 9x18 mm</Spanish>
+<French>Pistolet automatique à silencieux &lt;br/&gt;Calibre : 9x18 mm</French>
+<Czech>Samočinná pistole s tlumičem &lt;br/&gt; Ráže: 9x18mm</Czech>
+<Russian>Автоматический пистолет с глушителем &lt;br/&gt;Калибр: 9x18мм</Russian>
+<Polish>Wytłumiony pistolet automatyczny &lt;br/&gt;Kaliber: 9x18mm</Polish>
+<Hungarian>Silenced full-automatic pistol &lt;br/&gt; Kaliber: 9x18mm</Hungarian>
+</Key>
+<Key ID="str_dss_ACE_APS">
+<German>Vollautomatische Pistole &lt;br/&gt;Kaliber: 9x18mm</German>
+<English>Full-automatic pistol &lt;br/&gt;Caliber: 9x18mm</English>
+<Italian>Pistola Automatica &lt;br/&gt;Calibro: 9x18 mm</Italian>
+<Spanish>Full-automatic pistol &lt;br/&gt;Calibre: 9x18 mm</Spanish>
+<French>Pistolet automatique &lt;br/&gt;Calibre : 9x18 mm</French>
+<Czech>Samočinná pistole &lt;br/&gt;Ráže: 9x19mm</Czech>
+<Russian>Автоматический пистолет &lt;br/&gt;Калибр: 9x18мм</Russian>
+<Polish>Pistolet automatyczny &lt;br/&gt;Kaliber: 9x18mm</Polish>
+<Hungarian>Full-automatic pistol &lt;br/&gt; Kaliber: 9x18mm</Hungarian>
+</Key>
+<Key ID="str_dss_ACE_Glock18">
+<German>Vollautomatische Pistole &lt;br/&gt;Kaliber: 9x19mm</German>
+<English>Full-automatic pistol &lt;br/&gt;Caliber: 9x19mm</English>
+<Italian>Pistola Automatica &lt;br/&gt;Calibro: 9x19 mm</Italian>
+<Spanish>Full-automatic pistol &lt;br/&gt;Calibre: 9x19 mm</Spanish>
+<French>Pistolet automatique &lt;br/&gt;Calibre : 9x19 mm</French>
+<Czech>Samočinná pistole &lt;br/&gt;Ráže: 9x19mm</Czech>
+<Russian>Автоматический пистолет &lt;br/&gt;Калибр: 9x19мм</Russian>
+<Polish>Pistolet automatyczny &lt;br/&gt;Kaliber: 9x19mm</Polish>
+<Hungarian>Full-automatic pistol &lt;br/&gt; Kaliber: 9x19mm</Hungarian>
+</Key>
+<Key ID="str_dss_ACE_Glock17">
+<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: 9x19mm</German>
+<English>Semi-automatic pistol &lt;br/&gt;Caliber: 9x19mm</English>
+<Italian>Pistola Semi-Automatica &lt;br/&gt;Calibro: 9x19 mm</Italian>
+<Spanish>Pistola semiautomática con silenciador &lt;br/&gt;Calibre: 9x19 mm</Spanish>
+<French>Pistolet semi-automatique &lt;br/&gt;Calibre : 9x19 mm</French>
+<Czech>Samonabíjecí pistole &lt;br/&gt;Ráže: 9x19mm</Czech>
+<Russian>Полуавтоматический пистолет &lt;br/&gt;Калибр: 9x19мм</Russian>
+<Polish>Pistolet samopowtarzalny &lt;br/&gt;Kaliber: 9x19mm</Polish>
+<Hungarian>Félautomata pisztoly &lt;br/&gt; Kaliber: 9x19mm</Hungarian>
+</Key>
+<Key ID="str_dss_ACE_TT">
+<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: 7,62x25mm</German>
+<English>Semi-automatic pistol &lt;br/&gt;Caliber: 7.62x25mm</English>
+<Italian>Pistola Semi-Automatica &lt;br/&gt;Calibro: 7,62x25 mm</Italian>
+<Spanish>Pistola semiautomática con silenciador &lt;br/&gt;Calibre: 7,62x25 mm</Spanish>
+<French>Pistolet semi-automatique &lt;br/&gt;Calibre : 7.62x25 mm</French>
+<Czech>Samonabíjecí pistole &lt;br/&gt;Ráže: 7,62x25mm</Czech>
+<Russian>Полуавтоматический пистолет &lt;br/&gt;Калибр: 7,62x25мм</Russian>
+<Polish>Pistolet samopowtarzalny &lt;br/&gt;Kaliber: 7,62x25mm</Polish>
+<Hungarian>Félautomata pisztoly &lt;br/&gt; Kaliber: 7.62x25mm</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_SCORPION">
+<German>Maschinenpistole &lt;br/&gt;Kaliber: 7,65x17mm</German>
+<English>Submachine gun  &lt;br/&gt;Caliber: 7.65x17mm</English>
+<Italian>Fucile Mitragliatore &lt;br/&gt;Calibro: 7,65x17 mm</Italian>
+<Spanish>Metralleta  &lt;br/&gt;Calibre: 7,65x17 mm</Spanish>
+<French>Pistolet-mitrailleur &lt;br/&gt;Calibre : 7.65x17 mm</French>
+<Czech>Samopal &lt;br/&gt;Ráže: 7,65x17mm</Czech>
+<Russian>Пистолет-пулемет &lt;br/&gt;Калибр: 7,65x17мм</Russian>
+<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 7,65x17mm </Polish>
+<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 7.65x17mm</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_USP">
+<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: .45 ACP</German>
+<English>Semi-automatic pistol &lt;br/&gt;Caliber: .45 ACP</English>
+<Italian>Pistola Semi-Automatica &lt;br/&gt;Calibro: .45 ACP</Italian>
+<Spanish>Pistola semiautomática con silenciador &lt;br/&gt;Calibre: .45 ACP</Spanish>
+<French>Pistolet semi-automatique &lt;br/&gt;Calibre : .45 ACP</French>
+<Czech>Samonabíjecí pistole &lt;br/&gt;Ráže: .45 ACP</Czech>
+<Russian>Полуавтоматический пистолет &lt;br/&gt;Калибр: .45 ACP</Russian>
+<Polish>Pistolet samopowtarzalny &lt;br/&gt;Kaliber: .45 ACP</Polish>
+<Hungarian>Félautomata pisztoly &lt;br/&gt; Kaliber: .45 ACP</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_USPSD">
+<German>Schallgedämpfte vollautomatische Pistole &lt;br/&gt;Kaliber: .45 ACP</German>
+<English>Silenced full-automatic pistol &lt;br/&gt;Caliber: .45 ACP</English>
+<Italian>Pistola silenziata Automatica &lt;br/&gt;Calibro: .45 ACP</Italian>
+<Spanish>Silenced full-automatic pistol &lt;br/&gt;Calibre: .45 ACP</Spanish>
+<French>Pistolet automatique à silencieux &lt;br/&gt;Calibre : .45 ACP</French>
+<Czech>Samočinná pistole s tlumičem &lt;br/&gt; Ráže: .45 ACP</Czech>
+<Russian>Автоматический пистолет с глушителем &lt;br/&gt;Калибр: .45 ACP</Russian>
+<Polish>Wytłumiony pistolet automatyczny &lt;br/&gt;Kaliber: .45 ACP</Polish>
+<Hungarian>Silenced full-automatic pistol &lt;br/&gt; Kaliber: .45 ACP</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

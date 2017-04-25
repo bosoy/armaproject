@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_magazines
+Pbo Type is: Arma Addon
+Sha: 'CDEC0B2CC9608FD0C63D3382ECD906CA5052804A'
+//////</HEADER>//////

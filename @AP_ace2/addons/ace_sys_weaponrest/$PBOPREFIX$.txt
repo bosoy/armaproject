@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_weaponrest
+Pbo Type is: Arma Addon
+Sha: '85DB7ADA35847EB85BAC47372E897CA53C05FA31'
+//////</HEADER>//////

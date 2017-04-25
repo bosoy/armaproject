@@ -1,0 +1,176 @@
+disabledAI=1;
+respawn=3;
+respawndelay=2;
+
+class Header
+{
+	gameType = TEAM;
+	minPlayers = 4;
+	maxPlayers = 50;
+};
+
+class params
+{
+	class MaxScore
+	{
+		title = "Best of X rounds";
+		values[] = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
+		texts[] = {"3", "5", "7", "9", "11", "13", "15", "17", "19", "21", "23", "25"};
+		default = 5;
+	};
+	
+	class TimeLimit
+	{
+		title = "Round Time Limit (minutes)";
+		values[] = {5, 7, 8, 9, 10, 12, 15, 20};
+		texts[] = {"5", "7", "9", "10", "12", "15", "20"};
+		default = 10;
+	};
+	
+	class LastPlayersCountdown
+	{
+		title = "Last Players Countdown (seconds)";
+		values[] = {30, 45, 60, 75, 90, 105, 120, 150, 180};
+		texts[] = {"30", "45", "60", "75", "90", "105", "120", "150", "180"};
+		default = 105;
+	};
+	
+	class SetupTime
+	{
+		title = "Setup Time (seconds)";
+		values[] = {20, 30, 45, 60, 75, 90, 120, 150, 180};
+		texts[] = {"20", "30", "45", "60", "75", "90", "120", "150", "180"};
+		default = 60;
+	};
+	
+	class Loadouts
+	{
+		title = "Loadouts";
+		values[] = {0, 1, 2};
+		texts[] = {"Customized by player", "Standard", "Old fashioned"};
+		default = 0;
+	};
+	
+	class Nightorday
+	{
+		title = "Night/Day";
+		values[] = {0, 1, 2, 3};
+		texts[] = {"Day", "1/4 moon", "1/2 moon", "3/4 moon"};
+		default = 0;
+	};
+
+	class NightVision
+	{
+		title = "Nightvision (for both customized and pre-set loadouts)";
+		values[] = {0, 1, 2};
+		texts[] = {"No", "NV", "Thermal"};
+		default = 1; 
+	};
+	
+	class NightSights
+	{
+		title = "Night Sights (for both customized and pre-set loadouts)";
+		values[] = {0, 1, 2};
+		texts[] = {"None", "NV", "Thermal"};
+		default = 1; 
+	};	
+
+	class SideWeapons
+	{
+		title = "Faction weapons (for customized loadouts only)";
+		values[] = {0, 1, 2};
+		texts[] = {"Faction only (WARNING: Can cause imbalance)", "Side only (WARNING: Can cause imbalance)", "All weapons"};
+		default = 2;
+	};
+	
+	class WeaponTypes
+	{
+		title = "Weapon Types (for customized loadouts only)";
+		values[] = {0, 1, 2, 3, 4, 5};
+		texts[] = {"Pistols", "SMGs", "SMGs / Shotguns", "Rifles", "Heavy", "Very heavy (WARNING: Can cause imbalance)"};
+		default = 4;
+	};
+	
+	class Caliber
+	{
+		title = "Caliber limit (for customized loadouts only)";
+		values[] = {1, 2, 3, 4, 5, 6, 7};
+		texts[] = {"Pistol calibers", "PDW calibers", "5.56 / 5.45", "5.56 / 5.45 / 7.62X39", "7.62X51 / 7.62X54 / 9X39", "50cal", "25mm"};
+		default = 4;
+	};
+
+	class Explosives
+	{
+		title = "Explosives (for customized loadouts only)";
+		values[] = {0, 1, 2, 3, 4, 5};
+		texts[] = {"None", "Grenades", "Grenades / Satchels", "Grenades / Satchels / Mines", "Grenades / Satchels / Advanced Mines", "Everything (WARNING: Imbalanced!)"};
+		default = 4;
+	};
+	
+	class Scopes
+	{
+		title = "Scopes (for customized loadouts only)";
+		values[] = {0, 1};
+		texts[] = {"No", "Yes"};
+		default = 1;
+	};
+	
+	class Launchers
+	{
+		title = "Launchers (for customized loadouts only)";
+		values[] = {0, 1, 2, 3};
+		texts[] = {"None (WARNING: Imbalanced)", "Light", "Medium (WARNING: slightly imbalanced)", "Heavy (WARNING: Imbalanced)"};
+		default = 1; 
+	};
+	
+	class CSW
+	{
+		title = "Crew Served Weapons (for customized loadouts only)";
+		values[] = {0, 1, 2};
+		texts[] = {"None", "Machineguns", "Everything (WARNING: Imbalanced)"};
+		default = 0; 
+	};
+	
+	class SFweapons
+	{
+		title = "SF weapons (for customized loadouts only)";
+		values[] = {0, 1, 2};
+		texts[] = {"None", "Non-SD", "SD included"};
+		default = 1;
+	};
+	
+	class FutureWeapons
+	{
+		title = "Future Weapons (for customized loadouts only)";
+		values[] = {0, 1};
+		texts[] = {"No", "Yes"};
+		default = 1;
+	};
+	
+	class HuntIR
+	{
+		title = "HuntIR (for customized loadouts only)";
+		values[] = {0, 1};
+		texts[] = {"No", "Yes"};
+		default = 0;
+	};
+	
+	class LessThanLethal
+	{
+		title = "Less Than Lethal Weapons (for customized loadouts only)";
+		values[] = {0, 1};
+		texts[] = {"No", "Yes"};
+		default = 0;	
+	};
+	
+	class HiCapMags
+	{
+		title = "High Capacity Magazines (for customized loadouts only)";
+		values[] = {0, 1, 2};
+		texts[] = {"None", "Small", "Large"};
+		default = 0;
+	};
+
+};
+
+respawnDialog = false;

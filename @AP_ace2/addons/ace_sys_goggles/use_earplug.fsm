@@ -1,0 +1,245 @@
+/*%FSM<COMPILE "scriptedFSM.cfg, use_earplugs">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"use_earplugs_",0,4346,-200.000000,-200.000000,-100.000000,-150.000000,0.000000,"use_earplugs" \n ""};
+item1[] = {"true",8,218,-125.000000,-100.000000,-25.000000,-50.000000,0.000000,"true"};
+item2[] = {"check",2,250,-125.000000,50.000000,-25.000000,100.000000,0.000000,"check"};
+item3[] = {"earWear",8,218,-25.000000,125.000000,75.000000,175.000000,0.000000,"earWear"};
+item4[] = {"true",4,218,-125.000000,175.000000,-25.000000,225.000000,1.000000,"true"};
+item5[] = {"end",1,250,-275.000000,175.000000,-175.000000,225.000000,0.000000,"end"};
+item6[] = {"playSound",2,250,225.000000,-25.000000,325.000000,25.000000,0.000000,"playSound"};
+item7[] = {"time2wait__sound",3,250,100.000000,-100.000000,200.000000,-50.000000,0.000000,"time2wait" \n "(sound)"};
+item8[] = {"time2wait",4,218,-25.000000,-25.000000,75.000000,25.000000,0.000000,"time2wait"};
+item9[] = {"check_deafness",3,250,100.000000,125.000000,200.000000,175.000000,0.000000,"check deafness"};
+item10[] = {"true",8,218,225.000000,50.000000,325.000000,100.000000,0.000000,"true"};
+item11[] = {"true",8,218,225.000000,-100.000000,325.000000,-50.000000,0.000000,"true"};
+item12[] = {"time2wait__loop",3,250,100.000000,-25.000000,200.000000,25.000000,0.000000,"time2wait" \n "(loop)"};
+item13[] = {"isDeaf",4,218,100.000000,50.000000,200.000000,100.000000,1.000000,"isDeaf"};
+item14[] = {"_",4,218,-275.000000,-100.000000,-175.000000,-50.000000,1.000000,""};
+link0[] = {0,1};
+link1[] = {0,14};
+link2[] = {1,2};
+link3[] = {2,3};
+link4[] = {2,4};
+link5[] = {3,9};
+link6[] = {4,5};
+link7[] = {6,11};
+link8[] = {7,8};
+link9[] = {8,2};
+link10[] = {9,10};
+link11[] = {9,13};
+link12[] = {10,6};
+link13[] = {11,7};
+link14[] = {12,8};
+link15[] = {13,12};
+link16[] = {14,5};
+globals[] = {25.000000,1,0,0,0,640,480,1,27,6316128,1,-323.025940,563.410583,305.366028,-238.653198,875,537,1};
+window[] = {0,-1,-1,-1,-1,882,200,1613,200,1,893};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "use_earplugs";
+  class States
+  {
+    /*%FSM<STATE "use_earplugs_">*/
+    class use_earplugs_
+    {
+      name = "use_earplugs_";
+      init = /*%FSM<STATEINIT""">*/"/* ace_sys_goggles (.pbo) | (c) 2009, 2010 by rocko */" \n
+       "" \n
+       "private[""_unit"",""_timeNow"",""_sound""];" \n
+       "_unit = _this select 0;" \n
+       "" \n
+       "_unit setVariable [""ace_sys_goggles_earplugs"", true, false];" \n
+       "// BWC" \n
+       "_unit setVariable [""ACE_Ear_Protection"",true];" \n
+       "" \n
+       "_unit removeWeapon ""ACE_Earplugs"";" \n
+       "[] spawn {" \n
+       "	_img = ""<img image='x\ace\addons\sys_goggles\data\icon\ace_earplug_in_ca.paa' size='3' align='center'/>"";" \n
+       "	hintSilent parseText (_img + "" "");" \n
+       "	sleep 2;" \n
+       "	hintSilent """";" \n
+       "};" \n
+       "" \n
+       "private ""_time2wait"";" \n
+       "" \n
+       "//enableEnvironment false;" \n
+       "0 fadeSound 0.4;" \n
+       "0 fadeRadio  0.4;" \n
+       "0 fadeMusic  0.4;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 1.000000;
+          to="end";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(_unit hasWeapon ""ACE_Earplugs"")"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="check";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "check">*/
+    class check
+    {
+      name = "check";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 1.000000;
+          to="end";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(_unit getVariable ""ace_sys_goggles_earplugs"")"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "earWear">*/
+        class earWear
+        {
+          priority = 0.000000;
+          to="check_deafness";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "end">*/
+    class end
+    {
+      name = "end";
+      init = /*%FSM<STATEINIT""">*/"//0 fadeSound (ace_sys_goggles_sound_volume );" \n
+       "//0 fadeRadio (ace_sys_goggles_radio_volume);" \n
+       "//0 fadeMusic (ace_sys_goggles_music_volume);"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "playSound">*/
+    class playSound
+    {
+      name = "playSound";
+      init = /*%FSM<STATEINIT""">*/"0 fadeSound 0.4;" \n
+       "0 fadeRadio  0.4;" \n
+       "0 fadeMusic  0.4;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="time2wait__sound";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "time2wait__sound">*/
+    class time2wait__sound
+    {
+      name = "time2wait__sound";
+      init = /*%FSM<STATEINIT""">*/"_time2wait = time + 2;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "time2wait">*/
+        class time2wait
+        {
+          priority = 0.000000;
+          to="check";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _time2wait"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "check_deafness">*/
+    class check_deafness
+    {
+      name = "check_deafness";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "isDeaf">*/
+        class isDeaf
+        {
+          priority = 1.000000;
+          to="time2wait__loop";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"ACE_SYS_COMBATDEAF_DEAF"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="playSound";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "time2wait__loop">*/
+    class time2wait__loop
+    {
+      name = "time2wait__loop";
+      init = /*%FSM<STATEINIT""">*/"_time2wait = time + 2;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "time2wait">*/
+        class time2wait
+        {
+          priority = 0.000000;
+          to="check";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _time2wait"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="use_earplugs_";
+  finalStates[] =
+  {
+    "end",
+  };
+};
+/*%FSM</COMPILE>*/

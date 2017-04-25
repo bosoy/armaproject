@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_clusterbombs
+Pbo Type is: Arma Addon
+Sha: 'D6A18272A32B12707EA6931F37136B83EC34348F'
+//////</HEADER>//////

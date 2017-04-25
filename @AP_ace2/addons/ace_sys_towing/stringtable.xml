@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="ACE2">
+<Container name="sys_towing">
+<Key ID="STR_ACE_TOW_ERR_1">
+<English>Vehicle already has a Rope Attached!</English>
+<Italian>Vehicle already has a Rope Attached!</Italian>
+<German>Abschleppseil schon angebracht!</German>
+<Russian>К технике уже присоединён трос!</Russian>
+<French>Vehicle already has a Rope Attached!</French>
+<Spanish>Vehicle already has a Rope Attached!</Spanish>
+<Czech>Vozidlo již má připevněno lano!</Czech>
+<Polish>Pojazd już ma przyczepioną linę!</Polish>
+<Hungarian>Vehicle already has a Rope Attached!</Hungarian>
+</Key>
+<Key ID="STR_ACE_TOW_ERR_2">
+<English>No Rope in inventory</English>
+<Italian>No Rope in inventory</Italian>
+<German>Kein Abschleppseil</German>
+<Russian>У вас нет троса</Russian>
+<French>No Rope in inventory</French>
+<Spanish>No Rope in inventory</Spanish>
+<Czech>Žádné lano v inventáři</Czech>
+<Polish>Brak liny w ekwipunku</Polish>
+<Hungarian>No Rope in inventory</Hungarian>
+</Key>
+<Key ID="STR_ACE_TOW_ERR_3">
+<English>Already attached that side of the Rope!</English>
+<Italian>Already attached that side of the Rope!</Italian>
+<German>Diese Seite ist schon angebracht!</German>
+<Russian>Этот конец троса уже прицеплен!</Russian>
+<French>Already attached that side of the Rope!</French>
+<Spanish>Already attached that side of the Rope!</Spanish>
+<Czech>Tento konec lana již je připevněný!</Czech>
+<Polish>Ten koniec liny jest już przyczepiony!</Polish>
+<Hungarian>Already attached that side of the Rope!</Hungarian>
+</Key>
+<Key ID="STR_ACE_TOW_ERR_4">
+<English>Distance too far! Max %1 m</English>
+<Italian>Distance too far! Max %1 m </Italian>
+<German>Zu weit weg! Max %1 m</German>
+<Russian>Слишком далеко! Макс %1 м</Russian>
+<French>Distance too far! Max %1 m</French>
+<Spanish>Distance too far! Max %1 m</Spanish>
+<Czech>Příliš daleko! Maximálně %1 m</Czech>
+<Polish>Za daleko! Maksymalnie %1 m</Polish>
+<Hungarian>Distance too far! Max %1 m</Hungarian>
+</Key>
+<Key ID="STR_ACE_TOW_ERR_5">
+<English>No such Rope attached</English>
+<Italian>No such Rope attached</Italian>
+<German>Kein Seil angebracht</German>
+<Russian>Трос не прицеплен</Russian>
+<French>No such Rope attached</French>
+<Spanish>No such Rope attached</Spanish>
+<Czech>Žádný takový provaz není připevněn</Czech>
+<Polish>Nie przyczepiono takiej liny</Polish>
+<Hungarian>No such Rope attached</Hungarian>
+</Key>
+<Key ID="STR_ACE_TOW_ERR_6">
+<English>That end isn't attached; Perhaps wrong end of the rope?</English>
+<Italian>That end isn't attached; Perhaps wrong end of the rope?</Italian>
+<German>Dieses Ende ist nicht angebracht. Falsche Seite vom Seil???</German>
+<Russian>Этот конец не прицеплен; Возможно не тот конец троса?</Russian>
+<French>That end isn't attached; Perhaps wrong end of the rope?</French>
+<Spanish>That end isn't attached; Perhaps wrong end of the rope?</Spanish>
+<Czech>Ten konec není připevněn; Špatný konec provazu?</Czech>
+<Polish>Ten koniec liny nie jest przyczepiony. Może drugi koniec liny?</Polish>
+<Hungarian>That end isn't attached; Perhaps wrong end of the rope?</Hungarian>
+</Key>
+<Key ID="STR_ACE_TOW_ERR_7">
+<English>Perhaps wrong end of the rope?</English>
+<Italian>Perhaps wrong end of the rope?</Italian>
+<German>Falsche Seite vom Seil???</German>
+<Russian>Возможно не тот конец троса?</Russian>
+<French>Perhaps wrong end of the rope?</French>
+<Spanish>Perhaps wrong end of the rope?</Spanish>
+<Czech>Špatný konec provazu?</Czech>
+<Polish>Może drugi koniec liny?</Polish>
+<Hungarian>Perhaps wrong end of the rope?</Hungarian>
+</Key>
+<Key ID="STR_ACE_TOW_ERR_8">
+<English>Vehicle is not empty</English>
+<Italian>Vehicle is not empty</Italian>
+<German>Fahrzeug ist besetzt</German>
+<Russian>В транспортном средстве не должно быть экипажа</Russian>
+<French>Vehicle is not empty</French>
+<Spanish>Vehicle is not empty</Spanish>
+<Czech>Vehicle is not empty</Czech>
+<Polish>Vehicle is not empty</Polish>
+<Hungarian>Vehicle is not empty</Hungarian>
+</Key>
+<Key ID="STR_ACE_TOW_ERR_9">
+<English>Vehicle is too weak to tow</English>
+<Italian>Vehicle is too weak to tow</Italian>
+<German>Fahrzeug ist zu schwach</German>
+<Russian>Для буксировки этого груза нужен тягач мощнее</Russian>
+<French>Vehicle is too weak to tow</French>
+<Spanish>Vehicle is too weak to tow</Spanish>
+<Czech>Vehicle is too weak to tow</Czech>
+<Polish>Vehicle is too weak to tow</Polish>
+<Hungarian>Vehicle is too weak to tow</Hungarian>
+</Key>
+<Key ID="STR_ACE_TOW_INFO_1">
+<English>Rope Attached!</English>
+<Italian>Rope Attached!</Italian>
+<German>Abschleppseil angebracht!</German>
+<Russian>Трос прицеплен!</Russian>
+<French>Rope Attached!</French>
+<Spanish>Rope Attached!</Spanish>
+<Czech>Provaz připevněn!</Czech>
+<Polish>Lina przywiązana!</Polish>
+<Hungarian>Rope Attached!</Hungarian>
+</Key>
+<Key ID="STR_ACE_TOW_ACTION_1">
+<English>Attach Rope to Tower</English>
+<Italian>Attach Rope to Tower</Italian>
+<German>Seil anbringen (Zugf)</German>
+<Russian>Присоединить трос сзади</Russian>
+<French>Attach Rope to Tower</French>
+<Spanish>Attach Rope to Tower</Spanish>
+<Czech>Připevnit provaz (táhne)</Czech>
+<Polish>Przyczep linę do ciągniącego</Polish>
+<Hungarian>Attach Rope to Tower</Hungarian>
+</Key>
+<Key ID="STR_ACE_TOW_ACTION_2">
+<English>Attach Rope to Towed</English>
+<Italian>Attach Rope to Towed</Italian>
+<German>Seil anbringen (Abschlf)</German>
+<Russian>Присоединить трос спереди</Russian>
+<French>Attach Rope to Towed</French>
+<Spanish>Attach Rope to Towed</Spanish>
+<Czech>Připevnit provaz (tažený)</Czech>
+<Polish>Przyczep linę do ciągnionego</Polish>
+<Hungarian>Attach Rope to Towed</Hungarian>
+</Key>
+<Key ID="STR_ACE_TOW_ACTION_3">
+<English>Detach Rope from Tower</English>
+<Italian>Detach Rope from Tower</Italian>
+<German>Seil abnehmen (Zugf)</German>
+<Russian>Отсоединить трос сзади</Russian>
+<French>Detach Rope from Tower</French>
+<Spanish>Detach Rope from Tower</Spanish>
+<Czech>Sundat provaz (táhne)</Czech>
+<Polish>Odczep linę od ciągnącego</Polish>
+<Hungarian>Detach Rope from Tower</Hungarian>
+</Key>
+<Key ID="STR_ACE_TOW_ACTION_4">
+<English>Detach Rope from Towed</English>
+<Italian>Detach Rope from Towed</Italian>
+<German>Seil abnehmen (Abschlf)</German>
+<Russian>Отсоединить трос спереди</Russian>
+<French>Detach Rope from Towed</French>
+<Spanish>Detach Rope from Towed</Spanish>
+<Czech>Sundat provaz (tažený)</Czech>
+<Polish>Odczep linę od ciągnionego</Polish>
+<Hungarian>Detach Rope from Towed</Hungarian>
+</Key>
+</Container>
+<Container name="STR_DN">
+<Key ID="STR_DN_ACE_TOWINGROPE_5">
+<English>Towing Rope (5m)</English>
+<Italian>Towing Rope (5m)</Italian>
+<German>Abschleppseil (5m)</German>
+<Russian>Буксировочный трос (5м)</Russian>
+<French>Towing Rope (5m)</French>
+<Spanish>Towing Rope (5m)</Spanish>
+<Czech>Tažný provaz (5m)</Czech>
+<Polish>Lina holownicza (5m)</Polish>
+<Hungarian>Towing Rope (5m)</Hungarian>
+</Key>
+</Container>
+</Package></Project>

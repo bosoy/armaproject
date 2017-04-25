@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2">
+<Package name="ACE2">
+<Container name="sys_roundcount">
+<Key ID="STR_ACE_MENU_ROUNDCOUNT">
+<English>Roundcount</English>
+<Italian>Roundcount</Italian>
+<German>Magazincheck</German>
+<Russian>Кол-во патр. в маг.</Russian>
+<French>Roundcount</French>
+<Spanish>Roundcount</Spanish>
+<Czech>Počet munice v zás.</Czech>
+<Polish>Roundcount</Polish>
+<Hungarian>Roundcount</Hungarian>
+</Key>
+<Key ID="STR_ACE_RNDCNT1a">
+<English>The magazine feels heavy.</English>
+<Italian>Il caricatore è pesante.</Italian>
+<German>Das Magazin fühlt sich schwer an.</German>
+<Russian>Магазин тяжёлый.</Russian>
+<French>Le chargeur a l'air lourd.</French>
+<Spanish>El cargador se nota pesado.</Spanish>
+<Czech>Zásobník se zdá být plný.</Czech>
+<Polish>Magazynek jest ciężki.</Polish>
+<Hungarian>A tár nehéz.</Hungarian>
+</Key>
+<Key ID="STR_ACE_RNDCNT1b">
+<English>The box looks full.</English>
+<Italian>Il caricatore è pieno.</Italian>
+<German>Das Magazin sieht voll aus.</German>
+<Russian>Коробка выглядит полной.</Russian>
+<French>La boîte a l'air pleine.</French>
+<Spanish>La caja parece llena.</Spanish>
+<Czech>Schránka se zdá být plná.</Czech>
+<Hungarian>A rakasz nehéz.</Hungarian>
+<Polish>Zasobnik wygląda na pełny.</Polish>
+</Key>
+<Key ID="STR_ACE_RNDCNT2a">
+<English>The magazine feels average.</English>
+<Italian>Il caricatore pesa un po.</Italian>
+<German>Das Magazin fühlt sich mittelschwer an.</German>
+<Russian>Осталась половина магазина.</Russian>
+<French>Le chargeur a l'air moyennement lourd.</French>
+<Spanish>El cargador parece estar por la mitad.</Spanish>
+<Czech>Zásobník se zdá být středně těžký.</Czech>
+<Polish>Magazynek jest dość ciężki.</Polish>
+<Hungarian>A tár súlya átlagos.</Hungarian>
+</Key>
+<Key ID="STR_ACE_RNDCNT2b">
+<English>The box looks 3/4 full.</English>
+<Italian>Il caricatore sembra a 3/4.</Italian>
+<German>Das Magazin sieht 3/4 voll aus.</German>
+<Russian>Коробка полна на 3/4.</Russian>
+<French>La boîte a l'air d'être aux 3/4 pleine.</French>
+<Spanish>La caja parece estar a 3/4 de capacidad.</Spanish>
+<Czech>Schránka se zdá být ze 3/4 plná.</Czech>
+<Polish>Zasobnik jest w 3/4 pełny.</Polish>
+<Hungarian>A rakasz 3/4-ede tele.</Hungarian>
+</Key>
+<Key ID="STR_ACE_RNDCNT3a">
+<English>The magazine feels light.</English>
+<Italian>Il caricatore pesa poco.</Italian>
+<German>Das Magazin fühlt sich leicht an.</German>
+<Russian>Магазин легкий.</Russian>
+<French>Le chargeur a l'air léger.</French>
+<Spanish>El cargador se nota ligero.</Spanish>
+<Czech>Zásobník se zdá být lehčí.</Czech>
+<Polish>Magazynek jest lekki.</Polish>
+<Hungarian>A tár könnyű.</Hungarian>
+</Key>
+<Key ID="STR_ACE_RNDCNT3b">
+<English>The box looks half empty.</English>
+<Italian>Il caricatore sembra mezzo pieno.</Italian>
+<German>Das Magazin sieht halb leer aus.</German>
+<Russian>Коробка наполовину пуста.</Russian>
+<French>La boîte a l'air à moitié vide.</French>
+<Spanish>La caja parece medio vacia.</Spanish>
+<Czech>Schránka se zdá být z poloviny prázdná.</Czech>
+<Polish>Zasobnik jest w połowie pełny.</Polish>
+<Hungarian>A rakasz félig van.</Hungarian>
+</Key>
+<Key ID="STR_ACE_RNDCNT4a">
+<English>The magazine feels very light.</English>
+<Italian>Il caricatore è leggero.</Italian>
+<German>Das Magazin fühlt sich sehr leicht an.</German>
+<Russian>Магазин очень легкий.</Russian>
+<French>Le chargeur a l'air très leger.</French>
+<Spanish>El cargador se nota muy ligero.</Spanish>
+<Czech>Zásobník se zdá být hodně lehký.</Czech>
+<Polish>Magazynek jest bardzo lekki.</Polish>
+<Hungarian>A tár nagyon könnyű.</Hungarian>
+</Key>
+<Key ID="STR_ACE_RNDCNT4b">
+<English>The box has a few rounds.</English>
+<Italian>Il caricatore ha poche munizioni.</Italian>
+<German>Das Magazin hat noch ein paar Schuss.</German>
+<Russian>Осталась пара патронов.</Russian>
+<French>Il ne reste que quelques balles.</French>
+<Spanish>La caja tiene unas pocas balas.</Spanish>
+<Czech>Ve schránce je pár nábojů.</Czech>
+<Polish>W zasobniku zostało jeszcze trochę nabojów.</Polish>
+<Hungarian>A rakaszban csak pár lőszer maradt.</Hungarian>
+</Key>
+<Key ID="STR_ACE_RNDCNT5">
+<English>Empty.</English>
+<Italian>Vuoto.</Italian>
+<German>Leer.</German>
+<Russian>Пусто.</Russian>
+<French>Vide.</French>
+<Spanish>Vacio.</Spanish>
+<Czech>Prázdné.</Czech>
+<Polish>Pusty.</Polish>
+<Hungarian>Üres.</Hungarian>
+</Key>
+<Key ID="STR_ACE_RNDCNT6">
+<English>No more ammo.</English>
+<Italian>Munizioni esaurite.</Italian>
+<German>Keine Munition mehr.</German>
+<Russian>Патроны кончились.</Russian>
+<French>Plus de munitions.</French>
+<Spanish>Sin municion</Spanish>
+<Czech>Náboje došly.</Czech>
+<Polish>Koniec amunicji.</Polish>
+<Hungarian>Nincs benne lőszer.</Hungarian>
+</Key>
+</Container></Package></Project>

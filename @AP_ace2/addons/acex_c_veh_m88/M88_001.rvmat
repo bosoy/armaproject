@@ -1,0 +1,99 @@
+
+ambient[]={1,1,1,1};
+diffuse[]={1,1,1,1};
+forcedDiffuse[]={0,0,0,0};
+emmisive[]={2.2411346e-008,2.2411346e-008,2.2411346e-008,1};
+specular[]={0.21999997,0.22031367,0.2201373,1};
+specularPower=100;
+PixelShaderID="Super";
+VertexShaderID="Super";
+class Stage1
+{
+	texture="x\acex\addons\t_veh_m88\m88_001_nohq.tga";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+};
+class Stage2
+{
+	texture="#(argb,8,8,3)color(0.5,0.5,0.5,1,DT)";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={8,0,0};
+		up[]={0,8,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+	Filter="Anizotropic";
+};
+class Stage3
+{
+	texture="#(argb,8,8,3)color(0,0,0,0,MC)";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={8,0,0};
+		up[]={0,8,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+};
+class Stage4
+{
+	texture="#(argb,8,8,3)color(1,1,1,1,AS)";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+	Filter="Point";
+};
+class Stage5
+{
+	texture="x\acex\addons\t_veh_m88\m88_001_smdi.tga";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+};
+class Stage6
+{
+	texture="#(ai,32,128,1)fresnel(0.46,0.36)";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+};
+class Stage7
+{
+	texture="CA\Data\env_land_co.paa";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,1};
+		pos[]={0,0,0};
+	};
+};
+class StageTI
+{
+	texture="x\acex\addons\t_veh_m88\m88_001_ti_ca.paa";
+};

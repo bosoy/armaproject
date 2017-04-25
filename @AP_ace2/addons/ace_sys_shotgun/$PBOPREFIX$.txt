@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_shotgun
+Pbo Type is: Arma Addon
+Sha: '94516748170532FC4C96FDD560679F41DFBC5E8F'
+//////</HEADER>//////

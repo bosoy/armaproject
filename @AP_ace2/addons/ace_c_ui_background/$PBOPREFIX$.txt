@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\c_ui_background
+Pbo Type is: Arma Addon
+Sha: 'B578CAA841270DB2B5621A9793BD46932387B5FD'
+//////</HEADER>//////

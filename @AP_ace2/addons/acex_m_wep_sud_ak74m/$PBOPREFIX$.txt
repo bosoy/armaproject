@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex\addons\m_wep_sud_ak74m
+Pbo Type is: Arma Addon
+Sha: '44F3291E70432993CB48EDFD593CFB925223B908'
+//////</HEADER>//////

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2">
+<Package name="ACE2">
+<Container name="MODULE_DN">
+<Key ID="STR_ACE_FORCEGROUPMARKERSOFF">
+<English>(Æ)  Deactivate FBCB2</English>
+<Italian>(Æ) Deactivate FBCB2</Italian>
+<German>(Æ) Map: FBCB2 deaktivieren</German>
+<Spanish>(Æ)  Deactivate FBCB2</Spanish>
+<Czech>(Æ)  Deactivate FBCB2</Czech>
+<Russian>(Æ)  Deactivate FBCB2</Russian>
+<Polish>(Æ)  Deactivate FBCB2</Polish>
+<French>(Æ)  Deactivate FBCB2</French>
+<Hungarian>(Æ)  Deactivate FBCB2</Hungarian>
+</Key>
+<Key ID="STR_ACE_FBCB2ON">
+<English>Turn on FBCB2</English>
+<Italian>Turn on FBCB2</Italian>
+<German>FBCB2 aktivieren</German>
+<Spanish>Turn on FBCB2</Spanish>
+<Czech>Turn on FBCB2</Czech>
+<Russian>Turn on FBCB2</Russian>
+<Polish>Turn on FBCB2</Polish>
+<French>(ÆTurn on FBCB2</French>
+<Hungarian>Turn on FBCB2</Hungarian>
+</Key>
+<Key ID="STR_ACE_FBCB2OFF">
+<English>Turn off FBCB2</English>
+<Italian>Turn off FBCB2</Italian>
+<German>FBCB2 deaktivieren</German>
+<Spanish>Turn off FBCB2</Spanish>
+<Czech>Turn off FBCB2</Czech>
+<Russian>Turn off FBCB2</Russian>
+<Polish>Turn off FBCB2</Polish>
+<French>(ÆTurn off FBCB2</French>
+<Hungarian>Turn off FBCB2</Hungarian>
+</Key>
+<Key ID="STR_ACE_OPENCREATEDEVICE">
+<English>Open AN/GYK-55</English>
+<Italian>Open AN/GYK-55</Italian>
+<German>AN/GYK-55 startem</German>
+<Spanish>Open AN/GYK-55</Spanish>
+<Czech>Open AN/GYK-55</Czech>
+<Russian>Open AN/GYK-55</Russian>
+<Polish>Open AN/GYK-55</Polish>
+<French>Open AN/GYK-55</French>
+<Hungarian>Open AN/GYK-55</Hungarian>
+</Key>
+</Container></Package></Project>

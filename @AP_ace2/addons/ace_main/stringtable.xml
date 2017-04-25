@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="ACE2"><Container name="ace_version">
+<Key ID="STR_ACE_REQUIRED">
+<English>(Æ) Require ACE</English>
+<Italian>(Æ) Require ACE</Italian>
+<German>(Æ) Benötigt ACE</German>
+<Spanish>(Æ) Require ACE</Spanish>
+<Czech>(Æ) Vyžaduje ACE</Czech>
+<Russian>(Æ) Необходимость ACE</Russian>
+<Polish>(Æ) Wymagaj ACE</Polish>
+<French>(Æ) Necessite ACE</French>
+<Hungarian>(Æ) ACE igénylés</Hungarian>
+</Key>
+<Key ID="STR_ACE_LOGIC">
+<English>(Æ) Logic (No simulation)</English>
+<Italian>(Æ) Logic (No simulation)</Italian>
+<German>(Æ) Logik (Keine Simulation)</German>
+<Spanish>(Æ) Logic (No simulation)</Spanish>
+<Czech>(Æ) Logika (Bez simulací)</Czech>
+<Russian>(Æ) Логика (Без симуляции)</Russian>
+<Polish>(Æ) Logika (brak symulacji)</Polish>
+<French>(Æ) Logic (No simulation)</French>
+<Hungarian>(Æ) Logic (No simulation)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VERSION_WARNING">
+<English>Warning!</English>
+<Italian>Attenzione!</Italian>
+<German>Warnung!</German>
+<Russian>Внимание!</Russian>
+<Spanish>Atencion!</Spanish>
+<Polish>Uwaga!</Polish>
+<French>Attention!</French>
+<Czech>Varování!</Czech>
+<Hungarian>Figyelem!</Hungarian>
+</Key>
+<Key ID="STR_ACE_VERSION_DETECT">
+<English>ACE has detected a version mismatch between client and server!</English>
+<Italian>La versione di ACE sul server non coincide con quella del client!</Italian>
+<German>ACE hat einen Versionsunterschied zwischen Client und Server festgestellt!</German>
+<Russian>Ваша версия АСЕ не совпадает с версией сервера!</Russian>
+<Spanish>Su version de ACE no corresponde a la del server!</Spanish>
+<Polish>Niezgodność wersji ACE klienta i serwera!</Polish>
+<French>ACE a detecté une version differente entre le serveur et le client!</French>
+<Czech>Vaši verze ACE nesouhlasí s verzí na serveru!</Czech>
+<Hungarian>ACE verziókülönbség van a szerver és a kliens között!</Hungarian>
+</Key>
+<Key ID="STR_ACE_VERSION_UPDATE">
+<English>Please get the latest ACE version</English>
+<Italian>Si prega di installare l'ultima versione di ACE</Italian>
+<German>Bitte aktuellste ACE Version benutzen</German>
+<Russian>Пожалуйста установите последнюю версию АСЕ</Russian>
+<Spanish>Por favor instale la ultima version de ACE</Spanish>
+<Polish>Proszę pobrać najnowszą wersję ACE</Polish>
+<French>Veuillez mettre à jour votre version d'ACE</French>
+<Czech>Prosím, stáhněte si nejnovějsí verzi ACE</Czech>
+<Hungarian>Kérlek, szerezd be a legfrissebb ACE verziót.</Hungarian>
+</Key>
+<Key ID="STR_ACE_VERSION_ERROR">
+<English>Error</English>
+<Italian>Errore</Italian>
+<German>Fehler</German>
+<Russian>Ошибка</Russian>
+<Spanish>Error</Spanish>
+<Polish>Błąd</Polish>
+<French>Erreur</French>
+<Czech>Chyba</Czech>
+<Hungarian>Hiba</Hungarian>
+</Key>
+</Container>
+<Container name="STR_ACE_KN">
+<!-- Will strip direction from keyName command (case-sensitive) -->
+<Key ID="STR_ACE_KN_LEFT">
+<English>Left</English>
+<German>Links</German>
+<Spanish>Left</Spanish>
+<Czech>Levo</Czech>
+<Russian>Влево</Russian>
+<Italian>Left</Italian>
+<Polish>Lewo</Polish>
+<French>Gauche</French>
+<Hungarian>Jobb</Hungarian>
+</Key>
+<Key ID="STR_ACE_KN_RIGHT">
+<English>Right</English>
+<German>Rechts</German>
+<Spanish>Right</Spanish>
+<Czech>Pravo</Czech>
+<Russian>Вправо</Russian>
+<Italian>Right</Italian>
+<Polish>Prawo</Polish>
+<French>Droite</French>
+<Hungarian>Bal</Hungarian>
+</Key>
+</Container>
+<Container name="ACE_SYS_HELP">
+<Key ID="STR_DN_ACE_HELP">
+<English>(Æ) Ingame help</English>
+<German>(Æ) Hilfe</German>
+<Spanish>(Æ) Ingame help</Spanish>
+<Czech>(Æ) Ingame Pomoc</Czech>
+<Russian>(Æ) Внутриигровая помощь</Russian>
+<Italian>(Æ) Ingame help</Italian>
+<Polish>(Æ) Pomoc</Polish>
+<French>(Æ) Aide Ingame</French>
+<Hungarian>(Æ) Segítség</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_INGAME_HELP">
+<English>ACE Ingame help</English>
+<German>ACE Hilfe</German>
+<Spanish>ACE Ingame help</Spanish>
+<Czech>ACE Ingame Pomoc</Czech>
+<Russian>ACE Внутриигровая помощь</Russian>
+<Italian>ACE Ingame help</Italian>
+<Polish>Pomoc ACE</Polish>
+<French>ACE Aide Ingame</French>
+<Hungarian>ACE Segítség</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_HELP_KEY_CTRL">
+<English>CTRL-</English>
+<German>STRG-</German>
+<Spanish>CTRL-</Spanish>
+<Czech>CTRL-</Czech>
+<Russian>CTRL-</Russian>
+<Italian>CTRL-</Italian>
+<Polish>Ctrl-</Polish>
+<French>CTRL-</French>
+<Hungarian>CTRL-</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_HELP_KEYS">
+<English>Keybindings</English>
+<German>Tastendruckzuweisung</German>
+<Spanish>Keybindings</Spanish>
+<Czech>Klávesovové zkratky</Czech>
+<Russian>Клавиши</Russian>
+<Italian>Keybindings</Italian>
+<Polish>Klawisze</Polish>
+<French>Mappage des touches</French>
+<Hungarian>Bill. kiosztás</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_WEBSITE">
+<English>Bugtracker</English>
+<German>Bugtracker</German>
+<Spanish>Bugtracker</Spanish>
+<Czech>Bugtracker</Czech>
+<Russian>Багтрекер</Russian>
+<Italian>Bugtracker</Italian>
+<Polish>Zgłaszanie błędów</Polish>
+<French>Bugtracker</French>
+<Hungarian>Bugtracker</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_WEBSITE_WIKI">
+<English>Wiki (Documentation)</English>
+<German>Wiki (Documentation)</German>
+<Spanish>Wiki (Documentation)</Spanish>
+<Czech>Wiki (Dokumentace)</Czech>
+<Russian>Вики (Документация)</Russian>
+<Italian>Wiki (Documentation)</Italian>
+<Polish>Wiki (dokumentacja)</Polish>
+<French>Wiki (Documentation)</French>
+<Hungarian>Wiki (Dokumentáció)</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_CREDITS">
+<English>Credits</English>
+<German>Credits</German>
+<Spanish>Credits</Spanish>
+<Czech>Credits</Czech>
+<Russian>Благодарности</Russian>
+<Italian>Credits</Italian>
+<Polish>Twórcy</Polish>
+<French>Credits</French>
+<Hungarian>Készítők</Hungarian>
+</Key>
+</Container>
+<Container name="ACE_SYS_LADEBALKEN">
+<Key ID="STR_ACE_LADEBALKEN_READY">
+<English>Ready</English>
+<German>Bereit</German>
+<Spanish>Ready</Spanish>
+<Czech>Připraven</Czech>
+<Russian>Готов</Russian>
+<Italian>Ready</Italian>
+<Polish>Gotowe</Polish>
+<French>Prêt</French>
+<Hungarian>Kész</Hungarian>
+</Key>
+<Key ID="STR_ACE_LADEBALKEN_STANDBY">
+<English>Standby</English>
+<German>Bereithalten</German>
+<Spanish>Standby</Spanish>
+<Czech>Čekej</Czech>
+<Russian>Ожидание</Russian>
+<Italian>Standby</Italian>
+<Polish>Czekaj</Polish>
+<French>En attente</French>
+<Hungarian>Készenlét</Hungarian>
+</Key>
+<Key ID="STR_ACE_LADEBALKEN_CANCELLED">
+<English>Cancelled</English>
+<German>Abgebrochen</German>
+<Spanish>Cancelled</Spanish>
+<Czech>Zrušeno</Czech>
+<Russian>Отменено</Russian>
+<Italian>Cancelled</Italian>
+<Polish>Przerwano</Polish>
+<French>Annulé</French>
+<Hungarian>Törölve</Hungarian>
+</Key>
+<Key ID="STR_ACE_LADEBALKEN_DONTMOVE">
+<English>Don't move</English>
+<German>Nicht bewegen</German>
+<Spanish>Don't move</Spanish>
+<Czech>Nehýbej se</Czech>
+<Russian>Не двигайтесь</Russian>
+<Italian>Don't move</Italian>
+<Polish>Stój w miejscu</Polish>
+<French>Ne faites rien</French>
+<Hungarian>Ne mozogj</Hungarian>
+</Key>
+</Container>
+<Container name="ACE_SETTINGS">
+<Key ID="STR_ACE_SETTINGS">
+<English>ACE settings</English>
+<German>ACE Optionen</German>
+<Spanish>ACE Configuración</Spanish>
+<Czech>ACE nastavení</Czech>
+<Russian>ACE установки</Russian>
+<Italian>ACE Impostazioni</Italian>
+<Polish>Ustawienia ACE</Polish>
+<French>ACE Paramètres</French>
+<Hungarian>ACE beállítások</Hungarian>
+</Key>
+</Container>
+<Container name="ACE_SYS_BI_ARTY">
+<Key ID="STR_ACE_BI_ARTY">
+<German>(Æ) Artillerie</German>
+<English>(Æ) Artillery</English>
+<Italian>(Æ) Artiglieria</Italian>
+<Spanish>(Æ) Artillería</Spanish>
+<French>(Æ) Artillerie</French>
+<Czech>(Æ) Dělostřelectvo</Czech>
+<Russian>(Æ) Артиллерия</Russian>
+<Polish>(Æ) Artyleria</Polish>
+<Hungarian>(Æ) Tüzérség</Hungarian>
+</Key>
+<Key ID="STR_ACE_BI_ARTY_VIRT">
+<German>(Æ) Artillerie – virtuell</German>
+<English>(Æ) Artillery - Virtual Piece</English>
+<Italian>(Æ) Artiglieria - Pezzo virtuale</Italian>
+<Spanish>(Æ) Artillería: pieza virtual</Spanish>
+<French>(Æ) Artillerie - pièce virtuelle</French>
+<Czech>(Æ) Dělostřelectvo – virtuální dělo</Czech>
+<Russian>(Æ) Артиллерия - виртуальное орудие</Russian>
+<Polish>(Æ) Artyleria (wirtualna)</Polish>
+<Hungarian>(Æ) Tüzérség - virtuális elemek</Hungarian>
+</Key>
+<Key ID="STR_ACE_disp_profile">
+<Original>Player profile [%1]</Original>
+<French>Profil du joueur [%1]</French>
+<Spanish>Pilotos [%1]</Spanish>
+<Italian>Profilo giocatore [%1]</Italian>
+<Hungarian>Profilok [%1]</Hungarian>
+<Polish>Profil gracza [%1]</Polish>
+<Russian>Профиль игрока [%1]</Russian>
+<German>Spielerprofil [%1]</German>
+<Czech>Profil hráče [%1]</Czech>
+<English>Player profile [%1]</English>
+<Japanese>プロフィール [%1]</Japanese>
+</Key>
+<Key ID="STR_ACE_RESCONF">
+<Original>Confirm Respawn?</Original>
+<French>Confirm Respawn?</French>
+<Spanish>Confirm Respawn?</Spanish>
+<Italian>Confirm Respawn?</Italian>
+<Hungarian>Confirm Respawn?</Hungarian>
+<Polish>Potwierdź respawn</Polish>
+<Russian>Confirm Respawn?</Russian>
+<German>Respawn bestätigen?</German>
+<Czech>Confirm Respawn?</Czech>
+<English>Confirm Respawn?</English>
+</Key>
+<Key ID="STR_ACE_SUICIDE">
+<Original>Suicide</Original>
+<French>Suicide</French>
+<Spanish>Suicide</Spanish>
+<Italian>Suicide</Italian>
+<Hungarian>Suicide</Hungarian>
+<Polish>Suicide</Polish>
+<Russian>Самоубийство</Russian>
+<German>Selbstmord</German>
+<Czech>Suicide</Czech>
+<English>Suicide</English>
+</Key>
+</Container>
+</Package></Project>

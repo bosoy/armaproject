@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_playerhud
+Pbo Type is: Arma Addon
+Sha: '74F44C2DABE67079B62F202EAE912F593ECDE2A9'
+//////</HEADER>//////

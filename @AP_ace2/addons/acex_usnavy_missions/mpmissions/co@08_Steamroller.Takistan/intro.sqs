@@ -1,0 +1,27 @@
+showCinemaBorder false
+titlecut ["","BLACK IN", 5]
+1 cutRsc ["Credit1", "PLAIN",3]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal", "back"]
+playMusic "AM92Intro"
+
+;=== 21:11:24
+_camera camPrepareTarget abrams
+_camera camPreparePos [12254.22,10433.74,9.93]
+_camera camPrepareFOV 0.700
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+~13
+
+titlecut ["","BLACK OUT", 10]
+2 cutRsc ["Credit2", "PLAIN",3]
+
+~8
+
+titlecut [" ","BLACK IN", 5]
+
+Player cameraEffect ["terminate", "back"]
+camDestroy _camera
+endMission "END1";
+Exit;

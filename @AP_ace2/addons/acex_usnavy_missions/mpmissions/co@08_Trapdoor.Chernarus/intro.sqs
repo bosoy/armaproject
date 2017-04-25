@@ -1,0 +1,34 @@
+showCinemaBorder false
+titlecut ["","BLACK IN", 5]
+1 cutRsc ["Credit1", "PLAIN",3]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal", "back"]
+playMusic "AM92Intro"
+
+;=== 21:44:22
+_camera camPrepareTarget [95745.55,13545.07,-39113.11]
+_camera camPreparePos [3969.88,8943.20,12.18]
+_camera camPrepareFOV 0.700
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+~0
+
+;=== 21:45:01
+_camera camPrepareTarget [94116.82,3575.43,-42911.47]
+_camera camPreparePos [4114.75,8946.62,10.17]
+_camera camPrepareFOV 0.700
+_camera camCommitPrepared 25
+@camCommitted _camera
+
+titlecut ["","BLACK OUT", 10]
+2 cutRsc ["Credit2", "PLAIN",3]
+
+~10
+
+titlecut [" ","BLACK IN", 5]
+
+Player cameraEffect ["terminate", "back"]
+camDestroy _camera
+endMission "END1";
+Exit;

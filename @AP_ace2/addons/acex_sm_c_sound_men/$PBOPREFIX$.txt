@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex_sm\addons\c_sound_men
+Pbo Type is: Arma Addon
+Sha: 'DE3F0D32D838B79A1C02825A0F6A404D9909E3C3'
+//////</HEADER>//////

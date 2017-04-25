@@ -1,0 +1,535 @@
+/*%FSM<COMPILE "G:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, fnc_fuel">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"fnc_fuel",0,250,-75.000000,-275.000000,25.000000,-225.000000,0.000000,"fnc_fuel"};
+item1[] = {"_",4,218,-200.000000,-225.000000,-100.000000,-175.000000,2.000000,""};
+item2[] = {"_",1,250,-225.000000,-50.000000,-125.000000,0.000000,0.000000,""};
+item3[] = {"__1",4,218,-150.000000,-200.000000,-50.000000,-150.000000,1.000000,""};
+item4[] = {"__2",4,218,50.000000,-275.000000,150.000000,-225.000000,0.000000,""};
+item5[] = {"__1",2,250,50.000000,-50.000000,150.000000,0.000000,0.000000,""};
+item6[] = {"_",4,218,-75.000000,-50.000000,25.000000,0.000000,1.000000,""};
+item7[] = {"__1",4,218,100.000000,0.000000,200.000000,50.000000,0.000000,""};
+item8[] = {"__2",2,250,100.000000,75.000000,200.000000,125.000000,0.000000,""};
+item9[] = {"_",4,218,50.000000,150.000000,150.000000,200.000000,1.000000,""};
+item10[] = {"__1",4,218,225.000000,75.000000,325.000000,125.000000,0.000000,""};
+item11[] = {"__3",2,250,50.000000,225.000000,150.000000,275.000000,0.000000,""};
+item12[] = {"_",8,4314,50.000000,300.000000,150.000000,350.000000,0.000000,""};
+item13[] = {"__4",2,250,50.000000,475.000000,150.000000,525.000000,0.000000,""};
+item14[] = {"__5",2,250,50.000000,350.000000,150.000000,400.000000,0.000000,""};
+item15[] = {"player__detach_",4,218,0.000000,550.000000,100.000000,600.000000,0.000000,"player " \n "detach" \n ""};
+item16[] = {"_",8,218,50.000000,400.000000,150.000000,450.000000,0.000000,""};
+item17[] = {"loop_",4,218,100.000000,550.000000,200.000000,600.000000,10.000000,"loop" \n ""};
+item18[] = {"__6",2,250,100.000000,625.000000,200.000000,675.000000,0.000000,""};
+item19[] = {"_",8,218,225.000000,625.000000,325.000000,675.000000,0.000000,""};
+item20[] = {"__7",2,250,225.000000,400.000000,325.000000,450.000000,0.000000,""};
+item21[] = {"__8",2,250,0.000000,625.000000,100.000000,675.000000,0.000000,""};
+item22[] = {"_",8,218,0.000000,700.000000,100.000000,750.000000,0.000000,""};
+item23[] = {"__9",2,250,0.000000,775.000000,100.000000,825.000000,0.000000,""};
+item24[] = {"_",8,218,0.000000,850.000000,100.000000,900.000000,0.000000,""};
+item25[] = {"__10",1,250,0.000000,925.000000,100.000000,975.000000,0.000000,""};
+item26[] = {"__11",1,250,350.000000,75.000000,450.000000,125.000000,0.000000,""};
+item27[] = {"tanker_killed_player",4,218,-400.000000,550.000000,-300.000000,600.000000,2.000000,"tanker killed" \n "player killed" \n ""};
+item28[] = {"__12",2,250,-300.000000,1025.000000,-200.000000,1075.000000,0.000000,""};
+item29[] = {"_",8,218,0.000000,1025.000000,100.000000,1075.000000,0.000000,""};
+item30[] = {"G",4,218,-575.000000,450.000000,-475.000000,500.000000,4.000000,"G"};
+item31[] = {"__13",2,250,-600.000000,1025.000000,-500.000000,1075.000000,0.000000,""};
+item32[] = {"_",8,218,-425.000000,1025.000000,-325.000000,1075.000000,0.000000,""};
+item33[] = {"abgerissen_",4,218,-500.000000,500.000000,-400.000000,550.000000,3.000000,"abgerissen" \n ""};
+item34[] = {"_",4,218,-325.000000,575.000000,-225.000000,625.000000,1.000000,""};
+item35[] = {"engine_off",4,218,-200.000000,625.000000,-100.000000,675.000000,5.000000,"engine off"};
+link0[] = {0,1};
+link1[] = {0,3};
+link2[] = {0,4};
+link3[] = {1,2};
+link4[] = {3,2};
+link5[] = {4,5};
+link6[] = {5,6};
+link7[] = {5,7};
+link8[] = {6,2};
+link9[] = {7,8};
+link10[] = {8,9};
+link11[] = {8,10};
+link12[] = {9,11};
+link13[] = {10,26};
+link14[] = {11,12};
+link15[] = {12,14};
+link16[] = {13,15};
+link17[] = {13,17};
+link18[] = {13,27};
+link19[] = {13,30};
+link20[] = {13,33};
+link21[] = {13,34};
+link22[] = {13,35};
+link23[] = {14,16};
+link24[] = {15,21};
+link25[] = {16,13};
+link26[] = {17,18};
+link27[] = {18,19};
+link28[] = {19,20};
+link29[] = {20,16};
+link30[] = {21,22};
+link31[] = {22,23};
+link32[] = {23,24};
+link33[] = {24,25};
+link34[] = {27,28};
+link35[] = {28,29};
+link36[] = {29,25};
+link37[] = {30,31};
+link38[] = {31,32};
+link39[] = {32,28};
+link40[] = {33,28};
+link41[] = {34,28};
+link42[] = {35,28};
+globals[] = {25.000000,1,0,0,0,640,480,1,43,6316128,1,-178.176941,595.398743,661.800049,-357.460571,699,921,1};
+window[] = {2,-1,-1,-1,-1,882,200,1160,200,3,717};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "fnc_fuel";
+  class States
+  {
+    /*%FSM<STATE "fnc_fuel">*/
+    class fnc_fuel
+    {
+      name = "fnc_fuel";
+      init = /*%FSM<STATEINIT""">*/"// ace_sys_air_refuel | (c) 2008, 2009 by rocko */" \n
+       "" \n
+       "// THIS FSM RUNS LOCAL FOR PLANE THAT IS TO BE REFUELED" \n
+       "" \n
+       "private [""_to_refuel"", ""_dock"", ""_refueler"", ""_x_dock"", ""_getVar"", ""_att""];" \n
+       "" \n
+       "_to_refuel = _this select 0;" \n
+       "_dock = _this select 1;" \n
+       "_refueler = _this select 2;" \n
+       "_refueler setVariable [ ""ace_sys_air_refuel_high_g"", false, true];" \n
+       "_debug = true;" \n
+       "" \n
+       "// RUN G-Funky" \n
+       "if (local _refueler) then {" \n
+       "	//diag_log ""Tanker G Check initiated"";" \n
+       "	// Calculate G forces during refueling maneuver" \n
+       "	[_to_refuel,_dock,_refueler] execFSM ""\x\ace\addons\sys_air_refuel\fnc_g_force_check.fsm"";" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 2.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_to_refuel getVariable ""ace_sys_air_refuel__x_dock"" != _dock)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__1">*/
+        class __1
+        {
+          priority = 1.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(local _to_refuel)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__2">*/
+        class __2
+        {
+          priority = 0.000000;
+          to="__1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "_">*/
+    class _
+    {
+      name = "_";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__1">*/
+    class __1
+    {
+      name = "__1";
+      init = /*%FSM<STATEINIT""">*/"_dock setVariable [""ace_sys_air_refuel_in_use"", true, true];" \n
+       "" \n
+       "_getVar = _to_refuel getVariable ""ace_sys_air_refuel_docked"";" \n
+       "if (isNil ""_getVar"") then { _getVar = false; };"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 1.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_getVar)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__1">*/
+        class __1
+        {
+          priority = 0.000000;
+          to="__2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__2">*/
+    class __2
+    {
+      name = "__2";
+      init = /*%FSM<STATEINIT""">*/"_to_refuel setVariable [""ace_sys_air_refuel_docked"", true, true];" \n
+       "" \n
+       "_att = _dock selectionPosition ""ace_refuel_point"";" \n
+       "_att set [1, (_att select 1) - 8];" \n
+       "_to_refuel attachTo [_dock,_att,""""];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 1.000000;
+          to="__3";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(local _to_refuel)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__1">*/
+        class __1
+        {
+          priority = 0.000000;
+          to="__11";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__3">*/
+    class __3
+    {
+      name = "__3";
+      init = /*%FSM<STATEINIT""">*/"[localize ""STR_ACE_AIR_REFUEL_DOCKED"", [1,0,0,1],false,5] spawn ACE_fnc_visual;" \n
+       "" \n
+       "_timeNow = time + 2;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__5";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timeNow"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__4">*/
+    class __4
+    {
+      name = "__4";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "loop_">*/
+        class loop_
+        {
+          priority = 10.000000;
+          to="__6";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_refuel_time_elapsed < _refuel_time) && {!ace_sys_air_refuel_abort}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "engine_off">*/
+        class engine_off
+        {
+          priority = 5.000000;
+          to="__12";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(isEngineOn _to_refuel)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "G">*/
+        class G
+        {
+          priority = 4.000000;
+          to="__13";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_refueler getVariable ""ace_sys_air_refuel_high_g"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "abgerissen_">*/
+        class abgerissen_
+        {
+          priority = 3.000000;
+          to="__12";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_refueler getVariable ""ace_sys_air_refuel_hose_damaged"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "tanker_killed_player">*/
+        class tanker_killed_player
+        {
+          priority = 2.000000;
+          to="__12";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(alive _refueler)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 1.000000;
+          to="__12";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(alive _to_refuel)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "player__detach_">*/
+        class player__detach_
+        {
+          priority = 0.000000;
+          to="__8";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__5">*/
+    class __5
+    {
+      name = "__5";
+      init = /*%FSM<STATEINIT""">*/"ace_sys_air_refuel_abort = false;" \n
+       "" \n
+       "ace_sys_air_refuel_keyhandler = (findDisplay 46) displayAddEventHandler [""KeyDown"", ""_dummy = _this call ace_sys_air_refuel_fnc_abort""];" \n
+       "" \n
+       "_current_fuel = fuel _to_refuel;" \n
+       "_diff_fuel = 1 - _current_fuel;" \n
+       "_refuel_time = _diff_fuel * 50;" \n
+       "_refuel_time_elapsed = 0;" \n
+       "_fill_rate = (_diff_fuel / _refuel_time);" \n
+       "_fuel_cargo = 0;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__4";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__6">*/
+    class __6
+    {
+      name = "__6";
+      init = /*%FSM<STATEINIT""">*/"_timeNow = time;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__7";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(time - _timeNow) >= 1"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__7">*/
+    class __7
+    {
+      name = "__7";
+      init = /*%FSM<STATEINIT""">*/"_refuel_time_elapsed = _refuel_time_elapsed + 1;" \n
+       "_to_refuel setFuel (fuel _to_refuel + _fill_rate);" \n
+       "_fuel_cargo = (_fuel_cargo + (_fill_rate * _refuel_time_elapsed));" \n
+       "" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__4";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__8">*/
+    class __8
+    {
+      name = "__8";
+      init = /*%FSM<STATEINIT""">*/"[""ace_sys_air_refuel_remove_fuel_cargo"", [_refueler,(_fuel_cargo/100)]] call ACE_fnc_receiverOnlyEvent;" \n
+       "if (_debug) then {" \n
+       "	diag_log format[""Removing %1 fuel from %2"",_fuel_cargo,_refueler];" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__9";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"ace_sys_air_refuel_abort"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__9">*/
+    class __9
+    {
+      name = "__9";
+      init = /*%FSM<STATEINIT""">*/"detach _to_refuel;" \n
+       "(findDisplay 46) displayRemoveEventhandler [""KeyDown"", ace_sys_air_refuel_keyhandler];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__10";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"((_to_refuel distance _refueler) > 80)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__10">*/
+    class __10
+    {
+      name = "__10";
+      init = /*%FSM<STATEINIT""">*/"_to_refuel setVariable [""ace_sys_air_refuel_docked"", false, true];" \n
+       "_to_refuel setVariable [""ace_sys_air_refuel__x_dock"",nil,true];" \n
+       "_dock setVariable [""ace_sys_air_refuel_in_use"", false, true];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__11">*/
+    class __11
+    {
+      name = "__11";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__12">*/
+    class __12
+    {
+      name = "__12";
+      init = /*%FSM<STATEINIT""">*/"detach _to_refuel;" \n
+       "(findDisplay 46) displayRemoveEventhandler [""KeyDown"", ace_sys_air_refuel_keyhandler];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__10";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__13">*/
+    class __13
+    {
+      name = "__13";
+      init = /*%FSM<STATEINIT""">*/"_dock setDamage 1;" \n
+       "_refueler setDamage 0.45;" \n
+       "_to_refuel setDamage 0.3;" \n
+       "detach _dock;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__12";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="fnc_fuel";
+  finalStates[] =
+  {
+    "_",
+    "__10",
+    "__11",
+  };
+};
+/*%FSM</COMPILE>*/

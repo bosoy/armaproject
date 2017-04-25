@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="ACE2">
+<Container name="STR_DN">
+<Key ID="STR_DN_ACE_IRSTROBE">
+<English>IR Strobe</English>
+<German>IR Strobo</German>
+<Spanish>IR Strobe</Spanish>
+<Czech>IR Značkovač</Czech>
+<Russian>ИК стробоскоп</Russian>
+<Italian>Stroboscopio IR</Italian>
+<Polish>Strobo IR</Polish>
+<French>Balise IR</French>
+<Hungarian>IR Stroboszkóp</Hungarian>
+</Key>
+</Container>
+<Container name="STR_DSS">
+<Key ID="STR_DSS_ACE_IRSTROBE">
+<English>IR Strobe</English>
+<German>IR Strobo</German>
+<Spanish>IR Strobe</Spanish>
+<Czech>IR Značkovač</Czech>
+<Russian>ИК стробоскоп</Russian>
+<Italian>Stroboscopio IR</Italian>
+<Polish>Strobo IR</Polish>
+<French>Balise IR</French>
+<Hungarian>IR Stroboszkóp</Hungarian>
+</Key>
+</Container>
+<Container name="UA">
+<Key ID="STR_ACE_TURNON_IR">
+<English>Turn on IR strobe</English>
+<German>IR Strobo ein</German>
+<Spanish>Turn on IR strobe</Spanish>
+<Czech>Zapnout IR značkovač</Czech>
+<Russian>Включить ИК стробоскоп</Russian>
+<Italian>Accendi Stroboscopio IR</Italian>
+<Polish>Włącz strobo IR</Polish>
+<French>Allumer balise IR</French>
+<Hungarian>IR Stroboszkóp be</Hungarian>
+</Key>
+<Key ID="STR_ACE_TURNOFF_IR">
+<English>Turn off IR strobe</English>
+<German>IR Strobo aus</German>
+<Spanish>Turn off IR strobe</Spanish>
+<Czech>Vypnout IR značkovač</Czech>
+<Russian>Выключить ИК стробоскоп</Russian>
+<Italian>Spegni Stroboscopio IR</Italian>
+<Polish>Wyłącz strobo IR</Polish>
+<French>Eteindre balise IR</French>
+<Hungarian>IR Stroboszkóp ki</Hungarian>
+</Key>
+<Key ID="STR_ACE_PICK_UP_IR">
+<English>Pick up IR strobe</English>
+<German>IR Strobo aufnehmen</German>
+<Spanish>Pick up IR strobe</Spanish>
+<Czech>Zvednout IR značkovač</Czech>
+<Russian>Поднять ИК стробоскоп</Russian>
+<Italian>Raccogli Stroboscopio IR</Italian>
+<Polish>Zabierz strobo IR</Polish>
+<French>Ramasser balise IR</French>
+<Hungarian>IR Stroboszkóp felvétele</Hungarian>
+</Key>
+</Container>
+</Package></Project>

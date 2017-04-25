@@ -1,0 +1,63 @@
+/////////////////////////////////////////////////////////////////////////////////
+#                                                                               #
+#                       ADVANCED COMBAT ENVIRONMENT 2 FILE                      #
+#                                                                               #
+/////////////////////////////////////////////////////////////////////////////////
+
+
+#===========#
+| Component |
+#===========#
+
+ace_sys_disposal
+
+#================#
+| Main author(s) |
+#================#
+
+Inkompetent
+zGuba
+rocko
+
+#===============#
+| Local credits |
+#===============#
+
+zGuba
+rocko
+Rommel
+
+#=============================#
+| Rough component description |
+#=============================#
+
+This resource adds the disposal effect for disposable launchers.
+
+Player and AI are automatically given single magazine if their secondary weapon is disposable, so "classic" magazines become useless by now.
+
+Shooter is given used weapon in place of his launcher, then he throws it to his right side as soon as he switches to another weapon.
+
+#=================#
+| Contact details |
+#=================#
+
+Page:	http://dev-heaven.net/projects/show/ace-mod2
+
+
+
+/////////////////////////////////////////////////////////////////////////////////
+#                                                                               #
+#                       ADVANCED COMBAT ENVIRONMENT 2 FILE                      #
+#                                                                               #
+/////////////////////////////////////////////////////////////////////////////////
+//                                                                             //
+#               Copyright 2009 A.C.E MOD, ALL RIGHTS RESERVED                   #
+//                                                                             //
+//  This product is licensed for personal use only.  Commercial distribution   //
+//  prohibited.  Military use prohibited.  Use prohibited if any component     //
+//  of this distribution removed or modified without express written consent   //
+//  of the developer. For further licensing details please refer to the        //
+//  End User License Agreement provided within this PBO file.                  //
+//  Any questions or comments, please contact contact@acemod.net               //
+//                                                                             //
+/////////////////////////////////////////////////////////////////////////////////

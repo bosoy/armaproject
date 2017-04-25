@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ArmA2_ACE2">
+<Package name="c_veh_m1">
+<Container name="STR_ACE">
+<Key ID="STR_ACE_VDN_M1A1HC_Loader">
+<English>Loader</English>
+<German>Ladeschütze</German>
+<Polish>ładowniczy</Polish>
+<Russian>Заряжающий</Russian>
+<Spanish>Loader</Spanish>
+<French>Approvisionneur</French>
+<Czech>Nabíječ</Czech>
+<Italian>Loader</Italian>
+<Hungarian>Töltőkezelő</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_M829A1">
+<English>M829A1 APFSDS-T</English>
+<German>M829A1 APFSDS-T</German>
+<Polish>M829A1 APFSDS-T</Polish>
+<Russian>M829A1 APFSDS-T</Russian>
+<Spanish>M829A1 APFSDS-T</Spanish>
+<French>M829A1 APFSDS-T</French>
+<Czech>M829A1 APFSDS-T</Czech>
+<Italian>M829A1 APFSDS-T</Italian>
+<Hungarian>M829A1 APFSDS-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_M829A2">
+<English>M829A2 APFSDS-T</English>
+<German>M829A2 APFSDS-T</German>
+<Polish>M829A2 APFSDS-T</Polish>
+<Russian>M829A2 APFSDS-T</Russian>
+<Spanish>M829A2 APFSDS-T</Spanish>
+<French>M829A2 APFSDS-T</French>
+<Czech>M829A2 APFSDS-T</Czech>
+<Italian>M829A2 APFSDS-T</Italian>
+<Hungarian>M829A2 APFSDS-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_M829A3">
+<English>M829A3 APFSDS-T</English>
+<German>M829A3 APFSDS-T</German>
+<Polish>M829A3 APFSDS-T</Polish>
+<Russian>M829A3 APFSDS-T</Russian>
+<Spanish>M829A3 APFSDS-T</Spanish>
+<French>M829A3 APFSDS-T</French>
+<Czech>M829A3 APFSDS-T</Czech>
+<Italian>M829A3 APFSDS-T</Italian>
+<Hungarian>M829A3 APFSDS-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_M830">
+<English>M830 HEAT-MP-T</English>
+<German>M830 HEAT-MP-T</German>
+<Polish>M830 HEAT-MP-T</Polish>
+<Russian>M830 HEAT-MP-T</Russian>
+<Spanish>M830 HEAT-MP-T</Spanish>
+<French>M830 HEAT-MP-T</French>
+<Czech>M830 HEAT-MP-T</Czech>
+<Italian>M830 HEAT-MP-T</Italian>
+<Hungarian>M830 HEAT-MP-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_M830A1">
+<English>M830A1 HEAT-MP-T</English>
+<German>M830A1 HEAT-MP-T</German>
+<Polish>M830A1 HEAT-MP-T</Polish>
+<Russian>M830A1 HEAT-MP-T</Russian>
+<Spanish>M830A1 HEAT-MP-T</Spanish>
+<French>M830A1 HEAT-MP-T</French>
+<Czech>M830A1 HEAT-MP-T</Czech>
+<Italian>M830A1 HEAT-MP-T</Italian>
+<Hungarian>M830A1 HEAT-MP-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_M908">
+<English>M908 HE-OR-T</English>
+<German>M908 HE-OR-T</German>
+<Polish>M908 HE-OR-T</Polish>
+<Russian>M908 HE-OR-T</Russian>
+<Spanish>M908 HE-OR-T</Spanish>
+<French>M908 HE-OR-T</French>
+<Czech>M908 HE-OR-T</Czech>
+<Italian>M908 HE-OR-T</Italian>
+<Hungarian>M908 HE-OR-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_M1A1_Coax">
+<English>7.62mm Ball</English>
+<German>7.62mm</German>
+<Polish>7,62mm</Polish>
+<Russian>7.62мм</Russian>
+<Spanish>7.62mm Ball</Spanish>
+<French>7.62mm Balle</French>
+<Czech>7.62mm Ball</Czech>
+<Italian>7.62mm Ball</Italian>
+<Hungarian>7.62mm Lőszer</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_M1A1_50CAL">
+<English>12.7mm Ball</English>
+<German>12.7mm</German>
+<Polish>12,7mm</Polish>
+<Russian>12.7мм</Russian>
+<Spanish>12.7mm Ball</Spanish>
+<French>12.7mm Balle</French>
+<Czech>12.7mm Ball</Czech>
+<Italian>12.7mm Ball</Italian>
+<Hungarian>12.7mm Lőszer</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_M1A1_COAX">
+<English>7.62mm M240C</English>
+<German>7.62mm M240C</German>
+<Polish>7,62mm M240C</Polish>
+<Russian>7.62мм M240C</Russian>
+<Spanish>7.62mm M240C</Spanish>
+<French>7.62mm M240C</French>
+<Czech>7.62mm M240C</Czech>
+<Italian>7.62mm M240C</Italian>
+<Hungarian>7.62mm M240C</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_M1A1_COAX_LOADER">
+<English>7.62mm M240B</English>
+<German>7.62mm M240B</German>
+<Polish>7,62mm M240B</Polish>
+<Russian>7.62мм M240B</Russian>
+<Spanish>7.62mm M240B</Spanish>
+<French>7.62mm M240B</French>
+<Czech>7.62mm M240B</Czech>
+<Italian>7.62mm M240B</Italian>
+<Hungarian>7.62mm M240B</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_M1A1_50CAL">
+<English>12.7mm M2HB</English>
+<German>12.7mm M2HB</German>
+<Polish>12,7mm M2HB</Polish>
+<Russian>12.7мм M2HB</Russian>
+<Spanish>12.7mm M2HB</Spanish>
+<French>12.7mm M2HB</French>
+<Czech>12.7mm M2HB</Czech>
+<Italian>12.7mm M2HB</Italian>
+<Hungarian>12.7mm M2HB</Hungarian>
+</Key>
+<Key ID="STR_ACE_GDN_ACE_US_M1A1_TUSK_PLATOON">
+<German>M1A1 TUSK-Zug</German>
+<English>M1A1 TUSK Platoon</English>
+<Italian>Plotone M1A1 TUSK</Italian>
+<Spanish>Pelotón M1A1 TUSK</Spanish>
+<French>Peloton M1A1 TUSK</French>
+<Czech>Četa M1A1 TUSK</Czech>
+<Russian>Взвод M1A1 TUSK</Russian>
+<Polish>Pluton M1A1 TUSK</Polish>
+<Hungarian>M1A1 TUSK Platoon</Hungarian>
+</Key>
+<Key ID="STR_ACE_GDN_ACE_US_M1A1_TUSK_PLATOON_WDL">
+<German>M1A1 TUSK-Zug</German>
+<English>M1A1 TUSK Platoon</English>
+<Italian>Plotone M1A1 TUSK</Italian>
+<Spanish>Pelotón M1A1 TUSK</Spanish>
+<French>Peloton M1A1 TUSK</French>
+<Czech>Četa M1A1 TUSK</Czech>
+<Russian>Взвод M1A1 TUSK</Russian>
+<Polish>Pluton M1A1 TUSK</Polish>
+<Hungarian>M1A1 TUSK Platoon</Hungarian>
+</Key>
+<Key ID="STR_ACE_GDN_ACE_US_M1A1_TUSK_SECTION">
+<German>M1A1 TUSK-Sektion</German>
+<English>M1A1 TUSK Section</English>
+<Italian>Sezione M1A1 TUSK</Italian>
+<Spanish>Sección M1A1 TUSK</Spanish>
+<French>Section M1A1 TUSK</French>
+<Czech>Sekce M1A1 TUSK</Czech>
+<Russian>Взвод M1A1 TUSK (неполн.)</Russian>
+<Polish>Sekcja M1A1 TUSK</Polish>
+<Hungarian>M1A1 TUSK Section</Hungarian>
+</Key>
+<Key ID="STR_ACE_GDN_ACE_US_M1A1_TUSK_SECTION_WDL">
+<German>M1A1 TUSK-Sektion</German>
+<English>M1A1 TUSK Section (Woodland)</English>
+<Italian>Sezione M1A1 TUSK</Italian>
+<Spanish>Sección M1A1 TUSK</Spanish>
+<French>Section M1A1 TUSK</French>
+<Czech>Sekce M1A1 TUSK</Czech>
+<Russian>Взвод M1A1 TUSK (неполн.)</Russian>
+<Polish>Sekcja M1A1 TUSK</Polish>
+<Hungarian>M1A1 TUSK Section</Hungarian>
+</Key>
+<Key ID="STR_ACE_GDN_ACE_US_M1A1_TUSK_CSAMM_SECTION">
+<German>M1A1 TUSK CSAMM-Sektion</German>
+<English>M1A1 TUSK CSAMM Section</English>
+<Italian>Sezione M1A1 TUSK CSAMM</Italian>
+<Spanish>Sección M1A1 TUSK CSAMM</Spanish>
+<French>Section M1A1 TUSK CSAMM</French>
+<Czech>Sekce M1A1 TUSK CSAMM</Czech>
+<Russian>Взвод M1A1 TUSK CSAMM (неполн.)</Russian>
+<Polish>Sekcja M1A1 TUSK CSAMM</Polish>
+<Hungarian>M1A1 TUSK CSAMM Section</Hungarian>
+</Key>
+<Key ID="STR_ACE_GDN_ACE_US_M1A1_TUSK_CSAMM_SECTION_WDL">
+<German>M1A1 TUSK CSAMM-Sektion</German>
+<English>M1A1 TUSK CSAMM Section (Woodland)</English>
+<Italian>Sezione M1A1 TUSK CSAMM</Italian>
+<Spanish>Sección M1A1 TUSK CSAMM</Spanish>
+<French>Section M1A1 TUSK CSAMM</French>
+<Czech>Sekce M1A1 TUSK CSAMM</Czech>
+<Russian>Взвод M1A1 TUSK CSAMM (неполн.)</Russian>
+<Polish>Sekcja M1A1 TUSK CSAMM</Polish>
+<Hungarian>M1A1 TUSK CSAMM Section</Hungarian>
+</Key>
+
+</Container>
+</Package>
+</Project>

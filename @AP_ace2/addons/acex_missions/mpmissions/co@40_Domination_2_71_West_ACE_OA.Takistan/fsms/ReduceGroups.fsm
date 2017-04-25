@@ -1,0 +1,195 @@
+class FSM
+{
+  fsmName = "ReduceGroups";
+  class States
+  {
+    class Start
+    {
+      name = "Start";
+      init = "private [""_timeend""];" \n
+       "" \n
+       "_timeend = time + 10;";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="time > _timeend";
+          action="";
+        };
+      };
+    };
+    class Loop
+    {
+      name = "Loop";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class reduced_groups_
+        {
+          priority = 0.000000;
+          to="Reduce_Build_Up";
+          precondition = "";
+          condition="count d_reduce_groups > 0";
+          action="";
+        };
+      };
+    };
+    class Reduce_Build_Up
+    {
+      name = "Reduce_Build_Up";
+      init = "private [""_debug"", ""_sunits"", ""_grp"", ""_gstate"", ""_units"", ""_leader"", ""_nearplayers"", ""_ar"", ""_poslead"", ""_newu"", ""_isdefend""];" \n
+       "_debug = false;" \n
+       "" \n
+       "_sunits = if (isMultiplayer) then {playableUnits} else {switchableUnits};" \n
+       "{" \n
+       "	_grp = _x;" \n
+       "	if (!isNull _grp) then {" \n
+       "		_gstate = _grp getVariable ""d_gstate"";" \n
+       "		if (_gstate > 0) then {" \n
+       "			if ((_grp call d_fnc_GetAliveUnitsGrp) > 0) then {" \n
+       "				_units = units _grp;" \n
+       "				_leader = leader _grp;" \n
+       "				if (isNull _leader) then {" \n
+       "					{" \n
+       "						if (alive _x) exitWith {" \n
+       "							_leader = _x;" \n
+       "						};" \n
+       "					} forEach _units;" \n
+       "				};" \n
+       "				if (!isNull _leader && alive _leader) then {" \n
+       "					_nearplayers = {(vehicle _x) distance _leader <= d_reduce_distance} count _sunits > 0;" \n
+       "					if (_gstate == 1) then {" \n
+       "						if (!_nearplayers) then {" \n
+       "							_grp setVariable [""d_gstate"", 2];" \n
+       "							_units = _units - [_leader];" \n
+       "							_ar = [];" \n
+       "							{" \n
+       "								_ar set [count _ar," \n
+       "									[typeOf _x, damage _x, weapons _x, magazines _x, _x getVariable ""d_unitcode"", skill _x]" \n
+       "								];" \n
+       "								if (_debug) then {" \n
+       "									player sideChat format [""Group %1, reducing %2"", _grp, _x];" \n
+       "								};" \n
+       "								deleteVehicle _x;" \n
+       "							} forEach _units;" \n
+       "							_grp setVariable [""d_reduced_units"", _ar];" \n
+       "						};" \n
+       "					} else {" \n
+       "						if (_nearplayers) then {" \n
+       "							_ar = _grp getVariable ""d_reduced_units"";" \n
+       "							if (!isNil ""_ar"") then {" \n
+       "								_poslead = position _leader;" \n
+       "								{" \n
+       "									_newu = _grp createUnit [_x select 0, _poslead, [], 0, ""FORM""];" \n
+       "									if (_debug) then {" \n
+       "										player sideChat format [""%Group 1, unit %2 added"", _grp, _newu];" \n
+       "									};" \n
+       "									_newu setDamage (_x select 1);" \n
+       "									removeAllWeapons _newu;" \n
+       "									removeAllItems _newu;" \n
+       "									{" \n
+       "										_newu addMagazine _x;" \n
+       "									} forEach (_x select 3);" \n
+       "									{" \n
+       "										_newu addWeapon _x;" \n
+       "									} forEach (_x select 2);" \n
+       "									_ucode = _x select 4;" \n
+       "									if (!isNil ""_ucode"") then {" \n
+       "										{" \n
+       "											[_newu, _x] call d_fnc_setUnitCode;" \n
+       "										} forEach _ucode;" \n
+       "									};" \n
+       "									_newu setVariable [""BIS_noCoreConversations"", true];" \n
+       "									if (d_without_nvg == 0) then {" \n
+       "										if (_newu hasWeapon ""NVGoggles"") then {_newu removeWeapon ""NVGoggles""};" \n
+       "									};" \n
+       "									_newu setUnitAbility (_x select 5);" \n
+       "								} forEach _ar;" \n
+       "								_isdefend = _grp getVariable ""d_defend"";" \n
+       "								if (isNil ""_isdefend"") then {_isdefend = false};" \n
+       "								if (_isdefend) then {" \n
+       "									[_grp, _poslead] spawn d_fnc_taskDefend;" \n
+       "								};" \n
+       "								_grp setVariable [""d_reduced_units"", nil];" \n
+       "								_grp setVariable [""d_gstate"", 1];" \n
+       "							};" \n
+       "						};" \n
+       "					};" \n
+       "				};" \n
+       "			} else {" \n
+       "				d_reduce_groups set [_forEachIndex, -1];" \n
+       "			};" \n
+       "		};" \n
+       "	} else {" \n
+       "		d_reduce_groups set [_forEachIndex, -1];" \n
+       "	};" \n
+       "} forEach d_reduce_groups;" \n
+       "d_reduce_groups = d_reduce_groups - [-1];" \n
+       "" \n
+       "_timeend = time + 1;";
+      precondition = "";
+      class Links
+      {
+        class Sleep
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = "";
+          condition="time >= _timeend";
+          action="";
+        };
+      };
+    };
+    class _
+    {
+      name = "_";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class MP_Check
+        {
+          priority = 1.000000;
+          to="__1";
+          precondition = "";
+          condition="isMultiplayer && (call d_fnc_PlayersNumber) == 0";
+          action="";
+        };
+        class _
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class __1
+    {
+      name = "__1";
+      init = "_timeend = time + 5.21;";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = "";
+          condition="time > _timeend";
+          action="";
+        };
+      };
+    };
+  };
+  initState="Start";
+  finalStates[] =
+  {
+  };
+};

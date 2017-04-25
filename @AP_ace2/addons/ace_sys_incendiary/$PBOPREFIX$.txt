@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_incendiary
+Pbo Type is: Arma Addon
+Sha: 'FC53C03DBFDE17C4CE52E77B10C98CB216A41C67'
+//////</HEADER>//////

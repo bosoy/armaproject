@@ -1,0 +1,1071 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="sys_crewserved">
+<Container name="STR_DN">
+<Key ID="STR_ACE_CREW_INTMG">
+<German>Interaktion (MG)</German>
+<English>Interaction (MG)</English>
+<Spanish>Interaction (MG)</Spanish>
+<Czech>Interakce (MG)</Czech>
+<French>Interaction (MG)</French>
+<Polish>Obsługa ckm</Polish>
+<Italian>Interazione (MG)</Italian>
+<Russian>Взаимодействие (Пулёмет)</Russian>
+<Hungarian>Géppuska menü</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_INTGL">
+<German>Interaktion (GW)</German>
+<English>Interaction (GL)</English>
+<Spanish>Interaction (GL)</Spanish>
+<Czech>Interakce (GL)</Czech>
+<French>Interaction (GL)</French>
+<Polish>Obsługa granatnika</Polish>
+<Italian>Interzione (GL)</Italian>
+<Russian>Взаимодействие (Гранатомёт)</Russian>
+<Hungarian>Gránátvető menü</Hungarian>
+</Key>
+<Key ID="STR_ACE_VEHICLE_EXCHANGE">
+<German>Fahrzeugbewaffnung</German>
+<English>Exchange Magazines</English>
+<Spanish>Exchange Magazines</Spanish>
+<Czech>Vyměnit zásobníky</Czech>
+<French>Exchange Magazines</French>
+<Polish>Wymiana magazynków</Polish>
+<Italian>Exchange Magazines</Italian>
+<Russian>Сменить магазины</Russian>
+<Hungarian>Exchange Magazines</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_INTLW">
+<German>Interaktion (RS)</German>
+<English>Interaction (Launcher)</English>
+<Spanish>Interaction (Launcher)</Spanish>
+<Czech>Interakce (Odpalovač)</Czech>
+<French>Interaction (Lanceur)</French>
+<Polish>Obsługa wyrzutni</Polish>
+<Italian>Interazione (Launcher)</Italian>
+<Russian>Взаимодействие (ПУ)</Russian>
+<Hungarian>Vetőcső menü</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_MOUNT">
+<German>Anbringen</German>
+<English>Mount weapon</English>
+<Spanish>Mount weapon</Spanish>
+<Czech>Nasadit zbraň</Czech>
+<French>Occuper arme</French>
+<Polish>Zamontuj broń</Polish>
+<Italian>Monta arma</Italian>
+<Russian>Монт. оружие</Russian>
+<Hungarian>Fegyver felszerelése</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_ELEVATE">
+<German>Höhe ändern</German>
+<English>Change height</English>
+<Spanish>Change height</Spanish>
+<Czech>Změnit výšku</Czech>
+<French>Change height</French>
+<Polish>Regulacja wysokości</Polish>
+<Italian>Change height</Italian>
+<Russian>Изменить высоту</Russian>
+<Hungarian>Change height</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_UNMOUNT">
+<German>Abbauen</German>
+<English>Unmount weapon</English>
+<Spanish>Unmount weapon</Spanish>
+<Czech>Sundat zbraň</Czech>
+<French>Quitter arme</French>
+<Polish>Wymontuj broń</Polish>
+<Italian>Smonta arma</Italian>
+<Russian>Демонт. оружие</Russian>
+<Hungarian>Fegyver leszerelése</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_PICKUP">
+<German>Aufnehmen</German>
+<English>Pickup Tripod</English>
+<Spanish>Pickup Tripod</Spanish>
+<Czech>Zvednout trojnožku</Czech>
+<French>Prendre Trépied</French>
+<Polish>Podnieś trójnóg</Polish>
+<Italian>Raccogli Tripod</Italian>
+<Russian>Демонт. станок</Russian>
+<Hungarian>Tripod felvétele</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_LEFT">
+<German>Links</German>
+<English>Left</English>
+<Spanish>Left</Spanish>
+<Czech>Vlevo</Czech>
+<French>Gauche</French>
+<Polish>W lewo</Polish>
+<Italian>Sinistra</Italian>
+<Russian>Влево</Russian>
+<Hungarian>Balra</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_RIGHT">
+<German>Rechts</German>
+<English>Right</English>
+<Spanish>Right</Spanish>
+<Czech>Vpravo</Czech>
+<French>Droite</French>
+<Polish>W prawo</Polish>
+<Italian>Destra</Italian>
+<Russian>Вправо</Russian>
+<Hungarian>Jobbra</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_LOAD">
+<German>Laden</German>
+<English>Load</English>
+<Spanish>Load</Spanish>
+<Czech>Nabít</Czech>
+<French>Charger</French>
+<Polish>Załaduj</Polish>
+<Italian>Carica</Italian>
+<Russian>Зарядить</Russian>
+<Hungarian>Töltés</Hungarian>
+</Key>
+<Key ID="STR_ACE_VEHICLE_LOAD">
+<German>Lade %1 (%2)</German>
+<English>Load %1 (%2)</English>
+<Spanish>Load %1 (%2)</Spanish>
+<Czech>Nabít %1 (%2)</Czech>
+<French>Load %1 (%2)</French>
+<Polish>Załaduj %1 (%2)</Polish>
+<Italian>Load %1 (%2)</Italian>
+<Russian>Загрузить %1 (%2)</Russian>
+<Hungarian>Load %1 (%2)</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_UNLOAD">
+<German>Entladen</German>
+<English>Unload</English>
+<Spanish>Unload</Spanish>
+<Czech>Vytáhnout zásobník</Czech>
+<French>Décharger</French>
+<Polish>Rozładuj</Polish>
+<Italian>Scarica</Italian>
+<Russian>Разрядить</Russian>
+<Hungarian>Lszr. kivétele</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_PITCHUP">
+<German>Neigen,vorn</German>
+<English>Elev., front</English>
+<Spanish>Elev., front</Spanish>
+<Czech>Elev., nahoru</Czech>
+<French>Elev., front</French>
+<Polish>Podnieś</Polish>
+<Italian>Elev., front</Italian>
+<Russian>Возвыш., перед.</Russian>
+<Hungarian>Elev., front</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_PITCHDN">
+<German>Neigen,hinten</German>
+<English>Elev., back</English>
+<Spanish>Elev., back</Spanish>
+<Czech>Elev., dolu</Czech>
+<French>Elev., back</French>
+<Polish>Obniż</Polish>
+<Italian>Elev., back</Italian>
+<Russian>Возвыш., зад.</Russian>
+<Hungarian>Elev., back</Hungarian>
+</Key>
+<Key ID="STR_ACE_VEHICLE_UNLOAD">
+<German>Entlade %1 (%2)</German>
+<English>Unload %1 (%2)</English>
+<Spanish>Unload %1 (%2)</Spanish>
+<Czech>Vytáhnout zásobník z %1 (%2)</Czech>
+<French>Unload %1 (%2)</French>
+<Polish>Rozładuj %1 (%2)</Polish>
+<Italian>Unload %1 (%2)</Italian>
+<Russian>Разгрузить %1 (%2)</Russian>
+<Hungarian>Unload %1 (%2)</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_DRAG">
+<German>Ziehen</German>
+<English>Drag</English>
+<Spanish>Drag</Spanish>
+<Czech>Táhnout</Czech>
+<French>Trainer</French>
+<Polish>Ciągnij</Polish>
+<Italian>Trascina</Italian>
+<Russian>Тащить</Russian>
+<Hungarian>Vonszolás</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_RELASE">
+<German>Ziehen beenden</German>
+<English>End drag</English>
+<Spanish>End drag</Spanish>
+<Czech>Ukončit táhnutí</Czech>
+<French>Laisser</French>
+<Polish>Zostaw</Polish>
+<Italian>Fine Trascinamento</Italian>
+<Russian>Завершить перенос</Russian>
+<Hungarian>Vonszolás abbahagy</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_TRIPOD">
+<German>Dreibein aufstellen</German>
+<English>Deploy tripod</English>
+<Spanish>Deploy tripod</Spanish>
+<Czech>Rozlož trojnožku</Czech>
+<French>Déploiment du trépied</French>
+<Polish>Rozłóż trójnóg</Polish>
+<Italian>Monta tripod</Italian>
+<Russian>Установить станок</Russian>
+<Hungarian>Tripod felállítása</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_DRAGON">
+<German>M47 Dragon aufstellen</German>
+<English>Deploy M47 Dragon</English>
+<Spanish>Deploy M47 Dragon</Spanish>
+<Czech>Rozlož M47 Dragon</Czech>
+<French>Deploy M47 Dragon</French>
+<Polish>Rozłóż M47 Dragon</Polish>
+<Italian>Deploy M47 Dragon</Italian>
+<Russian>Установить M47 Dragon</Russian>
+<Hungarian>Deploy M47 Dragon</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_UNMOUNTDRAGON">
+<German>M47 Dragon abbauen</German>
+<English>Pack M47 Dragon</English>
+<Spanish>Pack M47 Dragon</Spanish>
+<Czech>Slož M47 Dragon</Czech>
+<French>Pack M47 Dragon</French>
+<Polish>Złóż M47 Dragon</Polish>
+<Italian>Pack M47 Dragon</Italian>
+<Russian>Взять M47 Dragon</Russian>
+<Hungarian>Pack M47 Dragon</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_CANCEL">
+<German>Abbrechen</German>
+<English>Cancel</English>
+<Spanish>Cancel</Spanish>
+<Czech>Zrušit</Czech>
+<French>Annuler</French>
+<Polish>Przerwij</Polish>
+<Italian>Cancella</Italian>
+<Russian>Отмена</Russian>
+<Hungarian>Mégse</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_AMMO">
+<German>Munition:</German>
+<English>Rounds:</English>
+<Spanish>Rounds:</Spanish>
+<Czech>Náboje:</Czech>
+<French>Munitions:</French>
+<Polish>Amunicja:</Polish>
+<Italian>Munizioni:</Italian>
+<Russian>Боекомплект:</Russian>
+<Hungarian>Lőszer:</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_ERR_NOWEP">
+<German>Zu weit weg</German>
+<English>No weapon in range</English>
+<Spanish>No weapon in range</Spanish>
+<Czech>Žádná zbraň v dosahu</Czech>
+<French>Pas d'armes à proximité</French>
+<Polish>Za daleko</Polish>
+<Italian>Munizioni Sbagliate</Italian>
+<Russian>Оружие вне досягаемости</Russian>
+<Hungarian>Nincs fegyver a közelben.</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_ERR_TOOSTEEP">
+<German>Zu steil</German>
+<English>Too steep</English>
+<Spanish>Too steep</Spanish>
+<Czech>Příliš strmé</Czech>
+<French>Too steep</French>
+<Polish>Zbyt stromo</Polish>
+<Italian>Too steep</Italian>
+<Russian>Угол слишком крутой</Russian>
+<Hungarian>Too steep</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_ERR_NOAMMO">
+<German>Falsche Munition</German>
+<English>Wrong ammo</English>
+<Spanish>Wrong ammo</Spanish>
+<Czech>Špatná munice</Czech>
+<French>Mauvaise munition</French>
+<Polish>Brak amunicji</Polish>
+<Russian>Неподходящие боеприпасы</Russian>
+<Hungarian>Rossz lőszer.</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_ERR_REMOVE">
+<German>Waffe muss entladen werden</German>
+<English>Remove current magazine first</English>
+<Spanish>Remove current magazine first</Spanish>
+<Czech>Nejdřív odeberte zásobník</Czech>
+<French>Retirez le chargeur actuel</French>
+<Polish>Najpierw rozładuj amunicję</Polish>
+<Italian>Rimuovi il caricatore Correntre prima</Italian>
+<Russian>Сперва разрядите оружие</Russian>
+<Hungarian>Először távolítsd el a tárat.</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_ERR_BELT">
+<German>Gurt ist zu lang</German>
+<English>Belt is too long</English>
+<Spanish>Belt is too long</Spanish>
+<Czech>Pás je příliš dlouhý</Czech>
+<French>Bande trop longue</French>
+<Polish>Taśma zbyt długa</Polish>
+<Italian>Cintura Troppo lunga </Italian>
+<Russian>Слишком длинная лента</Russian>
+<Hungarian>A heveder túl hosszú.</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_ERR_POS">
+<German>Von dieser Position unmöglich</German>
+<English>Not possible from current position</English>
+<Spanish>Not possible from current position</Spanish>
+<Czech>Nemožné z aktuální pozice</Czech>
+<French>Impossible depuis cette position</French>
+<Polish>Niemożliwe z tej pozycji</Polish>
+<Italian>Non è possibile da questa posizione </Italian>
+<Russian>Действие невозможно с данной позиции</Russian>
+<Hungarian>Lehetetlen ebben a testhelyzetben.</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_ERR_OCC">
+<German>Waffe besetzt</German>
+<English>Weapon occupied</English>
+<Spanish>Weapon occupied</Spanish>
+<Czech>Zbraň obsazena</Czech>
+<French>Arme occupée</French>
+<Polish>Broń jest obsługiwana</Polish>
+<Italian>Arma Occupata </Italian>
+<Russian>Оружие используется</Russian>
+<Hungarian>Foglalt fegyver.</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_ERR_NOTFIT">
+<German>Waffe passt nicht</German>
+<English>Weapon does not match</English>
+<Spanish>Weapon does not match</Spanish>
+<Czech>Zbraň nesouhlasí</Czech>
+<French>L'arme ne correspond pas</French>
+<Polish>Broń nie pasuje</Polish>
+<Italian>Arma non riscontrata</Italian>
+<Russian>Неподходящее оружие</Russian>
+<Hungarian>Nem egyezik a fegyver.</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_ERR_LOWAMMO">
+<German>Nicht genug Munition</German>
+<English>Insufficient ammo</English>
+<Spanish>Insufficient ammo</Spanish>
+<Czech>Nedostatek munice</Czech>
+<French>Munitions insuffisantes</French>
+<Polish>Za mało amunicji</Polish>
+<Italian>Munizioni insufficenti</Italian>
+<Russian>Недостаточно боеприпасов</Russian>
+<Hungarian>Nem megfelelő lőszer.</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_ERR_DESTROY">
+<German>Waffe zerstört</German>
+<English>Weapon destroyed</English>
+<Spanish>Weapon destroyed</Spanish>
+<Czech>Zbraň zničena</Czech>
+<French>Arme endommagée</French>
+<Polish>Broń zniszczona</Polish>
+<Italian>Armi Distrutte</Italian>
+<Russian>Оружие уничтожено</Russian>
+<Hungarian>Fegyver működésképtelen.</Hungarian>
+</Key>
+<Key ID="STR_ACE_CSW_AI">
+<German>(Æ) Weapons: CSWs für KI</German>
+<English>(Æ) CSW for AI</English>
+<Spanish>(Æ) CSW for AI</Spanish>
+<Czech>(Æ) CSW pro AI</Czech>
+<French>(Æ) CSW pour IA</French>
+<Polish>(Æ) Broń zespołowa dla SI</Polish>
+<Italian>(Æ) CSW for AI</Italian>
+<Russian>(Æ) CSW оружие для ИИ</Russian>
+<Hungarian>(Æ) Hord. fegyverek MI részére</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_LINK">
+<German>Verbinde zwei Munitionsgurte</German>
+<English>Linking the two ammo belts together</English>
+<Spanish>Linking the two ammo belts together</Spanish>
+<Czech>Spojování dvou nábojových pásů dohromady</Czech>
+<French>Lier les bandes de munitions ensemble</French>
+<Polish>Łączenie taśm amunicyjnych</Polish>
+<Italian>Linking the two ammo belts together</Italian>
+<Russian>Соединяем две ленты вместе</Russian>
+<Hungarian>Hevederek összecsatolása</Hungarian>
+</Key>
+<Key ID="STR_ACE_CREW_DELINK">
+<German>%1 Schuss entnommen, %2 Schuss übrig</German>
+<English>%1 rounds taken, %2 rounds left</English>
+<Spanish>%1 rounds taken, %2 rounds left</Spanish>
+<Czech>%1 nábojů sebráno, %2 nábojů zbylo</Czech>
+<French>%1 munitions utilisées, %2 munitions restantes</French>
+<Polish>Wyjęto %1 pocisków, pozostało %2</Polish>
+<Italian>%1 rounds taken, %2 rounds left</Italian>
+<Russian>%1 снарядов взято, %2 снарядов осталось</Russian>
+<Hungarian>%1 lőszer kivéve, %2 maradt</Hungarian>
+</Key>
+</Container>
+<Container name="STR_VC">
+<Key ID="STR_ACE_VC_ACE_AMMO_CSW">
+<German>Æ Munition (CSW)</German>
+<English>Æ Ammunition (CSW)</English>
+<Russian>Æ Боеприпасы (CSW)</Russian>
+<Polish>Æ Amunicja (broń zespołowa)</Polish>
+<Spanish>Æ Ammunition (CSW)</Spanish>
+<French>Æ Munitions (CSW)</French>
+<Czech>Æ Munice (CSW)</Czech>
+<Italian>Æ Munizioni (CSW)</Italian>
+<Hungarian>Æ Lőszer (Tel.Fegy.)</Hungarian>
+</Key>
+<Key ID="STR_VC_ACE_AMMO_TRANSPORT_CSW">
+<German>Æ Transportkisten (CSW)</German>
+<English>Æ CSW Transport Crates</English>
+<Italian>Æ CSW Transport Crates</Italian>
+<Spanish>Æ CSW Transport Crates</Spanish>
+<French>Æ CSW Transport Crates</French>
+<Czech>Æ CSW Transportní bedny</Czech>
+<Russian>Æ CSW Ящики для переноса</Russian>
+<Polish>Æ Skrzynie z bronią zespołową</Polish>
+<Hungarian>Æ CSW Transport Crates</Hungarian>
+</Key>
+</Container>
+<Container name="STR_DN">
+<Key ID="STR_DN_ACE_KONKURS_CSWDM">
+<German>9M113 Raketen Behälter</German>
+<English>9M113 Missile Tube</English>
+<Russian>9M113 Пусковое устройство</Russian>
+<Polish>Zasobnik 9M113 Konkurs</Polish>
+<Spanish>9M113 Missile Tube</Spanish>
+<French>9M113 Tube porte-missile</French>
+<Czech>9M113 Raketa </Czech>
+<Italian>9M113 Missile Tube</Italian>
+<Hungarian>9M113 Vetőcső</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_KONKURSM_CSWDM">
+<German>9M113M Raketen Behälter</German>
+<English>9M113M Missile Tube</English>
+<Russian>9M113M Пусковое устройство</Russian>
+<Polish>Zasobnik 9M113M Konkurs</Polish>
+<Spanish>9M113M Missile Tube</Spanish>
+<French>9M113M Tube porte-missile</French>
+<Czech>9M113M Raketa</Czech>
+<Italian>9M113M Missile Tube</Italian>
+<Hungarian>9M113M Vetőcső</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_M3TRIPOD">
+<German>M3 Dreibein</German>
+<English>M3 Tripod</English>
+<Russian>M3 Станок</Russian>
+<Polish>Trójnóg M3</Polish>
+<Spanish>M3 Tripod</Spanish>
+<French>M3 Tripod</French>
+<Czech>M3 trojnožka</Czech>
+<Italian>M3 Tripod</Italian>
+<Hungarian>M3 Tripod</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_GMGTRIPOD">
+<German>GMW Dreibein</German>
+<English>GMG Tripod</English>
+<Russian>GMG Станок</Russian>
+<Polish>Trójnóg GMG</Polish>
+<Spanish>GMG Tripod</Spanish>
+<French>GMG Tripod</French>
+<Czech>GMG trojnožka</Czech>
+<Italian>GMG Tripod</Italian>
+<Hungarian>GMG Tripod</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_M122TRIPOD">
+<German>M122 Dreibein</German>
+<English>M122 Tripod</English>
+<Russian>M122 Станок</Russian>
+<Polish>Trójnóg M122</Polish>
+<Spanish>M122 Tripod</Spanish>
+<French>M122 Tripod</French>
+<Czech>M122 trojnožka</Czech>
+<Italian>M122 Tripod</Italian>
+<Hungarian>M122 Tripod</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_M252TRIPOD">
+<German>M3A1 Bodenplatte</German>
+<English>M3A1 Base Plate</English>
+<Russian>M3A1 Плита</Russian>
+<Polish>Podstawa M3A1</Polish>
+<Spanish>M3A1 Base Plate</Spanish>
+<French>M3A1 Base Plate</French>
+<Czech>Podstava M3A1</Czech>
+<Italian>M3A1 Base Plate</Italian>
+<Hungarian>M3A1 Base Plate</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_M224TRIPOD">
+<German>M7 Bodenplatte</German>
+<English>M7 Base Plate</English>
+<Russian>M7 Плита</Russian>
+<Czech>Podstava M7</Czech>
+<Spanish>M7 Base Plate</Spanish>
+<French>M7 Base Plate</French>
+<Czech>M7 Base Plate</Czech>
+<Italian>M7 Base Plate</Italian>
+<Hungarian>M7 Base Plate</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_6T7TRIPOD">
+<English>6T7 Tripod</English>
+<German>6T7 Dreibein</German>
+<Russian>6T7 Станок</Russian>
+<Polish>Trójnóg 6T7</Polish>
+<Spanish>6T7 Tripod</Spanish>
+<French>6T7 Tripod</French>
+<Czech>6T7 trojnožka</Czech>
+<Italian>6T7 Tripod</Italian>
+<Hungarian>6T7 Tripod</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_AGS30TRIPOD">
+<English>AGS-30 Tripod</English>
+<German>AGS-30 Dreibein</German>
+<Russian>AГС-30 Станок</Russian>
+<Polish>Trójnóg AGS-30</Polish>
+<Spanish>AGS-30 Tripod</Spanish>
+<French>AGS-30 Tripod</French>
+<Czech>AGS-30 trojnožka</Czech>
+<Italian>AGS-30 Tripod</Italian>
+<Hungarian>AGS-30 Tripod</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_DSHKMTRIPOD">
+<English>DShKM Tripod</English>
+<German>DShKM Dreibein</German>
+<Russian>ДШКМ Станок</Russian>
+<Polish>Trójnóg DShKM</Polish>
+<Spanish>DShKM Tripod</Spanish>
+<French>DShKM Tripod</French>
+<Czech>DShKM trojnožka</Czech>
+<Italian>DShKM Tripod</Italian>
+<Hungarian>DShKM Tripod</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_2B14TRIPOD">
+<English>2B14 Base Plate</English>
+<German>2B14 Bodenplatte</German>
+<Russian>2Б14 Плита</Russian>
+<Polish>Podstawa 2B14</Polish>
+<Spanish>2B14 Base Plate</Spanish>
+<French>2B14 Base Plate</French>
+<Czech>2B14 Base Plate</Czech>
+<Italian>2B14 Base Plate</Italian>
+<Hungarian>2B14 Base Plate</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_DRAGONSUP36">
+<English>M47 Dragon SU-36/P Daysight</English>
+<German>SU-36/P Zielgerät</German>
+<Russian>M47 Dragon SU-36/P дневной прицел</Russian>
+<Polish>M47 celownik dzienny SU-36/P</Polish>
+<Spanish>M47 Dragon SU-36/P Daysight</Spanish>
+<French>M47 Dragon SU-36/P Daysight</French>
+<Czech>M47 Dragon SU-36/P Daysight</Czech>
+<Italian>M47 Dragon SU-36/P Daysight</Italian>
+<Hungarian>M47 Dragon SU-36/P Daysight</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_M224">
+<German>M224 60mm-Mörser</German>
+<English>M224 60mm Mortar</English>
+<Italian>Mortaio M224 60mm</Italian>
+<Spanish>Mortero M224 60 mm</Spanish>
+<French>Mortier 60 mm M224</French>
+<Czech>Minomet M224 60mm</Czech>
+<Russian>M224 60-мм миномет</Russian>
+<Polish>Moździerz M224 60 mm</Polish>
+<Hungarian>M224 60mm Mortar</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_2B14">
+<German>2B14 82mm-Mörser</German>
+<English>2B14 82mm Mortar</English>
+<Italian>Mortaio 2B14 82mm</Italian>
+<Spanish>Mortero 2B14 82 mm</Spanish>
+<French>Mortier 82 mm 2B14</French>
+<Czech>Minomet 2B14 82mm</Czech>
+<Russian>2Б14 82-мм миномет</Russian>
+<Polish>Moździerz 2B14 82 mm</Polish>
+<Hungarian>2B14 82mm Mortar</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_KONKURS">
+<German>9P135M Konkurs</German>
+<English>9P135M Konkurs</English>
+<Italian>9P135M Konkurs</Italian>
+<Spanish>9P135M Konkurs</Spanish>
+<French>9P135M Konkurs</French>
+<Czech>9P135M Konkurs</Czech>
+<Russian>9П135М Конкурс</Russian>
+<Polish>9P135M Konkurs</Polish>
+<Hungarian>9P135M Konkurs</Hungarian>
+</Key>
+<!-- CRATES -->
+<Key ID="STR_DN_ACE_CSW_BOX_M2">
+<German>M2 Kiste</German>
+<English>M2 Crate</English>
+<Italian>M2 Crate</Italian>
+<Spanish>M2 Crate</Spanish>
+<French>M2 Crate</French>
+<Czech>Bedna s M2</Czech>
+<Russian>M2 Ящик</Russian>
+<Polish>Skrzynia z M2</Polish>
+<Hungarian>M2 Crate</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_CSW_BOX_MK19">
+<German>Mk19 Kiste</German>
+<English>Mk19 Crate</English>
+<Italian>Mk19 Crate</Italian>
+<Spanish>Mk19 Crate</Spanish>
+<French>Mk19 Crate</French>
+<Czech>Bedna s Mk19</Czech>
+<Russian>Mk19 Ящик</Russian>
+<Polish>Skrzynia z Mk19</Polish>
+<Hungarian>Mk19 Crate</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_CSW_BOX_M252">
+<German>M252 Kiste</German>
+<English>M252 Crate</English>
+<Italian>M252 Crate</Italian>
+<Spanish>M252 Crate</Spanish>
+<French>M252 Crate</French>
+<Czech>Bedna s M252</Czech>
+<Russian>M252 Ящик</Russian>
+<Polish>Skrzynia z M252</Polish>
+<Hungarian>M252 Crate</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_CSW_BOX_M224">
+<German>M224 Kiste</German>
+<English>M224 Crate</English>
+<Italian>M224 Crate</Italian>
+<Spanish>M224 Crate</Spanish>
+<French>M224 Crate</French>
+<Czech>Bedna s M224</Czech>
+<Russian>M224 Ящик</Russian>
+<Polish>Skrzynia z M224</Polish>
+<Hungarian>M224 Crate</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_CSW_BOX_AGS30">
+<German>AGS-30 Kiste</German>
+<English>AGS-30 Crate</English>
+<Italian>AGS-30 Crate</Italian>
+<Spanish>AGS-30 Crate</Spanish>
+<French>AGS-30 Crate</French>
+<Czech>Bedna s AGS-30</Czech>
+<Russian>AГС-30 Ящик</Russian>
+<Polish>Skrzynia z AGS-30</Polish>
+<Hungarian>AGS-30 Crate</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_CSW_BOX_GMG">
+<German>GMW Transport Kiste</German>
+<English>GMG Crate</English>
+<Italian>GMG Crate</Italian>
+<Spanish>GMG Crate</Spanish>
+<French>GMG Crate</French>
+<Czech>Bedna s GMG</Czech>
+<Russian>GMG Ящик</Russian>
+<Polish>Skrzynia z GMG</Polish>
+<Hungarian>GMG Crate</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_CSW_BOX_KORD">
+<German>Kord Kiste</German>
+<English>Kord Crate</English>
+<Italian>Kord Crate</Italian>
+<Spanish>Kord Crate</Spanish>
+<French>Kord Crate</French>
+<Czech>Bedna s Kordem</Czech>
+<Russian>Корд Ящик</Russian>
+<Polish>Skrzynia z Kordem</Polish>
+<Hungarian>Kord Crate</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_CSW_BOX_DSHKM">
+<German>DShKM Kiste</German>
+<English>DShKM Crate</English>
+<Italian>DShKM Crate</Italian>
+<Spanish>DShKM Crate</Spanish>
+<French>DShKM Crate</French>
+<Czech>Bedna s DShKM</Czech>
+<Russian>ДШКМ Ящик</Russian>
+<Polish>Skrzynia z DSzKM</Polish>
+<Hungarian>DShKM Crate</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_CSW_BOX_KONKURS">
+<German>Konkurs Kiste</German>
+<English>Konkurs Crate</English>
+<Italian>Konkurs Crate</Italian>
+<Spanish>Konkurs Crate</Spanish>
+<French>Konkurs Crate</French>
+<Czech>Bedna s Konkursem</Czech>
+<Russian>Конкурс Ящик</Russian>
+<Polish>Skrzynia z Konkursem</Polish>
+<Hungarian>Konkurs Crate</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_CSW_BOX_METIS">
+<German>Metis Kiste</German>
+<English>Metis Crate</English>
+<Italian>Metis Crate</Italian>
+<Spanish>Metis Crate</Spanish>
+<French>Metis Crate</French>
+<Czech>Bedna s Metisem</Czech>
+<Russian>Метис Ящик</Russian>
+<Polish>Skrzynia z Metysem</Polish>
+<Hungarian>Metis Crate</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_CSW_BOX_2B14">
+<German>2B14 Kiste</German>
+<English>2B14 Crate</English>
+<Italian>2B14 Crate</Italian>
+<Spanish>2B14 Crate</Spanish>
+<French>2B14 Crate</French>
+<Czech>Bedna s 2B14</Czech>
+<Russian>2Б14 Ящик</Russian>
+<Polish>Skrzynia z 2B14</Polish>
+<Hungarian>2B14 Crate</Hungarian>
+</Key>
+<!-- AMMO CRATES -->
+<Key ID="STR_DN_ACE_CSW_BOX_KONKURS_AMMO">
+<German>9M113 Konkurs Missile Box</German>
+<English>9M113 Konkurs Missile Box</English>
+<Italian>9M113 Konkurs Missile Box</Italian>
+<Spanish>9M113 Konkurs Missile Box</Spanish>
+<French>9M113 Konkurs Missile Box</French>
+<Czech>Bedna s raketami 9M113 Konkurs</Czech>
+<Russian>9M113 Конкурс Ящик с ракетами</Russian>
+<Polish>Skrzynia pocisków 9M113 Konkurs</Polish>
+<Hungarian>9M113 Konkurs Missile Box</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_CSW_BOX_KONKURSM_AMMO">
+<German>9M113M Konkurs-M Missile Box</German>
+<English>9M113M Konkurs-M Missile Box</English>
+<Italian>9M113M Konkurs-M Missile Box</Italian>
+<Spanish>9M113M Konkurs-M Missile Box</Spanish>
+<French>9M113M Konkurs-M Missile Box</French>
+<Czech>Bedna s raketami 9M113 Konkurs-M</Czech>
+<Russian>9M113M Конкурс-М Ящик с ракетами</Russian>
+<Polish>Skrzynia pocisków 9M113M Konkurs-M</Polish>
+<Hungarian>9M113M Konkurs-M Missile Box</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_CSW_BOX_METIS_AMMO">
+<German>9M131M Metis Missile Box</German>
+<English>9M131M Metis Missile Box</English>
+<Italian>9M131M Metis Missile Box</Italian>
+<Spanish>9M131M Metis Missile Box</Spanish>
+<French>9M131M Metis Missile Box</French>
+<Czech>Bedna s raketami 9M131M Metis</Czech>
+<Russian>9M131M Метис Ящик с ракетами</Russian>
+<Polish>Skrzynia pocisków 9M131M Metys</Polish>
+<Hungarian>9M131M Metis Missile Box</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_CSW_BOX_METISTB_AMMO">
+<German>9M131F Metis Missile Box</German>
+<English>9M131F Metis Missile Box</English>
+<Italian>9M131F Metis Missile Box</Italian>
+<Spanish>9M131F Metis Missile Box</Spanish>
+<French>9M131F Metis Missile Box</French>
+<Czech>Bedna s raketami 9M131F Metis</Czech>
+<Russian>9M131Ф Метис Ящик с ракетами</Russian>
+<Polish>Skrzynia pocisków 9M131F Metys</Polish>
+<Hungarian>9M131F Metis Missile Box</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_CSW_BOX_M252_AMMOHE">
+<German>81mm M821 HE Box</German>
+<English>81mm M821 HE Box</English>
+<Italian>81mm M821 HE Box</Italian>
+<Spanish>81mm M821 HE Box</Spanish>
+<French>81mm M821 HE Box</French>
+<Czech>Bedna s 81mm M821 HE</Czech>
+<Russian>81mm M821 HE Ящик</Russian>
+<Polish>Skrzynia pocisków burz. 81mm M821</Polish>
+<Hungarian>81mm M821 HE Box</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_CSW_BOX_M252_AMMOWP">
+<German>81mm M375 WP Box</German>
+<English>81mm M375 WP Box</English>
+<Italian>81mm M375 WP Box</Italian>
+<Spanish>81mm M375 WP Box</Spanish>
+<French>81mm M375 WP Box</French>
+<Czech>Bedna s  81mm M375 WP</Czech>
+<Russian>81mm M375 WP Ящик</Russian>
+<Polish>Skrzynia pocisków fosf. 81mm M375</Polish>
+<Hungarian>81mm M375 WP Box</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_CSW_BOX_M252_AMMOIL">
+<German>81mm M853 ILLUM Box</German>
+<English>81mm M853 ILLUM Box</English>
+<Italian>81mm M853 ILLUM Box</Italian>
+<Spanish>81mm M853 ILLUM Box</Spanish>
+<French>81mm M853 ILLUM Box</French>
+<Czech>Bedna s 81mm M853 ILLUM</Czech>
+<Russian>81mm M853 ILLUM Ящик</Russian>
+<Polish>Skrzynia pocisków św. 81mm M853</Polish>
+<Hungarian>81mm M853 ILLUM Box</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_CSW_BOX_M224_AMMOHE">
+<German>60mm M720 HE Box</German>
+<English>60mm M720 HE Box</English>
+<Italian>60mm M720 HE Box</Italian>
+<Spanish>60mm M720 HE Box</Spanish>
+<French>60mm M720 HE Box</French>
+<Czech>Bedna s 60mm M720 HE</Czech>
+<Russian>60mm M720 HE Ящик</Russian>
+<Polish>Skrzynia pocisków burz. 60mm M720</Polish>
+<Hungarian>60mm M720 HE Box</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_CSW_BOX_M224_AMMOWP">
+<German>60mm M722 WP Box</German>
+<English>60mm M722 WP Box</English>
+<Italian>60mm M722 WP Box</Italian>
+<Spanish>60mm M722 WP Box</Spanish>
+<French>60mm M722 WP Box</French>
+<Czech>Bedna s 60mm M722 WP</Czech>
+<Russian>60mm M722 WP Ящик</Russian>
+<Polish>Skrzynia pocisków fosf. 60mm M722</Polish>
+<Hungarian>60mm M722 WP Box</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_CSW_BOX_M224_AMMOIL">
+<German>60mm M721 ILLUM Box</German>
+<English>60mm M721 ILLUM Box</English>
+<Italian>60mm M721 ILLUM Box</Italian>
+<Spanish>60mm M721 ILLUM Box</Spanish>
+<French>60mm M721 ILLUM Box</French>
+<Czech>Bedna s 60mm M721 ILLUM</Czech>
+<Russian>60mm M721 ILLUM Ящик</Russian>
+<Polish>Skrzynia pocisków ośw. 60mm M721</Polish>
+<Hungarian>60mm M721 ILLUM Box</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_CSW_BOX_2B14_AMMOHE">
+<German>82mm VO-832DU HE Box</German>
+<English>82mm VO-832DU HE Box</English>
+<Italian>82mm VO-832DU HE Box</Italian>
+<Spanish>82mm VO-832DU HE Box</Spanish>
+<French>82mm VO-832DU HE Box</French>
+<Czech>Bedna s 82mm VO-832DU HE</Czech>
+<Russian>82мм ВО-832ДУ ОФ Ящик</Russian>
+<Polish>Skrzynia pocisków burz. 82mm WO-832DU</Polish>
+<Hungarian>82mm VO-832DU HE Box</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_CSW_BOX_2B14_AMMOWP">
+<German>82mm WP Box</German>
+<English>82mm WP Box</English>
+<Italian>82mm WP Box</Italian>
+<Spanish>82mm WP Box</Spanish>
+<French>82mm WP Box</French>
+<Czech>Bedna s 82mm WP</Czech>
+<Russian>82мм БФ Ящик</Russian>
+<Polish>Skrzynia pocisków fosf. 82mm</Polish>
+<Hungarian>82mm WP Box</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_CSW_BOX_2B14_AMMOIL">
+<German>82mm ILLUM Box</German>
+<English>82mm ILLUM Box</English>
+<Italian>82mm ILLUM Box</Italian>
+<Spanish>82mm ILLUM Box</Spanish>
+<French>82mm ILLUM Box</French>
+<Czech>Bedna s 82mm ILLUM</Czech>
+<Russian>82мм Освет. Ящик</Russian>
+<Polish>Skrzynia pocisków ośw. 82mm</Polish>
+<Hungarian>82mm ILLUM Box</Hungarian>
+</Key>
+</Container>
+<Container name="STR_DSS">
+<Key ID="STR_DSS_ACE_KORD_CSWDM">
+<German>Kaliber: 12,7x108 mm &lt;br/&gt;Eingesetzt in: KORD</German>
+<English>Caliber: 12.7x108 mm &lt;br/&gt;Used in: KORD</English>
+<Italian>Calibro: 12,7x108 mm &lt;br/&gt;Si usa in: KORD</Italian>
+<Spanish>Calibre: 12,7x108 mm &lt;br/&gt;Uso: KORD</Spanish>
+<French>Calibre : 12.7x108 mm &lt;br/&gt;Utilisé avec : KORD</French>
+<Czech>Kalibr: 12,7x108 mm &lt;br/&gt; Pro: KORD</Czech>
+<Russian>Калибр: 12.7x108мм &lt;br/&gt;Используются в: Корд</Russian>
+<Polish>Kaliber: 12,7x108 mm &lt;br/&gt;Używane w: Kord</Polish>
+<Hungarian>Kaliber: 12.7x108 mm &lt;br/&gt; Hozzá tartozó fegyver: KORD</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_DSHKM_CSWDM">
+<German>Kaliber: 12,7x108 mm &lt;br/&gt;Eingesetzt in: DShKM</German>
+<English>Caliber: 12.7x108 mm &lt;br/&gt;Used in: DShKM</English>
+<Italian>Calibro: 12,7x108 mm &lt;br/&gt;Si usa in: DShKM</Italian>
+<Spanish>Calibre: 12,7x108 mm &lt;br/&gt;Uso: DShKM</Spanish>
+<French>Calibre : 12.7x108 mm &lt;br/&gt;Utilisé avec : DShKM</French>
+<Czech>Kalibr: 12,7x108 mm &lt;br/&gt; Pro: DŠKM</Czech>
+<Russian>Калибр: 12.7x108мм &lt;br/&gt;Используются в: ДШКМ</Russian>
+<Polish>Kaliber: 12,7x108 mm &lt;br/&gt;Używane w: DSzKM</Polish>
+<Hungarian>Kaliber: 12.7x108 mm &lt;br/&gt; Hozzá tartozó fegyver: DSKM</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_M2_CSWDM">
+<German>Kaliber: .50 &lt;br/&gt;Eingesetzt in: M2</German>
+<English>Caliber: .50 &lt;br/&gt;Used in: M2</English>
+<Italian>Calibro: .50 &lt;br/&gt;Si usa in: M2</Italian>
+<Spanish>Calibre: .50 &lt;br/&gt;Uso: M2</Spanish>
+<French>Calibre : .50 &lt;br/&gt;Utilisé avec : M2</French>
+<Czech>Kalibr: .50 &lt;br/&gt; Pro: M2</Czech>
+<Russian>Калибр: .50 &lt;br/&gt;Используются в: M2</Russian>
+<Polish>Kaliber: .50 &lt;br/&gt;Używane w:M2</Polish>
+<Hungarian>Kaliber: .50 &lt;br/&gt; Hozzá tartozó fegyver: M2</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_MK19_CSWDM">
+<German>Kaliber: 40mm &lt;br/&gt;Eingesetzt in: Mk19</German>
+<English>Caliber: 40mm &lt;br/&gt;Used in: Mk19</English>
+<Italian>Calibro: 40mm &lt;br/&gt;Si usa in: Mk19</Italian>
+<Spanish>Calibre: 40mm &lt;br/&gt;Uso: Mk19</Spanish>
+<French>Calibre : 40mm &lt;br/&gt;Utilisé avec : Mk19</French>
+<Czech>Kalibr: 40mm &lt;br/&gt; Pro: Mk19</Czech>
+<Russian>Калибр: 40мм &lt;br/&gt;Используются в: Mk19</Russian>
+<Polish>Kaliber: 40mm &lt;br/&gt;Używane w: Mk19</Polish>
+<Hungarian>Kaliber: 40mm &lt;br/&gt; Hozzá tartozó fegyver: Mk19</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_GMG_CSWDM">
+<German>Kaliber: 40mm &lt;br/&gt;Eingesetzt in: GMG</German>
+<English>Caliber: 40mm &lt;br/&gt;Used in: GMG</English>
+<Italian>Calibro: 40mm &lt;br/&gt;Si usa in: GMG</Italian>
+<Spanish>Calibre: 40mm &lt;br/&gt;Uso: GMG</Spanish>
+<French>Calibre : 40mm &lt;br/&gt;Utilisé avec : GMG</French>
+<Czech>Kalibr: 40mm &lt;br/&gt; Pro: GMG</Czech>
+<Russian>Калибр: 40мм &lt;br/&gt;Используются в: GMG</Russian>
+<Polish>Kaliber: 40mm &lt;br/&gt;Używane w: GMG</Polish>
+<Hungarian>Kaliber: 40mm &lt;br/&gt; Hozzá tartozó fegyver: GMG</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_AGS30_CSWDM">
+<German>Kaliber: 30mm &lt;br/&gt;Eingesetzt in: AGS-30</German>
+<English>Caliber: 30mm &lt;br/&gt;Used in: AGS-30</English>
+<Italian>Calibro: 30mm &lt;br/&gt;Si usa in: AGS-30</Italian>
+<Spanish>Calibre: 30mm &lt;br/&gt;Uso: AGS-30</Spanish>
+<French>Calibre : 30mm &lt;br/&gt;Utilisé avec : AGS-30</French>
+<Czech>Kalibr: 30mm &lt;br/&gt; Pro: AGS-30</Czech>
+<Russian>Калибр: 30мм &lt;br/&gt;Используются в: АГС-30</Russian>
+<Polish>Kaliber: 30mm &lt;br/&gt;Używane w: AGS-30</Polish>
+<Hungarian>Kaliber: 30mm &lt;br/&gt; Hozzá tartozó fegyver:AGS-30</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_KONKURS_CSWDM">
+<German>Typ: Panzerabwehr &lt;br/&gt;Eingesetzt in: Konkurs</German>
+<English>Type: high explosive anti-armor &lt;br/&gt;Used in: Konkurs</English>
+<Italian>Tipo: altamente esplosivo anti-blindati &lt;br/&gt;Si usa in: Konkurs</Italian>
+<Spanish>Tipo: altamente explosivo de doble función &lt;br/&gt;Uso: Konkurs</Spanish>
+<French>Type : explosif anti-blindés &lt;br/&gt;Utilisé avec : Konkurs</French>
+<Czech>Typ: vysoce explozivní protipancéřová &lt;br/&gt;Pro: Konkurs</Czech>
+<Russian>Тип: разрывной противотанковый &lt;br/&gt;Используются в: Конкурс</Russian>
+<Polish>Typ: przeciwpancerny &lt;br/&gt;Używane w: Konkurs</Polish>
+<Hungarian>Típus: kumulatív páncéltörő &lt;br/&gt; Hozzá tartozó fegyver: Konkurs</Hungarian>
+</Key>
+
+
+<Key ID="STR_DSS_ACE_KonkursTripodProxy">
+<English>9K111-1 Konkurs ATGM &lt;br/&gt;9P135M Launcher</English>
+<German>9K111-1 Konkurs ATGM &lt;br/&gt;9P135M Launcher</German>
+<Russian>9K111-1 Конкурс ПТРК &lt;br/&gt;9П135M ПУ</Russian>
+<Polish>kpr 9K111-1 Konkurs &lt;br/&gt;Wyrzutnia 9P135M</Polish>
+<Spanish>9K111-1 Konkurs ATGM &lt;br/&gt;9P135M Launcher</Spanish>
+<French>9K111-1 Konkurs ATGM &lt;br/&gt;9P135M Launcher</French>
+<Czech>9K111-1 Konkurs ATGM &lt;br/&gt;9P135M Odpalovač</Czech>
+<Italian>9K111-1 Konkurs ATGM &lt;br/&gt;9P135M Launcher</Italian>
+<Hungarian>9K111-1 Konkurs ATGM &lt;br/&gt;9P135M Launcher</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_M2HBPROXY">
+<English>12.7x99mm HMG &lt;br/&gt;Mounted on M3 Tripod</English>
+<German>12.7x99mm HMG &lt;br/&gt;Montiert auf M3 Dreibein</German>
+<Russian>12.7x99mm HMG &lt;br/&gt;Устанавливается на станок M3</Russian>
+<Polish>wkm 12.7x99mm &lt;br/&gt;Montować na trójnogu M3</Polish>
+<Spanish>12.7x99mm HMG &lt;br/&gt;Mounted on M3 Tripod</Spanish>
+<French>12.7x99mm HMG &lt;br/&gt;Mounted on M3 Tripod</French>
+<Czech>12.7x99mm HMG &lt;br/&gt;Namontované na M3 trojnožce</Czech>
+<Italian>12.7x99mm HMG &lt;br/&gt;Mounted on M3 Tripod</Italian>
+<Hungarian>12.7x99mm HMG &lt;br/&gt;Mounted on M3 Tripod</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_MK19PROXY">
+<English>40x53mm AGL &lt;br/&gt;Mounted on M3 Tripod</English>
+<German>40x53mm AGL &lt;br/&gt;Montiert auf M3 Dreibein</German>
+<Russian>40x53мм AGL &lt;br/&gt;Устанавливается на станок M3</Russian>
+<Polish>ga 40x53m &lt;br/&gt;Montować na trójnogu M3</Polish>
+<Spanish>40x53mm AGL &lt;br/&gt;Mounted on M3 Tripod</Spanish>
+<French>40x53mm AGL &lt;br/&gt;Mounted on M3 Tripod</French>
+<Czech>40x53mm AGL &lt;br/&gt;Namontované na M3 trojnožce</Czech>
+<Italian>40x53mm AGL &lt;br/&gt;Mounted on M3 Tripod</Italian>
+<Hungarian>40x53mm AGL &lt;br/&gt;Mounted on M3 Tripod</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_M252PROXY">
+<English>M252 81mm Mortar &lt;br/&gt;M253 Cannon + M177 Mount &lt;br/&gt;Mounted on M3A1 Base Plate</English>
+<German>M252 81mm Mörser &lt;br/&gt;M253 Rohr + M177 Lafette &lt;br/&gt;Montiert auf M3A1 Bodenplatte</German>
+<Russian>M252 81мм Миномёт &lt;br/&gt;M253 Орудие + M177 Станок &lt;br/&gt;Устанавливается на M3A1 Плиту</Russian>
+<Polish>81mm moździerz M252 &lt;br/&gt;Działo M253 + wspornik M177 &lt;br/&gt;Montować na podstawie M3A1</Polish>
+<Spanish>M252 81mm Mortar &lt;br/&gt;M253 Cannon + M177 Mount &lt;br/&gt;Mounted on M3A1 Base Plate</Spanish>
+<French>M252 81mm Mortar &lt;br/&gt;M253 Cannon + M177 Mount &lt;br/&gt;Mounted on M3A1 Base Plate</French>
+<Czech>M252 81mm Minomet &lt;br/&gt;Dělo M253 + lafeta M177 &lt;br/&gt; Namontované na podstavu M3A1</Czech>
+<Italian>M252 81mm Mortar &lt;br/&gt;M253 Cannon + M177 Mount &lt;br/&gt;Mounted on M3A1 Base Plate</Italian>
+<Hungarian>M252 81mm Mortar &lt;br/&gt;M253 Cannon + M177 Mount &lt;br/&gt;Mounted on M3A1 Base Plate</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_M224PROXY">
+<English>M224 60mm Mortar &lt;br/&gt;M225 Cannon + M170 Mount &lt;br/&gt;Mounted on M7 Base Plate</English>
+<German>M224 60mm Mörser &lt;br/&gt;M225 Rohr + M170 Lafette &lt;br/&gt;Montiert auf M7 Bodenplatte</German>
+<Russian>M224 60мм Миномёт &lt;br/&gt;M225 Орудие + M170 Станок &lt;br/&gt;Устанавливается на M7 Плиту</Russian>
+<Polish>60mm moździerz M224 &lt;br/&gt;Działo M225 + wspornik M170 &lt;br/&gt;Montować na podstawie M7</Polish>
+<Spanish>M224 60mm Mortar &lt;br/&gt;M225 Cannon + M170 Mount &lt;br/&gt;Mounted on M7 Base Plate</Spanish>
+<French>M224 60mm Mortar &lt;br/&gt;M225 Cannon + M170 Mount &lt;br/&gt;Mounted on M7 Base Plate</French>
+<Czech>M224 60mm Minomet &lt;br/&gt;Dělo M225 + lafeta M170 &lt;br/&gt;Namontované na podstavu M7</Czech>
+<Italian>M224 60mm Mortar &lt;br/&gt;M225 Cannon + M170 Mount &lt;br/&gt;Mounted on M7 Base Plate</Italian>
+<Hungarian>M224 60mm Mortar &lt;br/&gt;M225 Cannon + M170 Mount &lt;br/&gt;Mounted on M7 Base Plate</Hungarian>
+</Key>
+
+<Key ID="STR_DSS_ACE_KORDPROXY">
+<English>12.7x108mm HMG &lt;br/&gt;Mounted on 6T7 Tripod</English>
+<German>12.7x108mm HMG &lt;br/&gt;Montiert auf 6T7 Dreibein</German>
+<Russian>12.7x108мм Тяж. Пулемёт &lt;br/&gt;Устанавливается на станок 6T7</Russian>
+<Polish>wkm 12.7x108mm &lt;br/&gt;Montować na trójnogu 6T7</Polish>
+<Spanish>12.7x108mm HMG &lt;br/&gt;Mounted on 6T7 Tripod</Spanish>
+<French>12.7x108mm HMG &lt;br/&gt;Mounted on 6T7 Tripod</French>
+<Czech>12.7x108mm HMG &lt;br/&gt;Namontované na 6T7 Tripod</Czech>
+<Italian>12.7x108mm HMG &lt;br/&gt;Mounted on 6T7 Tripod</Italian>
+<Hungarian>12.7x108mm HMG &lt;br/&gt;Mounted on 6T7 Tripod</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_DSHKMPROXY">
+<English>12.7x108mm HMG &lt;br/&gt;Mounted on DShKM Tripod</English>
+<German>12.7x108mm HMG &lt;br/&gt;Montiert auf DShKM Dreibein</German>
+<Russian>12.7x108мм Тяж. Пулемёт &lt;br/&gt;Устанавливается на станок ДШКМ</Russian>
+<Polish>wkm 12.7x108mm &lt;br/&gt;Montować na trójnogu DShKM</Polish>
+<Spanish>12.7x108mm HMG &lt;br/&gt;Mounted on DShKM Tripod</Spanish>
+<French>12.7x108mm HMG &lt;br/&gt;Mounted on DShKM Tripod</French>
+<Czech>12.7x108mm HMG &lt;br/&gt;Namontované na DŠKM trojnožce</Czech>
+<Italian>12.7x108mm HMG &lt;br/&gt;Mounted on DShKM Tripod</Italian>
+<Hungarian>12.7x108mm HMG &lt;br/&gt;Mounted on DShKM Tripod</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_AGS30PROXY">
+<English>30x29mm AGL &lt;br/&gt;Mounted on AGS-30 Tripod</English>
+<German>30x29mm AGL &lt;br/&gt;Montiert auf AGS-30 Dreibein</German>
+<Russian>30x29мм АГ &lt;br/&gt;Устанавливается на станок АГС-30</Russian>
+<Polish>ga 30x29mm &lt;br/&gt;Montować na trójnogu AGS-30</Polish>
+<Spanish>30x29mm AGL &lt;br/&gt;Mounted on AGS-30 Tripod</Spanish>
+<French>30x29mm AGL &lt;br/&gt;Mounted on AGS-30 Tripod</French>
+<Czech>30x29mm AGL &lt;br/&gt;Namontováno na trojnožku AGS-30</Czech>
+<Italian>30x29mm AGL &lt;br/&gt;Mounted on AGS-30 Tripod</Italian>
+<Hungarian>30x29mm AGL &lt;br/&gt;Mounted on AGS-30 Tripod</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_2B14PROXY">
+<English>2B14 82mm Mortar &lt;br/&gt; Cannon &lt;br/&gt;Mounted on 2B14 Base Plate</English>
+<German>2B14 82mm Mörser &lt;br/&gt;Rohr &lt;br/&gt;Montiert auf 2B14 Bodenplatte</German>
+<Russian>2Б14 82мм миномёт &lt;br/&gt;Оружие &lt;br/&gt;Устанавливается на 2Б14 Плиту</Russian>
+<Polish>82mm moździerz 2B14 &lt;br/&gt;Działo 2B14 &lt;br/&gt;Montować na podstawie 2B14</Polish>
+<Spanish>2B14 82mm Mortar &lt;br/&gt;Cannon &lt;br/&gt;Mounted on 2B14 Base Plate</Spanish>
+<French>2B14 82mm Mortar &lt;br/&gt;Cannon &lt;br/&gt;Mounted on 2B14 Base Plate</French>
+<Czech>2B14 82mm Minomet &lt;br/&gt;Cannon &lt;br/&gt;Namontováno na podstavu 2B14</Czech>
+<Italian>2B14 82mm Mortar &lt;br/&gt;Cannon &lt;br/&gt;Mounted on 2B14 Base Plate</Italian>
+<Hungarian>2B14 82mm Mortar &lt;br/&gt;Cannon &lt;br/&gt;Mounted on 2B14 Base Plate</Hungarian>
+</Key>
+
+<Key ID="STR_DSS_ACE_M252TRIPOD">
+<English>M252 81mm Mortar &lt;br/&gt;M3A1 Base Plate</English>
+<German>M252 81mm Mörser &lt;br/&gt;M3A1 Bodenplatte</German>
+<Russian>M252 81мм Миномёт &lt;br/&gt;M3A1 Плита</Russian>
+<Polish>81mm moździerz M252 &lt;br/&gt; Podstawa M3A1</Polish>
+<Spanish>M252 81mm Mortar &lt;br/&gt;M3A1 Base Plate</Spanish>
+<French>M252 81mm Mortar &lt;br/&gt;M3A1 Base Plate</French>
+<Czech>M252 81mm minomet &lt;br/&gt;Podstava M3A1</Czech>
+<Italian>M252 81mm Mortar &lt;br/&gt;M3A1 Base Plate</Italian>
+<Hungarian>M252 81mm Mortar &lt;br/&gt;M3A1 Base Plate</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_M224TRIPOD">
+<English>M224 60mm Mortar &lt;br/&gt;M7 Base Plate</English>
+<German>M224 60mm Mörser &lt;br/&gt;M7 odenplatte</German>
+<Russian>M224 60мм Миномёт &lt;br/&gt;M7 Плита</Russian>
+<Polish>60mm moździerz M224 &lt;br/&gt;Podstawa M7</Polish>
+<Spanish>M224 60mm Mortar &lt;br/&gt;M7 Base Plate</Spanish>
+<French>M224 60mm Mortar &lt;br/&gt;M7 Base Plate</French>
+<Czech>M224 60mm minomet &lt;br/&gt;Podstava M7</Czech>
+<Italian>M224 60mm Mortar &lt;br/&gt;M7 Base Plate</Italian>
+<Hungarian>M224 60mm Mortar &lt;br/&gt;M7 Base Plate</Hungarian>
+</Key>
+<Key ID="STR_DSS_ACE_2B14TRIPOD">
+<English>2B14 82mm Mortar &lt;br/&gt;Base Plate</English>
+<German>2B14 82mm Mörser &lt;br/&gt;Bodenplatte</German>
+<Russian>2B14 82мм Миномёт &lt;br/&gt;Плита</Russian>
+<Polish>82mm moździerz 2B14 &lt;br/&gt;Podstawa</Polish>
+<Spanish>2B14 82mm Mortar &lt;br/&gt;Base Plate</Spanish>
+<French>2B14 82mm Mortar &lt;br/&gt;Base Plate</French>
+<Czech>2B14 82mm minomet &lt;br/&gt;Podstava</Czech>>
+<Italian>2B14 82mm Mortar &lt;br/&gt;Base Plate</Italian>
+<Hungarian>2B14 82mm Mortar &lt;br/&gt;Base Plate</Hungarian>
+</Key>
+</Container></Package></Project>

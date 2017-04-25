@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2">
+<Package name="ACE2">
+<Container name="MODULE_DN">
+<Key ID="STR_ACE_PHUD_1st_ENABLE">
+<English>(Æ) Force 1st person outside vehicles</English>
+<Italian>(Æ) Force 1st person outside vehicles</Italian>
+<German>(Æ) Weapons: Egoperspektive erzwingen</German>
+<Spanish>(Æ) Force 1st person outside vehicles</Spanish>
+<Czech>(Æ) Vynutit první osobu mimo vozidla</Czech>
+<Russian>(Æ) Принудительный вид от 1го лица вне техники</Russian>
+<Polish>(Æ) Wymuś widok 1-szej osoby poza pojazdami</Polish>
+<French>(Æ) Force 1st person outside vehicles</French>
+<Hungarian>(Æ) Force 1st person outside vehicles</Hungarian>
+</Key>
+<Key ID="STR_ACE_PHUD_RESP_ENABLE">
+<English>(Æ) Respawn with same weapons/mags</English>
+<Italian>(Æ) Respawn with same weapons/mags</Italian>
+<German>(Æ) Weapons: Respawn mit gleichen Waffen/Magazinen</German>
+<Spanish>(Æ) Respawn with same weapons/mags</Spanish>
+<Czech>(Æ) Znovuzrození se stejnými zbraněmi/municí</Czech>
+<Russian>(Æ) Возрождение с тем же снаряжением</Russian>
+<Polish>(Æ) Przywracaj wyposażenie przy odrodzeniu</Polish>
+<French>(Æ) Respawn with same weapons/mags</French>
+<Hungarian>(Æ) Respawn with same weapons/mags</Hungarian>
+</Key>
+</Container></Package></Project>

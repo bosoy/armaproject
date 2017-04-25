@@ -1,0 +1,188 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"cba_main",
+		"ace_main",
+		"ace_c_vehicle",
+		"ace_c_weapon",
+		"cacharacters2",
+		"ace_sys_wounds",
+		"ace_sys_map",
+		"ace_sys_weapons",
+		"desert_e",
+		"cacharacters_e"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters_e",
+		"ace_c_vehicle",
+		"ace_sys_wounds",
+		"ace_sys_map",
+		"ace_sys_weapons",
+		"desert_e"
+	};
+	randomSeed=3893425;
+	class Intel
+	{
+		briefingName="ACE2 Demo 1";
+		briefingDescription="Advanced Combat Environment";
+		startWeather=0.39999998;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+	class Groups
+	{
+		items=2;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1112.8081,41.563976,1234.8955};
+					id=0;
+					side="WEST";
+					vehicle="US_Soldier_EP1";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					init="ace_sys_weapons_lock set [0, false]; ace_sys_weapons_test = true";
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={3789.0283,19,3635.0811};
+					id=1;
+					side="LOGIC";
+					vehicle="ACE_Help";
+					leader=1;
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={3735.6563,19,3635.9155};
+					id=2;
+					side="LOGIC";
+					vehicle="ACE_Wounds_Logic";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={3769.8477,19.293785,3670.9404};
+					id=3;
+					side="LOGIC";
+					vehicle="ACE_Map_Logic";
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=1;
+		class Item0
+		{
+			position[]={1112.9346,41.392479,1240.0193};
+			id=4;
+			side="EMPTY";
+			vehicle="ace_sys_weapons_magicbox";
+			skill=0.60000002;
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={3628.2439,18.917011,3570.7019};
+			activationBy="JULIET";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="dummy = configFile execVM ""dumpConfig.sqf""";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"desert_e"
+	};
+	addOnsAuto[]=
+	{
+		"desert_e"
+	};
+	randomSeed=6152870;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"desert_e"
+	};
+	addOnsAuto[]=
+	{
+		"desert_e"
+	};
+	randomSeed=4440357;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"desert_e"
+	};
+	addOnsAuto[]=
+	{
+		"desert_e"
+	};
+	randomSeed=15006085;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};

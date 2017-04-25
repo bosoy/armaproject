@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ArmA2_ACE2">
+<Package name="sys_overheating">
+<Container name="STR_ACE">
+<Key ID="STR_ACE_JAM">
+<English>Jammed</English>
+<German>Ladehemmung</German>
+<Russian>Заклинило</Russian>
+<French>Enrayé(e)</French>
+<Spanish>Jammed</Spanish>
+<Polish>Zacięcie</Polish>
+<Italian>Jammed</Italian>
+<Hungarian>Elakadt</Hungarian>
+<Czech>Zasekla se!</Czech>
+</Key>
+<Key ID="STR_ACE_JAM2">
+<English></English>
+<German></German>
+<Russian></Russian>
+<French></French>
+<Spanish></Spanish>
+<Polish></Polish>
+<Italian></Italian>
+<Hungarian></Hungarian>
+<Czech></Czech>
+</Key>
+<Key ID="STR_ACE_JAMCLEAR">
+<English>Jam cleared</English>
+<German>Ladehemmung behoben</German>
+<Russian>Неисправность устранена</Russian>
+<French>Désenrayé(e)</French>
+<Spanish>Jam cleared</Spanish>
+<Polish>Zacięcie usunięte</Polish>
+<Italian>Jam cleared</Italian>
+<Hungarian>Akadály eltávolítva</Hungarian>
+<Czech>Vyčištěno</Czech>
+</Key>
+<Key ID="STR_ACE_JAMCLEARACT">
+<English>Clear Jam</English>
+<German>Ladehemmung beheben</German>
+<Russian>Устранить заклинивание</Russian>
+<French>Désenrayer</French>
+<Spanish>Clear Jam</Spanish>
+<Polish>Usuń zacięcie</Polish>
+<Italian>Clear Jam</Italian>
+<Hungarian>Akadály eltávolítása</Hungarian>
+<Czech>Uvolnit zásek</Czech>
+</Key>
+<Key ID="STR_ACE_SWAPBARRELACT">
+<English>Swap barrel</English>
+<German>Lauf wechseln</German>
+<Russian>Смена ствола</Russian>
+<French>Swap barrel</French>
+<Spanish>Swap barrel</Spanish>
+<Polish>Wymiana lufy</Polish>
+<Italian>Swap barrel</Italian>
+<Hungarian>Swap barrel</Hungarian>
+<Czech>Vyměnit hlaveň</Czech>
+</Key>
+<Key ID="STR_ACE_SWAPBARRELBAG">
+<English>Sparebarrel bag</English>
+<German>Lauftasche</German>
+<Russian>Чехол со сменным стволом</Russian>
+<French>Sparebarrel bag</French>
+<Spanish>Sparebarrel bag</Spanish>
+<Polish>Torba z zapasową lufą</Polish>
+<Italian>Sparebarrel bag</Italian>
+<Hungarian>Sparebarrel bag</Hungarian>
+<Czech>Pytel na náhradní hlaveň</Czech>
+</Key>
+</Container>
+</Package>
+</Project>

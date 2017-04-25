@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\m_wep_rpg7
+Pbo Type is: Arma Addon
+Sha: '6A320AE0487A1847776B7EEFA23789E319E9C959'
+//////</HEADER>//////

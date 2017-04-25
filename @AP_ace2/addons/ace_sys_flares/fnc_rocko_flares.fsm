@@ -1,0 +1,252 @@
+/*%FSM<COMPILE "G:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, fnc_rocko_flares">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"fnc_rocko_flares",0,250,-75.000000,-100.000000,25.000000,-50.000000,0.000000,"fnc_rocko_flares"};
+item1[] = {"_",4,218,-150.000000,-25.000000,-50.000000,25.000000,1.000000,""};
+item2[] = {"__1",4,218,0.000000,-25.000000,100.000000,25.000000,0.000000,""};
+item3[] = {"_",2,250,-150.000000,50.000000,-50.000000,100.000000,0.000000,""};
+item4[] = {"__1",2,250,0.000000,50.000000,100.000000,100.000000,0.000000,""};
+item5[] = {"",7,210,-104.000000,146.000000,-96.000000,154.000000,0.000000,""};
+item6[] = {"",7,210,46.000000,146.000000,54.000000,154.000000,0.000000,""};
+item7[] = {"_",4,218,-75.000000,200.000000,25.000000,250.000000,1.000000,""};
+item8[] = {"__1",4,218,75.000000,200.000000,175.000000,250.000000,0.000000,""};
+item9[] = {"__2",2,4346,75.000000,300.000000,175.000000,350.000000,0.000000,""};
+item10[] = {"__3",2,250,-75.000000,275.000000,25.000000,325.000000,0.000000,""};
+item11[] = {"",7,210,-104.000000,296.000000,-96.000000,304.000000,0.000000,""};
+item12[] = {"_",8,218,75.000000,375.000000,175.000000,425.000000,0.000000,""};
+item13[] = {"__4",1,250,75.000000,450.000000,175.000000,500.000000,0.000000,""};
+link0[] = {0,1};
+link1[] = {0,2};
+link2[] = {1,3};
+link3[] = {2,4};
+link4[] = {3,5};
+link5[] = {4,6};
+link6[] = {5,6};
+link7[] = {6,7};
+link8[] = {6,8};
+link9[] = {7,10};
+link10[] = {8,9};
+link11[] = {9,12};
+link12[] = {10,11};
+link13[] = {11,5};
+link14[] = {12,13};
+globals[] = {25.000000,1,0,0,0,640,480,1,17,6316128,1,-363.507782,642.097717,671.642578,-92.222969,765,537,1};
+window[] = {0,-1,-1,-1,-1,882,200,1429,200,1,783};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "fnc_rocko_flares";
+  class States
+  {
+    /*%FSM<STATE "fnc_rocko_flares">*/
+    class fnc_rocko_flares
+    {
+      name = "fnc_rocko_flares";
+      init = /*%FSM<STATEINIT""">*/"/* ace_sys_flares (.pbo) | (c) 2009 by rocko */" \n
+       "" \n
+       "private [""_col"", ""_fx_flare"", ""_fx_smoke"", ""_factor""];" \n
+       "private [""_ammo"",""_flare""];" \n
+       "" \n
+       "_ammo = _this select 4;" \n
+       "_flare = _this select 6;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 1.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(isArray(configFile >> ""CfgAmmo"" >> _ammo >> ""ACE_SYS_FLARES_COLOR""))"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__1">*/
+        class __1
+        {
+          priority = 0.000000;
+          to="__1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "_">*/
+    class _
+    {
+      name = "_";
+      init = /*%FSM<STATEINIT""">*/"_col = getArray(configFile >> ""CfgAmmo"" >> _ammo >> ""ACE_SYS_FLARES_COLOR"");"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 1.000000;
+          to="__3";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"alive _flare && {((velocity _flare) select 2 > 0)}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__1">*/
+        class __1
+        {
+          priority = 0.000000;
+          to="__2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__1">*/
+    class __1
+    {
+      name = "__1";
+      init = /*%FSM<STATEINIT""">*/"_col = getArray(configFile >> ""CfgAmmo"" >>_ammo >> ""lightColor"");"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 1.000000;
+          to="__3";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"alive _flare && {((velocity _flare) select 2 > 0)}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__1">*/
+        class __1
+        {
+          priority = 0.000000;
+          to="__2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__2">*/
+    class __2
+    {
+      name = "__2";
+      init = /*%FSM<STATEINIT""">*/"#define __vel velocity _flare" \n
+       "#define __i 0.001" \n
+       "#define __s ( (player distance _flare) / 400 )" \n
+       "" \n
+       "#define __flareParticle1 ""\Ca\Data\kouleSvetlo.p3d""" \n
+       "#define __flareParticle2 ""\ca\Data\ParticleEffects\Universal\Universal""" \n
+       "" \n
+       "#define __fx_flare1 _fx_flare1 setParticleParams [[__flareParticle1, 1, 1, 1], """", ""Billboard"", \" \n
+       "1, 0.1, [0, 0, 0.1], \" \n
+       "__vel, \" \n
+       "1, 1, 0.8, 0.5, \" \n
+       "[_factor,(_factor/1.5),(_factor/2)], \" \n
+       "[_col,_col,_col], \" \n
+       "[1000], 0.1, 0.1, """", """", _flare,360]" \n
+       "" \n
+       "#define __fx_flare2 _fx_flare2 setParticleParams [[__flareParticle2, 16, 13, 2, 0], """", ""Billboard"", \" \n
+       "1, 0.1, [0, 0, 0], \" \n
+       "[0,0,0], \" \n
+       "1, 1, 0.8, 0.5, \" \n
+       "[0.5,0], \" \n
+       "[_col_help,_col_help,_col_help], \" \n
+       "[1000], 0.1, 0.1, """", """", _flare,360]" \n
+       "" \n
+       "_col_help = _col;" \n
+       "_col_help set [3, 0.5];" \n
+       "" \n
+       "_factor = __s; if (_factor > 12.5) then { _factor = 12.5; };" \n
+       "" \n
+       "_fx_flare1 = ""#particleSource"" createVehicleLocal (getPos _flare);" \n
+       "_fx_flare1 setParticleRandom [0.5, [0.1, 0.1, 0.1], [0, 0, 0], 0, 0.1, [0.1, 0.1, 0.1, 0.05], 0, 0];" \n
+       "_fx_flare1 setDropInterval __i;" \n
+       "" \n
+       "_fx_flare2 = ""#particleSource"" createVehicleLocal (getPos _flare);" \n
+       "_fx_flare2 setParticleRandom [0.03, [0, 0, 0], [0, 0, 0], 0, 0.2, [0, 0, 0, 0], 0, 0, 360];" \n
+       "_fx_flare2 setDropInterval __i;" \n
+       "" \n
+       "__fx_flare1;" \n
+       "__fx_flare2;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__4";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(velocity _flare) select 2 == 0"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__3">*/
+    class __3
+    {
+      name = "__3";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 1.000000;
+          to="__3";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"alive _flare && {((velocity _flare) select 2 > 0)}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__1">*/
+        class __1
+        {
+          priority = 0.000000;
+          to="__2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__4">*/
+    class __4
+    {
+      name = "__4";
+      init = /*%FSM<STATEINIT""">*/"_fx_flare1 setDropInterval 0;" \n
+       "deleteVehicle _fx_flare1;" \n
+       "" \n
+       "_fx_flare2 setDropInterval 0;" \n
+       "deleteVehicle _fx_flare2;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="fnc_rocko_flares";
+  finalStates[] =
+  {
+    "__4",
+  };
+};
+/*%FSM</COMPILE>*/

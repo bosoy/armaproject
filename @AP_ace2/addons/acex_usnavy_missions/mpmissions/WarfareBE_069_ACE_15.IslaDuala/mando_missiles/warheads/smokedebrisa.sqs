@@ -1,0 +1,15 @@
+;mando explosion falling debris
+;smokedebris.sqs v1.0
+;Jan 2007 Mandoble
+;
+;This script is called automatically by debris drops created by mando_missilehead1a.sqf and mando_missilehead2a.sqf
+;
+_pos = _this
+_mass  = 1.275
+_vol   = 1.0
+_rubb  = 1
+_size1  = [0.5,2,2.5,3]
+_type = "\ca\data\cl_basic"
+
+drop [_type, "", "Billboard", 100, 3, _pos, [0,0,0], 0.5, _mass, _vol, _rubb/2, _size1, [[1,1,1,0.6],[1,1,1,0.4],[0.7,0.7,0.7,0.2],[0,0,0,0]], [0,1,0], 0.1, 0.1, "", "", ""]
+exit

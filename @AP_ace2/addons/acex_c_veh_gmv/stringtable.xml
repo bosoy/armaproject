@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACEX">
+<Package name="c_veh_gmv">
+<Container name="STR_WDN">
+<Key ID="STR_DN_ACE_GMV_HMMWV_CODRIVER">
+<German>Schütze (vorn)</German>
+<English>gunner (front)</English>
+<Italian>gunner (front)</Italian>
+<Spanish>gunner (front)</Spanish>
+<French>Tireur (avant)</French>
+<Czech>Střelec (přední)</Czech>
+<Russian>Стрелок (курсовой)</Russian>
+<Polish>przedni strzelec</Polish>
+<Hungarian>elülső lövész</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_GMV_HMMWV_BACKSEAT">
+<German>Schütze (hinten)</German>
+<English>gunner (back)</English>
+<Italian>gunner (back)</Italian>
+<Spanish>gunner (back)</Spanish>
+<French>Tireur (arrière)</French>
+<Czech>Střelec (zadní)</Czech>
+<Russian>Стрелок (кормовой)</Russian>
+<Polish>tylny strzelec</Polish>
+<Hungarian>hátsó lövész</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

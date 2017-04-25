@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ArmA2_ACE2">
+<Package name="sys_interaction">
+<!-- Titles SUB-->
+<Container name="STR_ACE_MENU">
+<Key ID="STR_ACE_MENU_TAPSHOULDER">
+<English>Tap shoulder</English>
+<German>Schulterklopfen</German>
+<Spanish>Tap shoulder</Spanish>
+<Czech>Poklepat po rameni</Czech>
+<Russian>Хлопнуть по плечу</Russian>
+<Italian>Tap shoulder</Italian>
+<Polish>Poklep po ramieniu</Polish>
+<French>Tap shoulder</French>
+<Hungarian>Tap shoulder</Hungarian>
+</Key>
+<Key ID="STR_ACE_MENU_KNOCKDOWN">
+<English>Knock down</English>
+<German>Niederschlagen</German>
+<Spanish>Knock down</Spanish>
+<Czech>Srazit k zemi</Czech>
+<Russian>Нокдаун</Russian>
+<Italian>Knock down</Italian>
+<Polish>Ogłusz</Polish>
+<French>Knock down</French>
+<Hungarian>Knock down</Hungarian>
+</Key>
+</Container>
+<Container name="STR_DN_ACE">
+<Key ID="STR_ACE_TITLE_INTERACTIONMENU">
+<English>Interactionmenu</English>
+<German>Interaktionsmenü</German>
+<Spanish>Interactionmenu</Spanish>
+<Czech>Interakční menu</Czech>
+<French>Interactionmenu</French>
+<Polish>Menu interakcji</Polish>
+<Italian>Interactionmenu</Italian>
+<Russian>Меню взаимодействия</Russian>
+<Hungarian>Interactionmenu</Hungarian>
+</Key>
+<Key ID="STR_ACE_TITLE_INTERACTIONSELF">
+<English>with self</English>
+<German>Interaktion vom Spieler</German>
+<Spanish>with self</Spanish>
+<Czech>se sebou</Czech>
+<French>with self</French>
+<Polish>ze sobą</Polish>
+<Italian>with self</Italian>
+<Russian>на себе</Russian>
+<Hungarian>with self</Hungarian>
+</Key>
+<Key ID="STR_ACE_TITLE_INTERACTIONOTHER">
+<English>with others</English>
+<German>Interaktion mit Umwelt</German>
+<Spanish>with others</Spanish>
+<Czech>s ostatními</Czech>
+<French>with others</French>
+<Polish>z innymi</Polish>
+<Italian>with others</Italian>
+<Russian>на объекте</Russian>
+<Hungarian>with others</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_TAPSHOULDER">
+<English>Tap shoulder</English>
+<German>Schulter klopfen</German>
+<Spanish>Tap shoulder</Spanish>
+<Czech>Poklepat po rameni</Czech>
+<Russian>Хлопнуть по плечу</Russian>
+<Italian>Tap shoulder</Italian>
+<Polish>Poklep po ramieniu</Polish>
+<French>Tap shoulder</French>
+<Hungarian>Tap shoulder</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_REHAB">
+<English>Rehab</English>
+<German>Rehabilitieren</German>
+<Spanish>Rehab</Spanish>
+<Czech>Vrátit funkci</Czech>
+<Russian>Реабилитировать</Russian>
+<Italian>Rehab</Italian>
+<Polish>Zrehabilituj</Polish>
+<French>Rehabiliter</French>
+<Hungarian>Ellátás</Hungarian>
+</Key>
+<Key ID="STR_ACE_PRISONUNLOAD">
+<English>Get unit out of vehicle</English>
+<Italian>Get unit out of vehicle</Italian>
+<German>Gefangenen ausladen</German>
+<Spanish>Get unit out of vehicle</Spanish>
+<Czech>Get unit out of vehicle</Czech>
+<Russian>Get unit out of vehicle</Russian>
+<Polish>Get unit out of vehicle</Polish>
+<French>Get unit out of vehicle</French>
+<Hungarian>Get unit out of vehicle</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_DISARM">
+<English>Disarm</English>
+<German>Entwaffnen</German>
+<Spanish>Disarm</Spanish>
+<Czech>Odzbrojit</Czech>
+<Russian>Разоружить</Russian>
+<Italian>Disarm</Italian>
+<Polish>Przeszukaj i rozbrój</Polish>
+<French>Désarmer</French>
+<Hungarian>Ártalmatlanít</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_SEARCH">
+<English>Search</English>
+<German>Durchsuchen</German>
+<Spanish>Search</Spanish>
+<Czech>Prohledat</Czech>
+<Russian>Обыскать</Russian>
+<Italian>Search</Italian>
+<Polish>Przeszukaj</Polish>
+<French>Fouiller</French>
+<Hungarian>Motoz</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_ARREST">
+<English>Arrest</English>
+<German>Fesseln</German>
+<Spanish>Arrest</Spanish>
+<Czech>Zatknout</Czech>
+<Russian>Арестовать</Russian>
+<Italian>Arrest</Italian>
+<Polish>Zwiąż</Polish>
+<French>Arrêter</French>
+<Hungarian>Fogjul ejt</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_CUFF">
+<English>Handcuff</English>
+<German>Fesseln</German>
+<Spanish>Handcuff</Spanish>
+<Czech>Pouta</Czech>
+<Russian>Надеть наручники</Russian>
+<Italian>Handcuff</Italian>
+<Polish>Skuj w kajdanki</Polish>
+<French>Handcuff</French>
+<Hungarian>Handcuff</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_UNCUFF">
+<English>Uncuff</English>
+<German>Losbinden</German>
+<Spanish>Uncuff</Spanish>
+<Czech>Sundat pouta</Czech>
+<Russian>Снять наручники</Russian>
+<Italian>Uncuff</Italian>
+<Polish>Otwórz kajdanki</Polish>
+<French>Uncuff</French>
+<Hungarian>Uncuff</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_CONFIRMYES">
+<English>Accept</English>
+<German>Akzeptieren</German>
+<Spanish>Accept</Spanish>
+<Czech>Potvrdit</Czech>
+<Russian>Разрешить</Russian>
+<Italian>Accept</Italian>
+<Polish>Zezwól</Polish>
+<French>Accept</French>
+<Hungarian>Accept</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_DENYFUCKNOOES">
+<English>Decline</English>
+<German>Ablehnen</German>
+<Spanish>Decline</Spanish>
+<Czech>Odmítnout</Czech>
+<Russian>Отклонить</Russian>
+<Italian>Decline</Italian>
+<Polish>Odrzuć</Polish>
+<French>Decline</French>
+<Hungarian>Decline</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_AYAYAYAY">
+<English>%1 wants to access your gear</English>
+<German>%1 möchte Deine Ausrüstung sehen</German>
+<Spanish>%1 wants to access your gear</Spanish>
+<Czech>%1 chce přístup k tvému vybavení</Czech>
+<Russian>%1 хочет доступ к вашему снаряжению</Russian>
+<Italian>%1 wants to access your gear</Italian>
+<Polish>%1 prosi o dostęp do twojego ekwipunku</Polish>
+<French>%1 wants to access your gear</French>
+<Hungarian>%1 wants to access your gear</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_LOADINVEHICLE">
+<English>%1 is loading you in %2</English>
+<German>%1 is loading you in %2</German>
+<Spanish>%1 is loading you in %2</Spanish>
+<Czech>%1 is loading you in %2</Czech>
+<Russian>%1 кладет вас в %2</Russian>
+<Italian>%1 is loading you in %2</Italian>
+<Polish>%1 is loading you in %2</Polish>
+<French>%1 is loading you in %2</French>
+<Hungarian>%1 is loading you in %2</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_CZECHGIRLSANDMONEY">
+<English>%1 wants to help you walking</English>
+<German>%1 möchte Dir aufhelfen</German>
+<Spanish>%1 wants to help you walking</Spanish>
+<Czech>%1 ti chce pomoct chodit</Czech>
+<Russian>%1 хочет помочь вас перенести</Russian>
+<Italian>%1 wants to help you walking</Italian>
+<Polish>%1 chce pomóc w chodzeniu</Polish>
+<French>%1 wants to help you walking</French>
+<Hungarian>%1 wants to help you walking</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_ILOVETHESMELLOFPUSSYINTHEMORNING">
+<English>%1 wants to search you</English>
+<German>%1 möchte Dich durchsuchen</German>
+<Spanish>%1 wants to search you</Spanish>
+<Czech>%1 tě chce prohledat</Czech>
+<Russian>%1 хочет вас осмотреть</Russian>
+<Italian>%1 wants to search you</Italian>
+<Polish>%1 chce cię przeszukać</Polish>
+<French>%1 wants to search you</French>
+<Hungarian>%1 wants to search you</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_TSCHUESSEN">
+<English>%1 wants to give you morphine</English>
+<German>%1 möchte Dir Morphin geben</German>
+<Spanish>%1 wants to give you morphine</Spanish>
+<Czech>%1 ti chce dát morfin</Czech>
+<Russian>%1 хочет вколоть вам морфин</Russian>
+<Italian>%1 wants to give you morphine</Italian>
+<Polish>%1 chce dać ci zastrzyk z morfiny</Polish>
+<French>%1 wants to give you morphine</French>
+<Hungarian>%1 wants to give you morphine</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_ISUCKATSTRINTABLENAMES">
+<English>%1 wants to give you epinephrine</English>
+<German>%1 möchte Dir Epinephrin geben</German>
+<Spanish>%1 wants to give you epinephrine</Spanish>
+<Czech>%1 ti chce dát adrenalin</Czech>
+<Russian>%1 хочет вколоть вам адреналин</Russian>
+<Italian>%1 wants to give you epinephrine</Italian>
+<Polish>%1 chce dać ci zastrzyk z adrenaliny</Polish>
+<French>%1 wants to give you epinephrine</French>
+<Hungarian>%1 wants to give you epinephrine</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_BLUEBLUEEYES">
+<English>You examine %1 and he appears fine.</English>
+<German>%1 scheint es gut zu gehen.</German>
+<Spanish>You examine %1 and he appears fine.</Spanish>
+<Czech>Prohlédl jsi %1, vypadá v pořádku.</Czech>
+<Russian>Вы осмотрели %1, он в порядке.</Russian>
+<Italian>You examine %1 and he appears fine.</Italian>
+<Polish>%1 jest cały i zdrowy.</Polish>
+<French>Vous avez examiné %1 and il (elle) semble sûr.</French>
+<Hungarian>Ellenőrizted %1 -t és úgy tűnik jól van.</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_SLEEPINGDOWN">
+<English>%1 is waking up...</English>
+<German>%1 kommt zu sich.</German>
+<Spanish>%1 is waking up...</Spanish>
+<Czech>%1 se probouzí...</Czech>
+<Russian>%1 приходит в себя...</Russian>
+<Italian>%1 is waking up...</Italian>
+<Polish>%1 dochodzi do siebie...</Polish>
+<French>%1 se réveille...</French>
+<Hungarian>%1 magához tér</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_HEISDEAD">
+<English>Dead</English>
+<German>Tot</German>
+<Spanish>Muerto</Spanish>
+<Czech>Mrtev</Czech>
+<Russian>Умер</Russian>
+<Italian>Morto</Italian>
+<Polish>żyje</Polish>
+<French>Mort</French>
+<Hungarian>Meghalt</Hungarian>
+</Key>
+</Container>
+<Container name="STR_ACE_MENU">
+<Key ID="STR_ACE_MENU_EQUIPPLAYER">
+<German>Ausrüstung (Spieler)</German>
+<English>Equipment/Player</English>
+<Italian>Equipment/Player</Italian>
+<Spanish>Equipment/Player</Spanish>
+<French>Equipement/Joueur</French>
+<Czech>Vybavení/Hráč</Czech>
+<Russian>Снаряжение/Игрок</Russian>
+<Polish>Wyposażenie gracza</Polish>
+<Hungarian>Felszerelés/Játékos</Hungarian>
+</Key>
+</Container>
+<Container name="STR_ACE_CALLS">
+<Key ID="STR_ACE_CALL_CALLFRIENDLY">
+<German>Hey %1, hier rüber</German>
+<English>Hey %1, come over here</English>
+<Italian>Hey %1, come over here</Italian>
+<Spanish>Hey %1, come over here</Spanish>
+<French>Eh %1, viens voir ici</French>
+<Czech>Hej, %1, pojď sem</Czech>
+<Russian>Эй %1, иди сюда</Russian>
+<Polish>%1, chodź tutaj!</Polish>
+<Hungarian>Hey %1, come over here</Hungarian>
+</Key>
+<Key ID="STR_ACE_CALL_CALLFRIENDLYFOLLOW">
+<German>Hey %1, komm mit</German>
+<English>Hey %1, follow me</English>
+<Italian>Hey %1, follow me</Italian>
+<Spanish>Hey %1, follow me</Spanish>
+<French>Hey %1, follow me</French>
+<Czech>Hej, %1, následuj mě</Czech>
+<Russian>%1, следуй за мной</Russian>
+<Polish>%1, chodź za mną!</Polish>
+<Hungarian>Hey %1, follow me</Hungarian>
+</Key>
+<Key ID="STR_ACE_CALL_WANTSOME">
+<German>%1 will etwas von Dir</German>
+<English>%1 wants something from you</English>
+<Italian>%1 wants something from you</Italian>
+<Spanish>%1 wants something from you</Spanish>
+<French>%1 veut vous demander quelque chose</French>
+<Czech>%1 od tebe něco chce</Czech>
+<Russian>%1 хочет что-то от вас</Russian>
+<Polish>%1 chce czegoś od ciebie</Polish>
+<Hungarian>%1 wants something from you</Hungarian>
+</Key>
+<Key ID="STR_ACE_CALL_X_WANTSOME">
+<German>Irgendjemand will etwas von Dir</German>
+<English>Someone wants something from you</English>
+<Italian>Someone wants something from you</Italian>
+<Spanish>Someone wants something from you</Spanish>
+<French>Quelqu'un veut vous demander quelque chose</French>
+<Czech>Někdo po tobě něco chce</Czech>
+<Russian>Кто-то хочет что-то от вас</Russian>
+<Polish>Ktoś chce czegoś od ciebie</Polish>
+<Hungarian>Someone wants something from you</Hungarian>
+</Key>
+<Key ID="STR_ACE_CALL_X_TAPSHOULDER">
+<German>%1 klopft dir auf die Schulter</German>
+<English>%1 taps your shoulder</English>
+<Italian>%1 taps your shoulder</Italian>
+<Spanish>%1 taps your shoulder</Spanish>
+<French>%1 taps your shoulder</French>
+<Czech>%1 tě poklepal po raměni</Czech>
+<Russian>%1 хлопнул вас по плечу</Russian>
+<Polish>%1 poklepał Cię po ramieniu</Polish>
+<Hungarian>%1 taps your shoulder</Hungarian>
+</Key>
+<Key ID="STR_ACE_CALL_CALLHOSTILE">
+<German>Stehenbleiben!</German>
+<English>Freeze!</English>
+<Italian>Freeze!</Italian>
+<Spanish>Freeze!</Spanish>
+<French>Ne bougez plus!</French>
+<Czech>Stát, ani hnout!</Czech>
+<Russian>Стоять!</Russian>
+<Polish>Stój!</Polish>
+<Hungarian>Freeze!</Hungarian>
+</Key>
+<Key ID="STR_ACE_CALL_WAIT">
+<German>Warten...</German>
+<English>Wait...</English>
+<Italian>Wait...</Italian>
+<Spanish>Wait...</Spanish>
+<French>Attendez...</French>
+<Czech>Čekej...</Czech>
+<Russian>Ждите...</Russian>
+<Polish>Czekaj...</Polish>
+<Hungarian>Wait...</Hungarian>
+</Key>
+<!-- Civilian Interaction -->
+<Key ID="STR_ACE_CI_VERBALCOMMAND">
+<German>Befehl:</German>
+<English>Verbal Command:</English>
+<Italian>Verbal Command:</Italian>
+<Spanish>Verbal Command:</Spanish>
+<French>Verbal Command:</French>
+<Czech>Slovní příkaz:</Czech>
+<Russian>Устный приказ:</Russian>
+<Polish>Polecenie głosowe:</Polish>
+<Hungarian>Verbal Command:</Hungarian>
+</Key>
+<Key ID="STR_ACE_CI_VCFREEZE">
+<German>Stehenbleiben!</German>
+<English>Freeze!</English>
+<Italian>Freeze!</Italian>
+<Spanish>Freeze!</Spanish>
+<French>Ne bougez plus!</French>
+<Czech>Stát, ani hnout!</Czech>
+<Russian>Стоять!</Russian>
+<Polish>Stój!</Polish>
+<Hungarian>Freeze!</Hungarian>
+</Key>
+<Key ID="STR_ACE_CI_VCGETDOWN">
+<German>Hinlegen!</German>
+<English>Get down!</English>
+<Italian>Get down!</Italian>
+<Spanish>Get down!</Spanish>
+<French>Get down!</French>
+<Czech>K zemi!</Czech>
+<Russian>Лечь на пол!</Russian>
+<Polish>Na ziemię!</Polish>
+<Hungarian>Get down!</Hungarian>
+</Key>
+<Key ID="STR_ACE_CI_VCCLEARAREA">
+<German>Verschwinde!</German>
+<English>Clear area!</English>
+<Italian>Clear area!</Italian>
+<Spanish>Clear area!</Spanish>
+<French>Clear area!</French>
+<Czech>Oblast čistá!</Czech>
+<Russian>Покинуть территорию!</Russian>
+<Polish>Oczyścić teren!</Polish>
+<Hungarian>Clear area!</Hungarian>
+</Key>
+<Key ID="STR_ACE_CI_VCGETINSIDE">
+<German>Geh ins Haus!</German>
+<English>Get inside!</English>
+<Italian>Get inside!</Italian>
+<Spanish>Get inside!</Spanish>
+<French>Get inside!</French>
+<Czech>Dovnitř!</Czech>
+<Russian>Внутрь!</Russian>
+<Polish>Do środka!</Polish>
+<Hungarian>Get inside!</Hungarian>
+</Key>
+<Key ID="STR_ACE_CI_VCGETOUTCAR">
+<German>Austeigen!</German>
+<English>Get out of the car!</English>
+<Italian>Get out of the car!</Italian>
+<Spanish>Get out of the car!</Spanish>
+<French>Get out of the car!</French>
+<Czech>Ven z auta!</Czech>
+<Russian>Выйти из машины!</Russian>
+<Polish>Z wozu!</Polish>
+<Hungarian>Get out of the car!</Hungarian>
+</Key>
+<Key ID="STR_ACE_CI_VCSTOPCAR">
+<German>Anhalten!</German>
+<English>Stop the car!</English>
+<Italian>Stop the car!</Italian>
+<Spanish>Stop the car!</Spanish>
+<French>Stop the car!</French>
+<Czech>Zastav auto!</Czech>
+<Russian>Остановить машину!</Russian>
+<Polish>Stać!</Polish>
+<Hungarian>Stop the car!</Hungarian>
+</Key>
+<Key ID="STR_ACE_IA_KNOCKDOWN">
+<German>Person niederschlagen</German>
+<English>Knockdown person</English>
+<Italian>Knockdown person</Italian>
+<Spanish>Knockdown person</Spanish>
+<French>Knockdown person</French>
+<Czech>Udeřit osobu</Czech>
+<Russian>В нокдаун</Russian>
+<Polish>Ogłusz</Polish>
+<Hungarian>Knockdown person</Hungarian>
+</Key>
+<Key ID="STR_ACE_IA_MODDISABLEKNOCKDOWN">
+<German>(Æ) Interaction: Niederschlagen ausschalten</German>
+<English>(Æ) Disable Knockdown</English>
+<Italian>(Æ) Disable Knockdown</Italian>
+<Spanish>(Æ) Disable Knockdown</Spanish>
+<French>(Æ) Disable Knockdown</French>
+<Czech>(Æ) Zakázat udeřování osob</Czech>
+<Russian>(Æ) Отключить нокдаун</Russian>
+<Polish>(Æ) Bez ogłuszania</Polish>
+<Hungarian>(Æ) Disable Knockdown</Hungarian>
+</Key>
+<Key ID="STR_ACE_IA_NOCIVILIANINTERACTION">
+<German>(Æ) Interaction: Zivilisten ausschalten</German>
+<English>(Æ) No civilian interaction</English>
+<Italian>(Æ) No civilian interaction</Italian>
+<Spanish>(Æ) No civilian interaction</Spanish>
+<French>(Æ) No civilian interaction</French>
+<Czech>(Æ) Zakázat interakci s civilisty</Czech>
+<Russian>(Æ) Отключить взаимодействие с гражданскими</Russian>
+<Polish>(Æ) Bez interakcji z cywilami</Polish>
+<Hungarian>(Æ) No civilian interaction</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

@@ -1,0 +1,324 @@
+?!isServer: exit
+
+_fallposx = _this select 0
+_fallposy = _this select 1
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Man", 100]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Thing", 100]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["StaticWeapon", 100]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Motorcycle", 100]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Car", 100]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Ship", 100]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Air", 100]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Tank", 100]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Static", 100]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+~0.10
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Man", 200]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Thing", 200]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["StaticWeapon", 200]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Motorcycle", 200]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Car", 200]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Ship", 200]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Air", 200]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Tank", 200]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Static", 200]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+~0.15
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Man", 400]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Thing", 400]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["StaticWeapon", 400]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Motorcycle", 400]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Car", 400]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Ship", 400]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Air", 400]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Tank", 400]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Static", 400]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+~0.20
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Man", 600]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Thing", 600]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["StaticWeapon", 600]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Motorcycle", 600]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Car", 600]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Ship", 600]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Air", 600]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Tank", 600]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Static", 600]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+~0.25
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Man", 800]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Thing", 800]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["StaticWeapon", 800]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Motorcycle", 800]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Car", 800]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Ship", 800]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Air", 800]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Tank", 800]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Static", 800]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+~0.30
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Man", 1000]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Thing", 1000]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["StaticWeapon", 1000]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Motorcycle", 1000]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Car", 1000]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Ship", 1000]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Air", 1000]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Tank", 1000]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Static", 1000]
+{_x setdammage ((getdammage _x) + 1.0)} forEach _array
+
+~0.35
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Man", 1200]
+{_x setdammage ((getdammage _x) + 0.3)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Thing", 1200]
+{_x setdammage ((getdammage _x) + 0.3)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["StaticWeapon", 1200]
+{_x setdammage ((getdammage _x) + 0.2)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Motorcycle", 1200]
+{_x setdammage ((getdammage _x) + 0.2)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Car", 1200]
+{_x setdammage ((getdammage _x) + 0.2)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Ship", 1200]
+{_x setdammage ((getdammage _x) + 0.2)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Air", 1200]
+{_x setdammage ((getdammage _x) + 0.2)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Tank", 1200]
+{_x setdammage ((getdammage _x) + 0.2)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Static", 1200]
+{_x setdammage ((getdammage _x) + 0.1)} forEach _array
+
+~0.40
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Man", 1400]
+{_x setdammage ((getdammage _x) + 0.2)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Thing", 1400]
+{_x setdammage ((getdammage _x) + 0.2)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["StaticWeapon", 1400]
+{_x setdammage ((getdammage _x) + 0.2)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Motorcycle", 1400]
+{_x setdammage ((getdammage _x) + 0.2)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Car", 1400]
+{_x setdammage ((getdammage _x) + 0.2)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Ship", 1400]
+{_x setdammage ((getdammage _x) + 0.2)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Air", 1400]
+{_x setdammage ((getdammage _x) + 0.2)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Tank", 1400]
+{_x setdammage ((getdammage _x) + 0.1)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Static", 1400]
+{_x setdammage ((getdammage _x) + 0.1)} forEach _array
+
+~0.45
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Man", 1600]
+{_x setdammage ((getdammage _x) + 0.2)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Thing", 1600]
+{_x setdammage ((getdammage _x) + 0.2)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["StaticWeapon", 1600]
+{_x setdammage ((getdammage _x) + 0.2)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Motorcycle", 1600]
+{_x setdammage ((getdammage _x) + 0.2)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Car", 1600]
+{_x setdammage ((getdammage _x) + 0.2)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Ship", 1600]
+{_x setdammage ((getdammage _x) + 0.2)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Air", 1600]
+{_x setdammage ((getdammage _x) + 0.1)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Tank", 1600]
+{_x setdammage ((getdammage _x) + 0.1)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Static", 1600]
+{_x setdammage ((getdammage _x) + 0.1)} forEach _array
+
+~0.50
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Man", 1800]
+{_x setdammage ((getdammage _x) + 0.2)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Thing", 1800]
+{_x setdammage ((getdammage _x) + 0.2)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["StaticWeapon", 1800]
+{_x setdammage ((getdammage _x) + 0.2)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Motorcycle", 1800]
+{_x setdammage ((getdammage _x) + 0.2)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Car", 1800]
+{_x setdammage ((getdammage _x) + 0.1)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Ship", 1800]
+{_x setdammage ((getdammage _x) + 0.1)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Air", 1800]
+{_x setdammage ((getdammage _x) + 0.1)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Tank", 1800]
+{_x setdammage ((getdammage _x) + 0.1)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Static", 1800]
+{_x setdammage ((getdammage _x) + 0.1)} forEach _array
+
+~0.55
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Man", 2000]
+{_x setdammage ((getdammage _x) + 0.2)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Thing", 2000]
+{_x setdammage ((getdammage _x) + 0.2)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["StaticWeapon", 2000]
+{_x setdammage ((getdammage _x) + 0.2)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Motorcycle", 2000]
+{_x setdammage ((getdammage _x) + 0.1)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Car", 2000]
+{_x setdammage ((getdammage _x) + 0.1)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Ship", 2000]
+{_x setdammage ((getdammage _x) + 0.1)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Air", 2000]
+{_x setdammage ((getdammage _x) + 0.1)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Tank", 2000]
+{_x setdammage ((getdammage _x) + 0.1)} forEach _array
+
+_array = [_fallposx,_fallposy,0] nearObjects ["Static", 2000]
+{_x setdammage ((getdammage _x) + 0.1)} forEach _array
+
+
+exit

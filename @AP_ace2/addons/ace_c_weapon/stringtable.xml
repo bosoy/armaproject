@@ -1,0 +1,2858 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACE">
+<Package name="c_weapon">
+<Container name="STR_VC">
+<Key ID="STR_VC_ACE_AMMO">
+<German>Æ Munition</German>
+<English>Æ Ammunition</English>
+<Italian>Æ Munizioni</Italian>
+<Spanish>Æ Ammunition</Spanish>
+<French>Æ Munitions</French>
+<Czech>Æ Munice</Czech>
+<Russian>Æ Боеприпасы</Russian>
+<Polish>Æ Amunicja</Polish>
+<Hungarian>Æ Lőszer</Hungarian>
+</Key>
+<Key ID="STR_VC_ACE_AMMO_TRANSPORT_US">
+<German>Æ Transportkisten (BLUFOR)</German>
+<English>Æ US Transport Boxes</English>
+<Italian>Æ US Transport Boxes</Italian>
+<Spanish>Æ US Transport Boxes</Spanish>
+<French>Æ US Transport Boxes</French>
+<Czech>Æ US Transport Boxes</Czech>
+<Russian>Æ US Ящики для переноски</Russian>
+<Polish>Æ Skrzynie transportowe US</Polish>
+<Hungarian>Æ US Transport Boxes</Hungarian>
+</Key>
+<Key ID="STR_VC_ACE_AMMO_TRANSPORT_RU">
+<German>Æ Transportkisten (OPFOR)</German>
+<English>Æ RU Transport Boxes</English>
+<Italian>Æ RU Transport Boxes</Italian>
+<Spanish>Æ RU Transport Boxes</Spanish>
+<French>Æ RU Transport Boxes</French>
+<Czech>Æ RU Transport Boxes</Czech>
+<Russian>Æ РФ Ящики для переноски</Russian>
+<Polish>Æ Skrzynie transportowe FR</Polish>
+<Hungarian>Æ RU Transport Boxes</Hungarian>
+</Key>
+</Container>
+<Container name = "STR_DN">
+<Key ID="STR_DN_ACE_GP30">
+<German>GP-30</German>
+<English>GP-30</English>
+<Italian>GP-30</Italian>
+<Spanish>GP-30</Spanish>
+<French>GP-30</French>
+<Czech>GP-30</Czech>
+<Russian>ГП-30</Russian>
+<Polish>GP-30</Polish>
+<Hungarian>GP-30</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_GP34">
+<German>GP-34</German>
+<English>GP-34</English>
+<Italian>GP-34</Italian>
+<Spanish>GP-34</Spanish>
+<French>GP-34</French>
+<Czech>GP-34</Czech>
+<Russian>ГП-34</Russian>
+<Polish>GP-34</Polish>
+<Hungarian>GP-34</Hungarian>
+</Key>
+</Container>
+<Container name="STR_ACE_MDN">
+<Key ID="STR_ACE_MDN_PG7V">
+<English>PG-7V HEAT</English>
+<Czech>PG-7V kumulativní</Czech>
+<German>PG-7V Hohlladung</German>
+<Polish>pocisk PG-7W (kumulacyjny)</Polish>
+<Russian>ПГ-7В (кумулятивный)</Russian>
+<French>PG-7V HEAT</French>
+<Spanish>PG-7V HEAT</Spanish>
+<Italian>PG-7V HEAT</Italian>
+<Hungarian>PG-7V HEAT</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_PG7VM">
+<English>PG-7VM HEAT</English>
+<Czech>PG-7VM kumulativní</Czech>
+<German>PG-7VM Hohlladung</German>
+<Polish>pocisk PG-7WM (kumulacyjny)</Polish>
+<Russian>ПГ-7ВМ (кумулятивный)</Russian>
+<French>PG-7VM HEAT</French>
+<Spanish>PG-7VM HEAT</Spanish>
+<Italian>PG-7VM HEAT</Italian>
+<Hungarian>PG-7VM HEAT</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_PG7VL">
+<English>PG-7VL HEAT</English>
+<Czech>PG-7VL kumulativní</Czech>
+<German>PG-7VL Hohlladung</German>
+<Polish>pocisk PG-7WŁ (kumulacyjny)</Polish>
+<Russian>ПГ-7ВЛ (кумулятивный)</Russian>
+<French>PG-7VL HEAT</French>
+<Spanish>PG-7VL HEAT</Spanish>
+<Italian>PG-7VL HEAT</Italian>
+<Hungarian>PG-7VL HEAT</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_PG7VR">
+<English>PG-7VR HEAT-T</English>
+<Czech>PG-7VR kumulativní tandem</Czech>
+<German>PG-7VR Tandemhohlladung</German>
+<Polish>pocisk PG-7WR (kumulacyjny tandemowy)</Polish>
+<Russian>ПГ-7ВР (тандемный кумулятив.)</Russian>
+<French>PG-7VR HEAT-T</French>
+<Spanish>PG-7VR HEAT-T</Spanish>
+<Italian>PG-7VR HEAT-T</Italian>
+<Hungarian>PG-7VR HEAT-T</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_TBG7V">
+<English>TBG-7V thermobaric</English>
+<Czech>TBG-7V termobarická</Czech>
+<German>TBG-7V Aerosolbombe</German>
+<Polish>pocisk TBG-7W (termobaryczny)</Polish>
+<Russian>ТБГ-7В (термобарический)</Russian>
+<French>TBG-7V thermobarique</French>
+<Spanish>TBG-7V termobárica</Spanish>
+<Italian>TBG-7V a vuoto</Italian>
+<Hungarian>TBG-7V</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_OG7V">
+<English>OG-7V Frag</English>
+<Czech>OG-7V Frag</Czech>
+<German>OG-7V Splitter</German>
+<Polish>pocisk OG-7W (odłamkowy)</Polish>
+<Russian>ОГ-7В (осколочный)</Russian>
+<French>OG-7V Frag</French>
+<Spanish>OG-7V Frag</Spanish>
+<Italian>OG-7V Frag</Italian>
+<Hungarian>OG-7V Repesz</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_SMAW_HEAA">
+<English>MK6 Mod 0 HEAA Rocket</English>
+<Czech>MK6 Mod 0 kumulativní</Czech>
+<German>MK6 Mod 0 Hohlladung</German>
+<Polish>pocisk MK6 Mod 0 (kumulacyjny)</Polish>
+<Russian>MK6 Mod 0 HEAA (кумулятивный)</Russian>
+<French>MK6 Mod 0 HEAA</French>
+<Spanish>MK6 Mod 0 HEAA</Spanish>
+<Italian>MK6 Mod 0 HEAA</Italian>
+<Hungarian>MK6 Mod 0 HEAA</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_SMAW_HEDP">
+<English>MK3 Mod 0 HEDP Rocket</English>
+<Czech>MK3 Mod 0 HEDP</Czech>
+<German>MK3 Mod 0 Splitterspreng</German>
+<Polish>pocisk MK3 Mod 0 (kumulacyjno-odłamkowy)</Polish>
+<Russian>MK3 Mod 0 HEDP (кумул.-оск.)</Russian>
+<French>MK3 Mod 0 HEDP</French>
+<Spanish>MK3 Mod 0 HEDP</Spanish>
+<Italian>MK3 Mod 0 HEDP</Italian>
+<Hungarian>MK3 Mod 0 HEDP</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_SMAW_NE">
+<English>MK80 Mod 0 NE Rocket</English>
+<Czech>MK80 Mod 0 NE</Czech>
+<German>MK80 Mod 0 Thermobarisch</German>
+<Polish>pocisk MK80 Mod 0 NE (termobaryczny)</Polish>
+<Russian>MK80 Mod 0 NE (термобарич.)</Russian>
+<French>MK80 Mod 0 NE</French>
+<Spanish>MK80 Mod 0 NE</Spanish>
+<Italian>MK80 Mod 0 NE</Italian>
+<Hungarian>MK80 Mod 0 NE</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_MAAWS_HEAT">
+<English>FFV751 HEAT Rocket</English>
+<Czech>FFV751 kumulativní</Czech>
+<German>FFV751 Hohlladung</German>
+<Polish>pocisk FFV751 (kumulacyjny)</Polish>
+<Russian>FFV751 (кумулятивный)</Russian>
+<French>FFV751 HEAT</French>
+<Spanish>FFV751 HEAT</Spanish>
+<Italian>FFV751 HEAT</Italian>
+<Hungarian>FFV751 HEAT</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_MAAWS_HEDP">
+<English>FFV502 HEDP Rocket</English>
+<Czech>FFV502 HEDP</Czech>
+<German>FFV502 Splitterspreng</German>
+<Polish>pocisk FFV502 (kumulacyjno-odłamkowy)</Polish>
+<Russian>FFV502 (кумулят.-осколоч.)</Russian>
+<French>FFV502 HEDP</French>
+<Spanish>FFV502 HEDP</Spanish>
+<Italian>FFV502 HEDP</Italian>
+<Hungarian>FFV502 HEDP</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_MAAWS_HE">
+<English>FFV441B HE Rocket</English>
+<Czech>FFV441B HE</Czech>
+<German>FFV441B Splitter</German>
+<Polish>pocisk FFV441B (burzący)</Polish>
+<Russian>FFV441B (фугасный)</Russian>
+<French>FFV441B HE</French>
+<Spanish>FFV441B HE</Spanish>
+<Italian>FFV441B HE</Italian>
+<Hungarian>FFV441B HE</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_JAVELIN">
+<English>FGM-148C Missile</English>
+<Czech>raketa FGM-148C</Czech>
+<German>FGM-148C Rakete</German>
+<Polish>pocisk FGM-148C</Polish>
+<Russian>ПТУР FGM-148C</Russian>
+<French>FGM-148C missile</French>
+<Spanish>FGM-148C misil</Spanish>
+<Italian>FGM-148C missile</Italian>
+<Hungarian>FGM-148C rakéta</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_STINGER">
+<English>FIM-92F Missile</English>
+<Czech>raketa FIM-92F</Czech>
+<German>FIM-92F Rakete</German>
+<Polish>pocisk FIM-92F</Polish>
+<Russian>ЗУР FIM-92F</Russian>
+<French>FIM-92F missile</French>
+<Spanish>FIM-92F misil</Spanish>
+<Italian>FIM-92F missile</Italian>
+<Hungarian>FIM-92F rakéta</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_AT13">
+<English>9M131M Missile</English>
+<Czech>raketa 9M131M</Czech>
+<German>9M131M Rakete</German>
+<Polish>pocisk 9M131M</Polish>
+<Russian>ПТУР 9М131М</Russian>
+<French>9M131M missile</French>
+<Spanish>9M131M misil</Spanish>
+<Italian>9M131M missile</Italian>
+<Hungarian>9M131M rakéta</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_AT13TB">
+<English>9M131F Missile</English>
+<Czech>raketa 9M131F</Czech>
+<German>9M131F Rakete</German>
+<Polish>pocisk 9M131F</Polish>
+<Russian>ПТУР 9М131Ф</Russian>
+<French>9M131F missile</French>
+<Spanish>9M131F misil</Spanish>
+<Italian>9M131F missile</Italian>
+<Hungarian>9M131F rakéta</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_STRELA">
+<English>9M32 Missile</English>
+<Czech>raketa 9M32</Czech>
+<German>9M32 Rakete</German>
+<Polish>pocisk 9M32</Polish>
+<Russian>ЗУР 9М32М</Russian>
+<French>9M32 missile</French>
+<Spanish>9M32 misil</Spanish>
+<Italian>9M32 missile</Italian>
+<Hungarian>9M32 rakéta</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_IGLA">
+<English>9M39 Missile</English>
+<Czech>raketa 9M39</Czech>
+<German>9M39 Rakete</German>
+<Polish>pocisk 9M39</Polish>
+<Russian>ЗУР 9М39</Russian>
+<French>9M39 missile</French>
+<Spanish>9M39 misil</Spanish>
+<Italian>9M39 missile</Italian>
+<Hungarian>9M39 rakéta</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_33Rnd_9x19_G18">
+<German>Glock 18-Mag.</German>
+<English>Glock 18 Mag.</English>
+<Italian>Caric. Glock 18</Italian>
+<Spanish>Carg. Glock 18</Spanish>
+<French>Charg. Glock 18</French>
+<Czech>Glock 18 Zás.</Czech>
+<Russian>Магазин Glock 18</Russian>
+<Polish>magazynek Glock 18</Polish>
+<Hungarian>Glock 18 tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_13RND_9X19_L9A1">
+<German>L9A1-Mag.</German>
+<English>L9A1 Mag.</English>
+<Italian>Caric. L9A1</Italian>
+<Spanish>Carg. L9A1</Spanish>
+<French>Charg. L9A1</French>
+<Czech>L9A1 Zás.</Czech>
+<Russian>Магазин L9A1</Russian>
+<Polish>magazynek L9A1</Polish>
+<Hungarian>L9A1 tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_30RND_9X19_MP5">
+<German>MP5-Mag.</German>
+<English>30Rnd. MP5</English>
+<Italian>Caric. MP5</Italian>
+<Spanish>Carg. MP5</Spanish>
+<French>Charg. MP5</French>
+<Czech>MP5 Zás.</Czech>
+<Russian>Маг. MP5 (30 патр.)</Russian>
+<Polish>magazynek MP5</Polish>
+<Hungarian>MP5 tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_30RND_9X19_MP5SD">
+<German>MP5 SD-Mag.</German>
+<English>30Rnd. MP5 SD</English>
+<Italian>Caric. MP5 silm</Italian>
+<Spanish>Carg. MP5 SD</Spanish>
+<French>Charg. MP5 sil.</French>
+<Czech>MP5 SD Zás.</Czech>
+<Russian>Маг. MP5 (30 патр. дозвук.)</Russian>
+<Polish>magazynek MP5 (SD)</Polish>
+<Hungarian>MP5 tár, Szub</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_20RND_762X51_B_SCAR">
+<German>Mk17-Mag.</German>
+<English>20Rnd. Mk17</English>
+<Italian>Caric. Mk17</Italian>
+<Spanish>Carg. Mk17</Spanish>
+<French>Charg. Mk17</French>
+<Czech>Mk17 Zás.</Czech>
+<Russian>Маг. Mk17 (20 патр.)</Russian>
+<Polish>magazynek Mk17</Polish>
+<Hungarian>Mk17 tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_20RND_762X51_SB_SCAR">
+<German>Mk17-Mag. (M118LR)</German>
+<English>20Rnd. Mk17 (M118LR)</English>
+<Italian>Caric. Mk17 (M118LR)</Italian>
+<Spanish>Carg. Mk17 (M118LR)</Spanish>
+<French>Charg. Mk17 (M118LR)</French>
+<Czech>Mk17 Zás. (M118LR)</Czech>
+<Russian>Маг. Mk17 (M118LR улуч.балл.)</Russian>
+<Polish>magazynek Mk17 (M118LR)</Polish>
+<Hungarian>Mk17 tár (M118LR)</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_20RND_762X51_SD_SCAR">
+<German>Mk17 SD-Mag.</German>
+<English>20Rnd. Mk17 SD</English>
+<Italian>Caric. Mk17 silm</Italian>
+<Spanish>Carg. Mk17 SD</Spanish>
+<French>Charg. Mk17 sil.</French>
+<Czech>Mk17 SD Zás.</Czech>
+<Russian>Маг. Mk17 (20 патр. дозвук.)</Russian>
+<Polish>magazynek Mk17 (SD)</Polish>
+<Hungarian>Mk17 tár, Szub</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_20RND_762X51_T_SCAR">
+<German>Mk17-Mag. Leuchtspur</German>
+<English>20Rnd. Mk17 Tracer</English>
+<Italian>Caric. Mk17 Tracciante</Italian>
+<Spanish>Carg. Mk17 Tracer</Spanish>
+<French>Charg. Mk17 Tracantes</French>
+<Czech>Mk17 Zás. Svítící</Czech>
+<Russian>Маг. Mk17 (20 патр. трасс.)</Russian>
+<Polish>magazynek Mk17 (smugowe)</Polish>
+<Hungarian>Mk17 tár Jlz.</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_20RND_762X51_B_FAL">
+<German>FAL-Mag.</German>
+<English>20Rnd. FAL</English>
+<Italian>Caric. FAL</Italian>
+<Spanish>Carg. FAL</Spanish>
+<French>Charg. FAL</French>
+<Czech>FAL Zás.</Czech>
+<Russian>Маг. FN-FAL (20 патр.)</Russian>
+<Polish>magazynek FAL</Polish>
+<Hungarian>FAL tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_20RND_762X51_T_FAL">
+<German>FAL-Mag. Leuchtspur</German>
+<English>20Rnd. FAL Tracer</English>
+<Italian>Caric. FAL Tracciante</Italian>
+<Spanish>Carg. FAL Tracer</Spanish>
+<French>Charg. FAL Tracantes</French>
+<Czech>FAL Zás. Svítící</Czech>
+<Russian>Маг. FN-FAL (20 патр. трасс.)</Russian>
+<Polish>magazynek FAL (smugowe)</Polish>
+<Hungarian>FAL tár Jlz.</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_5RND_86x70_L115">
+<English>5Rnd. .338 Lapua Magnum Tracer</English>
+<Czech>5 náb. .338 Lapua Magnum Svítící</Czech>
+<German>5Rnd. .338 Lapua Magnum Leuchtspur</German>
+<Russian>.338 Lapua Magnum (5 патр. трасс.)</Russian>
+<Polish>5Rnd. .338 Lapua Magnum (smugowe)</Polish>
+<Hungarian>5Rnd. .338 Lapua Magnum Jlz.</Hungarian>
+<Italian>5Rnd. .338 Lapua Magnum Tracciante</Italian>
+<Spanish>5Rnd. .338 Lapua Magnum Tracer</Spanish>
+<French>5Rnd. .338 Lapua Magnum Tracantes</French>
+</Key>
+<Key ID="STR_ACE_MDN_30RND_762X51_B_FAL">
+<German>SA58-Mag.</German>
+<English>30Rnd. SA58</English>
+<Italian>Caric. SA58</Italian>
+<Spanish>Carg. SA58</Spanish>
+<French>Charg. SA58</French>
+<Czech>SA58 Zás.</Czech>
+<Russian>Маг. SA58 (30 патр.)</Russian>
+<Polish>magazynek SA58</Polish>
+<Hungarian>SA58 tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_10RND_762X39_B_SKS">
+<German>SKS-Mag.</German>
+<English>10Rnd. SKS Clip</English>
+<Italian>Caric. SKS</Italian>
+<Spanish>Carg. SKS</Spanish>
+<French>Charg. SKS</French>
+<Czech>SKS Zás.</Czech>
+<Russian>Обойма CKC (10 патр.)</Russian>
+<Polish>magazynek SKS</Polish>
+<Hungarian>SzKSz tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_10RND_762X39_T_SKS">
+<German>SKS-Mag. Leuchtspur</German>
+<English>10Rnd. SKS Tracer</English>
+<Italian>Caric. SKS Tracciante</Italian>
+<Spanish>Carg. SKS Tracer</Spanish>
+<French>Charg. SKS Tracantes</French>
+<Czech>SKS Zás. Svítící</Czech>
+<Russian>Обойма СКС (10 патр. трасс.)</Russian>
+<Polish>magazynek SKS (smugowe)</Polish>
+<Hungarian>SzKSz tár Jlz.</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_10RND_303_B_SMLE">
+<German>SMLE-Mag.</German>
+<English>10Rnd. SMLE Clip</English>
+<Italian>Caric. SMLE</Italian>
+<Spanish>Carg. SMLE</Spanish>
+<French>Charg. SMLE</French>
+<Czech>SMLE Zás.</Czech>
+<Russian>Маг. SMLE</Russian>
+<Polish>magazynek SMLE</Polish>
+<Hungarian>SMLE tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_10RND_303_T_SMLE">
+<German>SMLE-Mag. Leuchtspur</German>
+<English>10Rnd. SMLE Tracer</English>
+<Italian>Caric. SMLE Tracciante</Italian>
+<Spanish>Carg. SMLE Tracer</Spanish>
+<French>Charg. SMLE Tracantes</French>
+<Czech>SMLE Zás. Svítící</Czech>
+<Russian>Маг. SMLE (10 патр. трасс.)</Russian>
+<Polish>magazynek SMLE (smugowe)</Polish>
+<Hungarian>SMLE tár Jlz.</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_RDGM">
+<German>RDG-M</German>
+<English>RDG-M</English>
+<Italian>RDG-M</Italian>
+<Spanish>RDG-M</Spanish>
+<French>RDG-M</French>
+<Czech>RDG-M</Czech>
+<Russian>PДГ-M</Russian>
+<Polish>granat RDG-M</Polish>
+<Hungarian>RDG-M</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_RDG2">
+<German>RDG-2</German>
+<English>RDG-2</English>
+<Italian>RDG-2</Italian>
+<Spanish>RDG-2</Spanish>
+<French>RDG-2</French>
+<Czech>RDG-2</Czech>
+<Russian>PДГ-2</Russian>
+<Polish>granat RDG-2</Polish>
+<Hungarian>RDG-2</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_RG0">
+<German>RGO</German>
+<English>RGO</English>
+<Italian>RGO</Italian>
+<Spanish>RGO</Spanish>
+<French>RGO</French>
+<Czech>RGO</Czech>
+<Russian>PГO</Russian>
+<Polish>granat RGO</Polish>
+<Hungarian>RGO</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_RGD5">
+<German>RGD-5</German>
+<English>RGD-5</English>
+<Italian>RGD-5</Italian>
+<Spanish>RGD-5</Spanish>
+<French>RGD-5</French>
+<Czech>RGD-5</Czech>
+<Russian>PГД-5</Russian>
+<Polish>granat RGD-5</Polish>
+<Hungarian>RGD-5</Hungarian>
+</Key>
+<!-- There are countless fixes -->
+<Key ID="STR_ACE_MDN_SMOKE_ORANGE">	
+<German>Rauchgranate orange</German>
+<English>Smoke Grenade (Orange)</English>
+<Italian>Granata fumogena (arancione)</Italian>
+<Spanish>Granada de humo (naranja)</Spanish>
+<French>Grenade fumigène (orange)</French>
+<Czech>Dýmovnice (oranžová)</Czech>
+<Russian>Дым. граната (оранж.)</Russian>
+<Polish>granat dymny (pomarańczowy)</Polish>
+<Hungarian>Füstgránát (narancs)</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_10RND_127X99_T_M107">
+<German>M107 Leuchtspur (10 Sch.)</German>
+<English>10Rnd. M107 Tracer</English>
+<Italian>Caric. 10 mun. M107 Tracciante</Italian>
+<Spanish>10 carga M107 Tracer</Spanish>
+<French>10 c. M107 Tracantes</French>
+<Czech>10náb. M107 Zás. Svítící</Czech>
+<Russian>Маг. M107 (10 патр. трасс.)</Russian>
+<Polish>magazynek M107 (smugowe)</Polish>
+<Hungarian>10lszr. M107 Jlz.</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_10RND_127X99_Raufoss_M107">
+<German>M107 Mk211 RAUFOSS (10 Sch.)</German>
+<English>10Rnd. M107 Mk211 RAUFOSS</English>
+<Italian>Caric. 10 mun. M107 Mk211 RAUFOSS</Italian>
+<Spanish>10 carga M107 Mk211 RAUFOSS</Spanish>
+<French>10 c. M107 Mk211 RAUFOSS</French>
+<Czech>10náb. M107 Mk211 RAUFOSS</Czech>
+<Russian>Маг. M107 (10п. брон.-зажиг.)</Russian>
+<Polish>magazynek M107 (Mk211 RAUFOSS)</Polish>
+<Hungarian>10lszr. M107 Mk211 RAUFOSS</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_5RND_127X108_KSVK">
+<German>KSVK Mag. (5 Sch.)</German>
+<English>5Rnd. KSVK Mag.</English>
+<Italian>Caric. 5 mun. KSVK</Italian>
+<Spanish>5 carga KSVK</Spanish>
+<French>5 c. KSVK</French>
+<Czech>5náb. KSVK Zás.</Czech>
+<Russian>Маг. КСВК (5 патр.)</Russian>
+<Polish>magazynek KSWK</Polish>
+<Hungarian>5lszr. KSzVK tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_5RND_127X108_T_KSVK">
+<German>KSVK Leuchtspur (5 Sch.)</German>
+<English>5Rnd. KSVK Tracer</English>
+<Italian>Caric. 5 mun. KSVK Tracciante</Italian>
+<Spanish>5 carga KSVK Tracer</Spanish>
+<French>5 c. KSVK Tracantes</French>
+<Czech>5náb. KSVK Zás. Svítící</Czech>
+<Russian>Маг. КСВК (5 патр. трасс.)</Russian>
+<Polish>magazynek KSWK (smugowe)</Polish>
+<Hungarian>5lszr. KSzVK Jlz.</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_10RND_762X54_SVD">
+<German>SVD Dragunov-Mag.</German>
+<English>10Rnd. Dragunov</English>
+<Italian>Caric. SVD Dragunov</Italian>
+<Spanish>Carg. SVD Dragunov</Spanish>
+<French>Charg. SVD Dragunov</French>
+<Czech>SVD Dragunov Zás.</Czech>
+<Russian>Маг. СВД (10 патр.)</Russian>
+<Polish>magazynek SWD</Polish>
+<Hungarian>SzVD Dragunov tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_10RND_762X54_T_SVD">
+<German>SVD Dragunov-Mag. Leuchtspur</German>
+<English>10Rnd. Dragunov Tracer</English>
+<Italian>Caric. SVD Dragunov Tracciante</Italian>
+<Spanish>Carg. SVD Dragunov Tracer</Spanish>
+<French>Charg. SVD Dragunov Tracantes</French>
+<Czech>SVD Dragunov Zás. Svítící</Czech>
+<Russian>Маг. СВД (10 патр. трасс.)</Russian>
+<Polish>magazynek SWD (smugowe)</Polish>
+<Hungarian>SzVD Dragunov Jlz. tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_100RND_762X51_M240">
+<German>M240-Gurt (100 Sch.)</German>
+<English>100Rnd. M240 Belt</English>
+<Italian>Nastro 100 mun. M240</Italian>
+<Spanish>Cinturón M240 carga 100</Spanish>
+<French>Bande 100 c. M240</French>
+<Czech>100náb. M240 Pás</Czech>
+<Russian>Лента M240 (100 патр.)</Russian>
+<Polish>zasobnik M240</Polish>
+<Hungarian>100lszr. M240 heveder</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_200RND_556X45_M249">
+<German>M249-Gurt (200 Sch.)</German>
+<English>200Rnd. M249 Belt</English>
+<Italian>Nastro 200 mun. M249</Italian>
+<Spanish>Cinturón M249 carga 200</Spanish>
+<French>Bande 200 c. M249</French>
+<Czech>200náb. M249 Pás</Czech>
+<Russian>Лента M249 (200 патр.)</Russian>
+<Polish>zasobnik M249</Polish>
+<Hungarian>200lszr. M249 heveder</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_100RND_556X45_M249">
+<German>M249-Gurt (100 Sch.)</German>
+<English>100Rnd. M249 Belt</English>
+<Italian>Nastro 100 mun. M249</Italian>
+<Spanish>Cinturón M249 carga 100</Spanish>
+<French>Bande 100 c. M249</French>
+<Czech>100náb. M249 Pás</Czech>
+<Russian>Лента M249 (100 патр.)</Russian>
+<Polish>zasobnik M249 (soft bag)</Polish>
+<Hungarian>100lszr. M249 heveder</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_200RND_556X45_T_M249">
+<German>M249-Gurt Leuchtspur (200 Sch.)</German>
+<English>200Rnd. M249 Belt Tracer</English>
+<Italian>Nastro 200 mun. M249 Tracciante</Italian>
+<Spanish>Cinturón M249 Tracer carga 200</Spanish>
+<French>Bande 200 c. M249 Tracantes</French>
+<Czech>200náb. M249 Pás Svítící</Czech>
+<Russian>Лента M249 (200 патр. трасс.)</Russian>
+<Polish>zasobnik M249 (smugowe)</Polish>
+<Hungarian>200lszr. M249 heveder Jlz</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_100RND_556X45_T_M249">
+<German>M249-Gurt Leuchtspur (100 Sch.)</German>
+<English>100Rnd. M249 Belt Tracer</English>
+<Italian>Nastro 100 mun. M249 Tracciante</Italian>
+<Spanish>Cinturón M249 Tracer carga 100</Spanish>
+<French>Bande 100 c. M249 Tracantes</French>
+<Czech>100náb. M249 Pás Svítící</Czech>
+<Russian>Лента M249 (100 патр. трасс.)</Russian>
+<Polish>zasobnik M249 (smugowe)</Polish>
+<Hungarian>100lszr. M249 heveder Jlz</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_45RND_545X39_B_AK">
+<German>RPK-74 Leuchtspur (45 Sch.)</German>
+<English>45Rnd. RPK-74 Tracer</English>
+<Italian>RPK-74 Tracciante 45 mun.</Italian>
+<Spanish>RPK-74 Tracer 45 crg.</Spanish>
+<French>RPK-74 Tracantes 45 c.</French>
+<Czech>45náb. RPK-74 Zás. Svítící</Czech>
+<Russian>Маг. РПК-74 (45 патр. трасс.)</Russian>
+<Polish>magazynek RPK-74 (smugowe)</Polish>
+<Hungarian>45lszr. RPK-74 Jlz. tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_75RND_545X39_RPK">
+<German>RPK-74 (45 Sch.)</German>
+<English>45Rnd. RPK-74</English>
+<Italian>RPK-74 45 mun.</Italian>
+<Spanish>RPK-74 45 crg.</Spanish>
+<French>RPK-74 45 c.</French>
+<Czech>45náb. RPK-74 Zás.</Czech>
+<Russian>Маг. РПК-74 (45 патр.)</Russian>
+<Polish>magazynek RPK-74</Polish>
+<Hungarian>45lszr. RPK-74 tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_75RND_545X39_T_RPK">
+<German>RPK-74 Leuchtspur (45 Sch.)</German>
+<English>45Rnd. RPK-74 Tracer</English>
+<Italian>RPK-74 Tracciante 45 mun.</Italian>
+<Spanish>RPK-74 Tracer 45 crg.</Spanish>
+<French>RPK-74 Tracantes 45 c.</French>
+<Czech>45náb. RPK-74 Zás. Svítící</Czech>
+<Russian>Маг. РПК-74 (45 патр. трасс.)</Russian>
+<Polish>magazynek RPK-74 (smugowe)</Polish>
+<Hungarian>45lszr. RPK-74 Jlz. tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_45RND_545X39_EP_AK">
+<German>RPK-74 EP (45 Sch.)</German>
+<English>45Rnd. RPK-74 EP</English>
+<Italian>RPK-74 EP 45 mun.</Italian>
+<Spanish>RPK-74 EP 45 crg.</Spanish>
+<French>RPK-74 EP 45 c.</French>
+<Czech>45náb. RPK-74 Zás. EP</Czech>
+<Russian>Маг. РПК-74 (45 патр. ПП)</Russian>
+<Polish>magazynek RPK-74 (EP)</Polish>
+<Hungarian>45lszr. RPK-74 EP tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_45RND_545X39_AP_AK">
+<German>RPK-74 AP (45 Sch.)</German>
+<English>45Rnd. RPK-74 AP</English>
+<Italian>RPK-74 AP 45 mun.</Italian>
+<Spanish>RPK-74 AP 45 crg.</Spanish>
+<French>RPK-74 AP 45 c.</French>
+<Czech>45náb. RPK-74 Zás. AP</Czech>
+<Russian>Маг. РПК-74 (45 патр. БП)</Russian>
+<Polish>magazynek RPK-74 (AP)</Polish>
+<Hungarian>45lszr. RPK-74 AP tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_100RND_762X54_PK">
+<German>PK-Gurt (100 Sch.)</German>
+<English>100Rnd. PK Belt</English>
+<Italian>Nastro 100 mun. PK</Italian>
+<Spanish>Cinturón PK carga 100</Spanish>
+<French>Bande 100 c. PK</French>
+<Czech>100náb. PK Pás</Czech>
+<Russian>Лента ПК (100 патр.)</Russian>
+<Polish>zasobnik PK</Polish>
+<Hungarian>100lszr.PK heveder</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_20RND_762X51_M14">
+<German>M14-Mag.</German>
+<English>20Rnd. M14 Mag.</English>
+<Italian>Caric. M14</Italian>
+<Spanish>Carg. M14</Spanish>
+<French>Charg. M14</French>
+<Czech>M14 Zás.</Czech>
+<Russian>Маг. M14 (20 патр.)</Russian>
+<Polish>magazynek M14</Polish>
+<Hungarian>M14 tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_20RND_762X51_DMR">
+<German>M14-Mag. (M118LR)</German>
+<English>20Rnd. M14 Mag. (M118LR)</English>
+<Italian>Caric. M14 (M118LR)</Italian>
+<Spanish>Carg. M14 (M118LR)</Spanish>
+<French>Charg. M14 (M118LR)</French>
+<Czech>M14 Zás. (M118LR)</Czech>
+<Russian>Маг. M14 (M118LR улуч.балл.)</Russian>
+<Polish>magazynek M14 (M118LR)</Polish>
+<Hungarian>M14 tár (M118LR)</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_20RND_762X51_T_DMR">
+<German>M14-Mag. Leuchtspur</German>
+<English>20Rnd. M14 Tracer</English>
+<Italian>Caric. M14 Tracciante</Italian>
+<Spanish>Carg. M14 Tracer</Spanish>
+<French>Charg. M14 Tracantes</French>
+<Czech>M14 Zás. Svítící</Czech>
+<Russian>Маг. M14 (20 патр. трасс.)</Russian>
+<Polish>magazynek M14 (smugowe)</Polish>
+<Hungarian>M14 Jlz. tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_5RND_762X51_M24">
+<German>M24 (5 Sch.)</German>
+<English>5Rnd. M24</English>
+<Italian>Caric. 5 mun. M24 Tracciante</Italian>
+<Spanish>M24 5 crg.</Spanish>
+<French>M24 5 c.</French>
+<Czech>5náb. M24 Zás.</Czech>
+<Russian>Патр. М24 (5 патр.)</Russian>
+<Polish>łódka M24</Polish>
+<Hungarian>5lszr. M24</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_5RND_762X51_T_M24">
+<German>M24 Leuchtspur (5 Sch.)</German>
+<English>5Rnd. M24 Tracer</English>
+<Italian>Caric. 5 mun. M24 Tracciante</Italian>
+<Spanish>M24 Tracer 5 crg.</Spanish>
+<French>M24 Tracantes 5 c.</French>
+<Czech>5náb. M24 Zás. Svítící</Czech>
+<Russian>Патр. М24 (5 патр. трасс.)</Russian>
+<Polish>łódka M24 (smugowe)</Polish>
+<Hungarian>5lszr. M24 Jlz.</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_ACE_20Rnd_762x51_B_HK417">
+<German>HK417-Mag.</German>
+<English>20Rnd. HK417 Mag.</English>
+<Italian>Caric. HK417</Italian>
+<Spanish>Carg. HK417</Spanish>
+<French>Charg. HK417</French>
+<Czech>HK417 Zás.</Czech>
+<Russian>Маг. HK417 (20 патр.)</Russian>
+<Polish>magazynek HK417</Polish>
+<Hungarian>HK417 tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_ACE_20Rnd_762x51_SB_HK417">
+<German>HK417-Mag. (M118LR)</German>
+<English>20Rnd. HK417 Mag. (M118LR)</English>
+<Italian>Caric. HK417 (M118LR)</Italian>
+<Spanish>Carg. HK417 (M118LR)</Spanish>
+<French>Charg. HK417 (M118LR)</French>
+<Czech>HK417 Zás. (M118LR)</Czech>
+<Russian>Маг. HK417 (M118LR улуч.балл.)</Russian>
+<Polish>magazynek HK417 (M118LR)</Polish>
+<Hungarian>HK417 tár (M118LR)</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_ACE_20Rnd_762x51_T_HK417">
+<German>HK417-Mag. Leuchtspur</German>
+<English>20Rnd. HK417 Tracer</English>
+<Italian>Caric. HK417 Tracciante</Italian>
+<Spanish>Carg. HK417 Tracer</Spanish>
+<French>Charg. HK417 Tracantes</French>
+<Czech>HK417 Zás. Svítící</Czech>
+<Russian>Маг. HK417 (20 патр. трасс.)</Russian>
+<Polish>magazynek HK417 (smugowe)</Polish>
+<Hungarian>HK417 Jlz. tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_30RND_556X45_G36">
+<German>G36-Mag. DM11</German>
+<English>30Rnd. G36 Mag.</English>
+<Italian>Caric. G36</Italian>
+<Spanish>Carg. G36</Spanish>
+<French>Charg. G36</French>
+<Czech>30náb. G36 Zás.</Czech>
+<Russian>Маг. G36 (30 патр.)</Russian>
+<Polish>magazynek G36</Polish>
+<Hungarian>G36 tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_30RND_556X45_T_G36">
+<German>G36-Mag. DM21</German>
+<English>30Rnd. G36 Tracer</English>
+<Italian>Caric. G36 Tracciante</Italian>
+<Spanish>Carg. G36 Tracer</Spanish>
+<French>Charg. G36 Tracantes</French>
+<Czech>30náb. G36 Zás. Svítící</Czech>
+<Russian>Маг. G36 (30 патр. трасс.)</Russian>
+<Polish>magazynek G36 (smugowe)</Polish>
+<Hungarian>G36 Jlz. tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_30RND_556x45_SD_G36">
+<German>G36 SD-Mag.</German>
+<English>30Rnd. G36 SD</English>
+<Italian>Caric. G36 SD</Italian>
+<Spanish>Carg. G36 SD</Spanish>
+<French>Charg. G36 sil.</French>
+<Czech>30náb. G36 SD</Czech>
+<Russian>Маг. G36 (30 патр. глуш.)</Russian>
+<Polish>magazynek G36 SD</Polish>
+<Hungarian>G36 tár, Szub</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_30Rnd_556x45_AP_G36">
+<German>G36-Mag. AP DM31</German>
+<English>30Rnd. G36 Mag. AP</English>
+<Italian>Caric. G36 AP</Italian>
+<Spanish>Carg. G36 AP</Spanish>
+<French>Charg. G36 AP</French>
+<Czech>30náb. G36 Zás. AP</Czech>
+<Russian>Маг. G36 AP (30 патр. БП)</Russian>
+<Polish>magazynek G36 AP</Polish>
+<Hungarian>G36 tár AP</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_30RND_556X45_STANAG">
+<German>STANAG (30 Sch.)</German>
+<English>30Rnd. STANAG</English>
+<Italian>Caric. 30 mun. STANAG</Italian>
+<Spanish>STANAG carga 30</Spanish>
+<French>STANAG 30 c.</French>
+<Czech>30náb. STANAG</Czech>
+<Russian>Маг. STANAG (30 патр.)</Russian>
+<Polish>magazynek STANAG (30)</Polish>
+<Hungarian>30lszr. STANAG</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_30RND_556X45_T_STANAG">
+<German>STANAG Leuchtspur (30 Sch.)</German>
+<English>30Rnd. STANAG Tracer</English>
+<Italian>Caric. 30 mun. STANAG Tracciante</Italian>
+<Spanish>STANAG Tracer carga 30</Spanish>
+<French>STANAG Tracantes 30 c.</French>
+<Czech>30náb. STANAG Svítící</Czech>
+<Russian>Маг. STANAG (30 патр. трасс.)</Russian>
+<Polish>magazynek STANAG (30, smugowe)</Polish>
+<Hungarian>30lszr. STANAG Jlz.</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_20RND_556X45_STANAG">
+<German>STANAG Mk262 (20 Sch.)</German>
+<English>20Rnd. STANAG (Mk262)</English>
+<Italian>Caric. 20 mun. STANAG Mk262</Italian>
+<Spanish>STANAG Mk262 carga 20</Spanish>
+<French>STANAG Mk262 20 c.</French>
+<Czech>20náb. STANAG Mk262</Czech>
+<Russian>Маг. STANAG Mk262 (20 патр.)</Russian>
+<Polish>magazynek STANAG (20, Mk262)</Polish>
+<Hungarian>20lszr. STANAG Mk262</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_30RND_556X45_SB_STANAG">
+<German>STANAG Mk262 (30 Sch.)</German>
+<English>30Rnd. STANAG (Mk262)</English>
+<Italian>Caric. 30 mun. STANAG Mk262</Italian>
+<Spanish>STANAG Mk262 carga 30</Spanish>
+<French>STANAG Mk262 30 c.</French>
+<Czech>30náb. STANAG Mk262</Czech>
+<Russian>Маг. STANAG Mk262 (30 патр.)</Russian>
+<Polish>magazynek STANAG (30, Mk262)</Polish>
+<Hungarian>30lszr. STANAG Mk262</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_30RND_762X39_AK47">
+<German>AKM-Mag.</German>
+<English>30Rnd. AKM</English>
+<Italian>Caric. AKM</Italian>
+<Spanish>Carg. AKM</Spanish>
+<French>Charg. AKM</French>
+<Czech>AKM Zás.</Czech>
+<Russian>Маг. АКМ (30 патр.)</Russian>
+<Polish>magazynek AKM</Polish>
+<Hungarian>AKM tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_30RND_762X39_T_AK47">
+<German>AKM-Mag. Leuchtspur</German>
+<English>30Rnd. AKM Tracer</English>
+<Italian>Caric. AKM Tracciante</Italian>
+<Spanish>Carg. AKM Tracer</Spanish>
+<French>Charg. AKM Tracantes</French>
+<Czech>AKM Zás. Svítící</Czech>
+<Russian>Маг. АКМ (30 патр. трасс.)</Russian>
+<Polish>magazynek AKM (smugowe)</Polish>
+<Hungarian>AKM Jlz. tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_40RND_762X39_T_AK47">
+<German>RPK-Mag. Leuchtspur</German>
+<English>40Rnd. RPK Tracer</English>
+<Italian>Caric. RPK Tracciante</Italian>
+<Spanish>Carg. RPK Tracer</Spanish>
+<French>Charg. RPK Tracantes</French>
+<Czech>RPK Zás. Svítící</Czech>
+<Russian>Маг. РПК (40 патр. трасс.)</Russian>
+<Polish>magazynek RPK (smugowe)</Polish>
+<Hungarian>RPK Jlz. tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_40RND_762X39_B_AK47">
+<German>RPK-Mag.</German>
+<English>40Rnd. RPK</English>
+<Italian>Caric. RPK</Italian>
+<Spanish>Carg. RPK</Spanish>
+<French>Charg. RPK</French>
+<Czech>RPK Zás.</Czech>
+<Russian>Маг. РПК (40 патр.)</Russian>
+<Polish>magazynek RPK</Polish>
+<Hungarian>RPK tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_75RND_762X39_B_AK47">
+<German>RPK (75 Sch.)</German>
+<English>75Rnd. RPK</English>
+<Italian>RPK 75 mun.</Italian>
+<Spanish>RPK 75 crg.</Spanish>
+<French>RPK 75 c.</French>
+<Czech>75náb. RPK Zás.</Czech>
+<Russian>Маг. РПК (75 патр.)</Russian>
+<Polish>magazynek RPK (75)</Polish>
+<Hungarian>75lszr. RPK tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_75RND_762X39_SD_AK47">
+<German>AKM (75 Sch.) SD</German>
+<English>75Rnd. AKM SD</English>
+<Italian>AKM 75 mun. silm</Italian>
+<Spanish>AKM 75 crg. SD</Spanish>
+<French>AKM 75 c. sil.</French>
+<Czech>75náb. AKM SD Zás.</Czech>
+<Russian>Маг. АКМ (75 патр. дозвук.)</Russian>
+<Polish>magazynek AKM (75 SD)</Polish>
+<Hungarian>75lszr. AKM tár, Szub</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_30RND_762X39_SD_AK47">
+<German>AKM SD-Mag.</German>
+<English>30Rnd. AKM SD</English>
+<Italian>Caric. AKM silm</Italian>
+<Spanish>Carg. AKM SD</Spanish>
+<French>Charg. AKM sil.</French>
+<Czech>AKM SD Zás.</Czech>
+<Russian>Маг. АКМ (30 патр. дозвук.)</Russian>
+<Polish>magazynek AKM (SD)</Polish>
+<Hungarian>AKM tár, Szub</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_30RND_762X39_AP_AK47">
+<German>AKM-Mag. AP</German>
+<English>30Rnd. AKM AP</English>
+<Italian>Caric. AKM AP</Italian>
+<Spanish>Carg. AKM AP</Spanish>
+<French>Charg. AKM AP</French>
+<Czech>AKM Zás. AP</Czech>
+<Russian>Маг. АКМ (30 патр. БП)</Russian>
+<Polish>magazynek AKM (AP)</Polish>
+<Hungarian>AKM AP tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_40RND_762X39_AP_AK47">
+<German>RPK-Mag. AP</German>
+<English>40Rnd. RPK AP</English>
+<Italian>Caric. RPK AP</Italian>
+<Spanish>Carg. RPK AP</Spanish>
+<French>Charg. RPK AP</French>
+<Czech>RPK Zás. AP</Czech>
+<Russian>Маг. РПК (40 патр. БП)</Russian>
+<Polish>magazynek RPK (AP)</Polish>
+<Hungarian>RPK AP tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_30RND_762X39_SA58">
+<German>SA58-Mag.</German>
+<English>30Rnd. SA58</English>
+<Italian>Caric. SA58</Italian>
+<Spanish>Carg. SA58</Spanish>
+<French>Charg. SA58</French>
+<Czech>SA58 Zás.</Czech>
+<Russian>Маг. SA58 (30 патр.)</Russian>
+<Polish>magazynek SA58</Polish>
+<Hungarian>SA58 tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_30RND_762X39_T_SA58">
+<German>SA58-Mag. Leuchtspur</German>
+<English>30Rnd. SA58 Tracer</English>
+<Italian>Caric. SA58 Tracciante</Italian>
+<Spanish>Carg. SA58 Tracer</Spanish>
+<French>Charg. SA58 Tracantes</French>
+<Czech>SA58 Zás. Svítící</Czech>
+<Russian>Маг. SA58 (30 патр. трасс.)</Russian>
+<Polish>magazynek SA58 (smugowe)</Polish>
+<Hungarian>SA58 Jlz. tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_20RND_9X39_B_SP5_OC14">
+<German>OC-14 SP-5 Mag.</German>
+<English>20Rnd. OC-14 SP-5</English>
+<Italian>Caric. OC-14 SP-5</Italian>
+<Spanish>Carg. OC-14 SP-5</Spanish>
+<French>Charg. OC-14 SP-5</French>
+<Czech>OC-14 SP-5 Zás.</Czech>
+<Russian>Маг. ОЦ-14 СП-5 (20 патр.)</Russian>
+<Polish>magazynek OC-14 SP-5</Polish>
+<Hungarian>OC-14 SP-5 tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_20RND_9X39_B_SP6_OC14">
+<German>OC-14 SP-6 Mag.</German>
+<English>20Rnd. OC-14 SP-6</English>
+<Italian>Caric. OC-14 SP-6</Italian>
+<Spanish>Carg. OC-14 SP-6</Spanish>
+<French>Charg. OC-14 SP-6</French>
+<Czech>OC-14 SP-6 Zás.</Czech>
+<Russian>Маг. ОЦ-14 СП-6 (20 патр.)</Russian>
+<Polish>magazynek OC-14 SP-6</Polish>
+<Hungarian>OC-14 SP-6 tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_20RND_762X51_B_G3">
+<German>G3 Mag.</German>
+<English>20Rnd. G3</English>
+<Italian>Caric. G3</Italian>
+<Spanish>Carg. G3</Spanish>
+<French>Charg. G3</French>
+<Czech>G3 Zás.</Czech>
+<Russian>Маг. G3 (20 патр.)</Russian>
+<Polish>magazynek G3</Polish>
+<Hungarian>G3 tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_20RND_762X51_T_G3">
+<German>G3 Mag. Leuchtspur</German>
+<English>20Rnd. G3 Tracer</English>
+<Italian>Caric. G3 Tracciante</Italian>
+<Spanish>Carg. G3 Tracer</Spanish>
+<French>Charg. G3 Tracantes</French>
+<Czech>G3 Zás. Svítící</Czech>
+<Russian>Маг. G3 (20 патр. трасс.)</Russian>
+<Polish>magazynek G3 (smugowe)</Polish>
+<Hungarian>G3 Jlz. tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_30RND_545X39_AK">
+<German>AK-74 Mag. (30 Sch.)</German>
+<English>30Rnd. AK-74</English>
+<Italian>Caric. 30 mun. AK-74</Italian>
+<Spanish>AK-74 30 crg.</Spanish>
+<French>AK-74 30 c.</French>
+<Czech>30náb. AK-74 Zás.</Czech>
+<Russian>Маг. АК-74 (30 патр.)</Russian>
+<Polish>magazynek AK-74</Polish>
+<Hungarian>30lszr. AK-74 tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_30RND_545X39_AKSD">
+<German>AK-74 SD-Mag. (30 Sch.)</German>
+<English>30Rnd. AK-74 SD</English>
+<Italian>Caric. 30 mun. AK-74 silm</Italian>
+<Spanish>AK-74 30 crg. SD</Spanish>
+<French>AK-74 30 c. sil.</French>
+<Czech>30náb. AK-74 SD Zás.</Czech>
+<Russian>Маг. АК-74 (30 патр. дозвук.)</Russian>
+<Polish>magazynek AK-74 (SD)</Polish>
+<Hungarian>30lszr. AK-74 tár, Szub</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_30RND_545X39_T_AK">
+<German>AK-74 Leuchtspur (30 Sch.)</German>
+<English>30Rnd. AK-74 Tracer</English>
+<Italian>Caric. 30 mun. AK-74 Tracciante</Italian>
+<Spanish>AK-74 Tracer 30 crg.</Spanish>
+<French>AK-74 Tracantes 30 c.</French>
+<Czech>30náb. AK-74 Zás. Svítící</Czech>
+<Russian>Маг. АК-74 (30 патр. трасс.)</Russian>
+<Polish>magazynek AK-74 (smugowe)</Polish>
+<Hungarian>30lszr. AK-74 Jlz.</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_30RND_545X39_EP_AK">
+<German>AK-74 EP Mag. (30 Sch.)</German>
+<English>30Rnd. AK-74 EP</English>
+<Italian>Caric. 30 mun. AK-74 EP</Italian>
+<Spanish>AK-74 30 crg. EP</Spanish>
+<French>AK-74 30 c. EP</French>
+<Czech>30náb. AK-74 Zás. EP</Czech>
+<Russian>Маг. АК-74 (30 патр. ПП)</Russian>
+<Polish>magazynek AK-74 (EP)</Polish>
+<Hungarian>30lszr. AK-74 tár, EP</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_30RND_545X39_AP_AK">
+<German>AK-74 AP Mag. (30 Sch.)</German>
+<English>30Rnd. AK-74 AP</English>
+<Italian>Caric. 30 mun. AK-74 AP</Italian>
+<Spanish>AK-74 30 crg. AP</Spanish>
+<French>AK-74 30 c. AP</French>
+<Czech>30náb. AK-74 Zás. AP</Czech>
+<Russian>Маг. АК-74 (30 патр. БП)</Russian>
+<Polish>magazynek AK-74 (AP)</Polish>
+<Hungarian>30lszr. AK-74 tár, AP</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_25Rnd_1143x23_B_UMP45">
+<German>UMP45 Mag.</German>
+<English>25Rnd. UMP45</English>
+<Italian>Caric. UMP45</Italian>
+<Spanish>Carg. UMP45</Spanish>
+<French>Charg. UMP45</French>
+<Czech>UMP45 Zás.</Czech>
+<Russian>Маг. UMP45 (25 патр.)</Russian>
+<Polish>magazynek UMP45</Polish>
+<Hungarian>UMP45 tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_30Rnd_1143x23_B_M3">
+<German>M3 Mag.</German>
+<English>30Rnd. M3</English>
+<Italian>Caric. M3</Italian>
+<Spanish>Carg. M3</Spanish>
+<French>Charg. M3</French>
+<Czech>M3 Zás.</Czech>
+<Russian>Маг. M3 (30 патр.)</Russian>
+<Polish>magazynek M3</Polish>
+<Hungarian>M3 tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_30Rnd_6x35_B_PDW">
+<German>KAC PDW Mag.</German>
+<English>30Rnd. KAC PDW</English>
+<Italian>Caric. KAC PDW</Italian>
+<Spanish>Carg. KAC PDW</Spanish>
+<French>Charg. KAC PDW</French>
+<Czech>KAC PDW Zás.</Czech>
+<Russian>Маг. KAC PDW (30 патр.)</Russian>
+<Polish>magazynek KAC PDW</Polish>
+<Hungarian>KAC PDW tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_40RND_B_46X30_MP7">
+<German>MP7 Mag.</German>
+<English>40Rnd. MP7</English>
+<Italian>Caric. MP7</Italian>
+<Spanish>Carg. MP7</Spanish>
+<French>Charg. MP7</French>
+<Czech>MP7 Zás.</Czech>
+<Russian>Маг. MP7 (40 патр.)</Russian>
+<Polish>magazynek MP7</Polish>
+<Hungarian>MP7 tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_5RND_25X59_HEDP_BARRETT">
+<German>M109 (5 Sch.)</German>
+<English>5Rnd. M109</English>
+<Italian>Caric. 5 mun. M109</Italian>
+<Spanish>5 carga M109</Spanish>
+<French>5 c. M109</French>
+<Czech>5náb. M109 Zás.</Czech>
+<Russian>Маг. M109 (5 патр.)</Russian>
+<Polish>magazynek M109</Polish>
+<Hungarian>5lszr. M109</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_20RND_762X51_SB_M110">
+<German>M110 (20 Sch.)</German>
+<English>20Rnd. M110</English>
+<Italian>Caric. 20 mun. M110</Italian>
+<Spanish>20 carga M110</Spanish>
+<French>20 c. M110</French>
+<Czech>20náb. M110 Zás.</Czech>
+<Russian>Маг. M110 (20 патр.)</Russian>
+<Polish>magazynek M110</Polish>
+<Hungarian>20lszr. M110</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_20Rnd_762x51_S_M110">
+<German>M110 SD (20 Sch.)</German>
+<English>20Rnd. M110 SD</English>
+<Italian>Caric. 20 mun. M110 Sil.</Italian>
+<Spanish>20 carga M110 SD</Spanish>
+<French>20 c. M110 sil.</French>
+<Czech>20náb. M110 SD Zás.</Czech>
+<Russian>Маг. M110 (20 патр. дозвук.)</Russian>
+<Polish>magazynek M110 (SD)</Polish>
+<Hungarian>20lszr. M110 tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_20Rnd_762x51_T_M110">
+<German>M110 Leuchtspur (20 Sch.)</German>
+<English>20Rnd. M110 Tracer</English>
+<Italian>Caric. 20 mun. M110 Tracciante</Italian>
+<Spanish>20 carga M110 Tracer</Spanish>
+<French>20 c. M110 Tracer</French>
+<Czech>20náb. M110 Zás. Svítící</Czech>
+<Russian>Маг. M110 (20 патр. трасс.)</Russian>
+<Polish>magazynek M110 (smugowe)</Polish>
+<Hungarian>20lszr. M110 Jlz.</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_5Rnd_127x99_B_TAC50">
+<German>TAC-50 (5 Sch.)</German>
+<English>5Rnd. TAC-50</English>
+<Italian>Caric. 5 mun. TAC-50</Italian>
+<Spanish>5 carga TAC-50</Spanish>
+<French>5 c. TAC-50</French>
+<Czech>5náb. TAC-50 Zás.</Czech>
+<Russian>Маг. TAC-50 (5 патр.)</Russian>
+<Polish>magazynek TAC-50</Polish>
+<Hungarian>5lszr. TAC-50</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_5Rnd_127x99_S_TAC50">
+<German>TAC-50 SD (5 Sch.)</German>
+<English>5Rnd. TAC-50 SD</English>
+<Italian>Caric. 5 mun. TAC-50 Sil.</Italian>
+<Spanish>5 carga TAC-50 SD</Spanish>
+<French>5 c. TAC-50 sil.</French>
+<Czech>5náb. TAC-50 SD Zás.</Czech>
+<Russian>Маг. TAC-50 (5 патр. дозвук.)</Russian>
+<Polish>magazynek TAC-50 (SD)</Polish>
+<Hungarian>5lszr. TAC-50 tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_5Rnd_127x99_T_TAC50">
+<German>TAC50 Leuchtspur (5 Sch.)</German>
+<English>5Rnd. TAC50 Tracer</English>
+<Italian>Caric. 5 mun. TAC50 Tracciante</Italian>
+<Spanish>5 carga TAC50 Tracer</Spanish>
+<French>5 c. TAC50 Tracer</French>
+<Czech>5náb. TAC-50 Zás. Svítící</Czech>
+<Russian>Маг. TAC-50 (5 патр. трасс.)</Russian>
+<Polish>magazynek TAC-50 (smugowe)</Polish>
+<Hungarian>5lszr. TAC-50 Jlz.</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_32RND_9X19_UZI_SD">
+<Original>32Rnd. UZI SD</Original>
+<German>UZI SD Mag.</German>
+<English>32Rnd. UZI SD</English>
+<Italian>Car. UZI SD</Italian>
+<Spanish>UZI SD Carg.</Spanish>
+<French>Charg. UZI SD</French>
+<Czech>UZI SD zás.</Czech>
+<Russian>Маг. Uzi (32 патр. дозвук.)</Russian>
+<Polish>magazynek UZI (SD)</Polish>
+<Hungarian>UZI SD Mag.</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_32RND_9X19_UZI">
+<Original>32Rnd. UZI</Original>
+<German>UZI Mag.</German>
+<English>32Rnd. UZI</English>
+<Italian>Car. UZI</Italian>
+<Spanish>UZI Carg.</Spanish>
+<French>Charg. UZI</French>
+<Czech>UZI zás.</Czech>
+<Russian>Маг. Uzi (32 патр.)</Russian>
+<Polish>magazynek UZI</Polish>
+<Hungarian>UZI Mag.</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_30RND_9X19_EVO">
+<Original>30Rnd. EVO3</Original>
+<English>30Rnd. EVO3</English>
+<Czech>EVO3 zás.</Czech>
+<German>EVO3 Mag.</German>
+<Russian>Маг. EVO3 (30 патр.)</Russian>
+<Polish>magazynek EVO3</Polish>
+<Hungarian>EVO3 Mag.</Hungarian>
+<Italian>Car. EVO3</Italian>
+<Spanish>EVO3 Carg.</Spanish>
+<French>Charg. EVO3</French>
+</Key>
+<Key ID="STR_ACE_MDN_30RND_9X19_EVOSD">
+<Original>30Rnd. EVO3 SD</Original>
+<English>30Rnd. EVO3 SD</English>
+<Czech>EVO3 SD zás.</Czech>
+<German>EVO3 SD Mag.</German>
+<Russian>Маг. EVO3 (30 патр. дозвук.)</Russian>
+<Polish>magazynek EVO3 (SD)</Polish>
+<Hungarian>EVO3 SD Mag.</Hungarian>
+<Italian>Car. EVO3 SD</Italian>
+<Spanish>EVO3 SD Carg.</Spanish>
+<French>Charg. EVO3 SD</French>
+</Key>
+<Key ID="STR_ACE_MDN_10RND_762X51_CZ750">
+<Original>10Rnd. CZ750</Original>
+<German>CZ750 Mag.</German>
+<English>10Rnd. CZ750</English>
+<Italian>Caric. CZ750</Italian>
+<Spanish>Carg. CZ750</Spanish>
+<French>Charg. CZ750</French>
+<Czech>CZ750 Zás.</Czech>
+<Russian>Маг. CZ750 (10 патр.)</Russian>
+<Polish>magazynek CZ750</Polish>
+<Hungarian>10lszr. CZ750</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_14RND_CZ75">
+<German>CZ-75 Compact-Mag.</German>
+<English>CZ-75 Compact Mag.</English>
+<Italian>Caric. CZ-75 Compact</Italian>
+<Spanish>Carg. CZ-75 Compact</Spanish>
+<French>Charg. CZ-75 Compact</French>
+<Czech>CZ-75 Compact Zás.</Czech>
+<Russian>Маг. CZ-75 Compact (14 патр.)</Russian>
+<Polish>magazynek CZ-75 Compact</Polish>
+<Hungarian>CZ-75 Compact tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_16RND_CZ75">
+<German>CZ-75 Duty-Mag.</German>
+<English>CZ-75 Duty Mag.</English>
+<Italian>Caric. CZ-75 Duty</Italian>
+<Spanish>Carg. CZ-75 Duty</Spanish>
+<French>Charg. CZ-75 Duty</French>
+<Czech>CZ-75 Duty Zás.</Czech>
+<Russian>Маг. CZ-75 Duty (16 патр.)</Russian>
+<Polish>magazynek CZ-75 Duty</Polish>
+<Hungarian>CZ-75 Duty tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_18RND_CZ75">
+<German>CZ-75 Phantom-Mag.</German>
+<English>CZ-75 Phantom Mag.</English>
+<Italian>Caric. CZ-75 Phantom</Italian>
+<Spanish>Carg. CZ-75 Phantom</Spanish>
+<French>Charg. CZ-75 Phantom</French>
+<Czech>CZ-75 Phantom Zás.</Czech>
+<Russian>Маг. CZ-75 Phantom (18 патр.)</Russian>
+<Polish>magazynek CZ-75 Phantom</Polish>
+<Hungarian>CZ-75 Phantom tár</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_18RND_CZ75SD">
+<German>CZ-75 Phantom SD Mag.</German>
+<English>CZ-75 Phantom SD Mag.</English>
+<Italian>Caric. CZ-75 Phantom SD</Italian>
+<Spanish>Carg. CZ-75 Phantom SD</Spanish>
+<French>Charg. CZ-75 Phantom SD</French>
+<Czech>CZ-75 Phantom SD Zás.</Czech>
+<Russian>Маг. CZ-75 (18 патр. дозвук.)</Russian>
+<Polish>magazynek CZ-75 Phantom SD</Polish>
+<Hungarian>CZ-75 Phantom SD tár</Hungarian>
+</Key>
+<!-- M203 Flare -->
+<Key ID="STR_ACE_MDN_FLAREIR_M203">
+<German>M992 Leuchtkugel IR</German>
+<English>M992 Flare IR</English>
+<Italian>M992 - fumogeno IR</Italian>
+<Spanish>M992 IR</Spanish>
+<French>M992 fusée IR</French>
+<Czech>M992 Světlice IR</Czech>
+<Russian>Сигн. выстрел M992 (ИК)</Russian>
+<Polish>raca M992 (IR)</Polish>
+<Hungarian>M992 Fényjelző (IR)</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_FLAREWHITE_M203">
+<German>M583 Leuchtkugel weiß</German>
+<English>M583 Flare White</English>
+<Italian>M583 - fumogeno bianco</Italian>
+<Spanish>M583 blanco</Spanish>
+<French>M583 fusée blanche</French>
+<Czech>M583 Světlice bílá</Czech>
+<Russian>Освет. выстрел M583 бел.</Russian>
+<Polish>raca M583 (biała)</Polish>
+<Hungarian>M583 Fényjelző (fehér)</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_FLARERED_M203">
+<German>M662 Leuchtkugel rot</German>
+<English>M662 Flare Red</English>
+<Italian>M662 - fumogeno rosso</Italian>
+<Spanish>M662 rojo</Spanish>
+<French>M662 fusée rouge</French>
+<Czech>M662 Světlice červená</Czech>
+<Russian>Освет. выстрел M662 красн.</Russian>
+<Polish>raca M662 (czerwona)</Polish>
+<Hungarian>M662 Fényjelző (vörös)</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_FLAREGREEN_M203">
+<German>M661 Leuchtkugel grün</German>
+<English>M661 Flare Green</English>
+<Italian>M661 - fumogeno verde</Italian>
+<Spanish>M661 verde</Spanish>
+<French>M661 fusée verte</French>
+<Czech>M661 Světlice zelená</Czech>
+<Russian>Освет. выстрел M661 зелён.</Russian>
+<Polish>raca M661 (zielona)</Polish>
+<Hungarian>M661 Fényjelző (zöld)</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_FLAREYELLOW_M203">
+<German>M665 Leuchtkugel gelb</German>
+<English>M665 Flare Yellow</English>
+<Italian>M665 - fumogeno giallo</Italian>
+<Spanish>M665 amarillo</Spanish>
+<French>M665 fusée jaune</French>
+<Czech>M665 Světlice žlutá</Czech>
+<Russian>Освет. выстрел M665 жёлт.</Russian>
+<Polish>raca M665 (żółta)</Polish>
+<Hungarian>M665 Fényjelző (sárga)</Hungarian>
+</Key>
+<!-- M203 Flare End -->
+<!-- M32 Flare -->
+<Key ID="STR_ACE_MDN_6RND_FLAREWHITE_M32">
+<German>M583 Leuchtkugel weiß</German>
+<English>6Rnd. M583 Flare White</English>
+<Italian>M583 - fumogeno bianco</Italian>
+<Spanish>M583 blanco</Spanish>
+<French>M583 fusée blanche</French>
+<Czech>M583 Světlice bílá</Czech>
+<Russian>Освет. выстр. M583 бел.,6 ед.</Russian>
+<Polish>raca M583 (biała)</Polish>
+<Hungarian>M583 Fényjelző (fehér)</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_6RND_FLARERED_M32">
+<German>M662 Leuchtkugel rot</German>
+<English>6Rnd. M662 Flare Red</English>
+<Italian>M662 - fumogeno rosso</Italian>
+<Spanish>M662 rojo</Spanish>
+<French>M662 fusée rouge</French>
+<Czech>M662 Světlice červená</Czech>
+<Russian>Освет. выстр. M662 крас.,6 ед.</Russian>
+<Polish>raca M662 (czerwona)</Polish>
+<Hungarian>M662 Fényjelző (vörös)</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_6RND_FLAREGREEN_M32">
+<German>M661 Leuchtkugel grün</German>
+<English>6Rnd. M661 Flare Green</English>
+<Italian>M661 - fumogeno verde</Italian>
+<Spanish>M661 verde</Spanish>
+<French>M661 fusée verte</French>
+<Czech>M661 Světlice zelená</Czech>
+<Russian>Освет. выстр. M661 зел.,6 ед.</Russian>
+<Polish>raca M661 (zielona)</Polish>
+<Hungarian>M661 Fényjelző (zöld)</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_6RND_FLAREYELLOW_M32">
+<German>M665 Leuchtkugel gelb</German>
+<English>6Rnd. M665 Flare Yellow</English>
+<Italian>M665 - fumogeno giallo</Italian>
+<Spanish>M665 amarillo</Spanish>
+<French>M665 fusée jaune</French>
+<Czech>M665 Světlice žlutá</Czech>
+<Russian>Освет. выстр. M665 жёлт.,6 ед.</Russian>
+<Polish>raca M665 (żółta)</Polish>
+<Hungarian>M665 Fényjelző (sárga)</Hungarian>
+</Key>
+<!-- M32 Flare End -->
+<!-- M203 Smoke -->
+<Key ID="STR_ACE_MDN_1RND_SMOKEYELLOW_M203">
+<German>M716 Rauch gelb</German>
+<English>M716 Smoke Yellow</English>
+<Italian>M716 - fumogeno giallo</Italian>
+<Spanish>M716 humo amarillo</Spanish>
+<French>M716 fumée jaune</French>
+<Czech>M716 dýmovnice žlutá</Czech>
+<Russian>Дым. выстрел M716 жёлт.</Russian>
+<Polish>granat dymny M716 (żółty)</Polish>
+<Hungarian>M716 Füst (sárga)</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_1RND_SMOKERED_M203">
+<German>M713 Rauch rot</German>
+<English>M713 Smoke Red</English>
+<Italian>M713 - fumogeno rosso</Italian>
+<Spanish>M713 humo rojo</Spanish>
+<French>M713 fumée rouge</French>
+<Czech>M713 dýmovnice rudá</Czech>
+<Russian>Дым. выстрел M713 красн.</Russian>
+<Polish>granat dymny M713 (czerwony)</Polish>
+<Hungarian>M713 Füst (vörös)</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_1RND_SMOKEGREEN_M203">
+<German>M715 Rauch grün</German>
+<English>M715 Smoke Green</English>
+<Italian>M715 - fumogeno verde</Italian>
+<Spanish>M715 humo verde </Spanish>
+<French>M715 fumée verte</French>
+<Czech>M715 dýmovnice zelená</Czech>
+<Russian>Дым. выстрел M715 зелён.</Russian>
+<Polish>granat dymny M715 (zielony)</Polish>
+<Hungarian>M715 Füst (zöld)</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_1RND_SMOKEPURPLE_M203">
+<German>M701 Rauch violett</German>
+<English>M701 Smoke Purple</English>
+<Italian>M701 Fumogeno viola</Italian>
+<Spanish>M701 de humo morada</Spanish>
+<French>M701 fumée violet</French>
+<Czech>M701 kouřový fialová</Czech>
+<Russian>Дым. выстрел M701 фиол.</Russian>
+<Polish>granat dymny M701 (fioletowy)</Polish>
+<Hungarian>M701 Füst bíbor</Hungarian>
+</Key>
+<!-- M203 Smoke End -->
+<!-- M32 Smoke -->
+<Key ID="STR_ACE_MDN_6RND_SMOKEYELLOW_M32">
+<German>M716 Rauch gelb</German>
+<English>6Rnd. M716 Smoke Yellow</English>
+<Italian>M716 - fumogeno giallo</Italian>
+<Spanish>M716 humo amarillo</Spanish>
+<French>M716 fumée jaune</French>
+<Czech>M716 dýmovnice žlutá</Czech>
+<Russian>Дым. выстр. M716 жёлт., 6 ед.</Russian>
+<Polish>granaty dymne M716 (żółte)</Polish>
+<Hungarian>M716 Füst (sárga)</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_6RND_SMOKERED_M32">
+<German>M713 Rauch rot</German>
+<English>6Rnd. M713 Smoke Red</English>
+<Italian>M713 - fumogeno rosso</Italian>
+<Spanish>M713 humo rojo</Spanish>
+<French>M713 fumée rouge</French>
+<Czech>M713 dýmovnice rudá</Czech>
+<Russian>Дым. выстр. M713 крас., 6 ед.</Russian>
+<Polish>granaty dymne M713 (czerwone)</Polish>
+<Hungarian>M713 Füst (vörös)</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_6RND_SMOKEGREEN_M32">
+<German>M715 Rauch grün</German>
+<English>6Rnd. M715 Smoke Green</English>
+<Italian>M715 - fumogeno verde</Italian>
+<Spanish>M715 humo verde </Spanish>
+<French>M715 fumée verte</French>
+<Czech>M715 dýmovnice zelená</Czech>
+<Russian>Дым. выстр. M715 зел., 6 ед.</Russian>
+<Polish>granaty dymne M715 (zielone)</Polish>
+<Hungarian>M715 Füst (zöld)</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_6RND_SMOKEPURPLE_M32">
+<German>M701 Rauch violett</German>
+<English>6Rnd. M701 Smoke Purple</English>
+<Italian>M701 Fumogeno viola</Italian>
+<Spanish>M701 de humo morada</Spanish>
+<French>M701 fumée violet</French>
+<Czech>M701 kouřový fialová</Czech>
+<Russian>Дым. выстр. M701 фиол., 6 ед.</Russian>
+<Polish>granaty dymne M701 (fioletowe)</Polish>
+<Hungarian>M701 Füst bíbor</Hungarian>
+</Key>
+<!-- M32 Smoke End -->
+<!-- M203 Star Cluster / Starshell -->
+<Key ID="STR_ACE_MDN_SS_RED_M203">
+<German>M664 Signalrakete rot</German>
+<English>M664 Starshell Red</English>
+<Italian>M664 Granata Luminosa Rossa</Italian>
+<Spanish>M664 Starshell Red</Spanish>
+<French>M664 Eclairante rouge</French>
+<Czech>M664 Starshell Červená</Czech>
+<Russian>Класт.сигн.выстр. M664 красн.</Russian>
+<Polish>raca M664 (czerwona)</Polish>
+<Hungarian>M664 vörös jelzőrakéta</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_SS_GREEN_M203">
+<German>M663 Signalrakete grün</German>
+<English>M663 Starshell Green</English>
+<Italian>M663 Granata Luminosa Verde</Italian>
+<Spanish>M663 Starshell Green</Spanish>
+<French>M663 Eclairante verte</French>
+<Czech>M663 Starshell Zelená</Czech>
+<Russian>Класт.сигн.выстр. M663 зелён.</Russian>
+<Polish>raca M663 (zielona)</Polish>
+<Hungarian>M663 zöld jelzőrakéta</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_SS_YELLOW_M203">
+<German>Mxxx Signalrakete gelb</German>
+<English>Mxxx Starshell Yellow</English>
+<Italian>Mxxx Granata Luminosa Gialla</Italian>
+<Spanish>Mxxx Starshell Yellow</Spanish>
+<French>Mxxx Eclairante jaune</French>
+<Czech>Mxxx Starshell Žlutá</Czech>
+<Russian>Класт.сигн.выстр. жёлт.</Russian>
+<Polish>raca Mxxx (żółta)</Polish>
+<Hungarian>Mxxx sárga jelzőrakéta</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_SS_WHITE_M203">
+<German>M585 Signalrakete weiß</German>
+<English>M585 Starshell White</English>
+<Italian>M585 Granata Luminosa Bianca</Italian>
+<Spanish>M585 Starshell White</Spanish>
+<French>M585 Eclairante blanche</French>
+<Czech>M585 Starshell Bílá</Czech>
+<Russian>Класт.сигн.выстр. M585 бел.</Russian>
+<Polish>raca M585 (biała)</Polish>
+<Hungarian>M585 fehér jelzőrakéta</Hungarian>
+</Key>
+<!-- M203 Star Cluster End -->
+<!-- M203 Explosives -->
+<Key ID="STR_ACE_MDN_1RND_433HEDP_M203">
+<German>M433 HEDP</German>
+<English>M433 HEDP</English>
+<Italian>M433 HEDP</Italian>
+<Spanish>M433 HEDP</Spanish>
+<French>M433 HEDP</French>
+<Czech>M433 HEDP</Czech>
+<Russian>M433 HEDP (кумулят.-осколоч.)</Russian>
+<Polish>nabój M433 (kumulacyjno-odłamkowy)</Polish>
+<Hungarian>M433 HEDP</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_1RND_HE_M203">
+<German>M406 HE</German>
+<English>M406 HE</English>
+<Italian>M406 HE</Italian>
+<Spanish>M406 HE</Spanish>
+<French>M406 HE</French>
+<Czech>M406 HE</Czech>
+<Russian>M406 HE (осколочный)</Russian>
+<Polish>nabój M406 (burzący)</Polish>
+<Hungarian>M406 HE</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_1RND_PR_M203">
+<German>M918 Übungsgeschoß</German>
+<English>M918 Practice round</English>
+<Italian>M918 Practice round</Italian>
+<Spanish>M918 Practice round</Spanish>
+<French>M918 Practice round</French>
+<Czech>M918 Practice round</Czech>
+<Russian>M918 (пристрелочный)</Russian>
+<Polish>nabój M918 (szkoleniowy)</Polish>
+<Hungarian>M918 Practice round</Hungarian>
+</Key>
+<!-- M203 Explosives End -->
+<!-- M32 Explosives -->
+<Key ID="STR_ACE_MDN_6RND_433HEDP_M32">
+<German>M433 HEDP</German>
+<English>6Rnd. M433 HEDP</English>
+<Italian>M433 HEDP</Italian>
+<Spanish>M433 HEDP</Spanish>
+<French>M433 HEDP</French>
+<Czech>M433 HEDP</Czech>
+<Russian>M433 HEDP кумул.-оск., 6 ед.</Russian>
+<Polish>naboje M433 (kumulacyjno-odłamkowe)</Polish>
+<Hungarian>M433 HEDP</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_6RND_HE_M32">
+<German>M406 HE</German>
+<English>6Rnd. M406 HE</English>
+<Italian>M406 HE</Italian>
+<Spanish>M406 HE</Spanish>
+<French>M406 HE</French>
+<Czech>M406 HE</Czech>
+<Russian>M406 HE осколоч., 6 ед.</Russian>
+<Polish>naboje M406 (odłamkowe)</Polish>
+<Hungarian>M406 HE</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_6RND_PR_M32">
+<German>M918 Übungsgeschoß</German>
+<English>6Rnd. M918 Practice</English>
+<Italian>M918 Practice round</Italian>
+<Spanish>M918 Practice round</Spanish>
+<French>M918 Practice round</French>
+<Czech>M918 Practice round</Czech>
+<Russian>M918 пристрелочные, 6 ед.</Russian>
+<Polish>naboje M918 (szkoleniowe)</Polish>
+<Hungarian>M918 Practice round</Hungarian>
+</Key>
+<!-- M32 Explosives End -->
+<!-- GP-25 Explosives -->
+<Key ID="STR_ACE_MDN_1RND_HE_GP25">
+<German>VOG-25</German>
+<English>VOG-25</English>
+<Italian>VOG-25</Italian>
+<Spanish>VOG-25</Spanish>
+<French>VOG-25</French>
+<Czech>VOG-25</Czech>
+<Russian>ВОГ-25</Russian>
+<Polish>nabój VOG-25</Polish>
+<Hungarian>VOG-25</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_1Rnd_HE_GP25P">
+<German>VOG-25P</German>
+<English>VOG-25P</English>
+<Italian>VOG-25P</Italian>
+<Spanish>VOG-25P</Spanish>
+<French>VOG-25P</French>
+<Czech>VOG-25P</Czech>
+<Russian>ВОГ-25П</Russian>
+<Polish>nabój VOG-25P</Polish>
+<Hungarian>VOG-25P</Hungarian>
+</Key>
+<!-- GP-25 Explosives End -->
+<!-- GP-25 Starcluster -->
+<Key ID="STR_ACE_MDN_SS_RED_GP25">
+<German>GP-25 Signalrakete rot</German>
+<English>GP-25 Starshell Red</English>
+<Italian>GP-25 Granata Luminosa Rossa</Italian>
+<Spanish>GP-25 Starshell Red</Spanish>
+<French>GP-25 Eclairante rouge</French>
+<Czech>GP-25 Starshell Červená</Czech>
+<Russian>Освет. выстрел ГП-25 красн.</Russian>
+<Polish>raca GP-25 (czerwona)</Polish>
+<Hungarian>GP-25 vörös jelzőrakéta</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_SS_GREEN_GP25">
+<German>GP-25 Signalrakete grün</German>
+<English>GP-25 Starshell Green</English>
+<Italian>GP-25 Granata Luminosa Verde</Italian>
+<Spanish>GP-25 Starshell Green</Spanish>
+<French>GP-25 Eclairante verte</French>
+<Czech>GP-25 Starshell Zelená</Czech>
+<Russian>Освет. выстрел ГП-25 зелён.</Russian>
+<Polish>raca GP-25 (zielona)</Polish>
+<Hungarian>GP-25 zöld jelzőrakéta</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_SS_YELLOW_GP25">
+<German>GP-25 Signalrakete gelb</German>
+<English>GP-25 Starshell Yellow</English>
+<Italian>GP-25 Granata Luminosa Gialla</Italian>
+<Spanish>GP-25 Starshell Yellow</Spanish>
+<French>GP-25 Eclairante jaune</French>
+<Czech>GP-25 Starshell Žlutá</Czech>
+<Russian>Освет. выстрел ГП-25 жёлт.</Russian>
+<Polish>raca GP-25 (żółta)</Polish>
+<Hungarian>GP-25 sárga jelzőrakéta</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_SS_WHITE_GP25">
+<German>GP-25 Signalrakete weiß</German>
+<English>GP-25 Starshell White</English>
+<Italian>GP-25 Granata Luminosa Bianca</Italian>
+<Spanish>GP-25 Starshell White</Spanish>
+<French>GP-25 Eclairante blanche</French>
+<Czech>GP-25 Starshell Bílá</Czech>
+<Russian>Освет. выстрел ГП-25 бел.</Russian>
+<Polish>raca GP-25 (biała)</Polish>
+<Hungarian>GP-25 fehér jelzőrakéta</Hungarian>
+</Key>
+<!-- GP25 Starcluster End -->
+<!-- FlareGun StarCluster -->
+<Key ID="STR_ACE_MDN_SS_RED_FG">
+<German>Signalrakete rot</German>
+<English>Starshell Red</English>
+<Italian>Razzo Luminoso Rosso</Italian>
+<Spanish>Starshell Red</Spanish>
+<French>Fusée éclairante rouge</French>
+<Czech>Starshell Červená</Czech>
+<Russian>Сигн. ракета красн.</Russian>
+<Polish>raca (czerwona)</Polish>
+<Hungarian>Vörös jelzőrakéta</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_SS_GREEN_FG">
+<German>Signalrakete grün</German>
+<English>Starshell Green</English>
+<Italian>Razzo Luminoso Verde</Italian>
+<Spanish>Starshell Green</Spanish>
+<French>Fusée éclairante verte</French>
+<Czech>Starshell Zelená</Czech>
+<Russian>Сигн. ракета зелён.</Russian>
+<Polish>raca (zielona)</Polish>
+<Hungarian>Zöld jelzőrakéta</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_SS_YELLOW_FG">
+<German>Signalrakete gelb</German>
+<English>Starshell Yellow</English>
+<Italian>Razzo Luminoso Giallo</Italian>
+<Spanish>Starshell Yellow</Spanish>
+<French>Fusée éclairante jaune</French>
+<Czech>Starshell Žlutá</Czech>
+<Russian>Сигн. ракета жёлт.</Russian>
+<Polish>raca (żółta)</Polish>
+<Hungarian>Sárga jelzőrakéta</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_SS_WHITE_FG">
+<German>Signalrakete weiß</German>
+<English>Starshell White</English>
+<Italian>Razzo Luminoso Bianco</Italian>
+<Spanish>Starshell White</Spanish>
+<French>Fusée éclairante blanche</French>
+<Czech>Starshell Bílá</Czech>
+<Russian>Сигн. ракета бел.</Russian>
+<Polish>raca (biała)</Polish>
+<Hungarian>Fehér jelzőrakéta</Hungarian>
+</Key>
+<!-- Flaregun Starcluster End -->
+<!-- GP25 VG40 Smoke -->
+<Key ID="STR_ACE_MDN_1RND_SMOKE_GP25">
+<German>VG-40MD weiß</German>
+<English>VG-40MD White</English>
+<Italian>VG-40MD Bianco</Italian>
+<Spanish>VG-40MD White</Spanish>
+<French>VG-40MD blanche</French>
+<Czech>VG-40MD Bílá</Czech>
+<Russian>ВГ-40МД бел.</Russian>
+<Polish>raca VG-40MD (biała)</Polish>
+<Hungarian>Fehér VG-40MD</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_1RND_SMOKERED_GP25">
+<German>VG-40MD rot</German>
+<English>VG-40MD Red</English>
+<Italian>VG-40MD Rosso</Italian>
+<Spanish>VG-40MD Red</Spanish>
+<French>VG-40MD rouge</French>
+<Czech>VG-40MD Červená</Czech>
+<Russian>ВГ-40МД красн.</Russian>
+<Polish>raca VG-40MD (czerwona)</Polish>
+<Hungarian>Vörös VG-40MD</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_1RND_SMOKEGREEN_GP25">
+<German>VG-40MD grün</German>
+<English>VG-40MD Green</English>
+<Italian>VG-40MD Verde</Italian>
+<Spanish>VG-40MD Green</Spanish>
+<French>VG-40MD verte</French>
+<Czech>VG-40MD Zelená</Czech>
+<Russian>ВГ-40МД зелён.</Russian>
+<Polish>raca VG-40MD (zielona)</Polish>
+<Hungarian>Zöld VG-40MD</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_1RND_SMOKEYELLOW_GP25">
+<German>VG-40MD gelb</German>
+<English>VG-40MD Yellow</English>
+<Italian>VG-40MD Giallo</Italian>
+<Spanish>VG-40MD Yellow</Spanish>
+<French>VG-40MD jaune</French>
+<Czech>VG-40MD Žlutá</Czech>
+<Russian>ВГ-40МД жёлт.</Russian>
+<Polish>raca VG-40MD (żółta)</Polish>
+<Hungarian>Sárga VG-40MD</Hungarian>
+</Key>
+<!-- GP35 Smoke end -->
+<!-- GP25 Flare VG40 OP-->
+<Key ID="STR_ACE_MDN_1RND_FLARE_GP25">
+<German>VG-40OP weiß</German>
+<English>VG-40OP White</English>
+<Italian>VG-40OP Bianco</Italian>
+<Spanish>VG-40OP White</Spanish>
+<French>VG-40OP blanche</French>
+<Czech>VG-40OP Bílá</Czech>
+<Russian>ВГ-40ОП бел.</Russian>
+<Polish>raca VG-40OP (biała)</Polish>
+<Hungarian>Fehér VG-40OP</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_1RND_FLARERED_GP25">
+<German>VG-40OP rot</German>
+<English>VG-40OP Red</English>
+<Italian>VG-40OP Rosso</Italian>
+<Spanish>VG-40OP Red</Spanish>
+<French>VG-40OP rouge</French>
+<Czech>VG-40OP Červená</Czech>
+<Russian>ВГ-40ОП красн.</Russian>
+<Polish>raca VG-40OP (czerwona)</Polish>
+<Hungarian>Vörös VG-40OP</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_1RND_FLAREGREEN_GP25">
+<German>VG-40OP grün</German>
+<English>VG-40OP Green</English>
+<Italian>VG-40OP Verde</Italian>
+<Spanish>VG-40OP Green</Spanish>
+<French>VG-40OP verte</French>
+<Czech>VG-40OP Zelená</Czech>
+<Russian>ВГ-40ОП зелён.</Russian>
+<Polish>raca VG-40OP (zielona)</Polish>
+<Hungarian>Zöld VG-40OP</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_1RND_FLAREYELLOW_GP25">
+<German>VG-40OP gelb</German>
+<English>VG-40OP Yellow</English>
+<Italian>VG-40OP Giallo</Italian>
+<Spanish>VG-40OP Yellow</Spanish>
+<French>VG-40OP jaune</French>
+<Czech>VG-40OP Žlutá</Czech>
+<Russian>ВГ-40ОП жёлт.</Russian>
+<Polish>raca VG-40OP (żółta)</Polish>
+<Hungarian>Sárga VG-40OP</Hungarian>
+</Key>
+<!-- BETA C MAG -->
+<Key ID="STR_ACE_MDN_100RND_556X45_BETACMAG">
+<German>BetaC-Mag.</German>
+<English>100Rnd. BetaC</English>
+<Italian>Caric. BetaC</Italian>
+<Spanish>Carg. BetaC</Spanish>
+<French>Charg. BetaC</French>
+<Czech>BetaC Zás.</Czech>
+<Russian>Маг. Beta C-Mag (100 патр.)</Russian>
+<Polish>magazynek BetaC</Polish>
+<Hungarian>BetaC tár</Hungarian>
+</Key>
+<!-- Shotgun "magazine" -->
+<Key ID="STR_MDN_ACE_8RND_12GA_SLUG">
+<German>Geschoss (8 Sch.)</German>
+<English>8Rnd. Slug</English>
+<Italian>Cartucce da 8 colpi</Italian>
+<Spanish>Metralla, 8 crg.</Spanish>
+<French>Balle Cal. 12 8 c.</French>
+<Czech>8náb. Slug</Czech>
+<Russian>12кал. пуля, 8 патр.</Russian>
+<Polish>breneki 12G</Polish>
+<Hungarian>8lszr. gyöngygolyó</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDN_20RND_AA12_BUCK00">
+<German>20 Schuss AA12 Schrot</German>
+<English>20Rnd. AA12 Buck00</English>
+<Italian>20Rnd. AA12 Buck00</Italian>
+<Spanish>20Rnd. AA12 Buck00</Spanish>
+<French>Plombs pour AA12, 20 munitions</French>
+<Czech>20Rnd. AA12 broky</Czech>
+<Russian>12кал. AA-12 дробь, 20 патр.</Russian>
+<Polish>śrut do AA12</Polish>
+<Hungarian>20Rnd. AA12 Buck00</Hungarian>
+</Key>
+<Key ID="STR_ACE_DN_10Rnd_9x39_SP5_VSS">
+<German>VSS SP-5 (10 Sch.)</German>
+<English>10Rnd. VSS SP-5</English>
+<Italian>VSS SP-5 10 muniz.</Italian>
+<Spanish>10Rnd. VSS SP-5</Spanish>
+<French>VSS SP-5 10 c.</French>
+<Czech>10náb. VSS SP-5</Czech>
+<Russian>Маг. ВСС СП-5 (10 патр.)</Russian>
+<Polish>10 naboi VSS SP-5</Polish>
+<Hungarian>10lszr. VSzSz SP-5</Hungarian>
+</Key>
+<Key ID="STR_ACE_DN_20Rnd_9x39_SP5_VSS">
+<German>VSS SP-5 (20 Sch.)</German>
+<English>20Rnd. VSS SP-5</English>
+<Italian>VSS SP-5 20 muniz.</Italian>
+<Spanish>20Rnd. VSS SP-5</Spanish>
+<French>VSS SP-5 20 c.</French>
+<Czech>20náb. VSS SP-5</Czech>
+<Russian>Маг. ВСС СП-5 (20 патр.)</Russian>
+<Polish>20 naboi VSS SP-5</Polish>
+<Hungarian>20lszr. VSzSz SP-5</Hungarian>
+</Key>
+<Key ID="STR_ACE_DN_10Rnd_9x39_SP6_VSS">
+<German>VSS SP-6 (10 Sch.)</German>
+<English>10Rnd. VSS SP-6</English>
+<Italian>VSS SP-6 10 muniz.</Italian>
+<Spanish>10Rnd. VSS SP-6</Spanish>
+<French>VSS SP-6 10 c.</French>
+<Czech>10náb. VSS SP-6</Czech>
+<Russian>Маг. ВСС СП-6 (10 патр.)</Russian>
+<Polish>10 naboi VSS SP-6</Polish>
+<Hungarian>10lszr. VSzSz SP-6</Hungarian>
+</Key>
+<Key ID="STR_ACE_DN_20Rnd_9x39_SP6_VSS">
+<German>VSS SP-6 (20 Sch.)</German>
+<English>20Rnd. VSS SP-6</English>
+<Italian>VSS SP-6 20 muniz.</Italian>
+<Spanish>20Rnd. VSS SP-6</Spanish>
+<French>VSS SP-6 20 c.</French>
+<Czech>20náb. VSS SP-6</Czech>
+<Russian>Маг. ВСС СП-6 (20 патр.)</Russian>
+<Polish>20 naboi VSS SP-6</Polish>
+<Hungarian>20lszr. VSzSz SP-6</Hungarian>
+</Key>
+</Container>
+<Container name="STR_ACE_DSS">
+<Key ID="STR_ACE_DSS_20Rnd_762x51_B_FAL">
+<German>Kaliber: 7,62x51mm NATO &lt;br/&gt;Schuss: 20 &lt;br/&gt;Eingesetzt in: FAL</German>
+<English>Caliber: 7.62x51mm NATO &lt;br/&gt;Rounds: 20 &lt;br/&gt;Used in: FAL</English>
+<Italian>Calibro: 7,62x51mm NATO &lt;br/&gt;Munizioni: 20 &lt;br/&gt;Si usa in: FAL</Italian>
+<Spanish>Calibre: 7,62x51mm NATO &lt;br/&gt;Cargas: 20 &lt;br/&gt;Uso: FAL</Spanish>
+<French>Calibre : 7.62x51mm NATO &lt;br/&gt;Munitions : 20 &lt;br/&gt;Utilisé avec : FAL</French>
+<Czech>Ráže: 7,62x51mm NATO &lt;br/&gt;Nábojů: 20 &lt;br/&gt;Pro: FAL</Czech>
+<Russian>Калибр: 7,62x51мм NATO &lt;br/&gt;Количество: 20 &lt;br/&gt;Используются в: FN-FAL</Russian>
+<Polish>Kaliber: 7,62x51mm NATO &lt;br/&gt;Naboje: 20 &lt;br/&gt;Używane w: FAL</Polish>
+<Hungarian>Kaliber: 7.62x51mm NATO &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: FAL</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_30Rnd_762x51_B_FAL">
+<German>Kaliber: 7,62x51mm NATO &lt;br/&gt;Schuss: 30 &lt;br/&gt;Eingesetzt in: SA58</German>
+<English>Caliber: 7.62x51mm NATO &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: SA58</English>
+<Italian>Calibro: 7,62x51mm NATO &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: SA58</Italian>
+<Spanish>Calibre: 7,62x51mm NATO &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: SA58</Spanish>
+<French>Calibre : 7.62x51mm NATO &lt;br/&gt;Munitions : 30 &lt;br/&gt;Utilisé avec : SA58</French>
+<Czech>Ráže: 7,62x51mm NATO &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: SA58</Czech>
+<Russian>Калибр: 7,62x51мм NATO &lt;br/&gt;Количество: 30 &lt;br/&gt;Используются в: FN-FAL</Russian>
+<Polish>Kaliber: 7,62x51mm NATO &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: SA58</Polish>
+<Hungarian>Kaliber: 7.62x51mm NATO &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: SA58</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_10Rnd_762x39_B_SKS">
+<German>Kaliber: 7,62x39mm &lt;br/&gt;Schuss: 10 &lt;br/&gt;Eingesetzt in: SKS</German>
+<English>Caliber: 7.62x39mm &lt;br/&gt;Rounds: 10 &lt;br/&gt;Used in: SKS</English>
+<Italian>Calibro: 7,62x39mm &lt;br/&gt;Munizioni: 10 &lt;br/&gt;Si usa in: SKS</Italian>
+<Spanish>Calibre: 7,62x39mm &lt;br/&gt;Cargas: 10 &lt;br/&gt;Uso: SKS</Spanish>
+<French>Calibre : 7.62x39mm &lt;br/&gt;Munitions : 10 &lt;br/&gt;Utilisé avec : SKS</French>
+<Czech>Ráže: 7,62x39mm &lt;br/&gt;Nábojů: 10 &lt;br/&gt;Pro: SKS</Czech>
+<Russian>Калибр: 7,62x39мм &lt;br/&gt;Количество: 10 &lt;br/&gt;Используются в: CKC</Russian>
+<Polish>Kaliber: 7,62x39mm &lt;br/&gt;Naboje: 10 &lt;br/&gt;Używane w: SKS</Polish>
+<Hungarian>Kaliber: 7.62x39mm &lt;br/&gt; Töltények: 10 &lt;br/&gt; Hozzá tartozó fegyver: SKS</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_30Rnd_762x39_AP_AK47">
+<German>Kaliber:7,62x39mm AP &lt;br/&gt;Schuss: 30 &lt;br/&gt;Eingesetzt in: AKM, AK-103, AK-104 und RPK</German>
+<English>Caliber:7.62x39mm AP &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: AKM, AK-103, AK-104 and RPK</English>
+<Italian>Calibro: 7,62x39 mm AP &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: AKM, AK-103, AK-104 e RPK</Italian>
+<Spanish>Calibre:7.62x39 mm AP &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: AKM, AK-103, Ak-104 y RPK</Spanish>
+<French>Calibre : 7.62x39 mm perf. &lt;br/&gt;Munitions : 30 &lt;br/&gt;Utilisé avec : AKM, AK-103, AK-104 et RPK</French>
+<Czech>Kalibr: 7,62x39mm AP &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: AKM, AK-103, Ak-104 a RPK</Czech>
+<Russian>Калибр:7.62x39 мм БП &lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: AKM, AK-103, AK-104 и РПК</Russian>
+<Polish>Kaliber:7,62x39mm AP &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: AKM, AK-103, AK-104 i RPK</Polish>
+<Hungarian>Kaliber: 7.62x39mm AP &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: AKM, AK-103, AK-104 and RPK</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_40Rnd_762x39_AP_AK47">
+<German>Kaliber:7,62x39mm AP &lt;br/&gt;Schuss: 40 &lt;br/&gt;Eingesetzt in: AKM, AK-103, AK-104 und RPK</German>
+<English>Caliber:7.62x39mm AP &lt;br/&gt;Rounds: 40 &lt;br/&gt;Used in: AKM, AK-103, AK-104 and RPK</English>
+<Italian>Calibro: 7,62x39 mm AP &lt;br/&gt;Munizioni: 40 &lt;br/&gt;Si usa in: AKM, AK-103, AK-104 e RPK</Italian>
+<Spanish>Calibre:7.62x39 mm AP &lt;br/&gt;Cargas: 40 &lt;br/&gt;Uso: AKM, AK-103, Ak-104 y RPK</Spanish>
+<French>Calibre : 7.62x39 mm perf. &lt;br/&gt;Munitions : 40 &lt;br/&gt;Utilisé avec : AKM, AK-103, AK-104 et RPK</French>
+<Czech>Kalibr: 7,62x39mm AP &lt;br/&gt;Nábojů: 40 &lt;br/&gt;Pro: AKM, AK-103, Ak-104 a RPK</Czech>
+<Russian>Калибр:7.62x39 мм БП &lt;br/&gt;Количество: 40 &lt;br/&gt;Используется в: AKM, AK-103, AK-104 и РПК</Russian>
+<Polish>Kaliber:7,62x39mm AP &lt;br/&gt;Naboje: 40 &lt;br/&gt;Używane w: AKM, AK-103, AK-104 i RPK</Polish>
+<Hungarian>Kaliber: 7.62x39mm AP &lt;br/&gt; Töltények: 40 &lt;br/&gt; Hozzá tartozó fegyver: AKM, AK-103, AK-104 and RPK</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_45Rnd_545x39_B_AK">
+<German>Kaliber: 5,45x39mm &lt;br/&gt;Schuss: 45 &lt;br/&gt;Eingesetzt in: АК-74, АКС-74, АКС-74У, АК-107 und RPK-74</German>
+<English>Caliber: 5.45x39mm &lt;br/&gt;Rounds: 45 &lt;br/&gt;Used in: АК-74, АКС-74, АКС-74У, АК-107 and RPK-74</English>
+<Italian>Calibro: 5,45x39mm &lt;br/&gt;Munizioni: 45 &lt;br/&gt;Si usa in: АК-74, АКС-74, АКС-74У, АК-107 e RPK-74</Italian>
+<Spanish>Calibre: 5,45x39mm &lt;br/&gt;Cargas: 45 &lt;br/&gt;Uso: АК-74, АКС-74, АКС-74У, АК-107 y RPK-74</Spanish>
+<French>Calibre : 5.45x39mm &lt;br/&gt;Munitions : 45 &lt;br/&gt;Utilisé avec : АК-74, АКС-74, АКС-74У, АК-107 et RPK-74</French>
+<Czech>Ráže: 5,45x39mm &lt;br/&gt;Nábojů: 45 &lt;br/&gt;Pro: АК-74, АКС-74, АКС-74У, АК-107 a RPK-74</Czech>
+<Russian>Калибр: 5,45x39мм &lt;br/&gt;Количество: 45 &lt;br/&gt;Используются в: АК-74, АКС-74, АКС-74У, АК-107 и РПК-74</Russian>
+<Polish>Kaliber: 5,45x39mm &lt;br/&gt;Naboje: 45 &lt;br/&gt;Używane w: АК-74, АКС-74, АКС-74У, АК-107 i RPK-74</Polish>
+<Hungarian>Kaliber: 5.45x39mm &lt;br/&gt; Töltények: 45 &lt;br/&gt; Hozzá tartozó fegyver: АК-74, АКС-74, АКС-74У, АК-107 and RPK-74</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_30Rnd_545x39_EP_AK">
+<German>Kaliber: 5,45x39mm EP &lt;br/&gt;Schuss: 30 &lt;br/&gt;Eingesetzt in: AK-74, AKS-74U, AK-105, AK-107 und RPK-74</German>
+<English>Caliber: 5.45x39mm EP &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: AK-74, AKS-74U, AK-105, AK-107 and RPK-74</English>
+<Italian>Calibro: 5,45x39 mm EP &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: AK-74, AKS-74U, AK-105, AK-107 e RPK-74</Italian>
+<Spanish>Calibre: 5,45x39 mm EP &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: AK-74, AKS-74U, AK-105, AK-107 y RPK-74</Spanish>
+<French>Calibre : 5.45x39 mm EP &lt;br/&gt;Munitions : 30 &lt;br/&gt;Utilisé avec : AK-74, AKS-74U, AK-105, AK-107 et RPK-74</French>
+<Czech>Kalibr: 5,45x39mm EP &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: AK-74, AKS-74U, AK-105, AK-107 a RPK-74</Czech>
+<Russian>Калибр: 5.45x39 мм ПП &lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: АК-74, АКС-74, АКС-74У, АК-107 и РПК-74</Russian>
+<Polish>Kaliber: 5,45x39mm EP &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: AK-74, AKS-74U, AK-105, AK-107 i RPK-74</Polish>
+<Hungarian>Kaliber: 5.45x39mm EP &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: AK-74, AKS-74U, AK-105, AK-107 and RPK-74</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_30Rnd_545x39_AP_AK">
+<German>Kaliber: 5,45x39mm AP &lt;br/&gt;Schuss: 30 &lt;br/&gt;Eingesetzt in: AK-74, AKS-74U, AK-105, AK-107 und RPK-74</German>
+<English>Caliber: 5.45x39mm AP &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: AK-74, AKS-74U, AK-105, AK-107 and RPK-74</English>
+<Italian>Calibro: 5,45x39 mm AP &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: AK-74, AKS-74U, AK-105, AK-107 e RPK-74</Italian>
+<Spanish>Calibre: 5,45x39 mm AP &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: AK-74, AKS-74U, AK-105, AK-107 y RPK-74</Spanish>
+<French>Calibre : 5.45x39 mm perf. &lt;br/&gt;Munitions : 30 &lt;br/&gt;Utilisé avec : AK-74, AKS-74U, AK-105, AK-107 et RPK-74</French>
+<Czech>Kalibr: 5,45x39mm AP &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: AK-74, AKS-74U, AK-105, AK-107 a RPK-74</Czech>
+<Russian>Калибр: 5.45x39 мм БП &lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: АК-74, АКС-74, АКС-74У, АК-107 и РПК-74</Russian>
+<Polish>Kaliber: 5,45x39mm AP &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: AK-74, AKS-74U, AK-105, AK-107 i RPK-74</Polish>
+<Hungarian>Kaliber: 5.45x39mm AP &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: AK-74, AKS-74U, AK-105, AK-107 and RPK-74</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_45Rnd_545x39_EP_AK">
+<German>Kaliber: 5,45x39mm EP &lt;br/&gt;Schuss: 45 &lt;br/&gt;Eingesetzt in: AK-74, AKS-74U, AK-105, AK-107 und RPK-74</German>
+<English>Caliber: 5.45x39mm EP &lt;br/&gt;Rounds: 45 &lt;br/&gt;Used in: AK-74, AKS-74U, AK-105, AK-107 and RPK-74</English>
+<Italian>Calibro: 5,45x39mm EP &lt;br/&gt;Munizioni: 45 &lt;br/&gt;Si usa in: AK-74, AKS-74U, AK-105, AK-107 e RPK-74</Italian>
+<Spanish>Calibre: 5,45x39mm EP &lt;br/&gt;Cargas: 45 &lt;br/&gt;Uso: AK-74, AKS-74U, AK-105, AK-107 y RPK-74</Spanish>
+<French>Calibre : 5.45x39mm EP &lt;br/&gt;Munitions : 45 &lt;br/&gt;Utilisé avec : AK-74, AKS-74U, AK-105, AK-107 et RPK-74</French>
+<Czech>Ráže: 5,45x39mm EP &lt;br/&gt;Nábojů: 45 &lt;br/&gt;Pro: AK-74, AKS-74U, AK-105, AK-107 a RPK-74</Czech>
+<Russian>Калибр: 5,45x39мм ПП &lt;br/&gt;Количество: 45 &lt;br/&gt;Используются в: АК-74, АКС-74, АКС-74У, АК-107 и РПК-74</Russian>
+<Polish>Kaliber: 5,45x39mm EP &lt;br/&gt;Naboje: 45 &lt;br/&gt;Używane w: AK-74, AKS-74U, AK-105, AK-107 i RPK-74</Polish>
+<Hungarian>Kaliber: 5.45x39mm EP &lt;br/&gt; Töltények: 45 &lt;br/&gt; Hozzá tartozó fegyver: AK-74, AKS-74U, AK-105, AK-107 and RPK-74</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_45Rnd_545x39_AP_AK">
+<German>Kaliber: 5,45x39mm AP &lt;br/&gt;Schuss: 45 &lt;br/&gt;Eingesetzt in: AK-74, AKS-74U, AK-105, AK-107 und RPK-74</German>
+<English>Caliber: 5.45x39mm AP &lt;br/&gt;Rounds: 45 &lt;br/&gt;Used in: AK-74, AKS-74U, AK-105, AK-107 and RPK-74</English>
+<Italian>Calibro: 5,45x39mm AP &lt;br/&gt;Munizioni: 45 &lt;br/&gt;Si usa in: AK-74, AKS-74U, AK-105, AK-107 e RPK-74</Italian>
+<Spanish>Calibre: 5,45x39mm AP &lt;br/&gt;Cargas: 45 &lt;br/&gt;Uso: AK-74, AKS-74U, AK-105, AK-107 y RPK-74</Spanish>
+<French>Calibre : 5.45x39mm perf. &lt;br/&gt;Munitions : 45 &lt;br/&gt;Utilisé avec : AK-74, AKS-74U, AK-105, AK-107 et RPK-74</French>
+<Czech>Ráže: 5,45x39mm AP &lt;br/&gt;Nábojů: 45 &lt;br/&gt;Pro: AK-74, AKS-74U, AK-105, AK-107 a RPK-74</Czech>
+<Russian>Калибр: 5,45x39мм БП &lt;br/&gt;Количество: 45 &lt;br/&gt;Используются в: АК-74, АКС-74, АКС-74У, АК-107 и РПК-74</Russian>
+<Polish>Kaliber: 5,45x39mm AP &lt;br/&gt;Naboje: 45 &lt;br/&gt;Używane w: AK-74, AKS-74U, AK-105, AK-107 i RPK-74</Polish>
+<Hungarian>Kaliber: 5.45x39mm AP &lt;br/&gt; Töltények: 45 &lt;br/&gt; Hozzá tartozó fegyver: AK-74, AKS-74U, AK-105, AK-107 and RPK-74</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_20Rnd_762x51_B_G3">
+<German>Kaliber: 7,62x51mm NATO &lt;br/&gt;Schuss: 20 &lt;br/&gt;Eingesetzt in: G3</German>
+<English>Caliber: 7.62x51mm NATO &lt;br/&gt;Rounds: 20 &lt;br/&gt;Used in: G3</English>
+<Italian>Calibro: 7,62x51mm NATO &lt;br/&gt;Munizioni: 20 &lt;br/&gt;Si usa in: G3</Italian>
+<Spanish>Calibre: 7,62x51mm NATO &lt;br/&gt;Cargas: 20 &lt;br/&gt;Uso: G3</Spanish>
+<French>Calibre : 7.62x51mm NATO &lt;br/&gt;Munitions : 20 &lt;br/&gt;Utilisé avec : G3</French>
+<Czech>Ráže: 7,62x51mm NATO &lt;br/&gt;Nábojů: 20 &lt;br/&gt;Pro: G3</Czech>
+<Russian>Калибр: 7,62x51мм NATO &lt;br/&gt;Количество: 20 &lt;br/&gt;Используются в: H&amp;K G3</Russian>
+<Polish>Kaliber: 7,62x51mm NATO &lt;br/&gt;Naboje: 20 &lt;br/&gt;Używane w: G3</Polish>
+<Hungarian>Kaliber: 7.62x51mm NATO &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: G3</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_20Rnd_762x51_B_HK417">
+<German>Kaliber: 7,62x51mm NATO &lt;br/&gt;Schuss: 20 &lt;br/&gt;Eingesetzt in: HK417</German>
+<English>Caliber: 7.62x51mm NATO &lt;br/&gt;Rounds: 20 &lt;br/&gt;Used in: HK417</English>
+<Italian>Calibro: 7,62x51mm NATO &lt;br/&gt;Munizioni: 20 &lt;br/&gt;Si usa in: HK417</Italian>
+<Spanish>Calibre: 7,62x51mm NATO &lt;br/&gt;Cargas: 20 &lt;br/&gt;Uso: HK417</Spanish>
+<French>Calibre : 7.62x51mm NATO &lt;br/&gt;Munitions : 20 &lt;br/&gt;Utilisé avec : HK417</French>
+<Czech>Ráže: 7,62x51mm NATO &lt;br/&gt;Nábojů: 20 &lt;br/&gt;Pro: HK417</Czech>
+<Russian>Калибр: 7,62x51мм NATO &lt;br/&gt;Количество: 20 &lt;br/&gt;Используются в: H&amp;K HK417</Russian>
+<Polish>Kaliber: 7,62x51mm NATO &lt;br/&gt;Naboje: 20 &lt;br/&gt;Używane w: HK417</Polish>
+<Hungarian>Kaliber: 7.62x51mm NATO &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: HK417</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_25Rnd_1143x23_B_UMP45">
+<German>Kaliber: .45 ACP &lt;br/&gt;Schuss: 25 &lt;br/&gt;Eingesetzt in: UMP 45, UMP 45 SD</German>
+<English>Caliber: .45 ACP &lt;br/&gt;Rounds: 25 &lt;br/&gt;Used in: UMP 45, UMP 45 SD</English>
+<Italian>Calibro: .45 ACP &lt;br/&gt;Munizioni: 25 &lt;br/&gt;Si usa in: UMP 45, UMP 45 SD</Italian>
+<Spanish>Calibre: .45 ACP &lt;br/&gt;Cargas: 25 &lt;br/&gt;Uso: UMP 45, UMP 45 SD</Spanish>
+<French>Calibre : .45 ACP &lt;br/&gt;Munitions : 25 &lt;br/&gt;Utilisé avec : UMP 45, UMP 45 SD</French>
+<Czech>Ráže: .45 ACP &lt;br/&gt;Nábojů: 25 &lt;br/&gt;Pro: UMP 45, UMP 45 SD</Czech>
+<Russian>Калибр: .45 ACP &lt;br/&gt;Количество: 25 &lt;br/&gt;Используются в: UMP 45, UMP 45 SD</Russian>
+<Polish>Kaliber: .45 ACP &lt;br/&gt;Naboje: 25 &lt;br/&gt;Używane w: UMP 45, UMP 45 SD</Polish>
+<Hungarian>Kaliber: .45 ACP &lt;br/&gt; Töltények: 25 &lt;br/&gt; Hozzá tartozó fegyver: UMP 45, UMP 45 SD</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_30Rnd_1143x23_B_M3">
+<German>Kaliber: .45 ACP &lt;br/&gt;Schuss: 30 &lt;br/&gt;Eingesetzt in: M3A1</German>
+<English>Caliber: .45 ACP &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: M3A1</English>
+<Italian>Calibro: .45 ACP &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: M3A1</Italian>
+<Spanish>Calibre: .45 ACP &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: M3A1</Spanish>
+<French>Calibre : .45 ACP &lt;br/&gt;Munitions : 30 &lt;br/&gt;Utilisé avec : M3A1</French>
+<Czech>Ráže: .45 ACP &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: M3A1</Czech>
+<Russian>Калибр: .45 ACP &lt;br/&gt;Количество: 30 &lt;br/&gt;Используются в: M3A1</Russian>
+<Polish>Kaliber: .45 ACP &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: M3A1</Polish>
+<Hungarian>Kaliber: .45 ACP &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: M3A1</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_33RND_9X19_G18">
+<German>Kaliber: 9x19mm &lt;br/&gt;Schuss: 33 &lt;br/&gt;Eingesetzt in: Glock 18, Glock 17</German>
+<English>Caliber: 9x19mm &lt;br/&gt;Rounds: 33 &lt;br/&gt;Used in: Glock 18, Glock 17</English>
+<Italian>Calibro: 9x19mm &lt;br/&gt;Munizioni: 33 &lt;br/&gt;Si usa in: Glock 18, Glock 17</Italian>
+<Spanish>Calibre: 9x19mm &lt;br/&gt;Cargas: 33 &lt;br/&gt;Uso: Glock 18, Glock 17</Spanish>
+<French>Calibre : 9x19mm &lt;br/&gt;Munitions : 33 &lt;br/&gt;Utilisé avec : Glock 18, Glock 17</French>
+<Czech>Ráže: 9x19mm &lt;br/&gt;Nábojů: 33 &lt;br/&gt;Pro: Glock 18, Glock 17</Czech>
+<Russian>Калибр: 9x19мм &lt;br/&gt;Количество: 33 &lt;br/&gt;Используются в: Glock 18, Glock 17</Russian>
+<Polish>Kaliber: 9x19mm &lt;br/&gt;Naboje: 33 &lt;br/&gt;Używane w: Glock 18, Glock 17</Polish>
+<Hungarian>Kaliber: 9x19mm &lt;br/&gt; Töltények: 33 &lt;br/&gt; Hozzá tartozó fegyver: Glock 18, Glock 17</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_30Rnd_6x35_B_PDW">
+<German>Kaliber: 6x35mm &lt;br/&gt;Schuss: 30 &lt;br/&gt;Eingesetzt in: KAC PDW</German>
+<English>Caliber: 6x35mm &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: KAC PDW</English>
+<Italian>Calibro: 6x35mm &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: KAC PDW</Italian>
+<Spanish>Calibre: 6x35mm &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: KAC PDW</Spanish>
+<French>Calibre : 6x35mm &lt;br/&gt;Munitions : 30 &lt;br/&gt;Utilisé avec : KAC PDW</French>
+<Czech>Ráže: 6x35mm &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: KAC PDW</Czech>
+<Russian>Калибр: 6x35mm &lt;br/&gt;Количество: 30 &lt;br/&gt;Используются в: KAC PDW</Russian>
+<Polish>Kaliber: 6x35мм &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: KAC PDW</Polish>
+<Hungarian>Kaliber: 6x35mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: KAC PDW</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_13RND_9X19_L9A1">
+<German>Kaliber: 9x19mm &lt;br/&gt;Schuss: 13 &lt;br/&gt;Eingesetzt in: L9A1</German>
+<English>Caliber: 9x19mm &lt;br/&gt;Rounds: 13 &lt;br/&gt;Used in: L9A1</English>
+<Italian>Calibro: 9x19mm &lt;br/&gt;Munizioni: 13 &lt;br/&gt;Si usa in: L9A1</Italian>
+<Spanish>Calibre: 9x19mm &lt;br/&gt;Cargas: 13 &lt;br/&gt;Uso: L9A1</Spanish>
+<French>Calibre : 9x19mm &lt;br/&gt;Munitions : 13 &lt;br/&gt;Utilisé avec : L9A1</French>
+<Czech>Ráže: 9x19mm &lt;br/&gt;Nábojů: 13 &lt;br/&gt;Pro: L9A1</Czech>
+<Russian>Калибр: 9x19мм &lt;br/&gt;Количество: 13 &lt;br/&gt;Используются в: L9A1</Russian>
+<Polish>Kaliber: 9x19mm &lt;br/&gt;Naboje: 13 &lt;br/&gt;Używane w: L9A1</Polish>
+<Hungarian>Kaliber: 9x19mm &lt;br/&gt; Töltények: 13 &lt;br/&gt; Hozzá tartozó fegyver: L9A1</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_1RND_SS_FG">
+<German>Typ: Leuchtgeschoss &lt;br/&gt;Schuss: 1 &lt;br/&gt;Eingesetzt in: Signalpistole</German>
+<English>Type: Flare &lt;br/&gt;Rounds: 1 &lt;br/&gt;Used in: Flare gun</English>
+<Italian>Tipo: Razzo luminoso &lt;br/&gt;Munizioni: 1 &lt;br/&gt;Si usa in: Pistola Lancia Razzi</Italian>
+<Spanish>Tipo: Bengala &lt;br/&gt;Cargas: 1 &lt;br/&gt;Uso: Flare gun</Spanish>
+<French>Type : Fusée éclairante &lt;br/&gt;Munitions : 1 &lt;br/&gt;Utilisé avec : Pistolet de signalement</French>
+<Czech>Typ: Světlice &lt;br/&gt;Nábojů: 1 &lt;br/&gt;Pro: Signalní pistoli</Czech>
+<Russian>Тип: Сигнальная ракета &lt;br/&gt;Количество: 1 &lt;br/&gt;Используются в: Сигнальная ракетница</Russian>
+<Polish>Typ: Raca &lt;br/&gt;Naboje: 1 &lt;br/&gt;Używane w: Starter</Polish>
+<Hungarian>Típus: Jelzőfény &lt;br/&gt; Lőszer: 1 &lt;br/&gt; Hozzá tartozó fegyver: Jelző pisztoly</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_JAVELIN_FIXED">
+<German>Reichweite: 250-2500 m &lt;br/&gt;Typ: Panzerabwehr &lt;br/&gt;Eingesetzt in: FGM-148 Javelin</German>
+<English>Range: 250-2500 m &lt;br/&gt;Type: anti-tank &lt;br/&gt;Used in: FGM-148 Javelin</English>
+<Italian>Portata: 250-2500 m &lt;br/&gt;Tipo: anticarro &lt;br/&gt;Si usa in: FGM-148 Javelin</Italian>
+<Spanish>Alcance: 250-2500 m &lt;br/&gt;Tipo: antitanque &lt;br/&gt;Uso: Javelin FGM-148</Spanish>
+<French>Portée : 250-2500 m &lt;br/&gt;Type : anti-blindés &lt;br/&gt;Utilisé avec : FGM-148 Javelin</French>
+<Czech>Dolet: 250-2500 m &lt;br/&gt;Typ: Protitanková &lt;br/&gt;Pro: FGM-148 Javelin</Czech>
+<Russian>Дальность: 250-2500 м &lt;br/&gt;Тип: ПТУР &lt;br/&gt;Используются в: ПТРК FGM-148 Javelin</Russian>
+<Polish>Zasięg: 250-2500 m &lt;br/&gt;Typ: przeciwpancerny &lt;br/&gt;Używane w: FGM-148 Javelin</Polish>
+<Hungarian>Hatótáv: 250-2500 m &lt;br/&gt; Típus: páncéltörő &lt;br/&gt; Hozzá tatozó fegyver: FGM-148 Javelin</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_20RND_9X39_B_SP5_OC14">
+<German>Kaliber: 9x39mm SP-5 &lt;br/&gt;Schuss: 20 &lt;br/&gt;Eingesetzt in: Groza-9</German>
+<English>Caliber: 9x39mm SP-5 &lt;br/&gt;Rounds: 20 &lt;br/&gt;Used in: Groza-9</English>
+<Italian>Calibro: 9x39 mm SP-5 &lt;br/&gt;Munizioni: 20 &lt;br/&gt;Si usa in: Groza-9</Italian>
+<Spanish>Calibre: 9x39 mm SP-5 &lt;br/&gt;Cargas: 20 &lt;br/&gt;Uso: Groza-9</Spanish>
+<French>Calibre: 9x39 mm SP-5 &lt;br/&gt;Munitions : 20 &lt;br/&gt;Utilisé avec : Groza-9</French>
+<Czech>Ráže: 9x39mm SP-5 &lt;br/&gt;Nábojů: 20 &lt;br/&gt;Pro: Groza-9</Czech>
+<Russian>Калибр: 9x39мм СП-5 &lt;br/&gt;Количество: 20 &lt;br/&gt;Используются в: ОЦ-14 Гроза</Russian>
+<Polish>Kaliber: 9x39mm SP-5 &lt;br/&gt;Naboje: 20 &lt;br/&gt;Używane w: Groza-9</Polish>
+<Hungarian>Kaliber: 9x39mm SP-5 &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: Groza-9</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_20RND_9X39_B_SP6_OC14">
+<German>Kaliber: 9x39mm SP-6 &lt;br/&gt;Schuss: 20 &lt;br/&gt;Eingesetzt in: Groza-9</German>
+<English>Caliber: 9x39mm SP-6 &lt;br/&gt;Rounds: 20 &lt;br/&gt;Used in: Groza-9</English>
+<Italian>Calibro: 9x39 mm SP-6 &lt;br/&gt;Munizioni: 20 &lt;br/&gt;Si usa in: Groza-9</Italian>
+<Spanish>Calibre: 9x39 mm SP-6 &lt;br/&gt;Cargas: 20 &lt;br/&gt;Uso: Groza-9</Spanish>
+<French>Calibre: 9x39 mm SP-6 &lt;br/&gt;Munitions : 20 &lt;br/&gt;Utilisé avec : Groza-9</French>
+<Czech>Ráže: 9x39mm SP-6 &lt;br/&gt;Nábojů: 20 &lt;br/&gt;Pro: Groza-9</Czech>
+<Russian>Калибр: 9x39мм СП-6 &lt;br/&gt;Количество: 20 &lt;br/&gt;Используются в: ОЦ-14 Гроза</Russian>
+<Polish>Kaliber: 9x39mm SP-6 &lt;br/&gt;Naboje: 20 &lt;br/&gt;Używane w: Groza-9</Polish>
+<Hungarian>Kaliber: 9x39mm SP-6 &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: Groza-9</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_5Rnd_25x59_HEDP_Barrett">
+<German>Kaliber: 25x59mm &lt;br/&gt;Schuss: 5 &lt;br/&gt;Eingesetzt in: M109</German>
+<English>Caliber: 25x59mm &lt;br/&gt;Rounds: 5 &lt;br/&gt;Used in: M109</English>
+<Italian>Calibro: 25x59mm &lt;br/&gt;Munizioni: 5 &lt;br/&gt;Si usa in: M109</Italian>
+<Spanish>Calibre: 25x59mm &lt;br/&gt;Cargas: 5 &lt;br/&gt;Uso: M109</Spanish>
+<French>Calibre : 25x59mm &lt;br/&gt;Munitions : 5 &lt;br/&gt;Utilisé avec : M109</French>
+<Czech>Ráže: 25x59mm &lt;br/&gt;Nábojů: 5 &lt;br/&gt;Pro: M109</Czech>
+<Russian>Калибр: 25x59мм &lt;br/&gt;Количество: 5 &lt;br/&gt;Используются в: M109</Russian>
+<Polish>Kaliber: 25x59mm &lt;br/&gt;Naboje: 5 &lt;br/&gt;Używane w: M109</Polish>
+<Hungarian>Kaliber: 25x59mm &lt;br/&gt; Töltények: 5 &lt;br/&gt; Hozzá tartozó fegyver: M109</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_20Rnd_762x51_SB_M110">
+<German>Kaliber: 7,62x51mm NATO &lt;br/&gt;Schuss: 20 &lt;br/&gt;Eingesetzt in: M110, M110 SD</German>
+<English>Caliber: 7.62x51mm NATO &lt;br/&gt;Rounds: 20 &lt;br/&gt;Used in: M110, M110 SD</English>
+<Italian>Calibro: 7,62x51mm NATO &lt;br/&gt;Munizioni: 20 &lt;br/&gt;Si usa in: M110, M110 SD</Italian>
+<Spanish>Calibre: 7,62x51mm NATO &lt;br/&gt;Cargas: 20 &lt;br/&gt;Uso: M110, M110 SD</Spanish>
+<French>Calibre : 7.62x51mm NATO &lt;br/&gt;Munitions : 20 &lt;br/&gt;Utilisé avec : M110, M110 SD</French>
+<Czech>Ráže: 7,62x51mm NATO &lt;br/&gt;Nábojů: 20 &lt;br/&gt;Pro: M110, M110 SD</Czech>
+<Russian>Калибр: 7,62x51мм NATO &lt;br/&gt;Количество: 20 &lt;br/&gt;Используются в: M110, M110 SD</Russian>
+<Polish>Kaliber: 7,62x51mm NATO &lt;br/&gt;Naboje: 20 &lt;br/&gt;Używane w: M110, M110 SD</Polish>
+<Hungarian>Kaliber: 7.62x51mm NATO &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: M110, M110 с ПБС</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_5Rnd_127x99_B_TAC50">
+<German>Kaliber: 12,7x99mm &lt;br/&gt;Schuss: 5 &lt;br/&gt;Eingesetzt in: TAC-50, TAC-50 SD, AS50</German>
+<English>Caliber: 12.7x99mm &lt;br/&gt;Rounds: 5 &lt;br/&gt;Used in: TAC-50, TAC-50 SD, AS50</English>
+<Italian>Calibro: 12,7x99mm &lt;br/&gt;Munizioni: 5 &lt;br/&gt;Si usa in: TAC-50, TAC-50 SD, AS50</Italian>
+<Spanish>Calibre: 12,7x99mm &lt;br/&gt;Cargas: 5 &lt;br/&gt;Uso: TAC-50, TAC-50 SD, AS50</Spanish>
+<French>Calibre : 12.7x99mm &lt;br/&gt;Munitions : 5 &lt;br/&gt;Utilisé avec : TAC-50, TAC-50 SD, AS50</French>
+<Czech>Ráže: 12,7x99mm &lt;br/&gt;Nábojů: 5 &lt;br/&gt;Pro: TAC-50, TAC-50 SD, AS50</Czech>
+<Russian>Калибр: 12,7x99мм &lt;br/&gt;Количество: 5 &lt;br/&gt;Используются в: TAC-50, TAC-50 SD, AS50</Russian>
+<Polish>Kaliber: 12,7x99mm &lt;br/&gt;Naboje: 5 &lt;br/&gt;Używane w: TAC-50, TAC-50 SD, AS50</Polish>
+<Hungarian>Kaliber: 12.7x99mm &lt;br/&gt; Töltények: 5 &lt;br/&gt; Hozzá tartozó fegyver: TAC-50, TAC-50 с ПБС, AS50</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_M109">
+<German>Panzerbrechendes Scharfschützengewehr &lt;br/&gt;Kaliber: 25x59 mm</German>
+<English>Anti-material sniper rifle &lt;br/&gt;Caliber: 25x59 mm</English>
+<Italian>Fucile da cecchino anti-blindato &lt;br/&gt;Calibro: 25x59 mm</Italian>
+<Spanish>Rifle de francotirador antimaterial &lt;br/&gt;Calibre: 25x59 mm</Spanish>
+<French>Fusil sniper anti-matériel &lt;br/&gt;Calibre : 25x59 mm</French>
+<Czech>Antimaterialová odstřelovací puška &lt;br/&gt;Ráže: 25x59 mm</Czech>
+<Russian>Крупнокалиберная снайперская винтовка &lt;br/&gt;Калибр: 25x59 мм</Russian>
+<Polish>Wielkokalibrowy karabin wyborowy &lt;br/&gt;Kaliber: 25x59 mm</Polish>
+<Hungarian>Nehéz mesterlövész puska &lt;br/&gt; Kaliber: 25x59 mm</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_32RND_9X19_UZI_SD">
+<Original>Caliber: 9x19mm&lt;br/&gt;Rounds: 32&lt;br/&gt;Used in: Micro UZI</Original>
+<German>Kaliber: 9x19mm&lt;br/&gt;Schuss: 32&lt;br/&gt;Eingesetzt in: Micro UZI</German>
+<English>Caliber: 9x19mm&lt;br/&gt;Rounds: 32&lt;br/&gt;Used in: Micro UZI</English>
+<Italian>Calibro: 9x19 mm&lt;br/&gt;Munizioni: 32&lt;br/&gt;Usato in: Micro UZI</Italian>
+<Spanish>Calibre: 9x19mm&lt;br/&gt;Cargas: 32&lt;br/&gt;Usado en: Micro UZI</Spanish>
+<French>Calibre: 9x19 mm&lt;br/&gt;Munitions: 32&lt;br/&gt;Utilisé avec: Micro UZI</French>
+<Czech>Kalibr: 9x19mm&lt;br/&gt;Nábojů: 32&lt;br/&gt;Pro: Micro UZI</Czech>
+<Russian>Калибр: 9x19 мм&lt;br/&gt;Количество: 32&lt;br/&gt;Используются в: Micro-Uzi</Russian>
+<Polish>Kaliber: 9x19 mm&lt;br/&gt;Naboje: 32&lt;br/&gt;Uzywany w: Uzi</Polish>
+<Hungarian>Caliber: 9x19mm&lt;br/&gt;Rounds: 32&lt;br/&gt;Used in: Micro UZI</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_32RND_9X19_UZI">
+<Original>Caliber: 9x19mm&lt;br/&gt;Rounds: 32&lt;br/&gt;Used in: Micro UZI</Original>
+<German>Kaliber: 9x19mm&lt;br/&gt;Schuss: 32&lt;br/&gt;Eingesetzt in: Micro UZI</German>
+<English>Caliber: 9x19mm&lt;br/&gt;Rounds: 32&lt;br/&gt;Used in: Micro UZI</English>
+<Italian>Calibro: 9x19 mm&lt;br/&gt;Munizioni: 32&lt;br/&gt;Usato in: Micro UZI</Italian>
+<Spanish>Calibre: 9x19mm&lt;br/&gt;Cargas: 32&lt;br/&gt;Usado en: Micro UZI</Spanish>
+<French>Calibre: 9x19 mm&lt;br/&gt;Munitions: 32&lt;br/&gt;Utilisé avec: Micro UZI</French>
+<Czech>Kalibr: 9x19mm&lt;br/&gt;Nábojů: 32&lt;br/&gt;Pro: Micro UZI</Czech>
+<Russian>Калибр: 9x19 мм&lt;br/&gt;Количество: 32&lt;br/&gt;Используются в: Micro-Uzi</Russian>
+<Polish>Kaliber: 9x19 mm&lt;br/&gt;Naboje: 32&lt;br/&gt;Uzywany w: Uzi</Polish>
+<Hungarian>Caliber: 9x19mm&lt;br/&gt;Rounds: 32&lt;br/&gt;Used in: Micro UZI</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_ACE_AT13TB">
+<German>Reichweite: 80-1500 m&lt;br/&gt;Type: Thermobarischer Sprengkopf&lt;br/&gt;Eingesetzt in: Metis-M 9K115-2</German>
+<English>Range: 80-1500 m &lt;br/&gt;Type: Thermobaric anti-personnel/anti-materiel &lt;br/&gt;Used in: Metis-M 9K115-2</English>
+<Italian>Portata: 80-1500 m&lt;br/&gt;Type: Thermobaric anti-personnel/anti-materiel&lt;br/&gt;Usato in: Metis-M 9K115-2</Italian>
+<Spanish>Alcance: 80-1500 m&lt;br/&gt;Type: Thermobaric anti-personnel/anti-materiel&lt;br/&gt;Usado en: Metis-M 9K115-2</Spanish>
+<French>Portée : 80 – 1 500 m&lt;br/&gt;Type: Thermobaric anti-personnel/anti-materiel&lt;br/&gt;Utilisé avec : Metis-M 9K115-2</French>
+<Czech>Dolet: 80 – 1500 m&lt;br/&gt;Type: Thermobaric anti-personnel/anti-materiel&lt;br/&gt;Pro: Metis-M 9K115-2</Czech>
+<Russian>Дальность: 80 – 1500 м&lt;br/&gt;Type: Термобарическая, против живой силы/техники&lt;br/&gt;Исп. в: ПТРК 9К115-2 Метис-М</Russian>
+<Polish>Zasięg: 80-1500 m&lt;br/&gt;Type: Thermobaric anti-personnel/anti-materiel&lt;br/&gt;Uzywany w: Metis-M 9K115-2</Polish>
+<Hungarian>Range: 80-1500 m &lt;br/&gt;Type: Thermobaric anti-personnel/anti-materiel&lt;br/&gt;Used in: Metis-M 9K115-2
+</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_40RND_B_46X30_MP7">
+<German>Kaliber: 4.6x30mm &lt;br/&gt;Schuss: 40 &lt;br/&gt;Eingesetzt in: MP7</German>
+<English>Caliber: 4.6x30mm &lt;br/&gt;Rounds: 40 &lt;br/&gt;Used in: MP7</English>
+<Italian>Calibro: 4.6x30 mm &lt;br/&gt;Munizioni: 40 &lt;br/&gt;Si usa in: MP7</Italian>
+<Spanish>Calibre: 4.6x30 mm &lt;br/&gt;Cargas: 40 &lt;br/&gt;Uso: MP7</Spanish>
+<French>Calibre: 4.6x30 mm &lt;br/&gt;Munitions : 40 &lt;br/&gt;UtilisÃ© avec : MP7</French>
+<Czech>RÃ¡Å¾e: 4.6x30mm &lt;br/&gt;NÃ¡bojÅ¯: 40 &lt;br/&gt;Pro: MP7</Czech>
+<Russian>Калибр: 4.6x30мм &lt;br/&gt;Количество: 40 &lt;br/&gt;Используются в: MP7</Russian>
+<Polish>Kaliber: 4.6x30mm &lt;br/&gt;Naboje: 40 &lt;br/&gt;UÅ¼ywane w: MP7</Polish>
+<Hungarian>Kaliber: 4.6x30mm &lt;br/&gt; TÃ¶ltÃ©nyek: 40 &lt;br/&gt; HozzÃ¡ tartozÃ³ fegyver: MP7</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_DM51">
+<German>Sprenghandgranate</German>
+<English>Sprenghandgranate</English>
+<Italian>Sprenghandgranate</Italian>
+<Spanish>Sprenghandgranate</Spanish>
+<French>Sprenghandgranate</French>
+<Czech>Sprenghandgranate</Czech>
+<Russian>Ручная граната</Russian>
+<Polish>Sprenghandgranate</Polish>
+<Hungarian>Sprenghandgranate</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_10RND_VSS_SP5">
+<German>Kaliber: 9x39 mm SP-5 &lt;br/&gt;Schuss: 10 &lt;br/&gt;Eingesetzt in: VSS Vintorez, AS Val</German>
+<English>Caliber: 9x39 mm SP-5 &lt;br/&gt;Rounds: 10 &lt;br/&gt;Used in: VSS Vintorez, AS Val</English>
+<Italian>Calibro: 9x39 mm SP-5 &lt;br/&gt;Munizioni: 10 &lt;br/&gt;Si usa in: VSS Vintorez, AS Val</Italian>
+<Spanish>Calibre: 9x39 mm SP-5 &lt;br/&gt;Cargas: 10 &lt;br/&gt;Uso: VSS Vintorez, AS Val</Spanish>
+<French>Calibre : 9x39 mm SP-5 &lt;br/&gt;Munitions: 10 &lt;br/&gt;Utilisé avec : VSS Vintorez, AS Val</French>
+<Czech>Kalibr: 9x39 mm СП-5 &lt;br/&gt;Nábojů: 10 &lt;br/&gt;Pro: VSS Vintorez, AS Val</Czech>
+<Russian>Патрон: 9x39 мм СП-5 &lt;br/&gt;Количество: 10 &lt;br/&gt;Используется в: ВСС Винторез, АС Вал</Russian>
+<Polish>Kaliber: 9x39 mm SP-5 &lt;br/&gt;Naboje: 10 &lt;br/&gt;Używane w: VSS Vintorez, AS Val</Polish>
+<Hungarian>Kaliber: 9x39mm SP-5 &lt;br/&gt;Töltények: 10 &lt;br/&gt; Hozzá tartozó fegyver: VSS Vintorez, AS Val</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_20RND_VSS_SP5">
+<German>Kaliber: 9x39 mm SP-5 &lt;br/&gt;Schuss: 20 &lt;br/&gt;Eingesetzt in: VSS Vintorez, AS Val</German>
+<English>Caliber: 9x39 mm SP-5 &lt;br/&gt;Rounds: 20 &lt;br/&gt;Used in: VSS Vintorez, AS Val</English>
+<Italian>Calibro: 9x39 mm SP-5 &lt;br/&gt;Munizioni: 20 &lt;br/&gt;Si usa in: VSS Vintorez, AS Val</Italian>
+<Spanish>Calibre: 9x39 mm SP-5 &lt;br/&gt;Cargas: 20 &lt;br/&gt;Uso: VSS Vintorez, AS Val</Spanish>
+<French>Calibre : 9x39 mm SP-5 &lt;br/&gt;Munitions: 20 &lt;br/&gt;Utilisé avec : VSS Vintorez, AS Val</French>
+<Czech>Kalibr: 9x39 mm СП-5 &lt;br/&gt;Nábojů: 20 &lt;br/&gt;Pro: VSS Vintorez, AS Val</Czech>
+<Russian>Патрон: 9x39 мм СП-5 &lt;br/&gt;Количество: 20 &lt;br/&gt;Используется в: ВСС Винторез, АС Вал</Russian>
+<Polish>Kaliber: 9x39 mm SP-5 &lt;br/&gt;Naboje: 20 &lt;br/&gt;Używane w: VSS Vintorez, AS Val</Polish>
+<Hungarian>Kaliber: 9x39mm SP-5 &lt;br/&gt;Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: VSS Vintorez, AS Val</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_10RND_VSS_SP6">
+<German>Kaliber: 9x39 mm SP-6 &lt;br/&gt;Schuss: 10 &lt;br/&gt;Eingesetzt in: VSS Vintorez, AS Val</German>
+<English>Caliber: 9x39 mm SP-6 &lt;br/&gt;Rounds: 10 &lt;br/&gt;Used in: VSS Vintorez, AS Val</English>
+<Italian>Calibro: 9x39 mm SP-6 &lt;br/&gt;Munizioni: 10 &lt;br/&gt;Si usa in: VSS Vintorez, AS Val</Italian>
+<Spanish>Calibre: 9x39 mm SP-6 &lt;br/&gt;Cargas: 10 &lt;br/&gt;Uso: VSS Vintorez, AS Val</Spanish>
+<French>Calibre : 9x39 mm SP-6 &lt;br/&gt;Munitions: 10 &lt;br/&gt;Utilisé avec : VSS Vintorez, AS Val</French>
+<Czech>Kalibr: 9x39 mm СП-6 &lt;br/&gt;Nábojů: 10 &lt;br/&gt;Pro: VSS Vintorez, AS Val</Czech>
+<Russian>Патрон: 9x39 мм СП-6 &lt;br/&gt;Количество: 10 &lt;br/&gt;Используется в: ВСС Винторез, АС Вал</Russian>
+<Polish>Kaliber: 9x39 mm SP-6 &lt;br/&gt;Naboje: 10 &lt;br/&gt;Używane w: VSS Vintorez, AS Val</Polish>
+<Hungarian>Kaliber: 9x39mm SP-6 &lt;br/&gt;Töltények: 10 &lt;br/&gt; Hozzá tartozó fegyver: VSS Vintorez, AS Val</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_20RND_VSS_SP6">
+<German>Kaliber: 9x39 mm SP-6 &lt;br/&gt;Schuss: 20 &lt;br/&gt;Eingesetzt in: VSS Vintorez, AS Val</German>
+<English>Caliber: 9x39 mm SP-6 &lt;br/&gt;Rounds: 20 &lt;br/&gt;Used in: VSS Vintorez, AS Val</English>
+<Italian>Calibro: 9x39 mm SP-6 &lt;br/&gt;Munizioni: 20 &lt;br/&gt;Si usa in: VSS Vintorez, AS Val</Italian>
+<Spanish>Calibre: 9x39 mm SP-6 &lt;br/&gt;Cargas: 20 &lt;br/&gt;Uso: VSS Vintorez, AS Val</Spanish>
+<French>Calibre : 9x39 mm SP-6 &lt;br/&gt;Munitions: 20 &lt;br/&gt;Utilisé avec : VSS Vintorez, AS Val</French>
+<Czech>Kalibr: 9x39 mm СП-6 &lt;br/&gt;Nábojů: 20 &lt;br/&gt;Pro: VSS Vintorez, AS Val</Czech>
+<Russian>Патрон: 9x39 мм СП-6 &lt;br/&gt;Количество: 20 &lt;br/&gt;Используется в: ВСС Винторез, АС Вал</Russian>
+<Polish>Kaliber: 9x39 mm SP-6 &lt;br/&gt;Naboje: 20 &lt;br/&gt;Używane w: VSS Vintorez, AS Val</Polish>
+<Hungarian>Kaliber: 9x39mm SP-6 &lt;br/&gt;Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: VSS Vintorez, AS Val</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_30RND_9X19_EVO">
+<Original>Caliber: 9x19mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: Scorpion EVO 3</Original>
+<German>Kaliber: 9x19mm&lt;br/&gt;Schuss: 30&lt;br/&gt;Eingesetzt in: Scorpion EVO 3</German>
+<English>Caliber: 9x19mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: Scorpion EVO 3</English>
+<Italian>Calibro: 9x19 mm&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: Scorpion EVO 3</Italian>
+<Spanish>Calibre: 9x19mm&lt;br/&gt;Cargas: 30&lt;br/&gt;Usado en: Scorpion EVO 3</Spanish>
+<French>Calibre: 9x19 mm&lt;br/&gt;Munitions: 30&lt;br/&gt;Utilisé avec: Scorpion EVO 3</French>
+<Czech>Kalibr: 9x19mm&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: Scorpion EVO 3</Czech>
+<Russian>Калибр: 9x19 мм&lt;br/&gt;Количество: 30&lt;br/&gt;Используются в: Scorpion EVO 3</Russian>
+<Polish>Kaliber: 9x19mm&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: Scorpion EVO 3</Polish>
+<Hungarian>Caliber: 9x19mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: Scorpion EVO 3</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_14RND_9X19_CZ75">
+<Original>Caliber: 9x19mm&lt;br/&gt;Rounds: 14&lt;br/&gt;Used in: CZ75 Compact</Original>
+<German>Kaliber: 9x19mm&lt;br/&gt;Schuss: 14&lt;br/&gt;Eingesetzt in: CZ75 Compact</German>
+<English>Caliber: 9x19mm&lt;br/&gt;Rounds: 14&lt;br/&gt;Used in: CZ75 Compact</English>
+<Italian>Calibro: 9x19 mm&lt;br/&gt;Munizioni: 14&lt;br/&gt;Usato in: CZ75 Compact</Italian>
+<Spanish>Calibre: 9x19mm&lt;br/&gt;Cargas: 14&lt;br/&gt;Usado en: CZ75 Compact</Spanish>
+<French>Calibre: 9x19 mm&lt;br/&gt;Munitions: 14&lt;br/&gt;Utilisé avec: CZ75 Compact</French>
+<Czech>Kalibr: 9x19mm&lt;br/&gt;Nábojů: 14&lt;br/&gt;Pro: CZ75 Compact</Czech>
+<Russian>Калибр: 9x19 мм&lt;br/&gt;Количество: 14&lt;br/&gt;Используются в: CZ75 Compact</Russian>
+<Polish>Kaliber: 9x19mm&lt;br/&gt;Naboje: 14&lt;br/&gt;Uzywany w: CZ75 Compact</Polish>
+<Hungarian>Caliber: 9x19mm&lt;br/&gt;Rounds: 14&lt;br/&gt;Used in: CZ75 Compact</Hungarian>
+</Key>
+<Key ID="STR_ACE_DSS_16RND_9X19_CZ75">
+<Original>Caliber: 9x19mm&lt;br/&gt;Rounds: 16&lt;br/&gt;Used in: CZ75</Original>
+<German>Kaliber: 9x19mm&lt;br/&gt;Schuss: 16&lt;br/&gt;Eingesetzt in: CZ75</German>
+<English>Caliber: 9x19mm&lt;br/&gt;Rounds: 16&lt;br/&gt;Used in: CZ75</English>
+<Italian>Calibro: 9x19 mm&lt;br/&gt;Munizioni: 16&lt;br/&gt;Usato in: CZ75</Italian>
+<Spanish>Calibre: 9x19mm&lt;br/&gt;Cargas: 16&lt;br/&gt;Usado en: CZ75</Spanish>
+<French>Calibre: 9x19 mm&lt;br/&gt;Munitions: 16&lt;br/&gt;Utilisé avec: CZ75</French>
+<Czech>Kalibr: 9x19mm&lt;br/&gt;Nábojů: 16&lt;br/&gt;Pro: CZ75</Czech>
+<Russian>Калибр: 9x19 мм&lt;br/&gt;Количество: 16&lt;br/&gt;Используются в: CZ75</Russian>
+<Polish>Kaliber: 9x19mm&lt;br/&gt;Naboje: 16&lt;br/&gt;Uzywany w: CZ75</Polish>
+<Hungarian>Caliber: 9x19mm&lt;br/&gt;Rounds: 16&lt;br/&gt;Used in: CZ75</Hungarian>
+</Key>
+</Container>
+<Container name="STR_ACE_MDNS">
+<!-- RPG-7 Rounds -->
+<Key ID="STR_ACE_MDNS_PG7V">
+<English>PG-7V</English>
+<Czech>PG-7V</Czech>
+<German>PG-7V</German>
+<Polish>PG-7W</Polish>
+<Russian>ПГ-7В</Russian>
+<French>PG-7V</French>
+<Spanish>PG-7V</Spanish>
+<Italian>PG-7V</Italian>
+<Hungarian>PG-7V</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_PG7VM">
+<English>PG-7VM</English>
+<Czech>PG-7VM</Czech>
+<German>PG-7VM</German>
+<Polish>PG-7WM</Polish>
+<Russian>ПГ-7ВМ</Russian>
+<French>PG-7VM</French>
+<Spanish>PG-7VM</Spanish>
+<Italian>PG-7VM</Italian>
+<Hungarian>PG-7VM</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_PG7VL">
+<English>PG-7VL</English>
+<Czech>PG-7VL</Czech>
+<German>PG-7VL</German>
+<Polish>PG-7WŁ</Polish>
+<Russian>ПГ-7ВЛ</Russian>
+<French>PG-7VL</French>
+<Spanish>PG-7VL</Spanish>
+<Italian>PG-7VL</Italian>
+<Hungarian>PG-7VL</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_PG7VR">
+<English>PG-7VR</English>
+<Czech>PG-7VR</Czech>
+<German>PG-7VR</German>
+<Polish>PG-7WR</Polish>
+<Russian>ПГ-7ВР</Russian>
+<French>PG-7VR</French>
+<Spanish>PG-7VR</Spanish>
+<Italian>PG-7VR</Italian>
+<Hungarian>PG-7VR</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_TBG7V">
+<English>TBG-7V</English>
+<Czech>TBG-7V</Czech>
+<German>TBG-7V</German>
+<Polish>TBG-7W</Polish>
+<Russian>ТБГ-7В</Russian>
+<French>TBG-7V</French>
+<Spanish>TBG-7V</Spanish>
+<Italian>TBG-7V</Italian>
+<Hungarian>TBG-7V</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_OG7V">
+<English>OG-7V</English>
+<Czech>OG-7V</Czech>
+<German>OG-7V</German>
+<Polish>OG-7W</Polish>
+<Russian>ОГ-7В</Russian>
+<French>OG-7V</French>
+<Spanish>OG-7V</Spanish>
+<Italian>OG-7V</Italian>
+<Hungarian>OG-7V</Hungarian>
+</Key>
+<!-- RPG-7 Rounds End -->
+<!-- Russian Missiles -->
+<Key ID="STR_ACE_MDNS_AT13">
+<English>9M131M</English>
+<Czech>9M131M</Czech>
+<German>9M131M</German>
+<Polish>9M131M</Polish>
+<Russian>9М131М</Russian>
+<French>9M131M</French>
+<Spanish>9M131M</Spanish>
+<Italian>9M131M</Italian>
+<Hungarian>9M131M</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_AT13TB">
+<English>9M131F</English>
+<Czech>9M131F</Czech>
+<German>9M131F</German>
+<Polish>9M131F</Polish>
+<Russian>9М131Ф</Russian>
+<French>9M131F</French>
+<Spanish>9M131F</Spanish>
+<Italian>9M131F</Italian>
+<Hungarian>9M131F</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_STRELA">
+<English>9M32</English>
+<Czech>9M32</Czech>
+<German>9M32 Rakete</German>
+<Polish>9M32</Polish>
+<Russian>9М32</Russian>
+<French>9M32</French>
+<Spanish>9M32</Spanish>
+<Italian>9M32</Italian>
+<Hungarian>9M32</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_IGLA">
+<English>9M39</English>
+<Czech>9M39</Czech>
+<German>9M39 Rakete</German>
+<Polish>9M39</Polish>
+<Russian>9М39</Russian>
+<French>9M39</French>
+<Spanish>9M39</Spanish>
+<Italian>9M39</Italian>
+<Hungarian>9M39</Hungarian>
+</Key>
+<!-- Russian Missiles End -->
+<!-- Russian Grenades -->
+<Key ID="STR_ACE_MDNS_RDGM">
+<German>RDG-M</German>
+<English>RDG-M</English>
+<Italian>RDG-M</Italian>
+<Spanish>RDG-M</Spanish>
+<French>RDG-M</French>
+<Czech>RDG-M</Czech>
+<Russian>PДГ-M</Russian>
+<Polish>RDG-M</Polish>
+<Hungarian>RDG-M</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_RDG2">
+<German>RDG-2</German>
+<English>RDG-2</English>
+<Italian>RDG-2</Italian>
+<Spanish>RDG-2</Spanish>
+<French>RDG-2</French>
+<Czech>RDG-2</Czech>
+<Russian>PДГ-2</Russian>
+<Polish>RDG-2</Polish>
+<Hungarian>RDG-2</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_RG0">
+<German>RGO</German>
+<English>RGO</English>
+<Italian>RGO</Italian>
+<Spanish>RGO</Spanish>
+<French>RGO</French>
+<Czech>RGO</Czech>
+<Russian>PГO</Russian>
+<Polish>RGO</Polish>
+<Hungarian>RGO</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_RGD5">
+<German>RGD-5</German>
+<English>RGD-5</English>
+<Italian>RGD-5</Italian>
+<Spanish>RGD-5</Spanish>
+<French>RGD-5</French>
+<Czech>RGD-5</Czech>
+<Russian>PГД-5</Russian>
+<Polish>RGD-5</Polish>
+<Hungarian>RGD-5</Hungarian>
+</Key>
+<!-- Russian Missiles End -->
+<!-- Colors -->
+<Key ID="STR_ACE_MDNS_IR">
+<German>IR</German>
+<English>IR</English>
+<Italian>IR</Italian>
+<Spanish>IR</Spanish>
+<French>IR</French>
+<Czech>IR</Czech>
+<Russian>ИК</Russian>
+<Polish>IR</Polish>
+<Hungarian>IR</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_ORANGE">
+<German>Orange</German>
+<English>Orange</English>
+<Italian>Arancione</Italian>
+<Spanish>Naranja</Spanish>
+<French>Orange</French>
+<Czech>Oranžová</Czech>
+<Russian>Оранж.</Russian>
+<Polish>Pomarańczowy</Polish>
+<Hungarian>Narancs</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_WHITE">
+<German>Weiß</German>
+<English>White</English>
+<Italian>MBianco</Italian>
+<Spanish>Blanco</Spanish>
+<French>Blanche</French>
+<Czech>Bílá</Czech>
+<Russian>Белая</Russian>
+<Polish>Biała</Polish>
+<Hungarian>Fehér</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_RED">
+<German>Rot</German>
+<English>Red</English>
+<Italian>Rosso</Italian>
+<Spanish>Rojo</Spanish>
+<French>Rouge</French>
+<Czech>Červená</Czech>
+<Russian>Красная</Russian>
+<Polish>Czerwona</Polish>
+<Hungarian>Vörös</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_GREEN">
+<German>Grün</German>
+<English>Green</English>
+<Italian>Verde</Italian>
+<Spanish>Verde</Spanish>
+<French>Verte</French>
+<Czech>Zelená</Czech>
+<Russian>Зелёная</Russian>
+<Polish>Zielona</Polish>
+<Hungarian>Zöld</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_YELLOW">
+<German>Gelb</German>
+<English>Yellow</English>
+<Italian>Giallo</Italian>
+<Spanish>Amarillo</Spanish>
+<French>Jaune</French>
+<Czech>Žlutá</Czech>
+<Russian>Жёлтая</Russian>
+<Polish>Żółta</Polish>
+<Hungarian>Sárga</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_BLUE">
+<German>Blau</German>
+<English>Blue</English>
+<Italian>Blu</Italian>
+<Spanish>Azul</Spanish>
+<French>Bleu</French>
+<Czech>Modrá</Czech>
+<Russian>Синая</Russian>
+<Polish>Niebieska</Polish>
+<Hungarian>Kék</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_PURPLE">
+<German>Violett</German>
+<English>Purple</English>
+<Italian>Viola</Italian>
+<Spanish>Morada</Spanish>
+<French>Violet</French>
+<Czech>Fialová</Czech>
+<Russian>Фиол.</Russian>
+<Polish>Fioletowa</Polish>
+<Hungarian>Bíbor</Hungarian>
+</Key>
+<!-- Colors End -->
+<!-- Misc -->
+<Key ID="STR_ACE_MDNS_TRACER">
+<German>Leuchtspur</German>
+<English>Tracer</English>
+<Italian>Tracciante</Italian>
+<Spanish>Tracer</Spanish>
+<French>Tracantes</French>
+<Czech>Svítící</Czech>
+<Russian>Трасс.</Russian>
+<Polish>Smugowe</Polish>
+<Hungarian>Jlz.</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_AP">
+<German>AP</German>
+<English>AP</English>
+<Italian>AP</Italian>
+<Spanish>AP</Spanish>
+<French>AP</French>
+<Czech>AP</Czech>
+<Russian>БП</Russian>
+<Polish>AP</Polish>
+<Hungarian>AP</Hungarian>
+</Key>
+<Key ID="STR_ACE_MDNS_PRACTICE">
+<German>Übungsgeschoß</German>
+<English>Practice</English>
+<Italian>Practice</Italian>
+<Spanish>Practice</Spanish>
+<French>Practice</French>
+<Czech>Practice</Czech>
+<Russian>Практич.</Russian>
+<Polish>Szkoleniowy</Polish>
+<Hungarian>Practice</Hungarian>
+</Key>
+<!-- Special End -->
+</Container>
+<!-- WEAPON DISPLAYNAMES -->
+<Container name="STR_ACE_WDN">
+<Key ID="STR_ACE_WDN_MICROUZI">
+<German>Micro UZI</German>
+<English>Micro UZI</English>
+<Italian>Micro UZI</Italian>
+<Spanish>Micro UZI</Spanish>
+<French>Micro UZI</French>
+<Czech>Micro UZI</Czech>
+<Russian>Микро-Узи</Russian>
+<Polish>Micro UZI</Polish>
+<Hungarian>Micro UZI</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_MICROUZISD">
+<German>Micro UZI SD</German>
+<English>Micro UZI SD</English>
+<Italian>Micro UZI SD</Italian>
+<Spanish>Micro UZI SD</Spanish>
+<French>Micro UZI SD</French>
+<Czech>Micro UZI SD</Czech>
+<Russian>Микро-Узи с ПБС</Russian>
+<Polish>Micro UZI SD</Polish>
+<Hungarian>Micro UZI SD</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_AK_74">
+<German>AK-74</German>
+<English>AK-74</English>
+<Italian>AK-74</Italian>
+<Spanish>AK-74</Spanish>
+<French>AK-74</French>
+<Czech>AK-74</Czech>
+<Russian>АК-74</Russian>
+<Polish>AK-74</Polish>
+<Hungarian>AK-74</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_AK_74_GL">
+<German>AK-74 GP-25</German>
+<English>AK-74 GP-25</English>
+<Italian>AK-74 GP-25</Italian>
+<Spanish>AK-74 GP-25</Spanish>
+<French>AK-74 GP-25</French>
+<Czech>AK-74 GP-25</Czech>
+<Russian>АК-74 ГП-25</Russian>
+<Polish>AK-74 GP-25</Polish>
+<Hungarian>AK-74 GP-25</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_AK_107_GL">
+<German>AK-107 GP-25</German>
+<English>AK-107 GP-25</English>
+<Italian>AK-107 GP-25</Italian>
+<Spanish>AK-107 GP-25</Spanish>
+<French>AK-107 GP-25</French>
+<Czech>AK-107 GP-25</Czech>
+<Russian>АК-107 ГП-25</Russian>
+<Polish>AK-107 GP-25</Polish>
+<Hungarian>AK-107 GP-25</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_AK_107_GL_PSO">
+<German>AK-107 GP-25 PSO</German>
+<English>AK-107 GP-25 PSO</English>
+<Italian>AK-107 GP-25 PSO</Italian>
+<Spanish>AK-107 GP-25 PSO</Spanish>
+<French>AK-107 GP-25 PSO</French>
+<Czech>AK-107 GP-25 PSO</Czech>
+<Russian>АК-107 ГП-25 ПСО-1</Russian>
+<Polish>AK-107 GP-25 PSO</Polish>
+<Hungarian>AK-107 GP-25 PSzO</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_METISLAUNCHER">
+<English>9P151M Metis-M1</English>
+<Czech>9P151M Metis-M1</Czech>
+<German>9P151M Metis-M1</German>
+<Polish>9P151M Metys-M1</Polish>
+<Russian>ПТРК Метис-М1</Russian>
+<French>9P151M Metis-M1</French>
+<Spanish>9P151M Metis-M1</Spanish>
+<Italian>9P151M Metis-M1</Italian>
+<Hungarian>9P151M Metis-M1</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_STRELA">
+<English>9K32 Strela-2</English>
+<Czech>9K32 Strela-2</Czech>
+<German>9K32 Strela-2</German>
+<Polish>9K32 Strzała-2</Polish>
+<Russian>ПЗРК Стрела-2М</Russian>
+<French>9K32 Strela-2</French>
+<Spanish>9K32 Strela-2</Spanish>
+<Italian>9K32 Strela-2</Italian>
+<Hungarian>9K32 Strela-2</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_IGLA">
+<English>9K38 Igla</English>
+<Czech>9K38 Igla</Czech>
+<German>9K38 Igla</German>
+<Polish>9K38 Igła</Polish>
+<Russian>ПЗРК Игла</Russian>
+<French>9K38 Igla</French>
+<Spanish>9K38 Igla</Spanish>
+<Italian>9K38 Igla</Italian>
+<Hungarian>9K38 Igla</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_RPG7V">
+<English>RPG-7V</English>
+<Czech>RPG-7V</Czech>
+<German>RPG-7V</German>
+<Polish>RPG-7W</Polish>
+<Russian>РПГ-7В</Russian>
+<French>RPG-7V</French>
+<Spanish>RPG-7V</Spanish>
+<Italian>RPG-7V</Italian>
+<Hungarian>RPG-7V</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_RPG7V_PGO7">
+<English>RPG-7V PGO-7</English>
+<Czech>RPG-7V PGO-7</Czech>
+<German>RPG-7V PGO-7</German>
+<Polish>RPG-7W PGO-7</Polish>
+<Russian>РПГ-7В ПГО-7</Russian>
+<French>RPG-7V PGO-7</French>
+<Spanish>RPG-7V PGO-7</Spanish>
+<Italian>RPG-7V PGO-7</Italian>
+<Hungarian>RPG-7V PGO-7</Hungarian>
+</Key>
+<Key ID="STR_MDN_ACE_KEYCUFF">
+<English>Double KeyCuff</English>
+<German>Plastikfessel</German>
+<Spanish>Double KeyCuff</Spanish>
+<Czech>Double KeyCuff</Czech>
+<Russian>Наручники</Russian>
+<Italian>Double KeyCuff</Italian>
+<Polish>Kajdanki</Polish>
+<French>Double KeyCuff</French>
+<Hungarian>Bilincs</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_M14_AIMPOINT">
+<German>M14 CCO</German>
+<English>M14 CCO</English>
+<Italian>M14 CCO</Italian>
+<Spanish>M14 CCO</Spanish>
+<French>M14 CCO</French>
+<Czech>M14 CCO</Czech>
+<Russian>M14 CCO</Russian>
+<Polish>M14 CCO</Polish>
+<Hungarian>M14 CCO</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_EVO3">
+<Original>CZ Scorpion EVO3</Original>
+<English>CZ Scorpion EVO3</English>
+<Czech>CZ Scorpion EVO3</Czech>
+<German>CZ Scorpion EVO3</German>
+<Russian>CZ Scorpion EVO3</Russian>
+<Polish>CZ Scorpion EVO3</Polish>
+<Hungarian>CZ Scorpion EVO3</Hungarian>
+<Italian>CZ Scorpion EVO3</Italian>
+<Spanish>CZ Scorpion EVO3</Spanish>
+<French>CZ Scorpion EVO3</French>
+</Key>
+<Key ID="STR_ACE_WDN_EVO3CCO">
+<Original>CZ Scorpion EVO3 CCO</Original>
+<English>CZ Scorpion EVO3 CCO</English>
+<Czech>CZ Scorpion EVO3 CCO</Czech>
+<German>CZ Scorpion EVO3 CCO</German>
+<Russian>CZ Scorpion EVO3 CCO</Russian>
+<Polish>CZ Scorpion EVO3 CCO</Polish>
+<Hungarian>CZ Scorpion EVO3 CCO</Hungarian>
+<Italian>CZ Scorpion EVO3 CCO</Italian>
+<Spanish>CZ Scorpion EVO3 CCO</Spanish>
+<French>CZ Scorpion EVO3 CCO</French>
+</Key>
+<Key ID="STR_ACE_WDN_EVO3SDCCO">
+<Original>CZ Scorpion EVO3 SD CCO</Original>
+<English>CZ Scorpion EVO3 SD CCO</English>
+<Czech>CZ Scorpion EVO3 SD CCO</Czech>
+<German>CZ Scorpion EVO3 SD CCO</German>
+<Russian>CZ Scorpion EVO3 SD CCO</Russian>
+<Polish>CZ Scorpion EVO3 SD CCO</Polish>
+<Hungarian>CZ Scorpion EVO3 SD CCO</Hungarian>
+<Italian>CZ Scorpion EVO3 SD CCO</Italian>
+<Spanish>CZ Scorpion EVO3 SD CCO</Spanish>
+<French>CZ Scorpion EVO3 SD CCO</French>
+</Key>
+<Key ID="STR_ACE_WDN_PECHENEG">
+<Original>PKP</Original>
+<English>PKP</English>
+<Czech>PKP</Czech>
+<German>PKP</German>
+<Russian>ПКП Печенег</Russian>
+<Polish>PKP</Polish>
+<Hungarian>PKP</Hungarian>
+<Italian>PKP</Italian>
+<Spanish>PKP</Spanish>
+<French>PKP</French>
+</Key>
+</Container>
+<!-- FIRING MODE NAMES -->
+<Container name="STR_ACE_DN_MODE">
+<Key ID="STR_ACE_DN_MODE_SEMI">
+<German>Halbautom.</German>
+<English>Semi</English>
+<Italian>Semi</Italian>
+<Spanish>Semi</Spanish>
+<French>Semi</French>
+<Czech>Poloaut.</Czech>
+<Russian>Одиночн.</Russian>
+<Polish>Pojedynczy</Polish>
+<Hungarian>Egyes</Hungarian>
+</Key>
+<Key ID="STR_ACE_DN_MODE_BURST">
+<German>Salve</German>
+<English>Burst</English>
+<Italian>Raffica</Italian>
+<Spanish>Ráfagas</Spanish>
+<French>Rafale</French>
+<Czech>Dávka</Czech>
+<Russian>Очередь</Russian>
+<Polish>Seria</Polish>
+<Hungarian>Rövid sorozat</Hungarian>
+</Key>
+<Key ID="STR_ACE_DN_MODE_AUTO">
+<German>Voll</German>
+<English>Auto</English>
+<Italian>Autom.</Italian>
+<Spanish>Completa</Spanish>
+<French>Auto</French>
+<Czech>Automat.</Czech>
+<Russian>Автомат.</Russian>
+<Polish>Automatyczny</Polish>
+<Hungarian>Sorozatlövés</Hungarian>
+</Key>
+</Container>
+<!-- EMPTY -->
+<Container name="STR_EMPTY">
+<Key ID="STR_ACE_WDN_ACE_M203_LAUNCHER">
+<German></German>
+<English></English>
+<Italian></Italian>
+<Spanish></Spanish>
+<French></French>
+<Czech></Czech>
+<Russian></Russian>
+<Polish></Polish>
+<Hungarian></Hungarian>
+</Key>
+<Key ID="STR_ACE_LIB_ACE_M203_LAUNCHER">
+<German></German>
+<English></English>
+<Italian></Italian>
+<Spanish></Spanish>
+<French></French>
+<Czech></Czech>
+<Russian></Russian>
+<Polish></Polish>
+<Hungarian></Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

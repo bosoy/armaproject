@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ArmA2_ACE2">
+<Package name="c_veh_bmd1">
+<Container name="STR_ACE_FAC">
+<Key ID="STR_IRAQ_Name">
+<English>Iraq</English>
+<German>Irak</German>
+<Russian>Ирак</Russian>
+<Polish>Irak</Polish>
+<Spanish>Iraq</Spanish>
+<French>Iraq</French>
+<Czech>Irák</Czech>
+<Italian>Iraq</Italian>
+<Hungarian>Irak</Hungarian>
+</Key>
+</Container><Container name="STR_ACE_OBJ">
+<Key ID="STR_ACE_VDN_BMD_1_BASE">
+<English>BMD-1</English>
+<German>BMD-1</German>
+<Russian>БМД-1</Russian>
+<Polish>BMD-1</Polish>
+<Spanish>BMD-1</Spanish>
+<French>BMD-1</French>
+<Czech>BMD-1</Czech>
+<Italian>BMD-1</Italian>
+<Hungarian>BMD-1</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_BMD_1P_BASE">
+<English>BMD-1P</English>
+<German>BMD-1P</German>
+<Russian>БМД-1П</Russian>
+<Polish>BMD-1P</Polish>
+<Spanish>BMD-1P</Spanish>
+<French>BMD-1P</French>
+<Czech>BMD-1P</Czech>
+<Italian>BMD-1P</Italian>
+<Hungarian>BMD-1P</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_BMD_1P_RUS">
+<English>BMD-1P (camo)</English>
+<German>BMD-1P (Camo)</German>
+<Russian>БМД-1П (K)</Russian>
+<Polish>BMD-1P (kamuflaż)</Polish>
+<Spanish>BMD-1P (camo)</Spanish>
+<French>BMD-1P (camo)</French>
+<Czech>BMD-1P (camo)</Czech>
+<Italian>BMD-1P (camo)</Italian>
+<Hungarian>BMD-1P (álcázott)</Hungarian>
+</Key>
+</Container><Container name="STR_ACE_ACT">
+<Key ID="STR_ACE_UA_BMD_LowerSusp">
+<English>Lower suspension</English>
+<German>Fahrwerk senken</German>
+<Russian>Уменьшить клиренс</Russian>
+<Polish>Obniż zawieszenie</Polish>
+<Spanish>Lower suspension</Spanish>
+<French>Lower suspension</French>
+<Czech>Snižit podvozek</Czech>
+<Italian>Lower suspension</Italian>
+<Hungarian>Szuszpenzió csökk.</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_BMD_RaiseSusp">
+<English>Raise suspension</English>
+<German>Fahrwerk heben</German>
+<Russian>Увеличить клиренс</Russian>
+<Polish>Podnieś zawieszenie</Polish>
+<Spanish>Raise suspension</Spanish>
+<French>Raise suspension</French>
+<Czech>Zvýšit podvozek</Czech>
+<Italian>Raise suspension</Italian>
+<Hungarian>Szuszpenzió emelése</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_BMD_UpCutWet">
+<English>Raise water shield</English>
+<German>Wasserschild heben</German>
+<Russian>Поднять волноотбойники</Russian>
+<Polish>Podnieś zapory</Polish>
+<Spanish>Raise water shield</Spanish>
+<French>Raise water shield</French>
+<Czech>Zvednout vlnolam</Czech>
+<Italian>Raise water shield</Italian>
+<Hungarian>"Vízpajzs" emelése</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_BMD_DownCutWet">
+<English>Lower water shield</English>
+<German>Wasserschild senken</German>
+<Russian>Опустить волноотбойники</Russian>
+<Polish>Obniż zapory</Polish>
+<Spanish>Lower water shield</Spanish>
+<French>Lower water shield</French>
+<Czech>Snižít vlnolam</Czech>
+<Italian>Lower water shield</Italian>
+<Hungarian>"Vízpajzs" leengedése</Hungarian>
+</Key>
+<Key ID="STR_ACE_LIB_BMD">
+<English>The BMD vehicle is the soul of the Soviet Airborne forces.</English>
+<German>Das Fahrzeug BMD ist die Seele der Russischen Fallschirmjäger.</German>
+<Russian>БМД - ну кто её не знает?! =)</Russian>
+<Polish>Pojazdy BMD są duszą Wojsk Powietrzno-Desantowych Federacji Rosyjskiej.</Polish>
+<Spanish>The BMD vehicle is the soul of the Soviet Airborne forces.</Spanish>
+<French>The BMD vehicle is the soul of the Soviet Airborne forces.</French>
+<Czech>The BMD vehicle is the soul of the Soviet Airborne forces.</Czech>
+<Italian>The BMD vehicle is the soul of the Soviet Airborne forces.</Italian>
+<Hungarian>A BMD a Szovjet Légidesszant lelke.</Hungarian>
+</Key>
+</Container><Container name="STR_ACE_CRW">
+<Key ID="STR_ACE_BMD_MGFrontLeft">
+<English>Left hull gunner</English>
+<German>Bugschütze links</German>
+<Russian>Командир отделения</Russian>
+<Polish>lewy strzelec</Polish>
+<Spanish>Left hull gunner</Spanish>
+<French>Left hull gunner</French>
+<Czech>Left hull gunner</Czech>
+<Italian>Left hull gunner</Italian>
+<Hungarian>Baloldali irányzó</Hungarian>
+</Key>
+<Key ID="STR_ACE_BMD_MGFrontRight">
+<English>Right hull gunner</English>
+<German>Bugschütze rechts</German>
+<Russian>Пулемётчик</Russian>
+<Polish>prawy strzelec</Polish>
+<Spanish>Right hull gunner</Spanish>
+<French>Right hull gunner</French>
+<Czech>Right hull gunner</Czech>
+<Italian>Right hull gunner</Italian>
+<Hungarian>Jobboldali irányzó</Hungarian>
+</Key>
+<Key ID="STR_ACE_BMD_CargoBackLeft">
+<English>Left cargo</English>
+<German>Passagierraum links</German>
+<Russian>Десант слева</Russian>
+<Polish>lewy desant</Polish>
+<Spanish>Left cargo</Spanish>
+<French>Left cargo</French>
+<Czech>Levý uložný prostor</Czech>
+<Italian>Left cargo</Italian>
+<Hungarian>Bal raktér</Hungarian>
+</Key>
+<Key ID="STR_ACE_BMD_CargoBackRight">
+<English>Right cargo</English>
+<German>Passagierraum rechts</German>
+<Russian>Десант справа</Russian>
+<Polish>środkowy desant</Polish>
+<Spanish>Right cargo</Spanish>
+<French>Right cargo</French>
+<Czech>Pravý uložný prostor</Czech>
+<Italian>Right cargo</Italian>
+<Hungarian>Jobb raktér</Hungarian>
+</Key>
+<Key ID="STR_ACE_BMD_CargoBackCenter">
+<English>Back cargo</English>
+<German>Passagierraum mitte</German>
+<Russian>Десант по центру</Russian>
+<Polish>tylny desant</Polish>
+<Spanish>Back cargo</Spanish>
+<French>Back cargo</French>
+<Czech>Zadní uložný prostor</Czech>
+<Italian>Back cargo</Italian>
+<Hungarian>Hátsó raktér</Hungarian>
+</Key>
+<Key ID="STR_ACE_BMD_AT5Gunner">
+<English>9M113 operator</English>
+<German>9M113 Schütze</German>
+<Russian>ПТУРС Конкурс</Russian>
+<Polish>strzelec kpr</Polish>
+<Spanish>9M113 operator</Spanish>
+<French>9M113 operator</French>
+<Czech>9M113 operátor</Czech>
+<Italian>9M113 operator</Italian>
+<Hungarian>9M113 kezelő</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

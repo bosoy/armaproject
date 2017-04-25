@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="sys_sandbag">
+<Container name="STR_DN">
+<Key ID="STR_ACE_VC_ACESB">
+<German>Æ Objekte (Befestigungen)</German>
+<English>Æ Objects (Fortifications)</English>
+<Italian>Æ Oggetti (fortificazioni)</Italian>
+<Spanish>Æ Objetos (fortificaciones)</Spanish>
+<French>Æ Objets (fortifications)</French>
+<Czech>Æ Objekty (opevnění)</Czech>
+<Russian>Æ Укрепления</Russian>
+<Polish>Æ Przedmioty (Umocnienia)</Polish>
+<Hungarian>Æ Célpontok (erődítmények)</Hungarian>
+</Key>
+<Key ID="STR_ACE_Sandbag">
+<English>Sandbag</English>
+<German>Sandsack</German>
+<Russian>Мешок с песком</Russian>
+<Polish>Worek z piaskiem</Polish>
+<Spanish>Sandbag</Spanish>
+<French>Sac de sable</French>
+<Czech>Pytel s pískem</Czech>
+<Italian>Sacco di Sabbia</Italian>
+<Hungarian>Homokzsák</Hungarian>
+</Key>
+<Key ID="STR_ACE_TACTICALLADDER">
+<English>Telescopic Ladder</English>
+<German>Teleskopleiter</German>
+<Russian>Телескопическая лестница</Russian>
+<Polish>Drabina teleskopowa</Polish>
+<Spanish>Telescopic Ladder</Spanish>
+<French>Telescopic Ladder</French>
+<Czech>Teleskopický žebřík</Czech>
+<Italian>Telescopic Ladder</Italian>
+<Hungarian>Telescopic Ladder</Hungarian>
+</Key>
+<Key ID="STR_ACE_CONCERTINA_WIRE">
+<English>Concertina wire</English>
+<German>NATO-Draht</German>
+<Russian>Проволочная спираль</Russian>
+<Polish>Drut kolczasty</Polish>
+<Spanish>Concertina wire</Spanish>
+<French>Concertina wire</French>
+<Czech>Ostnatý drát</Czech>
+<Italian>Concertina wire</Italian>
+<Hungarian>Concertina wire</Hungarian>
+</Key>
+<Key ID="STR_ACE_CONCERTINA_WIRECOIL">
+<English>Concertina wire coil</English>
+<German>NATO-Draht Rolle</German>
+<Russian>Проволочная спираль (моток)</Russian>
+<Polish>Zwój drutu kolczastego</Polish>
+<Spanish>Concertina wire coil</Spanish>
+<French>Concertina wire coil</French>
+<Czech>Smyčka ostnatého drátu</Czech>
+<Italian>Concertina wire coil</Italian>
+<Hungarian>Concertina wire coil</Hungarian>
+</Key>
+<Key ID="STR_ACE_UNROLLWIRE">
+<English>Dismount Concertina wire</English>
+<German>NATO-Draht abbauen</German>
+<Russian>Демонтировать проволочную спираль</Russian>
+<Polish>Zwiń drut kolczasty</Polish>
+<Spanish>Dismount Concertina wire</Spanish>
+<French>Dismount Concertina wire</French>
+<Czech>Svinout ostnatý drát</Czech>
+<Italian>Dismount Concertina wire</Italian>
+<Hungarian>Dismount Concertina wire</Hungarian>
+</Key>
+<Key ID="STR_ACE_ROLLWIRE">
+<English>Deploy Concertina wire</English>
+<German>NATO-Draht verlegen</German>
+<Russian>Монтировать проволочную спираль</Russian>
+<Polish>Rozwiń drut kolczasty</Polish>
+<Spanish>Deploy Concertina wire</Spanish>
+<French>Deploy Concertina wire</French>
+<Czech>Rozvinout ostnatý drát</Czech>
+<Italian>Deploy Concertina wire</Italian>
+<Hungarian>Deploy Concertina wire</Hungarian>
+</Key>
+<Key ID="STR_ACE_M_SBEMPTY">
+<English>Sandbag (empty)</English>
+<German>Sandsack (leer)</German>
+<Russian>Мешок с песком (пустой)</Russian>
+<Polish>Worek na piasek</Polish>
+<Spanish>Sandbag (empty)</Spanish>
+<French>Sac de sable (vide)</French>
+<Czech>Pytel na písek (prázdný)</Czech>
+<Italian>Sacco di Sabbia (Vuoto)</Italian>
+<Hungarian>Homokzsák (üres)</Hungarian>
+</Key>
+<Key ID="STR_ACE_CANNOTSB">
+<English>Cannot build here</English>
+<German>Nicht möglich</German>
+<Russian>Установка на этом месте невозможна</Russian>
+<Polish>Nie można tu budować</Polish>
+<Spanish>Cannot build here</Spanish>
+<French>Impossible de construire ici</French>
+<Czech>Zde nelze postavit</Czech>
+<Italian>Impossibile costruire qui</Italian>
+<Hungarian>Nem teheted ide</Hungarian>
+</Key>
+<Key ID="STR_ACE_AC_PICKUPSB">
+<English>Pick up sandbag</English>
+<German>Sandsack abbauen</German>
+<Russian>Взять мешок с песком</Russian>
+<Polish>Zabierz worek</Polish>
+<Spanish>Pick up sandbag</Spanish>
+<French>Prendre sac de sable</French>
+<Czech>Zvednout pytel</Czech>
+<Italian>Prendi Sacco di Sabbia</Italian>
+<Hungarian>Homokzsák felvétele</Hungarian>
+</Key>
+<Key ID="STR_ACE_AC_CARRYSB">
+<English>Carry sandbag</English>
+<German>Sandsack tragen</German>
+<Russian>Нести мешок с песком</Russian>
+<Polish>Przenieś worek</Polish>
+<Spanish>Carry sandbag</Spanish>
+<French>Porter sac de sable</French>
+<Czech>Nést pytel</Czech>
+<Italian>Trasporta Sacco di Sabbia</Italian>
+<Hungarian>Homokzsák cipelése</Hungarian>
+</Key>
+<Key ID="STR_ACE_AC_ENDCARRYSB">
+<English>End carrying</English>
+<German>Tragen beenden</German>
+<Russian>Завершить переноску</Russian>
+<Polish>Zostaw worek</Polish>
+<Spanish>End carrying</Spanish>
+<French>Arreter de porter</French>
+<Czech>Položit</Czech>
+<Italian>Fine Trasporto</Italian>
+<Hungarian>Cipelés abbahagyása</Hungarian>
+</Key>
+<Key ID="STR_ACE_AC_DROP">
+<English>Drop sandbag</English>
+<German>Sandsack ablegen</German>
+<Russian>Положить мешок</Russian>
+<Polish>Upuść worek</Polish>
+<Spanish>Drop sandbag</Spanish>
+<French>Lacher sac de sable</French>
+<Czech>Odložit pytel</Czech>
+<Italian>Lascia Sacco di Sabbia</Italian>
+<Hungarian>Homokzsák eldobása</Hungarian>
+</Key>
+<Key ID="STR_ACE_AC_CONF">
+<English>Confirm Deployment</English>
+<German>Aufbauen</German>
+<Russian>Подтвердить установку</Russian>
+<Polish>Potwierdź rozłożenie</Polish>
+<Spanish>Confirm Deployment</Spanish>
+<French>Confirmer Déploiement</French>
+<Czech>Potvrdit Položení</Czech>
+<Italian>Conferma Posizionamento</Italian>
+<Hungarian>Lerak</Hungarian>
+</Key>
+<Key ID="STR_ACE_AC_CANCEL">
+<English>Cancel Deployment</English>
+<German>Abbrechen</German>
+<Russian>Отменить установку</Russian>
+<Polish>Anuluj rozłożenie</Polish>
+<Spanish>Cancel Deployment</Spanish>
+<French>Annuler Déploiement</French>
+<Czech>Zrušit Položení</Czech>
+<Italian>Cancella Posizionamento</Italian>
+<Hungarian>Visszavonás</Hungarian>
+</Key>
+<Key ID="STR_ACE_AC_BUILD">
+<English>Deploy sandbag</English>
+<German>Sandsack aufbauen</German>
+<Russian>Установить мешок с песком</Russian>
+<Polish>Rozłóż worek z piaskiem</Polish>
+<Spanish>Deploy sandbag</Spanish>
+<French>Deployer sac de sable</French>
+<Czech>Umístit pytel</Czech>
+<Italian>Posiziona Sacco di Sabbia</Italian>
+<Hungarian>Homokzsák lerakása</Hungarian>
+</Key>
+<Key ID="STR_ACE_DEPLOY_TACLADDER">
+<English>Deploy ladder</English>
+<German>Leiter aufbauen</German>
+<Russian>Установить лестницу</Russian>
+<Polish>Rozłóż drabinę</Polish>
+<Spanish>Deploy ladder</Spanish>
+<French>Deploy ladder</French>
+<Czech>Umístit žebřík</Czech>
+<Italian>Deploy ladder</Italian>
+<Hungarian>Deploy ladder</Hungarian>
+</Key>
+<Key ID="STR_ACE_DROP_TACLADDER">
+<English>Drop ladder</English>
+<German>Leiter ablegen</German>
+<Russian>Положить лестницу</Russian>
+<Polish>Zostaw drabinę</Polish>
+<Spanish>Drop ladder</Spanish>
+<French>Drop ladder</French>
+<Czech>Položit žebřík</Czech>
+<Italian>Drop ladder</Italian>
+<Hungarian>Drop ladder</Hungarian>
+</Key>
+<Key ID="STR_ACE_POSITION_TACLADDER">
+<English>Position ladder</English>
+<German>Leiter positionieren</German>
+<Russian>Перенести лестницу</Russian>
+<Polish>Postaw drabinę</Polish>
+<Spanish>Position ladder</Spanish>
+<French>Position ladder</French>
+<Czech>Přemístit žebřík</Czech>
+<Italian>Position ladder</Italian>
+<Hungarian>Position ladder</Hungarian>
+</Key>
+<Key ID="STR_ACE_PICKUP_TACLADDER">
+<English>Pickup ladder</English>
+<German>Leiter aufnehmen</German>
+<Russian>Взять лестницу</Russian>
+<Polish>Zabierz drabinę</Polish>
+<Spanish>Pickup ladder</Spanish>
+<French>Pickup ladder</French>
+<Czech>Vzít žebřík</Czech>
+<Italian>Pickup ladder</Italian>
+<Hungarian>Pickup ladder</Hungarian>
+</Key>
+<Key ID="STR_ACE_V_SANDBOX">
+<English>Sandbag box</English>
+<German>Sandsack Kiste</German>
+<Russian>Ящик мешков с песком</Russian>
+<Polish>Skrzynia worków na piasek</Polish>
+<Spanish>Sandbag box</Spanish>
+<French>Caisse de sacs de sable</French>
+<Czech>Bedna na pytle s pískem</Czech>
+<Italian>Contenitore Sacchi di Sabbia</Italian>
+<Hungarian>Homokzsákos láda</Hungarian>
+</Key>
+<Key ID="STR_ACE_NOSAND">
+<English>Here is no sand</English>
+<German>Hier gibt es keinen Sand</German>
+<Russian>Здесь нет песка</Russian>
+<Polish>Tu nie ma piasku</Polish>
+<Spanish>Here is no sand</Spanish>
+<French>Pas de sable ici</French>
+<Czech>Tady není písek</Czech>
+<Italian>Qui non cè Sabbia</Italian>
+<Hungarian>Itt nincs homok</Hungarian>
+</Key>
+</Container></Package></Project>

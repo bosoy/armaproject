@@ -1,0 +1,3273 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"takistan",
+		"cacharacters_e",
+		"ca_modules_functions",
+		"ca_missions_alternativeinjurysimulation",
+		"ca_missions_battlefieldclearance",
+		"ace_sys_aitalk"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters_e",
+		"ca_modules_functions",
+		"ca_missions_alternativeinjurysimulation",
+		"ca_missions_battlefieldclearance",
+		"ace_sys_aitalk",
+		"takistan"
+	};
+	randomSeed=8129178;
+	class Intel
+	{
+		briefingName="co@15 ACE Moscow File (Green) V1.03";
+		briefingDescription="Steal documents from American officer protected by SF.";
+		resistanceWest=0;
+		startWeather=0;
+		forecastWeather=0;
+		month=7;
+		day=12;
+		hour=2;
+		minute=0;
+	};
+	class Groups
+	{
+		items=109;
+		class Item0
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=15;
+				class Item0
+				{
+					position[]={6887.3247,258.32065,7874.2461};
+					special="NONE";
+					id=0;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_TL_EP1";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="groupR = group this; hNil = [this, ""FAL""] call compile preprocessFile ""assigngear.sqf"";";
+					description="Team Leader (FAL)";
+					synchronizations[]={175,176};
+				};
+				class Item1
+				{
+					position[]={6887.4004,254.62852,7860.8579};
+					special="NONE";
+					id=172;
+					side="GUER";
+					vehicle="TK_GUE_Bonesetter_EP1";
+					player="PLAY CDG";
+					skill=1;
+					init="groupR = group this; hNil = [this, ""medic""] call compile preprocessFile ""assigngear.sqf"";";
+					synchronizations[]={175,176};
+				};
+				class Item2
+				{
+					position[]={6886.9985,250.6955,7847.8745};
+					special="NONE";
+					id=167;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_EP1";
+					player="PLAY CDG";
+					skill=1;
+					init="groupR = group this; hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+					description="AKM GP-25";
+					synchronizations[]={175,176};
+				};
+				class Item3
+				{
+					position[]={6886.7813,247.11302,7834.9414};
+					special="NONE";
+					id=169;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_AT_EP1";
+					player="PLAY CDG";
+					skill=1;
+					init="groupR = group this; hNil = [this, ""RPG7""] call compile preprocessFile ""assigngear.sqf"";";
+					synchronizations[]={175,176};
+				};
+				class Item4
+				{
+					position[]={6886.9985,243.41678,7820.3823};
+					special="NONE";
+					id=171;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_AR_EP1";
+					player="PLAY CDG";
+					skill=1;
+					init="groupR = group this; hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+					synchronizations[]={175,176};
+				};
+				class Item5
+				{
+					position[]={6907.9834,262.23489,7873.5977};
+					special="NONE";
+					id=174;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=1;
+					init="groupR = group this; hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+					description="2IC (AK47)";
+					synchronizations[]={175,176};
+				};
+				class Item6
+				{
+					position[]={6907.6738,258.31778,7859.9409};
+					special="NONE";
+					id=173;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_EP1";
+					player="PLAY CDG";
+					skill=1;
+					init="groupR = group this; hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+					description="AK-74 PSO";
+					synchronizations[]={175,176};
+				};
+				class Item7
+				{
+					position[]={6908.5679,254.56456,7847.3208};
+					special="NONE";
+					id=166;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_EP1";
+					player="PLAY CDG";
+					skill=1;
+					init="groupR = group this; hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+					description="AKM GP-25";
+					synchronizations[]={175,176};
+				};
+				class Item8
+				{
+					position[]={6907.9609,250.86252,7835.9434};
+					special="NONE";
+					id=168;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_AT_EP1";
+					player="PLAY CDG";
+					skill=1;
+					init="groupR = group this; hNil = [this, ""RPG7""] call compile preprocessFile ""assigngear.sqf"";";
+					synchronizations[]={175,176};
+				};
+				class Item9
+				{
+					position[]={6908.2583,246.45912,7819.5322};
+					special="NONE";
+					id=170;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_AR_EP1";
+					player="PLAY CDG";
+					skill=1;
+					init="groupR = group this; hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+					synchronizations[]={175,176};
+				};
+				class Item10
+				{
+					position[]={6921.2114,265.37283,7873.7881};
+					special="NONE";
+					id=182;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_EP1";
+					player="PLAY CDG";
+					skill=1;
+					init="groupR = group this; hNil = [this, ""AKM""] call compile preprocessFile ""assigngear.sqf"";";
+					synchronizations[]={175,176};
+				};
+				class Item11
+				{
+					position[]={6920.9019,261.01752,7860.1313};
+					special="NONE";
+					id=181;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_EP1";
+					player="PLAY CDG";
+					skill=1;
+					init="groupR = group this; hNil = [this, ""AK74PSO""] call compile preprocessFile ""assigngear.sqf"";";
+					description="AK-74 PSO";
+					synchronizations[]={175,176};
+				};
+				class Item12
+				{
+					position[]={6921.7959,257.19049,7847.5112};
+					special="NONE";
+					id=178;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_EP1";
+					player="PLAY CDG";
+					skill=1;
+					init="groupR = group this; hNil = [this, ""AKMGL""] call compile preprocessFile ""assigngear.sqf"";";
+					description="AKM GP-25";
+					synchronizations[]={175,176};
+				};
+				class Item13
+				{
+					position[]={6921.189,253.36578,7836.1338};
+					special="NONE";
+					id=179;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_AT_EP1";
+					player="PLAY CDG";
+					skill=1;
+					init="groupR = group this; hNil = [this, ""RPG7""] call compile preprocessFile ""assigngear.sqf"";";
+					synchronizations[]={175,176};
+				};
+				class Item14
+				{
+					position[]={6921.4863,248.92961,7819.7227};
+					special="NONE";
+					id=180;
+					side="GUER";
+					vehicle="TK_GUE_Soldier_AR_EP1";
+					player="PLAY CDG";
+					skill=1;
+					init="groupR = group this; hNil = [this, ""RPK""] call compile preprocessFile ""assigngear.sqf"";";
+					synchronizations[]={175,176};
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6271.3838,333.12183,5709.4956};
+					special="NONE";
+					id=1;
+					side="LOGIC";
+					vehicle="LocationLogic";
+					leader=1;
+					skill=1;
+					init="[] call compile preprocessFile ""preinit.sqf"";";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6335.0117,347.71124,5730.354};
+					azimut=275;
+					id=2;
+					side="WEST";
+					vehicle="US_Soldier_Officer_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e0";
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf""; this addWeapon ""Moscow_Bombing_File"";";
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6335.0576,347.64679,5726.5703};
+					azimut=275;
+					id=3;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e1";
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6335.0576,347.54266,5723.2134};
+					azimut=275;
+					id=4;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e2";
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6335.1514,347.4267,5719.7651};
+					azimut=275;
+					id=5;
+					side="WEST";
+					vehicle="US_Delta_Force_M14_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e3";
+					init="hNil = [this, ""M14""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item6
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6334.9126,347.242,5717.8833};
+					azimut=275;
+					id=6;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e4";
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item7
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6334.9126,346.87497,5714.5264};
+					azimut=275;
+					id=7;
+					side="WEST";
+					vehicle="US_Delta_Force_Marksman_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e5";
+					init="hNil = [this, ""MarkH""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item8
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6335.0063,346.48532,5711.0781};
+					azimut=275;
+					id=8;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e7";
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item9
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6334.7114,346.63782,5712.6392};
+					azimut=275;
+					id=9;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e6";
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item10
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6334.8315,346.17166,5709.0801};
+					azimut=275;
+					id=10;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e8";
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item11
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6334.3618,345.66574,5705.9946};
+					azimut=275;
+					id=11;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e10";
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item12
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6334.5317,345.89468,5707.3325};
+					azimut=275;
+					id=12;
+					side="WEST";
+					vehicle="US_Delta_Force_M14_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e9";
+					init="hNil = [this, ""M14""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item13
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6334.5317,345.21005,5703.9756};
+					azimut=275;
+					id=13;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e11";
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item14
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6334.6255,344.60892,5701.3325};
+					azimut=275;
+					id=14;
+					side="WEST";
+					vehicle="US_Delta_Force_Marksman_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e12";
+					init="hNil = [this, ""MarkH""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item15
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6333.6611,343.57162,5697.8159};
+					azimut=275;
+					id=15;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e13";
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item16
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6333.6611,342.75198,5694.459};
+					azimut=275;
+					id=16;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e14";
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item17
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6333.7549,342.09964,5691.8159};
+					azimut=275;
+					id=17;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e15";
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item18
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6333.9688,341.33844,5688.7075};
+					azimut=275;
+					id=18;
+					side="WEST";
+					vehicle="US_Delta_Force_Marksman_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e16";
+					init="hNil = [this, ""MarkH""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item19
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6333.9688,340.47906,5685.3506};
+					azimut=275;
+					id=19;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e17";
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item20
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6334.0625,339.8175,5682.7075};
+					azimut=275;
+					id=20;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e18";
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item21
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6333.9692,338.6546,5678.6323};
+					azimut=275;
+					id=21;
+					side="WEST";
+					vehicle="US_Delta_Force_M14_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e19";
+					init="hNil = [this, ""M14""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item22
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6333.9692,337.67136,5675.2754};
+					azimut=275;
+					id=22;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e20";
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item23
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6347.4727,350.06915,5735.645};
+					azimut=275;
+					id=23;
+					side="WEST";
+					vehicle="US_Delta_Force_TL_EP1";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="ge0 = group this; hNil = [this, ""TL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6352.7148,350.88965,5738.1982};
+					azimut=275;
+					id=24;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					rank="SERGEANT";
+					skill=1;
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6352.8892,351.00815,5740.1904};
+					azimut=275;
+					id=25;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6352.6772,350.78809,5736.2666};
+					azimut=275;
+					id=26;
+					side="WEST";
+					vehicle="US_Delta_Force_Marksman_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""MarkH""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item24
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6346.998,349.83838,5728.1777};
+					azimut=275;
+					id=27;
+					side="WEST";
+					vehicle="US_Delta_Force_TL_EP1";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="ge1 = group this; hNil = [this, ""TL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6352.2402,350.55676,5730.731};
+					azimut=275;
+					id=28;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					rank="SERGEANT";
+					skill=1;
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6352.4146,350.64398,5732.7231};
+					azimut=275;
+					id=29;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6352.5889,350.703,5734.7153};
+					azimut=275;
+					id=30;
+					side="WEST";
+					vehicle="US_Delta_Force_M14_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M14""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item25
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6348.4907,349.60657,5720.252};
+					azimut=275;
+					id=31;
+					side="WEST";
+					vehicle="US_Delta_Force_TL_EP1";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="ge2 = group this; hNil = [this, ""TL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6353.7329,350.13803,5722.8052};
+					azimut=275;
+					id=32;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					rank="SERGEANT";
+					skill=1;
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6353.9072,350.34183,5724.7974};
+					azimut=275;
+					id=33;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6354.0815,350.45688,5726.7896};
+					azimut=275;
+					id=34;
+					side="WEST";
+					vehicle="US_Delta_Force_Marksman_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""MarkH""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item26
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6348.168,348.68091,5711.9736};
+					azimut=275;
+					id=35;
+					side="WEST";
+					vehicle="US_Delta_Force_TL_EP1";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="ge3 = group this; hNil = [this, ""TL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6353.4102,349.27872,5714.5269};
+					azimut=275;
+					id=36;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					rank="SERGEANT";
+					skill=1;
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6353.5845,349.53284,5716.519};
+					azimut=275;
+					id=37;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6353.7588,349.79218,5718.5112};
+					azimut=275;
+					id=38;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item27
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6348.1675,347.29977,5704.1245};
+					azimut=275;
+					id=39;
+					side="WEST";
+					vehicle="US_Delta_Force_TL_EP1";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="ge4 = group this; hNil = [this, ""TL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6353.4097,348.19864,5706.6777};
+					azimut=275;
+					id=40;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					rank="SERGEANT";
+					skill=1;
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6353.584,348.49567,5708.6699};
+					azimut=275;
+					id=41;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6353.7583,348.78659,5710.6621};
+					azimut=275;
+					id=42;
+					side="WEST";
+					vehicle="US_Delta_Force_Marksman_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""MarkH""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item28
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6347.0225,344.45303,5693.2524};
+					azimut=275;
+					id=43;
+					side="WEST";
+					vehicle="US_Delta_Force_TL_EP1";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="ge5 = group this; hNil = [this, ""TL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6352.2646,345.5159,5695.8057};
+					azimut=275;
+					id=44;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					rank="SERGEANT";
+					skill=1;
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6352.439,346.0332,5697.7979};
+					azimut=275;
+					id=45;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6352.6133,346.55972,5699.79};
+					azimut=275;
+					id=46;
+					side="WEST";
+					vehicle="US_Delta_Force_M14_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M14""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item29
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6347.3081,342.28952,5685.0508};
+					azimut=275;
+					id=47;
+					side="WEST";
+					vehicle="US_Delta_Force_TL_EP1";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="ge6 = group this; hNil = [this, ""TL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6352.5503,343.40833,5687.604};
+					azimut=275;
+					id=48;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					rank="SERGEANT";
+					skill=1;
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6352.7246,343.92715,5689.5962};
+					azimut=275;
+					id=49;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6352.8989,344.44827,5691.5884};
+					azimut=275;
+					id=50;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item30
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6333.9673,335.46335,5669.1655};
+					azimut=275;
+					id=51;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e21";
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item31
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6333.874,333.63367,5665.0903};
+					azimut=275;
+					id=52;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e22";
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item32
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6333.874,332.06885,5661.7334};
+					azimut=275;
+					id=53;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e23";
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item33
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6333.874,329.87048,5657.252};
+					azimut=275;
+					id=54;
+					side="WEST";
+					vehicle="US_Delta_Force_Marksman_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e24";
+					init="hNil = [this, ""MarkH""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item34
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6333.6826,327.71603,5652.8662};
+					azimut=275;
+					id=55;
+					side="WEST";
+					vehicle="US_Delta_Force_Marksman_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e25";
+					init="hNil = [this, ""M14""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item35
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6333.6826,325.54184,5648.0986};
+					azimut=275;
+					id=56;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e26";
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item36
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6333.6826,323.69125,5643.6167};
+					azimut=275;
+					id=57;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e27";
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item37
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6320.1968,344.59918,5729.4702};
+					azimut=275;
+					id=58;
+					side="WEST";
+					vehicle="US_Delta_Force_M14_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e28";
+					init="hNil = [this, ""M14""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item38
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6320.2427,344.58987,5725.6865};
+					azimut=275;
+					id=59;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e29";
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item39
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6320.2427,344.51797,5722.3296};
+					azimut=275;
+					id=60;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e30";
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item40
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6320.3364,344.50012,5718.8813};
+					azimut=275;
+					id=61;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e31";
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item41
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6320.0977,344.27631,5716.9995};
+					azimut=275;
+					id=62;
+					side="WEST";
+					vehicle="US_Delta_Force_Marksman_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e32";
+					init="hNil = [this, ""MarkH""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item42
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6320.0977,343.93259,5713.6426};
+					azimut=275;
+					id=63;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e33";
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item43
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6320.1914,343.54147,5710.1943};
+					azimut=275;
+					id=64;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e35";
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item44
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6319.8965,343.69049,5711.7554};
+					azimut=275;
+					id=65;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e34";
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item45
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6320.0166,343.26068,5708.1963};
+					azimut=275;
+					id=66;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e36";
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item46
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6319.5469,342.69482,5705.1108};
+					azimut=275;
+					id=67;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e38";
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item47
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6319.7168,342.99133,5706.4487};
+					azimut=275;
+					id=68;
+					side="WEST";
+					vehicle="US_Delta_Force_M14_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e37";
+					init="hNil = [this, ""M14""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item48
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6319.7168,342.25824,5703.0918};
+					azimut=275;
+					id=69;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e39";
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item49
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6319.8105,341.6626,5700.4487};
+					azimut=275;
+					id=70;
+					side="WEST";
+					vehicle="US_Delta_Force_Marksman_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e40";
+					init="hNil = [this, ""MarkH""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item50
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6318.8462,340.64868,5696.9321};
+					azimut=275;
+					id=71;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e41";
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item51
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6318.8462,339.84732,5693.5752};
+					azimut=275;
+					id=72;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e42";
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item52
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6318.9399,339.25961,5690.9321};
+					azimut=275;
+					id=73;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e43";
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item53
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6319.1538,338.58698,5687.8237};
+					azimut=275;
+					id=74;
+					side="WEST";
+					vehicle="US_Delta_Force_Marksman_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e44";
+					init="hNil = [this, ""MarkH""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item54
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6319.1538,337.7869,5684.4668};
+					azimut=275;
+					id=75;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e45";
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item55
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6319.2476,337.17624,5681.8237};
+					azimut=275;
+					id=76;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e46";
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item56
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6319.1543,335.98428,5677.7485};
+					azimut=275;
+					id=77;
+					side="WEST";
+					vehicle="US_Delta_Force_M14_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e47";
+					init="hNil = [this, ""M14""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item57
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6319.1543,334.92749,5674.3916};
+					azimut=275;
+					id=78;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e48";
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item58
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6319.1523,332.63144,5668.2817};
+					azimut=275;
+					id=79;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e49";
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item59
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6319.0591,330.74237,5664.2065};
+					azimut=275;
+					id=80;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e50";
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item60
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6319.0591,329.16241,5660.8496};
+					azimut=275;
+					id=81;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e51";
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item61
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6319.0591,327.00412,5656.3682};
+					azimut=275;
+					id=82;
+					side="WEST";
+					vehicle="US_Delta_Force_Marksman_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e52";
+					init="hNil = [this, ""MarkH""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item62
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6318.8677,324.93814,5651.9824};
+					azimut=275;
+					id=83;
+					side="WEST";
+					vehicle="US_Delta_Force_Marksman_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e53";
+					init="hNil = [this, ""M14""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item63
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6318.8677,322.89847,5647.2148};
+					azimut=275;
+					id=84;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e54";
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item64
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6318.8677,321.19504,5642.7329};
+					azimut=275;
+					id=85;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e55";
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item65
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6347.2124,339.63422,5676.3726};
+					azimut=275;
+					id=86;
+					side="WEST";
+					vehicle="US_Delta_Force_TL_EP1";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="ge7 = group this; hNil = [this, ""TL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6352.4546,340.81415,5678.9258};
+					azimut=275;
+					id=87;
+					side="WEST";
+					vehicle="US_Delta_Force_Marksman_EP1";
+					rank="SERGEANT";
+					skill=1;
+					init="hNil = [this, ""MarkH""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6352.6289,341.44678,5680.918};
+					azimut=275;
+					id=88;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6352.8032,342.03967,5682.9102};
+					azimut=275;
+					id=89;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item66
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6347.3765,335.90549,5666.8872};
+					azimut=275;
+					id=90;
+					side="WEST";
+					vehicle="US_Delta_Force_TL_EP1";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="ge8 = group this; hNil = [this, ""TL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6352.6187,337.32864,5669.4404};
+					azimut=275;
+					id=91;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					rank="SERGEANT";
+					skill=1;
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6352.793,338.11539,5671.4326};
+					azimut=275;
+					id=92;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6352.9673,338.91324,5673.4248};
+					azimut=275;
+					id=93;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item67
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6347.4727,331.01297,5657.1597};
+					azimut=275;
+					id=94;
+					side="WEST";
+					vehicle="US_Delta_Force_TL_EP1";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="ge9 = group this; hNil = [this, ""TL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6352.7148,332.39191,5659.7129};
+					azimut=275;
+					id=95;
+					side="WEST";
+					vehicle="US_Delta_Force_M14_EP1";
+					rank="SERGEANT";
+					skill=1;
+					init="hNil = [this, ""M14""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6352.8892,333.50385,5661.7051};
+					azimut=275;
+					id=96;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6353.0635,334.53357,5663.6973};
+					azimut=275;
+					id=97;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item68
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6347.1855,325.75549,5646.5747};
+					azimut=275;
+					id=98;
+					side="WEST";
+					vehicle="US_Delta_Force_TL_EP1";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="ge10 = group this; hNil = [this, ""TL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6352.4277,326.87494,5649.1279};
+					azimut=275;
+					id=99;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					rank="SERGEANT";
+					skill=1;
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6352.6021,327.84976,5651.1201};
+					azimut=275;
+					id=100;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6352.7764,328.87061,5653.1123};
+					azimut=275;
+					id=101;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item69
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6346.6128,321.70303,5635.4175};
+					azimut=275;
+					id=102;
+					side="WEST";
+					vehicle="US_Delta_Force_TL_EP1";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="ge11 = group this; hNil = [this, ""TL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6351.855,322.11191,5637.9707};
+					azimut=275;
+					id=103;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					rank="SERGEANT";
+					skill=1;
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6352.0293,322.84567,5639.9629};
+					azimut=275;
+					id=104;
+					side="WEST";
+					vehicle="US_Delta_Force_Marksman_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""MarkH""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6352.2036,323.60297,5641.9551};
+					azimut=275;
+					id=105;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item70
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6345.6807,320.54205,5623.7485};
+					azimut=275;
+					id=106;
+					side="WEST";
+					vehicle="US_Delta_Force_TL_EP1";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="ge12 = group this; hNil = [this, ""TL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6350.9229,320.59735,5626.3018};
+					azimut=275;
+					id=107;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					rank="SERGEANT";
+					skill=1;
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6351.0972,320.70428,5628.2939};
+					azimut=275;
+					id=108;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6351.2715,320.79001,5630.2861};
+					azimut=275;
+					id=109;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item71
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6345.1338,320.56656,5612.6758};
+					azimut=275;
+					id=110;
+					side="WEST";
+					vehicle="US_Delta_Force_TL_EP1";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="ge13 = group this; hNil = [this, ""TL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6350.376,320.86478,5615.229};
+					azimut=275;
+					id=111;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					rank="SERGEANT";
+					skill=1;
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6350.5503,320.82523,5617.2212};
+					azimut=275;
+					id=112;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6350.7246,320.7713,5619.2134};
+					azimut=275;
+					id=113;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item72
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6344.7363,320.59256,5600.3242};
+					azimut=275;
+					id=114;
+					side="WEST";
+					vehicle="US_Delta_Force_TL_EP1";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="ge14 = group this; hNil = [this, ""TL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6349.9785,320.96927,5602.8774};
+					azimut=275;
+					id=115;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					rank="SERGEANT";
+					skill=1;
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6350.1528,320.97589,5604.8696};
+					azimut=275;
+					id=116;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6350.3271,320.97864,5606.8618};
+					azimut=275;
+					id=117;
+					side="WEST";
+					vehicle="US_Delta_Force_Marksman_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""MarkH""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item73
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6344.5996,320.55978,5590.3462};
+					azimut=275;
+					id=118;
+					side="WEST";
+					vehicle="US_Delta_Force_TL_EP1";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="ge15 = group this; hNil = [this, ""TL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6349.8418,320.9581,5592.8994};
+					azimut=275;
+					id=119;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					rank="SERGEANT";
+					skill=1;
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6350.0161,320.97302,5594.8916};
+					azimut=275;
+					id=120;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6350.1904,320.98904,5596.8838};
+					azimut=275;
+					id=121;
+					side="WEST";
+					vehicle="US_Delta_Force_M14_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M14""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item74
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6344.5996,320.61215,5582.4185};
+					azimut=275;
+					id=122;
+					side="WEST";
+					vehicle="US_Delta_Force_TL_EP1";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="ge16 = group this; hNil = [this, ""TL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6349.8418,320.98618,5584.9717};
+					azimut=275;
+					id=123;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					rank="SERGEANT";
+					skill=1;
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6350.0161,320.97708,5586.9639};
+					azimut=275;
+					id=124;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6350.1904,320.9834,5588.9561};
+					azimut=275;
+					id=125;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item75
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6344.0522,320.86401,5573.5337};
+					azimut=275;
+					id=126;
+					side="WEST";
+					vehicle="US_Delta_Force_TL_EP1";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="ge17 = group this; hNil = [this, ""TL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6349.2944,321.11798,5576.0869};
+					azimut=275;
+					id=127;
+					side="WEST";
+					vehicle="US_Delta_Force_Marksman_EP1";
+					rank="SERGEANT";
+					skill=1;
+					init="hNil = [this, ""MarkH""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6349.4688,321.08038,5578.0791};
+					azimut=275;
+					id=128;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6349.6431,321.04276,5580.0713};
+					azimut=275;
+					id=129;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item76
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6343.3672,323.25992,5556.3105};
+					azimut=275;
+					id=130;
+					side="WEST";
+					vehicle="US_Delta_Force_TL_EP1";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="ge18 = group this; hNil = [this, ""TL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6348.6094,323.22836,5558.8638};
+					azimut=275;
+					id=131;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					rank="SERGEANT";
+					skill=1;
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6348.7837,322.81271,5560.856};
+					azimut=275;
+					id=132;
+					side="WEST";
+					vehicle="US_Delta_Force_M14_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M14""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6348.958,322.41821,5562.8481};
+					azimut=275;
+					id=133;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item77
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={6342.6826,325.74258,5543.8716};
+					azimut=275;
+					id=134;
+					side="WEST";
+					vehicle="US_Delta_Force_TL_EP1";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="ge19 = group this; hNil = [this, ""TL""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item1
+				{
+					position[]={6347.9248,325.5108,5546.4248};
+					azimut=275;
+					id=135;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					rank="SERGEANT";
+					skill=1;
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item2
+				{
+					position[]={6348.0991,325.17706,5548.417};
+					azimut=275;
+					id=136;
+					side="WEST";
+					vehicle="US_Delta_Force_Marksman_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""MarkH""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+				class Item3
+				{
+					position[]={6348.2734,324.83218,5550.4092};
+					azimut=275;
+					id=137;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					rank="CORPORAL";
+					skill=1;
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item78
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6306.667,341.7453,5729.2749};
+					azimut=275;
+					id=138;
+					side="WEST";
+					vehicle="US_Delta_Force_M14_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e56";
+					init="hNil = [this, ""M14""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item79
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6306.7129,341.82755,5725.4912};
+					azimut=275;
+					id=139;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e57";
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item80
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6306.7129,341.85074,5722.1343};
+					azimut=275;
+					id=140;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e58";
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item81
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6306.8066,341.88019,5718.686};
+					azimut=275;
+					id=141;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e59";
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item82
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6306.5679,341.63785,5716.8042};
+					azimut=275;
+					id=142;
+					side="WEST";
+					vehicle="US_Delta_Force_Marksman_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e60";
+					init="hNil = [this, ""MarkH""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item83
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6306.5679,341.2941,5713.4473};
+					azimut=275;
+					id=143;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e61";
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item84
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6306.6616,340.90149,5709.999};
+					azimut=275;
+					id=144;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e63";
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item85
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6306.3667,341.03604,5711.5601};
+					azimut=275;
+					id=145;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e62";
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item86
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6306.4868,340.61163,5708.001};
+					azimut=275;
+					id=146;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e64";
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item87
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6306.0171,340.00674,5704.9155};
+					azimut=275;
+					id=147;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e66";
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item88
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6306.187,340.32703,5706.2534};
+					azimut=275;
+					id=148;
+					side="WEST";
+					vehicle="US_Delta_Force_M14_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e65";
+					init="hNil = [this, ""M14""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item89
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6306.187,339.61307,5702.8965};
+					azimut=275;
+					id=149;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e67";
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item90
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6306.2808,339.06961,5700.2534};
+					azimut=275;
+					id=150;
+					side="WEST";
+					vehicle="US_Delta_Force_Marksman_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e68";
+					init="hNil = [this, ""MarkH""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item91
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6305.3164,338.13702,5696.7368};
+					azimut=275;
+					id=151;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e69";
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item92
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6305.3164,337.44028,5693.3799};
+					azimut=275;
+					id=152;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e70";
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item93
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6305.4102,336.89304,5690.7368};
+					azimut=275;
+					id=153;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e71";
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item94
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6305.624,336.26611,5687.6284};
+					azimut=275;
+					id=154;
+					side="WEST";
+					vehicle="US_Delta_Force_Marksman_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e72";
+					init="hNil = [this, ""MarkH""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item95
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6305.624,335.48459,5684.2715};
+					azimut=275;
+					id=155;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e73";
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item96
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6305.7178,334.88531,5681.6284};
+					azimut=275;
+					id=156;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e74";
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item97
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6305.6245,333.60794,5677.5532};
+					azimut=275;
+					id=157;
+					side="WEST";
+					vehicle="US_Delta_Force_M14_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e75";
+					init="hNil = [this, ""M14""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item98
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6305.6245,332.47525,5674.1963};
+					azimut=275;
+					id=158;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e76";
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item99
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6305.6226,330.08856,5668.0864};
+					azimut=275;
+					id=159;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e77";
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item100
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6305.5293,328.28064,5664.0112};
+					azimut=275;
+					id=160;
+					side="WEST";
+					vehicle="US_Delta_Force_AR_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e78";
+					init="hNil = [this, ""M249""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item101
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6305.5293,326.77689,5660.6543};
+					azimut=275;
+					id=161;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e79";
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item102
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6305.5293,324.73627,5656.1729};
+					azimut=275;
+					id=162;
+					side="WEST";
+					vehicle="US_Delta_Force_Marksman_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e80";
+					init="hNil = [this, ""MarkH""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item103
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6305.3379,322.6893,5651.7871};
+					azimut=275;
+					id=163;
+					side="WEST";
+					vehicle="US_Delta_Force_Marksman_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e81";
+					init="hNil = [this, ""M14""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item104
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6305.3379,320.64215,5647.0195};
+					azimut=275;
+					id=164;
+					side="WEST";
+					vehicle="US_Delta_Force_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e82";
+					init="hNil = [this, ""M4A1""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item105
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6305.3379,318.90088,5642.5376};
+					azimut=275;
+					id=165;
+					side="WEST";
+					vehicle="US_Delta_Force_Assault_EP1";
+					leader=1;
+					rank="CORPORAL";
+					skill=1;
+					text="e83";
+					init="hNil = [this, ""M4A1M203""] call compile preprocessFile ""assigngear.sqf"";";
+				};
+			};
+		};
+		class Item106
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6949.4702,265.16653,7857.1987};
+					id=175;
+					side="LOGIC";
+					vehicle="AlternativeInjurySimulation";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					synchronizations[]={174,173,166,168,170,0,172,167,169,171,182,181,178,179,180};
+				};
+			};
+		};
+		class Item107
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6947.9229,261.62439,7847.2583};
+					id=176;
+					side="LOGIC";
+					vehicle="BattleFieldClearance";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					synchronizations[]={174,173,166,168,170,0,172,167,169,171,182,181,178,179,180};
+				};
+			};
+		};
+		class Item108
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6269.4238,327.15182,5678.1992};
+					id=177;
+					side="LOGIC";
+					vehicle="ACE_AITalk_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=6;
+		class Item0
+		{
+			position[]={6173.5415,308.0455,5599.3823};
+			name="mrk1";
+			markerType="RECTANGLE";
+			type="mil_objective";
+			a=80;
+			b=80;
+		};
+		class Item1
+		{
+			position[]={6161.6211,310.58698,5421.2905};
+			name="mrkObj";
+			type="mil_objective";
+			colorName="ColorRed";
+		};
+		class Item2
+		{
+			position[]={5441.9399,193.8793,6074.1392};
+			name="blackZone1";
+			markerType="ELLIPSE";
+			type="Empty";
+			a=200;
+			b=200;
+		};
+		class Item3
+		{
+			position[]={4319.9316,335.83661,742.06732};
+			name="blackZone2";
+			markerType="ELLIPSE";
+			type="Empty";
+			a=120;
+			b=120;
+		};
+		class Item4
+		{
+			position[]={6794.3252,370.11215,5615.3955};
+			name="mrkStart";
+			type="hd_start";
+			colorName="ColorGreen";
+		};
+		class Item5
+		{
+			position[]={1997.092,277.33508,7638.0576};
+			name="blackZone3";
+			markerType="ELLIPSE";
+			type="Empty";
+			a=200;
+			b=200;
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={6354.9067,342.88477,6073.9536};
+			a=270;
+			b=270;
+			activationBy="GUER";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="trgEx";
+			expActiv="bExtracted=false;";
+			expDesactiv="bExtracted=true;";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"takistan"
+	};
+	addOnsAuto[]=
+	{
+		"takistan"
+	};
+	randomSeed=8810292;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.40000001;
+		year=2009;
+		day=28;
+		hour=16;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"takistan"
+	};
+	addOnsAuto[]=
+	{
+		"takistan"
+	};
+	randomSeed=62357;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.40000001;
+		year=2009;
+		day=28;
+		hour=16;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"takistan"
+	};
+	addOnsAuto[]=
+	{
+		"takistan"
+	};
+	randomSeed=7195815;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.40000001;
+		year=2009;
+		day=28;
+		hour=16;
+		minute=20;
+	};
+};

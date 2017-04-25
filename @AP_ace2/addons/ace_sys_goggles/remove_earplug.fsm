@@ -1,0 +1,159 @@
+/*%FSM<COMPILE "scriptedFSM.cfg, remove_earplugs">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"remove_earplugs",0,250,-75.000000,-175.000000,25.000000,-125.000000,0.000000,"remove_earplugs"};
+item1[] = {"time2wait",4,218,-75.000000,-100.000000,25.000000,-50.000000,0.000000,"time2wait"};
+item2[] = {"fade",2,250,-150.000000,125.000000,-50.000000,175.000000,0.000000,"fade"};
+item3[] = {"_",8,218,-75.000000,200.000000,25.000000,250.000000,0.000000,""};
+item4[] = {"end",1,250,-75.000000,275.000000,25.000000,325.000000,0.000000,"end"};
+item5[] = {"check_deafness",3,250,-75.000000,-25.000000,25.000000,25.000000,0.000000,"check deafness"};
+item6[] = {"isDeaf",4,4314,0.000000,50.000000,100.000000,100.000000,1.000000,"isDeaf"};
+item7[] = {"_",8,218,-150.000000,50.000000,-50.000000,100.000000,0.000000,""};
+item8[] = {"deaf",2,250,0.000000,125.000000,100.000000,175.000000,0.000000,"deaf"};
+link0[] = {0,1};
+link1[] = {1,5};
+link2[] = {2,3};
+link3[] = {3,4};
+link4[] = {5,6};
+link5[] = {5,7};
+link6[] = {6,8};
+link7[] = {7,2};
+link8[] = {8,3};
+globals[] = {25.000000,1,0,0,0,640,480,1,10,6316128,1,-357.508484,357.508057,425.867065,-258.580444,959,904,1};
+window[] = {2,-1,-1,-1,-18,707,25,985,25,3,977};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "remove_earplugs";
+  class States
+  {
+    /*%FSM<STATE "remove_earplugs">*/
+    class remove_earplugs
+    {
+      name = "remove_earplugs";
+      init = /*%FSM<STATEINIT""">*/"/* ace_sys_goggles (.pbo) | (c) 2009 by rocko */" \n
+       "" \n
+       "private [""_unit"",""_time2Wait""];" \n
+       "_unit = _this select 0;" \n
+       "_unit setVariable [""ace_sys_goggles_earplugs"", false, false];" \n
+       "//BWC" \n
+       "_unit setVariable [""ACE_Ear_Protection"",false];" \n
+       "" \n
+       "_unit addWeapon ""ACE_Earplugs"";" \n
+       "_time2Wait = time + 1;" \n
+       "[] spawn {" \n
+       "	_img = ""<img image='x\ace\addons\sys_goggles\data\icon\ace_earplug_out_ca.paa' size='3' align='center'/>"";" \n
+       "	hintSilent parseText (_img + "" "");" \n
+       "	sleep 0.6;" \n
+       "	hintSilent """";" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "time2wait">*/
+        class time2wait
+        {
+          priority = 0.000000;
+          to="check_deafness";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _time2Wait"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "fade">*/
+    class fade
+    {
+      name = "fade";
+      init = /*%FSM<STATEINIT""">*/"5 fadeSound 1;" \n
+       "5 fadeRadio 1;" \n
+       "5 fadeMusic 1;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="end";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "end">*/
+    class end
+    {
+      name = "end";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "check_deafness">*/
+    class check_deafness
+    {
+      name = "check_deafness";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "isDeaf">*/
+        class isDeaf
+        {
+          priority = 1.000000;
+          to="deaf";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_unit getVariable [""ace_deaf"",false];"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="fade";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "deaf">*/
+    class deaf
+    {
+      name = "deaf";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="end";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="remove_earplugs";
+  finalStates[] =
+  {
+    "end",
+  };
+};
+/*%FSM</COMPILE>*/

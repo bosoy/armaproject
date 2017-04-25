@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\c_ai_sensors
+Pbo Type is: Arma Addon
+Sha: '2BCB76D3CBB264F1CDC8DA3D214EF45ADB7661FD'
+//////</HEADER>//////

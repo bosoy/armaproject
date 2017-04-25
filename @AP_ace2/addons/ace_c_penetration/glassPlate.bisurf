@@ -1,0 +1,21 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 3.52
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class Ca : Data\Penetration\glassPlate.bisurf{
+Density = 2400;
+Thickness = 5;
+rough = 0;
+dust = 0;
+bulletPenetrability = 500;
+bulletPenetrabilityWithThickness = 240;
+soundEnviron = "Empty";
+isWater = "false";
+friction = 0.1;
+restitution = 0.1;
+impact = "Hit_Glass_Thin";
+soundHit = "glass_armored";
+//};

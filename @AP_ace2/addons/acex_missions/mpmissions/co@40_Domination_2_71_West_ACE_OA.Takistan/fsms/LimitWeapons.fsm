@@ -1,0 +1,205 @@
+class FSM
+{
+  fsmName = "LimitWeapons";
+  class States
+  {
+    class Start
+    {
+      name = "Start";
+      init = "private [""_primw"",""_secw"",""_oldprim"",""_timenow""];" \n
+       "_primw =toUpper( primaryWeapon player);" \n
+       "_secw = toUpper(secondaryWeapon player);" \n
+       "" \n
+       "_weaps = getArray(configFile >> ""CfgVehicles"" >> typeOf player >> ""weapons"");" \n
+       "for ""_i"" from 0 to (count _weaps - 1) do {" \n
+       "	_weaps set [_i, toUpper(_weaps select _i)];" \n
+       "};" \n
+       "" \n
+       "if (isNil ""d_poss_weapons"") then {" \n
+       "	d_poss_weapons = [];" \n
+       "};" \n
+       "d_poss_weapons set [count d_poss_weapons, ""STRELA""];" \n
+       "d_poss_weapons set [count d_poss_weapons, ""STINGER""];" \n
+       "d_poss_weapons = [d_poss_weapons, _weaps] call d_fnc_arrayPushStack2;" \n
+       "" \n
+       "for ""_i"" from 0 to (count d_poss_weapons - 1) do {" \n
+       "	d_poss_weapons set [_i, toUpper(d_poss_weapons select _i)];" \n
+       "};";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class Loop
+    {
+      name = "Loop";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class not_alive_player
+        {
+          priority = 1.000000;
+          to="Dummy";
+          precondition = "";
+          condition="!alive player";
+          action="";
+        };
+        class Secondary
+        {
+          priority = 0.000000;
+          to="Check_1";
+          precondition = "";
+          condition="(_secw != secondaryWeapon player)";
+          action="";
+        };
+        class Primary
+        {
+          priority = 0.000000;
+          to="Check";
+          precondition = "";
+          condition="(_primw != primaryWeapon player)";
+          action="";
+        };
+      };
+    };
+    class Check
+    {
+      name = "Check";
+      init = "if (toUpper(primaryWeapon player) in d_poss_weapons) then {" \n
+       "	_primw = toUpper(primaryWeapon player);" \n
+       "} else {" \n
+       "	if ((primaryWeapon player == """") || (primaryWeapon player == "" "")) then {" \n
+       "		_primw = toUpper(primaryWeapon player);" \n
+       "	} else {" \n
+       "		if (primaryWeapon player != """" && primaryWeapon player != "" "") then {" \n
+       "			_s = format [localize ""STR_DOM_MISSIONSTRING_1421"", [primaryWeapon player,1 ] call d_fnc_GetDisplayName];" \n
+       "			_s call d_fnc_GlobalChat;" \n
+       "			hint _s;" \n
+       "			(localize ""STR_DOM_MISSIONSTRING_1422"") call d_fnc_GlobalChat;" \n
+       "		};" \n
+       "		_tmpp = primaryWeapon player;" \n
+       "		player removeWeapon _tmpp;" \n
+       "		if (_primw != """" && _primw != "" "") then {" \n
+       "			player addWeapon _primw;" \n
+       "			player selectWeapon _primw;" \n
+       "			_muzzles = getArray(configFile >> ""cfgWeapons"" >> _primw >> ""muzzles"");" \n
+       "			player selectWeapon (_muzzles select 0);" \n
+       "		};" \n
+       "		_nb = nearestObjects [player, [""ReammoBox""], 5];" \n
+       "		if (count _nb > 0) then {" \n
+       "			(_nb select 0) addWeaponCargo [_tmpp,1];" \n
+       "		} else {" \n
+       "			_nb = (position player) nearEntities [[""Car"",""Tank""], 5];" \n
+       "			if (count _nb > 0) then {" \n
+       "				(_nb select 0) addWeaponCargo [_tmpp,1];" \n
+       "			};" \n
+       "		};" \n
+       "	};" \n
+       "};" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class Check_1
+    {
+      name = "Check_1";
+      init = "if (toUpper(secondaryWeapon player) in d_poss_weapons) then {" \n
+       "	_secw = toUpper(secondaryWeapon player);" \n
+       "} else {" \n
+       "	if ((secondaryWeapon player == """") || (secondaryWeapon player == "" "")) then {" \n
+       "		_secw = toUpper(secondaryWeapon player);" \n
+       "	} else {" \n
+       "		if (secondaryWeapon player != """" && secondaryWeapon player != "" "") then {" \n
+       "			_s = format [localize ""STR_DOM_MISSIONSTRING_1421"", [secondaryWeapon player,1 ] call d_fnc_GetDisplayName];" \n
+       "			_s call d_fnc_GlobalChat;" \n
+       "			hint _s;" \n
+       "		};" \n
+       "		_tmpp = secondaryWeapon player;" \n
+       "		player removeWeapon _tmpp;" \n
+       "		if (_secw != """" && _secw != "" "") then {" \n
+       "			player addWeapon _secw;" \n
+       "		};" \n
+       "		_nb = (position player) nearObjects [""ReammoBox"", 5];" \n
+       "		if (count _nb > 0) then {" \n
+       "			(_nb select 0) addWeaponCargo [_tmpp,1];" \n
+       "		} else {" \n
+       "			_nb = (position player) nearEntities [[""Car"",""Tank""], 5];" \n
+       "			if (count _nb > 0) then {" \n
+       "				(_nb select 0) addWeaponCargo [_tmpp,1];" \n
+       "			};" \n
+       "		};" \n
+       "	};" \n
+       "};" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class Sleep
+    {
+      name = "Sleep";
+      init = "_timenow = time + 2;";
+      precondition = "";
+      class Links
+      {
+        class Delay_2
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="time >= _timenow";
+          action="";
+        };
+      };
+    };
+    class Dummy
+    {
+      name = "Dummy";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class alive_player
+        {
+          priority = 0.000000;
+          to="Sleep";
+          precondition = "";
+          condition="alive player";
+          action="";
+        };
+      };
+    };
+  };
+  initState="Start";
+  finalStates[] =
+  {
+  };
+};

@@ -1,0 +1,24 @@
+ambient[] = {0.0, 0.0, 0.0, 0.0};
+diffuse[] = {0.0, 0.0, 0.0, 0.0};
+forcedDiffuse[] = {0.0, 0.0, 0.0, 0.0};
+emmisive[] = {0.0, 0.0, 0.0, 0.0};
+specular[] = {1.0, 1.0, 1.0, 0.0};
+specularPower = 10.0;
+renderFlags[] = {"NoAlphaWrite"};
+nextPass = "x\acex\addons\c_wep_sniper\glass_2pass.rvmat";
+PixelShaderID = "Glass";
+VertexShaderID = "Glass";
+
+class Stage1 {
+	texture = "#(argb,8,8,3)color(0,0,0,0.2)";
+	uvSource = "none";
+};
+
+class Stage2 {
+	texture = "ca\weapons\data\env_acog_co.paa";
+	uvSource = "none";
+};
+class StageTI
+{
+ texture = "ca\weapons_e\data\default_ti_ca.paa";
+};

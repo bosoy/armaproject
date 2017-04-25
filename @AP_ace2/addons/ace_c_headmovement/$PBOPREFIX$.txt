@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\c_headmovement
+Pbo Type is: Arma Addon
+Sha: '98324B20686BE0DC2F94C30C8E000C847453862F'
+//////</HEADER>//////

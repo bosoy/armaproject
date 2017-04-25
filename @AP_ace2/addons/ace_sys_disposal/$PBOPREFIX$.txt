@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_disposal
+Pbo Type is: Arma Addon
+Sha: 'C4501583C9FD201D227348EF811E5249450F6B83'
+//////</HEADER>//////

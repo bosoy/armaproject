@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="ACE2">
+<Container name="STR_DN">
+<Key ID="STR_DN_ACE_WIRECUTTER">
+<English>Wirecutter</English>
+<German>Drahtschneider</German>
+<Spanish>Wirecutter</Spanish>
+<Czech>Štípací kleště</Czech>
+<Russian>Кусачки</Russian>
+<Italian>Pinza Tagliafili</Italian>
+<Polish>Cążki</Polish>
+<French>Cisailles</French>
+<Hungarian>Drótvágó</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_CUTITBABY">
+<English>Cut wire</English>
+<German>Zerschneide Draht</German>
+<Spanish>Cut wire</Spanish>
+<Czech>Stříhat drát</Czech>
+<Russian>Разрезать проволоку</Russian>
+<Italian>Taglia Filo</Italian>
+<Polish>Przetnij drut</Polish>
+<French>Couper grillage</French>
+<Hungarian>Drót átvágása</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_NOFENCE">
+<English>No fence!</English>
+<German>Kein Zaun!</German>
+<Spanish>No fence!</Spanish>
+<Czech>Zde není plot!</Czech>
+<Russian>Нет заграждения!</Russian>
+<Italian>Nessuna Recinzione!</Italian>
+<Polish>Tu nie ma co przecinać!</Polish>
+<French>Pas de grillage!</French>
+<Hungarian>Nincs drót!</Hungarian>
+</Key>
+</Container>
+</Package></Project>

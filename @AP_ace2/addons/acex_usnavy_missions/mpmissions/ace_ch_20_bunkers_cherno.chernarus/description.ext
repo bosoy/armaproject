@@ -1,0 +1,150 @@
+disabledAI=1;
+respawn=3;
+respawndelay=2;
+
+
+class CfgSounds
+{
+	sounds[] = {};   
+  	
+  	class buzzer
+	{
+		name = "buzzer";
+		sound[] = {"buzzer.wav", 0.05, 1};
+		titles[] = {};
+	};
+};
+
+
+class Header
+{
+	gameType = HOLD;
+	minPlayers = 1;
+	maxPlayers = 20;
+};
+
+class params
+{
+	class MaxScore
+	{
+		title = "Max score";
+		values[] = {-1, 1000, 2000, 3000, 4000, 5000, 7500, 10000, 25000, 50000};
+		texts[] = {"Unlimited", 1000, 2000, 3000, 4000, 5000, 7500, 10000, 25000, 50000};
+		default = 3000;
+	};
+	
+	class Nightorday
+	{
+		title = "Night/Day";
+		values[] = {0, 1, 2, 3};
+		texts[] = {"Day", "1/4 moon", "1/2 moon", "3/4 moon"};
+		default = 0;
+	};
+	
+	class NightSights
+	{
+		title = "Night Sights";
+		values[] = {0, 1, 2};
+		texts[] = {"None", "NV", "Thermal"};
+		default = 1; 
+	};	
+
+	class NightVision
+	{
+		title = "Nightvision";
+		values[] = {0, 1, 2};
+		texts[] = {"No", "NV", "Thermal"};
+		default = 1; 
+	};
+
+
+	class SideWeapons
+	{
+		title = "Faction weapons";
+		values[] = {0, 1, 2};
+		texts[] = {"Faction only", "Side only", "All weapons"};
+		default = 0;
+	};
+	
+	class WeaponTypes
+	{
+		title = "Weapon Types";
+		values[] = {0, 1, 2, 3, 4, 5};
+		texts[] = {"Pistols", "SMGs", "SMGs / Shotguns", "Rifles", "Heavy", "Very heavy (WARNING: Can cause imbalance)"};
+		default = 4;
+	};
+	
+	class Caliber
+	{
+		title = "Caliber limit";
+		values[] = {1, 2, 3, 4, 5, 6, 7};
+		texts[] = {"Pistol calibers", "PDW calibers", "5.56 / 5.45", "5.56 / 5.45 / 7.62X39", "7.62X51 / 7.62X54 / 9X39", "50cal", "25mm"};
+		default = 4;
+	};
+
+	class Explosives
+	{
+		title = "Explosives";
+		values[] = {0, 1, 2, 3, 4, 5};
+		texts[] = {"None", "Grenades", "Grenades / Satchels", "Grenades / Satchels / Mines", "Grenades / Satchels / Advanced Mines", "Everything (WARNING: Imbalanced!)"};
+		default = 4;
+	};
+	
+	class Scopes
+	{
+		title = "Scopes";
+		values[] = {0, 1};
+		texts[] = {"No", "Yes"};
+		default = 1;
+	};
+	
+	class Launchers
+	{
+		title = "Launchers (for customized loadouts only)";
+		values[] = {0, 1, 2, 3};
+		texts[] = {"None", "Light", "Medium", "Heavy"};
+		default = 1;
+	};
+	
+	class CSW
+	{
+		title = "Crew Served Weapons";
+		values[] = {0, 1, 2};
+		texts[] = {"None", "Machineguns", "Everything"};
+		default = 0; 
+	};
+	
+	class SFweapons
+	{
+		title = "SFweapons";
+		values[] = {0, 1, 2};
+		texts[] = {"None", "Non-SD", "SD included"};
+		default = 0;
+	};
+	
+	class FutureWeapons
+	{
+		title = "Future Weapons";
+		values[] = {0, 1};
+		texts[] = {"No", "Yes"};
+		default = 0;
+	};
+	
+	class LessThenLethal
+	{
+		title = "Less Than Lethal Weapons";
+		values[] = {0, 1};
+		texts[] = {"No", "Yes"};
+		default = 0;	
+	};
+	
+	class HiCapMags
+	{
+		title = "High Capacity Magazines (for customized loadouts only)";
+		values[] = {0, 1, 2};
+		texts[] = {"None", "Small", "Large"};
+		default = 0;
+	};
+};
+
+respawnDialog = false;

@@ -1,0 +1,21 @@
+///////<HEADER>///////
+prefix=x\ace\addons\main
+!=          .-.
+!=          |U|
+!=          | |
+!=          | |
+!=         _| |_
+!=        | | | |-.
+!=       /|     ` |
+!=      | |       |
+!=      |         |
+!=      \         /
+!=       |       |
+!=       |       |
+message=OOPS! Stealing isn't good, bitch!
+pbo=packAndRap
+version=0.6
+author=Blender
+Pbo Type is: Arma Addon
+Sha: 'FA3CFA80457BC45E6AD0B148A73D276E8B2E1802'
+//////</HEADER>//////

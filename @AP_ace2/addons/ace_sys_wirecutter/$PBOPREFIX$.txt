@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_wirecutter
+Pbo Type is: Arma Addon
+Sha: '6AAE58DB23B8B99BEC5891798CD69DCAE9B64981'
+//////</HEADER>//////

@@ -1,0 +1,513 @@
+/*%FSM<COMPILE "G:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, AIAttendantHandling">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Start",0,250,-50.000000,-175.000000,50.000000,-125.000000,0.000000,"Start"};
+item1[] = {"Delay",4,218,-50.000000,-75.000000,50.000000,-25.000000,0.000000,"Delay"};
+item2[] = {"Loop",2,250,-50.000000,25.000000,50.000000,75.000000,0.000000,"Loop"};
+item3[] = {"_",8,218,-50.000000,125.000000,50.000000,175.000000,0.000000,""};
+item4[] = {"__alive__unit",4,218,-200.000000,25.000000,-100.000000,75.000000,100.000000,"!alive _unit"};
+item5[] = {"End",1,250,-350.000000,25.000000,-250.000000,75.000000,0.000000,"End"};
+item6[] = {"uncon",4,218,75.000000,-125.000000,175.000000,-75.000000,50.000000,"uncon"};
+item7[] = {"Sleep",2,250,325.000000,-125.000000,425.000000,-75.000000,0.000000,"Sleep"};
+item8[] = {"Delay",4,218,150.000000,-50.000000,250.000000,0.000000,0.000000,"Delay"};
+item9[] = {"Check_other_unit",2,250,-50.000000,225.000000,50.000000,275.000000,0.000000,"Check other units"};
+item10[] = {"No_objects",4,218,100.000000,225.000000,200.000000,275.000000,5.000000,"No objects"};
+item11[] = {"Sleep_1",2,250,225.000000,225.000000,325.000000,275.000000,0.000000,"Sleep"};
+item12[] = {"Delay",4,218,225.000000,25.000000,325.000000,75.000000,0.000000,"Delay"};
+item13[] = {"_",8,218,-50.000000,325.000000,50.000000,375.000000,0.000000,""};
+item14[] = {"iterate_through",2,4346,-50.000000,425.000000,50.000000,475.000000,0.000000,"iterate through" \n "nearest objects"};
+item15[] = {"Pre_unit_check",4,218,-350.000000,-175.000000,-250.000000,-125.000000,1.000000,"Pre unit check"};
+item16[] = {"null_object",4,218,100.000000,425.000000,200.000000,475.000000,1.000000,"null object"};
+item17[] = {"_",8,218,-50.000000,525.000000,50.000000,575.000000,0.000000,""};
+item18[] = {"Move_unit_to_unit",2,250,-50.000000,625.000000,50.000000,675.000000,0.000000,"Move unit to unit" \n "that needs help"};
+item19[] = {"",7,210,-154.000000,446.000000,-146.000000,454.000000,0.000000,""};
+item20[] = {"",7,210,-154.000000,646.000000,-146.000000,654.000000,0.000000,""};
+item21[] = {"",7,210,271.000000,446.000000,279.000000,454.000000,0.000000,""};
+item22[] = {"check_move",4,218,-50.000000,700.000000,50.000000,750.000000,0.000000,"check move"};
+item23[] = {"Timed_out",2,250,-50.000000,775.000000,50.000000,825.000000,0.000000,"Timed out"};
+item24[] = {"timeout",4,218,100.000000,775.000000,200.000000,825.000000,1.000000,"timeout"};
+item25[] = {"",7,210,271.000000,796.000000,279.000000,804.000000,0.000000,""};
+item26[] = {"",7,210,-154.000000,796.000000,-146.000000,804.000000,0.000000,""};
+item27[] = {"_",8,218,-50.000000,850.000000,50.000000,900.000000,0.000000,""};
+item28[] = {"Help_unit",2,250,-50.000000,950.000000,50.000000,1000.000000,0.000000,"Help unit"};
+item29[] = {"",7,210,-154.000000,971.000000,-146.000000,979.000000,0.000000,""};
+item30[] = {"Delay",4,218,100.000000,950.000000,200.000000,1000.000000,0.000000,"Delay"};
+item31[] = {"",7,210,271.000000,971.000000,279.000000,979.000000,0.000000,""};
+item32[] = {"Return_to_format",2,250,225.000000,625.000000,325.000000,675.000000,0.000000,"Return to" \n "formation"};
+item33[] = {"_",8,218,225.000000,525.000000,325.000000,575.000000,0.000000,""};
+link0[] = {0,1};
+link1[] = {0,15};
+link2[] = {1,2};
+link3[] = {2,3};
+link4[] = {2,4};
+link5[] = {2,6};
+link6[] = {3,9};
+link7[] = {4,5};
+link8[] = {6,7};
+link9[] = {7,8};
+link10[] = {8,2};
+link11[] = {9,10};
+link12[] = {9,13};
+link13[] = {10,11};
+link14[] = {11,12};
+link15[] = {12,2};
+link16[] = {13,14};
+link17[] = {14,16};
+link18[] = {14,17};
+link19[] = {14,19};
+link20[] = {15,5};
+link21[] = {16,21};
+link22[] = {17,18};
+link23[] = {18,20};
+link24[] = {18,22};
+link25[] = {19,4};
+link26[] = {20,19};
+link27[] = {21,11};
+link28[] = {22,23};
+link29[] = {23,24};
+link30[] = {23,26};
+link31[] = {23,27};
+link32[] = {24,25};
+link33[] = {25,32};
+link34[] = {26,20};
+link35[] = {27,28};
+link36[] = {28,29};
+link37[] = {28,30};
+link38[] = {29,26};
+link39[] = {30,31};
+link40[] = {31,25};
+link41[] = {32,33};
+link42[] = {33,21};
+globals[] = {25.000000,1,0,0,0,640,480,1,39,6316128,1,-737.220642,633.676880,1072.022217,-220.297760,977,921,1};
+window[] = {2,-1,-1,-1,-1,893,175,1135,175,3,995};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "AIAttendantHandling";
+  class States
+  {
+    /*%FSM<STATE "Start">*/
+    class Start
+    {
+      name = "Start";
+      init = /*%FSM<STATEINIT""">*/"// #define DEBUG_MODE_FULL" \n
+       "" \n
+       "private [""_timeend"", ""_unit"", ""_uncon"", ""_timenow"", ""_no"", ""_tohelp"", ""_timedout"", ""_tohelppos""];" \n
+       "" \n
+       "_unit = _this select 0;" \n
+       "" \n
+       "#ifdef DEBUG_MODE_FULL" \n
+       "    diag_log [diag_frameNo, diag_tickTime, time, ""Init AIAttend FSM"", _unit];" \n
+       "#endif" \n
+       "" \n
+       "_timeend = time + 5 + random 20;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Pre_unit_check">*/
+        class Pre_unit_check
+        {
+          priority = 1.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!alive _unit"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Delay">*/
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timeend"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Loop">*/
+    class Loop
+    {
+      name = "Loop";
+      init = /*%FSM<STATEINIT""">*/"_uncon = _unit call ace_sys_wounds_fnc_isUncon;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "__alive__unit">*/
+        class __alive__unit
+        {
+          priority = 100.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!alive _unit || {isNil ""ace_sys_wounds_enabled""}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "uncon">*/
+        class uncon
+        {
+          priority = 50.000000;
+          to="Sleep";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_uncon || {isPlayer _unit} || {!local _unit} || {(vehicle _unit != _unit)}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Check_other_unit";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End">*/
+    class End
+    {
+      name = "End";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Sleep">*/
+    class Sleep
+    {
+      name = "Sleep";
+      init = /*%FSM<STATEINIT""">*/"_timeend = time +10 + random 10;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Delay">*/
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time >= _timeend"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Check_other_unit">*/
+    class Check_other_unit
+    {
+      name = "Check_other_unit";
+      init = /*%FSM<STATEINIT""">*/"_no = (position _unit) nearObjects [""CAManBase"", 50];" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "No_objects">*/
+        class No_objects
+        {
+          priority = 5.000000;
+          to="Sleep_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(count _no == 0)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="iterate_through";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Sleep_1">*/
+    class Sleep_1
+    {
+      name = "Sleep_1";
+      init = /*%FSM<STATEINIT""">*/"_timeend = time + 30 + random 20;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Delay">*/
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timeend"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "iterate_through">*/
+    class iterate_through
+    {
+      name = "iterate_through";
+      init = /*%FSM<STATEINIT""">*/"#define EPI ""ACE_Epinephrine""" \n
+       "#define BND ""ACE_Bandage""" \n
+       "#define MOR ""ACE_Morphine""" \n
+       "#define KIT ""ACE_Medkit""" \n
+       "" \n
+       "// #define DEBUG_MODE_FULL" \n
+       "" \n
+       "_tohelp = objNull;" \n
+       "private ""_eit"";" \n
+       "_eit = false;" \n
+       "" \n
+       "// Prioritize players over AI" \n
+       "_players = [];" \n
+       "_ai = [];" \n
+       "{" \n
+       "   if (isPlayer _x) then { _players set [count _players, _x] } else { _ai set [count _ai, _x] };" \n
+       "} forEach _no;" \n
+       "" \n
+       "{" \n
+       "	_state = _x getVariable [""ace_w_state"", 0];" \n
+       "	if (isNil ""_state"") then {_state = 0};" \n
+       "	#ifdef DEBUG_MODE_FULL" \n
+       "		    diag_log [diag_frameNo, diag_tickTime, time, ""Treat AIAttend FSM"", _unit, _x, _state];" \n
+       "	#endif" \n
+       "	if ((_state > 1 || {[_x] call ace_sys_wounds_fnc_canHeal}) && {alive _x} && {((side (group _unit)) getFriend (side (group _x)) >= 0.6)} && {(vehicle _x == _x)} && {!([_x] call ace_sys_wounds_fnc_occupied)}) then {" \n
+       "		#ifdef DEBUG_MODE_FULL" \n
+       "			    diag_log [diag_frameNo, diag_tickTime, time, ""Treat2 AIAttend FSM"", _unit, _x, _state];" \n
+       "		#endif" \n
+       "		if (isMultiplayer) then {" \n
+       "			_eit = true;" \n
+       "		} else {" \n
+       "			switch (true) do {" \n
+       "				case ((_x getVariable ""ace_w_epi"") > 0 && {(([_unit, EPI] call ace_sys_wounds_fnc_hasRuckMagazine) || {EPI in magazines _unit} || {(local _x && {([_x, EPI] call ace_sys_wounds_fnc_hasRuckMagazine)})} ||  {EPI in magazines _x})}): {" \n
+       "					_eit = true;" \n
+       "				};" \n
+       "				case ((_x getVariable ""ace_w_pain"") > 0 && {(([_unit, MOR] call ace_sys_wounds_fnc_hasRuckMagazine) || {MOR in magazines _unit} || {(local _x && {([_x, MOR] call ace_sys_wounds_fnc_hasRuckMagazine)})} || {MOR in magazines _x})}): {" \n
+       "					_eit = true;" \n
+       "				};" \n
+       "				case ((_x getVariable ""ace_w_bleed"") > 0 && {(([_unit, BND] call ace_sys_wounds_fnc_hasRuckMagazine) || {BND in magazines _unit} || {(local _x && {([_x, BND] call ace_sys_wounds_fnc_hasRuckMagazine)})} || {BND in magazines _x})}): {" \n
+       "					_eit = true;" \n
+       "				};" \n
+       "				case ([_x] call ace_sys_wounds_fnc_canHeal && {(([_unit, KIT] call ace_sys_wounds_fnc_hasRuckMagazine) || {KIT in magazines _unit} || {(local _x && {([_x, KIT] call ace_sys_wounds_fnc_hasRuckMagazine)})} || {KIT in magazines _x})}): {" \n
+       "					_eit = true;" \n
+       "				};" \n
+       "			};" \n
+       "		};" \n
+       "	};" \n
+       "	if (_eit) exitWith {" \n
+       "         _tohelp = _x;" \n
+       "		#ifdef DEBUG_MODE_FULL" \n
+       "			    diag_log [diag_frameNo, diag_tickTime, time, ""Help AIAttend FSM"", _unit, _toHelp];" \n
+       "		#endif" \n
+       "      };" \n
+       "} forEach (_players + _ai);" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "__alive__unit">*/
+        class __alive__unit
+        {
+          priority = 100.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!alive _unit || {isNil ""ace_sys_wounds_enabled""}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "null_object">*/
+        class null_object
+        {
+          priority = 1.000000;
+          to="Sleep_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"isNull _tohelp"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Move_unit_to_unit";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Move_unit_to_unit">*/
+    class Move_unit_to_unit
+    {
+      name = "Move_unit_to_unit";
+      init = /*%FSM<STATEINIT""">*/"// #define DEBUG_MODE_FULL" \n
+       "" \n
+       "_tohelppos = position _tohelp;" \n
+       "if (_unit distance _tohelppos >= 3) then {" \n
+       "" \n
+       "#ifdef DEBUG_MODE_FULL" \n
+       "    diag_log [diag_frameNo, diag_tickTime, time, ""Movin AIAttend FSM"", _unit, _toHelp, _toHelpPos];" \n
+       "#endif" \n
+       "	_unit doMove _tohelppos;" \n
+       "};" \n
+       "_timeend = time + 60;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "__alive__unit">*/
+        class __alive__unit
+        {
+          priority = 100.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!alive _unit || {isNil ""ace_sys_wounds_enabled""}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "check_move">*/
+        class check_move
+        {
+          priority = 0.000000;
+          to="Timed_out";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_unit distance _tohelp < 4) || {time > _timeend} || {!alive _unit} || {!alive _tohelp}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Timed_out">*/
+    class Timed_out
+    {
+      name = "Timed_out";
+      init = /*%FSM<STATEINIT""">*/"_timedout = (time > _timeend);" \n
+       "private ""_isuncon"";" \n
+       "_isuncon = _unit call ace_sys_wounds_fnc_isUncon;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "__alive__unit">*/
+        class __alive__unit
+        {
+          priority = 100.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!alive _unit || {isNil ""ace_sys_wounds_enabled""}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "timeout">*/
+        class timeout
+        {
+          priority = 1.000000;
+          to="Return_to_format";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_timedout || {!alive _tohelp} || {!alive _unit} || {_isuncon}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Help_unit";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Help_unit">*/
+    class Help_unit
+    {
+      name = "Help_unit";
+      init = /*%FSM<STATEINIT""">*/"// #define DEBUG_MODE_FULL" \n
+       "" \n
+       "#ifdef DEBUG_MODE_FULL" \n
+       "    diag_log [diag_frameNo, diag_tickTime, time, ""Helping AIAttend FSM"", _unit, _toHelp];" \n
+       "#endif" \n
+       "" \n
+       "[_toHelp,_unit] spawn ace_sys_wounds_fnc_help;" \n
+       "_timeend = time + 5;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "__alive__unit">*/
+        class __alive__unit
+        {
+          priority = 100.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!alive _unit || {isNil ""ace_sys_wounds_enabled""}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Delay">*/
+        class Delay
+        {
+          priority = 0.000000;
+          to="Return_to_format";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timeend"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Return_to_format">*/
+    class Return_to_format
+    {
+      name = "Return_to_format";
+      init = /*%FSM<STATEINIT""">*/"// #define DEBUG_MODE_FULL" \n
+       "if (alive _unit) then {" \n
+       "	if (_unit != (leader (group _unit))) then {" \n
+       "		_unit doFollow (leader (group _unit)); " \n
+       "	};" \n
+       "#ifdef DEBUG_MODE_FULL" \n
+       "    diag_log [diag_frameNo, diag_tickTime, time, ""Movin Back to Form AIAttend FSM"", _unit];" \n
+       "#endif" \n
+       "" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Sleep_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Start";
+  finalStates[] =
+  {
+    "End",
+  };
+};
+/*%FSM</COMPILE>*/

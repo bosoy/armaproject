@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\m_wep_optics
+Pbo Type is: Arma Addon
+Sha: '8DDCD2EC9ACE80A48493A956AF18234B66826EE9'
+//////</HEADER>//////

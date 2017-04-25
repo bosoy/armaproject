@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex\addons\t_wep_m16
+Pbo Type is: Arma Addon
+Sha: '54203DA314656F9DC83CCD0DCB8ABD3F645CAB48'
+//////</HEADER>//////

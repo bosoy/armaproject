@@ -1,0 +1,711 @@
+class FSM
+{
+  fsmName = "fnc_backblast";
+  class States
+  {
+    class backblast
+    {
+      name = "backblast";
+      init = "//* ace_sys_backblast (.pbo) | (c) 2008, 2009 by rocko" \n
+       "" \n
+       "private [""_unit"", ""_object"", ""_obj"", ""_DX"", ""_DY"", ""_angle"", ""_distance"", ""_pos_shooter"", ""_pos_x"", ""_safe_distance"", ""_position_shooter""];" \n
+       "" \n
+       "_debug = false;" \n
+       "" \n
+       "_unit = _this select 0;" \n
+       "_ammo = _this select 4;" \n
+       "_shot = _this select 6;" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class backblast_rpg
+        {
+          priority = 4.000000;
+          to="_";
+          precondition = "";
+          condition="getText(configFile >> ""CfgAmmo"" >> _ammo >> ""ACE_AT_FX"") == ""ACE_BB_BACK_RPG""";
+          action="";
+        };
+        class backblast
+        {
+          priority = 3.000000;
+          to="_";
+          precondition = "";
+          condition="getText(configFile >> ""CfgAmmo"" >> _ammo >> ""ACE_AT_FX"") == ""ACE_BB_BACK""";
+          action="";
+        };
+        class softlaunch
+        {
+          priority = 2.000000;
+          to="__1";
+          precondition = "";
+          condition="getText(configFile >> ""CfgAmmo"" >> _ammo >> ""ACE_AT_FX"") == ""ACE_BB_SOFT""";
+          action="";
+        };
+        class none
+        {
+          priority = 1.000000;
+          to="__2";
+          precondition = "";
+          condition="getText(configFile >> ""CfgAmmo"" >> _ammo >> ""ACE_AT_FX"") == ""ACE_BB_NONE""";
+          action="";
+        };
+        class goto_exit
+        {
+          priority = 0.000000;
+          to="exit";
+          precondition = "";
+          condition="true";
+          action="";
+        };
+      };
+    };
+    class exit
+    {
+      name = "exit";
+      init = "";
+      precondition = "";
+      class Links
+      {
+      };
+    };
+    class _
+    {
+      name = "_";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class shooter
+        {
+          priority = 1.000000;
+          to="deaf";
+          precondition = "";
+          condition="((local _unit) && {alive _unit} && {_unit == player})";
+          action="";
+        };
+        class _
+        {
+          priority = 0.000000;
+          to="__3";
+          precondition = "";
+          condition="true";
+          action="";
+        };
+      };
+    };
+    class __1
+    {
+      name = "__1";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="__4";
+          precondition = "";
+          condition="true";
+          action="";
+        };
+      };
+    };
+    class __2
+    {
+      name = "__2";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class shooter
+        {
+          priority = 1.000000;
+          to="deaf_2";
+          precondition = "";
+          condition="((local _unit) && {alive _unit} && {_unit == player})";
+          action="";
+        };
+        class _
+        {
+          priority = 0.000000;
+          to="__5";
+          precondition = "";
+          condition="true";
+          action="";
+        };
+      };
+    };
+    class deaf
+    {
+      name = "deaf";
+      init = "[_unit,10] call ace_fx_fnc_deaf;";
+      precondition = "";
+      class Links
+      {
+        class server_overpress
+        {
+          priority = 2.000000;
+          to="overpressure_deb";
+          precondition = "";
+          condition="((isServer) && {[_unit,2.5] call ACE_fnc_inBuilding})";
+          action="";
+        };
+        class server_debris
+        {
+          priority = 1.000000;
+          to="debris";
+          precondition = "";
+          condition="(isServer)";
+          action="";
+        };
+        class _
+        {
+          priority = 0.000000;
+          to="__6";
+          precondition = "";
+          condition="true";
+          action="";
+        };
+      };
+    };
+    class deaf_1
+    {
+      name = "deaf_1";
+      init = "[_unit,10] call ace_fx_fnc_deaf;";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="__7";
+          precondition = "";
+          condition="true";
+          action="";
+        };
+      };
+    };
+    class deaf_2
+    {
+      name = "deaf_2";
+      init = "[_unit,10] call ace_fx_fnc_deaf;";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="__8";
+          precondition = "";
+          condition="true";
+          action="";
+        };
+      };
+    };
+    class __3
+    {
+      name = "__3";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class server_overpress
+        {
+          priority = 2.000000;
+          to="overpressure_deb";
+          precondition = "";
+          condition="((isServer) && {[_unit,0.6] call ACE_fnc_inBuilding})";
+          action="";
+        };
+        class server_debris
+        {
+          priority = 1.000000;
+          to="debris";
+          precondition = "";
+          condition="(isServer)";
+          action="";
+        };
+        class _
+        {
+          priority = 0.000000;
+          to="__6";
+          precondition = "";
+          condition="true";
+          action="";
+        };
+      };
+    };
+    class __4
+    {
+      name = "__4";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="__7";
+          precondition = "";
+          condition="true";
+          action="";
+        };
+      };
+    };
+    class __5
+    {
+      name = "__5";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="__8";
+          precondition = "";
+          condition="true";
+          action="";
+        };
+      };
+    };
+    class debris
+    {
+      name = "debris";
+      init = "// SurfaceTypes" \n
+       "#define __surf1 [""#UTGround"",""#UTHeather"",""#UTWeeds"",""#UTForrest"",""#UTGrass"",""#CRGrass1"",""#CRGrass2"",""#CRGrassW1"",""#CRGrassW2"",""#CRTarmac"",""#CRForest1"",""#CRForest2"",""#CRHeather""]" \n
+       "#define __surf2 [""#UTRock"",""#UTBoulders"",""#UTGravel"",""#CRMudGround"",""#CRField1"",""#CRField2"",""#CRGrit1"",""#CRRock""]" \n
+       "#define __surf3 [""#UTConcrete"",""#CRConcrete""]" \n
+       "#define __surfP (surfaceType (position _unit))" \n
+       "#define __emit ((_unit selectionPosition ""rightshoulder"") select 2)" \n
+       "" \n
+       "private[""_dir"", ""_shrapnel"", ""_i"",""_ammo_shrapnel"",""_debriscount"",""_direction""];" \n
+       "" \n
+       "_shotvelz = ((vectorDir _shot) select 2)*(-1);" \n
+       "_direction = (getDir _unit)-180;" \n
+       "_position_shooter = getPosATL _unit;" \n	   
+       "_position = [(_position_shooter select 0) + (sin (_direction) * 0.3), (_position_shooter select 1) + (cos (_direction) * 0.3),(__emit + (_position_shooter select 2))];" \n
+       "_debriscount = ceil (random 10);" \n
+       "" \n
+       "if ( __surfP in __surf1 ) then { _debriscount = ceil (random 8); };" \n
+       "if ( __surfP in __surf2 ) then { _debriscount = 20 + (ceil (random 20)); };" \n
+       "if ( __surfP in __surf3 ) then { _debriscount = ceil (random 10); };" \n
+       "if ((animationState _unit) == ""ACE_launcherProne"") then { _position = [((getPos _unit) select 0) + (sin (_direction) * .41), ((getPos _unit) select 1) + (cos (_direction) * .41),(__emit + 0.4)];_debriscount = _debriscount + 20; };" \n
+       "" \n
+       "for ""_i"" from 1 to _debriscount do" \n
+       "{" \n
+       "	_dir = ((_direction - (45)) + random 60);" \n
+       "	_ammo_shrapnel = ""Ace_ATDebris"";" \n
+       "	_shrapnel = _ammo_shrapnel createVehicle [_position select 0,_position select 1,_position select 2];" \n
+       "	_shrapnel setPos _position;" \n
+       "	_shrapnel setVelocity[(sin _dir * 290),(cos _dir * 290),(_shotvelz*58)];" \n
+       "};";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="__9";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class overpressure_deb
+    {
+      name = "overpressure_deb";
+      init = "#define __emit ((_unit selectionPosition ""rightshoulder"") select 2)" \n
+       "" \n
+       "private[""_shrapnel"", ""_i"",""_ammo_shrapnel""];" \n
+       "" \n
+       "_shotvelz = ((vectorDir _shot) select 2)*(-1);" \n
+       "_direction = ((_unit weaponDirection (currentWeapon _unit)) select 0) atan2 ((_unit weaponDirection (currentWeapon _unit)) select 1); //(getDir _unit)-180;" \n
+       "_position = [((getPos _unit) select 0) - (sin (_direction) * 1), ((getPos _unit) select 1) - (cos (_direction) * 1),__emit];" \n
+       "" \n
+       "for ""_i"" from 1 to 2 do" \n
+       "{" \n
+       "	_ammo_shrapnel = ""ACE_ATShock"";" \n
+       "	if (_debug) then { _ammo_shrapnel = ""RoadCone""; };" \n
+       "	if (getText(configFile >> ""CfgAmmo"" >> _ammo >> ""ACE_AT_FX"") == ""ACE_BB_BACK_RPG"") then" \n
+       "	{" \n
+       "		_ammo_shrapnel = ""ACE_RPGShock"";" \n
+       "	};" \n
+       "	_shrapnel = _ammo_shrapnel createVehicle _position;" \n
+       "	_shrapnel setPos _position;" \n
+       "	_shrapnel setVelocity [-(sin _direction)*100,-(cos _direction)*100, -(_unit weaponDirection (currentWeapon _unit) select 2)*100];				///-(_shotvelz*5)];" \n
+       "};";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="debris";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class debris_1
+    {
+      name = "debris_1";
+      init = "// SurfaceTypes" \n
+       "#define __surf1 [""#UTGround"",""#UTHeather"",""#UTWeeds"",""#UTForrest"",""#UTGrass"",""#CRGrass1"",""#CRGrass2"",""#CRGrassW1"",""#CRGrassW2"",""#CRTarmac"",""#CRForest1"",""#CRForest2"",""#CRHeather""]" \n
+       "#define __surf2 [""#UTRock"",""#UTBoulders"",""#UTGravel"",""#CRMudGround"",""#CRField1"",""#CRField2"",""#CRGrit1"",""#CRRock""]" \n
+       "#define __surf3 [""#UTConcrete"",""#CRConcrete""]" \n
+       "#define __surfP (surfaceType (position _unit))" \n
+       "#define __emit ((_unit selectionPosition ""rightshoulder"") select 2)" \n
+       "" \n
+       "private[""_dir"", ""_shrapnel"", ""_i"",""_ammo_shrapnel"",""_debriscount"",""_direction""];" \n
+       "" \n
+       "_shotvelz = ((vectorDir _shot) select 2)*(-1);" \n
+       "_direction = (getDir _unit)-180;" \n
+       "_position_shooter = getPosATL _unit;" \n		   
+       "_position = [(_position_shooter select 0) + (sin (_direction) * 0.3), (_position_shooter select 1) + (cos (_direction) * 0.3),(__emit + (_position_shooter select 2))];" \n
+       "_debriscount = ceil (random 10);" \n
+       "" \n
+       "if ( __surfP in __surf1 ) then { _debriscount = ceil (random 8); };" \n
+       "if ( __surfP in __surf2 ) then { _debriscount = 20 + (ceil (random 20)); };" \n
+       "if ( __surfP in __surf3 ) then { _debriscount = ceil (random 10); };" \n
+       "if ((animationState _unit) == ""ACE_launcherProne"") then { _position = [((getPos _unit) select 0) + (sin (_direction) * .41), ((getPos _unit) select 1) + (cos (_direction) * .41),(__emit + 0.4)];_debriscount = _debriscount + 20; };" \n
+       "" \n
+       "for ""_i"" from 1 to _debriscount do" \n
+       "{" \n
+       "	_dir = ((_direction - (45)) + random 60);" \n
+       "	_ammo_shrapnel = ""Ace_ATDebris"";" \n
+       "	_shrapnel = _ammo_shrapnel createVehicle [_position select 0,_position select 1,_position select 2];" \n
+       "	_shrapnel setPos _position;" \n
+       "	_shrapnel setVelocity[(sin _dir * 290),(cos _dir * 290),(_shotvelz*58)];" \n
+       "};";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="__11";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class __6
+    {
+      name = "__6";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="__9";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class __7
+    {
+      name = "__7";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="__10";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class __8
+    {
+      name = "__8";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="__11";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class __9
+    {
+      name = "__9";
+      //init = "_obj = nearestObjects [_unit, [""man""], 12];" \n
+		init = "_obj = (position _unit) nearEntities [""Man"",12];" \n
+	  "_obj = _obj - [_unit];";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 1.000000;
+          to="__12";
+          precondition = "";
+          condition="((count _obj) == 0)";
+          action="";
+        };
+        class __1
+        {
+          priority = 0.000000;
+          to="__15";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class __10
+    {
+      name = "__10";
+      //init = "_obj = nearestObjects [_unit, [""man""], 9];" \n
+       init = "_obj = (position _unit) nearEntities [""Man"",9];" \n
+	   "_obj = _obj - [_unit];";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 1.000000;
+          to="__13";
+          precondition = "";
+          condition="((count _obj) == 0)";
+          action="";
+        };
+        class __1
+        {
+          priority = 0.000000;
+          to="__16";
+          precondition = "";
+          condition="true";
+          action="";
+        };
+      };
+    };
+    class __11
+    {
+      name = "__11";
+      //init = "_obj = nearestObjects [_unit, [""man""], 12];
+	  init = "_obj = (position _unit) nearEntities [""Man"",12];" \n
+	  "_obj = _obj - [_unit];";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 1.000000;
+          to="__14";
+          precondition = "";
+          condition="((count _obj) == 0)";
+          action="";
+        };
+        class __1
+        {
+          priority = 0.000000;
+          to="__17";
+          precondition = "";
+          condition="true";
+          action="";
+        };
+      };
+    };
+    class __12
+    {
+      name = "__12";
+      init = "";
+      precondition = "";
+      class Links
+      {
+      };
+    };
+    class __13
+    {
+      name = "__13";
+      init = "";
+      precondition = "";
+      class Links
+      {
+      };
+    };
+    class __14
+    {
+      name = "__14";
+      init = "";
+      precondition = "";
+      class Links
+      {
+      };
+    };
+    class __15
+    {
+      name = "__15";
+      init = "{" \n
+       "	_distance = (_x distance _unit);" \n
+       "	_pos_shooter = getPosATL _unit;" \n
+       "	_pos_x =  getPosATL _x;" \n
+       "	_safe_distance = ((abs((_pos_shooter select 2) - (_pos_x select 2)+0.9)) max 1) / 2;" \n	   
+       "	_DX = ((_pos_x select 0) - (_pos_shooter select 0));" \n
+       "	_DY = ((_pos_x select 1) - (_pos_shooter select 1));" \n
+       "	_angle = abs((getdir _unit) - (_DX atan2 _DY));" \n
+       "	if (_angle > 180) then { _angle = 360 - _angle }; if (_angle < 0) then { _angle = _angle + 360 };" \n
+       "" \n
+       "	if ((_angle < 210) && {_angle > 150}) then" \n
+       "	{" \n
+       "		if ((local _x) && {alive _x} && {_distance < 20} && {_distance > _safe_distance}) then" \n
+       "		{" \n
+       "			if (isNil ""ace_sys_wounds_enabled"") then {_x setDamage ((getDammage _x) + ((1 - (getDammage _x)) * (1/_distance)))} else {if (local _x) then {[_x,"""",0.1 * (1/_distance),objNull,""""] call ace_sys_wounds_fnc_hd} else {[""ace_sys_wounds_addDloc"", [_x, 0.1 * (1/_distance)]] call CBA_fnc_globalEvent}};" \n
+       "		};" \n
+       "	};" \n
+       "	if (local _x && {alive _x}) then" \n
+       "	{" \n
+       "		if ((_angle < 225) && {_angle > 135}) then" \n
+       "		{" \n
+       "			if ((_distance < 10) && {_distance > _safe_distance}) then { [_x,10,true] spawn ace_fx_fnc_knockout; };" \n
+       "			if (_x == player) then" \n
+       "			{" \n
+       "				if ((_distance < 15) && {_distance > _safe_distance}) then { [_x,1,1] call ace_fx_fnc_flash; };" \n
+       "			};" \n
+       "		};" \n
+       "		if (_x == player) then" \n
+       "		{" \n
+       "			if ((_distance < 10) && {_distance > _safe_distance}) then { [_x,false,_distance,""ACE_Ring_Backblast"","""",true] call ace_fx_fnc_ring; };" \n
+       "		};" \n
+       "	};" \n
+       "} forEach _obj;";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="__18";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class __16
+    {
+      name = "__16";
+      init = "{" \n
+       "	if (local _x && {alive _x}) then" \n
+       "	{" \n
+       "		_distance = (_x distance _unit);" \n
+       "		_pos_shooter = getPosATL _unit;" \n
+       "		_pos_x =  getPosATL _x;" \n	   
+       "		_safe_distance = (abs((_pos_shooter select 2) - (_pos_x select 2)+1)) max 1;" \n
+       "		_DX = ((_pos_x select 0) - (_pos_shooter select 0));" \n
+       "		_DY = ((_pos_x select 1) - (_pos_shooter select 1));" \n
+       "		_angle = abs((getdir _unit) - (_DX atan2 _DY));" \n
+       "		if (_angle > 180) then { _angle = 360 - _angle };if (_angle < 0) then { _angle = _angle + 360 };" \n
+       "		if ((_angle < 210) && {_angle > 150}) then" \n
+       "		{" \n
+       "			if (_x == player) then" \n
+       "			{" \n
+       "				if ((_distance < 3) && {_distance > _safe_distance}) then { [_x,1,1] call ace_fx_fnc_flash; };" \n
+       "			};" \n
+       "		};" \n
+       "	};" \n
+       "} forEach _obj;";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="__18";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class __17
+    {
+      name = "__17";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="__18";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class __18
+    {
+      name = "__18";
+      init = "";
+      precondition = "";
+      class Links
+      {
+      };
+    };
+    class ____FAKE____
+    {
+      name = "____FAKE____";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class server_overpress
+        {
+          priority = 2.000000;
+          to="____FAKE____";
+          precondition = "";
+          condition="((isServer) && {[_unit,0.6] call ACE_fnc_inBuilding})";
+          action="";
+        };
+        class server_debris
+        {
+          priority = 1.000000;
+          to="debris_1";
+          precondition = "";
+          condition="(isServer)";
+          action="";
+        };
+        class shooter
+        {
+          priority = 1.000000;
+          to="deaf_1";
+          precondition = "";
+          condition="((local _unit) && {alive _unit} && {_unit == player})";
+          action="";
+        };
+      };
+    };
+  };
+  initState="backblast";
+  finalStates[] =
+  {
+    "exit",
+    "__12",
+    "__13",
+    "__14",
+    "__18",
+  };
+};

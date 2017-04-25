@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\m_wep_dragon
+Pbo Type is: Arma Addon
+Sha: 'C281F22801C1EB85F74476A3287789965540E508'
+//////</HEADER>//////

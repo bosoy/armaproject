@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_camshake
+Pbo Type is: Arma Addon
+Sha: 'A7BE609F303E7F89FD084B0A2D58EEBE1869BA4F'
+//////</HEADER>//////

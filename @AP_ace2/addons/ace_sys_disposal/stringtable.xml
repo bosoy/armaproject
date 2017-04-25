@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="ArmA2_ACE2">
+<Package name="sys_disposal">
+<Container name="STR_ACE">
+<Key ID="STR_ACE_WDN_ACE_M136_USED">
+<English>M136 AT4 (used)</English>
+<Czech>M136 AT4 (použita)</Czech>
+<German>M136 AT4 (verbraucht)</German>
+<Polish>M136 AT4 (zużyta)</Polish>
+<Russian>M136 AT4 (исп.)</Russian>
+<French>M136 AT4 (usé)</French>
+<Spanish>M136 AT4 (usar)</Spanish>
+<Italian>M136 AT4 (usato)</Italian>
+<Hungarian>M136-AT4 (ellőtt)</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_ACE_RPG18_USED">
+<English>RPG-18 (used)</English>
+<Czech>RPG-18 (použito)</Czech>
+<German>RPG-18 (verbraucht)</German>
+<Polish>RPG-18 (zużyta)</Polish>
+<Russian>РПГ-18 (исп.)</Russian>
+<French>RPG-18 (usé)</French>
+<Spanish>RPG-18 (usar)</Spanish>
+<Italian>RPG-18 (usato)</Italian>
+<Hungarian>RPG-18 (ellőtt)</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_RPG18">
+<English>RPG-18</English>
+<Czech>RPG-18</Czech>
+<German>RPG-18</German>
+<Polish>RPG-18</Polish>
+<Russian>РПГ-18</Russian>
+<French>RPG-18</French>
+<Spanish>RPG-18</Spanish>
+<Italian>RPG-18</Italian>
+<Hungarian>RPG-18</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_ACE_NLAW_USED">
+<English>NLAW (used)</English>
+<Czech>NLAW (použitý)</Czech>
+<German>NLAW (verbraucht)</German>
+<Polish>NLAW (zużyta)</Polish>
+<Russian>NLAW (исп.)</Russian>
+<French>NLAW (usé)</French>
+<Spanish>NLAW (usar)</Spanish>
+<Italian>NLAW (usato)</Italian>
+<Hungarian>NLAW (ellőtt)</Hungarian>
+</Key>
+<Key ID="STR_ACE_WDN_ACE_JAVELIN_USED">
+<English>FGM-148 Javelin (used)</English>
+<Czech>FGM-148 Javelin (použitý)</Czech>
+<German>FGM-148 Javelin (verbraucht)</German>
+<Polish>FGM-148 Javelin (zużyta)</Polish>
+<Russian>FGM-148 Javelin (исп.)</Russian>
+<French>FGM-148 Javelin (usé)</French>
+<Spanish>FGM-148 Javelin (usar)</Spanish>
+<Italian>FGM-148 Javelin (usato)</Italian>
+<Hungarian>FGM-148 Javelin (ellőtt)</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

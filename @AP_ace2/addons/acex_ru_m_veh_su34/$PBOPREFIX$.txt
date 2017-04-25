@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\acex_ru\addons\m_veh_su34
+Pbo Type is: Arma Addon
+Sha: 'CEF1A7E50D06093B4A8FE17CE744A6F02C20B43D'
+//////</HEADER>//////

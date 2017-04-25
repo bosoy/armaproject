@@ -1,0 +1,68 @@
+;mando seasparrow sam
+;mando_seasparrow.sqs
+;March 2007 mandoble
+;
+_disp        = _this select 0;
+_posunit     = _this select 1;
+_ttype       = _this select 2;
+_quantity    = _this select 3;
+_minrange    = _this select 4;
+_maxrange    = _this select 5;
+_rof         = _this select 6;
+_firingpos   = _this select 7;
+_arc         = _this select 8;
+_minknow     = _this select 9;
+_enemysides  = _this select 10;
+_antimissile = _this select 11;
+_fixeddir    = _this select 12;
+_active      = _this select 13;
+_radio       = _this select 14;
+
+
+;Missile parameters
+_launcher         = _disp
+_missilebody      = "M_Sidewinder_AA"
+_vangle           = 2.0
+?count _this > 15: _vangle = _this select 15
+
+_speedini         = 10
+_speedmax         = 600
+_acceleration     = 200
+_boomrange        = 20
+_activerange      = _maxrange
+_modeinit         = 0
+_cruisealt        = 400
+_boomscript       = mando_missile_path+"warheads\mando_missilehead1a.sqf"
+_smokescript      = mando_missile_path+"exhausts\mando_missilesmoke1a.sqf"
+_soundrsc         = "mando_missile1"
+_sounddur         = 29
+_endurance        = 10
+_terrainavoidance = false
+_updatefreq       = 1
+_delayinit        = 0
+_controltime      = 0.1
+_detectable       = false
+_debug            = false
+_launchscript     = ""
+_hagility         = 65
+_vagility         = 65
+_accuracy         = 1
+_intercept        = true
+_scanarch         = 90
+_scanarcv         = 180
+
+
+_missileparams = [_launcher, _missilebody, [0,0,0], 0, _vangle, _speedini, _speedmax, _acceleration, objNull, _boomrange, _activerange, _modeinit, _cruisealt, _boomscript, _smokescript, _soundrsc, _sounddur, _endurance, _terrainavoidance, _updatefreq, _delayinit, _controltime, _detectable, _debug, _launchscript, _hagility, _vagility, _accuracy, _intercept, _scanarch, _scanarcv]
+
+
+;MCC Sounds
+;Sound for MCC activation
+_radaronsound   = "mando_radaron"
+
+;Sound for MCC deactivation
+_radaroffsound  = "mando_radaroff"
+
+
+[_disp, _posunit, _ttype, _quantity, _minrange, _maxrange, _rof, _firingpos, _arc, _minknow, _enemysides, _antimissile, _fixeddir, _active, _radio, _missileparams, _radaronsound, _radaroffsound] execVM mando_missile_path+"units\mando_missileattacker.sqf"
+
+exit

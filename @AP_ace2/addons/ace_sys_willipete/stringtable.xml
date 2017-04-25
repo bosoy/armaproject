@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="ACE2">
+<Container name="STR_DSS">
+<Key ID="STR_DSS_ACE_M34">
+<English>Phosphorous grenade</English>
+<German>Phosphor Granate</German>
+<Spanish>Phosphorous grenade</Spanish>
+<Czech>Fosforový granát</Czech>
+<Russian>Фосфорная граната</Russian>
+<Italian>Granata al Fosforo</Italian>
+<Polish>Granat fosforowy</Polish>
+<French>Grenade au phosphore</French>
+<Hungarian>Fehér foszfor</Hungarian>
+</Key>
+</Container>
+<Container name="STR_DN">
+<Key ID="STR_DN_ACE_M34">
+<English>M34</English>
+<German>M34</German>
+<Spanish>M34</Spanish>
+<Czech>M34</Czech>
+<Russian>M34</Russian>
+<Italian>M34</Italian>
+<Polish>M34</Polish>
+<French>M34</French>
+<Hungarian>M34</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_M15">
+<English>M15</English>
+<German>M15</German>
+<Spanish>M15</Spanish>
+<Czech>M15</Czech>
+<Russian>M15</Russian>
+<Italian>M15</Italian>
+<Polish>M15</Polish>
+<French>M15</French>
+<Hungarian>M15</Hungarian>
+</Key>
+</Container>
+<Container name="STR_WDN">
+<Key ID="STR_WDN_ACE_WP">
+<English>WP grenade</English>
+<German>Phosphor Granate</German>
+<Spanish>WP grenade</Spanish>
+<Czech>Fosforový granát (WP)</Czech>
+<Russian>БФ граната</Russian>
+<Italian>Granata WP (Fosforo)</Italian>
+<Polish>Granat fosforowy</Polish>
+<French>Grenade phosphore</French>
+<Hungarian>Fehér foszfor</Hungarian>
+</Key>
+</Container></Package></Project>

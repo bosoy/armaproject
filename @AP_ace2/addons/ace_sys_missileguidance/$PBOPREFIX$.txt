@@ -1,0 +1,6 @@
+///////<HEADER>///////
+mikero=DePbo.dll
+prefix=x\ace\addons\sys_missileguidance
+Pbo Type is: Arma Addon
+Sha: 'D34C9B9C54AD31701957564AB017BC5EB9E444B6'
+//////</HEADER>//////

@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\Addons\sys_arty_mortars
+Pbo Type is: Arma Addon
+Sha: 'B3ADEC728BAD43FCC7F237D0500A06B7893FAFA7'
+//////</HEADER>//////

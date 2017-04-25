@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_thermobaric
+Pbo Type is: Arma Addon
+Sha: '594E5B13D8E1041A02C959803259D1940C5C867C'
+//////</HEADER>//////

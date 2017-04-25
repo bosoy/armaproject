@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ArmA2_ACE2">
+<Package name="c_men">
+<Container name="STR_GN">
+<Key ID="STR_ACE_GN_CSWTEAM">
+<English>Æ Infantry (Heavy Weapons)</English>
+<Italian>Æ Infantry (Heavy Weapons)</Italian>
+<Spanish>Æ Infantry (Heavy Weapons)</Spanish>
+<Czech>Æ Pěchota (Těžké zbraně)</Czech>
+<Russian>Æ Пехота (Тяжёлое вооружение)</Russian>
+<Polish>Æ Piechota (broń zespołowa)</Polish>
+<French>Æ Infantrie (Armes Lourdes)</French>
+<Hungarian>Æ Gyalogság (Nehézfegyverzet)</Hungarian>
+<German>Æ Infanterie (schwere Waffen)</German>
+</Key>
+ <Key ID="STR_ACE_GN_ACE_M224TEAM">
+<German>Mörser Trupp (M224)</German>
+<English>M224 Mortar Team</English>
+<Italian>M224 Mortar Team</Italian>
+<Spanish>M224 Mortar Team</Spanish>
+<French>M224 Mortar Team</French>
+<Czech>M224 Minometný tým</Czech>
+<Russian>M224 Миномётный расчёт</Russian>
+<Polish>Zespół broni (M224)</Polish>
+<Hungarian>M224 Mortar Team</Hungarian>
+</Key>
+<Key ID="STR_ACE_GN_ACE_M252TEAM">
+<German>Mörser Trupp (M252)</German>
+<English>M252 Mortar Team</English>
+<Italian>M252 Mortar Team</Italian>
+<Spanish>M252 Mortar Team</Spanish>
+<French>M252 Mortar Team</French>
+<Czech>M252 Minometný tým</Czech>
+<Russian>M252 Миномётный расчёт</Russian>
+<Polish>Zespół broni (M252)</Polish>
+<Hungarian>M252 Mortar Team</Hungarian>
+</Key>
+<Key ID="STR_ACE_GN_ACE_2B14TEAM">
+<German>Mörser Trupp (2B14)</German>
+<English>2B14 Mortar Team</English>
+<Italian>2B14 Mortar Team</Italian>
+<Spanish>2B14 Mortar Team</Spanish>
+<French>2B14 Mortar Team</French>
+<Czech>2B14 Minometný tým</Czech>
+<Russian>2Б14 Миномётный расчёт</Russian>
+<Polish>Zespół broni (2B14)</Polish>
+<Hungarian>2B14 Mortar Team</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_KORDMGT">
+<English>Infantry Section (Kord)</English>
+<Italian>Infantry Section (Kord)</Italian>
+<Spanish>Infantry Section (Kord)</Spanish>
+<Czech>Pěchotní oddíl (Kord)</Czech>
+<Russian>Расчёт (Корд)</Russian>
+<Polish>Zespół broni (Kord)</Polish>
+<French>Section d'infanterie (Kord)</French>
+<Hungarian>Gyalogos csoport (Kord)</Hungarian>
+<German>Infanteriesektion (Kord)</German>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_AGS30MGT">
+<English>Infantry Section (AGS-30)</English>
+<Italian>Infantry Section (AGS-30)</Italian>
+<Spanish>Infantry Section (AGS-30)</Spanish>
+<Czech>Pěchotní oddíl (AGS-30)</Czech>
+<Russian>Расчёт (АГС-30)</Russian>
+<Polish>Zespół broni (AGS-30)</Polish>
+<French>Section d'infanterie (AGS-30)</French>
+<Hungarian>Gyalogos csoport (AGSz-30)</Hungarian>
+<German>Infanteriesektion (AGS-30)</German>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_KONKURST">
+<English>Infantry Section (Konkurs)</English>
+<Italian>Infantry Section (Konkurs)</Italian>
+<Spanish>Infantry Section (Konkurs)</Spanish>
+<Czech>Pěchotní oddíl (Konkurs)</Czech>
+<Russian>Расчёт (Конкурс)</Russian>
+<Polish>Zespół broni (Konkurs)</Polish>
+<French>Section d'infanterie (Konkurs)</French>
+<Hungarian>Gyalogos csoport (Konkursz)</Hungarian>
+<German>Infanteriesektion (Konkurs)</German>
+</Key>
+</Container>
+<Container name="STR_VDN">
+<Key ID="STR_ACE_VDN_ACE_SOLDIER_TRANSLATOR">
+<English>Interpreter</English>
+<Italian>Interpreter</Italian>
+<Spanish>Interpreter</Spanish>
+<Czech>Tlumočník</Czech>
+<Russian>Переводчик</Russian>
+<Polish>Tłumacz</Polish>
+<French>Interpreter</French>
+<Hungarian>Interpreter</Hungarian>
+<German>Übersetzer</German>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_SOLDIERE_AGS">
+<English>AGS-30 Gunner</English>
+<Italian>AGS-30, artigliere</Italian>
+<Spanish>Artillero AGS-30</Spanish>
+<Czech>Střelec AGS-30</Czech>
+<Russian>Стрелок (АГС-30)</Russian>
+<Polish>Celowniczy (AGS-30)</Polish>
+<French>Tireur AGS-30</French>
+<Hungarian>AGSz-30 Kezelő</Hungarian>
+<German>AGS-30 Schütze</German>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_SOLDIERE_AGSAB">
+<English>AGS-30 Ammo Bearer</English>
+<Italian>AGS-30, Serviente</Italian>
+<Spanish>Aprovisionador AGS-30</Spanish>
+<Czech>Nosič střeliva AGS-30</Czech>
+<Russian>Подносчик боеприпасов (АГС-30)</Russian>
+<Polish>Amunicyjny (AGS-30)</Polish>
+<French>Servant AGS-30</French>
+<Hungarian>AGSz-30 Lőszerhordó</Hungarian>
+<German>AGS-30 Unterstützung</German>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_SOLDIERE_AGSAG">
+<English>AGS-30 Gunner Assistant</English>
+<Italian>AGS-30, Serviente</Italian>
+<Spanish>Sirviente AGS-30</Spanish>
+<Czech>Pomocník střelce AGS-30</Czech>
+<Russian>Помощник стрелка (АГС-30)</Russian>
+<Polish>Pomocniczy (AGS-30)</Polish>
+<French>Aide tireur AGS-30</French>
+<Hungarian>AGSz-30 Segéd</Hungarian>
+<German>AGS-30 Ladeschütze</German>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_SOLDIERE_HMG">
+<English>Kord Machinegunner</English>
+<Italian>Kord, mitragliere</Italian>
+<Spanish>Ametrallador Kord</Spanish>
+<Czech>Kulometčík Kord</Czech>
+<Russian>Стрелок (Корд)</Russian>
+<Polish>Celowniczy (Kord)</Polish>
+<French>Mitrailleur Kord</French>
+<Hungarian>Kord Kezelő</Hungarian>
+<German>Kord Schütze</German>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_SOLDIERE_HMGAB">
+<English>Kord Ammo Bearer</English>
+<Italian>Kord, Serviente</Italian>
+<Spanish>Aprovisionador Kord</Spanish>
+<Czech>Nosič střeliva Kord</Czech>
+<Russian>Подносчик боеприпасов (Корд)</Russian>
+<Polish>Amunicyjny (Kord)</Polish>
+<French>Servant Kord</French>
+<Hungarian>Kord Lőszerhordó</Hungarian>
+<German>Kord Unterstützung</German>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_SOLDIERE_HMGAG">
+<English>Kord Assistant Gunner</English>
+<Italian>Kord, Serviente</Italian>
+<Spanish>Sirviente Kord</Spanish>
+<Czech>Pomocník kulometčíka Kord</Czech>
+<Russian>Помощник стрелка (Корд)</Russian>
+<Polish>Pomocniczy (Kord)</Polish>
+<French>Aide mitrailleur Kord</French>
+<Hungarian>Kord Segéd</Hungarian>
+<German>Kord Ladeschütze</German>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_SOLDIERE_KONKURSG">
+<English>Konkurs Gunner</English>
+<Italian>Konkurs Gunner</Italian>
+<Spanish>Konkurs Gunner</Spanish>
+<Czech>Střelec (Konkurs)</Czech>
+<Russian>Стрелок (Конкурс)</Russian>
+<Polish>Celowniczy (Konkurs)</Polish>
+<French>Opérateur Konkurs</French>
+<Hungarian>Konkursz kezelő</Hungarian>
+<German>Konkurs Schütze</German>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_SOLDIERE_KONKURSAB">
+<English>Konkurs Ammo Bearer</English>
+<Italian>Konkurs Ammo Bearer</Italian>
+<Spanish>Konkurs Ammo Bearer</Spanish>
+<Czech>Nosič střeliva (Konkurs)</Czech>
+<Russian>Подносчик боеприпасов (Конкурс)</Russian>
+<Polish>Amunicyjny (Konkurs)</Polish>
+<French>Servant Konkurs</French>
+<Hungarian>Konkursz Lőszerhordó</Hungarian>
+<German>Konkurs Unterstützung</German>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_SOLDIER_M224_G">
+<English>M224 Gunner</English>
+<Italian>M224, artigliere</Italian>
+<Spanish>Artillero M224</Spanish>
+<Czech>Střelec M224</Czech>
+<Russian>Стрелок (M224)</Russian>
+<Polish>Celowniczy (M224)</Polish>
+<French>Tireur M224</French>
+<Hungarian>M224 Kezelő</Hungarian>
+<German>M224 Schütze</German>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_SOLDIER_M224_AG">
+<English>M224 Assistant Gunner</English>
+<Italian>M224, Serviente</Italian>
+<Spanish>Sirviente M224</Spanish>
+<Czech>Pomocník střelce M224</Czech>
+<Russian>Помощник стрелка (M224)</Russian>
+<Polish>Pomocniczy (M224)</Polish>
+<French>Aide tireur M224</French>
+<Hungarian>M224 Segéd</Hungarian>
+<German>M224 Ladeschütze</German>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_SOLDIER_M224_AB">
+<English>M224 Ammo Bearer</English>
+<Italian>M224, Serviente</Italian>
+<Spanish>Aprovisionador M224</Spanish>
+<Czech>Nosič střeliva M224</Czech>
+<Russian>Подносчик боеприпасов (M224)</Russian>
+<Polish>Amunicyjny (M224)</Polish>
+<French>Servant M224</French>
+<Hungarian>M224 Lőszerhordó</Hungarian>
+<German>M224 Unterstützung</German>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_SOLDIER_M252_G">
+<English>M252 Gunner</English>
+<Italian>M252, artigliere</Italian>
+<Spanish>Artillero M252</Spanish>
+<Czech>Střelec M252</Czech>
+<Russian>Стрелок (M252)</Russian>
+<Polish>Celowniczy (M252)</Polish>
+<French>Tireur M252</French>
+<Hungarian>M252 Kezelő</Hungarian>
+<German>M252 Schütze</German>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_SOLDIER_M252_AG">
+<English>M252 Assistant Gunner</English>
+<Italian>M252, Serviente</Italian>
+<Spanish>Sirviente M252</Spanish>
+<Czech>Pomocník střelce M252</Czech>
+<Russian>Помощник стрелка (M252)</Russian>
+<Polish>Pomocniczy (M252)</Polish>
+<French>Aide tireur M252</French>
+<Hungarian>M252 Segéd</Hungarian>
+<German>M252 Ladeschütze</German>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_SOLDIER_M252_AB">
+<English>M252 Ammo Bearer</English>
+<Italian>M252, Serviente</Italian>
+<Spanish>Aprovisionador M252</Spanish>
+<Czech>Nosič střeliva M252</Czech>
+<Russian>Подносчик боеприпасов (M252)</Russian>
+<Polish>Amunicyjny (M252)</Polish>
+<French>Servant M252</French>
+<Hungarian>M252 Lőszerhordó</Hungarian>
+<German>M252 Unterstützung</German>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_SOLDIER_2B14_G">
+<English>2B14 Gunner</English>
+<Italian>2B14, artigliere</Italian>
+<Spanish>Artillero 2B14</Spanish>
+<Czech>Střelec 2B14</Czech>
+<Russian>Стрелок (2Б14)</Russian>
+<Polish>Celowniczy (2B14)</Polish>
+<French>Tireur 2B14</French>
+<Hungarian>2B14 Kezelő</Hungarian>
+<German>2B14 Schütze</German>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_SOLDIER_2B14_AG">
+<English>2B14 Gunner Assistant</English>
+<Italian>2B14, Serviente</Italian>
+<Spanish>Sirviente 2B14</Spanish>
+<Czech>Pomocník střelce 2B14</Czech>
+<Russian>Помощник стрелка (2Б14)</Russian>
+<Polish>Pomocniczy (2B14)</Polish>
+<French>Aide tireur 2B14</French>
+<Hungarian>2B14 Segéd</Hungarian>
+<German>2B14 Ladeschütze</German>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_SOLDIER_2B14_AB">
+<English>2B14 Ammo Bearer</English>
+<Italian>2B14, Serviente</Italian>
+<Spanish>Aprovisionador 2B14</Spanish>
+<Czech>Nosič střeliva 2B14</Czech>
+<Russian>Подносчик боеприпасов (2Б14)</Russian>
+<Polish>Amunicyjny (2B14)</Polish>
+<French>Servant 2B14</French>
+<Hungarian>2B14 Lőszerhordó</Hungarian>
+<German>2B14 Unterstützung</German>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_RIFLEMAN_RPOM">
+<German>Schütze (RPO-M)</German>
+<English>Rifleman (RPO-M)</English>
+<Italian>Fuciliere (RPO-M)</Italian>
+<Spanish>Fusilero (RPO-M)</Spanish>
+<French>Fusilier (RPO-M)</French>
+<Czech>Střelec (RPO-M)</Czech>
+<Russian>Стрелок (РПО-М)</Russian>
+<Polish>Strzelec (RPO-M)</Polish>
+<Hungarian>Rifleman (RPO-M)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_RUS_SOLDIER_GL">
+<German>Speznas Angriff</German>
+<English>Spetsnaz Assaultman</English>
+<Italian>Uomo d'assalto Spetsnaz</Italian>
+<Spanish>Asaltante spetsnaz</Spanish>
+<French>Assaut Spetsnaz</French>
+<Czech>Útočník Specnaz</Czech>
+<Russian>Разведчик (РПГ-22)</Russian>
+<Polish>Szturmowiec</Polish>
+<Hungarian>Specnaz Rohamkatona</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_RUS_SOLDIER_MEDIC">
+<German>Sanitäter</German>
+<English>Spetsnaz Medic</English>
+<Italian>Medico</Italian>
+<Spanish>Médico</Spanish>
+<French>Médecin</French>
+<Czech>Zdravotník</Czech>
+<Russian>Санитар</Russian>
+<Polish>Sanitariusz</Polish>
+<Hungarian>Medic</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_ASSAULTMAN_RPOM">
+<German>Speznas Angriff (RPO-M)</German>
+<English>Spetsnaz Assaultman (RPO-M)</English>
+<Italian>Uomo d'assalto Spetsnaz (RPO-M)</Italian>
+<Spanish>Asaltante spetsnaz (RPO-M)</Spanish>
+<French>Assaut Spetsnaz (RPO-M)</French>
+<Czech>Útočník Specnaz (RPO-M)</Czech>
+<Russian>Разведчик (РПО-М)</Russian>
+<Polish>Szturmowiec (RPO-M)</Polish>
+<Hungarian>Specnaz Rohamkatona (RPO-M)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_OPERATOR_RPOM">
+<German>Operator (RPO-M)</German>
+<English>Operator (RPO-M)</English>
+<Italian>Operatore (RPO-M)</Italian>
+<Spanish>Operador (RPO-M)</Spanish>
+<French>Servant (RPO-M)</French>
+<Czech>Střelec (RPO-M)</Czech>
+<Russian>Стрелок (РПО-М)</Russian>
+<Polish>Operator (RPO-M)</Polish>
+<Hungarian>Operátor (RPO-M)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_TEAMAR">
+<German>Automatik-Schütze</German>
+<English>Team Automatic Rifleman</English>
+<Italian>Team Automatic Rifleman</Italian>
+<Spanish>Team Automatic Rifleman</Spanish>
+<French>Team Automatic Rifleman</French>
+<Czech>Automatický střelec</Czech>
+<Russian>Пулемётчик</Russian>
+<Polish>Celowniczy rkm</Polish>
+<Hungarian>Team Automatic Rifleman</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_TK_INS_SOLDIER_AKM">
+<German>Milizsoldat (AKM)</German>
+<English>Militiaman (AKM)</English>
+<Italian>Miliziano (AKM)</Italian>
+<Spanish>Miliciano (AKM)</Spanish>
+<French>Milicien (AKM)</French>
+<Czech>Milicionář (AKM)</Czech>
+<Russian>Ополченец (АКМ)</Russian>
+<Polish>Bojownik (AKM)</Polish>
+<Hungarian>Militiaman (AKM)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_TK_INS_SOLDIER_AKMS">
+<German>Milizsoldat (AKMS)</German>
+<English>Militiaman (AKMS)</English>
+<Italian>Miliziano (AKMS)</Italian>
+<Spanish>Miliciano (AKMS)</Spanish>
+<French>Milicien (AKMS)</French>
+<Czech>Milicionář (AKMS)</Czech>
+<Russian>Ополченец (АКМС)</Russian>
+<Polish>Bojownik (AKMS)</Polish>
+<Hungarian>Militiaman (AKMS)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_TK_CIV_TAKISTANI_DOCTOR">
+<German>Arzt</German>
+<English>Doctor</English>
+<Italian>Dottore</Italian>
+<Spanish>Doctor</Spanish>
+<French>Docteur</French>
+<Czech>Doktor</Czech>
+<Russian>Врач</Russian>
+<Polish>Lekarz</Polish>
+<Hungarian>Orvos</Hungarian>
+</Key>
+</Container>
+</Package>
+</Project>

@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_combatdeaf
+Pbo Type is: Arma Addon
+Sha: 'D52D679A388533F46058FBDAE0559492AAD0974E'
+//////</HEADER>//////

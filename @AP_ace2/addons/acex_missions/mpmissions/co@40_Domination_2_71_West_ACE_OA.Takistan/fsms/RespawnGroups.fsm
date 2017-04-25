@@ -1,0 +1,196 @@
+class FSM
+{
+  fsmName = "RespawnGroups";
+  class States
+  {
+    class Start
+    {
+      name = "Start";
+      init = "private [""_grp"",""_timenow"",""_timenow2"",""_allgroups"",""_counter"",""_onegrp""];" \n
+       "" \n
+       "_timenow = time + 60;" \n
+       "" \n
+       "d_rsp_gr_nums = 0;" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class Loop
+    {
+      name = "Loop";
+      init = "_timenow2 = time + 5.33;";
+      precondition = "";
+      class Links
+      {
+        class radio_tower_down
+        {
+          priority = 100.000000;
+          to="End";
+          precondition = "";
+          condition="(X_JIPH getVariable ""d_mt_radio_down"") || d_mt_done";
+          action="";
+        };
+        class Is_MP
+        {
+          priority = 5.000000;
+          to="Sleep";
+          precondition = "";
+          condition="isMultiplayer && (call d_fnc_PlayersNumber) == 0";
+          action="";
+        };
+        class __count__d_respawn
+        {
+          priority = 1.000000;
+          to="Check";
+          precondition = "";
+          condition="(count  d_respawn_ai_groups) > 0 && d_mt_spotted && !(X_JIPH getVariable ""d_mt_radio_down"")";
+          action="";
+        };
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="time > _timenow2";
+          action="";
+        };
+      };
+    };
+    class Check
+    {
+      name = "Check";
+      init = "_counter = 0;";
+      precondition = "";
+      class Links
+      {
+        class _
+        {
+          priority = 0.000000;
+          to="Loop2";
+          precondition = "";
+          condition="";
+          action="";
+        };
+      };
+    };
+    class Loop2
+    {
+      name = "Loop2";
+      init = "private [""_onegrpar"", ""_grp"", ""_dowaitfg""];" \n
+       "_onegrpar = d_respawn_ai_groups select _counter;" \n
+       "_dowaitfg = false;" \n
+       "if (typeName _onegrpar == ""ARRAY"") then {" \n
+       "	_grp = _onegrpar select 0;" \n
+       "	if ((isNull _grp || (_grp call d_fnc_GetAliveUnitsGrp) == 0) && ((_grp getVariable ""d_gstate"") > 0)) then {" \n
+       "		_mg_array = _onegrpar select 1;" \n
+       "		_resp_mid = _mg_array select 10;" \n
+       "		_rpos = [_resp_mid select 0, 600, 400, _resp_mid select 1] call d_fnc_GetRanPointSquare;" \n
+       "		_mg_array set [1, [_rpos]];" \n
+       "		d_respawn_ai_groups set [_counter, -1];" \n
+       "		_mg_array call d_fnc_makegroup;" \n
+       "		if (d_dom4) then {" \n
+       "			d_mt_defend_groups = d_mt_defend_groups - [_grp, grpNull];" \n
+       "			d_mt_attack_groups = d_mt_attack_groups - [_grp, grpNull];" \n
+       "		};" \n
+       "		_dowaitfg = true;" \n
+       "	};" \n
+       "} else {" \n
+       "	d_respawn_ai_groups set [_counter, -1];" \n
+       "};" \n
+       "" \n
+       "_counter = _counter + 1;" \n
+       "" \n
+       "if (_dowaitfg) then {" \n
+       "	private [""_pluc"", ""_addtime""];" \n
+       "	_pluc = if (isMultiplayer) then {count playableUnits} else {1};" \n
+       "	_addtime = ((300 - (_pluc * 7)) max 10) + random 10;" \n
+       "	_timenow = time + _addtime;" \n
+       "} else {" \n
+       "	_timenow = time + 1;" \n
+       "};" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class ___counter____count
+        {
+          priority = 1.000000;
+          to="_";
+          precondition = "";
+          condition="(_counter == count d_respawn_ai_groups) || (X_JIPH getVariable ""d_mt_radio_down"") || d_mt_done";
+          action="";
+        };
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop2";
+          precondition = "";
+          condition="time > _timenow && !(X_JIPH getVariable ""d_mt_radio_down"") && !d_mt_done";
+          action="";
+        };
+      };
+    };
+    class _
+    {
+      name = "_";
+      init = "d_respawn_ai_groups = d_respawn_ai_groups - [-1];" \n
+       "_timenow = time + (if ((X_JIPH getVariable ""d_mt_radio_down"") || d_mt_done) then {0} else {5.1});" \n
+       "d_rsp_gr_nums = d_rsp_gr_nums + 1;" \n
+       "" \n
+       "";
+      precondition = "";
+      class Links
+      {
+        class Delay
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class Sleep
+    {
+      name = "Sleep";
+      init = "_timenow = time + 5.32;";
+      precondition = "";
+      class Links
+      {
+        class Delay2
+        {
+          priority = 0.000000;
+          to="Loop";
+          precondition = "";
+          condition="time > _timenow";
+          action="";
+        };
+      };
+    };
+    class End
+    {
+      name = "End";
+      init = "";
+      precondition = "";
+      class Links
+      {
+      };
+    };
+  };
+  initState="Start";
+  finalStates[] =
+  {
+    "End",
+  };
+};

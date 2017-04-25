@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_map
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: '5C6E7B082B8A4DBDD4749D7CD27EDC41AAB3664F'
+//////</HEADER>//////

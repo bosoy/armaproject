@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ArmA2_ACE2">
+<Package name="c_men_designation">
+<Container name="STR_ACE">
+<Key ID="STR_ACE_VDN_AUTOMATICRIFLEMAN">
+<German>LMG-Schütze</German>
+<English>Automatic Rifleman</English>
+<Italian>Soldato con fucile automatico</Italian>
+<Spanish>Fusilero automático</Spanish>
+<French>Fusilier arme auto.</French>
+<Czech>Lehký kulometčík</Czech>
+<Russian>Пулемётчик</Russian>
+<Polish>Strzelec rkm</Polish>
+<Hungarian>Automata lövész</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_MACHINEGUNNER">
+<German>MG-Schütze</German>
+<English>Machinegunner</English>
+<Italian>Mitragliere</Italian>
+<Spanish>Ametrallador</Spanish>
+<French>Mitrailleur</French>
+<Czech>Kulometčík</Czech>
+<Russian>Пулемётчик (единый пулемёт)</Russian>
+<Polish>Strzelec km</Polish>
+<Hungarian>Gépfegyveres</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_RPGGRENADIER">
+<German>Grenadier (RPG-7)</German>
+<English>Grenadier (RPG-7)</English>
+<Italian>Granatiere (RPG-7)</Italian>
+<Spanish>Granadero (RPG-7)</Spanish>
+<French>Grenadier (RPG-7)</French>
+<Czech>Granátník (RPG-7)</Czech>
+<Russian>Гранатомётчик (РПГ-7)</Russian>
+<Polish>Grenadier (RPG-7)</Polish>
+<Hungarian>Gránátos (RPG-7)</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_ATSPECIALIST">
+<German>Panzerabwehrspezialist</German>
+<English>AT Specialist</English>
+<Italian>Specialista AC</Italian>
+<Spanish>Especialistas antitanque</Spanish>
+<French>Spécialiste AC</French>
+<Czech>AT specialista</Czech>
+<Russian>Гранатомётчик</Russian>
+<Polish>Specjalista ppanc</Polish>
+<Hungarian>Tankelhárító specialista</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_AASPECIALIST">
+<German>Luftabwehrspezialist</German>
+<English>AA Specialist</English>
+<Italian>Specialista AA</Italian>
+<Spanish>Especialista antiaéreo</Spanish>
+<French>Spécialiste AA</French>
+<Czech>AA specialista</Czech>
+<Russian>Стрелок с ПЗРК</Russian>
+<Polish>Specjalista plot</Polish>
+<Hungarian>Légvédelmi specialista</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_MARKSMAN">
+<German>Scharfschütze</German>
+<English>Marksman</English>
+<Italian>Tiratore scelto</Italian>
+<Spanish>Tirador</Spanish>
+<French>Tireur d'élite</French>
+<Czech>Ostrostřelec</Czech>
+<Russian>Меткий стрелок</Russian>
+<Polish>Strzelec wyborowy</Polish>
+<Hungarian>Mesterlövész</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_DESIGNATEDMARKSMAN">
+<German>Gruppenscharfschütze</German>
+<English>Designated Marksman</English>
+<Italian>Tiratore scelto designato</Italian>
+<Spanish>Tirador designado</Spanish>
+<French>Tireur d'élite</French>
+<Czech>Určený střelec</Czech>
+<Russian>Назначенный меткий стрелок</Russian>
+<Polish>Strzelec wyborowy (DMR)</Polish>
+<Hungarian>Támogató mesterlövész</Hungarian>
+</Key>
+<Key ID="STR_ACE_VDN_ACE_ENGINEER">
+<Original>Engineer</Original>
+<German>Pionier</German>
+<English>Engineer</English>
+<Italian>Ingegnere</Italian>
+<Spanish>Ingeniero</Spanish>
+<French>Sapeur</French>
+<Czech>Ženista</Czech>
+<Russian>Сапёр</Russian>
+<Polish>Saper</Polish>
+<Hungarian>Engineer</Hungarian>
+</Key>
+      <Key
+        ID="STR_ACE_VDN_GUERILLA">
+        <Original>Guerilla</Original>
+        <German>Guerilla</German>
+        <English>Guerilla</English>
+        <Italian>Guerrigliero</Italian>
+        <Spanish>Guerrilla</Spanish>
+        <French>Guérillero</French>
+        <Czech>Partyzán</Czech>
+        <Russian>Партизан</Russian>
+        <Polish>Partyzant</Polish>
+        <Hungarian>Guerilla</Hungarian>
+      </Key>
+      <Key
+        ID="STR_ACE_VDN_MILITIAMAN">
+        <Original>Militiama</Original>
+        <German>Milizsoldat</German>
+        <English>Militiaman</English>
+        <Italian>Miliziano</Italian>
+        <Spanish>Miliciano</Spanish>
+        <French>Milicien</French>
+        <Czech>Milicionář</Czech>
+        <Russian>Ополченец</Russian>
+        <Polish>Bojownik</Polish>
+        <Hungarian>Militiaman</Hungarian>
+      </Key>
+</Container>
+</Package>
+</Project>

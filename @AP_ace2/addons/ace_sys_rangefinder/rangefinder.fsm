@@ -1,0 +1,2071 @@
+/*%FSM<COMPILE "scriptedFSM.cfg, rangefinder">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"rangefinder",0,250,175.000000,375.000000,275.000000,425.000000,0.000000,"rangefinder"};
+item1[] = {"_",8,218,250.000000,450.000000,350.000000,500.000000,0.000000,"" \n ""};
+item2[] = {"player",4,218,100.000000,450.000000,200.000000,500.000000,1.000000,"player"};
+item3[] = {"Toggled_Off",1,250,400.000000,675.000000,500.000000,725.000000,0.000000,"Toggled Off"};
+item4[] = {"toggle_power",2,250,100.000000,525.000000,200.000000,575.000000,0.000000,"toggle power"};
+item5[] = {"_",8,218,25.000000,600.000000,125.000000,650.000000,0.000000,""};
+item6[] = {"running",4,218,150.000000,600.000000,250.000000,650.000000,1.000000,"running"};
+item7[] = {"stop",2,250,150.000000,675.000000,250.000000,725.000000,0.000000,"stop"};
+item8[] = {"currentWeapon",2,250,25.000000,675.000000,125.000000,725.000000,0.000000,"currentWeapon"};
+item9[] = {"_",8,218,-25.000000,750.000000,75.000000,800.000000,0.000000,""};
+item10[] = {"damaged",4,218,100.000000,750.000000,200.000000,800.000000,1.000000,"damaged"};
+item11[] = {"_",8,218,275.000000,675.000000,375.000000,725.000000,0.000000,""};
+item12[] = {"config",2,250,-25.000000,825.000000,75.000000,875.000000,0.000000,"config"};
+item13[] = {"laser",4,218,-100.000000,900.000000,0.000000,950.000000,1.000000,"laser"};
+item14[] = {"_",8,218,50.000000,900.000000,150.000000,950.000000,0.000000,""};
+item15[] = {"weapon",2,250,-100.000000,975.000000,0.000000,1025.000000,0.000000,"weapon"};
+item16[] = {"SOFLAM",4,218,-175.000000,1050.000000,-75.000000,1100.000000,1.000000,"SOFLAM"};
+item17[] = {"_",8,218,-25.000000,1050.000000,75.000000,1100.000000,0.000000,""};
+item18[] = {"SOFLAM__display",2,250,-175.000000,1125.000000,-75.000000,1175.000000,0.000000,"SOFLAM " \n "display"};
+item19[] = {"Default__Display",2,250,-25.000000,1125.000000,75.000000,1175.000000,0.000000,"Default " \n "Display"};
+item20[] = {"running",2,250,-100.000000,1275.000000,0.000000,1325.000000,0.000000,"running"};
+item21[] = {"_",8,218,-175.000000,1200.000000,-75.000000,1250.000000,0.000000,""};
+item22[] = {"loaded",4,218,-325.000000,1525.000000,-225.000000,1575.000000,1.000000,"loaded"};
+item23[] = {"no_battery",8,218,-150.000000,1525.000000,-50.000000,1575.000000,0.000000,"no battery"};
+item24[] = {"empty",4,218,-175.000000,1350.000000,-75.000000,1400.000000,1.000000,"empty"};
+item25[] = {"_",8,218,-25.000000,1350.000000,75.000000,1400.000000,0.000000,""};
+item26[] = {"load",2,250,-225.000000,1450.000000,-125.000000,1500.000000,0.000000,"load"};
+item27[] = {"battery_conditio",2,250,-325.000000,1600.000000,-225.000000,1650.000000,0.000000,"battery condition"};
+item28[] = {"message",2,250,-150.000000,1600.000000,-50.000000,1650.000000,0.000000,"message"};
+item29[] = {"_",8,218,-150.000000,1675.000000,-50.000000,1725.000000,0.000000,""};
+item30[] = {"swiped",4,218,-400.000000,1675.000000,-300.000000,1725.000000,1.000000,"swiped"};
+item31[] = {"_",8,218,-275.000000,1675.000000,-175.000000,1725.000000,0.000000,""};
+item32[] = {"partial",2,250,-400.000000,1750.000000,-300.000000,1800.000000,0.000000,"partial"};
+item33[] = {"fresh",2,250,-275.000000,1750.000000,-175.000000,1800.000000,0.000000,"fresh"};
+item34[] = {"show_display",2,250,-25.000000,1850.000000,75.000000,1900.000000,0.000000,"show display"};
+item35[] = {"_",8,218,-400.000000,1850.000000,-300.000000,1900.000000,0.000000,""};
+item36[] = {"_",8,218,-275.000000,1900.000000,-175.000000,1950.000000,0.000000,""};
+item37[] = {"SOFLAM",4,218,-100.000000,2000.000000,0.000000,2050.000000,1.000000,"SOFLAM"};
+item38[] = {"_",8,218,50.000000,2000.000000,150.000000,2050.000000,0.000000,""};
+item39[] = {"exit_check",2,250,375.000000,2250.000000,475.000000,2300.000000,0.000000,"exit check"};
+item40[] = {"_",8,218,-25.000000,1200.000000,75.000000,1250.000000,0.000000,""};
+item41[] = {"Not_player",1,250,250.000000,525.000000,350.000000,575.000000,0.000000,"Not player"};
+item42[] = {"Not_laser_weapon",1,250,50.000000,975.000000,150.000000,1025.000000,0.000000,"Not laser" \n "weapon"};
+item43[] = {"Damaged_Weapon",1,250,100.000000,825.000000,200.000000,875.000000,0.000000,"Damaged Weapon"};
+item44[] = {"exit_check_",2,250,-525.000000,2400.000000,-425.000000,2450.000000,0.000000,"exit check" \n ""};
+item45[] = {"viewable_state",2,250,-25.000000,2650.000000,75.000000,2700.000000,0.000000,"viewable state"};
+item46[] = {"_",8,218,375.000000,2475.000000,475.000000,2525.000000,3.000000,""};
+item47[] = {"able",4,218,-25.000000,2550.000000,75.000000,2600.000000,1.000000,"able"};
+item48[] = {"_",8,218,-25.000000,2800.000000,75.000000,2850.000000,0.000000,""};
+item49[] = {"_",2,250,-25.000000,2450.000000,75.000000,2500.000000,0.000000,""};
+item50[] = {"SOFLAM",4,218,-150.000000,2450.000000,-50.000000,2500.000000,1.000000,"SOFLAM"};
+item51[] = {"_",8,218,100.000000,2450.000000,200.000000,2500.000000,0.000000,""};
+item52[] = {"hide_display",2,250,-25.000000,2900.000000,75.000000,2950.000000,0.000000,"hide display"};
+item53[] = {"_",8,218,-50.000000,3425.000000,50.000000,3475.000000,0.000000,""};
+item54[] = {"overheated",4,218,-125.000000,2975.000000,-25.000000,3025.000000,1.000000,"overheated"};
+item55[] = {"_",8,218,50.000000,2975.000000,150.000000,3025.000000,0.000000,""};
+item56[] = {"give_damaged",2,250,-125.000000,3050.000000,-25.000000,3100.000000,0.000000,"give damaged"};
+item57[] = {"turn_off_laser",2,250,50.000000,3050.000000,150.000000,3100.000000,0.000000,"turn off laser"};
+item58[] = {"_",8,218,-125.000000,3125.000000,-25.000000,3175.000000,0.000000,""};
+item59[] = {"_",8,218,50.000000,3125.000000,150.000000,3175.000000,0.000000,""};
+item60[] = {"cleanup",2,250,-50.000000,3200.000000,50.000000,3250.000000,0.000000,"cleanup"};
+item61[] = {"Shutoff",1,250,-50.000000,3500.000000,50.000000,3550.000000,0.000000,"Shutoff"};
+item62[] = {"No_battery",1,250,-150.000000,1750.000000,-50.000000,1800.000000,0.000000,"No battery"};
+item63[] = {"init",2,250,-150.000000,2125.000000,-50.000000,2175.000000,0.000000,"init"};
+item64[] = {"init_1",2,250,100.000000,2125.000000,200.000000,2175.000000,0.000000,"init"};
+item65[] = {"_",8,218,100.000000,2250.000000,200.000000,2300.000000,0.000000,""};
+item66[] = {"lights",2,250,-525.000000,2250.000000,-425.000000,2300.000000,0.000000,"lights"};
+item67[] = {"blink",2,250,-850.000000,2400.000000,-750.000000,2450.000000,0.000000,"blink"};
+item68[] = {"readout",2,250,-825.000000,2225.000000,-725.000000,2275.000000,0.000000,"readout"};
+item69[] = {"wait",4,218,-525.000000,2325.000000,-425.000000,2375.000000,0.000000,"wait"};
+item70[] = {"_",8,218,-2200.000000,2175.000000,-2100.000000,2225.000000,0.000000,""};
+item71[] = {"changing_mils",4,218,-2200.000000,2275.000000,-2100.000000,2325.000000,1.000000,"changing mils"};
+item72[] = {"__1",2,250,-2325.000000,2175.000000,-2225.000000,2225.000000,0.000000,""};
+item73[] = {"__2",2,250,-2325.000000,2275.000000,-2225.000000,2325.000000,0.000000,""};
+item74[] = {"_",8,218,-1175.000000,2175.000000,-1075.000000,2225.000000,0.000000,""};
+item75[] = {"my_laser_not_act",4,218,-1175.000000,2275.000000,-1075.000000,2325.000000,1.000000,"my laser" \n "not active"};
+item76[] = {"Output_Range",2,250,-1350.000000,2075.000000,-1250.000000,2125.000000,0.000000,"Output" \n "Range"};
+item77[] = {"XMIT_off",2,250,-1300.000000,2275.000000,-1200.000000,2325.000000,0.000000,"XMIT off"};
+item78[] = {"set_MLT",2,250,-2100.000000,2225.000000,-2000.000000,2275.000000,0.000000,"set MLT"};
+item79[] = {"_",8,218,-950.000000,2225.000000,-850.000000,2275.000000,0.000000,""};
+item80[] = {"range",2,250,-1075.000000,2225.000000,-975.000000,2275.000000,0.000000,"range"};
+item81[] = {"_",8,218,-2450.000000,2275.000000,-2350.000000,2325.000000,0.000000,""};
+item82[] = {"rate",2,250,-2450.000000,2400.000000,-2350.000000,2450.000000,0.000000,"rate"};
+item83[] = {"wait",4,218,-1000.000000,2400.000000,-900.000000,2450.000000,1.000000,"wait"};
+item84[] = {"wait",4,218,-700.000000,2400.000000,-600.000000,2450.000000,0.000000,"wait"};
+item85[] = {"rate_1",2,250,-175.000000,2375.000000,-75.000000,2425.000000,0.000000,"rate"};
+item86[] = {"wait",4,218,-300.000000,2375.000000,-200.000000,2425.000000,0.000000,"wait"};
+item87[] = {"rate_2",2,250,125.000000,2375.000000,225.000000,2425.000000,0.000000,"rate"};
+item88[] = {"wait",4,218,250.000000,2375.000000,350.000000,2425.000000,0.000000,"wait"};
+item89[] = {"readout_1",2,250,575.000000,2375.000000,675.000000,2425.000000,0.000000,"readout"};
+item90[] = {"cycle",4,218,475.000000,2300.000000,575.000000,2350.000000,1.000000,"cycle"};
+item91[] = {"__3",2,250,-300.000000,2125.000000,-200.000000,2175.000000,0.000000,""};
+item92[] = {"_",8,218,-300.000000,2525.000000,-200.000000,2575.000000,0.000000,""};
+item93[] = {"_",8,218,-525.000000,2050.000000,-425.000000,2100.000000,0.000000,""};
+item94[] = {"cycle",4,218,-525.000000,2125.000000,-425.000000,2175.000000,1.000000,"cycle"};
+item95[] = {"_",8,218,-150.000000,2250.000000,-50.000000,2300.000000,0.000000,""};
+item96[] = {"_",8,218,700.000000,2375.000000,800.000000,2425.000000,0.000000,""};
+item97[] = {"range_1",2,250,850.000000,2375.000000,950.000000,2425.000000,0.000000,"range"};
+item98[] = {"my_laser_not_fou",4,218,950.000000,2325.000000,1050.000000,2375.000000,0.000000,"my laser" \n "not found"};
+item99[] = {"_",8,218,950.000000,2450.000000,1050.000000,2500.000000,0.000000,""};
+item100[] = {"no_laz",2,250,1075.000000,2325.000000,1175.000000,2375.000000,0.000000,"no laz"};
+item101[] = {"__4",2,250,1075.000000,2450.000000,1175.000000,2500.000000,0.000000,""};
+item102[] = {"_",8,218,1225.000000,2450.000000,1325.000000,2500.000000,0.000000,""};
+item103[] = {"azimuth_elevatio",2,250,1350.000000,2400.000000,1450.000000,2450.000000,0.000000,"azimuth" \n "elevation"};
+item104[] = {"changing_mils",4,218,1475.000000,2350.000000,1575.000000,2400.000000,0.000000,"changing mils"};
+item105[] = {"_",8,218,1475.000000,2475.000000,1575.000000,2525.000000,0.000000,""};
+item106[] = {"__5",2,250,1600.000000,2475.000000,1700.000000,2525.000000,0.000000,""};
+item107[] = {"__6",2,250,1600.000000,2350.000000,1700.000000,2400.000000,0.000000,""};
+item108[] = {"_",8,218,1725.000000,2475.000000,1825.000000,2525.000000,0.000000,""};
+item109[] = {"rate_3",2,250,1725.000000,2250.000000,1825.000000,2300.000000,0.000000,"rate"};
+item110[] = {"wait",4,218,725.000000,2250.000000,825.000000,2300.000000,0.000000,"wait"};
+item111[] = {"_",8,218,-1950.000000,2300.000000,-1850.000000,2350.000000,0.000000,""};
+item112[] = {"_",8,218,-2450.000000,2175.000000,-2350.000000,2225.000000,0.000000,""};
+item113[] = {"_",8,218,1225.000000,2325.000000,1325.000000,2375.000000,0.000000,""};
+item114[] = {"_",8,218,1725.000000,2350.000000,1825.000000,2400.000000,0.000000,""};
+item115[] = {"no_others",8,218,-1700.000000,2300.000000,-1600.000000,2350.000000,0.000000,"no others"};
+item116[] = {"lasers_detected",4,218,-1700.000000,2225.000000,-1600.000000,2275.000000,1.000000,"lasers" \n "detected"};
+item117[] = {"MLT_off",2,250,-1825.000000,2300.000000,-1725.000000,2350.000000,0.000000,"MLT off"};
+item118[] = {"_",8,218,-1425.000000,2275.000000,-1325.000000,2325.000000,0.000000,""};
+item119[] = {"many_detected",4,218,-1700.000000,2150.000000,-1600.000000,2200.000000,2.000000,"many" \n "detected"};
+item120[] = {"MLT_full",2,250,-1825.000000,2150.000000,-1725.000000,2200.000000,0.000000,"MLT full"};
+item121[] = {"MLT_lit",2,250,-1825.000000,2225.000000,-1725.000000,2275.000000,0.000000,"MLT lit"};
+item122[] = {"_",8,218,-1950.000000,2150.000000,-1850.000000,2200.000000,0.000000,""};
+item123[] = {"_",8,218,-1950.000000,2225.000000,-1850.000000,2275.000000,0.000000,""};
+item124[] = {"MLT_count",2,250,-1550.000000,2225.000000,-1450.000000,2275.000000,0.000000,"MLT count"};
+item125[] = {"_",8,218,-1425.000000,2175.000000,-1325.000000,2225.000000,0.000000,""};
+item126[] = {"_",4,218,-2450.000000,2475.000000,-2350.000000,2525.000000,2.000000,""};
+item127[] = {"target_check",2,250,-2450.000000,2550.000000,-2350.000000,2600.000000,0.000000,"target" \n "check"};
+item128[] = {"_",8,218,-2325.000000,2475.000000,-2225.000000,2525.000000,0.000000,""};
+item129[] = {"wait",4,218,-50.000000,3275.000000,50.000000,3325.000000,0.000000,"wait"};
+item130[] = {"reset",2,250,-50.000000,3350.000000,50.000000,3400.000000,0.000000,"reset"};
+item131[] = {"Third_Person",4,218,125.000000,2525.000000,225.000000,2575.000000,2.000000,"Third Person"};
+item132[] = {"__7",2,250,250.000000,2625.000000,350.000000,2675.000000,0.000000,""};
+item133[] = {"_",4,218,250.000000,2725.000000,350.000000,2775.000000,0.000000,""};
+item134[] = {"__8",2,250,125.000000,2725.000000,225.000000,2775.000000,0.000000,""};
+item135[] = {"_",8,218,125.000000,2650.000000,225.000000,2700.000000,0.000000,""};
+item136[] = {"Output__Laser__C",2,250,-1150.000000,2075.000000,-1050.000000,2125.000000,0.000000,"Output " \n "Laser " \n "Code"};
+item137[] = {"_",8,218,-1250.000000,2000.000000,-1150.000000,2050.000000,0.000000,""};
+link0[] = {0,1};
+link1[] = {0,2};
+link2[] = {1,41};
+link3[] = {2,4};
+link4[] = {4,5};
+link5[] = {4,6};
+link6[] = {5,8};
+link7[] = {6,7};
+link8[] = {7,11};
+link9[] = {8,9};
+link10[] = {8,10};
+link11[] = {9,12};
+link12[] = {10,43};
+link13[] = {11,3};
+link14[] = {12,13};
+link15[] = {12,14};
+link16[] = {13,15};
+link17[] = {14,42};
+link18[] = {15,16};
+link19[] = {15,17};
+link20[] = {16,18};
+link21[] = {17,19};
+link22[] = {18,21};
+link23[] = {19,40};
+link24[] = {20,24};
+link25[] = {20,25};
+link26[] = {21,20};
+link27[] = {22,27};
+link28[] = {23,28};
+link29[] = {24,26};
+link30[] = {25,34};
+link31[] = {26,22};
+link32[] = {26,23};
+link33[] = {27,30};
+link34[] = {27,31};
+link35[] = {28,29};
+link36[] = {29,62};
+link37[] = {30,32};
+link38[] = {31,33};
+link39[] = {32,35};
+link40[] = {33,36};
+link41[] = {34,37};
+link42[] = {34,38};
+link43[] = {35,34};
+link44[] = {36,34};
+link45[] = {37,63};
+link46[] = {38,64};
+link47[] = {39,46};
+link48[] = {40,20};
+link49[] = {44,92};
+link50[] = {45,47};
+link51[] = {45,48};
+link52[] = {46,45};
+link53[] = {47,49};
+link54[] = {48,52};
+link55[] = {49,50};
+link56[] = {49,51};
+link57[] = {49,131};
+link58[] = {50,85};
+link59[] = {51,87};
+link60[] = {52,54};
+link61[] = {52,55};
+link62[] = {53,61};
+link63[] = {54,56};
+link64[] = {55,57};
+link65[] = {56,58};
+link66[] = {57,59};
+link67[] = {58,60};
+link68[] = {59,60};
+link69[] = {60,129};
+link70[] = {63,95};
+link71[] = {64,65};
+link72[] = {65,39};
+link73[] = {66,69};
+link74[] = {67,84};
+link75[] = {68,79};
+link76[] = {69,44};
+link77[] = {70,72};
+link78[] = {71,73};
+link79[] = {72,112};
+link80[] = {73,81};
+link81[] = {74,136};
+link82[] = {75,77};
+link83[] = {76,125};
+link84[] = {77,118};
+link85[] = {78,70};
+link86[] = {78,71};
+link87[] = {79,80};
+link88[] = {80,74};
+link89[] = {80,75};
+link90[] = {81,82};
+link91[] = {82,83};
+link92[] = {82,126};
+link93[] = {83,67};
+link94[] = {84,44};
+link95[] = {85,86};
+link96[] = {86,91};
+link97[] = {87,88};
+link98[] = {88,89};
+link99[] = {89,90};
+link100[] = {89,96};
+link101[] = {90,39};
+link102[] = {91,93};
+link103[] = {91,94};
+link104[] = {92,45};
+link105[] = {93,68};
+link106[] = {94,66};
+link107[] = {95,66};
+link108[] = {96,97};
+link109[] = {97,98};
+link110[] = {97,99};
+link111[] = {98,100};
+link112[] = {99,101};
+link113[] = {100,113};
+link114[] = {101,102};
+link115[] = {102,103};
+link116[] = {103,104};
+link117[] = {103,105};
+link118[] = {104,107};
+link119[] = {105,106};
+link120[] = {106,108};
+link121[] = {107,114};
+link122[] = {108,109};
+link123[] = {109,110};
+link124[] = {110,39};
+link125[] = {111,78};
+link126[] = {112,82};
+link127[] = {113,103};
+link128[] = {114,109};
+link129[] = {114,109};
+link130[] = {115,117};
+link131[] = {116,121};
+link132[] = {117,111};
+link133[] = {118,124};
+link134[] = {119,120};
+link135[] = {120,122};
+link136[] = {121,123};
+link137[] = {122,78};
+link138[] = {123,78};
+link139[] = {124,115};
+link140[] = {124,116};
+link141[] = {124,119};
+link142[] = {125,124};
+link143[] = {126,127};
+link144[] = {127,128};
+link145[] = {128,82};
+link146[] = {129,130};
+link147[] = {130,53};
+link148[] = {131,132};
+link149[] = {132,133};
+link150[] = {133,134};
+link151[] = {134,135};
+link152[] = {135,45};
+link153[] = {136,137};
+link154[] = {137,76};
+globals[] = {25.000000,0,0,0,0,640,480,2,218,6316128,1,-759.321960,862.361450,3689.026367,1826.718506,802,921,1};
+window[] = {2,-1,-1,-1,-1,973,25,1152,25,3,820};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "rangefinder";
+  class States
+  {
+    /*%FSM<STATE "rangefinder">*/
+    class rangefinder
+    {
+      name = "rangefinder";
+      init = /*%FSM<STATEINIT""">*/"// ace_sys_rangefinder (.pbo) | (c) 2010 by tcp" \n
+       "" \n
+       "//disableSerialization;" \n
+       "" \n
+       "private [""_optr"", ""_run"", ""_rfweapon"", ""_cfg"", ""_battery"", ""_dsp"", ""_dbattery"", ""_wepIdx"", ""_vehoptr"", ""_count"", ""_batchg"", ""_batswp"", ""_lights"", ""_output"", ""_check"", ""_batcnt"", ""_fireLgc"", ""_batSta"", ""_laser"", ""_tasks"", ""_cycle"", ""_bat"", ""_batlf"", ""_lastrun"", ""_elapsed"", ""_temp"", ""_max"", ""_oht"", ""_amb"", ""_ulimit"", ""_rteAct"", ""_rteIdl"", ""_accuracy"", ""_maxelevation"", ""_mils"", ""_myLaz"", ""_skip"",  ""_refresh"", ""_HOTbrt"", ""_timeWait"", ""_direction"", ""_azimuth"", ""_elevation"", ""_belowhorizon"", ""_azithousandsplace"", ""_azihundredsplace"", ""_azitensplace"", ""_azionesplace"", ""_elehundredsplace"", ""_eletensplace"", ""_eleonesplace"", ""_curmil"", ""_milset"", ""_milcnt"", ""_milidx"", ""_myLazPos"", ""_myLazDist"", ""_myPos"", ""_tenthousandsplace"", ""_thousandsplace"", ""_hundredsplace"", ""_tensplace"", ""_onesplace"", ""_lazCnt"", ""_MLTbrt"", ""_i"", ""_thisLaz"", ""_laz"", ""_lazPos"", ""_lazDist"", ""_minusMyLaz""];" \n
+       "" \n
+       "_optr = _this;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "player">*/
+        class player
+        {
+          priority = 1.000000;
+          to="toggle_power";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_optr == player"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Not_player";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Toggled_Off">*/
+    class Toggled_Off
+    {
+      name = "Toggled_Off";
+      init = /*%FSM<STATEINIT""">*/"EMP_RF_EXT = 1;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "toggle_power">*/
+    class toggle_power
+    {
+      name = "toggle_power";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "running">*/
+        class running
+        {
+          priority = 1.000000;
+          to="stop";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"EMP_RF_RUN"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="currentWeapon";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "stop">*/
+    class stop
+    {
+      name = "stop";
+      init = /*%FSM<STATEINIT""">*/"EMP_RF_STP = true;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Toggled_Off";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "currentWeapon">*/
+    class currentWeapon
+    {
+      name = "currentWeapon";
+      init = /*%FSM<STATEINIT""">*/"EMP_RF_RUN = true;" \n
+       "_rfweapon = currentWeapon _optr;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "damaged">*/
+        class damaged
+        {
+          priority = 1.000000;
+          to="Damaged_Weapon";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_rfweapon == ""ACE_Laserdesignator_D"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="config";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "config">*/
+    class config
+    {
+      name = "config";
+      init = /*%FSM<STATEINIT""">*/"_cfg = configFile >> ""CfgWeapons"" >> _rfweapon;" \n
+       "" \n
+       "_laser = getNumber(_cfg >> ""Laser"");" \n
+       "" \n
+       "_battery = (getArray(_cfg >> ""magazines"")) select 0;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "laser">*/
+        class laser
+        {
+          priority = 1.000000;
+          to="weapon";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_laser == 1"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Not_laser_weapon";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "weapon">*/
+    class weapon
+    {
+      name = "weapon";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "SOFLAM">*/
+        class SOFLAM
+        {
+          priority = 1.000000;
+          to="SOFLAM__display";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_rfweapon == ""Laserdesignator"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Default__Display";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "SOFLAM__display">*/
+    class SOFLAM__display
+    {
+      name = "SOFLAM__display";
+      init = /*%FSM<STATEINIT""">*/"_dsp = ""EMP_RF_DISPLAY"";" \n
+       "_dbattery = ""ACE_Laserbatteries_D"";"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="running";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Default__Display">*/
+    class Default__Display
+    {
+      name = "Default__Display";
+      init = /*%FSM<STATEINIT""">*/"_dsp = ""ACE_RF_DISPLAY"";" \n
+       "_dbattery = ""ACE_Battery_Rangefinder_D"";"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="running";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "running">*/
+    class running
+    {
+      name = "running";
+      init = /*%FSM<STATEINIT""">*/"//get weapon index" \n
+       "_wepIdx = 100;" \n
+       "_vehoptr = vehicle _optr;" \n
+       "private [""_wep_list"", ""_met"", ""_at_end""];" \n
+       "_wep_list = weapons player;" \n
+       "_met = false;" \n
+       "_at_end = true;" \n
+       "scopeName ""fr_wep_out"";" \n
+       "{" \n
+       "	if (_x == _rfweapon) then {" \n
+       "		_met = true" \n
+       "	} else {" \n
+       "		if (_met) then {" \n
+       "			if ((getNumber(configFile >> ""CfgWeapons"" >> _x >> ""Laser"")) != 1) then {" \n
+       "				_at_end = false;" \n
+       "				breakTo ""fr_wep_out"";" \n
+       "			};" \n
+       "		};" \n
+       "	};" \n
+       "} forEach _wep_list;" \n
+       "if (! _at_end) then {" \n
+       "	_optr removeWeapon _rfweapon;" \n
+       "	_optr addWeapon _rfweapon;" \n
+       "};" \n
+       "_fireLgc = ""Logic"" createVehicleLocal [0,0,0];" \n
+       "_fireLgc action [""SWITCHWEAPON"", _vehoptr, _vehoptr, _wepIdx];" \n
+       "while{(currentWeapon _optr) != _rfweapon} do {" \n
+       "	_wepIdx = _wepIdx - 1;" \n
+       "	_fireLgc action [""SWITCHWEAPON"", _vehoptr, _vehoptr, _wepIdx];" \n
+       "};" \n
+       "deleteVehicle _fireLgc;" \n
+       "//convert to dummy battery" \n
+       "_count = 0;" \n
+       "_batchg = true;" \n
+       "while {_batchg} do {" \n
+       "	_batchg = [_optr,_battery] call CBA_fnc_removeMagazine;" \n
+       "	if(_batchg) then {_count = _count + 1;};" \n
+       "};" \n
+       "for [{_x=0},{_x<_count},{_x=_x+1}] do {" \n
+       "	[_optr,_dbattery] call CBA_fnc_addMagazine;" \n
+       "};" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "empty">*/
+        class empty
+        {
+          priority = 1.000000;
+          to="load";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(EMP_RF_BAT <= 0) || {EMP_RF_UNL}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="show_display";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "load">*/
+    class load
+    {
+      name = "load";
+      init = /*%FSM<STATEINIT""">*/"_batswp = [_optr,_dbattery] call CBA_fnc_removeMagazine;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "loaded">*/
+        class loaded
+        {
+          priority = 1.000000;
+          to="battery_conditio";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_batswp"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "no_battery">*/
+        class no_battery
+        {
+          priority = 0.000000;
+          to="message";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "battery_conditio">*/
+    class battery_conditio
+    {
+      name = "battery_conditio";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "swiped">*/
+        class swiped
+        {
+          priority = 1.000000;
+          to="partial";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"EMP_RF_UNL"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="fresh";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "message">*/
+    class message
+    {
+      name = "message";
+      init = /*%FSM<STATEINIT""">*/"//titleText [localize ""STR_EMP_RF_OUT_BATTERY"", ""plain down""]; titleFadeOut 4;" \n
+       "[localize ""STR_EMP_RF_OUT_BATTERY"",[1,0,0,1],true,4] spawn ace_fnc_visual;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="No_battery";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "partial">*/
+    class partial
+    {
+      name = "partial";
+      init = /*%FSM<STATEINIT""">*/"EMP_RF_UNL = false;" \n
+       "//titleText [localize ""STR_EMP_RF_USED_BATTERY_LOAD"", ""plain down""]; titleFadeOut 4;" \n
+       "[localize ""STR_EMP_RF_USED_BATTERY_LOAD"",nil,true,4] spawn ace_fnc_visual;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="show_display";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "fresh">*/
+    class fresh
+    {
+      name = "fresh";
+      init = /*%FSM<STATEINIT""">*/"EMP_RF_BAT = 1;" \n
+       "//titleText [localize ""STR_EMP_RF_BATTERY_LOAD"", ""plain down""]; titleFadeOut 4;" \n
+       "[localize ""STR_EMP_RF_BATTERY_LOAD"",nil,true,4] spawn ace_fnc_visual;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="show_display";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "show_display">*/
+    class show_display
+    {
+      name = "show_display";
+      init = /*%FSM<STATEINIT""">*/"//add real battery" \n
+       "[_optr,_battery] call CBA_fnc_addMagazine;" \n
+       "" \n
+       "//get display" \n
+       "13524 cutRsc [_dsp, ""plain down""];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "SOFLAM">*/
+        class SOFLAM
+        {
+          priority = 1.000000;
+          to="init";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_rfweapon == ""Laserdesignator"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="init_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "exit_check">*/
+    class exit_check
+    {
+      name = "exit_check";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 3.000000;
+          to="viewable_state";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Not_player">*/
+    class Not_player
+    {
+      name = "Not_player";
+      init = /*%FSM<STATEINIT""">*/"EMP_RF_EXT = 0;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Not_laser_weapon">*/
+    class Not_laser_weapon
+    {
+      name = "Not_laser_weapon";
+      init = /*%FSM<STATEINIT""">*/"EMP_RF_RUN = false;" \n
+       "EMP_RF_EXT = 3;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Damaged_Weapon">*/
+    class Damaged_Weapon
+    {
+      name = "Damaged_Weapon";
+      init = /*%FSM<STATEINIT""">*/"EMP_RF_RUN = false;" \n
+       "EMP_RF_EXT = 2;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "exit_check_">*/
+    class exit_check_
+    {
+      name = "exit_check_";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="viewable_state";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "viewable_state">*/
+    class viewable_state
+    {
+      name = "viewable_state";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "able">*/
+        class able
+        {
+          priority = 1.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"( ((currentWeapon _optr) == _rfweapon) && {alive _optr} && {(speed _optr) < 4} && {!(EMP_RF_BRK)} && {!(EMP_RF_STP)} && {_battery in (magazines _optr)} ) || {(EMP_RF_HLD)}"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="hide_display";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "_">*/
+    class _
+    {
+      name = "_";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Third_Person">*/
+        class Third_Person
+        {
+          priority = 2.000000;
+          to="__7";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"((cameraView != ""GUNNER"") || {visibleMap})"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "SOFLAM">*/
+        class SOFLAM
+        {
+          priority = 1.000000;
+          to="rate_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_rfweapon == ""Laserdesignator"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="rate_2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "hide_display">*/
+    class hide_display
+    {
+      name = "hide_display";
+      init = /*%FSM<STATEINIT""">*/"13524 cutRsc [""Default"", ""plain down""];" \n
+       "" \n
+       "//mark time" \n
+       "if(currentWeapon _optr == ""Laserdesignator"") then {EMP_RF_MRK = time;};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "overheated">*/
+        class overheated
+        {
+          priority = 1.000000;
+          to="give_damaged";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"EMP_RF_BRK"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="turn_off_laser";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "give_damaged">*/
+    class give_damaged
+    {
+      name = "give_damaged";
+      init = /*%FSM<STATEINIT""">*/"EMP_RF_BRK = false;" \n
+       "_batcnt = {_x == _dbattery} count (magazines _optr);" \n
+       "while{_optr hasWeapon _rfweapon} do {_optr removeWeapon _rfweapon;};" \n
+       "sleep 0.001;" \n
+       "_optr addWeapon ""ACE_Laserdesignator_D"";" \n
+       "waitUntil{_optr hasWeapon ""ACE_Laserdesignator_D""};" \n
+       "_whilTO = 12;" \n
+       "while{(({_x == _dbattery} count (magazines _optr)) < _batcnt) && {_whilTO > 0}} do {whilTO = whilTO - 1; _optr addMagazine _dbattery;};" \n
+       "_optr selectWeapon ""ACE_Laserdesignator_D"";"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="cleanup";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "turn_off_laser">*/
+    class turn_off_laser
+    {
+      name = "turn_off_laser";
+      init = /*%FSM<STATEINIT""">*/"if(!EMP_RF_LAZ) then {_lazInfo = call ace_sys_rangefinder_fnc_findLT; _myLaz = _lazInfo select 0;};" \n
+       "if(!isNull _myLaz) then {EMP_RF_LAZ = true;};" \n
+       "if((alive _optr) && {(EMP_RF_LAZ)}) then {" \n
+       "	_fireLgc = ""logic"" createVehicleLocal [0,0,0];" \n
+       "	_fireLgc action [""USEWEAPON"", _optr, _optr, _wepIdx];" \n
+       "	deleteVehicle _fireLgc;" \n
+       "};" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="cleanup";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "cleanup">*/
+    class cleanup
+    {
+      name = "cleanup";
+      init = /*%FSM<STATEINIT""">*/"//take real battery" \n
+       "_batSta = [_optr,_battery] call CBA_fnc_removeMagazine;" \n
+       "" \n
+       "//check swiped" \n
+       "if (!_batSta && {alive _optr}) then {EMP_RF_UNL = true;};" \n
+       "" \n
+       "_timeWait = 2;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "wait">*/
+        class wait
+        {
+          priority = 0.000000;
+          to="reset";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timeWait"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Shutoff">*/
+    class Shutoff
+    {
+      name = "Shutoff";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "No_battery">*/
+    class No_battery
+    {
+      name = "No_battery";
+      init = /*%FSM<STATEINIT""">*/"EMP_RF_RUN = false;" \n
+       "EMP_RF_EXT = 4;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "init">*/
+    class init
+    {
+      name = "init";
+      init = /*%FSM<STATEINIT""">*/"_tasks = 5;" \n
+       "_check = (EMP_RF_REF/_tasks);" \n
+       "_cycle = false;" \n
+       "_timeTC = 0;" \n
+       "_wasInactive = true;" \n
+       "" \n
+       "/* lights */" \n
+       "//controls" \n
+       "//lights on" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751043) ctrlSetTextColor [ 1, 1, 1, 0];" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751044) ctrlSetTextColor [ 1, 1, 1, 0];" \n
+       "//BAT level" \n
+       "_bat = EMP_RF_BAT;" \n
+       "_batlf = EMP_RF_BLF;" \n
+       "//HOT level" \n
+       "///elapsed" \n
+       "_lastrun = EMP_RF_MRK;" \n
+       "_elapsed = time - _lastrun;" \n
+       "///newtemp" \n
+       "_temp = EMP_RF_TMP;" \n
+       "_max = EMP_RF_MAX;" \n
+       "_oht = EMP_RF_OHT;" \n
+       "_amb = EMP_RF_AMB;" \n
+       "if(_elapsed > 5) then {_temp = _amb + (_temp-_amb) * exp(-0.05*(_elapsed/60));};" \n
+       "_ulimit = (_max - _oht) / 3;" \n
+       "_rteAct = EMP_RF_ACT;" \n
+       "_rteIdl = EMP_RF_IDL;" \n
+       "" \n
+       "/* data */" \n
+       "//values" \n
+       "_accuracy = EMP_RF_ACC;" \n
+       "_maxelevation = EMP_RF_ELV;" \n
+       "_mils = EMP_RF_MIL;" \n
+       "_myLaz = objNull;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="lights";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "init_1">*/
+    class init_1
+    {
+      name = "init_1";
+      init = /*%FSM<STATEINIT""">*/"_tasks = 3;" \n
+       "_check = (EMP_RF_REF/_tasks);" \n
+       "_cycle = false;" \n
+       "" \n
+       "_skip = false;" \n
+       "_rfweapon = currentWeapon _optr;	" \n
+       "//controls" \n
+       "_accuracy = EMP_RF_ACC;" \n
+       "_mils = EMP_VC_MIL;" \n
+       "_myLaz = objNull;" \n
+       "_refresh = EMP_RF_REF;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="exit_check";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "lights">*/
+    class lights
+    {
+      name = "lights";
+      init = /*%FSM<STATEINIT""">*/"//brightness" \n
+       "if(_bat > 0.6) then {((uiNameSpace getVariable _dsp) displayCtrl 751044) ctrlSetText ""\x\ace\addons\sys_rangefinder\data\grn_light.paa""} else {((uiNameSpace getVariable _dsp) displayCtrl 751044) ctrlSetText ""\x\ace\addons\sys_rangefinder\data\red_light.paa""};" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751044) ctrlSetTextColor [ 1, 1, 1, _bat];" \n
+       "_HOTbrt = _temp/_max;" \n
+       "if(_HOTbrt > 1) then {_HOTbrt = 1;};" \n
+       "if(_temp > _oht) then {((uiNameSpace getVariable _dsp) displayCtrl 751043) ctrlSetTextColor [ 1, 1, 1, _HOTbrt];};" \n
+       "" \n
+       "//update levels" \n
+       "_bat = _bat - _batlf;" \n
+       "if(EMP_RF_LAZ) then {" \n
+       "	_temp = _temp + (_rteAct/60);" \n
+       "} else {" \n
+       "	_temp = _temp + (_rteIdl/60);" \n
+       "};" \n
+       "//save var" \n
+       "EMP_RF_BAT = _bat;" \n
+       "EMP_RF_TMP = _temp;" \n
+       "//chance of damage from overheat" \n
+       "if(_temp > _max) then {" \n
+       "	if((random 1) < 0.05) then {" \n
+       "		EMP_RF_BRK = true;" \n
+       "	};" \n
+       "};" \n
+       "//battery dead" \n
+       "if(_bat <= 0) then {" \n
+       "	EMP_RF_STP = true;" \n
+       "};" \n
+       "" \n
+       "//rate" \n
+       "_timeWait = time + _check;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "wait">*/
+        class wait
+        {
+          priority = 0.000000;
+          to="exit_check_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timeWait"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "blink">*/
+    class blink
+    {
+      name = "blink";
+      init = /*%FSM<STATEINIT""">*/"//blinking" \n
+       "if(_bat < 0.3) then {((uiNameSpace getVariable _dsp) displayCtrl 751044) ctrlSetTextColor [ 1, 1, 1, 0];};" \n
+       "if(_temp > (_max - _ulimit)) then {((uiNameSpace getVariable _dsp) displayCtrl 751043) ctrlSetTextColor [ 1, 1, 1, 0];};" \n
+       "" \n
+       "//rate" \n
+       "_timeWait = time + _check;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "wait">*/
+        class wait
+        {
+          priority = 0.000000;
+          to="exit_check_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timeWait"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "readout">*/
+    class readout
+    {
+      name = "readout";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="range";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__1">*/
+    class __1
+    {
+      name = "__1";
+      init = /*%FSM<STATEINIT""">*/"_direction = _optr weaponDirection ""Laserdesignator"";" \n
+       "_mils = EMP_RF_MIL;" \n
+       "_azimuth = (-(_direction select 0) atan2 -(_direction select 1) + 180) * _mils/360;" \n
+       "_elevation = asin (_direction select 2) * _mils/360;" \n
+       "_belowhorizon = false;" \n
+       "if ( _elevation < 0 ) then { _belowhorizon = true };" \n
+       "_elevation = (abs _elevation) min _maxelevation;" \n
+       "// convert values into digits" \n
+       "_azithousandsplace = floor(_azimuth/1000);" \n
+       "_azihundredsplace = floor(_azimuth/100) - 10*_azithousandsplace;" \n
+       "_azitensplace = floor(_azimuth/10) - 100*_azithousandsplace - 10*_azihundredsplace;" \n
+       "_azionesplace = floor(_azimuth) - 1000*_azithousandsplace - 100*_azihundredsplace - 10*_azitensplace;" \n
+       "_elehundredsplace = floor(_elevation/100);" \n
+       "_eletensplace = floor(_elevation/10) - 10*_elehundredsplace;" \n
+       "_eleonesplace = floor(_elevation) - 100*_elehundredsplace - 10*_eletensplace;" \n
+       "// display without leading zero" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751021) ctrlSetText format [""\x\ace\addons\sys_rangefinder\data\red_%1.paa"",_azithousandsplace];" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751022) ctrlSetText format [""\x\ace\addons\sys_rangefinder\data\red_%1.paa"",_azihundredsplace];" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751023) ctrlSetText format [""\x\ace\addons\sys_rangefinder\data\red_%1.paa"",_azitensplace];" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751024) ctrlSetText format [""\x\ace\addons\sys_rangefinder\data\red_%1.paa"",_azionesplace];" \n
+       "if (_belowhorizon) then	{((uiNameSpace getVariable _dsp) displayCtrl 751031) ctrlSetText ""\x\ace\addons\sys_rangefinder\data\red_dash.paa""} else {((uiNameSpace getVariable _dsp) displayCtrl 751031) ctrlSetText ""\x\ace\addons\sys_rangefinder\data\red_blank.paa""};" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751032) ctrlSetText format [""\x\ace\addons\sys_rangefinder\data\red_%1.paa"",_elehundredsplace];" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751033) ctrlSetText format [""\x\ace\addons\sys_rangefinder\data\red_%1.paa"",_eletensplace];" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751034) ctrlSetText format [""\x\ace\addons\sys_rangefinder\data\red_%1.paa"",_eleonesplace];" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="rate";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__2">*/
+    class __2
+    {
+      name = "__2";
+      init = /*%FSM<STATEINIT""">*/"_curmil = EMP_RF_MIL;" \n
+       "_milset = EMP_RF_MSL;" \n
+       "_milcnt = count _milset;" \n
+       "_milidx = ((_milset find _curmil) + 1);" \n
+       "if(_milidx >= _milcnt) then {_milidx = 0};" \n
+       "EMP_RF_MIL = (_milset select _milidx); " \n
+       "_azimuth = EMP_RF_MIL;" \n
+       "// convert values into digits" \n
+       "_azithousandsplace = floor(_azimuth/1000);" \n
+       "_azihundredsplace = floor(_azimuth/100) - 10*_azithousandsplace;" \n
+       "_azitensplace = floor(_azimuth/10) - 100*_azithousandsplace - 10*_azihundredsplace;" \n
+       "_azionesplace = floor(_azimuth) - 1000*_azithousandsplace - 100*_azihundredsplace - 10*_azitensplace;" \n
+       "// display without leading zero" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751021) ctrlSetText format [""\x\ace\addons\sys_rangefinder\data\red_%1.paa"",_azithousandsplace];" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751022) ctrlSetText format [""\x\ace\addons\sys_rangefinder\data\red_%1.paa"",_azihundredsplace];" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751023) ctrlSetText format [""\x\ace\addons\sys_rangefinder\data\red_%1.paa"",_azitensplace];" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751024) ctrlSetText format [""\x\ace\addons\sys_rangefinder\data\red_%1.paa"",_azionesplace];" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751031) ctrlSetText ""\x\ace\addons\sys_rangefinder\data\red_blank.paa"";" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751032) ctrlSetText ""\x\ace\addons\sys_rangefinder\data\red_blank.paa"";" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751033) ctrlSetText ""\x\ace\addons\sys_rangefinder\data\red_blank.paa"";" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751034) ctrlSetText ""\x\ace\addons\sys_rangefinder\data\red_blank.paa"";" \n
+       "EMP_RF_CML = false;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="rate";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Output_Range">*/
+    class Output_Range
+    {
+      name = "Output_Range";
+      init = /*%FSM<STATEINIT""">*/"EMP_RF_LAZ = true;" \n
+       "if(_wasInactive) then {_wasInactive = false; _timeTC = 0;};" \n
+       "" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751041) ctrlSetTextColor [ 1, 1, 1, 1 ];" \n
+       "" \n
+       "//find Range on your existing laser" \n
+       "_myLazPos = getPosATL _myLaz;" \n
+       "_myLazDist = _myPos distance _myLazPos;" \n
+       "" \n
+       "// convert range into digits" \n
+       "_tenthousandsplace = floor(_myLazDist/10000);" \n
+       "_thousandsplace = floor(_myLazDist/1000) - 10*_tenthousandsplace;" \n
+       "_hundredsplace = floor(_myLazDist/100)  - 100*_tenthousandsplace - 10*_thousandsplace;" \n
+       "_tensplace = floor(_myLazDist/10)  - 1000*_tenthousandsplace - 100*_thousandsplace - 10*_hundredsplace;" \n
+       "_onesplace = floor(_myLazDist/_accuracy)*_accuracy  - 10000*_tenthousandsplace - 1000*_thousandsplace - 100*_hundredsplace - 10*_tensplace;" \n
+       "" \n
+       "// display with leading zeros" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751011) ctrlSetText format [""\x\ace\addons\sys_rangefinder\data\red_%1.paa"",_tenthousandsplace];" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751012) ctrlSetText format [""\x\ace\addons\sys_rangefinder\data\red_%1.paa"",_thousandsplace];" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751013) ctrlSetText format [""\x\ace\addons\sys_rangefinder\data\red_%1.paa"",_hundredsplace];" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751014) ctrlSetText format [""\x\ace\addons\sys_rangefinder\data\red_%1.paa"",_tensplace];" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751015) ctrlSetText format [""\x\ace\addons\sys_rangefinder\data\red_%1.paa"",_onesplace];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="MLT_count";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "XMIT_off">*/
+    class XMIT_off
+    {
+      name = "XMIT_off";
+      init = /*%FSM<STATEINIT""">*/"EMP_RF_LAZ = false;" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751041) ctrlSetTextColor [ 1, 1, 1, 0 ];" \n
+       "_wasInactive = true;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="MLT_count";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "set_MLT">*/
+    class set_MLT
+    {
+      name = "set_MLT";
+      init = /*%FSM<STATEINIT""">*/"((uiNameSpace getVariable _dsp) displayCtrl 751042) ctrlSetTextColor [ 1, 1, 1, _MLTbrt ];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "changing_mils">*/
+        class changing_mils
+        {
+          priority = 1.000000;
+          to="__2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"EMP_RF_CML"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "range">*/
+    class range
+    {
+      name = "range";
+      init = /*%FSM<STATEINIT""">*/"_myPos = getPosATL _optr;" \n
+       "_lazInfo = call ace_sys_rangefinder_fnc_findLT;" \n
+       "_myLaz = _lazInfo select 0;" \n
+       "_lazCnt = _lazInfo select 1;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "my_laser_not_act">*/
+        class my_laser_not_act
+        {
+          priority = 1.000000;
+          to="XMIT_off";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"isNull _myLaz"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Output__Laser__C";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "rate">*/
+    class rate
+    {
+      name = "rate";
+      init = /*%FSM<STATEINIT""">*/"_timeWait = time + _check;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 2.000000;
+          to="target_check";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timeTC"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "wait">*/
+        class wait
+        {
+          priority = 1.000000;
+          to="blink";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timeWait"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "rate_1">*/
+    class rate_1
+    {
+      name = "rate_1";
+      init = /*%FSM<STATEINIT""">*/"_timeWait = time + _check;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "wait">*/
+        class wait
+        {
+          priority = 0.000000;
+          to="__3";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timeWait"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "rate_2">*/
+    class rate_2
+    {
+      name = "rate_2";
+      init = /*%FSM<STATEINIT""">*/"_timeWait = time + _check;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "wait">*/
+        class wait
+        {
+          priority = 0.000000;
+          to="readout_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timeWait"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "readout_1">*/
+    class readout_1
+    {
+      name = "readout_1";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "cycle">*/
+        class cycle
+        {
+          priority = 1.000000;
+          to="exit_check";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_cycle"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_cycle = false;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="range_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__3">*/
+    class __3
+    {
+      name = "__3";
+      init = /*%FSM<STATEINIT""">*/"_thousandsplace = floor(ace_sys_rangefinder_currentLaserCode/1000);" \n
+       "_hundredsplace = floor(ace_sys_rangefinder_currentLaserCode/100)  - (10*_thousandsplace);" \n
+       "_tensplace = floor(ace_sys_rangefinder_currentLaserCode/10) - (100*_thousandsplace) - (10*_hundredsplace);" \n
+       "_onesplace = floor(ace_sys_rangefinder_currentLaserCode) - (1000*_thousandsplace) - (100*_hundredsplace) - (10*_tensplace);" \n
+       "" \n
+       "// display with leading zeros" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751048) ctrlSetText format [""\x\ace\addons\sys_rangefinder\data\red_%1.paa"",_thousandsplace];" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751047) ctrlSetText format [""\x\ace\addons\sys_rangefinder\data\red_%1.paa"",_hundredsplace];" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751046) ctrlSetText format [""\x\ace\addons\sys_rangefinder\data\red_%1.paa"",_tensplace];" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751045) ctrlSetText format [""\x\ace\addons\sys_rangefinder\data\red_%1.paa"",_onesplace];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "cycle">*/
+        class cycle
+        {
+          priority = 1.000000;
+          to="lights";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_cycle"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_cycle = false;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="readout";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_cycle = true;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "range_1">*/
+    class range_1
+    {
+      name = "range_1";
+      init = /*%FSM<STATEINIT""">*/"_myPos = getPosATL _optr;" \n
+       "_lazInfo = call ace_sys_rangefinder_fnc_findLT;" \n
+       "_myLaz = _lazInfo select 0;" \n
+       "_lazCnt = _lazInfo select 1;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__4";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "my_laser_not_fou">*/
+        class my_laser_not_fou
+        {
+          priority = 0.000000;
+          to="no_laz";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"isNull _myLaz"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "no_laz">*/
+    class no_laz
+    {
+      name = "no_laz";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="azimuth_elevatio";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__4">*/
+    class __4
+    {
+      name = "__4";
+      init = /*%FSM<STATEINIT""">*/"//find Range on your existing laser" \n
+       "_myLazPos = getPosATL _myLaz;" \n
+       "_myLazDist = _myPos distance _myLazPos;" \n
+       "//display range" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 2) ctrlSetText ((floor(_myLazDist/_accuracy)*_accuracy) call CBA_fnc_intToString);" \n
+       "_batcnt = {_x == _dbattery} count (magazines _optr);" \n
+       "_fireLgc = ""logic"" createVehicleLocal [0,0,0];" \n
+       "_fireLgc action [""USEWEAPON"", _optr, _optr, _wepIdx];" \n
+       "deleteVehicle _fireLgc;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="azimuth_elevatio";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "azimuth_elevatio">*/
+    class azimuth_elevatio
+    {
+      name = "azimuth_elevatio";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__5";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "changing_mils">*/
+        class changing_mils
+        {
+          priority = 0.000000;
+          to="__6";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"EMP_RF_CML"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__5">*/
+    class __5
+    {
+      name = "__5";
+      init = /*%FSM<STATEINIT""">*/"if (!_skip) then {" \n
+       "	_direction = _optr weaponDirection _rfweapon;" \n
+       "	_mils = EMP_VC_MIL;" \n
+       "	_azimuth = (-(_direction select 0) atan2 -(_direction select 1) + 180) * _mils/360;" \n
+       "	//display azimuth" \n
+       "	_azimuth = (floor _azimuth) call CBA_fnc_intToString;" \n
+       "	if(_mils == 360) then {_azimuth = format[localize ""STR_EMP_RF_DEGREES"",_azimuth];};" \n
+       "	((uiNameSpace getVariable _dsp) displayCtrl 1) ctrlSetText _azimuth;" \n
+       "} else {" \n
+       "	_skip = false;" \n
+       "};" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="rate_3";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__6">*/
+    class __6
+    {
+      name = "__6";
+      init = /*%FSM<STATEINIT""">*/"_curmil = EMP_VC_MIL;" \n
+       "_milset = EMP_VC_MSL;" \n
+       "_milcnt = count _milset;" \n
+       "_milidx = ((_milset find _curmil) + 1);" \n
+       "if(_milidx >= _milcnt) then {_milidx = 0};" \n
+       "EMP_VC_MIL = (_milset select _milidx); " \n
+       "_azimuth = EMP_VC_MIL;" \n
+       "//display azimuth setting" \n
+       "_azimuth = str _azimuth;" \n
+       "if(_azimuth == ""360"") then {_azimuth = format[localize ""STR_EMP_RF_DEGREES"",_azimuth];}; " \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 1) ctrlSetText _azimuth;" \n
+       "_skip = true;" \n
+       "EMP_RF_CML = false;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="rate_3";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "rate_3">*/
+    class rate_3
+    {
+      name = "rate_3";
+      init = /*%FSM<STATEINIT""">*/"_timeWait = time + _check;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "wait">*/
+        class wait
+        {
+          priority = 0.000000;
+          to="exit_check";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timeWait"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "MLT_off">*/
+    class MLT_off
+    {
+      name = "MLT_off";
+      init = /*%FSM<STATEINIT""">*/"_MLTbrt=0;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="set_MLT";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "MLT_full">*/
+    class MLT_full
+    {
+      name = "MLT_full";
+      init = /*%FSM<STATEINIT""">*/"_MLTbrt=1;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="set_MLT";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "MLT_lit">*/
+    class MLT_lit
+    {
+      name = "MLT_lit";
+      init = /*%FSM<STATEINIT""">*/"_MLTbrt = _lazCnt / 5;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="set_MLT";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "MLT_count">*/
+    class MLT_count
+    {
+      name = "MLT_count";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "many_detected">*/
+        class many_detected
+        {
+          priority = 2.000000;
+          to="MLT_full";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_lazCnt > 5"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "lasers_detected">*/
+        class lasers_detected
+        {
+          priority = 1.000000;
+          to="MLT_lit";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_lazCnt > 1"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "no_others">*/
+        class no_others
+        {
+          priority = 0.000000;
+          to="MLT_off";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "target_check">*/
+    class target_check
+    {
+      name = "target_check";
+      init = /*%FSM<STATEINIT""">*/"#define LIMIT 40" \n
+       "_timeTC = time + 20;" \n
+       "" \n
+       "if(!isNull _myLaz) then {" \n
+       "	_targetObjs = nearestObjects [_myLaz, [""Tank""], 12];" \n
+       "	{" \n
+       "		_isTargeted = _x getVariable [""ACE_LazTargeted"", 0];" \n
+       "		if (!(isNull _x) && {alive _x} && {time > _isTargeted}) then {" \n
+       "			_x setVariable [""ACE_LazTargeted"",time + LIMIT];" \n
+       "			[""ace_lasertarget"", [player, _x, _myLaz]] call CBA_fnc_globalEvent;" \n
+       "		};" \n
+       "	} forEach _targetObjs;" \n
+       "};" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="rate";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "reset">*/
+    class reset
+    {
+      name = "reset";
+      init = /*%FSM<STATEINIT""">*/"EMP_RF_RUN = false;" \n
+       "EMP_RF_STP = false;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Shutoff";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__7">*/
+    class __7
+    {
+      name = "__7";
+      init = /*%FSM<STATEINIT""">*/"13524 cutRsc [""Default"", ""plain down""];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="__8";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"( ((cameraView == ""GUNNER"") && {! visibleMap}) || { (speed _optr) > 4 || {((currentWeapon _optr) != _rfweapon)} || {(! alive _optr)} || {(EMP_RF_BRK)} || {(EMP_RF_STP)} || {!(_battery in (magazines _optr))}} )"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__8">*/
+    class __8
+    {
+      name = "__8";
+      init = /*%FSM<STATEINIT""">*/"13524 cutRsc [_dsp, ""plain down""];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="viewable_state";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Output__Laser__C">*/
+    class Output__Laser__C
+    {
+      name = "Output__Laser__C";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/"_thousandsplace = floor(ace_sys_rangefinder_currentLaserCode/1000);" \n
+       "_hundredsplace = floor(ace_sys_rangefinder_currentLaserCode/100)  - (10*_thousandsplace);" \n
+       "_tensplace = floor(ace_sys_rangefinder_currentLaserCode/10) - (100*_thousandsplace) - (10*_hundredsplace);" \n
+       "_onesplace = floor(ace_sys_rangefinder_currentLaserCode) - (1000*_thousandsplace) - (100*_hundredsplace) - (10*_tensplace);" \n
+       "" \n
+       "// display with leading zeros" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751048) ctrlSetText format [""\x\ace\addons\sys_rangefinder\data\red_%1.paa"",_thousandsplace];" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751047) ctrlSetText format [""\x\ace\addons\sys_rangefinder\data\red_%1.paa"",_hundredsplace];" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751046) ctrlSetText format [""\x\ace\addons\sys_rangefinder\data\red_%1.paa"",_tensplace];" \n
+       "((uiNameSpace getVariable _dsp) displayCtrl 751045) ctrlSetText format [""\x\ace\addons\sys_rangefinder\data\red_%1.paa"",_onesplace];"/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="Output_Range";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="rangefinder";
+  finalStates[] =
+  {
+    "Toggled_Off",
+    "Not_player",
+    "Not_laser_weapon",
+    "Damaged_Weapon",
+    "Shutoff",
+    "No_battery",
+  };
+};
+/*%FSM</COMPILE>*/

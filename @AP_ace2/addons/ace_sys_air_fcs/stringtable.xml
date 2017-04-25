@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="sys_air_fcs">
+<Container name="STR_DN">
+<Key ID="STR_ACE_IDN_LAUNCHAUTHORIZATION_RU">
+<English>ПР</English>
+<German>ПР</German>
+<Spanish>ПР</Spanish>
+<Czech>ПР</Czech>
+<French>ПР</French>
+<Polish>ПР</Polish>
+<Italian>ПР</Italian>
+<Russian>ПР</Russian>
+<Hungarian>ПР</Hungarian>
+</Key>
+</Container></Package></Project>

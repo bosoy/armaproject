@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_backblast
+Pbo Type is: Arma Addon
+Sha: 'B7A61A5A94534B77C298FE73879B82C7C79F78AB'
+//////</HEADER>//////
