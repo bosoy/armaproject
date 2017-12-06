@@ -4090,7 +4090,7 @@ class CfgVehicles
 		threat[] = {1,1,0.3};
 		class Library
 		{
-			libTextDesc = "The M1A1, famous for its role in the Gulf Wars, is the United States’ primary Main Battle Tank. The M1A1 features an M256 smoothbore cannon capable of firing an armor-piercing fin-stabilized discarding sabot (APFSDS) round with a depleted uranium penetrator. Various other types of ammunition, such as High Explosive Anti-Tank (HEAT), are also available and can be employed to engage lighter armored vehicles. The M1A1 is a fast, well armored and deadly piece of equipment. The USMC uses the M1A1 as 'Heavy Common' version with wich is an overall upgraded M1A1";
+			libTextDesc = "The M1A1, famous for its role in the Gulf Wars, is the United StatesÂ’ primary Main Battle Tank. The M1A1 features an M256 smoothbore cannon capable of firing an armor-piercing fin-stabilized discarding sabot (APFSDS) round with a depleted uranium penetrator. Various other types of ammunition, such as High Explosive Anti-Tank (HEAT), are also available and can be employed to engage lighter armored vehicles. The M1A1 is a fast, well armored and deadly piece of equipment. The USMC uses the M1A1 as 'Heavy Common' version with wich is an overall upgraded M1A1";
 		};
 		class AnimationSources
 		{
@@ -10686,6 +10686,7 @@ class CfgAmmo
 		sideAirFriction = 0.03;
 		maneuvrability = 7;
 		manualControl = 1;
+		ace_aa = 1;
 	};
 	class M_R73_AA: MissileBase
 	{
